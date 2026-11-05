@@ -8976,5 +8976,825 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Set",
       tags: []
+    },
+  {
+      id: "le-femme",
+      slug: "le-femme",
+      name: "Le Femme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/le-femme.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf y Le Femme. La caja imprime e 100 ml y 3.4 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "royal-sapphire",
+      slug: "royal-sapphire",
+      name: "Royal Sapphire",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/royal-sapphire.webp"],
+      description: "El frasco y la caja dicen Lattafa, Royal Sapphire y Pride. Es distinto de Royal Amber.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "derby-club-house-gold",
+      slug: "derby-club-house-gold",
+      name: "Derby Club House Gold",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/derby-club-house-gold.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Armaf, Derby Club House Women, Gold y e 100 ml, 3.4 fl oz. Blanche es el frasco blanco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "amber-oud-white-edition",
+      slug: "amber-oud-white-edition",
+      name: "Amber Oud White Edition",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amber-oud-white-edition.webp"],
+      description: "El frasco y la caja dicen Haramain Amber Oud, White Edition y 100 ml. La caja también dice Al Haramain Since 1970.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "viking-kashmir",
+      slug: "viking-kashmir",
+      name: "Viking Kashmir",
+      brand: "Bharara",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/viking-kashmir.webp"],
+      description: "La caja y el frasco dicen Bharara y Viking Kashmir. La foto trae un atomizador de viaje con el mismo nombre.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "galaxy-concept-le-desir",
+      slug: "galaxy-concept-le-desir",
+      name: "Le Désir",
+      brand: "Galaxy Concept",
+      type: "beauty",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/galaxy-concept-le-desir.webp"],
+      description: "Perfume en spray. El envase dice Galaxy Concept, Le Désir y Pour Homme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Perfume en spray",
+      tags: []
+    },
+  {
+      id: "angel",
+      slug: "angel",
+      name: "Angel",
+      brand: "Mugler",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/angel.webp"],
+      description: "Eau de parfum de 100 ml. La caja dice Angel, Mugler, étoile rechargeable y e 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "viking-dubai",
+      slug: "viking-dubai",
+      name: "Viking Dubai",
+      brand: "Bharara",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/viking-dubai.webp"],
+      description: "La caja y el frasco dicen Bharara y Viking Dubai. La foto trae un atomizador de viaje con el mismo nombre.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "khanjar",
+      slug: "khanjar",
+      name: "Khanjar",
+      brand: "Niche Emarati",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/khanjar.webp"],
+      description: "Frasco en forma de daga. La placa dice Khanjar y Niche Emarate Parfums.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 85,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "infini-rose",
+      slug: "infini-rose",
+      name: "Infini Rose",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/infini-rose.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Infini Rose y Maison Alhambra. El lateral imprime eau de parfum y 3.4 fl oz. Infini Oud es otro perfume.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ahal-al-fakhar",
+      slug: "ahal-al-fakhar",
+      name: "Ahal Al Fakhar",
+      brand: "Asdaaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/ahal-al-fakhar.webp"],
+      description: "El frasco y la caja dicen Ahal Al Fakhar y Asdaaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "24-carat-white-gold",
+      slug: "24-carat-white-gold",
+      name: "24 Carat White Gold",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/24-carat-white-gold.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice 24 Carat White Gold, eau de parfum y 100 ml, 3.4 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "212-vip-are-you-on-the-list",
+      slug: "212-vip-are-you-on-the-list",
+      name: "212 VIP Are You on the List?",
+      brand: "Carolina Herrera",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/212-vip-are-you-on-the-list.webp"],
+      description: "El frasco dice 212 VIP y Herrera. La caja dice 212 VIP y Are You on the List? El 212 VIP de 80 ml ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "24-carat-pure-gold",
+      slug: "24-carat-pure-gold",
+      name: "24 Carat Pure Gold",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/24-carat-pure-gold.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice 24 Carat Pure Gold, eau de parfum y 100 ml, 3.4 fl oz. White Gold es el frasco plateado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "set-yara-tous",
+      slug: "set-yara-tous",
+      name: "Set Yara Tous",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/set-yara-tous.webp"],
+      description: "Set Yara Tous: perfume, spray perfumado de 200 ml (6.67 fl oz) y bruma para el cabello. El spray ya está en el catálogo, solo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "the-lions-club-feroce",
+      slug: "the-lions-club-feroce",
+      name: "The Lion's Club Féroce",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/the-lions-club-feroce.webp"],
+      description: "El frasco y la caja dicen Armaf, The Lion's Club y Féroce. Monarque y Rugir son otros de la línea.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "fancy-love",
+      slug: "fancy-love",
+      name: "Fancy Love",
+      brand: "Jessica Simpson",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fancy-love.webp"],
+      description: "Bruma de 236 ml, 8 fl oz. El frasco dice Fancy Love, Jessica Simpson, Fragrance Mist y Brume Parfumée. El título Splash no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "young-love",
+      slug: "young-love",
+      name: "Young Love",
+      brand: "The 1001 Senses",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/young-love.webp"],
+      description: "Bruma de 250 ml, 8.4 fl oz. El frasco dice Young Love, The 1001 senses, Fragrance Mist y Brume Parfumée. El título Splash no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "crystal-petals",
+      slug: "crystal-petals",
+      name: "Crystal Petals",
+      brand: "Airbody",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/crystal-petals.webp"],
+      description: "Bruma con shimmer de 250 ml, 8.4 fl oz. El frasco dice Crystal Petals, Airbody, Shimmer Fragrance Mist y Brume Parfumée Scintillante. El título Splash no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "charm-romantic",
+      slug: "charm-romantic",
+      name: "Charm Romantic",
+      brand: "Airbody",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/charm-romantic.webp"],
+      description: "Bruma corporal de 250 ml, 8.4 fl oz. El frasco dice Charm Romantic, Airbody, Body Mist y Brume pour le corps. El título Splash no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "armani-code",
+      slug: "armani-code",
+      name: "Code",
+      brand: "Giorgio Armani",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/armani-code.webp"],
+      description: "Eau de toilette. El frasco dice Armani Code. La caja dice Giorgio Armani, eau de toilette y vaporisateur rechargeable.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "bharara-chocolate",
+      slug: "bharara-chocolate",
+      name: "Chocolate",
+      brand: "Bharara",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bharara-chocolate.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Bharara Chocolate, eau de parfum y 100 ml, 3.4 fl oz. La foto trae un atomizador de viaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "glacier-bella",
+      slug: "glacier-bella",
+      name: "Glacier Bella",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/glacier-bella.webp"],
+      description: "El frasco y el envase cilíndrico dicen Glacier Bella, Maison Alhambra y eau de parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "victorioso-nero",
+      slug: "victorioso-nero",
+      name: "Victorioso Nero",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/victorioso-nero.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Victorioso Nero y Maison Alhambra. La caja imprime e 100 ml y 3.4 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "your-touch",
+      slug: "your-touch",
+      name: "Your Touch",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/your-touch.webp"],
+      description: "Eau de parfum. El frasco y la caja dicen Your Touch, For Women y Maison Alhambra. El lateral imprime 120 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "jorge-di-profumo-aqua",
+      slug: "jorge-di-profumo-aqua",
+      name: "Jorge Di Profumo Aqua",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/jorge-di-profumo-aqua.webp"],
+      description: "El frasco dice Jorge Di Profumo, Aqua y Maison Alhambra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "bharara-queen",
+      slug: "bharara-queen",
+      name: "Queen",
+      brand: "Bharara",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bharara-queen.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Bharara Queen, eau de parfum y 100 ml, 3.4 fl oz. La caja trae un atomizador de viaje. Game of Spades Queen es otro perfume.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "boss-bottled",
+      slug: "boss-bottled",
+      name: "Boss Bottled",
+      brand: "Hugo Boss",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/boss-bottled.webp"],
+      description: "El frasco dice Boss y Hugo Boss. La caja dice Boss Bottled y 100 ml. El set Boss Bottled ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "set-fakhar",
+      slug: "set-fakhar",
+      name: "Set Fakhar",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/set-fakhar.webp"],
+      description: "Set Fakhar: perfume, bruma para el cabello y spray perfumado de 200 ml (6.67 fl oz). El spray dice Pride of Lattafa. El Fakhar de 100 ml y Fakhar Gold ya están, solos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "abraaj",
+      slug: "abraaj",
+      name: "Abraaj",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/abraaj.webp"],
+      description: "Aceite concentrado de 20 ml, 0.67 fl oz. La caja dice Abraaj, Lattafa y Pure Concentrated Oil.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Aceite concentrado",
+      tags: []
+    },
+  {
+      id: "pink-shimmer-secret-intense",
+      slug: "pink-shimmer-secret-intense",
+      name: "Pink Shimmer Secret Intense",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/pink-shimmer-secret-intense.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Pink Shimmer Secret Intense y Maison Alhambra. La caja imprime 100 ml y 3.4 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "montaigne-coco",
+      slug: "montaigne-coco",
+      name: "Montaigne Coco",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/montaigne-coco.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Montaigne Coco y Maison Alhambra. La caja imprime eau de parfum y 3.4 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "emaan",
+      slug: "emaan",
+      name: "Emaan",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/emaan.webp"],
+      description: "La caja dice Emaan, Lattafa y eau de parfum. El frasco es de terciopelo azul.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "maahir",
+      slug: "maahir",
+      name: "Maahir",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/maahir.webp"],
+      description: "El frasco dice Maahir y Lattafa. La tapa es una cabeza de caballo. Maahir Legacy y el spray Maahir ya están en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ajwad-pink-to-pink",
+      slug: "ajwad-pink-to-pink",
+      name: "Ajwad Pink to Pink",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/ajwad-pink-to-pink.webp"],
+      description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad, Pink to Pink y Lattafa. La caja imprime 60 ml y 2.04 fl oz. El Ajwad de 60 ml y el spray Pink to Pink ya están, solos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "armaf-niche-oud",
+      slug: "armaf-niche-oud",
+      name: "Niche Oud",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/armaf-niche-oud.webp"],
+      description: "El frasco, el tubo y la caja dicen Armaf Niche Oud.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "red-sky",
+      slug: "red-sky",
+      name: "Red Sky",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/red-sky.webp"],
+      description: "El frasco y la caja dicen Armaf y Red Sky. La bandeja interior dice eau de parfum. Blue Sky es otro de la línea.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 105,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "check-mate-queen",
+      slug: "check-mate-queen",
+      name: "Check Mate Queen",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/check-mate-queen.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Check Mate, Queen, eau de parfum y e 100 ml, 3.4 fl oz. La tapa es una reina de ajedrez.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "the-only-one",
+      slug: "the-only-one",
+      name: "The Only One",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/the-only-one.webp"],
+      description: "El frasco dice Dolce & Gabbana y The Only One. La caja dice eau de parfum intense. Galaxy Concept Only One es otro producto.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "omnia-crystalline",
+      slug: "omnia-crystalline",
+      name: "Omnia Crystalline",
+      brand: "Bvlgari",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/omnia-crystalline.webp"],
+      description: "Eau de toilette de 100 ml. El frasco y la caja dicen Bvlgari y Omnia Crystalline. La caja imprime eau de toilette y 3.4 fl oz. Omnia Amethyst ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "aura",
+      slug: "aura",
+      name: "Aura",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/aura.webp"],
+      description: "Eau de parfum. El frasco dice Aura y eau de parfum. La caja dice Armaf Aura.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
     }
 ];

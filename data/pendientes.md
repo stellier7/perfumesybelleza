@@ -9,6 +9,7 @@ El primero y el último son los que quedaron cargados. Las fotos son las que sub
 - Lote 3: subiste 127 fotos, cargué 123. Empieza en Khamrah Dukhan y termina en The Pride Rose Oud.
 - Lote 4: subiste 96 fotos, cargué 91. Empieza en Le Parfait Panache y termina en Qaed Al Fursan Untamed.
 - Lote 5: subiste 81 fotos, cargué 76. Empieza en Lionheart Woman y termina en Set Dylan Blue.
+- Lote 6: subiste 48 fotos, cargué 41. Empieza en Le Femme y termina en Aura.
 
 Cargué 65 productos a partir de las fotos. Llegaron 68 archivos y 3 eran la misma foto dos veces (Eros Energy, Omnia Amethyst y Le Parfait Mon Amour).
 
@@ -2504,3 +2505,248 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 - Versace · Set · tamaño por confirmar · mujer · designer
 - El título dice eau de parfum de 100 ml, gel de baño de 100 ml y crema corporal de 100 ml. Ninguna pieza imprime los mililitros. El tubo de crema dice body lotion.
+
+## Lote 6
+
+Llegaron 48 fotos. Cargué 41 productos.
+
+- No cargué otra vez Valentina. Ya está como valentina, eau de parfum de 80 ml.
+- No cargué otra vez CK One Shock for her. Ya está como ck-one-shock-for-her, eau de toilette de 100 ml.
+- Bharara Queen llegó dos veces. Lo cargué una sola vez.
+- No cargué otra vez Gossip. Ya está como galaxy-concept-gossip, perfume en spray.
+- No cargué otra vez Excellus. Ya está como excellus, eau de parfum de 100 ml.
+- No cargué otra vez Private Key To My Love. Ya está como private-key-to-my-love, extrait de parfum de 100 ml.
+- No cargué otra vez Le Parfait Azure. Ya está como le-parfait-azure, eau de parfum de 100 ml.
+
+Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no son precios.
+
+### Le Femme (le-femme)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- Es la línea Le Femme. Lo dejé en mujer aunque el estuche no imprime pour femme.
+
+### Royal Sapphire (royal-sapphire)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El frente no los imprime con claridad.
+
+### Derby Club House Gold (derby-club-house-gold)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Amber Oud White Edition (amber-oud-white-edition)
+
+- Al Haramain · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum está en el título. El envase imprime 100 ml.
+
+### Viking Kashmir (viking-kashmir)
+
+- Bharara · Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El parfum y los 100 ml están en el título. El atomizador de viaje no imprime mililitros.
+
+### Le Désir (galaxy-concept-le-desir)
+
+- Galaxy Concept · Perfume en spray · tamaño por confirmar · hombre · beauty
+- Falta el tamaño en ml.
+
+### Angel (angel)
+
+- Mugler · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+
+### Viking Dubai (viking-dubai)
+
+- Bharara · Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El parfum y los 100 ml están en el título. El atomizador de viaje no imprime mililitros.
+
+### Khanjar (khanjar)
+
+- Niche Emarati · Eau de Parfum · 85 ml · unisex · arabic
+- El género no está en la foto.
+- Los 85 ml y el eau de parfum están en el título. El envase no los imprime con claridad.
+
+### Infini Rose (infini-rose)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Ahal Al Fakhar (ahal-al-fakhar)
+
+- Asdaaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El frente no los imprime.
+
+### 24 Carat White Gold (24-carat-white-gold)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- En el frasco sale 9999.9. No es un precio.
+
+### 212 VIP Are You on the List? (212-vip-are-you-on-the-list)
+
+- Carolina Herrera · Eau de Parfum · 125 ml · unisex · designer
+- El género no está en la foto.
+- El eau de parfum y los 125 ml están en el título. El envase no los imprime en las caras visibles.
+
+### 24 Carat Pure Gold (24-carat-pure-gold)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- En el frasco sale 9999.9. No es un precio.
+
+### Set Yara Tous (set-yara-tous)
+
+- Lattafa · Set · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- Los 100 ml del perfume y los 50 ml de la bruma están en el título. El envase del perfume y el de la bruma no los imprimen.
+
+### The Lion's Club Féroce (the-lions-club-feroce)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El envase no imprime los mililitros.
+
+### Fancy Love (fancy-love)
+
+- Jessica Simpson · Bruma corporal · 236 ml · unisex · designer
+- El género no está en la foto.
+- Al fondo hay otros frascos. No los cargué.
+
+### Young Love (young-love)
+
+- The 1001 Senses · Bruma corporal · 250 ml · unisex · beauty
+- El género no está en la foto.
+
+### Crystal Petals (crystal-petals)
+
+- Airbody · Bruma corporal · 250 ml · unisex · beauty
+- El género no está en la foto.
+
+### Charm Romantic (charm-romantic)
+
+- Airbody · Bruma corporal · 250 ml · unisex · beauty
+- El género no está en la foto.
+
+### Code (armani-code)
+
+- Giorgio Armani · Eau de Toilette · 75 ml · unisex · designer
+- El género no está en la foto.
+- Los 75 ml están en el título. El envase no los imprime.
+
+### Chocolate (bharara-chocolate)
+
+- Bharara · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El atomizador de viaje no imprime mililitros.
+
+### Glacier Bella (glacier-bella)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- Los 100 ml están en el título. El envase no los imprime con claridad.
+
+### Victorioso Nero (victorioso-nero)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Your Touch (your-touch)
+
+- Maison Alhambra · Eau de Parfum · 120 ml · mujer · arabic
+- El lateral dice 120 ml. El frente dice 3.4 fl oz y el título dice 100 ml. Dejé 120 ml, que es el número en mililitros.
+
+### Jorge Di Profumo Aqua (jorge-di-profumo-aqua)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El frente no los imprime.
+
+### Queen (bharara-queen)
+
+- Bharara · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El atomizador de viaje no imprime mililitros.
+
+### Boss Bottled (boss-bottled)
+
+- Hugo Boss · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+- El eau de parfum está en el título. La caja imprime Bottled y 100 ml.
+
+### Set Fakhar (set-fakhar)
+
+- Lattafa · Set · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- Los 100 ml del perfume y el tamaño de la bruma están en el título. Esos envases no los imprimen.
+
+### Abraaj (abraaj)
+
+- Lattafa · Aceite concentrado · 20 ml · unisex · arabic
+- El género no está en la foto.
+
+### Pink Shimmer Secret Intense (pink-shimmer-secret-intense)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Montaigne Coco (montaigne-coco)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Emaan (emaan)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- Los 100 ml están en el título. El envase no los imprime.
+
+### Maahir (maahir)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El frasco no los imprime.
+
+### Ajwad Pink to Pink (ajwad-pink-to-pink)
+
+- Lattafa · Eau de Parfum · 60 ml · unisex · arabic
+- El género no está en la foto.
+- El título dice 80 ml. La caja imprime 60 ml y 2.04 fl oz.
+
+### Niche Oud (armaf-niche-oud)
+
+- Armaf · Eau de Parfum · 90 ml · unisex · arabic
+- El género no está en la foto.
+- Los 90 ml están en el título. El eau de parfum se lee en el lateral de la caja, no el tamaño.
+
+### Red Sky (red-sky)
+
+- Armaf · Eau de Parfum · 105 ml · unisex · arabic
+- El género no está en la foto.
+- Los 105 ml están en el título. La caja no los imprime.
+
+### Check Mate Queen (check-mate-queen)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### The Only One (the-only-one)
+
+- Dolce & Gabbana · Eau de Parfum · tamaño por confirmar · unisex · designer
+- El género no está en la foto.
+- Falta el tamaño en ml.
+
+### Omnia Crystalline (omnia-crystalline)
+
+- Bvlgari · Eau de Toilette · 100 ml · unisex · designer
+- El género no está en la foto.
+
+### Aura (aura)
+
+- Armaf · Eau de Parfum · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- Falta el tamaño en ml.
