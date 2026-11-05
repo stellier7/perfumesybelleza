@@ -9796,5 +9796,365 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: []
+    },
+  {
+      id: "magnate-250",
+      slug: "magnate-250",
+      name: "250 Pour Femme",
+      brand: "Magnate",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/magnate-250.webp"],
+      description: "Eau de parfum de 50 ml. El frasco y la caja dicen Magnate Collection, 250 Pour Femme, e 50 ml, 80% vol y 1.7 fl oz. La foto dice «Asimila: Good Girl / Carolina Herrera».",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "sara-princess",
+      slug: "sara-princess",
+      name: "Princess",
+      brand: "Sara",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sara-princess.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Sara Princess, eau de parfum y 100 ml, 3.3 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "magnate-19",
+      slug: "magnate-19",
+      name: "19 Pour Homme",
+      brand: "Magnate",
+      type: "arabic",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/magnate-19.webp"],
+      description: "Eau de toilette de 50 ml. El frasco y la caja dicen Magnate Collection, 19 pour homme y e 50 ml, 1.7 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "carolina-herrera-new-york",
+      slug: "carolina-herrera-new-york",
+      name: "New York",
+      brand: "Carolina Herrera",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/carolina-herrera-new-york.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Carolina Herrera y eau de parfum. La caja dice Carolina Herrera New York, e 100 ml y 3.4 fl oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "club-de-nuit-oud",
+      slug: "club-de-nuit-oud",
+      name: "Club de Nuit Oud",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/club-de-nuit-oud.webp"],
+      description: "Parfum de 105 ml. El frasco dice Armaf, Club de Nuit Oud, parfum y e 105 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 105,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "the-dome-millennium",
+      slug: "the-dome-millennium",
+      name: "The Dome Millennium",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/the-dome-millennium.webp"],
+      description: "El frasco y la caja dicen The Dome Collection, Millennium y Hamidi.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "the-dome-astrodome",
+      slug: "the-dome-astrodome",
+      name: "The Dome Astrodome",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/the-dome-astrodome.webp"],
+      description: "El frasco y la caja dicen The Dome Collection, Astrodome y Hamidi.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "laila",
+      slug: "laila",
+      name: "Laila",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/laila.webp"],
+      description: "Aceite concentrado de 20 ml. La caja dice Hamidi, Laila y Pure Concentrated Oil.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Aceite concentrado",
+      tags: []
+    },
+  {
+      id: "qais",
+      slug: "qais",
+      name: "Qais",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/qais.webp"],
+      description: "Aceite concentrado de 20 ml. La caja dice Hamidi, Qais y Pure Concentrated Oil.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Aceite concentrado",
+      tags: []
+    },
+  {
+      id: "asal",
+      slug: "asal",
+      name: "Asal",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/asal.webp"],
+      description: "La caja dice Hamidi, Asal y Concentrated Perfume Oil.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Aceite concentrado",
+      tags: []
+    },
+  {
+      id: "durriyah",
+      slug: "durriyah",
+      name: "Durriyah",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/durriyah.webp"],
+      description: "Aceite concentrado de 12 ml. La caja dice Hamidi, Durriyah, Pure Concentrated Oil y 12 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 12,
+      inStock: true,
+      category: "Aceite concentrado",
+      tags: []
+    },
+  {
+      id: "privee-no-11",
+      slug: "privee-no-11",
+      name: "Privee No. 11",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/privee-no-11.webp"],
+      description: "Eau de parfum. El frasco y la caja dicen Privee No. 11 y eau de parfum. El fondo dice Armaf. La foto trae un atomizador de viaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "privee-no-10",
+      slug: "privee-no-10",
+      name: "Privee No. 10",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/privee-no-10.webp"],
+      description: "Eau de parfum. El frasco, la caja y el atomizador dicen Privee No. 10 y eau de parfum. El fondo dice Armaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "the-dome-taj",
+      slug: "the-dome-taj",
+      name: "The Dome Taj",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/the-dome-taj.webp"],
+      description: "El frasco y la caja dicen The Dome Collection, Taj y Hamidi.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Perfume",
+      tags: []
+    },
+  {
+      id: "fusion-amity",
+      slug: "fusion-amity",
+      name: "Fusion Amity",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fusion-amity.webp"],
+      description: "El frasco y la caja dicen Hamidi, Fusion y Amity.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Perfume",
+      tags: []
+    },
+  {
+      id: "merneith",
+      slug: "merneith",
+      name: "Merneith",
+      brand: "Hamidi",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/merneith.webp"],
+      description: "Parfum. El frasco dice Hamidi, Merneith, Legacy Collection y parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "perry-ellis-aqua",
+      slug: "perry-ellis-aqua",
+      name: "Aqua",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/perry-ellis-aqua.webp"],
+      description: "Body spray desodorante. El envase dice Perry Ellis Aqua, deodorizing body spray y 6 oz, 170 g. Galaxy Concept Aqua es otro producto.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "vince-camuto-bella",
+      slug: "vince-camuto-bella",
+      name: "Bella",
+      brand: "Vince Camuto",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vince-camuto-bella.webp"],
+      description: "Bruma de 236 ml, 8 fl oz. El frasco dice Bella, Vince Camuto, Fragrance Mist y Brume Parfumée. El título Splash no es la marca. Ciao es otra bruma de la misma marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
     }
 ];

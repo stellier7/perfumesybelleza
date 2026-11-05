@@ -10,6 +10,7 @@ El primero y el último son los que quedaron cargados. Las fotos son las que sub
 - Lote 4: subiste 96 fotos, cargué 91. Empieza en Le Parfait Panache y termina en Qaed Al Fursan Untamed.
 - Lote 5: subiste 81 fotos, cargué 76. Empieza en Lionheart Woman y termina en Set Dylan Blue.
 - Lote 6: subiste 48 fotos, cargué 41. Empieza en Le Femme y termina en Aura.
+- Lote 7: subiste 18 fotos, cargué 18. Empieza en 250 Pour Femme y termina en Bella.
 
 Cargué 65 productos a partir de las fotos. Llegaron 68 archivos y 3 eran la misma foto dos veces (Eros Energy, Omnia Amethyst y Le Parfait Mon Amour).
 
@@ -2750,3 +2751,111 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 - Armaf · Eau de Parfum · tamaño por confirmar · unisex · arabic
 - El género no está en la foto.
 - Falta el tamaño en ml.
+
+## Lote 7
+
+Llegaron 18 fotos. Cargué 18 productos.
+
+Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no son precios.
+
+### 250 Pour Femme (magnate-250)
+
+- Magnate · Eau de Parfum · 50 ml · mujer · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Princess (sara-princess)
+
+- Sara · Eau de Parfum · 100 ml · unisex · beauty
+- El género no está en la foto.
+- La foto no imprime la casa.
+- El título dice eau de toilette. El frasco imprime eau de parfum.
+
+### 19 Pour Homme (magnate-19)
+
+- Magnate · Eau de Toilette · 50 ml · hombre · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### New York (carolina-herrera-new-york)
+
+- Carolina Herrera · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+- El pour femme está en el título. La caja y el frasco no lo imprimen.
+
+### Club de Nuit Oud (club-de-nuit-oud)
+
+- Armaf · Parfum · 105 ml · unisex · arabic
+- El género no está en la foto.
+
+### The Dome Millennium (the-dome-millennium)
+
+- Hamidi · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El frente no los imprime.
+
+### The Dome Astrodome (the-dome-astrodome)
+
+- Hamidi · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El eau de parfum y los 100 ml están en el título. El frente no los imprime.
+
+### Laila (laila)
+
+- Hamidi · Aceite concentrado · 20 ml · unisex · arabic
+- El género no está en la foto.
+
+### Qais (qais)
+
+- Hamidi · Aceite concentrado · 20 ml · unisex · arabic
+- El género no está en la foto.
+
+### Asal (asal)
+
+- Hamidi · Aceite concentrado · 20 ml · unisex · arabic
+- El género no está en la foto.
+- Los 20 ml están en el título. El frente no los imprime.
+
+### Durriyah (durriyah)
+
+- Hamidi · Aceite concentrado · 12 ml · unisex · arabic
+- El género no está en la foto.
+
+### Privee No. 11 (privee-no-11)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- Los 100 ml están en el título. El frasco y el atomizador no imprimen mililitros.
+
+### Privee No. 10 (privee-no-10)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- Los 100 ml están en el título. El frasco y el atomizador no imprimen mililitros.
+
+### The Dome Taj (the-dome-taj)
+
+- Hamidi · Perfume · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- No se lee el tamaño ni la concentración.
+
+### Fusion Amity (fusion-amity)
+
+- Hamidi · Perfume · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- No se lee el tamaño ni la concentración.
+
+### Merneith (merneith)
+
+- Hamidi · Parfum · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- Falta el tamaño en ml.
+
+### Aqua (perry-ellis-aqua)
+
+- Perry Ellis · Desodorante · tamaño por confirmar · unisex · designer
+- El género no está en la foto.
+- El envase trae 6 oz y 170 g. No trae mililitros.
+
+### Bella (vince-camuto-bella)
+
+- Vince Camuto · Bruma corporal · 236 ml · unisex · beauty
+- El género no está en la foto.
