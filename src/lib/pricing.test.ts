@@ -1,17 +1,23 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { formatPrice, publicPrice } from "./pricing";
+import { formatPrice, publicPrice, shelfPrice } from "./pricing";
 
-test("aplica el margen y redondea a la decena", () => {
-  assert.equal(publicPrice(800), 1200);
-  assert.equal(publicPrice(833), 1250);
-  assert.equal(publicPrice(1860), 2790);
+test("aplica el margen del tipo y redondea a la decena", () => {
+  assert.equal(publicPrice(1860, "designer"), 2510);
+  assert.equal(publicPrice(460, "arabic"), 920);
+  assert.equal(publicPrice(120, "beauty"), 200);
+  assert.equal(publicPrice(40, "beauty"), 120);
   assert.equal(publicPrice(0), 0);
   assert.equal(publicPrice(-10), 0);
 });
 
 test("un costo pequeño no queda en cero después del redondeo", () => {
   assert.equal(publicPrice(1), 10);
+});
+
+test("un precio escrito a mano reemplaza el margen", () => {
+  assert.equal(shelfPrice({ cost: 460, type: "arabic", price: 750 }), 750);
+  assert.equal(shelfPrice({ cost: 460, type: "arabic" }), 920);
 });
 
 test("formatea lempiras con miles y dos decimales", () => {

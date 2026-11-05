@@ -134,6 +134,7 @@ async function toRawProduct(
     type: product.type,
     gender: product.gender,
     cost: product.cost,
+    price: product.listPrice && product.listPrice > 0 ? product.listPrice : undefined,
     images,
     description: product.description,
     notes: product.notes,
@@ -161,7 +162,7 @@ async function main(): Promise<void> {
   await mkdir(path.dirname(dataPath), { recursive: true });
   await writeFile(dataPath, serializeProducts(raw));
   console.log(`Listo. ${raw.length} productos importados desde ${label} en data/products.ts.`);
-  console.log("Las imágenes quedaron en public/products/. El precio público usa PRICE_MARKUP.");
+  console.log("Las imágenes quedaron en public/products/. El precio público usa el margen del tipo, o la columna precio si viene llena.");
 }
 
 main().catch((error: unknown) => {

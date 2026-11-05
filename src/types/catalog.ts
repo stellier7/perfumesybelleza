@@ -18,7 +18,10 @@ export type RawProduct = {
   brand: string;
   type: ProductType;
   gender: Gender;
+  /** Precio mayorista. No sale del servidor. */
   cost: number;
+  /** Precio de venta fijado a mano. Si falta, se calcula con el margen del tipo. */
+  price?: number;
   images: string[];
   description: string;
   notes: FragranceNotes;

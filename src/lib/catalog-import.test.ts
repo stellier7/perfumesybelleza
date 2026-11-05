@@ -9,10 +9,25 @@ test("lee un CSV con el precio como costo", () => {
   ].join("\n");
   const [product] = parseCatalogCsv(csv);
   assert.equal(product?.cost, 1250);
+  assert.equal(product?.listPrice, null);
   assert.equal(product?.type, "arabic");
   assert.equal(product?.gender, "hombre");
   assert.deepEqual(product?.inspiredBy, ["bleu-de-chanel"]);
   assert.deepEqual(product?.imageSources, ["/tmp/tag.jpg"]);
+});
+
+test("separa el precio mayorista del precio de venta", () => {
+  const csv = [
+    "nombre,marca,precio mayorista,precio,categoria,tipo,salida,corazon,fondo",
+    "Tag Him,Armaf,460,750,Eau de Parfum,arabe,Bergamota,Jengibre,Cedro",
+    "Yara,Lattafa,440,,Eau de Parfum,arabic,,,",
+  ].join("\n");
+  const [custom, automatic] = parseCatalogCsv(csv);
+  assert.equal(custom?.cost, 460);
+  assert.equal(custom?.listPrice, 750);
+  assert.deepEqual(custom?.notes.top, ["Bergamota"]);
+  assert.equal(automatic?.cost, 440);
+  assert.equal(automatic?.listPrice, null);
 });
 
 test("lee productos desde JSON-LD y detecta una página vacía", () => {

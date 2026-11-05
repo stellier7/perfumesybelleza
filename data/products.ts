@@ -3,9 +3,9 @@ import type { RawProduct } from "../src/types/catalog";
 
 /**
  * Inventario de la tienda.
- * `cost` es el costo de compra y no debe usarse en componentes de cliente.
+ * `cost` es el precio mayorista y no debe usarse en componentes de cliente.
+ * `price`, si está, es el precio de venta. Si falta, se calcula con el margen del tipo.
  * `inStock` es la única fuente de existencia. Cámbialo aquí o con `npm run stock`.
- * El precio público se calcula en el servidor con PRICE_MARKUP.
  */
 export const rawProducts: RawProduct[] = [
   {

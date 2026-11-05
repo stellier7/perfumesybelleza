@@ -8,6 +8,7 @@ export type ImportedProduct = {
   name: string;
   brand: string;
   cost: number;
+  listPrice: number | null;
   imageSources: string[];
   category: string;
   type: ProductType;
@@ -126,9 +127,15 @@ const HEADER_MAP: Record<string, string> = {
   nombre: "name",
   brand: "brand",
   marca: "brand",
-  price: "price",
-  precio: "price",
-  costo: "price",
+  price: "cost",
+  costo: "cost",
+  cost: "cost",
+  wholesale: "cost",
+  "precio mayorista": "cost",
+  preciomayorista: "cost",
+  "precio publico": "listPrice",
+  "precio de venta": "listPrice",
+  "precio venta": "listPrice",
   image: "image",
   imagen: "image",
   "image path": "image",
@@ -152,21 +159,28 @@ const HEADER_MAP: Record<string, string> = {
   tags: "tags",
   etiquetas: "tags",
   top: "top",
+  salida: "top",
   heart: "heart",
   corazon: "heart",
   base: "base",
   fondo: "base",
 };
 
-function headerKey(value: string): string {
+function headerKey(value: string, headers: string[]): string {
   const folded = fold(value);
+  if (folded === "precio") {
+    const hasWholesale = headers.some((header) =>
+      ["precio mayorista", "preciomayorista", "costo", "cost", "price", "wholesale"].includes(fold(header)),
+    );
+    return hasWholesale ? "listPrice" : "cost";
+  }
   return HEADER_MAP[folded] ?? folded;
 }
 
 export function parseCatalogCsv(text: string): ImportedProduct[] {
   const rows = parseCsv(text);
   if (rows.length < 2) return [];
-  const headers = rows[0].map(headerKey);
+  const headers = rows[0].map((header) => headerKey(header, rows[0]));
   return rows.slice(1).flatMap((row) => {
     const record: Record<string, string> = {};
     headers.forEach((header, index) => {
@@ -175,7 +189,7 @@ export function parseCatalogCsv(text: string): ImportedProduct[] {
     const name = record.name?.trim() ?? "";
     const brand = record.brand?.trim() ?? "";
     const type = parseType(record.type ?? "");
-    const cost = parsePrice(record.price ?? "");
+    const cost = parsePrice(record.cost ?? "");
     if (!name || !brand || !type || cost === null) return [];
     const size = record.size ? Number(record.size.replace(/[^\d.]/g, "")) : null;
     return [
@@ -183,6 +197,7 @@ export function parseCatalogCsv(text: string): ImportedProduct[] {
         name,
         brand,
         cost,
+        listPrice: parsePrice(record.listPrice ?? ""),
         imageSources: splitList(record.image ?? ""),
         category: record.category?.trim() || "General",
         type,
@@ -254,6 +269,7 @@ function productFromJsonLd(node: Record<string, unknown>): ImportedProduct | nul
     name,
     brand: brand || "Sin marca",
     cost,
+    listPrice: null,
     imageSources: images,
     category,
     type: guessed,
@@ -312,6 +328,7 @@ function extractCards($: CheerioRoot): ImportedProduct[] {
       name,
       brand,
       cost,
+      listPrice: null,
       imageSources: image ? [image] : [],
       category: card.find(".category, .categoria").first().text().trim() || "General",
       type: "designer",

@@ -1,5 +1,5 @@
 import { TYPE_LABEL, GENDER_LABEL } from "@/config";
-import { publicPrice } from "@/lib/pricing";
+import { shelfPrice } from "@/lib/pricing";
 import { fold, slugify } from "@/lib/text";
 import type {
   FragranceNotes,
@@ -41,7 +41,7 @@ function toPublicBase(raw: RawProduct): PublicProduct {
     brand: raw.brand,
     type: raw.type,
     gender: raw.gender,
-    price: publicPrice(raw.cost),
+    price: shelfPrice(raw),
     images: raw.images,
     description: raw.description,
     notes: raw.notes,

@@ -15,7 +15,15 @@ Copia `.env.example` a `.env.local` y completa la URL del sitio y, si vas a medi
 
 ## Precio
 
-`cost` en `data/products.ts` es el costo de compra. El precio de la tienda se calcula en el servidor con `PRICE_MARKUP` y `PRICE_ROUND_TO` en `src/config.ts` (margen 1.5 y redondeo a la decena). El costo no se envía al navegador.
+`cost` en `data/products.ts` es el precio mayorista. No se envía al navegador.
+
+Si el producto no trae `price`, el precio de venta se calcula en el servidor con `MARKUP_BY_TYPE` y `MIN_PROFIT_BY_TYPE` en `src/config.ts`, y se redondea a la decena (`PRICE_ROUND_TO`):
+
+- Diseñador: 35% sobre el mayorista.
+- Árabe: el doble del mayorista, con al menos L 120 de ganancia.
+- Belleza: 70% sobre el mayorista, con al menos L 80 de ganancia.
+
+Si `price` está puesto, ese es el precio de venta y el margen no se aplica. También se redondea a la decena.
 
 ## Existencia
 
@@ -29,12 +37,12 @@ npm run stock -- tag-him off
 
 ## Importar un CSV
 
-Columnas obligatorias: `name`, `brand`, `price`, `image path`, `category`, `type`.
+La plantilla está en `data/catalogo-plantilla.csv`. Columnas obligatorias: `nombre`, `marca`, `precio mayorista`, `categoria`, `tipo`.
 
-`price` es el costo. `type` es `designer`, `arabic` o `beauty`. Opcionales: `gender`, `description`, `size`, `stock`, `inspiredBy`, `tags`, `top`, `heart`, `base`.
+`precio mayorista` es lo que pagas. `precio` es opcional: si lo dejas vacío, la tienda usa el margen del tipo. `tipo` es `designer`, `arabic` o `beauty` (también acepta diseñador, árabe y belleza). Opcionales: `ruta de imagen`, `genero`, `descripcion`, `ml`, `stock`, `inspirado en`, `etiquetas`, `salida`, `corazon`, `fondo`.
 
 ```bash
-npm run import:catalog -- --csv data/catalogo.ejemplo.csv
+npm run import:catalog -- --csv data/catalogo-plantilla.csv
 ```
 
 Si el slug ya existe, se conserva `inStock` salvo que el CSV traiga la columna `stock`. Las imágenes se copian a `public/products/` en WebP, con el nombre del slug.

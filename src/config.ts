@@ -1,7 +1,25 @@
 import type { Gender, ProductType } from "@/types/catalog";
 
+/** Respaldo si un producto no trae tipo. El margen real está en MARKUP_BY_TYPE. */
 export const PRICE_MARKUP = 1.5;
 export const PRICE_ROUND_TO = 10;
+
+/**
+ * Multiplicador sobre el precio mayorista, por tipo.
+ * Diseñador queda cerca del precio de calle. El árabe aguanta más porque se compara con el diseñador, no con el costo. Belleza sube un poco y, si el frasco es barato, MIN_PROFIT_BY_TYPE evita venderlo casi al costo.
+ */
+export const MARKUP_BY_TYPE: Record<ProductType, number> = {
+  designer: 1.35,
+  arabic: 2,
+  beauty: 1.7,
+};
+
+/** Ganancia mínima en lempiras, sumada al mayorista, antes de redondear. */
+export const MIN_PROFIT_BY_TYPE: Record<ProductType, number> = {
+  designer: 0,
+  arabic: 120,
+  beauty: 80,
+};
 
 export const PAGE_SIZE = 12;
 
