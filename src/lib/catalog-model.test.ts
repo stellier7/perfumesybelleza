@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildCatalog, comparisonPairs, parseComparisonSlug } from "./catalog-model.ts";
-import { searchCatalog } from "./search.ts";
-import { toSearchRecord } from "./catalog-model.ts";
-import type { RawProduct } from "../types/catalog.ts";
+import { buildCatalog, comparisonPairs, parseComparisonSlug } from "./catalog-model";
+import { searchCatalog } from "./search";
+import { toSearchRecord } from "./catalog-model";
+import type { RawProduct } from "../types/catalog";
 
 function product(overrides: Partial<RawProduct> & Pick<RawProduct, "id" | "name" | "type">): RawProduct {
   return {

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { extractProductsFromHtml, htmlLooksLikeEmptyShell, parseCatalogCsv } from "./catalog-import.ts";
+import { extractProductsFromHtml, htmlLooksLikeEmptyShell, parseCatalogCsv } from "./catalog-import";
 
 test("lee un CSV con el precio como costo", () => {
   const csv = [

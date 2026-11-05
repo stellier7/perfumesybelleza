@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { listStock, setProductStock, type StockMode } from "../src/lib/stock-file.ts";
+import { listStock, setProductStock, type StockMode } from "../src/lib/stock-file";
 
 const filePath = path.join(process.cwd(), "data", "products.ts");
 

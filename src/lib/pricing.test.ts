@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { formatPrice, publicPrice } from "./pricing.ts";
+import { formatPrice, publicPrice } from "./pricing";
 
 test("aplica el margen y redondea a la decena", () => {
   assert.equal(publicPrice(800), 1200);

@@ -7,11 +7,11 @@ import {
   htmlLooksLikeEmptyShell,
   parseCatalogCsv,
   type ImportedProduct,
-} from "../src/lib/catalog-import.ts";
-import { listStock } from "../src/lib/stock-file.ts";
-import { serializeProducts } from "../src/lib/serialize-catalog.ts";
-import { slugify } from "../src/lib/text.ts";
-import type { RawProduct } from "../src/types/catalog.ts";
+} from "../src/lib/catalog-import";
+import { listStock } from "../src/lib/stock-file";
+import { serializeProducts } from "../src/lib/serialize-catalog";
+import { slugify } from "../src/lib/text";
+import type { RawProduct } from "../src/types/catalog";
 
 function loadEnvLocal(): void {
   const envPath = path.join(process.cwd(), ".env.local");

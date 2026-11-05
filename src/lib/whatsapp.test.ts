@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildOrderMessage, whatsappUrl } from "./whatsapp.ts";
+import { buildOrderMessage, whatsappUrl } from "./whatsapp";
 
 test("el pedido incluye piezas, envío, total, datos y la transferencia", () => {
   const message = buildOrderMessage({

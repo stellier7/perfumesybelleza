@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { serializeProducts } from "./serialize-catalog.ts";
-import { listStock, setProductStock } from "./stock-file.ts";
-import type { RawProduct } from "../types/catalog.ts";
+import { serializeProducts } from "./serialize-catalog";
+import { listStock, setProductStock } from "./stock-file";
+import type { RawProduct } from "../types/catalog";
 
 const sample: RawProduct = {
   id: "tag-him",
