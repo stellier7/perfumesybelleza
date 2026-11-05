@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TYPE_LABEL } from "@/config";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
 export function ProductCard({ product }: { product: PublicProduct }) {
@@ -35,7 +35,11 @@ export function ProductCard({ product }: { product: PublicProduct }) {
           <p className="mt-2 text-sm text-muted">Inspirado en {inspired.name}</p>
         ) : null}
         <p className="mt-2 text-sm font-medium">
-          {product.isReference ? "Referencia de aroma" : formatPrice(product.price)}
+          {product.isReference
+            ? "Referencia de aroma"
+            : hasShelfPrice(product.price)
+              ? formatPrice(product.price)
+              : "Precio por confirmar"}
         </p>
       </div>
     </article>

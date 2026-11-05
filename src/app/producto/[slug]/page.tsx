@@ -10,7 +10,7 @@ import { Shell } from "@/components/shell";
 import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
 import { comparisonSlug } from "@/lib/catalog-model";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
 type ProductParams = { params: Promise<{ slug: string }> };
@@ -80,7 +80,9 @@ async function ProductScreen({ params }: ProductParams) {
             </p>
           ) : (
             <>
-              <p className="mt-6 font-serif text-4xl">{formatPrice(product.price)}</p>
+              <p className="mt-6 font-serif text-4xl">
+                {hasShelfPrice(product.price) ? formatPrice(product.price) : "Precio por confirmar"}
+              </p>
               <p className="mt-1 text-sm text-muted">
                 {product.sizeMl ? `${product.sizeMl} ml` : "Tamaño por confirmar"}
                 {product.inStock ? "" : " · Agotado"}
@@ -89,19 +91,23 @@ async function ProductScreen({ params }: ProductParams) {
               <ProductActions product={purchase} />
             </>
           )}
-          <div className="mt-6 grid grid-cols-2 gap-4">
-            <RatingMeter label="Duración estimada" value={product.longevity} />
-            <RatingMeter label="Estela estimada" value={product.projection} />
-          </div>
+          {product.longevity || product.projection ? (
+            <div className="mt-6 grid grid-cols-2 gap-4">
+              <RatingMeter label="Duración estimada" value={product.longevity} />
+              <RatingMeter label="Estela estimada" value={product.projection} />
+            </div>
+          ) : null}
         </div>
       </div>
 
-      <section className="mt-10">
-        <h2 className="font-serif text-3xl">Notas</h2>
-        <div className="mt-4">
-          <NotesPyramid notes={product.notes} />
-        </div>
-      </section>
+      {hasNotes(product) ? (
+        <section className="mt-10">
+          <h2 className="font-serif text-3xl">Notas</h2>
+          <div className="mt-4">
+            <NotesPyramid notes={product.notes} />
+          </div>
+        </section>
+      ) : null}
 
       {product.type === "arabic" && product.inspiredBy.length > 0 ? (
         <section className="mt-12">
@@ -164,6 +170,10 @@ function toPurchase(product: PublicProduct): PurchaseTarget {
   };
 }
 
+function hasNotes(product: PublicProduct): boolean {
+  return product.notes.top.length + product.notes.heart.length + product.notes.base.length > 0;
+}
+
 function productJsonLd(product: PublicProduct) {
   return {
     "@context": "https://schema.org",
@@ -173,12 +183,18 @@ function productJsonLd(product: PublicProduct) {
     image: product.images.map((image) => `${store.url}${image}`),
     sku: product.id,
     brand: { "@type": "Brand", name: product.brand },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "HNL",
-      price: product.price,
-      availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
-      url: `${store.url}/producto/${product.slug}`,
-    },
+    ...(hasShelfPrice(product.price)
+      ? {
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "HNL",
+            price: product.price,
+            availability: product.inStock
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
+            url: `${store.url}/producto/${product.slug}`,
+          },
+        }
+      : {}),
   };
 }

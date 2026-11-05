@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useId, useMemo, useState, type FormEvent } from "react";
 import { TYPE_LABEL } from "@/config";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { searchCatalog, suggestionItems } from "@/lib/search";
 import type { SearchRecord } from "@/types/catalog";
 
@@ -76,7 +76,11 @@ function SearchForm({
                     </span>
                   </span>
                   <span className="shrink-0 text-sm">
-                    {item.isReference ? "Ver alternativas" : formatPrice(item.price)}
+                    {item.isReference
+                      ? "Ver alternativas"
+                      : hasShelfPrice(item.price)
+                        ? formatPrice(item.price)
+                        : "Precio por confirmar"}
                   </span>
                 </Link>
               </li>

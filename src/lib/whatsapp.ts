@@ -74,11 +74,12 @@ export function buildProductInquiry(input: {
   utm?: Record<string, string>;
 }): string {
   const size = input.sizeMl ? `\nTamaño: ${input.sizeMl} ml` : "";
+  const price = input.price > 0 ? formatPrice(input.price) : "por confirmar";
   return [
     `Hola, me interesa este producto de ${store.name}:`,
     "",
     `${input.name} (${input.brand})`,
-    `Precio: ${formatPrice(input.price)}${size}`,
+    `Precio: ${price}${size}`,
     "",
     "¿Me confirmas disponibilidad y envío?",
     trackingLine(input.utm ?? {}),

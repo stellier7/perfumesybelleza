@@ -50,7 +50,7 @@ function readCart(): CartLine[] {
     return parsed.flatMap((entry) => {
       if (!entry || typeof entry !== "object") return [];
       const line = entry as Partial<CartLine>;
-      if (!line.id || !line.slug || !line.name || !line.brand || typeof line.price !== "number") return [];
+      if (!line.id || !line.slug || !line.name || !line.brand || typeof line.price !== "number" || line.price <= 0) return [];
       return [
         {
           id: line.id,
@@ -126,6 +126,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       count,
       subtotal,
       addItem: (item, qty = 1) => {
+        if (item.price <= 0) return;
         updateCart((current) => {
           const existing = current.find((line) => line.id === item.id);
           if (!existing) return [...current, { ...item, qty: Math.min(MAX_QTY, qty) }];

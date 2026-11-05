@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState, type MouseEvent } from "react";
 import { useCart } from "@/components/cart/cart-provider";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { trackPixel } from "@/lib/pixel";
 import { UTM_STORAGE_KEY } from "@/config";
 import { sanitizeUtm } from "@/lib/utm";
@@ -101,7 +101,12 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
   const { addItem } = useCart();
   if (product.isReference) return null;
   const href = whatsappUrl(inquiryMessage(product, {}));
-  const label = product.inStock ? "Pedir por WhatsApp" : "Avísame por WhatsApp";
+  const canBuy = product.inStock && hasShelfPrice(product.price);
+  const label = !product.inStock
+    ? "Avísame por WhatsApp"
+    : canBuy
+      ? "Pedir por WhatsApp"
+      : "Consultar precio";
 
   function openChat(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
@@ -109,6 +114,7 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
   }
 
   function add() {
+    if (!canBuy) return;
     addItem(
       {
         id: product.id,
@@ -125,7 +131,7 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
   return (
     <>
       <div className="mt-6 hidden gap-3 md:flex">
-        {product.inStock ? (
+        {canBuy ? (
           <button type="button" onClick={add} className="h-12 flex-1 rounded-full bg-ink px-5 text-sm text-ivory">
             Agregar al carrito
           </button>
@@ -137,12 +143,16 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper/95 p-3 backdrop-blur md:hidden">
         <div className="flex items-center gap-2 pr-20">
           <p className="min-w-0 flex-1 text-sm font-medium">
-            {product.inStock ? formatPrice(product.price) : "Agotado"}
+            {!product.inStock
+              ? "Agotado"
+              : hasShelfPrice(product.price)
+                ? formatPrice(product.price)
+                : "Precio por confirmar"}
           </p>
           <a href={href} onClick={openChat} target="_blank" rel="noopener noreferrer" className="flex h-11 items-center rounded-full border border-ink px-3 text-xs">
-            {product.inStock ? "WhatsApp" : "Avísame"}
+            {!product.inStock ? "Avísame" : canBuy ? "WhatsApp" : "Consultar"}
           </a>
-          {product.inStock ? (
+          {canBuy ? (
             <button type="button" onClick={add} className="h-11 rounded-full bg-ink px-4 text-sm text-ivory">
               Agregar
             </button>

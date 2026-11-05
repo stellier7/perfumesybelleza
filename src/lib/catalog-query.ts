@@ -61,14 +61,19 @@ export function parseCatalogFilters(
   };
 }
 
+function priced(price: number, descending = false): number {
+  if (price <= 0) return Number.POSITIVE_INFINITY;
+  return descending ? -price : price;
+}
+
 function sortProducts(products: PublicProduct[], orden: SortKey): PublicProduct[] {
   const list = [...products];
   const byName = (a: PublicProduct, b: PublicProduct) => a.name.localeCompare(b.name, "es");
   switch (orden) {
     case "precio-asc":
-      return list.sort((a, b) => a.price - b.price || byName(a, b));
+      return list.sort((a, b) => priced(a.price) - priced(b.price) || byName(a, b));
     case "precio-desc":
-      return list.sort((a, b) => b.price - a.price || byName(a, b));
+      return list.sort((a, b) => priced(b.price, true) - priced(a.price, true) || byName(a, b));
     case "nombre":
       return list.sort(byName);
     case "destacados":

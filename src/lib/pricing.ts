@@ -23,6 +23,11 @@ export function shelfPrice(product: { cost: number; type: ProductType; price?: n
   return publicPrice(product.cost, product.type);
 }
 
+/** Un precio en cero todavía no está definido. No se muestra ni se vende. */
+export function hasShelfPrice(price: number): boolean {
+  return Number.isFinite(price) && price > 0;
+}
+
 export function formatPrice(amount: number): string {
   const negative = amount < 0;
   const [whole, fraction] = Math.abs(amount).toFixed(2).split(".");

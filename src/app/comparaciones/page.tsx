@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Shell } from "@/components/shell";
 import { getComparisonPairs } from "@/lib/catalog";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -27,6 +27,11 @@ export default function ComparisonsPage() {
         Cada ficha pone lado a lado un perfume de referencia y una alternativa de nuestro catálogo.
         Sirve para ver precio, tamaño y estilo de uso. No prometemos que huelan igual.
       </p>
+      {groups.size === 0 ? (
+        <p className="mt-10 max-w-2xl leading-7 text-muted">
+          Todavía no hay comparaciones. Cuando un perfume del catálogo tenga una alternativa, aparece aquí.
+        </p>
+      ) : (
       <div className="mt-10 space-y-10">
         {[...groups.values()].map((group) => (
           <section key={group[0]?.original.id}>
@@ -43,9 +48,13 @@ export default function ComparisonsPage() {
                   <p className="mt-3 text-sm">
                     {pair.original.isReference || !pair.original.inStock
                       ? "Referencia no disponible para compra"
-                      : formatPrice(pair.original.price)}
+                      : hasShelfPrice(pair.original.price)
+                        ? formatPrice(pair.original.price)
+                        : "Precio por confirmar"}
                     {" · "}
-                    {formatPrice(pair.alternative.price)}
+                    {hasShelfPrice(pair.alternative.price)
+                      ? formatPrice(pair.alternative.price)
+                      : "Precio por confirmar"}
                   </p>
                 </Link>
               ))}
@@ -53,6 +62,7 @@ export default function ComparisonsPage() {
           </section>
         ))}
       </div>
+      )}
     </Shell>
   );
 }

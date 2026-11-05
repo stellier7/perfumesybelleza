@@ -4,7 +4,7 @@ import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
 import { store } from "@/config";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 import {
   getComparisonPairs,
@@ -102,39 +102,44 @@ export default function HomePage() {
         </div>
       </Shell>
 
-      <section className="mt-14 bg-night text-ivory">
-        <Shell className="py-12">
-          <h2 className="max-w-lg font-serif text-4xl leading-tight">
-            ¿Buscas un perfume famoso? Mira sus alternativas
-          </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {pairs.map((pair) => (
-              <Link
-                key={pair.slug}
-                href={`/comparar/${pair.slug}`}
-                className="rounded-3xl border border-white/10 bg-night-soft p-5"
-              >
-                <p className="text-xs uppercase tracking-[0.16em] text-champagne">
-                  {pair.original.name} y {pair.alternative.name}
-                </p>
-                <p className="mt-3 font-serif text-2xl">
-                  {pair.alternative.name}
-                  <span className="text-champagne-soft"> · alternativa</span>
-                </p>
-                <p className="mt-2 text-sm text-champagne-soft">
-                  {pair.original.isReference
-                    ? "El perfume de referencia no está en el catálogo."
-                    : pair.original.inStock
-                      ? `${pair.original.name}: ${formatPrice(pair.original.price)}`
-                      : `${pair.original.name} está agotado.`}
-                  {" · "}
-                  {pair.alternative.name}: {formatPrice(pair.alternative.price)}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </Shell>
-      </section>
+      {pairs.length > 0 ? (
+        <section className="mt-14 bg-night text-ivory">
+          <Shell className="py-12">
+            <h2 className="max-w-lg font-serif text-4xl leading-tight">
+              ¿Buscas un perfume famoso? Mira sus alternativas
+            </h2>
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {pairs.map((pair) => (
+                <Link
+                  key={pair.slug}
+                  href={`/comparar/${pair.slug}`}
+                  className="rounded-3xl border border-white/10 bg-night-soft p-5"
+                >
+                  <p className="text-xs uppercase tracking-[0.16em] text-champagne">
+                    {pair.original.name} y {pair.alternative.name}
+                  </p>
+                  <p className="mt-3 font-serif text-2xl">
+                    {pair.alternative.name}
+                    <span className="text-champagne-soft"> · alternativa</span>
+                  </p>
+                  <p className="mt-2 text-sm text-champagne-soft">
+                    {pair.original.isReference
+                      ? "El perfume de referencia no está en el catálogo."
+                      : pair.original.inStock
+                        ? `${pair.original.name}: ${hasShelfPrice(pair.original.price) ? formatPrice(pair.original.price) : "Precio por confirmar"}`
+                        : `${pair.original.name} está agotado.`}
+                    {" · "}
+                    {pair.alternative.name}:{" "}
+                    {hasShelfPrice(pair.alternative.price)
+                      ? formatPrice(pair.alternative.price)
+                      : "Precio por confirmar"}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </Shell>
+        </section>
+      ) : null}
 
       <Shell className="grid gap-4 py-12 md:grid-cols-3">
         {[

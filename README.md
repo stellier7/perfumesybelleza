@@ -24,14 +24,16 @@ Si el producto no trae `price`, el precio de venta se calcula en el servidor con
 
 Si `price` está puesto, ese es el precio de venta y el margen no se aplica. También se redondea a la decena.
 
+Si `cost` es 0 y no hay `price`, el producto todavía no tiene precio. La tienda muestra «Precio por confirmar» y no deja agregarlo al carrito. Lo que falta de las fotos está en `data/pendientes.md`.
+
 ## Existencia
 
 `inStock` es la única existencia. Edítalo en `data/products.ts` o desde la terminal:
 
 ```bash
 npm run stock
-npm run stock -- tag-him
-npm run stock -- tag-him off
+npm run stock -- asad
+npm run stock -- asad off
 ```
 
 ## Cargar muchos productos

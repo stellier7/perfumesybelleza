@@ -8,14 +8,17 @@ import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
 import { Shell } from "@/components/shell";
 import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
-import { formatPrice } from "@/lib/pricing";
+import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { faqJsonLd } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
 
 type PairParams = { params: Promise<{ pair: string }> };
 
 export function generateStaticParams() {
-  return getComparisonPairs().map((pair) => ({ pair: pair.slug }));
+  const pairs = getComparisonPairs().map((pair) => ({ pair: pair.slug }));
+  // Cache Components exige al menos un resultado aunque todavía no haya comparaciones.
+  if (pairs.length > 0) return pairs;
+  return [{ pair: "sin-comparaciones" }];
 }
 
 export async function generateMetadata({ params }: PairParams): Promise<Metadata> {
@@ -110,7 +113,13 @@ async function Comparison({ params }: PairParams) {
 }
 
 function Side({ product, role }: { product: PublicProduct; role: string }) {
-  const price = product.isReference ? "No está en el catálogo" : product.inStock ? formatPrice(product.price) : `${formatPrice(product.price)} · Agotado`;
+  const price = product.isReference
+    ? "No está en el catálogo"
+    : !hasShelfPrice(product.price)
+      ? "Precio por confirmar"
+      : product.inStock
+        ? formatPrice(product.price)
+        : `${formatPrice(product.price)} · Agotado`;
   return (
     <article className="rounded-3xl border border-line bg-paper p-5">
       <p className="text-xs uppercase tracking-[0.16em] text-gold">{role}</p>
