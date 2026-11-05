@@ -243,7 +243,7 @@ Los números que salen en las fotos de liquidación (por ejemplo 2609.3653) no l
 
 ### Ciao (ciao-vince-camuto)
 
-- Vince Camuto · Bruma corporal · 236 ml · mujer · beauty
+- Vince Camuto · Perfumería · 236 ml · mujer · beauty
 - El género no está escrito.
 
 ### Odyssey Revolution Ultra Edition (odyssey-revolution-ultra)
@@ -454,27 +454,27 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 ### Black (kenneth-cole-black)
 
-- Kenneth Cole · Bruma corporal · 236 ml · mujer · designer
+- Kenneth Cole · Perfumería · 236 ml · mujer · designer
 - De la foto no falta nada más. Solo el precio y las notas de aroma.
 
 ### White (kenneth-cole-white)
 
-- Kenneth Cole · Bruma corporal · 236 ml · mujer · designer
+- Kenneth Cole · Perfumería · 236 ml · mujer · designer
 - El frasco negro dice Body Mist y este dice Fragrance Mist.
 
 ### Tempting (sofia-vergara-tempting)
 
-- Sofia Vergara · Bruma corporal · 236 ml · mujer · designer
+- Sofia Vergara · Perfumería · 236 ml · mujer · designer
 - El frasco no dice «for her». Lo dejé como mujer por la línea y el envase.
 
 ### Lost in Paradise (sofia-vergara-lost-in-paradise)
 
-- Sofia Vergara · Bruma corporal · 236 ml · mujer · designer
+- Sofia Vergara · Perfumería · 236 ml · mujer · designer
 - El frasco no dice «for her». Lo dejé como mujer por la línea y el envase.
 
 ### Woman (pitbull-woman)
 
-- Pitbull · Bruma corporal · 236 ml · mujer · designer
+- Pitbull · Perfumería · 236 ml · mujer · designer
 - El género sale del nombre Woman. El frasco no dice «for her».
 
 ### Hawas Éclat (hawas-eclat)
@@ -1100,7 +1100,7 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 ### Wommen Trilloon (delar-wommen-trilloon)
 
-- Delar · Bruma corporal · 250 ml · mujer · arabic
+- Delar · Perfumería · 250 ml · mujer · arabic
 - Códigos de liquidación en la foto, no usados como precio: 901564 y 74P112.
 
 ### Odyssey Toffee Coffee Cafe Edition (odyssey-toffee-coffee)
@@ -1520,7 +1520,7 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 ### Légende Éternelle Rouge (legende-eternelle-rouge)
 
-- Dubai Essences · Bruma corporal · 250 ml · unisex · arabic
+- Dubai Essences · Perfumería · 250 ml · unisex · arabic
 - El género no está en la foto.
 
 ### Metropolis Gold (metropolis-gold)
@@ -1636,17 +1636,17 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 ### 121 Sexy (galaxy-concept-121-sexy)
 
-- Galaxy Concept · Bruma corporal · 250 ml · unisex · beauty
+- Galaxy Concept · Perfumería · 250 ml · unisex · beauty
 - El género no está en la foto.
 
 ### Your Way Perfumed Mist (galaxy-concept-your-way-mist)
 
-- Galaxy Concept · Bruma corporal · 250 ml · unisex · beauty
+- Galaxy Concept · Perfumería · 250 ml · unisex · beauty
 - El género no está en la foto.
 
 ### Delight (galaxy-concept-delight)
 
-- Galaxy Concept · Bruma corporal · 250 ml · unisex · beauty
+- Galaxy Concept · Perfumería · 250 ml · unisex · beauty
 - El género no está en la foto.
 
 ### Asad Zanzibar (asad-zanzibar)
@@ -2614,23 +2614,23 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 ### Fancy Love (fancy-love)
 
-- Jessica Simpson · Bruma corporal · 236 ml · unisex · designer
+- Jessica Simpson · Perfumería · 236 ml · unisex · designer
 - El género no está en la foto.
 - Al fondo hay otros frascos. No los cargué.
 
 ### Young Love (young-love)
 
-- The 1001 Senses · Bruma corporal · 250 ml · unisex · beauty
+- The 1001 Senses · Perfumería · 250 ml · unisex · beauty
 - El género no está en la foto.
 
 ### Crystal Petals (crystal-petals)
 
-- Airbody · Bruma corporal · 250 ml · unisex · beauty
+- Airbody · Perfumería · 250 ml · unisex · beauty
 - El género no está en la foto.
 
 ### Charm Romantic (charm-romantic)
 
-- Airbody · Bruma corporal · 250 ml · unisex · beauty
+- Airbody · Perfumería · 250 ml · unisex · beauty
 - El género no está en la foto.
 
 ### Code (armani-code)
@@ -2857,5 +2857,5 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 
 ### Bella (vince-camuto-bella)
 
-- Vince Camuto · Bruma corporal · 236 ml · unisex · beauty
+- Vince Camuto · Perfumería · 236 ml · unisex · beauty
 - El género no está en la foto.
