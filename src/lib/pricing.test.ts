@@ -3,10 +3,10 @@ import test from "node:test";
 import { formatPrice, publicPrice, shelfPrice } from "./pricing";
 
 test("aplica el margen del tipo y redondea a la decena", () => {
-  assert.equal(publicPrice(1860, "designer"), 2510);
+  assert.equal(publicPrice(1860, "designer"), 2790);
   assert.equal(publicPrice(460, "arabic"), 920);
-  assert.equal(publicPrice(120, "beauty"), 200);
-  assert.equal(publicPrice(40, "beauty"), 120);
+  assert.equal(publicPrice(120, "beauty"), 240);
+  assert.equal(publicPrice(40, "beauty"), 80);
   assert.equal(publicPrice(0), 0);
   assert.equal(publicPrice(-10), 0);
 });

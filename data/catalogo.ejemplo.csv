@@ -1,2 +1,2 @@
-nombre,marca,precio mayorista,precio,ruta de imagen,categoria,tipo,genero,descripcion,ml,stock,inspirado en,etiquetas,salida,corazon,fondo
-Tag Him,Armaf,460,,public/products/tag-him.webp,Eau de Parfum,arabic,hombre,Alternativa fresca para el día.,100,si,bleu-de-chanel,fresco|oficina,Bergamota,Jengibre,Cedro
+nombre,marca,precio mayorista,precio,imagen,imagen 2,categoria,tipo,genero,descripcion,ml,stock,inspirado en,etiquetas,salida,corazon,fondo
+Tag Him,Armaf,460,,public/products/tag-him.webp,,Eau de Parfum,Árabe,Hombre,Alternativa fresca para el día.,100,si,bleu-de-chanel,fresco|oficina,Bergamota,Jengibre,Cedro

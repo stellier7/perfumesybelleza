@@ -5,20 +5,21 @@ export const PRICE_MARKUP = 1.5;
 export const PRICE_ROUND_TO = 10;
 
 /**
- * Multiplicador sobre el precio mayorista, por tipo.
- * Diseñador queda cerca del precio de calle. El árabe aguanta más porque se compara con el diseñador, no con el costo. Belleza sube un poco y, si el frasco es barato, MIN_PROFIT_BY_TYPE evita venderlo casi al costo.
+ * Multiplicador sobre el precio mayorista.
+ * Lo caro (diseñador) sube 50%. Lo barato (árabe y belleza) se vende al doble.
+ * Una fila puede traer su propio precio y entonces este margen no se usa.
  */
 export const MARKUP_BY_TYPE: Record<ProductType, number> = {
-  designer: 1.35,
+  designer: 1.5,
   arabic: 2,
-  beauty: 1.7,
+  beauty: 2,
 };
 
 /** Ganancia mínima en lempiras, sumada al mayorista, antes de redondear. */
 export const MIN_PROFIT_BY_TYPE: Record<ProductType, number> = {
   designer: 0,
-  arabic: 120,
-  beauty: 80,
+  arabic: 0,
+  beauty: 0,
 };
 
 export const PAGE_SIZE = 12;

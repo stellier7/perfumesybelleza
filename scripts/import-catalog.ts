@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import ExcelJS from "exceljs";
 import sharp from "sharp";
 import {
   extractProductsFromHtml,
@@ -39,17 +40,78 @@ function argValue(flag: string): string | null {
   return process.argv[index + 1] ?? null;
 }
 
-async function readSource(): Promise<{ products: ImportedProduct[]; label: string }> {
+function cellText(value: ExcelJS.CellValue): string {
+  if (value === null || value === undefined) return "";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+    return String(value);
+  }
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  if (typeof value === "object") {
+    if ("richText" in value && Array.isArray(value.richText)) {
+      return value.richText.map((part) => part.text).join("");
+    }
+    if ("text" in value && typeof value.text === "string") return value.text;
+    if ("result" in value && value.result !== undefined) return cellText(value.result);
+  }
+  return "";
+}
+
+function csvEscape(value: string): string {
+  if (/[",\n\r]/.test(value)) return `"${value.replace(/"/g, '""')}"`;
+  return value;
+}
+
+async function workbookToCsv(filePath: string): Promise<string> {
+  const workbook = new ExcelJS.Workbook();
+  await workbook.xlsx.readFile(filePath);
+  const sheet = workbook.getWorksheet("Productos") ?? workbook.worksheets[0];
+  if (!sheet) throw new Error("El Excel no tiene hojas.");
+  const lines: string[] = [];
+  const width = sheet.columnCount;
+  sheet.eachRow({ includeEmpty: false }, (row) => {
+    const cells: string[] = [];
+    for (let column = 1; column <= width; column += 1) {
+      cells.push(cellText(row.getCell(column).value).trim());
+    }
+    if (cells.some((cell) => cell.length > 0)) lines.push(cells.map(csvEscape).join(","));
+  });
+  return lines.join("\n");
+}
+
+function resolveImagePath(source: string, baseDir: string, imagesDir: string | null): string {
+  if (/^https?:\/\//i.test(source)) return source;
+  const candidates = [
+    path.resolve(source),
+    path.resolve(baseDir, source),
+    path.resolve(baseDir, "imagenes", path.basename(source)),
+  ];
+  if (imagesDir) {
+    candidates.push(path.resolve(imagesDir, source), path.resolve(imagesDir, path.basename(source)));
+  }
+  return candidates.find((candidate) => existsSync(candidate)) ?? source;
+}
+
+async function readSource(): Promise<{ products: ImportedProduct[]; label: string; baseDir: string }> {
   const csvPath = argValue("--csv");
   if (csvPath) {
-    const text = await readFile(csvPath, "utf8");
+    const absolute = path.resolve(csvPath);
+    const text = absolute.toLowerCase().endsWith(".xlsx")
+      ? await workbookToCsv(absolute)
+      : await readFile(absolute, "utf8");
     const products = parseCatalogCsv(text);
     if (products.length === 0) {
       throw new Error(
-        "El CSV no tiene productos válidos. Revisa las columnas name, brand, price, image path, category y type.",
+        "No hay productos válidos. Revisa nombre, marca, precio mayorista, categoria y tipo.",
       );
     }
-    return { products, label: "CSV" };
+    const imagesDir = argValue("--images");
+    const baseDir = path.dirname(absolute);
+    for (const product of products) {
+      product.imageSources = product.imageSources.map((source) =>
+        resolveImagePath(source, baseDir, imagesDir),
+      );
+    }
+    return { products, label: absolute.toLowerCase().endsWith(".xlsx") ? "Excel" : "CSV", baseDir };
   }
 
   const catalogUrl = process.env.CATALOG_URL?.trim();
@@ -83,7 +145,7 @@ async function readSource(): Promise<{ products: ImportedProduct[]; label: strin
         : "No se encontraron productos en el HTML. Pasa un CSV: npm run import:catalog -- --csv datos.csv",
     );
   }
-  return { products, label: "HTML" };
+  return { products, label: "HTML", baseDir: process.cwd() };
 }
 
 async function saveImage(source: string, filename: string): Promise<string> {

@@ -19,9 +19,8 @@ Copia `.env.example` a `.env.local` y completa la URL del sitio y, si vas a medi
 
 Si el producto no trae `price`, el precio de venta se calcula en el servidor con `MARKUP_BY_TYPE` y `MIN_PROFIT_BY_TYPE` en `src/config.ts`, y se redondea a la decena (`PRICE_ROUND_TO`):
 
-- Diseñador: 35% sobre el mayorista.
-- Árabe: el doble del mayorista, con al menos L 120 de ganancia.
-- Belleza: 70% sobre el mayorista, con al menos L 80 de ganancia.
+- Diseñador: 50% sobre el mayorista.
+- Árabe y belleza: el doble del mayorista.
 
 Si `price` está puesto, ese es el precio de venta y el margen no se aplica. También se redondea a la decena.
 
@@ -35,15 +34,15 @@ npm run stock -- tag-him
 npm run stock -- tag-him off
 ```
 
-## Importar un CSV
+## Cargar muchos productos
 
-La plantilla está en `data/catalogo-plantilla.csv`. Columnas obligatorias: `nombre`, `marca`, `precio mayorista`, `categoria`, `tipo`.
-
-`precio mayorista` es lo que pagas. `precio` es opcional: si lo dejas vacío, la tienda usa el margen del tipo. `tipo` es `designer`, `arabic` o `beauty` (también acepta diseñador, árabe y belleza). Opcionales: `ruta de imagen`, `genero`, `descripcion`, `ml`, `stock`, `inspirado en`, `etiquetas`, `salida`, `corazon`, `fondo`.
+La plantilla de Excel está en `data/catalogo-plantilla.xlsx`. Una fila por producto. Las fotos van en una carpeta `imagenes`, y en la columna `imagen` se escribe el nombre del archivo (`tag-him.jpg`). La segunda foto va en `imagen 2`.
 
 ```bash
-npm run import:catalog -- --csv data/catalogo-plantilla.csv
+npm run import:catalog -- --csv data/catalogo-plantilla.xlsx --images imagenes
 ```
+
+Columnas obligatorias: `nombre`, `marca`, `precio mayorista`, `categoria`, `tipo`. `precio` es opcional. `tipo` acepta Diseñador, Árabe, Belleza, o `designer`, `arabic`, `beauty`. También sirve un CSV con los mismos encabezados: `data/catalogo-plantilla.csv`.
 
 Si el slug ya existe, se conserva `inStock` salvo que el CSV traiga la columna `stock`. Las imágenes se copian a `public/products/` en WebP, con el nombre del slug.
 

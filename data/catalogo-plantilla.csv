@@ -1,4 +1,4 @@
-nombre,marca,precio mayorista,precio,ruta de imagen,categoria,tipo,genero,descripcion,ml,stock,inspirado en,etiquetas,salida,corazon,fondo
-Tag Him,Armaf,460,,public/products/tag-him.webp,Eau de Parfum,arabic,hombre,Alternativa fresca para el día.,100,si,bleu-de-chanel,fresco|oficina,Bergamota|Limón,Jengibre|Menta,Cedro|Sándalo
-Bleu de Chanel,Chanel,1860,3200,,Eau de Parfum,designer,hombre,Eau de parfum fresco.,100,si,,,Bergamota|Limón,Jengibre,Incienso|Cedro
-Bruma de vainilla,Casa,180,,public/products/bruma-vainilla.webp,Bruma corporal,beauty,mujer,Bruma ligera para el cuerpo.,100,si,,vainilla|corporal,Vainilla,,
+nombre,marca,precio mayorista,precio,imagen,imagen 2,categoria,tipo,genero,descripcion,ml,stock,inspirado en,etiquetas,salida,corazon,fondo
+Tag Him,Armaf,460,,tag-him.jpg,tag-him-2.jpg,Eau de Parfum,Árabe,Hombre,Alternativa fresca para el día.,100,si,Bleu de Chanel (Chanel),fresco|oficina,Bergamota|Limón,Jengibre|Menta,Cedro|Sándalo
+Bleu de Chanel,Chanel,1860,3200,bleu.jpg,,Eau de Parfum,Diseñador,Hombre,Eau de parfum fresco.,100,si,,,Bergamota|Limón,Jengibre,Incienso|Cedro
+Bruma de vainilla,Casa,180,,bruma.jpg,,Bruma corporal,Belleza,Mujer,Bruma ligera para el cuerpo.,100,si,,vainilla|corporal,Vainilla,,
