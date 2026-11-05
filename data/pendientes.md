@@ -1,5 +1,15 @@
 # Pendientes del catálogo
 
+## Índice de lotes
+
+El primero y el último son los que quedaron cargados. Las fotos son las que subiste en ese mensaje.
+
+- Lote 1: subiste 68 fotos, cargué 65. Empieza en Philos Centro y termina en Set Club de Nuit Sillage.
+- Lote 2: subiste 96 fotos, cargué 93. Empieza en 360° Collection Noir y termina en Insignia Vert.
+- Lote 3: subiste 127 fotos, cargué 123. Empieza en Khamrah Dukhan y termina en The Pride Rose Oud.
+- Lote 4: subiste 96 fotos, cargué 91. Empieza en Le Parfait Panache y termina en Qaed Al Fursan Untamed.
+- Lote 5: subiste 81 fotos, cargué 76. Empieza en Lionheart Woman y termina en Set Dylan Blue.
+
 Cargué 65 productos a partir de las fotos. Llegaron 68 archivos y 3 eran la misma foto dos veces (Eros Energy, Omnia Amethyst y Le Parfait Mon Amour).
 
 Ninguno tiene precio. En la tienda se lee «Precio por confirmar» y no se puede agregar al carrito hasta que el precio sea mayor que cero.
@@ -2065,3 +2075,432 @@ Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no
 - Lattafa · Eau de Parfum · 90 ml · unisex · arabic
 - El género no está en la foto.
 - El título de la foto dice eau de parfum de 90 ml. El frente no imprime los mililitros.
+
+## Lote 5
+
+Llegaron 81 fotos. Cargué 76 productos.
+
+- No cargué otra vez Teriaq. Ya está como teriaq, eau de parfum de 100 ml.
+- No cargué otra vez Miss Armaf Attitude. Ya está como miss-armaf-attitude, eau de parfum de 100 ml.
+- Derby Club House Blanche llegó dos veces. Lo cargué una sola vez.
+- Lionheart Woman llegó dos veces. Lo cargué una sola vez.
+- Una imagen era una captura de esta conversación, no un perfume.
+
+Ninguno de estos tiene precio ni notas de aroma. Los números de liquidación no son precios.
+
+### Lionheart Woman (lionheart-woman)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### The Lion's Club Rugir (the-lions-club-rugir)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 100 ml. El frasco y la caja no imprimen los mililitros.
+
+### Derby Club House Blanche (derby-club-house-blanche)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El lateral verde dice 80% vol. Es el alcohol, no el tamaño.
+
+### Odyssey Aoud (odyssey-aoud)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 100 ml. El envase no imprime los mililitros.
+
+### In Love With You (in-love-with-you)
+
+- Emporio Armani · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. El frasco no imprime la concentración ni los mililitros.
+
+### Because It's You (because-its-you)
+
+- Emporio Armani · Eau de Parfum · 100 ml · mujer · designer
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Oud Saffron (oud-saffron)
+
+- Orientica · Eau de Parfum · 150 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 150 ml. La caja no imprime los mililitros.
+
+### Set The Scent For Her (set-boss-the-scent)
+
+- Hugo Boss · Set · tamaño por confirmar · mujer · designer
+- El título de la foto dice eau de parfum de 50 ml. El perfume no imprime los mililitros ni la concentración.
+
+### Set Sweet Like Candy (set-sweet-like-candy)
+
+- Ariana Grande · Set · tamaño por confirmar · unisex · designer
+- El género no está en la foto.
+- El título dice eau de parfum de 100 ml, gel de baño de 100 ml y crema de 100 ml. El otro tubo y el perfume no imprimen los mililitros.
+
+### Set L'Aventure Collection (set-laventure-collection)
+
+- Al Haramain · Set · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- El título dice cuatro eau de parfum de 100 ml. Los frascos no imprimen los mililitros. El mini no trae tamaño en el título.
+
+### The Most Wanted (the-most-wanted)
+
+- Azzaro · Eau de Toilette · 50 ml · hombre · designer
+- Es la línea The Most Wanted. Lo dejé en hombre aunque el estuche no imprime pour homme.
+
+### Addicted Madame (addicted-madame)
+
+- Hamidi · Parfum · 120 ml · unisex · arabic
+- El género no está en la foto.
+
+### Narissa (narissa)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · mujer · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Set Odyssey Mega (set-odyssey-mega)
+
+- Armaf · Set · tamaño por confirmar · hombre · arabic
+- El perfume del set no imprime los mililitros. En la foto sale el código 1300P1993. No es un precio.
+
+### Just For You (just-for-you)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- El título de la foto dice 100 ml. El frasco no imprime los mililitros.
+
+### Odyssey Mega 200 ml (odyssey-mega-200)
+
+- Armaf · Eau de Parfum · 200 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 200 ml. La funda no imprime los mililitros.
+
+### Le Parfait Azure (le-parfait-azure)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- El título de la foto dice 100 ml. En la caja el número queda cortado.
+
+### Set Milestone, Intense Man y Sillage (set-milestone-intense-man-sillage)
+
+- Armaf · Set · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- El título dice 30 ml en cada uno. Los frascos no imprimen los mililitros.
+
+### Teriaq Intense (teriaq-intense)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. El frente no imprime los mililitros.
+
+### Sakeena (sakeena)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### La Collection d'Antiquités 1505 (la-collection-dantiquites-1505)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. La placa tiene letra pequeña que no se lee completa.
+
+### Ajwaa (ajwaa)
+
+- Lattafa · Eau de Parfum · 90 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 90 ml. La tarjeta interior tiene letra pequeña.
+
+### Rave Now (rave-now)
+
+- Rave · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 100 ml. La caja no imprime los mililitros.
+
+### Opulent Musk (opulent-musk)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Ameer Al Arab (ameer-al-arab)
+
+- Asdaaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Set Oud Mood (set-oud-mood)
+
+- Lattafa · Set · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- El título dice eau de parfum de 100 ml y bruma para el cabello de 50 ml. Esas dos piezas no imprimen los mililitros.
+
+### Set Honor & Glory (set-badee-al-oud-honor-and-glory)
+
+- Lattafa · Set · tamaño por confirmar · unisex · arabic
+- El género no está en la foto.
+- El título dice eau de parfum de 100 ml y bruma para el cabello de 50 ml. Esas dos piezas no imprimen los mililitros.
+
+### L'Interdit Intense (linterdit-intense)
+
+- Givenchy · Eau de Parfum · 80 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice 80 ml. El frasco no imprime los mililitros.
+
+### Be Delicious Fresh Blossom (be-delicious-fresh-blossom)
+
+- Donna Karan · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. El frasco no imprime la concentración ni los mililitros.
+
+### Eternity For Men (eternity-for-men)
+
+- Calvin Klein · Eau de Toilette · 100 ml · hombre · designer
+- El título de la foto dice 100 ml. El frasco no imprime los mililitros.
+
+### Eternity Aqua 200 ml (eternity-aqua-200)
+
+- Calvin Klein · Eau de Toilette · 200 ml · hombre · designer
+- El título de la foto dice 200 ml. El frasco no imprime los mililitros.
+
+### Hunter Intense (hunter-intense)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. El frente no imprime la concentración ni los mililitros.
+
+### Polo Red Eau de Parfum (polo-red-eau-de-parfum)
+
+- Ralph Lauren · Eau de Parfum · 200 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice 200 ml. El frasco no imprime los mililitros.
+
+### Polo Blue Sport (polo-blue-sport)
+
+- Ralph Lauren · Eau de Toilette · 125 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice eau de toilette. La caja que se ve imprime natural spray y no la concentración.
+
+### Polo (polo)
+
+- Ralph Lauren · Eau de Toilette · 118 ml · unisex · designer
+- El género no está en la foto.
+
+### Very Purple (very-purple)
+
+- Perry Ellis · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+
+### Guess by Marciano (guess-marciano)
+
+- Guess · Eau de Parfum · 100 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice eau de parfum. El frasco y la caja no imprimen la concentración.
+
+### Set Toy 2 (set-moschino-toy-2)
+
+- Moschino · Set · tamaño por confirmar · unisex · designer
+- El género no está en la foto.
+- El título dice body gel de 100 ml, eau de parfum de 10 ml y eau de parfum de 100 ml. El tubo dice body lotion y ninguna pieza imprime los mililitros.
+
+### Hugo (hugo)
+
+- Hugo · Eau de Toilette · 125 ml · unisex · designer
+- El género no está en la foto.
+- El título dice Hugo Boss Man, eau de toilette de 125 ml. El frasco solo imprime Hugo.
+
+### 18 Fuego (perry-ellis-18-fuego)
+
+- Perry Ellis · Eau de Toilette · 100 ml · unisex · designer
+- El género no está en la foto.
+
+### Mavie (mavie)
+
+- Hugo Boss · Eau de Parfum · 75 ml · mujer · designer
+- El título de la foto dice eau de parfum de 75 ml. El frasco no imprime la concentración ni los mililitros.
+
+### 9am (afnan-9am)
+
+- Afnan · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Black XS (black-xs)
+
+- Paco Rabanne · Eau de Toilette · 80 ml · unisex · designer
+- El género no está en la foto.
+- El título de la foto dice eau de toilette de 80 ml. El frasco no imprime la concentración ni los mililitros.
+
+### Infini Oud (infini-oud)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Boss Man (boss-man)
+
+- Hugo Boss · Eau de Toilette · 100 ml · hombre · designer
+- El título de la foto dice eau de toilette de 100 ml. El frasco no imprime la concentración ni los mililitros.
+
+### L'Aventure Blanche (laventure-blanche)
+
+- Al Haramain · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. El frente no imprime la concentración ni los mililitros.
+
+### L'Aventure Knight (laventure-knight)
+
+- Al Haramain · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum de 100 ml. El frente no imprime la concentración ni los mililitros.
+
+### L'Aventure 200 ml (laventure-200)
+
+- Al Haramain · Eau de Parfum · 200 ml · unisex · arabic
+- El género no está en la foto.
+
+### Cologne Intense (azzaro-cologne-intense)
+
+- Azzaro · Eau de Cologne · 100 ml · hombre · designer
+- El título de la foto dice 100 ml. El frasco no imprime los mililitros.
+
+### Orange (cuba-orange)
+
+- Cuba · Eau de Toilette · 100 ml · unisex · designer
+- El género no está en la foto.
+- El cuello dice 80% vol. Es el alcohol, no el tamaño.
+
+### Grey (cuba-grey)
+
+- Cuba · Eau de Toilette · 100 ml · hombre · designer
+- El cuello marca un porcentaje de alcohol. No es el tamaño.
+
+### Green (cuba-green)
+
+- Cuba · Eau de Toilette · 100 ml · hombre · designer
+- El cuello marca un porcentaje de alcohol. No es el tamaño.
+
+### Brazil (cuba-brazil)
+
+- Cuba · Eau de Toilette · 100 ml · hombre · designer
+- El cuello marca un porcentaje de alcohol. No es el tamaño.
+
+### Mahasin Crystal Violet (mahasin-crystal-violet)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- Al lado hay un spray Najdia. No viene en el título, así que no lo cargué como segundo producto.
+
+### The Kingdom (the-kingdom)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### The Kingdom Dorado (the-kingdom-dorado)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- Dorado no está impreso. Sirve para no mezclarlo con el otro The Kingdom.
+
+### Karat (karat)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Avant (avant)
+
+- Maison Alhambra · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Intensity (intensity)
+
+- Vurv · Eau de Parfum · 100 ml · hombre · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Lail Maleki (lail-maleki)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 100 ml. El frente no imprime los mililitros.
+- La etiqueta dice 80% vol. Es el alcohol, no el tamaño.
+
+### Beau Star (beau-star)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+
+### Set Tres Nuit (set-tres-nuit)
+
+- Armaf · Set · tamaño por confirmar · hombre · arabic
+- El título dice eau de parfum de 100 ml para el perfume. El estuche no imprime los mililitros.
+
+### Voyage Titan (voyage-titan)
+
+- Armaf · Eau de Parfum · 100 ml · hombre · arabic
+- El título de la foto dice eau de parfum de 100 ml. El frasco no imprime la concentración ni los mililitros.
+
+### Hunter Killer Bullet (hunter-killer)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum. La caja imprime vaporisateur natural spray y no la concentración.
+
+### Tag Him Prestige Edition (tag-him-prestige)
+
+- Tag Him · Eau de Parfum · 100 ml · hombre · arabic
+- El título de la foto dice 100 ml. El frasco no imprime los mililitros.
+- La foto no imprime la casa.
+
+### Le Parfait Pour Femme (le-parfait-pour-femme)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Le Parfait Pour Homme (le-parfait-pour-homme)
+
+- Armaf · Eau de Parfum · 100 ml · hombre · arabic
+- De la foto no falta nada más. Solo el precio y las notas de aroma.
+
+### Hunter Jungle (hunter-jungle)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice eau de parfum. La caja imprime vaporisateur natural spray y no la concentración.
+
+### Ego Tigre (ego-tigre)
+
+- Armaf · Parfum · 100 ml · hombre · arabic
+- El título de la foto dice eau de parfum de 100 ml. La caja dice parfum y no imprime los mililitros.
+
+### Blue Sky (blue-sky)
+
+- Armaf · Eau de Parfum · 105 ml · unisex · arabic
+- El género no está en la foto.
+
+### Tres Nuit Valentina (tres-nuit-valentina)
+
+- Tres Nuit · Eau de Parfum · 100 ml · mujer · arabic
+- El título de la foto dice eau de parfum de 100 ml. El frasco no imprime la concentración ni los mililitros.
+
+### Voce Viva (miss-armaf-voce-viva)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- La caja dice 80% vol. Es el alcohol, no otro tamaño.
+
+### Odyssey Limoni (odyssey-limoni)
+
+- Armaf · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título de la foto dice 100 ml. La caja no imprime los mililitros.
+
+### Momento Fleur (momento-fleur)
+
+- Armaf · Eau de Parfum · 100 ml · mujer · arabic
+- El título de la foto dice 100 ml. La caja no imprime los mililitros.
+
+### Liam (liam)
+
+- Lattafa · Eau de Parfum · 100 ml · unisex · arabic
+- El género no está en la foto.
+- El título dice Blue Shine y eau de parfum de 100 ml. La caja imprime Liam. El borde deja ver eau de parfum, cortado, y no se leen los mililitros.
+- En la foto sale el código 939P1408. No es un precio.
+
+### Set Dylan Blue (set-dylan-blue)
+
+- Versace · Set · tamaño por confirmar · mujer · designer
+- El título dice eau de parfum de 100 ml, gel de baño de 100 ml y crema corporal de 100 ml. Ninguna pieza imprime los mililitros. El tubo de crema dice body lotion.
