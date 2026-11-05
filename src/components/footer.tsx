@@ -52,9 +52,20 @@ export function Footer() {
           </div>
         </div>
       </Shell>
-      <p className="border-t border-line px-4 py-4 text-center text-xs text-muted">
-        © {store.name}. Precios en lempiras.
-      </p>
+      <div className="border-t border-line px-4 py-4 text-center text-xs text-muted">
+        <p>© {store.name}. Precios en lempiras.</p>
+        <p className="mt-1">
+          Hecho por{" "}
+          <a
+            href="https://www.iagodigital.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gold"
+          >
+            iAGO Digital
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
