@@ -5636,5 +5636,1825 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: []
+    },
+  {
+      id: "le-parfait-panache",
+      slug: "le-parfait-panache",
+      name: "Le Parfait Panache",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/le-parfait-panache.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Le Parfait Panache y Pour Femme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ventana-pour-homme",
+      slug: "ventana-pour-homme",
+      name: "Ventana Pour Homme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/ventana-pour-homme.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf Ventana Pour Homme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "excellus",
+      slug: "excellus",
+      name: "Excellus",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/excellus.webp"],
+      description: "Eau de parfum. La caja dice Armaf Excellus Women.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "vanity-femme",
+      slug: "vanity-femme",
+      name: "Vanity Femme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/vanity-femme.webp"],
+      description: "El frasco dice Armaf Vanity Femme Essence y For Her.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "island-bliss",
+      slug: "island-bliss",
+      name: "Island Bliss",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/island-bliss.webp"],
+      description: "La caja dice Armaf Delights. La insignia dice Island Bliss, eau de parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lady-emblem",
+      slug: "lady-emblem",
+      name: "Lady Emblem",
+      brand: "Montblanc",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lady-emblem.webp"],
+      description: "Eau de parfum de 75 ml. La caja dice Lady Emblem y Montblanc.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "sauvage-tester",
+      slug: "sauvage-tester",
+      name: "Sauvage",
+      brand: "Dior",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/sauvage-tester.webp"],
+      description: "El vidrio dice Sauvage y Dior. El título de la foto lo marca como tester.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: ["tester"]
+    },
+  {
+      id: "eros-pour-femme",
+      slug: "eros-pour-femme",
+      name: "Eros Pour Femme",
+      brand: "Versace",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/eros-pour-femme.webp"],
+      description: "Eau de parfum de 100 ml, 3.4 fl oz. El frasco y la caja dicen Versace Eros Pour Femme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "curve-crush",
+      slug: "curve-crush",
+      name: "Curve Crush",
+      brand: "Curve",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/curve-crush.webp"],
+      description: "Eau de toilette de 125 ml. El frasco y la caja dicen Curve Crush For Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "zakat-z25",
+      slug: "zakat-z25",
+      name: "Z25",
+      brand: "Zakat",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zakat-z25.webp"],
+      description: "El frasco y la caja dicen Zakat Parfum Z25.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "galaxy-concept-121-sexy",
+      slug: "galaxy-concept-121-sexy",
+      name: "121 Sexy",
+      brand: "Galaxy Concept",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/galaxy-concept-121-sexy.webp"],
+      description: "Bruma perfumada de 250 ml. El envase dice Galaxy Concept y 121 Sexy.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "galaxy-concept-your-way-mist",
+      slug: "galaxy-concept-your-way-mist",
+      name: "Your Way Perfumed Mist",
+      brand: "Galaxy Concept",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/galaxy-concept-your-way-mist.webp"],
+      description: "Bruma perfumada de 250 ml. El envase dice Galaxy Concept y Your Way. El spray Pour Femme ya está en el catálogo y no trae mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "galaxy-concept-delight",
+      slug: "galaxy-concept-delight",
+      name: "Delight",
+      brand: "Galaxy Concept",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/galaxy-concept-delight.webp"],
+      description: "Bruma perfumada de 250 ml. El envase dice Galaxy Concept y Delight.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Bruma corporal",
+      tags: ["splash"]
+    },
+  {
+      id: "asad-zanzibar",
+      slug: "asad-zanzibar",
+      name: "Asad Zanzibar",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/asad-zanzibar.webp"],
+      description: "El frasco dice Asad Zanzibar y Lattafa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "badee-al-oud-amethyst",
+      slug: "badee-al-oud-amethyst",
+      name: "Badee Al Oud Amethyst 100 ml",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/badee-al-oud-amethyst.webp"],
+      description: "El frasco y la caja dicen Badee Al Oud Amethyst y Lattafa. El perfume en spray de 200 ml ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ajwad-nusuk",
+      slug: "ajwad-nusuk",
+      name: "Ajwad Nusuk",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/ajwad-nusuk.webp"],
+      description: "La caja dice Ajwad Nusuk. Ya hay un Ajwad de 60 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "her-golden-secret",
+      slug: "her-golden-secret",
+      name: "Her Golden Secret",
+      brand: "Antonio Banderas",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/her-golden-secret.webp"],
+      description: "Desodorante en spray de 24 h. El envase dice Her Golden Secret y Antonio Banderas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "her-secret",
+      slug: "her-secret",
+      name: "Her Secret",
+      brand: "Antonio Banderas",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/her-secret.webp"],
+      description: "Desodorante corporal en spray de 150 ml. El envase dice Her Secret y Antonio Banderas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "shakira-love-rock",
+      slug: "shakira-love-rock",
+      name: "Love Rock",
+      brand: "Shakira",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shakira-love-rock.webp"],
+      description: "Desodorante en spray. El envase dice Love Rock by Shakira.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "shakira-dream",
+      slug: "shakira-dream",
+      name: "Dream",
+      brand: "Shakira",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shakira-dream.webp"],
+      description: "Desodorante en spray de 24 h. El envase dice Dream you only live once y Shakira.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "shakira-rock",
+      slug: "shakira-rock",
+      name: "Rock!",
+      brand: "Shakira",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shakira-rock.webp"],
+      description: "Desodorante en spray. El envase dice Rock! by Shakira.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "shakira-dance-diamonds",
+      slug: "shakira-dance-diamonds",
+      name: "Dance Diamonds",
+      brand: "Shakira",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shakira-dance-diamonds.webp"],
+      description: "Desodorante en spray. El envase dice Dance Shakira Diamonds.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "perry-ellis-360-for-men",
+      slug: "perry-ellis-360-for-men",
+      name: "360°",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/perry-ellis-360-for-men.webp"],
+      description: "Desodorante corporal de 200 ml. El envase dice 360° Perry Ellis For Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Desodorante",
+      tags: []
+    },
+  {
+      id: "olympea",
+      slug: "olympea",
+      name: "Olympéa",
+      brand: "Rabanne",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/olympea.webp"],
+      description: "El frasco dice Olympéa. La caja dice Rabanne y Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "wanted-eau-de-toilette",
+      slug: "wanted-eau-de-toilette",
+      name: "Wanted Eau de Toilette",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/wanted-eau-de-toilette.webp"],
+      description: "El frasco es el de Wanted, con jugo amarillo. Ya está Wanted en eau de parfum de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "hawas-for-her",
+      slug: "hawas-for-her",
+      name: "Hawas For Her",
+      brand: "Hawas",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/hawas-for-her.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Hawas For Her.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "set-boss-bottled",
+      slug: "set-boss-bottled",
+      name: "Set Boss Bottled",
+      brand: "Hugo Boss",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/set-boss-bottled.webp"],
+      description: "Set Boss Bottled: gel de ducha de 100 ml, perfume y desodorante en barra de 75 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "set-supremacy-pour-femme",
+      slug: "set-supremacy-pour-femme",
+      name: "Set Supremacy Pour Femme",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/set-supremacy-pour-femme.webp"],
+      description: "Set: loción corporal de 100 ml, eau de parfum y gel de ducha de 100 ml. La caja dice Supremacy Pour Femme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "lacoste-l1212-rose",
+      slug: "lacoste-l1212-rose",
+      name: "L.12.12 Rose",
+      brand: "Lacoste",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lacoste-l1212-rose.webp"],
+      description: "Eau de toilette de 100 ml. El frasco y la caja dicen Lacoste L.12.12 Rose.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "game-of-spades-rouge",
+      slug: "game-of-spades-rouge",
+      name: "Rouge",
+      brand: "Game of Spades",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/game-of-spades-rouge.webp"],
+      description: "Extrait de parfum. El frasco y la caja dicen Game of Spades Rouge.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
+      id: "jimmy-choo-man-200",
+      slug: "jimmy-choo-man-200",
+      name: "Jimmy Choo Man",
+      brand: "Jimmy Choo",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/jimmy-choo-man-200.webp"],
+      description: "Eau de toilette de 200 ml. La caja dice Jimmy Choo Man.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "leau-dissey",
+      slug: "leau-dissey",
+      name: "L'Eau d'Issey",
+      brand: "Issey Miyake",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/leau-dissey.webp"],
+      description: "Eau de toilette de 100 ml. El frasco y la caja dicen Issey Miyake L'Eau d'Issey.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cool-water-reborn",
+      slug: "cool-water-reborn",
+      name: "Cool Water Reborn",
+      brand: "Davidoff",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/cool-water-reborn.webp"],
+      description: "El frasco y la caja dicen Davidoff Cool Water Reborn, eau de toilette.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "bharara-bleu",
+      slug: "bharara-bleu",
+      name: "Bharara Bleu",
+      brand: "Bharara",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bharara-bleu.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Bharara Bleu. La foto incluye un atomizador de viaje azul.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "supremacy-noir",
+      slug: "supremacy-noir",
+      name: "Supremacy Noir",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/supremacy-noir.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan Supremacy Noir.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "supremacy-pour-femme",
+      slug: "supremacy-pour-femme",
+      name: "Supremacy Pour Femme",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/supremacy-pour-femme.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan Supremacy Pour Femme. El set va aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "jean-lowe-maitre",
+      slug: "jean-lowe-maitre",
+      name: "Jean Lowe Maître",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/jean-lowe-maitre.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Jean Lowe Maître y Maison Alhambra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "phantom",
+      slug: "phantom",
+      name: "Phantom",
+      brand: "Paco Rabanne",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/phantom.webp"],
+      description: "Eau de toilette. El frasco y la caja dicen Phantom y Paco Rabanne.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "badee-al-oud-honor-and-glory",
+      slug: "badee-al-oud-honor-and-glory",
+      name: "Badee Al Oud Honor & Glory",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/badee-al-oud-honor-and-glory.webp"],
+      description: "El frasco dice Badee Al Oud Honor & Glory y Lattafa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ck-one-shock-for-her",
+      slug: "ck-one-shock-for-her",
+      name: "CK One Shock",
+      brand: "Calvin Klein",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/ck-one-shock-for-her.webp"],
+      description: "Eau de toilette de 100 ml. El frasco y la caja dicen CK One Shock for her y Calvin Klein.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "tharwah-silver",
+      slug: "tharwah-silver",
+      name: "Tharwah Silver",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tharwah-silver.webp"],
+      description: "El frasco dice Tharwah Silver, Lattafa Pride.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "la-rouge-baroque",
+      slug: "la-rouge-baroque",
+      name: "La Rouge Baroque",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/la-rouge-baroque.webp"],
+      description: "El frasco y la caja dicen La Rouge Baroque y Maison Alhambra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "set-badee-al-oud-sublime",
+      slug: "set-badee-al-oud-sublime",
+      name: "Set Badee Al Oud Sublime",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/set-badee-al-oud-sublime.webp"],
+      description: "Set Sublime: perfume en spray de 200 ml, eau de parfum y aromatizante de 300 ml. El spray suelto ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "shaheen-silver",
+      slug: "shaheen-silver",
+      name: "Shaheen Silver",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shaheen-silver.webp"],
+      description: "El frasco dice Shaheen Silver, Lattafa Pride.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "set-asad",
+      slug: "set-asad",
+      name: "Set Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/set-asad.webp"],
+      description: "Set Asad: perfume en spray de 200 ml, bruma para el cabello y el eau de parfum. El Asad suelto de 100 ml ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "supremacy-pink",
+      slug: "supremacy-pink",
+      name: "Supremacy",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/supremacy-pink.webp"],
+      description: "Frasco rosa. Dice Supremacy y Afnan. El morado es Pour Femme, y el Noir y el set van aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "mayar-spray",
+      slug: "mayar-spray",
+      name: "Mayar",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/mayar-spray.webp"],
+      description: "Perfume en spray de 200 ml. El envase dice Mayar y Lattafa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Perfume en spray",
+      tags: ["splash"]
+    },
+  {
+      id: "afnan-9pm-pour-femme",
+      slug: "afnan-9pm-pour-femme",
+      name: "9pm Pour Femme",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/afnan-9pm-pour-femme.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan 9pm Pour Femme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "qaed-al-fursan-unlimited",
+      slug: "qaed-al-fursan-unlimited",
+      name: "Qaed Al Fursan Unlimited",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/qaed-al-fursan-unlimited.webp"],
+      description: "Eau de parfum de 90 ml. El frasco blanco y la caja dicen Qaed Al Fursan Unlimited y Lattafa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "montale-bubble-forever",
+      slug: "montale-bubble-forever",
+      name: "Bubble Forever",
+      brand: "Montale",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/montale-bubble-forever.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Montale Paris y Bubble Forever.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "black-opium",
+      slug: "black-opium",
+      name: "Black Opium",
+      brand: "Yves Saint Laurent",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/black-opium.webp"],
+      description: "El frasco dice Black Opium y Yves Saint Laurent.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "marc-jacobs-perfect-10",
+      slug: "marc-jacobs-perfect-10",
+      name: "Perfect",
+      brand: "Marc Jacobs",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/marc-jacobs-perfect-10.webp"],
+      description: "Roller. El envase y la caja dicen Perfect y Marc Jacobs.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "daisy-ever-so-fresh",
+      slug: "daisy-ever-so-fresh",
+      name: "Daisy Ever So Fresh",
+      brand: "Marc Jacobs",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/daisy-ever-so-fresh.webp"],
+      description: "El frasco y la caja dicen Daisy Marc Jacobs Ever So Fresh.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "daisy-marc-jacobs",
+      slug: "daisy-marc-jacobs",
+      name: "Daisy",
+      brand: "Marc Jacobs",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/daisy-marc-jacobs.webp"],
+      description: "El frasco dice Daisy Marc Jacobs. Ever So Fresh y el set van aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "halloween-blossom",
+      slug: "halloween-blossom",
+      name: "Blossom",
+      brand: "Halloween",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/halloween-blossom.webp"],
+      description: "La caja dice Halloween Blossom y 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "boss-woman",
+      slug: "boss-woman",
+      name: "Woman",
+      brand: "Hugo Boss",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/boss-woman.webp"],
+      description: "Eau de parfum de 90 ml. El frasco y la caja dicen Boss Woman.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "burberry-her-10",
+      slug: "burberry-her-10",
+      name: "Her",
+      brand: "Burberry",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/burberry-her-10.webp"],
+      description: "Eau de parfum de 10 ml. El roller y la caja dicen Burberry Her.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-spectra-200",
+      slug: "odyssey-spectra-200",
+      name: "Odyssey Spectra 200 ml",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/odyssey-spectra-200.webp"],
+      description: "Rainbow Edition. Ya está Odyssey Spectra de 50 ml. Esa caja no imprime Armaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "oud-save-the-king",
+      slug: "oud-save-the-king",
+      name: "Oud Save The King",
+      brand: "Atkinsons",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oud-save-the-king.webp"],
+      description: "Eau de parfum. El frasco y la caja dicen Atkinsons London 1799 y Oud Save The King.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "acqua-di-gioia",
+      slug: "acqua-di-gioia",
+      name: "Acqua di Gioia",
+      brand: "Giorgio Armani",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/acqua-di-gioia.webp"],
+      description: "El frasco dice Acqua di Gioia y Giorgio Armani.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "versace-oud-noir",
+      slug: "versace-oud-noir",
+      name: "Oud Noir",
+      brand: "Versace",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/versace-oud-noir.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Versace Oud Noir Pour Homme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "spicebomb-dark-leather",
+      slug: "spicebomb-dark-leather",
+      name: "Spicebomb Dark Leather",
+      brand: "Viktor & Rolf",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/spicebomb-dark-leather.webp"],
+      description: "Eau de parfum de 90 ml. El frasco y la caja dicen Spicebomb Dark Leather y Viktor & Rolf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-bold",
+      slug: "cuba-bold",
+      name: "Bold",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/cuba-bold.webp"],
+      description: "Eau de toilette de 100 ml, 3.3 fl oz. La caja dice Authentic Cuba Bold For Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "black-musk",
+      slug: "black-musk",
+      name: "Black Musk",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/black-musk.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Al Haramain Black Musk.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "set-daisy-marc-jacobs",
+      slug: "set-daisy-marc-jacobs",
+      name: "Set Daisy",
+      brand: "Marc Jacobs",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/set-daisy-marc-jacobs.webp"],
+      description: "Set de viaje: eau de toilette de 100 ml y body lotion luminosa de 75 ml. La caja dice Daisy Marc Jacobs.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "laventure-grapefruit",
+      slug: "laventure-grapefruit",
+      name: "L'Aventure Grapefruit",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/laventure-grapefruit.webp"],
+      description: "El frasco y la caja dicen Al Haramain L'Aventure Grapefruit.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
+      id: "opium",
+      slug: "opium",
+      name: "Opium",
+      brand: "Yves Saint Laurent",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/opium.webp"],
+      description: "El frasco dice Opium y Yves Saint Laurent. Black Opium va aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "ange-ou-demon",
+      slug: "ange-ou-demon",
+      name: "Ange ou Démon",
+      brand: "Givenchy",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/ange-ou-demon.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Ange ou Démon y Givenchy.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "valentina",
+      slug: "valentina",
+      name: "Valentina",
+      brand: "Valentino",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/valentina.webp"],
+      description: "Eau de parfum de 80 ml. El frasco y la caja dicen Valentina y Valentino.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 80,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-touch",
+      slug: "cuba-touch",
+      name: "Touch",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/cuba-touch.webp"],
+      description: "Eau de parfum de 100 ml. La lata y el envase dicen Cuba Touch For Women.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-night",
+      slug: "cuba-night",
+      name: "Night",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/cuba-night.webp"],
+      description: "Eau de parfum de 100 ml. La lata y el envase dicen Cuba Night For Women.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-jungle-tiger",
+      slug: "cuba-jungle-tiger",
+      name: "Jungle Tiger",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/cuba-jungle-tiger.webp"],
+      description: "El envase dice Cuba Jungle Tiger For Women. El tubo de al lado dice eau de parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-tasty",
+      slug: "cuba-tasty",
+      name: "Tasty",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/cuba-tasty.webp"],
+      description: "El frasco y la caja dicen Authentic Cuba Tasty For Women.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-mystic",
+      slug: "cuba-mystic",
+      name: "Mystic",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/cuba-mystic.webp"],
+      description: "El frasco y la caja dicen Authentic Cuba Mystic For Women.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-happy",
+      slug: "cuba-happy",
+      name: "Happy",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 0,
+      images: ["/products/cuba-happy.webp"],
+      description: "El frasco y la caja dicen Authentic Cuba Happy For Women. La caja dice eau de parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "amber-oud-ruby-edition-120",
+      slug: "amber-oud-ruby-edition-120",
+      name: "Amber Oud Ruby Edition 120 ml",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amber-oud-ruby-edition-120.webp"],
+      description: "El frasco y la caja dicen Al Haramain Amber Oud Ruby Edition, 120 ml. Ya está la de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-wild-one",
+      slug: "odyssey-wild-one",
+      name: "Odyssey Wild One",
+      brand: "Odyssey",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/odyssey-wild-one.webp"],
+      description: "Gold Edition. El frasco y la caja dicen Odyssey Wild One.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-tyrant",
+      slug: "odyssey-tyrant",
+      name: "Odyssey Tyrant",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/odyssey-tyrant.webp"],
+      description: "Special Edition. La tapa dice Armaf y el frasco dice Odyssey Tyrant.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "cuba-prestige-legacy",
+      slug: "cuba-prestige-legacy",
+      name: "Prestige Legacy",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/cuba-prestige-legacy.webp"],
+      description: "La lata dice Cuba Prestige Legacy, eau de toilette for men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-wild-heart",
+      slug: "cuba-wild-heart",
+      name: "Wild Heart",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/cuba-wild-heart.webp"],
+      description: "Eau de toilette de 100 ml. La lata dice Cuba Wild Heart For Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-royal-fortune",
+      slug: "cuba-royal-fortune",
+      name: "Royal Fortune",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 0,
+      images: ["/products/cuba-royal-fortune.webp"],
+      description: "Eau de toilette de 100 ml. La lata y el envase dicen Cuba Royal Fortune For Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "spicebomb-extreme",
+      slug: "spicebomb-extreme",
+      name: "Spicebomb Extreme",
+      brand: "Viktor & Rolf",
+      type: "designer",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/spicebomb-extreme.webp"],
+      description: "Eau de parfum de 90 ml. El frasco y la caja dicen Spicebomb Extreme y Viktor & Rolf. Dark Leather va aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "bareq-mirage",
+      slug: "bareq-mirage",
+      name: "Bareq Mirage",
+      brand: "Ard Al Zaafaran",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bareq-mirage.webp"],
+      description: "La caja dice Bareq Mirage, eau de parfum, by Ard Al Zaafaran. Ya está Bareq.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "maahir-legacy",
+      slug: "maahir-legacy",
+      name: "Maahir Legacy",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/maahir-legacy.webp"],
+      description: "El frasco dice Maahir Legacy y Lattafa. El set ya está en el catálogo y no se leían los mililitros del perfume.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "pacific-blue",
+      slug: "pacific-blue",
+      name: "Pacific Blue",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/pacific-blue.webp"],
+      description: "Eau de parfum. El frasco y la caja dicen Pacific Blue y Maison Alhambra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 80,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "andaleeb",
+      slug: "andaleeb",
+      name: "Andaleeb",
+      brand: "Asdaaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/andaleeb.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Andaleeb y Asdaaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "sehr",
+      slug: "sehr",
+      name: "Sehr",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sehr.webp"],
+      description: "El frasco dice Sehr y Lattafa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "musamam-white-intense",
+      slug: "musamam-white-intense",
+      name: "Musamam White Intense",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/musamam-white-intense.webp"],
+      description: "El frasco dice Musamam White Intense y Lattafa. El spray de 300 ml ya está en el catálogo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "luxe-street",
+      slug: "luxe-street",
+      name: "Luxe Street",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/luxe-street.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Luxe Street y Maison Alhambra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "luxe-nightlife",
+      slug: "luxe-nightlife",
+      name: "Luxe Nightlife",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/luxe-nightlife.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Luxe Nightlife y Maison Alhambra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "qaed-al-fursan-untamed",
+      slug: "qaed-al-fursan-untamed",
+      name: "Qaed Al Fursan Untamed",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/qaed-al-fursan-untamed.webp"],
+      description: "El frasco marrón y la caja dicen Qaed Al Fursan Untamed y Lattafa. Unlimited es el frasco blanco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
     }
 ];
