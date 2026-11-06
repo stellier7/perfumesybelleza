@@ -18559,5 +18559,575 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Crema facial",
       tags: ["oro", "caviar", "antiedad", "reafirmante"]
+    },
+  {
+      id: "nevada-keratin-anti-frizz-cream",
+      slug: "nevada-keratin-anti-frizz-cream",
+      name: "Keratin Anti-Frizz",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratin-anti-frizz-cream.webp"],
+      description: "Crema revitalizante Nevada Keratin Anti-Frizz, de 230 ml, sin enjuague. Con keratina y vitamina E, hidratación profunda, control del frizz y protección UV.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 230,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["keratina", "anti-frizz", "sin enjuague"]
+    },
+  {
+      id: "nevada-anti-hair-loss-cream",
+      slug: "nevada-anti-hair-loss-cream",
+      name: "Anti-Hair Loss 15 en 1",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-anti-hair-loss-cream.webp"],
+      description: "Crema capilar revitalizante Nevada Anti-Hair Loss 15 en 1, de 280 ml, sin enjuague. Con vitamina E, hidratación profunda, control del frizz y protección UV.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["anticaída", "15 en 1", "sin enjuague"]
+    },
+  {
+      id: "nevada-keratina-tratamiento",
+      slug: "nevada-keratina-tratamiento",
+      name: "Keratina Tratamiento",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratina-tratamiento.webp"],
+      description: "Tratamiento capilar Nevada Keratina, de 1 kg. Sella la cutícula, aporta sedosidad y elimina el frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["keratina", "frizz", "cutícula"]
+    },
+  {
+      id: "nevada-keratina-15",
+      slug: "nevada-keratina-15",
+      name: "Keratina 15 en 1",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratina-15.webp"],
+      description: "Tratamiento capilar Nevada Keratina 15 en 1, de 1 kg, anticaída. Protección UV, control de la caída y menos frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["keratina", "anticaída", "15 en 1"]
+    },
+  {
+      id: "nevada-keratina-510",
+      slug: "nevada-keratina-510",
+      name: "Keratina Professional",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratina-510.webp"],
+      description: "Tratamiento capilar Nevada Keratina Professional, de 510 ml. Renovación y reconstrucción: sella la cutícula, aporta sedosidad y elimina el frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["keratina", "reconstrucción", "frizz"]
+    },
+  {
+      id: "nevada-argan-cholesterol",
+      slug: "nevada-argan-cholesterol",
+      name: "Argan Oil Cholesterol",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-argan-cholesterol.webp"],
+      description: "Tratamiento capilar Nevada Argan Oil Cholesterol, de 1 kg. Alimenta la fibra, repara las puntas y da docilidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["argán", "puntas", "docilidad"]
+    },
+  {
+      id: "nevada-anti-hair-loss-ampoule",
+      slug: "nevada-anti-hair-loss-ampoule",
+      name: "Ampolla Anti-Hair Loss 15 en 1",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-anti-hair-loss-ampoule.webp"],
+      description: "Ampolla Nevada Anti-Hair Loss 15 en 1, de 20 ml, sin enjuague. Con aceite de argán, vitamina E y filtro UV. El texto la presenta para controlar la caída, hidratar y mantener el color.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["ampolla", "anticaída", "argán"]
+    },
+  {
+      id: "nevada-keratin-ampoule",
+      slug: "nevada-keratin-ampoule",
+      name: "Ampolla Keratin Anti-Frizz",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratin-ampoule.webp"],
+      description: "Ampolla Nevada Keratin Anti-Frizz, de 20 ml, con queratina hidrolizada, vitamina E y filtro UV. El texto habla de controlar el frizz y de restaurar la fibra del cabello dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["ampolla", "queratina", "anti-frizz"]
+    },
+  {
+      id: "nevada-rosemary-gloss",
+      slug: "nevada-rosemary-gloss",
+      name: "Rosemary Hair Gloss",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-rosemary-gloss.webp"],
+      description: "Gotas capilares Nevada Rosemary Hair Gloss, de 60 ml, con romero y aloe vera. Reparación de puntas, protección solar, control de estática y volumen, peinado fácil, acabado ligero y sin alcohol.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Sérum",
+      tags: ["romero", "aloe", "sin alcohol"]
+    },
+  {
+      id: "nevada-anti-hair-loss-gloss",
+      slug: "nevada-anti-hair-loss-gloss",
+      name: "Anti-Hair Loss Hair Gloss",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-anti-hair-loss-gloss.webp"],
+      description: "Gotas capilares Nevada Anti-Hair Loss Hair Gloss 15 en 1, de 60 ml. Con aloe vera, extracto de frutas, colágeno y filtro UV. Menos frizz, brillo y puntas con menos quiebre.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Sérum",
+      tags: ["anticaída", "colágeno", "aloe"]
+    },
+  {
+      id: "solingen-navaja",
+      slug: "solingen-navaja",
+      name: "Navaja",
+      brand: "Solingen",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/solingen-navaja.webp"],
+      description: "Navaja de afeitar Solingen, con mango carey. La foto muestra el mismo modelo dos veces.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rasuradora",
+      tags: ["navaja", "barbería", "carey"]
+    },
+  {
+      id: "konsung-cera-fria",
+      slug: "konsung-cera-fria",
+      name: "Cera fría",
+      brand: "Konsung",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/konsung-cera-fria.webp"],
+      description: "Cera fría Konsung, de 150 g, para depilar. La foto reúne tres aromas: crystal, fresa y miel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["cera fría", "fresa", "miel"]
+    },
+  {
+      id: "dr-rashel-white-skin-mousse",
+      slug: "dr-rashel-white-skin-mousse",
+      name: "White Skin Cleansing Mousse",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-rashel-white-skin-mousse.webp"],
+      description: "Mousse limpiadora facial Dr. Rashel White Skin, de 115 ml, con arbutina, niacinamida y ácido hialurónico. Aclara los poros, exfolia y retira el maquillaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 115,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["arbutina", "niacinamida", "hialurónico"]
+    },
+  {
+      id: "nevada-baby-powder",
+      slug: "nevada-baby-powder",
+      name: "Talco Baby Powder",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-baby-powder.webp", "/products/nevada-baby-powder-2.webp"],
+      description: "Talco para bebé Nevada Baby Series, de 200 g. La foto llega en dos presentaciones de la misma etiqueta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 g",
+      inStock: true,
+      category: "Talco",
+      tags: ["talco", "bebé"]
+    },
+  {
+      id: "amalfi-argan-body-milk",
+      slug: "amalfi-argan-body-milk",
+      name: "Body Milk Argán",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-argan-body-milk.webp"],
+      description: "Leche corporal Amalfi de argán, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["argán", "leche corporal"]
+    },
+  {
+      id: "nono-tec-nt-cp618",
+      slug: "nono-tec-nt-cp618",
+      name: "Máquina NT-CP618",
+      brand: "N@no-Tec",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nono-tec-nt-cp618.webp"],
+      description: "Máquina de barbería N@no-Tec NT-CP618, recargable. Incluye cuatro peines de 3, 6, 9 y 12 mm, tijera, peine, cepillo de limpieza y aceite.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["máquina", "recargable", "barbería"]
+    },
+  {
+      id: "premium-salon-lavacabezas",
+      slug: "premium-salon-lavacabezas",
+      name: "Lavacabezas",
+      brand: "Premium Salon Supply",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/premium-salon-lavacabezas.webp"],
+      description: "Lavacabezas Premium Salon Supply, de 62 × 52 × 34 cm, con bacha negra y silla reclinable.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "62 × 52 × 34 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["lavacabezas", "salón", "silla"]
+    },
+  {
+      id: "konsung-bandas-depilar",
+      slug: "konsung-bandas-depilar",
+      name: "Bandas para depilar",
+      brand: "Konsung",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/konsung-bandas-depilar.webp"],
+      description: "Bandas para depilar Konsung, 100 tiras de papel no tejido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 tiras",
+      inStock: true,
+      category: "Depilación",
+      tags: ["bandas", "depilación", "papel"]
+    },
+  {
+      id: "dr-rashel-whitening-day-cream",
+      slug: "dr-rashel-whitening-day-cream",
+      name: "Whitening Day Cream",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-rashel-whitening-day-cream.webp"],
+      description: "Crema de día Dr. Rashel White Skin, con arbutina y niacinamida, FPS 20. Reduce la pigmentación, hidrata 24 horas y busca un tono más uniforme. La foto no muestra el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["día", "arbutina", "fps 20"]
+    },
+  {
+      id: "dr-rashel-fade-spots-serum",
+      slug: "dr-rashel-fade-spots-serum",
+      name: "Fade Spots Serum",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-rashel-fade-spots-serum.webp"],
+      description: "Sérum facial Dr. Rashel White Skin Fade Spots, de 50 ml, con arbutina y niacinamida. Reduce la pigmentación y atenúa las manchas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["manchas", "arbutina", "niacinamida"]
+    },
+  {
+      id: "morfose-infinity-touch",
+      slug: "morfose-infinity-touch",
+      name: "Infinity Touch 10",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-infinity-touch.webp"],
+      description: "Fijador capilar Morfose Infinity Touch 10, de 400 ml, de fijación perfecta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Fijador",
+      tags: ["laca", "fijación", "spray"]
+    },
+  {
+      id: "nevada-vitamin-b-body-cream",
+      slug: "nevada-vitamin-b-body-cream",
+      name: "Defense Hydration Vitamin B",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-vitamin-b-body-cream.webp"],
+      description: "Crema corporal Nevada Defense Hydration con vitamina B, de 444 ml. Protección, nutrición y suavidad, de uso diario.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["vitamina b", "hidratación", "uso diario"]
+    },
+  {
+      id: "nevada-acne-control-gel",
+      slug: "nevada-acne-control-gel",
+      name: "Acne Control",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-acne-control-gel.webp"],
+      description: "Gel hidratante matificante Nevada Acne Control, de 110 ml, con propóleo, niacinamida y vitamina E. Fórmula ligera para piel grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 110,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["acné", "matificante", "niacinamida"]
+    },
+  {
+      id: "nevada-magnolia-almond-soap",
+      slug: "nevada-magnolia-almond-soap",
+      name: "Jabón Magnolia & Almond",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-magnolia-almond-soap.webp"],
+      description: "Jabón en barra Nevada Magnolia & Almond, de 150 g, hidratante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "magnolia", "almendra"]
+    },
+  {
+      id: "xtracare-mens-face-scrub",
+      slug: "xtracare-mens-face-scrub",
+      name: "Men's Face Scrub",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-mens-face-scrub.webp"],
+      description: "Exfoliante facial XtraCare para hombres, de 133 ml. Suaviza la piel sin resecarla.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 133,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["hombres", "facial", "exfoliante"]
+    },
+  {
+      id: "nevada-minnie-body-cream",
+      slug: "nevada-minnie-body-cream",
+      name: "Crema corporal Minnie",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-minnie-body-cream.webp"],
+      description: "Crema corporal Nevada Kids Minnie. La foto muestra tres tubos iguales y no deja leer el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["minnie", "kids", "corporal"]
+    },
+  {
+      id: "xtracare-baby-lotion",
+      slug: "xtracare-baby-lotion",
+      name: "Silky Soft Baby Lotion",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-baby-lotion.webp"],
+      description: "Loción corporal XtraCare Baby Silky Soft, de 227 g, aroma sweet rose. Hidrata y protege.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "227 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["bebé", "rosa", "loción"]
+    },
+  {
+      id: "salon-capa-superheroes",
+      slug: "salon-capa-superheroes",
+      name: "Capa de superhéroes",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-capa-superheroes.webp"],
+      description: "Capa de corte para barbería, de 140 × 160 cm, con cuello de silicón ajustable y broche de seguridad. Estampado de superhéroes. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "140 × 160 cm",
+      inStock: true,
+      category: "Capa",
+      tags: ["capa", "barbería", "cuello"]
     }
 ];
