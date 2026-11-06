@@ -20867,5 +20867,573 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Secador",
       tags: ["secador", "2000 w", "italia"]
+    },
+  {
+      id: "royal-rsh1975",
+      slug: "royal-rsh1975",
+      name: "RSH1975",
+      brand: "Royal",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/royal-rsh1975.webp"],
+      description: "Cortadora inalámbrica Royal RSH1975, de 7000 rpm y batería de 600 mAh, hasta 90 minutos. Incluye peines de 1, 3 y 6 mm, cable USB, cepillo y aceite.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "inalámbrica", "barbería"]
+    },
+  {
+      id: "beauty-style-peines-maquina",
+      slug: "beauty-style-peines-maquina",
+      name: "Peines para máquina",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-peines-maquina.webp"],
+      description: "Peines guía Beauty Style para máquina, 10 piezas, de 1.5 mm a 25 mm.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "10 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["peines", "máquina", "guía"]
+    },
+  {
+      id: "kemei-km-2795",
+      slug: "kemei-km-2795",
+      name: "KM-2795",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-km-2795.webp"],
+      description: "Cortadora Kemei KM-2795, de 8000 rpm y batería de 2000 mAh, hasta 260 minutos. Cuchilla DLC y pantalla LCD. Incluye peines, cable USB, cepillo y aceite.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "inalámbrica", "barbería"]
+    },
+  {
+      id: "kemei-km-2028",
+      slug: "kemei-km-2028",
+      name: "KM-2028",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-km-2028.webp"],
+      description: "Afeitadora Kemei KM-2028, con lámina de titanio, batería de 1400 mAh, carga USB y pantalla digital.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rasuradora",
+      tags: ["afeitadora", "lámina", "usb"]
+    },
+  {
+      id: "wahl-anywhere-clipper",
+      slug: "wahl-anywhere-clipper",
+      name: "Anywhere Clipper",
+      brand: "Wahl",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wahl-anywhere-clipper.webp"],
+      description: "Kit Wahl Anywhere Clipper, inalámbrico, de 21 piezas. Cuchillas de acero inoxidable, hasta 3 horas de uso, con estuche.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "21 piezas",
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "inalámbrica", "estuche"]
+    },
+  {
+      id: "kezu-vintage-t9",
+      slug: "kezu-vintage-t9",
+      name: "Vintage T9",
+      brand: "Kezu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kezu-vintage-t9.webp"],
+      description: "Cortadora Kezu Vintage T9, inalámbrica, modelo H.W-T9. Incluye cuatro peines de 1.5, 2, 3 y 4 mm, cable USB y cepillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "inalámbrica", "barbería"]
+    },
+  {
+      id: "conair-champion-clipper",
+      slug: "conair-champion-clipper",
+      name: "Champion Clipper Kit",
+      brand: "Conair",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/conair-champion-clipper.webp"],
+      description: "Kit Conair Champion, de 21 piezas, con cable de 2.75 m. Cinco posiciones de corte, de 0.8 mm a 2.8 mm, y cuchilla de acero.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "21 piezas",
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "cable", "acero"]
+    },
+  {
+      id: "wahl-detailer-t-wide",
+      slug: "wahl-detailer-t-wide",
+      name: "Detailer T-Wide",
+      brand: "Wahl",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wahl-detailer-t-wide.webp"],
+      description: "Recortadora Wahl Detailer T-Wide, de la serie 5 Star, con cable. Cuchilla ancha y ajuste a cero. Incluye tres peines, aceite, cepillo y protector.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["recortadora", "cable", "delineado"]
+    },
+  {
+      id: "nevada-shaving-foam-refreshing",
+      slug: "nevada-shaving-foam-refreshing",
+      name: "Espuma Refreshing",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-shaving-foam-refreshing.webp"],
+      description: "Espuma de afeitar Nevada Refreshing, de 400 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "espuma", "refrescante"]
+    },
+  {
+      id: "remington-cepillo-alisador",
+      slug: "remington-cepillo-alisador",
+      name: "Cepillo alisador",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-cepillo-alisador.webp"],
+      description: "Cepillo alisador Remington, con barril de 38 mm recubierto de cerámica con coco y filtro UV. Tres temperaturas: 150, 190 y 230 °C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "barril de 38 mm",
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "cerámica", "coco"]
+    },
+  {
+      id: "remington-almond-radiance",
+      slug: "remington-almond-radiance",
+      name: "Almond Radiance",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-almond-radiance.webp"],
+      description: "Plancha Remington Almond Radiance, con aceite de almendras. Hasta 230 °C, nueve niveles, placas flotantes y calentamiento en unos 15 segundos. El cable mide 2.7 m.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "almendra", "cerámica"]
+    },
+  {
+      id: "remington-wet2-s27a",
+      slug: "remington-wet2-s27a",
+      name: "Wet2 Straight S27A",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-wet2-s27a.webp", "/products/remington-wet2-s27a-2.webp"],
+      description: "Plancha Remington Wet2 Straight S27A. Seca y alisa, con sensor y control digital hasta 230 °C. El texto habla de cerámica anti-frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "húmedo", "digital"]
+    },
+  {
+      id: "remington-sapphire-luxe",
+      slug: "remington-sapphire-luxe",
+      name: "Sapphire Luxe",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-sapphire-luxe.webp"],
+      description: "Plancha Remington Sapphire Luxe, con recubrimiento cerámico y zafiros. Hasta 230 °C, calienta en 15 segundos y la placa flotante mide 110 mm.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "zafiro", "cerámica"]
+    },
+  {
+      id: "remington-wet2-s7901",
+      slug: "remington-wet2-s7901",
+      name: "Wet2 Straight S7901",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-wet2-s7901.webp"],
+      description: "Plancha Remington Wet2 Straight S7901, con placas de 2,54 cm (1 pulgada). Cerámica y turmalina, hasta 200 °C, 30 configuraciones y calentamiento en 30 segundos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "placas de 2,54 cm",
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "húmedo", "turmalina"]
+    },
+  {
+      id: "nazca-origem-for-men",
+      slug: "nazca-origem-for-men",
+      name: "Origem For Men",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-origem-for-men.webp"],
+      description: "Champú 3 en 1 Nazca Origem For Men, de 300 ml, para barba, cabello y bigote. Con menta y aceite de ricino.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["barba", "menta", "ricino"]
+    },
+  {
+      id: "salon-navaja",
+      slug: "salon-navaja",
+      name: "Navaja",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-navaja.webp"],
+      description: "Navaja de afeitar, con mango verde. La marca del mango no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rasuradora",
+      tags: ["navaja", "afeitado"]
+    },
+  {
+      id: "beauty-style-tijeras",
+      slug: "beauty-style-tijeras",
+      name: "Set de tijeras",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-tijeras.webp"],
+      description: "Set de tijeras Beauty Style, con tijera de corte y tijera de entresacar, en estuche.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Tijera",
+      tags: ["tijeras", "estuche", "barbería"]
+    },
+  {
+      id: "maxi-nose-trimmer",
+      slug: "maxi-nose-trimmer",
+      name: "Nose Trimmer",
+      brand: "Maxi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/maxi-nose-trimmer.webp"],
+      description: "Recortador Maxi para nariz, orejas, cejas, patillas y nuca. La misma unidad corta nariz y orejas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["nariz", "orejas", "cejas"]
+    },
+  {
+      id: "salon-cepillo-nuca",
+      slug: "salon-cepillo-nuca",
+      name: "Cepillo de nuca",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-nuca.webp"],
+      description: "Cepillo de nuca, de cerdas blancas. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["nuca", "barbería"]
+    },
+  {
+      id: "karicia-tonico-capixyl",
+      slug: "karicia-tonico-capixyl",
+      name: "Tónico Capixyl",
+      brand: "Karicia",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karicia-tonico-capixyl.webp"],
+      description: "Tónico Karicia Capixyl con arándanos negros, de 30 ml, para barba, cabello y bigote.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Tónico",
+      tags: ["barba", "arándano", "capixyl"]
+    },
+  {
+      id: "karicia-tonico-capilar",
+      slug: "karicia-tonico-capilar",
+      name: "Tónico capilar",
+      brand: "Karicia",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karicia-tonico-capilar.webp"],
+      description: "Tónico capilar Karicia, de 30 ml, para barba y cabello. Con arándanos negros, keratina, Trichogen y vitamina E.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Tónico",
+      tags: ["barba", "keratina", "arándano"]
+    },
+  {
+      id: "nevada-shaving-foam-sensitive",
+      slug: "nevada-shaving-foam-sensitive",
+      name: "Espuma Piel Sensible",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-shaving-foam-sensitive.webp"],
+      description: "Espuma de afeitar Nevada para piel sensible, de 400 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "espuma", "sensible"]
+    },
+  {
+      id: "salon-espejo-barberia",
+      slug: "salon-espejo-barberia",
+      name: "Espejo de barbería",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-espejo-barberia.webp"],
+      description: "Espejo de barbería, de 34 × 28 cm. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "34 × 28 cm",
+      inStock: true,
+      category: "Espejo",
+      tags: ["espejo", "barbería"]
+    },
+  {
+      id: "salon-espejo-32x23",
+      slug: "salon-espejo-32x23",
+      name: "Espejo de mano",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-espejo-32x23.webp"],
+      description: "Espejo de mano, de 32 × 23 cm. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "32 × 23 cm",
+      inStock: true,
+      category: "Espejo",
+      tags: ["espejo", "mano"]
+    },
+  {
+      id: "morfose-ossion-red-gum",
+      slug: "morfose-ossion-red-gum",
+      name: "Ossion Red Gum",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-red-gum.webp"],
+      description: "Gel de peinado Morfose Ossion Red Gum, de 750 ml, extra fuerte. El texto lo presenta sin escamas y no pegajoso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 750,
+      inStock: true,
+      category: "Gel",
+      tags: ["gel", "extra fuerte", "barbería"]
+    },
+  {
+      id: "wahl-codigo-colores",
+      slug: "wahl-codigo-colores",
+      name: "Código de colores",
+      brand: "Wahl",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wahl-codigo-colores.webp"],
+      description: "Kit Wahl de código de colores, de 20 piezas: cortadora con cable y recortadora a pila. Los peines van de 6 mm a 25 mm. La pila AA no viene incluida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "20 piezas",
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "recortadora", "peines"]
+    },
+  {
+      id: "trimmer-tn-t45",
+      slug: "trimmer-tn-t45",
+      name: "TN-T45",
+      brand: "Trimmer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/trimmer-tn-t45.webp"],
+      description: "Cortadora Trimmer TN-T45, con cuchilla T-blade dorada. Carga por USB y por cable, y trae cuatro peines guía.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "usb", "dorada"]
+    },
+  {
+      id: "salon-set-bano",
+      slug: "salon-set-bano",
+      name: "Set de baño",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-set-bano.webp"],
+      description: "Set de baño sin marca: toalla para el cabello, esponja de fresa, pinza y dos esponjas. La foto no indica medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["toalla", "esponja", "pinza"]
     }
 ];
