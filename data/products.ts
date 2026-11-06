@@ -23859,5 +23859,620 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Crema facial",
       tags: ["coco", "tiramisú", "hidratación"]
+    },
+  {
+      id: "bioaqua-rice-peel-off",
+      slug: "bioaqua-rice-peel-off",
+      name: "Rice peel-off",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-peel-off.webp"],
+      description: "Mascarilla peel-off Bioaqua Rice Raw Pulp, de 50 g. El texto habla de puntos negros, grasa y poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "puntos negros", "poros"]
+    },
+  {
+      id: "bioaqua-labios-caracol",
+      slug: "bioaqua-labios-caracol",
+      name: "Labios caracol",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-labios-caracol.webp"],
+      description: "Mascarilla de labios Bioaqua de colágeno y baba de caracol, de 8 g. El sobre habla de líneas finas y grietas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "8 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "caracol", "colágeno"]
+    },
+  {
+      id: "bioaqua-labios-hialuronico",
+      slug: "bioaqua-labios-hialuronico",
+      name: "Labios hialurónico",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-labios-hialuronico.webp"],
+      description: "Mascarilla de labios Bioaqua de ácido hialurónico y colágeno, de 8 g. El texto habla de suavizar líneas y nutrir.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "8 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "hialurónico", "colágeno"]
+    },
+  {
+      id: "bioaqua-rice-pliegues",
+      slug: "bioaqua-rice-pliegues",
+      name: "Rice pliegues",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-pliegues.webp"],
+      description: "Parches Bioaqua Rice Raw Pulp de microcristales, de 6 g, para los pliegues nasolabiales. El texto habla de hidratar y suavizar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 g",
+      inStock: true,
+      category: "Parches",
+      tags: ["arroz", "colágeno", "nasolabial"]
+    },
+  {
+      id: "bioaqua-rice-nasal",
+      slug: "bioaqua-rice-nasal",
+      name: "Rice nasal",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-nasal.webp"],
+      description: "Mascarilla nasal Bioaqua Rice Raw Pulp, de 6 g. El sobre habla de puntos negros y control de grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "nariz", "puntos negros"]
+    },
+  {
+      id: "bioaqua-rice-ojos",
+      slug: "bioaqua-rice-ojos",
+      name: "Rice ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-ojos.webp"],
+      description: "Parches de ojos Bioaqua Rice Raw Pulp con colágeno, de 18 ml. La foto muestra varios sobres iguales. El texto habla de ojeras y firmeza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 18,
+      inStock: true,
+      category: "Parches",
+      tags: ["arroz", "ojos", "colágeno"]
+    },
+  {
+      id: "sadoer-aceite-barba",
+      slug: "sadoer-aceite-barba",
+      name: "Aceite de barba",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-aceite-barba.webp"],
+      description: "Aceite para barba y bigote Sadoer, de 50 ml. El texto habla de nutrir la piel y el vello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Aceite",
+      tags: ["barba", "aceite"]
+    },
+  {
+      id: "sadoer-spray-barba",
+      slug: "sadoer-spray-barba",
+      name: "Spray de barba",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-spray-barba.webp"],
+      description: "Spray para barba Sadoer, de 30 ml. El texto lo presenta refrescante y nutritivo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Spray",
+      tags: ["barba", "spray"]
+    },
+  {
+      id: "bioaqua-jabon-melocoton",
+      slug: "bioaqua-jabon-melocoton",
+      name: "Melocotón",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-jabon-melocoton.webp"],
+      description: "Jabón Bioaqua de macarrón de melocotón, de 100 g. El texto habla de espuma e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "melocotón", "macarrón"]
+    },
+  {
+      id: "bioaqua-rice-manos",
+      slug: "bioaqua-rice-manos",
+      name: "Rice manos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-manos.webp"],
+      description: "Barra Bioaqua Rice Raw Pulp para manos y pies, de 40 g, con ácido hialurónico. La foto muestra dos barras iguales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "40 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "pies", "arroz"]
+    },
+  {
+      id: "bioaqua-centella-gel",
+      slug: "bioaqua-centella-gel",
+      name: "Centella",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-gel.webp"],
+      description: "Gel Bioaqua de centella asiática y aloe vera, de 300 ml. El texto lo presenta calmante e hidratante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Gel",
+      tags: ["centella", "aloe", "gel"]
+    },
+  {
+      id: "bioaqua-centella-manos",
+      slug: "bioaqua-centella-manos",
+      name: "Centella manos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-manos.webp"],
+      description: "Mascarilla para manos Bioaqua de centella asiática. El sobre habla de nutrir y suavizar. No marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "centella"]
+    },
+  {
+      id: "sadoer-manchas",
+      slug: "sadoer-manchas",
+      name: "Manchas",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-manchas.webp"],
+      description: "Crema facial Sadoer de niacinamida, de 50 g. El texto habla de manchas, alfa-arbutina, ácido tranexámico y ceramidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["niacinamida", "manchas", "ceramidas"]
+    },
+  {
+      id: "sadoer-cera-frutas",
+      slug: "sadoer-cera-frutas",
+      name: "Frutas",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-cera-frutas.webp"],
+      description: "Cera capilar Sadoer de frutas, con aceitunas y fresa. La foto muestra dos tarros iguales. El texto habla de volumen. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fresa", "cabello"]
+    },
+  {
+      id: "sadoer-espuma-afeitar",
+      slug: "sadoer-espuma-afeitar",
+      name: "Espuma",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-espuma-afeitar.webp"],
+      description: "Espuma de afeitar Sadoer, de 60 ml. El texto habla de suavizar la barba.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "espuma", "barba"]
+    },
+  {
+      id: "sadoer-romero",
+      slug: "sadoer-romero",
+      name: "Romero",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-romero.webp"],
+      description: "Aceite capilar Sadoer de romero y menta, de 55 ml. El texto habla de nutrición y raíces.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 55,
+      inStock: true,
+      category: "Aceite",
+      tags: ["romero", "menta", "cabello"]
+    },
+  {
+      id: "sadoer-starry",
+      slug: "sadoer-starry",
+      name: "Starry",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-starry.webp"],
+      description: "Parches de ojos Sadoer Starry, de carbón de bambú y colágeno. El envase trae 30 pares y marca 80 g. El texto habla de iluminar el contorno.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "30 pares",
+      inStock: true,
+      category: "Parches",
+      tags: ["ojos", "carbón", "colágeno"]
+    },
+  {
+      id: "sadoer-unas",
+      slug: "sadoer-unas",
+      name: "Uñas",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-unas.webp"],
+      description: "Spray para uñas Sadoer con queratina, de 30 ml. El texto habla de fortalecer e hidratar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Uñas",
+      tags: ["uñas", "queratina"]
+    },
+  {
+      id: "bioaqua-rice-peeling",
+      slug: "bioaqua-rice-peeling",
+      name: "Rice peeling",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-peeling.webp"],
+      description: "Loción exfoliante Bioaqua Rice Raw Pulp, de 100 ml. El texto la presenta como un exfoliante suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["arroz", "exfoliante"]
+    },
+  {
+      id: "bioaqua-centella-spf50",
+      slug: "bioaqua-centella-spf50",
+      name: "Centella SPF 50",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-spf50.webp"],
+      description: "Protector solar Bioaqua de centella asiática, SPF 50, para cara y cuerpo. El tubo no marca el volumen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "centella", "solar"]
+    },
+  {
+      id: "bioaqua-jabon-orquidea",
+      slug: "bioaqua-jabon-orquidea",
+      name: "Orquídea",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-jabon-orquidea.webp"],
+      description: "Jabón Bioaqua de orquídea. El texto habla de limpieza e hidratación. El empaque no marca el peso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "orquídea"]
+    },
+  {
+      id: "bioaqua-manteca-coco",
+      slug: "bioaqua-manteca-coco",
+      name: "Manteca de coco",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-manteca-coco.webp"],
+      description: "Manteca corporal Bioaqua de coco y tiramisú. La foto muestra tres tarros iguales. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["coco", "tiramisú", "manteca"]
+    },
+  {
+      id: "bioaqua-manteca-vainilla",
+      slug: "bioaqua-manteca-vainilla",
+      name: "Vainilla",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-manteca-vainilla.webp"],
+      description: "Manteca corporal Bioaqua de vainilla, de 200 g. El texto habla de hidratación y fragancia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["vainilla", "manteca", "cuerpo"]
+    },
+  {
+      id: "bioaqua-rice-arrugas",
+      slug: "bioaqua-rice-arrugas",
+      name: "Rice arrugas",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-arrugas.webp"],
+      description: "Mascarilla facial Bioaqua Rice Raw Pulp, de 30 ml, con colágeno. El texto habla de líneas finas y elasticidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "arrugas", "colágeno"]
+    },
+  {
+      id: "bioaqua-rice-isolation",
+      slug: "bioaqua-rice-isolation",
+      name: "Rice isolation",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-isolation.webp"],
+      description: "Base y primer facial Bioaqua Rice Raw Pulp, de 40 g, en tres colores. El texto habla de unificar el tono.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "40 g",
+      inStock: true,
+      category: "Base",
+      tags: ["base", "primer", "arroz"]
+    },
+  {
+      id: "bioaqua-ojos-niacinamida",
+      slug: "bioaqua-ojos-niacinamida",
+      name: "Niacinamida ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-ojos-niacinamida.webp"],
+      description: "Parches de ojos Bioaqua de niacinamida y colágeno, de 7,5 g. El texto habla de hidratar y dar brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "7,5 g",
+      inStock: true,
+      category: "Parches",
+      tags: ["ojos", "niacinamida", "colágeno"]
+    },
+  {
+      id: "bioaqua-rice-microcristales",
+      slug: "bioaqua-rice-microcristales",
+      name: "Rice microcristales",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-microcristales.webp"],
+      description: "Parches de ojos Bioaqua Rice Raw Pulp de microcristales. La foto muestra tres sobres iguales. El texto habla de ojeras y firmeza. El peso del sobre no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Parches",
+      tags: ["ojos", "arroz", "ojeras"]
+    },
+  {
+      id: "bioaqua-rice-nariz",
+      slug: "bioaqua-rice-nariz",
+      name: "Rice nasal",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-nariz.webp"],
+      description: "Mascarilla nasal Bioaqua Rice Raw Pulp, de 60 g. El texto habla de puntos negros y grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "nariz", "puntos negros"]
+    },
+  {
+      id: "bioaqua-labios-retinol",
+      slug: "bioaqua-labios-retinol",
+      name: "Labios retinol",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-labios-retinol.webp"],
+      description: "Mascarilla de labios Bioaqua de retinol y colágeno, de 8 g. El sobre habla de líneas finas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "8 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "retinol", "colágeno"]
+    },
+  {
+      id: "bioaqua-labios-vitamina-c",
+      slug: "bioaqua-labios-vitamina-c",
+      name: "Labios vitamina C",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-labios-vitamina-c.webp"],
+      description: "Mascarilla de labios Bioaqua de vitamina C y colágeno, de 8 g. El sobre habla de hidratar y suavizar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "8 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "vitamina c", "colágeno"]
     }
 ];
