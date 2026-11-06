@@ -29120,5 +29120,594 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Cepillo",
       tags: ["cepillo", "ovalado", "madera"]
+    },
+  {
+      id: "origem-gelatina",
+      slug: "origem-gelatina",
+      name: "Gelatina",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-gelatina.webp"],
+      description: "Gelatina capilar Origem Super Modeladora, de 400 g, con colágeno, vitamina C y aminoácidos. El envase la presenta vegana, para cabello ondulado, rizado y crespo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "400 g",
+      inStock: true,
+      category: "Gel",
+      tags: ["gelatina", "colágeno", "rizos", "vegano"]
+    },
+  {
+      id: "origem-grupy-rizados",
+      slug: "origem-grupy-rizados",
+      name: "Grupy rizados",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-grupy-rizados.webp"],
+      description: "Set capilar Origem Grupy Kids para cabello rizado: champú de 500 ml y acondicionador de 250 ml. Fórmula vegana y dermatológicamente testada, para definición y control de volumen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 ml + 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "rizos", "vegano", "set"]
+    },
+  {
+      id: "origem-grupy-liso",
+      slug: "origem-grupy-liso",
+      name: "Grupy liso",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-grupy-liso.webp"],
+      description: "Set capilar Origem Grupy Kids para cabello liso: champú de 500 ml y acondicionador de 250 ml. Fórmula vegana y dermatológicamente testada, para hidratación diaria.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 ml + 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "liso", "vegano", "set"]
+    },
+  {
+      id: "origem-grupy-crespos",
+      slug: "origem-grupy-crespos",
+      name: "Grupy crespos",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-grupy-crespos.webp"],
+      description: "Set capilar Origem Grupy Kids para cabello crespo: champú de 500 ml y acondicionador de 250 ml. Fórmula vegana y dermatológicamente testada, para suavidad e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 ml + 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "crespos", "vegano", "set"]
+    },
+  {
+      id: "origem-aguacate",
+      slug: "origem-aguacate",
+      name: "Aguacate",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-aguacate.webp"],
+      description: "Set Origem de aguacate, champú de 325 ml y acondicionador de 180 ml, para todo tipo de cabello. El envase habla de nutrición, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "325 ml + 180 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["aguacate", "nutrición", "set"]
+    },
+  {
+      id: "origem-oleo-coco",
+      slug: "origem-oleo-coco",
+      name: "Óleo de coco",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-oleo-coco.webp"],
+      description: "Set capilar Origem Óleo de Coco, champú de 325 ml y acondicionador de 180 ml, para cabello seco y deshidratado. El envase habla de nutrición, suavidad, hidratación y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "325 ml + 180 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["coco", "cabello seco", "set"]
+    },
+  {
+      id: "karicia-decolorante",
+      slug: "karicia-decolorante",
+      name: "Decolorante",
+      brand: "Karicia",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karicia-decolorante.webp"],
+      description: "Polvo decolorante Karicia de alto rendimiento. La foto no marca el peso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Decoloración",
+      tags: ["decoloración", "polvo", "rubios"]
+    },
+  {
+      id: "boe-crece-pelo-kit",
+      slug: "boe-crece-pelo-kit",
+      name: "Kit Crece Pelo",
+      brand: "boé",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/boe-crece-pelo-kit.webp"],
+      description: "Set fitoterapéutico boé Crece Pelo con enjuague, champú, tratamiento, gotero y leave-in. El envase lo presenta para acondicionar, humectar, reparar, suavizar y dar brillo. Las medidas de cada pieza no se leen con claridad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["fitoterapéutico", "set", "brillo"]
+    },
+  {
+      id: "kemei-ondas",
+      slug: "kemei-ondas",
+      name: "Ondas",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-ondas.webp"],
+      description: "Rizadora Kemei de tres barriles para rizos, alisado y ondas. La caja no marca el modelo ni una medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rizadora",
+      tags: ["rizos", "ondas", "alisado"]
+    },
+  {
+      id: "topsonic-roja",
+      slug: "topsonic-roja",
+      name: "Roja",
+      brand: "Topsonic",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/topsonic-roja.webp"],
+      description: "Plancha Topsonic roja, de hasta 480 °F. El envase habla de alisado y brillo. La foto no marca una medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "cerámica", "480"]
+    },
+  {
+      id: "onika-aguacate",
+      slug: "onika-aguacate",
+      name: "Aguacate",
+      brand: "Onika",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/onika-aguacate.webp"],
+      description: "Plancha Onika de cerámica con queratina y aguacate. El envase la presenta para un cabello liso y brillante. La foto no marca una medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "queratina", "aguacate", "cerámica"]
+    },
+  {
+      id: "realsaloon-2300",
+      slug: "realsaloon-2300",
+      name: "2300W",
+      brand: "RealSaloon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/realsaloon-2300.webp"],
+      description: "Secador RealSaloon Power de 2300 W, con tecnología iónica. El envase lo presenta para un secado rápido y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "iónico", "2300w"]
+    },
+  {
+      id: "yogi-care-uplex",
+      slug: "yogi-care-uplex",
+      name: "Uplex",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-uplex.webp"],
+      description: "Set Yogi Care Uplex de tres pasos de 250 ml: esencia, protector y cuidado, para cabello procesado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "250 ml + 250 ml + 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["reparación", "set", "cabello procesado"]
+    },
+  {
+      id: "let-me-be-colageno",
+      slug: "let-me-be-colageno",
+      name: "Colágeno",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-colageno.webp"],
+      description: "Acondicionador Let Me Be de colágeno y elastina, de 240 ml, para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 240,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["colágeno", "elastina", "cabello seco"]
+    },
+  {
+      id: "sinko-rizos-cristal",
+      slug: "sinko-rizos-cristal",
+      name: "Rizos cristal",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-rizos-cristal.webp"],
+      description: "Set Sinko Styling Healthy Curly, dos sobres de crema cristalizante de 800 ml con aceite de macadamia, para cabello dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "800 ml + 800 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["rizos", "macadamia", "set"]
+    },
+  {
+      id: "sinko-liso-cristal",
+      slug: "sinko-liso-cristal",
+      name: "Liso cristal",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-liso-cristal.webp"],
+      description: "Set Sinko Styling Smooth, crema cristalizante para alisar: sobre de 200 ml y sobre de 800 ml, con aceite de macadamia, para cabello dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 ml + 800 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["alisado", "macadamia", "set"]
+    },
+  {
+      id: "bandido-4-crazy",
+      slug: "bandido-4-crazy",
+      name: "4 Crazy",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-4-crazy.webp"],
+      description: "Cera Bandido 4-Crazy-4, de 150 ml. El envase habla de fijación loca y estilo sin límites.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación", "barbería"]
+    },
+  {
+      id: "bandido-6-curly",
+      slug: "bandido-6-curly",
+      name: "6 Curly",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-6-curly.webp"],
+      description: "Cera Bandido 6-Curly-6, de 150 ml, para rizos definidos y fijación máxima.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "rizos", "fijación"]
+    },
+  {
+      id: "bandido-gum",
+      slug: "bandido-gum",
+      name: "Gum Effect",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-gum.webp"],
+      description: "Cera Bandido 1-Gum Effect-1, de 150 ml, con efecto goma y estilo flexible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "goma", "flexible"]
+    },
+  {
+      id: "bandido-aqua-3",
+      slug: "bandido-aqua-3",
+      name: "Aqua Wax 3",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-3.webp"],
+      description: "Cera Bandido Aqua Wax 3, de 150 ml, de fijación natural.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación natural"]
+    },
+  {
+      id: "bandido-aqua-5",
+      slug: "bandido-aqua-5",
+      name: "Aqua Wax 5",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-5.webp"],
+      description: "Cera Bandido Aqua Wax 5, de 150 ml. El envase habla de estilo fresco y fijación definida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación"]
+    },
+  {
+      id: "bandido-aqua-7",
+      slug: "bandido-aqua-7",
+      name: "Aqua Wax 7",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-7.webp"],
+      description: "Cera Bandido Aqua Wax 7, de 150 ml. El envase habla de brillo intenso y fijación superior.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "brillo", "fijación"]
+    },
+  {
+      id: "bandido-aqua-1",
+      slug: "bandido-aqua-1",
+      name: "Aqua Wax 1",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-1.webp"],
+      description: "Cera Bandido Aqua Wax 1, de 150 ml, de estilo clásico y fijación fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "clásico", "fijación"]
+    },
+  {
+      id: "bandido-aqua-8",
+      slug: "bandido-aqua-8",
+      name: "Aqua Wax 8",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-8.webp"],
+      description: "Cera Bandido Aqua Wax 8, de 150 ml, de estilo audaz y fijación extrema.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación extrema"]
+    },
+  {
+      id: "bandido-aqua-6",
+      slug: "bandido-aqua-6",
+      name: "Aqua Wax 6",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-6.webp"],
+      description: "Cera Bandido Aqua Wax 6, de 150 ml, de estilo definido y fijación fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación"]
+    },
+  {
+      id: "nevada-espuma-regular",
+      slug: "nevada-espuma-regular",
+      name: "Espuma Regular",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-espuma-regular.webp"],
+      description: "Espuma de afeitar Nevada Regular Comfort-Glide, de 400 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "espuma"]
+    },
+  {
+      id: "xtracare-lubricante-3",
+      slug: "xtracare-lubricante-3",
+      name: "Lubricante 3 en 1",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-lubricante-3.webp"],
+      description: "Crema corporal XtraCare Lubricante 3 en 1, de 444 ml, para cuerpo, rostro y después del afeitado. Fragancia ligera, con aloe.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["corporal", "aloe", "afeitado"]
+    },
+  {
+      id: "beauty-style-amarillo",
+      slug: "beauty-style-amarillo",
+      name: "Amarillo",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-amarillo.webp"],
+      description: "Cepillo paleta amarillo Beauty Style, con cerdas negras. La foto no marca la medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "paleta"]
+    },
+  {
+      id: "nutri-hair-profesional",
+      slug: "nutri-hair-profesional",
+      name: "Profesional",
+      brand: "Nutri Hair",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nutri-hair-profesional.webp"],
+      description: "Cepillo profesional Nutri Hair, ovalado, para el cabello. La foto no marca la medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "paleta", "salón"]
     }
 ];
