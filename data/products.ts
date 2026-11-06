@@ -12418,5 +12418,613 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Champú",
       tags: ["argán"]
+    },
+  {
+      id: "anua-azelaic-acid-10-serum",
+      slug: "anua-azelaic-acid-10-serum",
+      name: "Azelaic Acid 10 Hyaluron Serum",
+      brand: "Anua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/anua-azelaic-acid-10-serum.webp"],
+      description: "Sérum facial Anua Azelaic Acid 10 Hyaluron Redness Soothing, de 30 ml. Calma el enrojecimiento, suaviza la textura irregular y desinflama los brotes. Está pensado para piel sensible, grasa o con tendencia al acné y la rosácea.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["azelaico", "rosácea", "acné"]
+    },
+  {
+      id: "mixsoon-bean-cleansing-oil",
+      slug: "mixsoon-bean-cleansing-oil",
+      name: "Bean Cleansing Oil",
+      brand: "mixsoon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/mixsoon-bean-cleansing-oil.webp"],
+      description: "Aceite limpiador facial mixsoon Bean Cleansing Oil, de 195 ml. Retira el maquillaje, incluso el resistente al agua, el protector solar, el exceso de sebo y las impurezas, sin resecar ni dañar la barrera. Limpia los poros en piel sensible o grasa, sin residuos grasos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 195,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["desmaquillante", "soja", "piel sensible"]
+    },
+  {
+      id: "dr-melaxin-calcium-volume-eye-patch",
+      slug: "dr-melaxin-calcium-volume-eye-patch",
+      name: "Calcium Volume Eye Patch",
+      brand: "Dr.Melaxin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-melaxin-calcium-volume-eye-patch.webp"],
+      description: "Parches de hidrogel Dr.Melaxin Cemenrete Calcium Volume Eye Patch, 60 parches. Llevan iones de calcio, péptidos y colágeno para suavizar el contorno, mejorar la elasticidad y reducir ojeras y arrugas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 parches",
+      inStock: true,
+      category: "Parches",
+      tags: ["contorno de ojos", "colágeno", "ojeras"]
+    },
+  {
+      id: "tocobo-vita-waterproof-sun-stick",
+      slug: "tocobo-vita-waterproof-sun-stick",
+      name: "Vita Waterproof Sun Stick",
+      brand: "Tocobo",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tocobo-vita-waterproof-sun-stick.webp"],
+      description: "Protector solar en barra Tocobo Vita Waterproof Sun Stick, de 18 g, SPF 50+ PA++++. Resiste el agua y el sudor, lleva vitaminas E y C, y la textura es suave, sin residuo blanco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "18 g",
+      inStock: true,
+      category: "Protector solar",
+      tags: ["SPF 50", "barra", "vitaminas"]
+    },
+  {
+      id: "tocobo-coconut-clay-cleansing-foam",
+      slug: "tocobo-coconut-clay-cleansing-foam",
+      name: "Coconut Clay Cleansing Foam",
+      brand: "Tocobo",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tocobo-coconut-clay-cleansing-foam.webp"],
+      description: "Espuma limpiadora facial Tocobo, de 150 ml, con arcilla rosa y extracto de coco. Absorbe el exceso de sebo, exfolia con suavidad y retira células muertas. Hidrata y repara la barrera, sin sensación de piel acartonada. Para piel mixta a grasa, y suave en piel sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["arcilla", "coco", "piel grasa"]
+    },
+  {
+      id: "elizavecca-cer-100-curl-cream",
+      slug: "elizavecca-cer-100-curl-cream",
+      name: "CER-100 Curl Cream",
+      brand: "Elizavecca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/elizavecca-cer-100-curl-cream.webp"],
+      description: "Crema para rizos Elizavecca CER-100, de 120 ml, con colágeno y revestimiento capilar. Define los rizos, hidrata, repara, aporta brillo y vitalidad, y protege contra el daño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "colágeno"]
+    },
+  {
+      id: "anua-heartleaf-pore-cleansing-foam",
+      slug: "anua-heartleaf-pore-cleansing-foam",
+      name: "Heartleaf Pore Cleansing Foam",
+      brand: "Anua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/anua-heartleaf-pore-cleansing-foam.webp"],
+      description: "Limpiador facial Anua Heartleaf Quercetinol Pore Deep Cleansing Foam, de 150 ml. Limpia los poros en profundidad, controla el sebo y exfolia con suavidad sin resecar. Para piel mixta, grasa o con tendencia al acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["poros", "acné", "piel grasa"]
+    },
+  {
+      id: "anua-niacinamide-txa-serum",
+      slug: "anua-niacinamide-txa-serum",
+      name: "Niacinamide 10% + TXA 4% Serum",
+      brand: "Anua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/anua-niacinamide-txa-serum.webp"],
+      description: "Sérum facial Anua Niacinamide 10% + TXA 4%, de 30 ml. Lleva 10% de niacinamida, 4% de ácido tranexámico y 2% de arbutina. Busca combatir la hiperpigmentación, reducir manchas, desvanecer marcas de acné y unificar el tono. La textura es acuosa, ligera y de rápida absorción, también en piel sensible o con tendencia al acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["niacinamida", "manchas", "acné"]
+    },
+  {
+      id: "cosrx-advanced-snail-eye-patch",
+      slug: "cosrx-advanced-snail-eye-patch",
+      name: "Advanced Snail Hydrogel Eye Patch",
+      brand: "COSRX",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/cosrx-advanced-snail-eye-patch.webp"],
+      description: "Parches de hidrogel COSRX Advanced Snail, 60 parches, para el contorno de ojos. Hidratan, aportan luminosidad y se adaptan para calmar la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 parches",
+      inStock: true,
+      category: "Parches",
+      tags: ["contorno de ojos", "baba de caracol"]
+    },
+  {
+      id: "mixsoon-bean-sun-serum",
+      slug: "mixsoon-bean-sun-serum",
+      name: "Bean Sun Serum",
+      brand: "mixsoon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/mixsoon-bean-sun-serum.webp"],
+      description: "Protector solar facial mixsoon Bean Sun Serum, de 50 ml, SPF 50+ PA++++. Textura ligera de suero, con extractos vegetales fermentados de soja, granada y cebada. Protege de los rayos UV, hidrata y deja un acabado luminoso, sin residuos grasos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["SPF 50", "soja", "fermentado"]
+    },
+  {
+      id: "mary-and-may-calendula-sleeping-mask",
+      slug: "mary-and-may-calendula-sleeping-mask",
+      name: "Calendula Peptide Sleeping Mask",
+      brand: "Mary & May",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/mary-and-may-calendula-sleeping-mask.webp"],
+      description: "Mascarilla facial nocturna Mary & May Calendula Peptide Ageless, de 110 g. Fórmula vegana con caléndula y 25 péptidos. Calma la irritación, mejora la elasticidad, hidrata y busca combatir los signos de envejecimiento mientras se duerme. Ligera, para piel sensible o con rojeces.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "110 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["caléndula", "vegano", "nocturna"]
+    },
+  {
+      id: "beauty-of-joseon-revive-eye-patch",
+      slug: "beauty-of-joseon-revive-eye-patch",
+      name: "Revive Under Eye Patch",
+      brand: "Beauty of Joseon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-of-joseon-revive-eye-patch.webp"],
+      description: "Parches de hidrogel Beauty of Joseon Revive Under Eye, con ginseng y retinal. Combaten arrugas finas, mejoran la elasticidad, reducen la hinchazón y ayudan a difuminar las ojeras.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Parches",
+      tags: ["contorno de ojos", "ginseng", "retinal"]
+    },
+  {
+      id: "torriden-dive-in-hyaluronic-serum",
+      slug: "torriden-dive-in-hyaluronic-serum",
+      name: "Dive-In Hyaluronic Acid Serum",
+      brand: "Torriden",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/torriden-dive-in-hyaluronic-serum.webp"],
+      description: "Sérum facial Torriden Dive-In de ácido hialurónico de bajo peso molecular, de 50 ml. El complejo 5D reúne cinco pesos moleculares. Lleva alantoína, pantenol y centella asiática para calmar e hidratar. Para piel deshidratada, mixta o sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["hialurónico", "centella", "hidratación"]
+    },
+  {
+      id: "skinfood-rice-mask-wash-off",
+      slug: "skinfood-rice-mask-wash-off",
+      name: "Rice Mask Wash Off",
+      brand: "SKINFOOD",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skinfood-rice-mask-wash-off.webp"],
+      description: "Mascarilla facial de enjuague SKINFOOD Rice Mask Wash Off, con extracto y agua de salvado de arroz. Exfolia con suavidad la piel opaca, retira células muertas, ilumina e hidrata.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "exfoliante"]
+    },
+  {
+      id: "medicube-pdrn-pink-collagen-cream",
+      slug: "medicube-pdrn-pink-collagen-cream",
+      name: "PDRN Pink Collagen Capsule Cream",
+      brand: "Medicube",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/medicube-pdrn-pink-collagen-cream.webp"],
+      description: "Crema facial Medicube PDRN Pink Collagen Capsule, de 55 g. Lleva PDRN, cápsulas de colágeno, niacinamida al 5%, escualano y ácido hialurónico. Busca hidratar la piel seca, mejorar manchas, suavizar líneas de expresión y dejar un acabado luminoso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "55 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["PDRN", "colágeno", "niacinamida"]
+    },
+  {
+      id: "medicube-kojic-turmeric-capsule-cream",
+      slug: "medicube-kojic-turmeric-capsule-cream",
+      name: "Kojic Acid Turmeric Capsule Cream",
+      brand: "Medicube",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/medicube-kojic-turmeric-capsule-cream.webp"],
+      description: "Crema facial iluminadora Medicube Kojic Acid Turmeric Vita Capsule, de 55 g. Revitaliza la piel apagada, reduce manchas oscuras y unifica el tono. Las cápsulas se disuelven al masajear.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "55 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["kójico", "cúrcuma", "manchas"]
+    },
+  {
+      id: "yogi-care-macadamia-oil-nourishing-serum",
+      slug: "yogi-care-macadamia-oil-nourishing-serum",
+      name: "Macadamia Oil Hair & Body Serum",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-macadamia-oil-nourishing-serum.webp"],
+      description: "Sérum nutritivo Yogi Care Macadamia Oil Hair & Body, de 50 ml, para el cabello y el cuerpo. El complejo de aceite se absorbe al instante y aporta hidratación, suavidad, protección y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum",
+      tags: ["macadamia", "cabello", "cuerpo"]
+    },
+  {
+      id: "sinko-styling-bright-soft-hair-shine",
+      slug: "sinko-styling-bright-soft-hair-shine",
+      name: "Bright and Soft Hair Shine",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-bright-soft-hair-shine.webp"],
+      description: "Sérum capilar Sinko Styling Bright and Soft Hair Shine, de 100 ml. Aporta brillo y suavidad. El texto de la foto lo presenta como sérum de macadamia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["brillo", "macadamia"]
+    },
+  {
+      id: "tea-tree-rejuvenating-hair-mask",
+      slug: "tea-tree-rejuvenating-hair-mask",
+      name: "Rejuvenating Hair Mask",
+      brand: "Tea Tree",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tea-tree-rejuvenating-hair-mask.webp"],
+      description: "Mascarilla capilar Tea Tree Rejuvenating, de 300 ml. Suaviza, purifica y revitaliza el cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["árbol de té"]
+    },
+  {
+      id: "organic-ginger-shampoo",
+      slug: "organic-ginger-shampoo",
+      name: "Organic Ginger Shampoo",
+      brand: "Organic Ginger",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/organic-ginger-shampoo.webp"],
+      description: "Champú Organic Ginger, de 300 ml. Limpia el cuero cabelludo en profundidad, fortalece el folículo y busca reducir la caída o el debilitamiento del cabello. El envase lo presenta para devolver brillo, retener humedad y limpiar el cuero.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["jengibre", "anticaída", "cuero cabelludo"]
+    },
+  {
+      id: "organic-ginger-hair-mask",
+      slug: "organic-ginger-hair-mask",
+      name: "Organic Ginger Hair Mask",
+      brand: "Organic Ginger",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/organic-ginger-hair-mask.webp"],
+      description: "Mascarilla capilar Organic Ginger, de 300 ml. Mejora la elasticidad, controla el frizz, hidrata las hebras secas desde la raíz y fortalece la fibra frente al calor y los químicos. El envase también la presenta para reparar puntas abiertas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["jengibre", "frizz", "puntas abiertas"]
+    },
+  {
+      id: "sinko-styling-bond-repairing-complex",
+      slug: "sinko-styling-bond-repairing-complex",
+      name: "Bond Repairing Complex and Collagen",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-bond-repairing-complex.webp"],
+      description: "Tratamiento Sinko Styling Bond Repairing Complex and Collagen, de 500 ml. Reparación profesional para cabello severamente dañado por químicos, decoloraciones, tintes o herramientas de calor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["colágeno", "cabello dañado", "enlaces"]
+    },
+  {
+      id: "yogi-care-u-colagent-daily-set",
+      slug: "yogi-care-u-colagent-daily-set",
+      name: "U-Colagent Daily Shampoo y Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-colagent-daily-set.webp"],
+      description: "Set diario Yogi Care U-Colagent, con champú y acondicionador de 250 ml. Protege, hidrata y repara el cabello dañado, y busca prolongar el efecto liso y suave después de un tratamiento alisador con colágeno.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "2 × 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["colágeno", "alisado", "uso diario"]
+    },
+  {
+      id: "sinko-styling-argan-oil-conditioner-300",
+      slug: "sinko-styling-argan-oil-conditioner-300",
+      name: "Argan Oil Nourishing Conditioner",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-argan-oil-conditioner-300.webp"],
+      description: "Acondicionador nutritivo Sinko Styling Argan Oil Nourishing, de 300 ml, con aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán"]
+    },
+  {
+      id: "tea-tree-rejuvenating-shampoo",
+      slug: "tea-tree-rejuvenating-shampoo",
+      name: "Rejuvenating Shampoo",
+      brand: "Tea Tree",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tea-tree-rejuvenating-shampoo.webp"],
+      description: "Champú Tea Tree Rejuvenating, de 300 ml, para el cuero cabelludo. Libre de sulfatos, siliconas y parabenos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["árbol de té", "sin sulfatos", "cuero cabelludo"]
+    },
+  {
+      id: "tea-tree-rejuvenating-conditioner",
+      slug: "tea-tree-rejuvenating-conditioner",
+      name: "Rejuvenating Conditioner",
+      brand: "Tea Tree",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tea-tree-rejuvenating-conditioner.webp"],
+      description: "Acondicionador Tea Tree Rejuvenating, de 300 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["árbol de té"]
+    },
+  {
+      id: "medicube-pdrn-pink-peptide-serum",
+      slug: "medicube-pdrn-pink-peptide-serum",
+      name: "PDRN Pink Peptide Serum",
+      brand: "Medicube",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/medicube-pdrn-pink-peptide-serum.webp"],
+      description: "Sérum facial Medicube PDRN Pink Peptide, de 30 ml. Lleva 1% de PDRN de salmón, un complejo de 5 péptidos, niacinamida y vitamina B12. Busca regenerar, estimular el colágeno, unificar el tono e iluminar. Para piel madura, seca, opaca o sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["PDRN", "péptidos", "niacinamida"]
+    },
+  {
+      id: "skinfood-carrot-calming-water-pad",
+      slug: "skinfood-carrot-calming-water-pad",
+      name: "Carrot Carotene Calming Water Pad",
+      brand: "SKINFOOD",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skinfood-carrot-calming-water-pad.webp"],
+      description: "Almohadillas SKINFOOD Carrot Carotene Calming Water Pad, 60 unidades en un pote de 250 g. Calman, hidratan, alivian el enrojecimiento y reponen la barrera. Llevan extracto de raíz de zanahoria y aceite de semilla de zanahoria, con betacaroteno y antioxidantes. Para piel sensible, irritada o deshidratada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "250 g · 60 almohadillas",
+      inStock: true,
+      category: "Almohadillas",
+      tags: ["zanahoria", "calmante", "vegano"]
+    },
+  {
+      id: "tocobo-collagen-brightening-eye-cream",
+      slug: "tocobo-collagen-brightening-eye-cream",
+      name: "Collagen Brightening Eye Gel Cream",
+      brand: "Tocobo",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/tocobo-collagen-brightening-eye-cream.webp"],
+      description: "Contorno de ojos Tocobo Collagen Brightening Eye Gel Cream, de 30 ml. Lleva agua floral de lavanda, colágeno vegetal, niacinamida, agua de cuarzo y retinol. Hidrata, calma, mejora la firmeza e ilumina, y busca suavizar líneas de expresión. Para todo tipo de piel, incluida la sensible o reseca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["colágeno", "retinol", "lavanda"]
+    },
+  {
+      id: "round-lab-birch-juice-sun-cream",
+      slug: "round-lab-birch-juice-sun-cream",
+      name: "Birch Juice Moisturizing Sun Cream",
+      brand: "Round Lab",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/round-lab-birch-juice-sun-cream.webp"],
+      description: "Protector solar Round Lab Birch Juice Moisturizing Sun Cream, de 50 ml, SPF 50+ PA++++. Lleva savia de abedul, ácido hialurónico y niacinamida. Hidrata, reduce la inflamación, regula la grasa y se absorbe rápido, sin rastro blanco. Para piel sensible o reactiva.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["SPF 50", "abedul", "piel sensible"]
     }
 ];
