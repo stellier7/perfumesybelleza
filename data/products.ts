@@ -23868,8 +23868,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/bioaqua-rice-peel-off.webp"],
-      description: "Mascarilla peel-off Bioaqua Rice Raw Pulp, de 50 g. El texto habla de puntos negros, grasa y poros.",
+      images: ["/products/bioaqua-rice-peel-off.webp", "/products/bioaqua-rice-peel-off-2.webp"],
+      description: "Mascarilla peel-off Bioaqua Rice Raw Pulp, de 50 g. El texto habla de puntos negros, poros y manchas.",
       notes: {
         top: [],
         heart: [],
@@ -25681,8 +25681,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/bioaqua-rice-mirada.webp"],
-      description: "Crema facial Bioaqua Rice Raw Pulp en perlas, de 60 g. El texto habla de hidratar el contorno de ojos.",
+      images: ["/products/bioaqua-rice-mirada.webp", "/products/bioaqua-rice-mirada-2.webp"],
+      description: "Crema facial Bioaqua Rice Raw Pulp en perlas, de 60 g. El texto habla de hidratar, de elasticidad y de la barrera cutánea.",
       notes: {
         top: [],
         heart: [],
@@ -25714,5 +25714,576 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Crema corporal",
       tags: ["vitamina c", "cuerpo", "luminosidad"]
+    },
+  {
+      id: "bioaqua-niacinamida-tonico",
+      slug: "bioaqua-niacinamida-tonico",
+      name: "Niacinamida tónico",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-niacinamida-tonico.webp"],
+      description: "Tónico facial Bioaqua de niacinamida, de 120 ml. El texto habla de piel seca y de brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Tónico",
+      tags: ["niacinamida", "tónico", "brillo"]
+    },
+  {
+      id: "bioaqua-melocoton-limpiador",
+      slug: "bioaqua-melocoton-limpiador",
+      name: "Melocotón limpiador",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-melocoton-limpiador.webp"],
+      description: "Limpiador facial Bioaqua de melocotón, de 100 g. El texto habla de piel sensible y de poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["melocotón", "limpiador", "poros"]
+    },
+  {
+      id: "bioaqua-rosa-crema",
+      slug: "bioaqua-rosa-crema",
+      name: "Rosa crema",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-crema.webp"],
+      description: "Crema facial Bioaqua de rosa y ácido hialurónico, de 50 g. El texto habla de hidratar y de poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["rosa", "hialurónico", "hidratación"]
+    },
+  {
+      id: "bioaqua-vitamina-c-maquillaje",
+      slug: "bioaqua-vitamina-c-maquillaje",
+      name: "Vitamina C maquillaje",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-maquillaje.webp"],
+      description: "Crema facial de maquillaje Bioaqua de vitamina C, de 50 g. El texto habla de hidratar y dar brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["vitamina c", "maquillaje", "brillo"]
+    },
+  {
+      id: "bioaqua-hinojo-locion",
+      slug: "bioaqua-hinojo-locion",
+      name: "Hinojo loción",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-hinojo-locion.webp"],
+      description: "Loción facial Bioaqua de hinojo marino y ácido hialurónico, de 120 ml. El texto habla de líneas finas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["hinojo", "hialurónico", "loción"]
+    },
+  {
+      id: "sadoer-barba",
+      slug: "sadoer-barba",
+      name: "Barba",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-barba.webp"],
+      description: "Bálsamo para barba Sadoer, de 20 g. El texto habla de hidratar y suavizar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "20 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["barba", "bálsamo"]
+    },
+  {
+      id: "bioaqua-niacinamida-locion",
+      slug: "bioaqua-niacinamida-locion",
+      name: "Niacinamida loción",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-niacinamida-locion.webp"],
+      description: "Loción facial Bioaqua de niacinamida, de 80 ml. El texto habla de piel seca e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 80,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["niacinamida", "loción", "hidratación"]
+    },
+  {
+      id: "bioaqua-sakura-manos",
+      slug: "bioaqua-sakura-manos",
+      name: "Sakura manos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-sakura-manos.webp"],
+      description: "Crema de manos Bioaqua Sakura, de 75 g. El texto habla de hidratar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "75 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "sakura", "hidratación"]
+    },
+  {
+      id: "bioaqua-jazmin-manos",
+      slug: "bioaqua-jazmin-manos",
+      name: "Jazmín",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-jazmin-manos.webp"],
+      description: "Crema de manos Bioaqua de jazmín, de 75 g. El texto habla de hidratar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "75 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "jazmín", "hidratación"]
+    },
+  {
+      id: "bioaqua-manos-aromas",
+      slug: "bioaqua-manos-aromas",
+      name: "Aromas",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-manos-aromas.webp"],
+      description: "Set de cremas de manos Bioaqua, de 5 tubos de 75 g: lavanda, jazmín, sakura, hortensia y flores de laurel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["manos", "set", "flores"]
+    },
+  {
+      id: "bioaqua-camelias",
+      slug: "bioaqua-camelias",
+      name: "Camelias",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-camelias.webp"],
+      description: "Crema facial Bioaqua Camellias, de 20 g. El texto habla de camelia y melocotón.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "20 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["camelia", "melocotón", "crema"]
+    },
+  {
+      id: "bioaqua-niacinamida-crema",
+      slug: "bioaqua-niacinamida-crema",
+      name: "Niacinamida crema",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-niacinamida-crema.webp"],
+      description: "Crema facial Bioaqua de niacinamida, de 60 g, con aroma de rosa y jazmín.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["niacinamida", "rosa", "jazmín"]
+    },
+  {
+      id: "bioaqua-niacinamida-limpiador",
+      slug: "bioaqua-niacinamida-limpiador",
+      name: "Niacinamida limpiador",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-niacinamida-limpiador.webp"],
+      description: "Limpiador facial Bioaqua de niacinamida, de 100 g. El texto habla de poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["niacinamida", "limpiador", "poros"]
+    },
+  {
+      id: "bioaqua-niacinamida-ojos",
+      slug: "bioaqua-niacinamida-ojos",
+      name: "Niacinamida ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-niacinamida-ojos.webp"],
+      description: "Crema para ojos Bioaqua de niacinamida. El envase no marca el tamaño. El texto habla de ojeras.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["niacinamida", "ojos", "ojeras"]
+    },
+  {
+      id: "sadoer-leucocyte",
+      slug: "sadoer-leucocyte",
+      name: "Leucocyte",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-leucocyte.webp"],
+      description: "Sérum facial Sadoer Leucocyte, de 40 ml, con niacinamida, nonapéptido y colágeno. El texto habla de arrugas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 40,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["niacinamida", "colágeno", "arrugas"]
+    },
+  {
+      id: "sadoer-4-en-1",
+      slug: "sadoer-4-en-1",
+      name: "4 en 1",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-4-en-1.webp"],
+      description: "Sérum facial Sadoer 4 en 1, de 40 ml, con niacinamida, ácido tranexámico, rosa y vitamina E.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 40,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["niacinamida", "rosa", "vitamina e"]
+    },
+  {
+      id: "bioaqua-centella-ojos",
+      slug: "bioaqua-centella-ojos",
+      name: "Centella ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-ojos.webp"],
+      description: "Crema para ojos Bioaqua de centella asiática. El envase no marca el tamaño. El texto habla de calmar el contorno.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["centella", "ojos", "calmante"]
+    },
+  {
+      id: "bioaqua-rosa-ojos",
+      slug: "bioaqua-rosa-ojos",
+      name: "Rosa ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-ojos.webp"],
+      description: "Crema para ojos Bioaqua de rosa y ácido hialurónico. El envase no marca el tamaño. El texto habla de ojeras e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["rosa", "hialurónico", "ojos"]
+    },
+  {
+      id: "bioaqua-vitamina-c-locion",
+      slug: "bioaqua-vitamina-c-locion",
+      name: "Vitamina C loción",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-locion.webp"],
+      description: "Loción facial Bioaqua de vitamina C, de 120 ml. El texto habla de hidratar y unificar el tono.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["vitamina c", "loción", "brillo"]
+    },
+  {
+      id: "bioaqua-melocoton-cuerpo",
+      slug: "bioaqua-melocoton-cuerpo",
+      name: "Melocotón cuerpo",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-melocoton-cuerpo.webp"],
+      description: "Exfoliante corporal Bioaqua de melocotón. El envase no marca el tamaño. El texto habla de una exfoliación suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["melocotón", "exfoliante", "cuerpo"]
+    },
+  {
+      id: "bioaqua-vitamina-c-bruma",
+      slug: "bioaqua-vitamina-c-bruma",
+      name: "Vitamina C bruma",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-bruma.webp"],
+      description: "Bruma Bioaqua de vitamina C, de 100 ml. El texto habla de hidratar y de luminosidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Bruma",
+      tags: ["vitamina c", "bruma", "luminosidad"]
+    },
+  {
+      id: "bioaqua-vitamina-c-serum",
+      slug: "bioaqua-vitamina-c-serum",
+      name: "Vitamina C sérum",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-serum.webp"],
+      description: "Sérum facial Bioaqua de vitamina C, de 100 ml. El texto habla de iluminar y de manchas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["vitamina c", "sérum", "manchas"]
+    },
+  {
+      id: "bioaqua-hinojo-tonico",
+      slug: "bioaqua-hinojo-tonico",
+      name: "Hinojo tónico",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-hinojo-tonico.webp"],
+      description: "Tónico facial Bioaqua de hinojo marino y ácido hialurónico, de 120 ml. El texto habla de hidratar y de arrugas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Tónico",
+      tags: ["hinojo", "hialurónico", "tónico"]
+    },
+  {
+      id: "bioaqua-vitamina-c-ojos",
+      slug: "bioaqua-vitamina-c-ojos",
+      name: "Vitamina C ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-ojos.webp"],
+      description: "Crema para ojos Bioaqua de vitamina C, de 20 g. El texto habla de ojeras e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "20 g",
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["vitamina c", "ojos", "ojeras"]
+    },
+  {
+      id: "bioaqua-melocoton-manos",
+      slug: "bioaqua-melocoton-manos",
+      name: "Melocotón manos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-melocoton-manos.webp"],
+      description: "Crema de manos Bioaqua de melocotón. El envase no marca el tamaño. El texto habla de hidratar las manos secas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "melocotón", "hidratación"]
+    },
+  {
+      id: "bioaqua-algas",
+      slug: "bioaqua-algas",
+      name: "Algas",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-algas.webp"],
+      description: "Parches Bioaqua de ojos y labios con extracto de algas. El sobre no marca el tamaño. El texto habla de hidratar y de ojeras.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Parches",
+      tags: ["ojos", "labios", "algas"]
+    },
+  {
+      id: "bioaqua-rice-acondicionador",
+      slug: "bioaqua-rice-acondicionador",
+      name: "Rice acondicionador",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-acondicionador.webp"],
+      description: "Acondicionador Bioaqua Rice Raw Pulp, de 500 ml. El texto habla de nutrir el cabello seco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["arroz", "cabello", "acondicionador"]
+    },
+  {
+      id: "sadoer-24k",
+      slug: "sadoer-24k",
+      name: "24K",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-24k.webp"],
+      description: "Sérum facial Sadoer 24K de colágeno y ácido hialurónico. La caja marca 40 ml y el frasco 60 ml. El texto habla de arrugas e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["colágeno", "oro", "hialurónico"]
     }
 ];
