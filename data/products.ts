@@ -14944,5 +14944,611 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Sérum facial",
       tags: ["centella", "barrera", "luminosidad"]
+    },
+  {
+      id: "oceanyst-no-yellow-shampoo",
+      slug: "oceanyst-no-yellow-shampoo",
+      name: "No Yellow",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-no-yellow-shampoo.webp"],
+      description: "Champú Oceanyst No Yellow, de 500 ml, con pigmentos violetas de alta intensidad que contrarrestan los reflejos amarillos y dorados. Mantiene rubios fríos, platinados, decolorados o canas con aspecto brillante. Limpia en profundidad sin apagar el brillo y evita la resequedad habitual de otros matizadores. Libre de siliconas, parabenos, aceites minerales y SLS.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["matizador", "rubio", "sin sulfatos"]
+    },
+  {
+      id: "oceanyst-reconstruccion-kit",
+      slug: "oceanyst-reconstruccion-kit",
+      name: "Kit Reconstrucción",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-reconstruccion-kit.webp"],
+      description: "Kit Oceanyst Reconstrucción, con champú y mascarilla de 50 ml. Indicado para cabello dañado, quebradizo y propenso a la rotura. Su mezcla de cinco algas y pantenol actúa sobre el cabello, fortalece las fibras y favorece la reparación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 ml + 50 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["algas", "reparación", "cabello dañado"]
+    },
+  {
+      id: "oceanyst-hidratacion-kit",
+      slug: "oceanyst-hidratacion-kit",
+      name: "Kit Hidratación y Nutrición",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-hidratacion-kit.webp"],
+      description: "Kit Oceanyst Hidratación y Nutrición, con champú y mascarilla de 50 ml. Combina Oceanyst Complex Plus con ingredientes hidratantes. Los extractos de algas aportan hidratación y suavidad. El champú está indicado para cabello seco y deshidratado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 ml + 50 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["algas", "hidratación", "cabello seco"]
+    },
+  {
+      id: "skin1004-tea-trica-spot-cover",
+      slug: "skin1004-tea-trica-spot-cover",
+      name: "Madagascar Centella Tea-Trica Spot Cover",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-spot-cover.webp"],
+      description: "Parches SKIN1004 Madagascar Centella Tea-Trica Spot Cover, 22 unidades. Cubren las imperfecciones y las mantienen protegidas. El envase los presenta como un parche ultrafino que acompaña la curación natural de los granos y reduce la manipulación que inflama y deja marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "22 parches",
+      inStock: true,
+      category: "Parches",
+      tags: ["acné", "centella", "parches"]
+    },
+  {
+      id: "skin1004-tea-trica-b5-cream",
+      slug: "skin1004-tea-trica-b5-cream",
+      name: "Madagascar Centella Tea-Trica B5 Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-b5-cream.webp"],
+      description: "Crema SKIN1004 Madagascar Centella Tea-Trica B5, de 75 ml. Formulada para combatir las bacterias del acné y ayudar a reducir la frecuencia y la severidad de los brotes. Para piel mixta, grasa, con tendencia al acné o con sensibilidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["acné", "centella", "piel grasa"]
+    },
+  {
+      id: "skin1004-ampoule-foam",
+      slug: "skin1004-ampoule-foam",
+      name: "Madagascar Centella Ampoule Foam",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-ampoule-foam.webp"],
+      description: "Espuma limpiadora SKIN1004 Madagascar Centella Ampoule Foam, de 125 ml, con pH 5. Lleva tensioactivos derivados del coco y ácido cítrico. Limpia con suavidad, calma, hidrata y hace una exfoliación suave sin dejar la piel seca ni tirante. Para piel normal y piel propensa a la sensibilidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["pH 5", "centella", "sensible"]
+    },
+  {
+      id: "skin1004-hyalu-cica-moisture-cream",
+      slug: "skin1004-hyalu-cica-moisture-cream",
+      name: "Madagascar Centella Hyalu-Cica Moisture Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-hyalu-cica-moisture-cream.webp"],
+      description: "Crema SKIN1004 Madagascar Centella Hyalu-Cica, de 75 ml. Combina centella asiática de Madagascar y ácido hialurónico de varias capas, con fito-colágeno, adenosina y niacinamida. Calma, hidrata en profundidad, aporta elasticidad, luminosidad y suavidad. Para piel seca, normal, deshidratada o sensible. El objetivo que indica el envase es restaurar la barrera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["hialurónico", "centella", "barrera"]
+    },
+  {
+      id: "skin1004-tone-brightening-gel-foam",
+      slug: "skin1004-tone-brightening-gel-foam",
+      name: "Madagascar Centella Tone Brightening Cleansing Gel Foam",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tone-brightening-gel-foam.webp"],
+      description: "Limpiador en gel SKIN1004 Madagascar Centella Tone Brightening, de 125 ml, que se transforma en espuma. Retira impurezas, exceso de grasa y maquillaje sin resecar. Lleva centella asiática de Madagascar para calmar la barrera y vitamina C para unificar el tono e iluminar el rostro con manchas o apagado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["vitamina C", "centella", "manchas"]
+    },
+  {
+      id: "skin1004-tone-brightening-toner",
+      slug: "skin1004-tone-brightening-toner",
+      name: "Madagascar Centella Tone Brightening Boosting Toner",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tone-brightening-toner.webp"],
+      description: "Tónico SKIN1004 Madagascar Centella Tone Brightening Boosting, de 210 ml. Contiene 90% de extracto de centella asiática de Madagascar para calmar la piel irritada, y niacinamida para reducir manchas, marcas de acné y unificar el tono opaco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 210,
+      inStock: true,
+      category: "Tónico",
+      tags: ["centella", "niacinamida", "manchas"]
+    },
+  {
+      id: "skin1004-tone-brightening-ampoule",
+      slug: "skin1004-tone-brightening-ampoule",
+      name: "Madagascar Centella Tone Brightening Capsule Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tone-brightening-ampoule.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Tone Brightening Capsule Ampoule, de 100 ml. Suero de uso diario para unificar el tono, mitigar manchas por acné o por el sol y aportar luminosidad. Apto para todo tipo de piel, incluidas las sensibles y las propensas al acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["manchas", "centella", "luminosidad"]
+    },
+  {
+      id: "skin1004-poremizing-fresh-ampoule",
+      slug: "skin1004-poremizing-fresh-ampoule",
+      name: "Madagascar Centella Poremizing Fresh Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-poremizing-fresh-ampoule.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Poremizing Fresh Ampoule, de 100 ml. Minimiza la apariencia de los poros dilatados, regula el exceso de grasa y refuerza la firmeza. Para piel grasa, mixta o sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["poros", "sebo", "centella"]
+    },
+  {
+      id: "skin1004-poremizing-light-gel-cream",
+      slug: "skin1004-poremizing-light-gel-cream",
+      name: "Madagascar Centella Poremizing Light Gel Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-poremizing-light-gel-cream.webp"],
+      description: "Crema en gel SKIN1004 Madagascar Centella Poremizing Light, de 75 ml. Calma con centella, da un efecto refrescante y disminuye la apariencia de los poros dilatados.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["poros", "centella", "gel"]
+    },
+  {
+      id: "skin1004-poremizing-clarifying-mask",
+      slug: "skin1004-poremizing-clarifying-mask",
+      name: "Madagascar Centella Poremizing Clarifying Mask",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-poremizing-clarifying-mask.webp"],
+      description: "Mascarilla SKIN1004 Madagascar Centella Poremizing Clarifying, cinco piezas de 23 ml. Limpia impurezas, regula el exceso de sebo, calma la piel irritada y reduce la apariencia de los poros. Lleva ácido succínico y un complejo exfoliante suave con AHA, BHA, PHA y LHA.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 × 23 ml",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["poros", "sebo", "exfoliante"]
+    },
+  {
+      id: "skin1004-poremizing-travel-kit",
+      slug: "skin1004-poremizing-travel-kit",
+      name: "Madagascar Centella Poremizing Travel Kit",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-poremizing-travel-kit.webp"],
+      description: "Kit de viaje SKIN1004 Madagascar Centella Poremizing, cuatro piezas de 30 ml: espuma de limpieza, tónico exfoliante, ampolla concentrada y crema ligera en gel. Ayuda a minimizar poros, equilibrar el sebo y mejorar la textura de la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "4 × 30 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["poros", "sebo", "viaje"]
+    },
+  {
+      id: "skin1004-poremizing-velvet-sunscreen",
+      slug: "skin1004-poremizing-velvet-sunscreen",
+      name: "Madagascar Centella Poremizing Velvet Finish Sunscreen",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-poremizing-velvet-sunscreen.webp"],
+      description: "Protector solar SKIN1004 Madagascar Centella Poremizing Velvet Finish, de 50 ml, SPF 50+ PA++++. Minimiza la apariencia de los poros dilatados, regula la producción de grasa durante el día y deja un acabado mate.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "poros", "mate"]
+    },
+  {
+      id: "skin1004-poremizing-clear-toner",
+      slug: "skin1004-poremizing-clear-toner",
+      name: "Madagascar Centella Poremizing Clear Toner",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-poremizing-clear-toner.webp"],
+      description: "Tónico SKIN1004 Madagascar Centella Poremizing Clear, de 210 ml. Cuida los poros, controla la grasa y hace una exfoliación suave. Lleva extracto de centella asiática de Madagascar, sal rosa del Himalaya y el complejo 4-HA con AHA, BHA, PHA y LHA.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 210,
+      inStock: true,
+      category: "Tónico",
+      tags: ["poros", "sebo", "centella"]
+    },
+  {
+      id: "skin1004-tone-up-sunscreen",
+      slug: "skin1004-tone-up-sunscreen",
+      name: "Madagascar Centella Tone Brightening Tone-Up Sunscreen",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tone-up-sunscreen.webp"],
+      description: "Protector solar SKIN1004 Madagascar Centella Tone Brightening Tone-Up, de 50 ml, SPF 50+ PA++++. Es un filtro híbrido, físico y químico, con efecto aclarante e iluminador. Apto para todo tipo de piel, incluidas las sensibles, mixtas y grasas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "iluminador", "centella"]
+    },
+  {
+      id: "skin1004-hyalu-cica-cleansing-milk",
+      slug: "skin1004-hyalu-cica-cleansing-milk",
+      name: "Madagascar Centella Hyalu-Cica Gentle Cleansing Milk",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-hyalu-cica-cleansing-milk.webp"],
+      description: "Leche limpiadora SKIN1004 Madagascar Centella Hyalu-Cica, de 200 ml, de pH suave. Combina centella asiática de Madagascar para calmar y reducir rojeces con ácido hialurónico para retener la hidratación. Lleva ceramidas y pantenol. Para piel seca, deshidratada, sensible o reactiva. Limpia sin dejar sensación de tirantez.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["centella", "hialurónico", "sensible"]
+    },
+  {
+      id: "skin1004-hyalu-cica-first-ampoule",
+      slug: "skin1004-hyalu-cica-first-ampoule",
+      name: "Madagascar Centella Hyalu-Cica First Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-hyalu-cica-first-ampoule.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Hyalu-Cica First Ampoule, de 100 ml. Hidrata y calma. Pensado para piel seca, sensible o deshidratada. La centella de Madagascar calma, repara y alivia irritaciones, y el ácido hialurónico de varias capas aporta hidratación profunda y prolongada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["hialurónico", "centella", "seca"]
+    },
+  {
+      id: "skin1004-hyalu-cica-cloudy-mist",
+      slug: "skin1004-hyalu-cica-cloudy-mist",
+      name: "Madagascar Centella Hyalu-Cica Cloudy Mist",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-hyalu-cica-cloudy-mist.webp"],
+      description: "Bruma facial SKIN1004 Madagascar Centella Hyalu-Cica Cloudy Mist, de 120 ml. Lleva 40% de té verde, rico en polifenoles, y un complejo de ceramidas que refuerza la barrera, mejora la elasticidad y protege frente a agresores del ambiente. Para piel sensible, seca o reactiva. Calma, reduce la tirantez y aporta frescor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Bruma",
+      tags: ["té verde", "ceramidas", "sensible"]
+    },
+  {
+      id: "skin1004-hyalu-cica-brightening-toner",
+      slug: "skin1004-hyalu-cica-brightening-toner",
+      name: "Madagascar Centella Hyalu-Cica Brightening Toner",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-hyalu-cica-brightening-toner.webp"],
+      description: "Tónico SKIN1004 Madagascar Centella Hyalu-Cica Brightening, de 210 ml. Combina ácido hialurónico para hidratar en profundidad y centella asiática de Madagascar para calmar y reparar. Hace una exfoliación suave con AHA y LHA, para retirar células muertas y limpiar poros. Para piel seca, sensible u opaca que busca luminosidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 210,
+      inStock: true,
+      category: "Tónico",
+      tags: ["hialurónico", "centella", "luminosidad"]
+    },
+  {
+      id: "skin1004-air-fit-suncream",
+      slug: "skin1004-air-fit-suncream",
+      name: "Madagascar Centella Air-fit Suncream Plus",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-air-fit-suncream.webp"],
+      description: "Protector solar mineral SKIN1004 Madagascar Centella Air-fit Plus, de 50 ml, SPF 50+ PA++++. Bloquea los rayos UV con una fórmula ligera que se absorbe sin pesadez y deja un acabado mate. Ilumina y calma la piel sensible. Apto para piel sensible y propensa al acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "mineral", "acné"]
+    },
+  {
+      id: "skin1004-soothing-cream",
+      slug: "skin1004-soothing-cream",
+      name: "Madagascar Centella Soothing Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-soothing-cream.webp"],
+      description: "Crema calmante SKIN1004 Madagascar Centella Soothing, de 75 ml. Enriquecida con centella de Madagascar para aliviar la piel roja, inflamada o con sensibilidad extrema. Para piel sensible y con acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["centella", "sensible", "acné"]
+    },
+  {
+      id: "skin1004-toning-toner",
+      slug: "skin1004-toning-toner",
+      name: "Madagascar Centella Toning Toner",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-toning-toner.webp"],
+      description: "Tónico SKIN1004 Madagascar Centella Toning, de 210 ml, de uso diario. Hidrata, calma y hace una exfoliación suave, con control de sebo. Mejora la textura y la claridad, y refuerza la barrera. Para todo tipo de piel, incluidas las sensibles o con tendencia al acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 210,
+      inStock: true,
+      category: "Tónico",
+      tags: ["centella", "hidratación", "exfoliante"]
+    },
+  {
+      id: "skin1004-light-cleansing-oil",
+      slug: "skin1004-light-cleansing-oil",
+      name: "Madagascar Centella Light Cleansing Oil",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-light-cleansing-oil.webp"],
+      description: "Aceite limpiador SKIN1004 Madagascar Centella Light, de 200 ml. Retira maquillaje pesado y protector solar resistente al agua, además de impurezas y exceso de sebo, sin obstruir los poros. Apto para todo tipo de piel, incluidas las grasas, sensibles, con acné o rosácea.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["desmaquillante", "centella", "poros"]
+    },
+  {
+      id: "skin1004-tea-trica-sun-milk",
+      slug: "skin1004-tea-trica-sun-milk",
+      name: "Madagascar Centella Tea-Trica Soothing Sun Milk",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-sun-milk.webp"],
+      description: "Protector solar SKIN1004 Madagascar Centella Tea-Trica Soothing Sun Milk, de 50 ml, SPF 50+ PA++++. Pensado para piel grasa, sensible o con tendencia al acné. El complejo Tea-Trica reúne cica, árbol de té, ciprés y pino, y calma la irritación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "acné", "centella"]
+    },
+  {
+      id: "skin1004-tea-trica-spot-cream",
+      slug: "skin1004-tea-trica-spot-cream",
+      name: "Madagascar Centella Tea-Trica Spot Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-spot-cream.webp"],
+      description: "Tratamiento localizado SKIN1004 Madagascar Centella Tea-Trica Spot Cream, de 20 ml. Gel para secar, calmar y reducir imperfecciones, espinillas o brotes activos de acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["acné", "centella", "brotes"]
+    },
+  {
+      id: "skin1004-tea-trica-relief-ampoule",
+      slug: "skin1004-tea-trica-relief-ampoule",
+      name: "Madagascar Centella Tea-Trica Relief Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-relief-ampoule.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Tea-Trica Relief Ampoule, de 100 ml, con centella y árbol de té. Alivia, purifica y equilibra sin resecar. Para piel grasa, mixta o sensible, con acné o sensibilizada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["acné", "árbol de té", "centella"]
+    },
+  {
+      id: "skin1004-tea-trica-purifying-toner",
+      slug: "skin1004-tea-trica-purifying-toner",
+      name: "Madagascar Centella Tea-Trica Purifying Toner",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-purifying-toner.webp"],
+      description: "Tónico SKIN1004 Madagascar Centella Tea-Trica Purifying, de 210 ml. Para piel grasa, con acné o sensible. Hace una exfoliación suave, limpia y destapa los poros, controla el exceso de grasa y no reseca la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 210,
+      inStock: true,
+      category: "Tónico",
+      tags: ["acné", "poros", "centella"]
+    },
+  {
+      id: "febble-makeup-remover-wipes",
+      slug: "febble-makeup-remover-wipes",
+      name: "Make Up Remover Wipes",
+      brand: "Febble",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/febble-makeup-remover-wipes.webp"],
+      description: "Toallitas desmaquillantes Febble Make Up, 30 unidades. El envase las presenta como toallitas de limpieza suave y nutritivas para retirar el maquillaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "30 toallitas",
+      inStock: true,
+      category: "Toallitas",
+      tags: ["desmaquillante", "toallitas", "maquillaje"]
     }
 ];
