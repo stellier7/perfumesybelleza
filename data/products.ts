@@ -11227,5 +11227,591 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Cera",
       tags: ["fijación", "brillo medio"]
+    },
+  {
+      id: "sinko-styling-bleaching-powder",
+      slug: "sinko-styling-bleaching-powder",
+      name: "Bleaching Powder",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-bleaching-powder.webp"],
+      description: "Polvo decolorante Sinko Styling Bleaching Powder, de 500 g. Sirve para aclarar el tono del cabello o hacer extracciones de color.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 g",
+      inStock: true,
+      category: "Decoloración",
+      tags: ["decoloración"]
+    },
+  {
+      id: "yogi-care-argan-oil-nourishing-shampoo",
+      slug: "yogi-care-argan-oil-nourishing-shampoo",
+      name: "Argan Oil Nourishing Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-nourishing-shampoo.webp"],
+      description: "Champú nutritivo Yogi Care Argan Oil Nourishing, de 1000 ml. Lleva vitamina E, omega 3 y omega 9 para nutrir en profundidad y dar brillo. Libre de parabenos, sulfatos y siliconas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "sin sulfatos", "sin siliconas"]
+    },
+  {
+      id: "yogi-care-mint-deep-cleansing-shampoo",
+      slug: "yogi-care-mint-deep-cleansing-shampoo",
+      name: "Mint Deep Cleansing Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-mint-deep-cleansing-shampoo.webp"],
+      description: "Champú de limpieza profunda Yogi Care Mint Deep Cleansing, de 1000 ml. La menta deja una sensación de spa fresco en el cuero cabelludo y busca proteger el cabello y ayudar contra la caída. Libre de sulfatos y siliconas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["menta", "limpieza profunda", "anticaída", "sin sulfatos"]
+    },
+  {
+      id: "yogi-care-repair-silky-conditioner",
+      slug: "yogi-care-repair-silky-conditioner",
+      name: "Repair Silky Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-repair-silky-conditioner.webp"],
+      description: "Acondicionador reparador Yogi Care Repair Silky, de 1000 ml. Es un tratamiento intensivo de reparación y nutrición para cabello seco, dañado y sin brillo, y busca un acabado sedoso. Libre de parabenos, sulfatos y siliconas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["reparación", "sin sulfatos", "cabello seco"]
+    },
+  {
+      id: "yogi-care-argan-oil-shampoo-500",
+      slug: "yogi-care-argan-oil-shampoo-500",
+      name: "Argan Oil Moisturizing Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-shampoo-500.webp"],
+      description: "Champú hidratante Yogi Care Argan Oil Moisturizing, de 500 ml. El aceite de argán nutre el cabello y el cuero cabelludo. Lleva vitamina E, omega 3 y omega 9, que aportan suavidad y ayudan a desenredar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "hidratación"]
+    },
+  {
+      id: "yogi-care-argan-oil-conditioner-280",
+      slug: "yogi-care-argan-oil-conditioner-280",
+      name: "Argan Oil Moisturizing Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-conditioner-280.webp"],
+      description: "Acondicionador hidratante Yogi Care Argan Oil Moisturizing, de 280 ml. Es un nutriente rico en antioxidantes para reparar el cabello dañado por el sol y por el uso diario de secadores.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "cabello dañado"]
+    },
+  {
+      id: "yogi-care-argan-oil-spray",
+      slug: "yogi-care-argan-oil-spray",
+      name: "Argan Oil Moisturizing Spray",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-spray.webp"],
+      description: "Spray capilar hidratante Yogi Care de aceite de argán de Marruecos, de 100 ml. Está pensado para reparar y defender el cabello seco, dañado o encrespado, y aporta suavidad y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Spray",
+      tags: ["argán", "hidratación", "frizz"]
+    },
+  {
+      id: "yogi-care-color-lock-shampoo",
+      slug: "yogi-care-color-lock-shampoo",
+      name: "Smoothing Color Lock Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-color-lock-shampoo.webp"],
+      description: "Champú Yogi Care Cosnature Smoothing Color Lock, de 400 ml. Protege el color, aporta un efecto antioxidante y repara en profundidad el cabello dañado, quebradizo o debilitado. Deja suavidad y un acabado sedoso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Champú",
+      tags: ["color", "antioxidante", "cabello dañado"]
+    },
+  {
+      id: "yogi-care-color-lock-conditioner",
+      slug: "yogi-care-color-lock-conditioner",
+      name: "Anti Oxidant Silky Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-color-lock-conditioner.webp"],
+      description: "Acondicionador Yogi Care Cosnature Anti Oxidant Silky, de 400 ml, de la línea Smoothing Color Lock. Alisa con un acabado sedoso, protege el color, controla el frizz y nutre el cabello dañado con antioxidantes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["color", "antioxidante", "frizz"]
+    },
+  {
+      id: "yogi-care-macadamia-hair-body-serum",
+      slug: "yogi-care-macadamia-hair-body-serum",
+      name: "Macadamia Hair & Body Serum",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-macadamia-hair-body-serum.webp"],
+      description: "Suero Yogi Care Cosnature Macadamia Hair & Body, de 50 ml, para el cabello y la piel. Lleva aceite de nuez de macadamia, ácidos grasos y nutrientes. Penetra la cutícula y la piel, y aporta suavidad, brillo y nutrición.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum",
+      tags: ["macadamia", "cabello", "cuerpo"]
+    },
+  {
+      id: "yogi-care-colormate-shampoo",
+      slug: "yogi-care-colormate-shampoo",
+      name: "Colormate Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-colormate-shampoo.webp"],
+      description: "Champú matizador Yogi Care Colormate, de 300 ml, para cabello rubio, platinado, decolorado o con canas. La fórmula violeta neutraliza tonos amarillos y cobrizos, y aporta brillo y suavidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["matizador", "rubio", "antiamarillo"]
+    },
+  {
+      id: "yogi-care-toning-purple-conditioner",
+      slug: "yogi-care-toning-purple-conditioner",
+      name: "Toning Purple Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-toning-purple-conditioner.webp"],
+      description: "Acondicionador matizador Yogi Care Toning Purple, de 300 ml. Neutraliza los tonos amarillos, realza y prolonga el rubio, fortalece la fibra e hidrata. Deja el cabello más suave y brillante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["matizador", "rubio", "antiamarillo"]
+    },
+  {
+      id: "yogi-care-cysteine-sos-spray",
+      slug: "yogi-care-cysteine-sos-spray",
+      name: "Cysteine S.O.S. Magic Hair Spray",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-cysteine-sos-spray.webp"],
+      description: "Tratamiento en spray Yogi Care Cysteine S.O.S. Magic Hair Spray, de 500 ml. Está formulado con cisteína para reparar enlaces de queratina, y busca fuerza y nutrición desde el interior. Para cabello teñido, seco, encrespado o dañado por químicos y calor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["cisteína", "cabello dañado", "calor"]
+    },
+  {
+      id: "yogi-care-argan-oil-set",
+      slug: "yogi-care-argan-oil-set",
+      name: "Set de argán",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-set.webp"],
+      description: "Set de cuidado capilar Yogi Care de aceite de argán, con champú, acondicionador, mascarilla de 350 ml, gotas de 150 ml y spray de 100 ml. Aporta volumen, suavidad y brillo, fortalece, reduce la rotura y el frizz, y suaviza la electricidad estática.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["argán", "viaje"]
+    },
+  {
+      id: "yogi-care-extreme-length-conditioner",
+      slug: "yogi-care-extreme-length-conditioner",
+      name: "Extreme Length Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-extreme-length-conditioner.webp"],
+      description: "Acondicionador Yogi Care Extreme Length, de 300 ml, con biotina y aceite de argán marroquí. Fortalece el cabello dañado, estimula el cuero cabelludo, busca un crecimiento sin caspa y reduce la caída. Fragancia vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "biotina", "anticaída", "vegano"]
+    },
+  {
+      id: "yogi-care-extreme-length-shampoo",
+      slug: "yogi-care-extreme-length-shampoo",
+      name: "Extreme Length Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-extreme-length-shampoo.webp"],
+      description: "Champú Yogi Care Extreme Length, de 300 ml, con aceite de argán marroquí y biotina. Estimula el crecimiento, previene la rotura, fortalece la fibra y ayuda a reducir la caída. Fragancia vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "biotina", "anticaída", "vegano"]
+    },
+  {
+      id: "yogi-care-advanced-biotin-serum",
+      slug: "yogi-care-advanced-biotin-serum",
+      name: "Advanced Biotin Scalp Serum",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-advanced-biotin-serum.webp"],
+      description: "Suero capilar anticaída Yogi Care Advanced Biotin, de 100 ml. Estimula el folículo, busca retención y crecimiento desde la raíz, y está formulado para ayudar a reducir la DHT en el cuero cabelludo. El envase lo presenta como Anti Fall & Hair Growth.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["biotina", "anticaída", "crecimiento"]
+    },
+  {
+      id: "yogi-care-argan-therapy-hair-mask-500",
+      slug: "yogi-care-argan-therapy-hair-mask-500",
+      name: "Argan Therapy Hair Mask",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-therapy-hair-mask-500.webp"],
+      description: "Mascarilla capilar Yogi Care Argan Therapy, de 500 ml. Acondiciona e hidrata en profundidad, repara el cabello seco o dañado, controla el frizz y aporta suavidad y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["argán", "cabello seco", "frizz"]
+    },
+  {
+      id: "fairest-color-gloss-rubio",
+      slug: "fairest-color-gloss-rubio",
+      name: "Gloss+ Rubio",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-color-gloss-rubio.webp"],
+      description: "Acondicionador con depósito de color Fairest Color Gloss+, semipermanente, de 500 ml, para un rubio más claro. Refresca y mantiene el tono entre visitas al salón, repara el cabello dañado o decolorado y usa tecnología BondFix. Sin cambios drásticos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["depósito de color", "rubio", "semipermanente"]
+    },
+  {
+      id: "fairest-color-gloss-castano",
+      slug: "fairest-color-gloss-castano",
+      name: "Gloss+ Castaño",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-color-gloss-castano.webp"],
+      description: "Acondicionador con depósito de color Fairest Color Gloss+, semipermanente, de 500 ml, para un castaño más claro. Refresca, mantiene y profundiza el tono, repara el cabello dañado y aporta brillo. Sin cambios drásticos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["depósito de color", "castaño", "semipermanente"]
+    },
+  {
+      id: "fairest-color-gloss-cenizo",
+      slug: "fairest-color-gloss-cenizo",
+      name: "Gloss+ Cenizo",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-color-gloss-cenizo.webp"],
+      description: "Acondicionador con depósito de color Fairest Color Gloss+, semipermanente, de 500 ml, para un cenizo más claro. Refresca y revive el color entre visitas al salón, aplica pigmento, repara el cabello dañado y aporta brillo. Sin cambios drásticos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["depósito de color", "cenizo", "semipermanente"]
+    },
+  {
+      id: "sinko-styling-repair-restore-gloss",
+      slug: "sinko-styling-repair-restore-gloss",
+      name: "Repair Restore Gloss",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-repair-restore-gloss.webp"],
+      description: "Crema capilar Sinko Styling Repair Restore Gloss, de 500 ml. Ayuda a reconstruir la fibra, hidrata en profundidad, aporta brillo, controla el frizz y restaura la vitalidad del cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["reconstrucción", "brillo", "frizz"]
+    },
+  {
+      id: "sinko-styling-brazilian-keratin-conditioner",
+      slug: "sinko-styling-brazilian-keratin-conditioner",
+      name: "Brazilian Keratin Conditioner",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-brazilian-keratin-conditioner.webp"],
+      description: "Acondicionador de uso diario Sinko Styling Brazilian Keratin, de 500 ml. Está pensado para cabello dañado: mantiene la suavidad, reduce el encrespamiento y prolonga el alisado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["queratina", "alisado", "frizz", "uso diario"]
+    },
+  {
+      id: "yogi-care-color-remover",
+      slug: "yogi-care-color-remover",
+      name: "Color Remover",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-color-remover.webp"],
+      description: "Removedor de color Yogi Care Color Remover, de 300 ml, para uso de salón. Elimina color permanente o semipermanente, desvanece pigmentos artificiales y limpia manchas de tinte en la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Coloración",
+      tags: ["removedor", "salón"]
+    },
+  {
+      id: "nazca-origem-selagem",
+      slug: "nazca-origem-selagem",
+      name: "Origem Selagem",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-origem-selagem.webp"],
+      description: "Kit de sellado capilar Nazca Origem Selagem, libre de formol, para todo tipo de cabello. Reduce volumen y alinea de forma progresiva. Lleva queratina vegetal y aceites de argán, macadamia y karité. Incluye champú antirresiduos de 50 ml, realineamiento de 90 ml, máscara reconstructora de 50 ml y un par de guantes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 ml + 90 ml + 50 ml",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["selagem", "sin formol", "queratina"]
+    },
+  {
+      id: "nazca-origem-selagem-castano",
+      slug: "nazca-origem-selagem-castano",
+      name: "Origem Selagem Castaño",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-origem-selagem-castano.webp"],
+      description: "Kit de sellado reductor Nazca Origem Selagem para cabellos castaños. Neutraliza el desvanecimiento del color y matiza los tonos oscuros. Lleva queratina vegetal, argán, macadamia y karité. Incluye champú antirresiduos de 50 ml, realineamiento de 90 ml, máscara matizante castaño de 50 ml y un par de guantes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 ml + 90 ml + 50 ml",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["selagem", "castaño", "matizador"]
+    },
+  {
+      id: "nazca-origem-now-suave",
+      slug: "nazca-origem-now-suave",
+      name: "Origem Now Suave",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-origem-now-suave.webp"],
+      description: "Kit alisador y relajante suave Nazca Origem Now, sin amoníaco, para cabello fino y delicado. El activo es tioglicolato de monoetanolamina, con extracto de miel y almendras. Incluye crema alisadora de 80 g, loción neutralizante de 90 ml y un par de guantes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "80 g + 90 ml",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "sin amoníaco", "cabello fino"]
+    },
+  {
+      id: "nazca-origem-now-medio",
+      slug: "nazca-origem-now-medio",
+      name: "Origem Now Medio",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-origem-now-medio.webp"],
+      description: "Kit alisador y relajante medio Nazca Origem Now, sin amoníaco, para cabello crespo u ondulado. Lleva extracto de hierbas y cereales, y un complejo de proteínas y vitaminas A y F. Incluye crema alisadora de 80 g, loción neutralizante de 90 ml y un par de guantes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "80 g + 90 ml",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "sin amoníaco", "rizos"]
+    },
+  {
+      id: "yogi-care-argan-oil",
+      slug: "yogi-care-argan-oil",
+      name: "Argan Oil",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil.webp"],
+      description: "Aceite de argán Yogi Care, de 100 ml. El envase lo presenta como aceite originario de Marruecos, con elementos nutritivos para el cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Aceite",
+      tags: ["argán"]
     }
 ];
