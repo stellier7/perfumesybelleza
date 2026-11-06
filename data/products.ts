@@ -16152,5 +16152,609 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Champú",
       tags: ["rizos", "champú"]
+    },
+  {
+      id: "salon-lavacabezas-portatil",
+      slug: "salon-lavacabezas-portatil",
+      name: "Lavacabezas portátil",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-lavacabezas-portatil.webp"],
+      description: "Lavacabezas portátil para salón, con depósito de agua, bacha negra y base de pie. La foto no trae marca ni capacidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["lavacabezas", "salón", "portátil"]
+    },
+  {
+      id: "the-right-choice-acne-patch",
+      slug: "the-right-choice-acne-patch",
+      name: "Acne Patch",
+      brand: "The right choice",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/the-right-choice-acne-patch.webp"],
+      description: "Parches para acné The right choice, en forma de corazón. El empaque menciona esencia de árbol de té, uso de día y de noche, y los presenta para una recuperación rápida, sin resecar y con la piel suave. No marca la cantidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Parches",
+      tags: ["acné", "árbol de té", "parches"]
+    },
+  {
+      id: "salon-capa-barberia",
+      slug: "salon-capa-barberia",
+      name: "Capa de barbería",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-capa-barberia.webp"],
+      description: "Capa de barbería con cuello de silicón, de 140 × 160 cm. El estampado lleva rayas celestes y blancas, el escudo y el número 10.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "140 × 160 cm",
+      inStock: true,
+      category: "Capa",
+      tags: ["capa", "barbería", "cuello"]
+    },
+  {
+      id: "lorenti-coloring-fiber-wax-black",
+      slug: "lorenti-coloring-fiber-wax-black",
+      name: "Coloring Fiber Volumizing Wax 3 en 1 Black",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-coloring-fiber-wax-black.webp"],
+      description: "Cera Lorenti Professional Coloring Fiber Volumizing Wax 3 en 1, color negro. El envase la presenta para peinar, dar color y volumen, para todo tipo de cabello. No marca los gramos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "volumen", "negro"]
+    },
+  {
+      id: "lorenti-hair-wax-stick",
+      slug: "lorenti-hair-wax-stick",
+      name: "Hair Wax Stick",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-wax-stick.webp"],
+      description: "Cera en barra Lorenti Tokyo & Seoul Hair Wax Stick multivitamínica, de 75 g. Suaviza el encrespamiento, los cabellos rebeldes y el frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "75 g",
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "barra", "frizz"]
+    },
+  {
+      id: "lorenti-barber-hair-gel-biotin",
+      slug: "lorenti-barber-hair-gel-biotin",
+      name: "Barber Hair Gel Biotin",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-barber-hair-gel-biotin.webp"],
+      description: "Gel para el cabello Lorenti Tokyo & Seoul Barber Hair Gel con biotina, de 500 ml. El texto lo presenta libre de alcohol, sin residuos y con fijación fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Gel",
+      tags: ["gel", "biotina", "fijación"]
+    },
+  {
+      id: "lorenti-shaving-gel-iceberg",
+      slug: "lorenti-shaving-gel-iceberg",
+      name: "Barber Shaving Gel Iceberg",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-shaving-gel-iceberg.webp"],
+      description: "Gel de afeitar Lorenti Professional Barber Shaving Gel Iceberg, de 1000 ml. El envase lo marca como cuidado nutritivo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "gel", "iceberg"]
+    },
+  {
+      id: "lorenti-shaving-gel-wild",
+      slug: "lorenti-shaving-gel-wild",
+      name: "Barber Shaving Gel Wild",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-shaving-gel-wild.webp"],
+      description: "Gel de afeitar Lorenti Professional Barber Shaving Gel Wild, de 1000 ml. El envase lo marca como cuidado nutritivo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "gel", "wild"]
+    },
+  {
+      id: "lorenti-beard-care-kit",
+      slug: "lorenti-beard-care-kit",
+      name: "Beard Care Kit",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-beard-care-kit.webp"],
+      description: "Kit de barba Lorenti Professional. Incluye champú de argán de 200 ml, aceite para barba de 100 ml y bálsamo para barba de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 ml + 100 ml + 100 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["barba", "argán", "kit"]
+    },
+  {
+      id: "lorenti-coloring-fiber-wax-brown",
+      slug: "lorenti-coloring-fiber-wax-brown",
+      name: "Coloring Fiber Volumizing Wax 3 en 1 Brown",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-coloring-fiber-wax-brown.webp"],
+      description: "Cera Lorenti Professional Coloring Fiber Volumizing Wax 3 en 1, color castaño, de 30 g. Sirve para fijar el peinado, dar color y aportar volumen. Lleva fibras y pigmentos para un aspecto más grueso y denso, para todo tipo de cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "30 g",
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "castaño", "volumen"]
+    },
+  {
+      id: "lorenti-spider-wax",
+      slug: "lorenti-spider-wax",
+      name: "Spider Wax Texture Hold",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-spider-wax.webp"],
+      description: "Cera Lorenti Professional Spider Wax Texture Hold, de 150 ml. El texto dice que moldea el peinado, controla el cabello rizado y deja un aspecto suave y definido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "textura", "rizos"]
+    },
+  {
+      id: "salon-porta-papel-cuello",
+      slug: "salon-porta-papel-cuello",
+      name: "Porta papel de cuello",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-porta-papel-cuello.webp"],
+      description: "Porta papel de cuello para barbería. El envase lo identifica como neck paper holder. La foto no trae otra marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["barbería", "cuello", "papel"]
+    },
+  {
+      id: "lorenti-hair-wax-l3",
+      slug: "lorenti-hair-wax-l3",
+      name: "Hair Wax L3 X-treme Hold",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-wax-l3.webp"],
+      description: "Cera Lorenti Barber Touch Hair Wax L3 X-treme Hold, de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación", "barbería"]
+    },
+  {
+      id: "lorenti-hair-wax-l4",
+      slug: "lorenti-hair-wax-l4",
+      name: "Hair Wax L4 Max Control",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-wax-l4.webp"],
+      description: "Cera Lorenti Barber Touch Hair Wax L4 Max Control, de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación", "barbería"]
+    },
+  {
+      id: "lorenti-hair-wax-l1",
+      slug: "lorenti-hair-wax-l1",
+      name: "Hair Wax L1 Strong Hold",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-wax-l1.webp"],
+      description: "Cera Lorenti Barber Touch Hair Wax L1 Strong Hold, de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación", "barbería"]
+    },
+  {
+      id: "beauty-style-roll-wax-red",
+      slug: "beauty-style-roll-wax-red",
+      name: "Cera depilatoria roll-on roja",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-roll-wax-red.webp"],
+      description: "Cera depilatoria en roll-on Beauty Style, color rojo. El texto la presenta para usar con tiras y dice que se limpia con agua. No marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "cera", "roll-on"]
+    },
+  {
+      id: "beauty-style-roll-wax-green",
+      slug: "beauty-style-roll-wax-green",
+      name: "Cera depilatoria roll-on verde",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-roll-wax-green.webp"],
+      description: "Cera depilatoria en roll-on Beauty Style, color verde, soluble en agua. El texto la presenta para usar con tiras y dice que se limpia con agua. No marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "cera", "roll-on"]
+    },
+  {
+      id: "salon-cepillo-maquinas",
+      slug: "salon-cepillo-maquinas",
+      name: "Cepillo para máquinas",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-maquinas.webp"],
+      description: "Cepillo de madera para limpiar máquinas recortadoras. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "máquina", "barbería"]
+    },
+  {
+      id: "salon-cepillo-peine-barba",
+      slug: "salon-cepillo-peine-barba",
+      name: "Cepillo peine para barba",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-peine-barba.webp"],
+      description: "Cepillo y peine 2 en 1 para barba. La foto muestra acabado dorado y plateado, sin marca impresa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["barba", "cepillo", "peine"]
+    },
+  {
+      id: "salon-vaporizador-facial",
+      slug: "salon-vaporizador-facial",
+      name: "Vaporizador facial",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-vaporizador-facial.webp"],
+      description: "Vaporizador facial de pie, con brazo, depósito transparente y base con ruedas. La foto no trae marca ni medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["vapor", "facial", "salón"]
+    },
+  {
+      id: "salon-camilla-masaje",
+      slug: "salon-camilla-masaje",
+      name: "Camilla masajeadora portátil",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-camilla-masaje.webp"],
+      description: "Camilla masajeadora portátil, con patas de aluminio. Trae apoyacabeza, hueco facial y funda de transporte. El tapizado dice serie profesional.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["camilla", "masaje", "portátil"]
+    },
+  {
+      id: "lorenti-barber-cologne-eternal",
+      slug: "lorenti-barber-cologne-eternal",
+      name: "Barber Cologne Eternal",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-barber-cologne-eternal.webp"],
+      description: "Colonia de barbería Lorenti Professional Barber Cologne Eternal. El envase la marca como cuidado nutritivo y no imprime los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Colonia",
+      tags: ["colonia", "barbería", "eternal"]
+    },
+  {
+      id: "lorenti-barber-cologne-storm",
+      slug: "lorenti-barber-cologne-storm",
+      name: "Barber Cologne Storm",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-barber-cologne-storm.webp"],
+      description: "Colonia de barbería Lorenti Professional Barber Cologne Storm. El envase la marca como cuidado nutritivo y no imprime los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Colonia",
+      tags: ["colonia", "barbería", "storm"]
+    },
+  {
+      id: "lorenti-hair-wax-02",
+      slug: "lorenti-hair-wax-02",
+      name: "Hair Wax 02 Cream Brilliantine",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-wax-02.webp"],
+      description: "Cera Lorenti Professional Hair Wax 02 Cream Brilliantine. El envase no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "brillantina"]
+    },
+  {
+      id: "lorenti-coloring-wax-midnight-black",
+      slug: "lorenti-coloring-wax-midnight-black",
+      name: "Coloring Wax 10 Midnight Black",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-coloring-wax-midnight-black.webp"],
+      description: "Cera de color Lorenti Professional Coloring Wax 10 Midnight Black, de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "negro", "color"]
+    },
+  {
+      id: "lorenti-hair-gel-04",
+      slug: "lorenti-hair-gel-04",
+      name: "Hair Gel 04 X-treme Hold",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-gel-04.webp"],
+      description: "Gel capilar Lorenti Professional Hair Gel 04 X-treme Hold, de 300 ml, con efecto goma.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Gel",
+      tags: ["gel", "fijación", "goma"]
+    },
+  {
+      id: "lorenti-hair-gel-gummy-hold",
+      slug: "lorenti-hair-gel-gummy-hold",
+      name: "Barber Hair Gel Gummy Hold",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-hair-gel-gummy-hold.webp"],
+      description: "Gel capilar Lorenti Tokyo & Seoul Barber Hair Gel Gummy Hold, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Gel",
+      tags: ["gel", "fijación", "barbería"]
+    },
+  {
+      id: "luxe-clips",
+      slug: "luxe-clips",
+      name: "Pinzas",
+      brand: "Luxe Clips",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/luxe-clips.webp"],
+      description: "Pinzas Luxe Clips para el cabello. La foto muestra negro y blanco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["pinza", "cabello"]
+    },
+  {
+      id: "shany-hair-ties",
+      slug: "shany-hair-ties",
+      name: "Hair Ties",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-hair-ties.webp"],
+      description: "Ligas para el cabello Shany, de la línea Love is in the hair. La tarjeta muestra negro, café, camel y beige. No marca la cantidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Liga",
+      tags: ["ligas", "cabello"]
+    },
+  {
+      id: "beauty-style-clear-elastics",
+      slug: "beauty-style-clear-elastics",
+      name: "Ligas transparentes",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-clear-elastics.webp"],
+      description: "Ligas elásticas transparentes Beauty Style, en bolsa Beauty Tools. El empaque no marca la cantidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Liga",
+      tags: ["ligas", "cabello", "transparentes"]
     }
 ];
