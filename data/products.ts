@@ -17415,8 +17415,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/bioaqua-vitamin-c-white-cream.webp"],
-      description: "Crema facial Bioaqua Vitamin C White, de 50 g. La caja habla de hidratación, piel firme y elástica, alta concentración de vitamina C, tono más uniforme y piel más luminosa, de uso diario.",
+      images: ["/products/bioaqua-vitamin-c-white-cream.webp", "/products/bioaqua-vitamin-c-white-cream-2.webp"],
+      description: "Crema facial Bioaqua Vitamin C White, de 50 g. La caja habla de hidratación, piel firme y elástica, alta concentración de vitamina C, tono más uniforme y piel más luminosa. El texto la presenta como blanqueadora e iluminadora.",
       notes: {
         top: [],
         heart: [],
@@ -21435,5 +21435,590 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Set",
       tags: ["toalla", "esponja", "pinza"]
+    },
+  {
+      id: "romantic-bright-yara",
+      slug: "romantic-bright-yara",
+      name: "Yara",
+      brand: "Romantic Bright",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/romantic-bright-yara.webp"],
+      description: "Polvo corporal líquido Romantic Bright Yara, de base líquida y acabado polvoriento. El envase no marca el tamaño. La foto muestra el mismo producto dos veces.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Polvo corporal",
+      tags: ["yara", "polvo", "iluminador"]
+    },
+  {
+      id: "diamond-beauty-yara",
+      slug: "diamond-beauty-yara",
+      name: "Yara",
+      brand: "Diamond Beauty",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/diamond-beauty-yara.webp"],
+      description: "Crema aclaradora Diamond Beauty Yara, para rostro y cuerpo. El tubo no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["yara", "aclaradora", "rostro"]
+    },
+  {
+      id: "anua-heartleaf-77",
+      slug: "anua-heartleaf-77",
+      name: "Heartleaf 77",
+      brand: "Anua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/anua-heartleaf-77.webp"],
+      description: "Tónico Anua Heartleaf 77, de 500 ml, con 77 % de agua de heartleaf y pH 5.5. Para todo tipo de piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tónico",
+      tags: ["heartleaf", "calmante", "facial"]
+    },
+  {
+      id: "salon-silla-manicura-negra",
+      slug: "salon-silla-manicura-negra",
+      name: "Silla de manicura negra",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-silla-manicura-negra.webp"],
+      description: "Silla de manicura, tapizada en negro, con patas doradas. El asiento mide 45 × 47 cm, el respaldo 40 cm y la altura 45 cm. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "asiento 45 × 47 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["silla", "manicura", "negra"]
+    },
+  {
+      id: "salon-mesa-manicura",
+      slug: "salon-mesa-manicura",
+      name: "Mesa de manicura",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-mesa-manicura.webp"],
+      description: "Mesa de manicura con ruedas, Bluetooth, espejo, cajones y llaves. La foto no trae marca ni medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["mesa", "manicura", "bluetooth"]
+    },
+  {
+      id: "salon-silla-manicura-gris",
+      slug: "salon-silla-manicura-gris",
+      name: "Silla de manicura gris",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-silla-manicura-gris.webp"],
+      description: "Silla de manicura, tapizada en gris, con patas doradas. El asiento mide 48 × 52 cm, el respaldo 52 cm y la altura 45 cm. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "asiento 48 × 52 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["silla", "manicura", "gris"]
+    },
+  {
+      id: "karseell-maca-leave-in",
+      slug: "karseell-maca-leave-in",
+      name: "Maca Leave In",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-leave-in.webp"],
+      description: "Acondicionador sin enjuague Karseell Maca Power, de 200 ml, para cabello dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["leave-in", "maca", "sin enjuague"]
+    },
+  {
+      id: "karseell-kit-reparador",
+      slug: "karseell-kit-reparador",
+      name: "Kit reparador Maca",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-kit-reparador.webp"],
+      description: "Kit reparador Karseell Maca para cabello seco y dañado: champú de 500 ml, mascarilla de colágeno de 500 ml y aceite de maca de 50 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "3 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["kit", "maca", "reparador"]
+    },
+  {
+      id: "karseell-maca-oil",
+      slug: "karseell-maca-oil",
+      name: "Maca Essence Oil",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-oil.webp"],
+      description: "Aceite Karseell Maca Essence, de 50 ml, para cabello y cuerpo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Aceite",
+      tags: ["aceite", "maca", "cabello"]
+    },
+  {
+      id: "karseell-maca-collagen",
+      slug: "karseell-maca-collagen",
+      name: "Maca Collagen",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-collagen.webp"],
+      description: "Mascarilla Karseell Maca Collagen, de 500 ml, para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["mascarilla", "colágeno", "maca"]
+    },
+  {
+      id: "karseell-maca-volume",
+      slug: "karseell-maca-volume",
+      name: "Maca Volume",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-volume.webp"],
+      description: "Champú Karseell Maca Volume, de 500 ml, para control de grasa. El texto lo presenta sin siliconas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "grasa", "sin siliconas"]
+    },
+  {
+      id: "karseell-maca-curl",
+      slug: "karseell-maca-curl",
+      name: "Maca Curl",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-curl.webp"],
+      description: "Crema definidora de rizos Karseell Maca, de 500 ml. Control del frizz, definición y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "frizz", "definición"]
+    },
+  {
+      id: "morfose-ossion-mega-hold",
+      slug: "morfose-ossion-mega-hold",
+      name: "Ossion Mega Hold",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-mega-hold.webp"],
+      description: "Cera de peinado Morfose Ossion Mega Hold, de 150 ml. Fijación extrema, sin residuos y sin resecar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "mega hold", "fijación"]
+    },
+  {
+      id: "morfose-ossion-ultra-hold",
+      slug: "morfose-ossion-ultra-hold",
+      name: "Ossion Ultra Hold",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-ultra-hold.webp"],
+      description: "Cera de peinado Morfose Ossion Ultra Hold, de 150 ml, de acabado mate y sin residuos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "ultra hold", "mate"]
+    },
+  {
+      id: "morfose-ossion-matte-hold",
+      slug: "morfose-ossion-matte-hold",
+      name: "Ossion Matte Hold",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-matte-hold.webp"],
+      description: "Cera de peinado Morfose Ossion Matte Hold, de 150 ml, de acabado mate y fijación fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "matte", "fijación"]
+    },
+  {
+      id: "morfose-ossion-red-gum-300",
+      slug: "morfose-ossion-red-gum-300",
+      name: "Ossion Red Gum",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-red-gum-300.webp"],
+      description: "Gel de peinado Morfose Ossion Red Gum, de 300 ml, mega fuerte. El texto lo presenta sin residuos ni escamas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Gel",
+      tags: ["gel", "mega fuerte", "fijación"]
+    },
+  {
+      id: "morfose-ossion-clipper-oil",
+      slug: "morfose-ossion-clipper-oil",
+      name: "Aceite para máquinas",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-clipper-oil.webp"],
+      description: "Aceite 5 en 1 Morfose Ossion para máquinas, de 300 ml. El texto lo presenta como refrigerante, desinfectante, lubricante, limpiador y antóxido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["máquina", "aceite", "limpieza"]
+    },
+  {
+      id: "zion-masajeador-mano",
+      slug: "zion-masajeador-mano",
+      name: "Masajeador de mano",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zion-masajeador-mano.webp"],
+      description: "Masajeador de mano Zion Professional, de percusión e infrarrojo, con cabezales intercambiables.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Masajeador",
+      tags: ["masaje", "infrarrojo", "percusión"]
+    },
+  {
+      id: "salon-cepillo-desenredante",
+      slug: "salon-cepillo-desenredante",
+      name: "Cepillo desenredante",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-desenredante.webp"],
+      description: "Cepillo desenredante flexible. La foto no trae marca ni medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "desenredante"]
+    },
+  {
+      id: "karseell-maca-repair-800",
+      slug: "karseell-maca-repair-800",
+      name: "Maca Essence Repair",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-repair-800.webp"],
+      description: "Acondicionador Karseell Maca Essence Repair, de 800 ml, para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 800,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["acondicionador", "maca", "reparación"]
+    },
+  {
+      id: "karseell-maca-moisture-800",
+      slug: "karseell-maca-moisture-800",
+      name: "Maca Moisture",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-moisture-800.webp"],
+      description: "Champú Karseell Maca Moisture, de 800 ml, para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 800,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "maca", "hidratación"]
+    },
+  {
+      id: "salon-line-sos-bomba",
+      slug: "salon-line-sos-bomba",
+      name: "SOS Bomba",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-bomba.webp"],
+      description: "Tónico capilar Salon Line SOS Bomba, de 100 ml. El envase lo presenta como fortalecedor, contra la caída.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Tónico",
+      tags: ["anticaída", "tónico", "bomba"]
+    },
+  {
+      id: "salon-bandeja-silla",
+      slug: "salon-bandeja-silla",
+      name: "Bandeja para silla",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-bandeja-silla.webp"],
+      description: "Bandeja ajustable para silla de salón. La bandeja mide 44,5 × 32 cm y el brazo se ajusta entre 43 y 69 cm. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "44,5 × 32 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["bandeja", "silla", "salón"]
+    },
+  {
+      id: "waterpik-ultra",
+      slug: "waterpik-ultra",
+      name: "Ultra",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-ultra.webp"],
+      description: "Irrigador dental Waterpik Ultra. Incluye 6 puntas, depósito transparente y 10 niveles de presión. Mide 14,22 × 13,46 × 25,15 cm.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "irrigador", "puntas"]
+    },
+  {
+      id: "beauty-of-joseon-dynasty-cream",
+      slug: "beauty-of-joseon-dynasty-cream",
+      name: "Dynasty Cream",
+      brand: "Beauty of Joseon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-of-joseon-dynasty-cream.webp"],
+      description: "Crema facial Beauty of Joseon Dynasty Cream, con ginseng y escualano. El frasco no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["ginseng", "escualano", "hidratación"]
+    },
+  {
+      id: "salon-silla-manicura-rosa",
+      slug: "salon-silla-manicura-rosa",
+      name: "Silla de manicura rosa",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-silla-manicura-rosa.webp"],
+      description: "Silla de manicura, tapizada en rosa, con patas doradas. El asiento mide 48 × 52 cm, el respaldo 52 cm y la altura 45 cm. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "asiento 48 × 52 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["silla", "manicura", "rosa"]
+    },
+  {
+      id: "sonifer-sf-9662",
+      slug: "sonifer-sf-9662",
+      name: "SF-9662",
+      brand: "Sonifer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sonifer-sf-9662.webp"],
+      description: "Cepillo de baño Sonifer SF-9662, recargable por USB e impermeable IPX6, con dos velocidades. Incluye esponja de malla, cepillo suave, cepillo de silicona y luffa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["baño", "recargable", "exfoliante"]
+    },
+  {
+      id: "karseell-maca-moisture-500",
+      slug: "karseell-maca-moisture-500",
+      name: "Maca Moisture",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-moisture-500.webp"],
+      description: "Champú Karseell Maca Moisture, de 500 ml, para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "maca", "hidratación"]
+    },
+  {
+      id: "karseell-maca-repair-500",
+      slug: "karseell-maca-repair-500",
+      name: "Maca Essence Repair",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-repair-500.webp"],
+      description: "Acondicionador Karseell Maca Essence Repair, de 500 ml, para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["acondicionador", "maca", "reparación"]
     }
 ];
