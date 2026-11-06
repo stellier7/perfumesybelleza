@@ -29709,5 +29709,620 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Cepillo",
       tags: ["cepillo", "paleta", "salón"]
+    },
+  {
+      id: "salon-line-bomba-nocturno",
+      slug: "salon-line-bomba-nocturno",
+      name: "SOS Bomba nocturno",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-bomba-nocturno.webp"],
+      description: "Tónico nocturno Salon Line S.O.S Bomba, de 100 ml, para todo tipo de cabello. El envase lo presenta como tratamiento de reparación y fuerza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Tónico",
+      tags: ["tónico", "bomba", "nocturno"]
+    },
+  {
+      id: "nevada-extra-fuerte",
+      slug: "nevada-extra-fuerte",
+      name: "Extra fuerte",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-extra-fuerte.webp"],
+      description: "Fijador Nevada Hair Spray, de 600 ml, con fijación extra fuerte y fórmula ligera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 600,
+      inStock: true,
+      category: "Fijador",
+      tags: ["fijador", "laca", "extra fuerte"]
+    },
+  {
+      id: "salon-line-multy-chocolate",
+      slug: "salon-line-multy-chocolate",
+      name: "Multy Chocolate",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-multy-chocolate.webp"],
+      description: "Aceite de tratamiento Salon Line Multy Chocolate, de 50 ml, con cacao y argán. Protección térmica hasta 230°.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Aceite",
+      tags: ["aceite", "cacao", "argán", "térmico"]
+    },
+  {
+      id: "salon-line-bomba-kit",
+      slug: "salon-line-bomba-kit",
+      name: "SOS Bomba kit",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-bomba-kit.webp"],
+      description: "Set Salon Line S.O.S Bomba: champú de 300 ml y acondicionador de 200 ml, con creatina, queratina vegetal y biotina, para cabello frágil.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "300 ml + 200 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["anticaída", "creatina", "biotina"]
+    },
+  {
+      id: "salon-line-hidra-fresa",
+      slug: "salon-line-hidra-fresa",
+      name: "Hidra fresa",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-hidra-fresa.webp"],
+      description: "Set infantil Salon Line Hidra Multy Kids de fresa: champú con jabón líquido de 300 ml y acondicionador con mascarilla de 300 ml. Lleva vitamina B5 y vitamina E.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "300 ml + 300 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "fresa", "2 en 1"]
+    },
+  {
+      id: "salon-line-sos-cachos-10",
+      slug: "salon-line-sos-cachos-10",
+      name: "S.O.S Cachos 10",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-10.webp"],
+      description: "Aceite capilar Salon Line S.O.S Cachos 10 en 1, de 100 ml, para cabello rizado. Protección térmica hasta 230° y sin enjuague.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Aceite",
+      tags: ["rizos", "aceite", "térmico", "sin enjuague"]
+    },
+  {
+      id: "salon-line-ricino-puro",
+      slug: "salon-line-ricino-puro",
+      name: "Rícino puro",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-ricino-puro.webp"],
+      description: "Aceite capilar Salon Line To de Cacho de ricino puro, de 100 ml, para rizos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Aceite",
+      tags: ["rizos", "ricino", "aceite"]
+    },
+  {
+      id: "salon-line-reparador-forte",
+      slug: "salon-line-reparador-forte",
+      name: "Reparador forte",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-reparador-forte.webp"],
+      description: "Aceite capilar Salon Line To de Cacho Reparador Forte, de 60 ml, con protección térmica hasta 230°.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Aceite",
+      tags: ["rizos", "aceite", "térmico"]
+    },
+  {
+      id: "salon-line-extra-forte",
+      slug: "salon-line-extra-forte",
+      name: "Extra forte",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-extra-forte.webp"],
+      description: "Aceite capilar Salon Line To de Cacho Extra Forte, de 60 ml, con super silicona y protección térmica hasta 230°.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Aceite",
+      tags: ["rizos", "silicona", "térmico"]
+    },
+  {
+      id: "nevada-anticaida",
+      slug: "nevada-anticaida",
+      name: "Anticaída",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-anticaida.webp"],
+      description: "Champú Nevada Anticaída, de 400 ml, con pantenol (vitamina B5), para todo tipo de cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Champú",
+      tags: ["anticaída", "pantenol", "champú"]
+    },
+  {
+      id: "salon-line-meu-liso-uva",
+      slug: "salon-line-meu-liso-uva",
+      name: "Meu Liso uva",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-meu-liso-uva.webp"],
+      description: "Set infantil Salon Line Meu Liso Kids de uva: champú de 300 ml y acondicionador de 200 ml, con aceite de semilla de uva y glicerina vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "300 ml + 200 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "uva", "liso"]
+    },
+  {
+      id: "elite-essentials-rizos",
+      slug: "elite-essentials-rizos",
+      name: "Rizos",
+      brand: "Elite Essentials",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/elite-essentials-rizos.webp"],
+      description: "Set Elite Essentials para rizos, crespos y ondas: champú y acondicionador de 355 ml cada uno.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "355 ml + 355 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["rizos", "afro", "ondas"]
+    },
+  {
+      id: "salon-line-super-oleos",
+      slug: "salon-line-super-oleos",
+      name: "Super óleos",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-super-oleos.webp"],
+      description: "Crema para peinar Salon Line Super Óleos, de 1 kg, vegana, sin enjuague y sin sal, para cabello reseco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["crema", "vegano", "sin sal"]
+    },
+  {
+      id: "nevada-baby-625",
+      slug: "nevada-baby-625",
+      name: "Baby Powder",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-baby-625.webp"],
+      description: "Talco para bebé Nevada Baby Series, de 625 g, de fórmula suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "625 g",
+      inStock: true,
+      category: "Talco",
+      tags: ["talco", "bebé"]
+    },
+  {
+      id: "agiss-post-cera",
+      slug: "agiss-post-cera",
+      name: "Post-cera",
+      brand: "Agiss Beauty",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/agiss-post-cera.webp"],
+      description: "Aceite Agiss Beauty de limpieza y masaje para después de la cera, de 150 ml, con vitamina E.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Depilación",
+      tags: ["cera", "aceite", "vitamina e"]
+    },
+  {
+      id: "nevada-facial",
+      slug: "nevada-facial",
+      name: "Facial",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-facial.webp"],
+      description: "Set facial Nevada: exfoliante de 100 ml, tónico para después del afeitado de 200 ml, jabón facial de 100 ml y crema hidratante, con neceser. Lleva vitaminas A y E. La crema no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["facial", "caballero", "afeitado"]
+    },
+  {
+      id: "salon-papel-cuello",
+      slug: "salon-papel-cuello",
+      name: "Papel de cuello",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-papel-cuello.webp"],
+      description: "Papel para cuello de barbería, 5 piezas. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["barbería", "cuello", "papel"]
+    },
+  {
+      id: "royal-rsh-100d",
+      slug: "royal-rsh-100d",
+      name: "RSH-100D",
+      brand: "Royal",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/royal-rsh-100d.webp"],
+      description: "Máquina inalámbrica Royal RSH-100D para cabello y barba. Hoja de acero inoxidable, batería de 600 mAh, unos 90 minutos de uso y carga USB-C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["trimmer", "barba", "inalámbrica"]
+    },
+  {
+      id: "origem-abacate-2",
+      slug: "origem-abacate-2",
+      name: "Abacate 2 en 1",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-abacate-2.webp"],
+      description: "Crema Origem Abacate 2 en 1, de 1 kg: mascarilla y crema para peinar, con aceite de aguacate, para todo tipo de cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["aguacate", "mascarilla", "2 en 1"]
+    },
+  {
+      id: "origem-potao-lisos",
+      slug: "origem-potao-lisos",
+      name: "Potão lisos",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-potao-lisos.webp"],
+      description: "Crema Origem Potão Lisos 2 en 1, de 1 kg, para cabello liso. Lleva pantenol, aceite de coco y aminoácidos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["liso", "coco", "pantenol"]
+    },
+  {
+      id: "nazca-acqua-algodon",
+      slug: "nazca-acqua-algodon",
+      name: "Acqua algodón",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-acqua-algodon.webp"],
+      description: "Set infantil Nazca Acqua Kids con olor a algodón de azúcar: champú y acondicionador de 250 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "250 ml + 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "algodón", "champú"]
+    },
+  {
+      id: "nazca-acqua-papaya",
+      slug: "nazca-acqua-papaya",
+      name: "Acqua papaya",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-acqua-papaya.webp"],
+      description: "Set infantil Nazca Acqua Kids con olor a papaya, para cabello rizado: champú y acondicionador de 250 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "250 ml + 250 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "papaya", "rizos"]
+    },
+  {
+      id: "nazca-acqua-peinar",
+      slug: "nazca-acqua-peinar",
+      name: "Acqua peinar",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-acqua-peinar.webp"],
+      description: "Crema para peinar Nazca Acqua Kids, de 250 ml, con olor a algodón de azúcar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["infantil", "algodón", "crema"]
+    },
+  {
+      id: "nazca-origem-selagem-rubio",
+      slug: "nazca-origem-selagem-rubio",
+      name: "Origem Selagem Rubio",
+      brand: "Nazca",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nazca-origem-selagem-rubio.webp"],
+      description: "Kit Nazca Origem Selagem para cabello rubio: champú antirresiduos de 50 ml, realineamiento de 90 ml y mascarilla de 50 ml. Lleva argán, macadamia y karité.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 ml + 90 ml + 50 ml",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["selagem", "rubio", "queratina"]
+    },
+  {
+      id: "disney-minnie-peinar",
+      slug: "disney-minnie-peinar",
+      name: "Minnie peinar",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-minnie-peinar.webp"],
+      description: "Spray para peinar Disney Minnie, de 250 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Spray",
+      tags: ["infantil", "minnie", "peinar"]
+    },
+  {
+      id: "xtracare-locion-pies",
+      slug: "xtracare-locion-pies",
+      name: "Loción de pies",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-locion-pies.webp"],
+      description: "Loción para pies XtraCare, de 198 g, con aceite de árbol de té.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "198 g",
+      inStock: true,
+      category: "Crema para pies",
+      tags: ["pies", "árbol de té"]
+    },
+  {
+      id: "xtracare-pies-diabeticos",
+      slug: "xtracare-pies-diabeticos",
+      name: "Pies diabéticos",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-pies-diabeticos.webp"],
+      description: "Crema para pies XtraCare Diabetics, de 127 g, sin fragancia, para piel seca y agrietada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "127 g",
+      inStock: true,
+      category: "Crema para pies",
+      tags: ["pies", "sin fragancia", "seca"]
+    },
+  {
+      id: "rashel-fade-spots-locion",
+      slug: "rashel-fade-spots-locion",
+      name: "Fade Spots Loción",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/rashel-fade-spots-locion.webp"],
+      description: "Loción facial Dr. Rashel White Skin Fade Spots, con arbutina, niacinamida y ácido hialurónico. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["manchas", "arbutina", "niacinamida"]
+    },
+  {
+      id: "rashel-fade-spots-mask",
+      slug: "rashel-fade-spots-mask",
+      name: "Fade Spots",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/rashel-fade-spots-mask.webp"],
+      description: "Mascarilla facial Dr. Rashel White Skin Fade Spots, 5 piezas, con arbutina, niacinamida y ácido hialurónico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["mascarilla", "arbutina", "niacinamida"]
+    },
+  {
+      id: "nutri-hair-alisadora",
+      slug: "nutri-hair-alisadora",
+      name: "Alisadora",
+      brand: "Nutri Hair",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nutri-hair-alisadora.webp"],
+      description: "Crema alisadora Nutri Hair, con queratina, aguacate y karité. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["alisado", "queratina", "aguacate"]
     }
 ];
