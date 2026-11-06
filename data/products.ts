@@ -15550,5 +15550,607 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Toallitas",
       tags: ["desmaquillante", "toallitas", "maquillaje"]
+    },
+  {
+      id: "love-is-in-the-hair-flower-clips",
+      slug: "love-is-in-the-hair-flower-clips",
+      name: "Pinzas flor",
+      brand: "Love is in the hair",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/love-is-in-the-hair-flower-clips.webp"],
+      description: "Pinzas para el cabello en forma de flor, Love is in the hair, en tarjeta de 3 pinzas. La foto muestra ámbar, lila y negro.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "3 pinzas",
+      inStock: true,
+      category: "Pinza",
+      tags: ["pinza", "cabello", "flores"]
+    },
+  {
+      id: "shany-flex-detangler-brush",
+      slug: "shany-flex-detangler-brush",
+      name: "Flex Detangler Brush",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-flex-detangler-brush.webp"],
+      description: "Cepillo desenredador Shany Flex Detangler Brush, de Beauty Style. La foto muestra cinco colores: menta, beige, lila, rosa y negro. La cabeza tiene forma de orejas y cerdas flexibles.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "desenredar", "cabello"]
+    },
+  {
+      id: "beauty-style-wide-tooth-comb",
+      slug: "beauty-style-wide-tooth-comb",
+      name: "Peine de dientes anchos",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-wide-tooth-comb.webp"],
+      description: "Peine de dientes anchos Beauty Style, de color negro, con mango curvo en forma de gancho.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Peine",
+      tags: ["peine", "cabello"]
+    },
+  {
+      id: "beauty-style-carbon-tail-comb",
+      slug: "beauty-style-carbon-tail-comb",
+      name: "Peine de cola Carbon Antistatic",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-carbon-tail-comb.webp"],
+      description: "Peine de cola Beauty Style Carbon Antistatic, de color negro, con púa larga para seccionar el cabello. El envase lo marca como antiestático.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Peine",
+      tags: ["peine", "cola", "antiestático"]
+    },
+  {
+      id: "beauty-style-carbon-comb",
+      slug: "beauty-style-carbon-comb",
+      name: "Peine Carbon Antistatic",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-carbon-comb.webp"],
+      description: "Peine ancho Beauty Style Carbon Antistatic, de color negro, con mango. El envase lo marca como antiestático.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Peine",
+      tags: ["peine", "antiestático", "cabello"]
+    },
+  {
+      id: "shany-flex-detangler-fork-brush",
+      slug: "shany-flex-detangler-fork-brush",
+      name: "Flex Detangler Brush tenedor",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-flex-detangler-fork-brush.webp"],
+      description: "Cepillo desenredador Shany Flex Detangler Brush, de Beauty Style, en color celeste, con mango de tres puntas. La etiqueta lo presenta como cepillo desenredador.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "desenredar", "cabello"]
+    },
+  {
+      id: "shany-boutique-claw-clips",
+      slug: "shany-boutique-claw-clips",
+      name: "Pinzas boutique",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-boutique-claw-clips.webp"],
+      description: "Pinzas rectangulares Shany de la colección boutique Love is in the hair. La foto muestra pares en negro, carey, nude y transparente.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["pinza", "cabello", "boutique"]
+    },
+  {
+      id: "exfoclean-body-glove",
+      slug: "exfoclean-body-glove",
+      name: "Body Glove",
+      brand: "Exfoclean",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/exfoclean-body-glove.webp"],
+      description: "Guante exfoliante Exfoclean Body Glove, de exfoliación profunda. El empaque dice que cuida, renueva e ilumina. La foto muestra naranja, azul, rosa y menta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["guante", "exfoliante", "cuerpo"]
+    },
+  {
+      id: "salon-cuticle-pusher",
+      slug: "salon-cuticle-pusher",
+      name: "Empujador de cutícula",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cuticle-pusher.webp"],
+      description: "Empujador de cutícula de acero inoxidable, de doble punta, sin marca impresa. Una punta termina en palita y la otra en gancho.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["uñas", "cutícula", "acero"]
+    },
+  {
+      id: "beauty-tools-tint-mixing-set",
+      slug: "beauty-tools-tint-mixing-set",
+      name: "Set para mezclar tinte",
+      brand: "Beauty Tools",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-tools-tint-mixing-set.webp"],
+      description: "Set Beauty Tools para mezclar tinte, en rosa, con tazón y brochas. El empaque dice set de 3 piezas y también marca 12 piezas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["tinte", "brocha", "tazón"]
+    },
+  {
+      id: "lorenti-micellar-water-pure-rose",
+      slug: "lorenti-micellar-water-pure-rose",
+      name: "Micellar Cleansing Water Pure Rose",
+      brand: "Lorenti",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lorenti-micellar-water-pure-rose.webp"],
+      description: "Agua micelar Lorenti Tokyo & Seoul Micellar Cleansing Water Pure Rose, de 400 ml. El envase la presenta para piel sensible: limpia en profundidad, humecta y revitaliza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["micelar", "rosas", "piel sensible"]
+    },
+  {
+      id: "salon-shaving-brush",
+      slug: "salon-shaving-brush",
+      name: "Brocha de afeitar",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-shaving-brush.webp"],
+      description: "Brocha de afeitar con mango de madera y cerdas en dos tonos, sin marca impresa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["afeitado", "brocha"]
+    },
+  {
+      id: "bathrani-pedicure-spa-milk-honey",
+      slug: "bathrani-pedicure-spa-milk-honey",
+      name: "Pedicure Spa Milk + Honey",
+      brand: "Bathrani",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bathrani-pedicure-spa-milk-honey.webp"],
+      description: "Sales efervescentes Bathrani Pedicure Spa Milk + Honey, de 250 g. El envase dice que retiran impurezas, devuelven luminosidad y dejan la piel suave y ligeramente perfumada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "250 g",
+      inStock: true,
+      category: "Pedicura",
+      tags: ["pedicura", "leche", "miel"]
+    },
+  {
+      id: "beauty-style-one-step",
+      slug: "beauty-style-one-step",
+      name: "One Step",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-one-step.webp"],
+      description: "Cepillo secador Beauty Style One Step, sistema 2 en 1 de secado y estilizado. El empaque destaca cable giratorio de 360°, cerámica de turmalina que reduce el frizz y cerdas flexibles con puntas respetuosas con el cuero cabelludo. Trae niveles low, middle y high, y acabado frizz free.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["secador", "cepillo", "frizz"]
+    },
+  {
+      id: "oceanyst-hair-body-perfume",
+      slug: "oceanyst-hair-body-perfume",
+      name: "Perfume Cuerpo y Cabello",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-hair-body-perfume.webp"],
+      description: "Perfume Oceanyst para cuerpo y cabello, Frizz Control, de 50 ml. Está pensado para perfumar y dar frescura al cabello y al cuerpo, y ayuda a dominar el cabello rebelde.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Spray",
+      tags: ["perfume", "frizz", "cabello"]
+    },
+  {
+      id: "oceanyst-silky-shiny-serum",
+      slug: "oceanyst-silky-shiny-serum",
+      name: "Serum Silky & Shiny Hair",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-silky-shiny-serum.webp"],
+      description: "Sérum capilar Oceanyst Silky & Shiny Hair, de 100 ml, con el complejo marino Oceanyst Complex Plus y extracto de algas. Nutre hebras secas y debilitadas, controla el encrespamiento y alisa los cabellos sueltos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["sérum", "frizz", "algas"]
+    },
+  {
+      id: "oceanyst-biphasic-conditioner",
+      slug: "oceanyst-biphasic-conditioner",
+      name: "Acondicionador Bifásico",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-biphasic-conditioner.webp"],
+      description: "Acondicionador bifásico Oceanyst Detangling & Anti-Frizz, de 200 ml. Facilita el peinado al deshacer los nudos, ayuda a quitar la electricidad estática y el encrespamiento, e hidrata y aporta brillo con una fórmula ligera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["bifásico", "frizz", "desenredar"]
+    },
+  {
+      id: "oceanyst-hidratacion-mask",
+      slug: "oceanyst-hidratacion-mask",
+      name: "Mascarilla Hidratación y Nutrición",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-hidratacion-mask.webp"],
+      description: "Mascarilla Oceanyst Hidratación y Nutrición, de 500 ml, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["mascarilla", "hidratación"]
+    },
+  {
+      id: "oceanyst-hidratacion-shampoo",
+      slug: "oceanyst-hidratacion-shampoo",
+      name: "Champú Hidratación y Nutrición",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-hidratacion-shampoo.webp"],
+      description: "Champú Oceanyst Hidratación y Nutrición, de 500 ml, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "hidratación"]
+    },
+  {
+      id: "oceanyst-laminating-prep-shampoo",
+      slug: "oceanyst-laminating-prep-shampoo",
+      name: "Champú preparador para laminación",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-laminating-prep-shampoo.webp"],
+      description: "Champú preparador para laminación Oceanyst, de 500 ml, con el sello Oceanyst Complex Plus. El envase lo marca como paso 1 de laminación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["laminación", "champú"]
+    },
+  {
+      id: "oceanyst-lamellar-conditioner",
+      slug: "oceanyst-lamellar-conditioner",
+      name: "Acondicionador lamelar",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-lamellar-conditioner.webp"],
+      description: "Acondicionador lamelar Oceanyst, de 200 ml, con el sello Oceanyst Complex Plus. El envase lo presenta como tratamiento de 9 segundos y lo marca dentro de la línea de laminación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["laminación", "lamelar"]
+    },
+  {
+      id: "oceanyst-laminating-maintenance-shampoo",
+      slug: "oceanyst-laminating-maintenance-shampoo",
+      name: "Champú de mantenimiento de la laminación",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-laminating-maintenance-shampoo.webp"],
+      description: "Champú de mantenimiento de la laminación Oceanyst, de 500 ml, con el sello Oceanyst Complex Plus. El envase lo marca dentro de la línea de laminación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["laminación", "champú"]
+    },
+  {
+      id: "oceanyst-thermal-spray",
+      slug: "oceanyst-thermal-spray",
+      name: "Loción térmica en spray",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-thermal-spray.webp"],
+      description: "Loción térmica en spray Oceanyst, de 200 ml, con el sello Oceanyst Complex Plus. El envase la marca como paso 3 de la línea de laminación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Protector térmico",
+      tags: ["laminación", "térmico", "spray"]
+    },
+  {
+      id: "oceanyst-lamination-mask",
+      slug: "oceanyst-lamination-mask",
+      name: "Mascarilla laminación",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-lamination-mask.webp"],
+      description: "Mascarilla Oceanyst de la línea de laminación, de 500 ml, con el sello Oceanyst Complex Plus. El envase la marca como paso 2.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["laminación", "mascarilla"]
+    },
+  {
+      id: "oceanyst-shaping-curl-cream",
+      slug: "oceanyst-shaping-curl-cream",
+      name: "Crema modeladora",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-shaping-curl-cream.webp"],
+      description: "Crema modeladora Oceanyst Shaping Curl Cream, de 200 ml, para cabello rizado, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "crema"]
+    },
+  {
+      id: "oceanyst-curl-spray",
+      slug: "oceanyst-curl-spray",
+      name: "Spray control rizos",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-curl-spray.webp"],
+      description: "Spray control de rizos Oceanyst Curl Spray, de 200 ml, para cabello rizado, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Spray",
+      tags: ["rizos", "spray"]
+    },
+  {
+      id: "oceanyst-curl-shampoo",
+      slug: "oceanyst-curl-shampoo",
+      name: "Champú cabello rizado",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-curl-shampoo.webp"],
+      description: "Champú Oceanyst para cabello rizado, de 500 ml, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["rizos", "champú"]
+    },
+  {
+      id: "oceanyst-curl-conditioner",
+      slug: "oceanyst-curl-conditioner",
+      name: "Acondicionador cabello rizado",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-curl-conditioner.webp"],
+      description: "Acondicionador Oceanyst para cabello rizado, de 500 ml, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["rizos", "acondicionador"]
+    },
+  {
+      id: "oceanyst-curl-conditioner-1000",
+      slug: "oceanyst-curl-conditioner-1000",
+      name: "Acondicionador cabello rizado",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-curl-conditioner-1000.webp"],
+      description: "Acondicionador Oceanyst para cabello rizado, de 1000 ml, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["rizos", "acondicionador"]
+    },
+  {
+      id: "oceanyst-curl-shampoo-1000",
+      slug: "oceanyst-curl-shampoo-1000",
+      name: "Champú cabello rizado",
+      brand: "Oceanyst",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/oceanyst-curl-shampoo-1000.webp"],
+      description: "Champú Oceanyst para cabello rizado, de 1000 ml, con el sello Oceanyst Complex Plus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["rizos", "champú"]
     }
 ];
