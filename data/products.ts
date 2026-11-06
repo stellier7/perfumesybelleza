@@ -24474,5 +24474,623 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Bálsamo",
       tags: ["labios", "vitamina c", "colágeno"]
+    },
+  {
+      id: "bioaqua-rice-cabello",
+      slug: "bioaqua-rice-cabello",
+      name: "Rice cabello",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-cabello.webp"],
+      description: "Mascarilla capilar Bioaqua Rice Raw Pulp, caja de 20 sobres de 10 g. El texto habla de nutrir el cabello seco y suavizar el frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "20 piezas",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["arroz", "cabello", "mascarilla"]
+    },
+  {
+      id: "bioaqua-rice-arcilla",
+      slug: "bioaqua-rice-arcilla",
+      name: "Rice arcilla",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-arcilla.webp"],
+      description: "Mascarilla facial Bioaqua Rice Raw Pulp de arcilla, de 120 g. El texto habla de limpieza y luminosidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "120 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "arcilla", "luminosidad"]
+    },
+  {
+      id: "bioaqua-rice-solar",
+      slug: "bioaqua-rice-solar",
+      name: "Rice solar",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-solar.webp"],
+      description: "Protector solar en spray Bioaqua Rice Raw Pulp, de 150 ml, SPF 50+, con aloe y camomila. La foto muestra dos envases del mismo spray.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["arroz", "spf 50", "spray"]
+    },
+  {
+      id: "bioaqua-rice-esencia",
+      slug: "bioaqua-rice-esencia",
+      name: "Rice esencia",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-esencia.webp"],
+      description: "Esencia facial Bioaqua Rice Raw Pulp, de 15 ml, con ácido hialurónico. El texto habla de unificar el tono y nutrir.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 15,
+      inStock: true,
+      category: "Esencia facial",
+      tags: ["arroz", "hialurónico", "luminosidad"]
+    },
+  {
+      id: "bioaqua-rice-capsulas",
+      slug: "bioaqua-rice-capsulas",
+      name: "Rice cápsulas",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-capsulas.webp"],
+      description: "Cápsulas desmaquillantes Bioaqua Rice Raw Pulp, 50 piezas de 5,8 g. El texto habla de disolver el maquillaje, también el de larga duración.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 piezas",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["arroz", "desmaquillante", "cápsulas"]
+    },
+  {
+      id: "bioaqua-ceramidas-cuerpo",
+      slug: "bioaqua-ceramidas-cuerpo",
+      name: "Ceramidas cuerpo",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-ceramidas-cuerpo.webp"],
+      description: "Crema corporal Bioaqua de ceramidas y ácido hialurónico, de 400 ml. El texto habla de hidratar y reparar la piel seca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["ceramidas", "hialurónico", "cuerpo"]
+    },
+  {
+      id: "bioaqua-rice-noche",
+      slug: "bioaqua-rice-noche",
+      name: "Rice noche",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-noche.webp"],
+      description: "Mascarilla nocturna Bioaqua Rice Raw Pulp, de 4 ml. La foto muestra tres sobres iguales. El texto habla de hidratar y reafirmar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 4,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "noche", "hidratación"]
+    },
+  {
+      id: "bioaqua-rosa-set",
+      slug: "bioaqua-rosa-set",
+      name: "Rosa",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-set.webp"],
+      description: "Set facial Bioaqua de rosa y ácido hialurónico, de 6 piezas: espuma de 100 ml, tónico de 100 ml, sérum de 30 ml, loción de 100 ml, crema de 100 g y contorno de ojos de 20 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["rosa", "hialurónico", "set"]
+    },
+  {
+      id: "bioaqua-rice-set",
+      slug: "bioaqua-rice-set",
+      name: "Rice set",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-set.webp"],
+      description: "Set facial Bioaqua Rice Raw Pulp, de 6 piezas: contorno de 20 g, limpiador de 100 g, crema de 50 g, tónico de 120 ml, loción de 120 ml y sérum de 15 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["arroz", "set", "facial"]
+    },
+  {
+      id: "sadoer-mens-facial",
+      slug: "sadoer-mens-facial",
+      name: "Men's facial",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-mens-facial.webp"],
+      description: "Set facial Sadoer Men's Oil Control, de 3 piezas: gel limpiador, tónico y crema. El texto habla de limpieza y control de grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "3 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["hombre", "grasa", "set"]
+    },
+  {
+      id: "sadoer-white-rice",
+      slug: "sadoer-white-rice",
+      name: "White Rice",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-white-rice.webp"],
+      description: "Set facial Sadoer White Rice con niacinamida, de 6 piezas: espuma de 100 g, tónico, sérum, loción, crema de ojos y crema. El texto habla de hidratación y poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["arroz", "niacinamida", "set"]
+    },
+  {
+      id: "sadoer-retinol",
+      slug: "sadoer-retinol",
+      name: "Retinol",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-retinol.webp"],
+      description: "Set facial Sadoer de retinol, de 5 piezas: limpiador de 100 g, tónico, sérum, loción y crema. El texto habla de retinol, colágeno, niacinamida y centella.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["retinol", "colágeno", "set"]
+    },
+  {
+      id: "bioaqua-rice-perlas",
+      slug: "bioaqua-rice-perlas",
+      name: "Rice perlas",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-perlas.webp"],
+      description: "Mascarilla nocturna Bioaqua Rice Raw Pulp en perlas, de 120 g. El texto habla de hidratar y dar elasticidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "120 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "noche", "perlas"]
+    },
+  {
+      id: "bioaqua-rice-depilatoria",
+      slug: "bioaqua-rice-depilatoria",
+      name: "Rice depilatoria",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-depilatoria.webp"],
+      description: "Crema depilatoria Bioaqua Rice Raw Pulp, de 60 g. El texto habla de hidratar y unificar el tono.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["arroz", "depilación"]
+    },
+  {
+      id: "bioaqua-rice-depilacion-set",
+      slug: "bioaqua-rice-depilacion-set",
+      name: "Rice depilación",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-depilacion-set.webp"],
+      description: "Set Bioaqua Rice Raw Pulp, de 2 piezas: crema depilatoria de 60 g y gel hidratante de 30 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "2 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["arroz", "depilación", "gel"]
+    },
+  {
+      id: "bioaqua-rice-guantes",
+      slug: "bioaqua-rice-guantes",
+      name: "Rice manos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-guantes.webp"],
+      description: "Mascarilla para manos Bioaqua Rice Raw Pulp, de 35 ml. El sobre habla de nutrir y suavizar la piel seca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 35,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "arroz", "mascarilla"]
+    },
+  {
+      id: "bioaqua-rice-sales",
+      slug: "bioaqua-rice-sales",
+      name: "Rice sales",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-sales.webp"],
+      description: "Sales de baño Bioaqua de extracto de arroz, de 100 g. El texto habla de limpieza y un tono más uniforme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Sales",
+      tags: ["arroz", "baño", "sales"]
+    },
+  {
+      id: "bioaqua-ojos-vitamina-c",
+      slug: "bioaqua-ojos-vitamina-c",
+      name: "Vitamina C ojos",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-ojos-vitamina-c.webp"],
+      description: "Parches de ojos Bioaqua de colágeno y vitamina C, de 7,5 g. El texto habla de ojeras e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "7,5 g",
+      inStock: true,
+      category: "Parches",
+      tags: ["ojos", "vitamina c", "colágeno"]
+    },
+  {
+      id: "bioaqua-labios-niacinamida",
+      slug: "bioaqua-labios-niacinamida",
+      name: "Labios niacinamida",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-labios-niacinamida.webp"],
+      description: "Mascarilla de labios Bioaqua de niacinamida y colágeno, de 8 g. El sobre habla de líneas finas y grietas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "8 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "niacinamida", "colágeno"]
+    },
+  {
+      id: "bioaqua-rice-frente",
+      slug: "bioaqua-rice-frente",
+      name: "Rice frente",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-frente.webp"],
+      description: "Parches para la frente Bioaqua Rice Raw Pulp con colágeno, de 6 ml. La foto muestra varios sobres iguales. El texto habla de arrugas e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 6,
+      inStock: true,
+      category: "Parches",
+      tags: ["frente", "arroz", "colágeno"]
+    },
+  {
+      id: "bioaqua-rice-tela",
+      slug: "bioaqua-rice-tela",
+      name: "Rice tela",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-tela.webp"],
+      description: "Mascarilla facial de tela Bioaqua Rice Raw Pulp, de 25 ml, con ácido hialurónico, en tres pasos. El texto habla de hidratar e iluminar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 25,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "hialurónico", "tela"]
+    },
+  {
+      id: "bioaqua-rice-aceite",
+      slug: "bioaqua-rice-aceite",
+      name: "Rice aceite",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-aceite.webp"],
+      description: "Aceite limpiador Bioaqua Rice Raw Pulp, de 120 ml. El texto habla de disolver el maquillaje y el exceso de grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["arroz", "aceite", "desmaquillante"]
+    },
+  {
+      id: "bioaqua-bio-collagen",
+      slug: "bioaqua-bio-collagen",
+      name: "Bio-collagen",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-bio-collagen.webp"],
+      description: "Mascarilla facial Bioaqua Bio-Collagen, de 26 ml. El texto habla de arrugas, nutrición y un ajuste suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 26,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["colágeno", "arrugas", "tela"]
+    },
+  {
+      id: "bioaqua-rice-locion",
+      slug: "bioaqua-rice-locion",
+      name: "Rice loción",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-locion.webp"],
+      description: "Loción facial Bioaqua Rice Raw Pulp, de 120 ml, para rostro y cuerpo. El texto habla de hidratar y mejorar la textura.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["arroz", "loción", "hidratación"]
+    },
+  {
+      id: "bioaqua-centella-crema",
+      slug: "bioaqua-centella-crema",
+      name: "Centella crema",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-crema.webp"],
+      description: "Set de crema para manos Bioaqua de centella asiática, de 5 tubos de 30 g. El texto habla de hidratar y suavizar la piel seca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["centella", "manos", "set"]
+    },
+  {
+      id: "bioaqua-colageno-set",
+      slug: "bioaqua-colageno-set",
+      name: "Colágeno",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-colageno-set.webp"],
+      description: "Set facial Bioaqua de colágeno, de 6 piezas: contorno, sérum, loción, tónico, crema y limpiador. El texto habla de hidratar y dar luminosidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["colágeno", "hialurónico", "set"]
+    },
+  {
+      id: "bioaqua-rice-depilatoria-150",
+      slug: "bioaqua-rice-depilatoria-150",
+      name: "Rice depilatoria",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-depilatoria-150.webp"],
+      description: "Crema depilatoria Bioaqua Rice Raw Pulp, de 150 ml. El texto habla de arroz y de suavizar la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Depilación",
+      tags: ["arroz", "depilación"]
+    },
+  {
+      id: "bioaqua-rice-viaje",
+      slug: "bioaqua-rice-viaje",
+      name: "Rice viaje",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-viaje.webp"],
+      description: "Set facial Bioaqua Rice Raw Pulp, de 5 piezas. El limpiador marca 100 g, y la emulsión y el tónico marcan 120 ml. El sérum y la crema no se leen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["arroz", "set", "viaje"]
+    },
+  {
+      id: "bioaqua-manuka-manos",
+      slug: "bioaqua-manuka-manos",
+      name: "Manuka",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-manuka-manos.webp"],
+      description: "Mascarilla para manos Bioaqua de miel de manuka y vitamina E. La foto muestra tres sobres iguales. El sobre no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "miel", "vitamina e"]
+    },
+  {
+      id: "bioaqua-mango",
+      slug: "bioaqua-mango",
+      name: "Mango",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-mango.webp"],
+      description: "Crema depilatoria Bioaqua de extracto de mango, de 40 g. El texto habla de hidratar y suavizar la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "40 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["mango", "depilación"]
     }
 ];
