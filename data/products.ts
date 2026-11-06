@@ -10165,8 +10165,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/fairest-sulfate-free-shampoo.webp"],
-      description: "Champú sin sulfatos Fairest, enriquecido con ceramida, para cabello dañado. Está formulado para combatir los signos del daño capilar. El envase lo presenta como Fairest Pilot.",
+      images: ["/products/fairest-sulfate-free-shampoo.webp", "/products/fairest-sulfate-free-shampoo-2.webp"],
+      description: "Champú sin sulfatos Fairest, de Yogi Cosmetics, enriquecido con ceramida. Hidrata y repara el cabello seco, rizado o dañado por tratamientos químicos. El envase lo presenta como Fairest Pilot, Plus Ceramux.",
       notes: {
         top: [],
         heart: [],
@@ -10175,7 +10175,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Champú",
-      tags: ["sin sulfatos", "ceramida", "cabello dañado"]
+      tags: ["sin sulfatos", "ceramida", "cabello dañado", "rizado"]
     },
   {
       id: "yogi-care-protein-collagen-treatment",
@@ -10266,8 +10266,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/yogi-care-u-keratin-purifying-shampoo.webp"],
-      description: "Champú de limpieza profunda Yogi Care U-Keratin, paso 1, de 1000 ml. Es el primer paso para preparar el cabello antes de un alisado o una reconstrucción. Elimina residuos de peinado, grasa, cloro y minerales del agua, abre la cutícula y deja la hebra lista para absorber el tratamiento de queratina.",
+      images: ["/products/yogi-care-u-keratin-purifying-shampoo.webp", "/products/yogi-care-u-keratin-purifying-shampoo-2.webp"],
+      description: "Champú purificante y antirresiduos Yogi Care U-Keratin, paso 1, de 1000 ml, para uso profesional. Limpia en profundidad residuos e impurezas, controla el exceso de grasa y prepara la cutícula antes de un alisado o una reconstrucción con queratina.",
       notes: {
         top: [],
         heart: [],
@@ -10725,5 +10725,507 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Crema corporal",
       tags: ["coco", "sin parabenos"]
+    },
+  {
+      id: "bio-reach-keratin-purifying-shampoo-450",
+      slug: "bio-reach-keratin-purifying-shampoo-450",
+      name: "Keratin Purifying Shampoo",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-keratin-purifying-shampoo-450.webp"],
+      description: "Champú purificante y antirresiduos Bio-Reach Professional Keratin, paso 1, de 450 ml, para uso profesional. Hace una limpieza profunda de residuos e impurezas, abre la cutícula para el tratamiento de queratina y elimina la grasa acumulada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 450,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "limpieza profunda", "anti residuos"]
+    },
+  {
+      id: "bio-reach-keratin-hair-treatment",
+      slug: "bio-reach-keratin-hair-treatment",
+      name: "Keratin Hair Treatment",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-keratin-hair-treatment.webp"],
+      description: "Tratamiento capilar de queratina Bio-Reach Professional, paso 2, de 450 ml, para uso profesional. Alisa el cabello, reduce el frizz y suaviza la textura.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 450,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["queratina", "alisado", "frizz"]
+    },
+  {
+      id: "bio-reach-keratin-daily-conditioner",
+      slug: "bio-reach-keratin-daily-conditioner",
+      name: "Keratin Daily Conditioner",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-keratin-daily-conditioner.webp"],
+      description: "Acondicionador de uso diario Bio-Reach Professional Keratin, paso 4, de 250 ml. Mantiene y prolonga el alisado, desenreda, suaviza y da brillo, y aporta nutrición y reparación diaria. Libre de sulfatos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["queratina", "sin sulfatos", "uso diario", "alisado"]
+    },
+  {
+      id: "sinko-styling-permanent-hair-color",
+      slug: "sinko-styling-permanent-hair-color",
+      name: "Permanent Hair Color",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-permanent-hair-color.webp"],
+      description: "Crema de coloración permanente Sinko Styling, de 100 ml, para uso de salón. La presentación la anuncia como revelador u oxidante capilar de 30 volúmenes (9%), formulado para actuar junto con su sistema de tinte permanente.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "30 volúmenes"]
+    },
+  {
+      id: "fairest-keratin-conditioner",
+      slug: "fairest-keratin-conditioner",
+      name: "Keratin Conditioner",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-keratin-conditioner.webp", "/products/fairest-keratin-conditioner-2.webp"],
+      description: "Acondicionador reparador Fairest Keratin Conditioner, de Yogi Cosmetics, con queratina y ceramidas. Es un cuidado intensivo para restaurar el cabello severamente dañado, seco, quebradizo o encrespado. El envase lo presenta como Fairest Pilot, Plus Ceramide.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["queratina", "ceramida", "cabello dañado"]
+    },
+  {
+      id: "bio-reach-hair-growth",
+      slug: "bio-reach-hair-growth",
+      name: "Hair Growth",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-hair-growth.webp"],
+      description: "Sérum para crecimiento capilar Bio-Reach Professional Hair Growth, de 100 ml. Aporta nutrientes para favorecer el crecimiento, prevenir la caída y fortalecer la hebra. El envase lo presenta como deep cleansing y anti fall.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["crecimiento", "anticaída"]
+    },
+  {
+      id: "yogi-care-argan-oil-shampoo-280",
+      slug: "yogi-care-argan-oil-shampoo-280",
+      name: "Argan Oil Moisturizing Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-shampoo-280.webp"],
+      description: "Champú hidratante Yogi Care Argan Oil Moisturizing, de 280 ml. El aceite de argán nutre el cabello y el cuero cabelludo. Lleva vitamina E y omega 9, que aportan suavidad y ayudan a desenredar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "hidratación"]
+    },
+  {
+      id: "fairest-color-shampoo",
+      slug: "fairest-color-shampoo",
+      name: "Color Formula Shampoo",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-color-shampoo.webp"],
+      description: "Champú concentrado Fairest Color Formula, de 5 litros, para uso de salón. Produce una espuma abundante que limpia con suavidad y a fondo, hidrata con facilidad y deja el cabello suave. Formulado en Estados Unidos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 L",
+      inStock: true,
+      category: "Champú",
+      tags: ["salón", "concentrado"]
+    },
+  {
+      id: "fairest-bleaching-powder",
+      slug: "fairest-bleaching-powder",
+      name: "Bleaching Powder",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-bleaching-powder.webp"],
+      description: "Polvo decolorante capilar Fairest, infundido con queratina y ceramida para proteger la resistencia del cabello durante el aclarado. Está diseñado para aclarar el tono de manera profesional. El envase lo presenta como Fairest Pilot, Shiyeshi Bleaching Powder, Plus Ceramide.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Decoloración",
+      tags: ["decoloración", "queratina", "ceramida"]
+    },
+  {
+      id: "yogi-care-macadamia-shampoo",
+      slug: "yogi-care-macadamia-shampoo",
+      name: "Macadamia Hydrating Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-macadamia-shampoo.webp"],
+      description: "Champú hidratante y nutritivo Yogi Care Cosnature Macadamia, de 400 ml. Restaura la humedad natural, combate la resequedad del cabello y del cuero cabelludo, y lleva el complejo Pro Oil para fortalecer y suavizar. Aporta brillo y manejabilidad sin sensación grasa ni pesada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Champú",
+      tags: ["macadamia", "hidratación"]
+    },
+  {
+      id: "yogi-care-macadamia-conditioner",
+      slug: "yogi-care-macadamia-conditioner",
+      name: "Macadamia Hydrating Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-macadamia-conditioner.webp"],
+      description: "Acondicionador Yogi Care Cosnature Macadamia, de 400 ml, con extractos naturales y aceite de nuez de macadamia. Hidrata con intensidad, aporta suavidad y brillo, y controla el encrespamiento. Para todo tipo de cabello, en especial seco o maltratado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["macadamia", "hidratación", "frizz"]
+    },
+  {
+      id: "yogi-care-argan-therapy-hair-mask",
+      slug: "yogi-care-argan-therapy-hair-mask",
+      name: "Argan Therapy Hair Mask",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-therapy-hair-mask.webp"],
+      description: "Mascarilla capilar Yogi Care Argan Therapy, de 300 ml. Nutre el cabello con los elementos naturales del aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["argán"]
+    },
+  {
+      id: "sinko-styling-curly-defining-cream",
+      slug: "sinko-styling-curly-defining-cream",
+      name: "Curly Defining Cream",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-curly-defining-cream.webp"],
+      description: "Crema definidora de rizos Sinko Styling Curly Defining, con árbol de té, de 300 ml. Protege el cabello del daño, facilita el estilizado de los rizos y aporta definición sin dejar residuos pesados.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "árbol de té"]
+    },
+  {
+      id: "creative-natural-sculpting-clay",
+      slug: "creative-natural-sculpting-clay",
+      name: "Sculpting Clay",
+      brand: "Creative Natural",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/creative-natural-sculpting-clay.webp"],
+      description: "Arcilla modeladora Creative Natural Sculpting Clay, de 100 ml. Da textura, volumen y un aspecto mate. Se usa en el peinado para lograr fijación flexible y definición sin exceso de brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Fijador",
+      tags: ["arcilla", "mate"]
+    },
+  {
+      id: "bio-reach-caviar-argan-serum",
+      slug: "bio-reach-caviar-argan-serum",
+      name: "Caviar & Argan Oil Serum",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-caviar-argan-serum.webp"],
+      description: "Sérum hidratante reparador Bio-Reach Caviar & Argan Oil, de 100 ml. Lleva extracto de caviar, rico en nutrientes, vitaminas y antioxidantes, y aceite de argán para hidratar, nutrir y suavizar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["caviar", "argán"]
+    },
+  {
+      id: "yogi-care-anti-hair-loss-mint-shampoo",
+      slug: "yogi-care-anti-hair-loss-mint-shampoo",
+      name: "Anti Hair Loss Mint Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-anti-hair-loss-mint-shampoo.webp"],
+      description: "Champú anticaída Yogi Care Kosnature Anti Hair Loss Mint, de 400 ml, con menta. Lleva antioxidantes de extracto natural que dejan una sensación fresca, y busca un cabello más manejable, suave y brillante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Champú",
+      tags: ["anticaída", "menta"]
+    },
+  {
+      id: "yogi-care-argan-oil-conditioner",
+      slug: "yogi-care-argan-oil-conditioner",
+      name: "Argan Oil Moisturizing Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-conditioner.webp"],
+      description: "Acondicionador hidratante Yogi Care Argan Oil Moisturizing, de 900 ml, para cabello seco o dañado. Nutre en profundidad, repara, suaviza, aporta brillo natural y facilita el desenredo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 900,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "cabello seco"]
+    },
+  {
+      id: "yogi-care-flat-iron-shine-spray",
+      slug: "yogi-care-flat-iron-shine-spray",
+      name: "Flat Iron Shine Spray",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-flat-iron-shine-spray.webp"],
+      description: "Spray térmico Yogi Care Flat Iron Shine Spray, con aceite de argán, de 100 ml. Protege del calor de la plancha o el secador, aporta brillo y suavidad, y ayuda a controlar el frizz. El envase lo presenta como Heat Defender.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Protector térmico",
+      tags: ["argán", "calor", "frizz"]
+    },
+  {
+      id: "yogi-care-hair-bleaching-powder",
+      slug: "yogi-care-hair-bleaching-powder",
+      name: "Hair Bleaching Powder",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-hair-bleaching-powder.webp"],
+      description: "Polvo decolorante Yogi Care Hair Bleaching Powder, de 500 g. Aclara el tono de forma intensa y uniforme, con agentes antiamarillo que neutralizan los subtonos cálidos, y está formulado para respetar la fibra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 g",
+      inStock: true,
+      category: "Decoloración",
+      tags: ["decoloración", "antiamarillo"]
+    },
+  {
+      id: "yogi-care-argan-oil-shampoo",
+      slug: "yogi-care-argan-oil-shampoo",
+      name: "Argan Oil Moisturizing Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-shampoo.webp"],
+      description: "Champú hidratante Yogi Care Argan Oil Moisturizing, de 900 ml, para cabello seco, opaco o con frizz. Está formulado para combatir la resequedad y el encrespamiento.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 900,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "frizz", "cabello seco"]
+    },
+  {
+      id: "yogi-care-protein-collagen-treatment-800",
+      slug: "yogi-care-protein-collagen-treatment-800",
+      name: "Protein Collagen Treatment",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-protein-collagen-treatment-800.webp"],
+      description: "Tratamiento Yogi Care Protein Collagen, también llamado SOS Magic Hair Treatment, de 800 ml y libre de sulfatos. Hidrata en profundidad, ayuda a reparar las puntas abiertas, reduce el frizz y aporta suavidad y brillo al cabello seco o dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 800,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["colágeno", "proteínas", "sin sulfatos", "cabello dañado"]
+    },
+  {
+      id: "mixsoon-bean-essence",
+      slug: "mixsoon-bean-essence",
+      name: "Bean Essence",
+      brand: "mixsoon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/mixsoon-bean-essence.webp"],
+      description: "Esencia facial coreana mixsoon Bean Essence, de 50 ml. Hidrata, refina la textura y exfolia con suavidad, sin irritar. La fórmula fermentada lleva soja, cebada, granada y pera coreana. La textura es densa y se absorbe rápido, con un acabado luminoso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Esencia facial",
+      tags: ["soja", "fermentado"]
+    },
+  {
+      id: "yogi-care-u-keratin-treatment-250",
+      slug: "yogi-care-u-keratin-treatment-250",
+      name: "U-Keratin Treatment",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-keratin-treatment-250.webp"],
+      description: "Tratamiento capilar alisador y reconstructor Yogi Care U-Keratin, número 2, de 250 ml, para uso profesional en salón.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["queratina", "alisado", "salón"]
+    },
+  {
+      id: "yogi-care-u-keratin-purifying-shampoo-250",
+      slug: "yogi-care-u-keratin-purifying-shampoo-250",
+      name: "U-Keratin Purifying Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-keratin-purifying-shampoo-250.webp", "/products/yogi-care-u-keratin-purifying-shampoo-250-2.webp"],
+      description: "Champú purificante Yogi Care U-Keratin, número 1, de 250 ml. Limpia en profundidad el cabello y el cuero cabelludo, elimina residuos de productos, grasa y acumulaciones, y prepara la hebra antes de un tratamiento de queratina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "limpieza profunda"]
+    },
+  {
+      id: "creative-natural-wax",
+      slug: "creative-natural-wax",
+      name: "Wax",
+      brand: "Creative Natural",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/creative-natural-wax.webp"],
+      description: "Cera de peinado Creative Natural Wax, de fijación profesional y brillo medio. El envase marca cuatro estrellas de hold y la presenta como professional styling.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cera",
+      tags: ["fijación", "brillo medio"]
     }
 ];
