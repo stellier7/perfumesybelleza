@@ -18,7 +18,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/philos-centro.webp"],
-      description: "Eau de parfum de 100 ml. La foto lo marca en liquidación. El texto de arriba escribe el nombre como Piloso.",
+      description: "Eau de parfum de 100 ml. El texto de arriba escribe el nombre como Piloso.",
       notes: {
         top: [],
         heart: [],
@@ -27,7 +27,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "the-secret-antonio-banderas",
@@ -67,7 +67,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 30,
       inStock: true,
       category: "Eau de Toilette",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "gorgeous-michael-kors",
@@ -87,7 +87,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"],
+      tags: [],
       featured: true
     },
   {
@@ -108,7 +108,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 80,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"],
+      tags: [],
       featured: true
     },
   {
@@ -129,7 +129,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "galatea",
@@ -149,7 +149,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "delina",
@@ -2666,7 +2666,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/dangerous-me.webp"],
-      description: "Eau de parfum de 62 ml. El frasco y la caja dicen Paco Rabanne Dangerous Me. La foto dice liquidación.",
+      description: "Eau de parfum de 62 ml. El frasco y la caja dicen Paco Rabanne Dangerous Me.",
       notes: {
         top: [],
         heart: [],
@@ -2675,7 +2675,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 62,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "lahdath",
@@ -2686,7 +2686,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/lahdath.webp"],
-      description: "Eau de parfum. El texto de la foto dice 80 ml y la caja dice 2.7 fl oz. La caja también imprime 30 ml. La foto dice liquidación y Lattafa Pride.",
+      description: "Eau de parfum. El texto de la foto dice 80 ml y la caja dice 2.7 fl oz. La caja también imprime 30 ml. La foto dice Lattafa Pride.",
       notes: {
         top: [],
         heart: [],
@@ -2695,7 +2695,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 80,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "ajayeb-dubai",
@@ -2706,7 +2706,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/ajayeb-dubai.webp"],
-      description: "Eau de parfum de 100 ml. Frasco claro con jugo amarillo y tapa dorada. La caja dice 100 ml dos veces. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml. Frasco claro con jugo amarillo y tapa dorada. La caja dice 100 ml dos veces.",
       notes: {
         top: [],
         heart: [],
@@ -2715,7 +2715,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "ajayeb-dubai-negro",
@@ -2726,7 +2726,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/ajayeb-dubai-negro.webp"],
-      description: "Eau de parfum de 100 ml, 3.4 fl oz. Frasco negro veteado. La foto dice liquidación y trae el número 1010.631.",
+      description: "Eau de parfum de 100 ml, 3.4 fl oz. Frasco negro veteado.",
       notes: {
         top: [],
         heart: [],
@@ -2735,7 +2735,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "al-areeq-silver",
@@ -2746,7 +2746,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/al-areeq-silver.webp"],
-      description: "Eau de parfum de 100 ml. La caja dice Lattafa Pride y Al Areeq Silver. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml. La caja dice Lattafa Pride y Al Areeq Silver.",
       notes: {
         top: [],
         heart: [],
@@ -2755,7 +2755,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "wajood",
@@ -2766,7 +2766,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/wajood.webp"],
-      description: "Eau de parfum de 100 ml. El texto de la foto dice Lattafa Wajood. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml. El texto de la foto dice Lattafa Wajood.",
       notes: {
         top: [],
         heart: [],
@@ -2775,7 +2775,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "royal-bleu",
@@ -2786,7 +2786,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/royal-bleu.webp"],
-      description: "Eau de parfum de 80 ml. Luxury Collection. La foto dice liquidación.",
+      description: "Eau de parfum de 80 ml. Luxury Collection.",
       notes: {
         top: [],
         heart: [],
@@ -2795,7 +2795,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 80,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "velvet-gold",
@@ -2806,7 +2806,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/velvet-gold.webp"],
-      description: "Eau de parfum de 150 ml. Luxury Collection. La foto dice liquidación.",
+      description: "Eau de parfum de 150 ml. Luxury Collection.",
       notes: {
         top: [],
         heart: [],
@@ -2815,7 +2815,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 150,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "historic-doria",
@@ -2826,7 +2826,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/historic-doria.webp"],
-      description: "Eau de parfum de 100 ml. La caja también dice 3.3 fl oz. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml. La caja también dice 3.3 fl oz.",
       notes: {
         top: [],
         heart: [],
@@ -2835,7 +2835,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "cuba-red",
@@ -2846,7 +2846,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/cuba-red.webp"],
-      description: "Eau de toilette de 100 ml, 3.3 fl oz, para hombre. La foto dice liquidación.",
+      description: "Eau de toilette de 100 ml, 3.3 fl oz, para hombre.",
       notes: {
         top: [],
         heart: [],
@@ -2855,7 +2855,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "afaq",
@@ -2866,7 +2866,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/afaq.webp"],
-      description: "Eau de parfum de 100 ml, 3.4 fl oz. La caja dice Lattafa Pride. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml, 3.4 fl oz. La caja dice Lattafa Pride.",
       notes: {
         top: [],
         heart: [],
@@ -2875,7 +2875,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "ana-al-awwal",
@@ -2886,7 +2886,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/ana-al-awwal.webp"],
-      description: "Eau de parfum de 100 ml, 3.4 fl oz. El frasco dice Ana Al Awwal y Nusuk. El texto de la foto trae «anq» en lugar de Ana. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml, 3.4 fl oz. El frasco dice Ana Al Awwal y Nusuk. El texto de la foto trae «anq» en lugar de Ana.",
       notes: {
         top: [],
         heart: [],
@@ -2895,7 +2895,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "mon-lumiere",
@@ -2906,7 +2906,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/mon-lumiere.webp"],
-      description: "Eau de parfum de 100 ml. El frasco dice Mon Lumière y Riiffs. La foto dice liquidación.",
+      description: "Eau de parfum de 100 ml. El frasco dice Mon Lumière y Riiffs.",
       notes: {
         top: [],
         heart: [],
@@ -2915,7 +2915,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: ["liquidación"]
+      tags: []
     },
   {
       id: "al-jamal",
