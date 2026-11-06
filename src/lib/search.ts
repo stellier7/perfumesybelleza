@@ -40,9 +40,29 @@ function tokensMatch(haystack: string, query: string): boolean {
   const haystackWords = haystack.split(" ");
   return queryWords.every((word) =>
     haystackWords.some((token) => {
-      if (token.includes(word) || word.includes(token)) return true;
+      if (token.includes(word)) return true;
+      if (token.length >= 4 && word.includes(token)) return true;
       return editDistance(token, word) <= 1;
     }),
+  );
+}
+
+/** La búsqueda nombra este perfume, no solo su marca. «Creed» no nombra Aventus; «Millésime» sí. */
+export function queryNamesOriginal(query: string, original: SearchRecord): boolean {
+  const foldedQuery = fold(query);
+  const brand = fold(original.brand);
+  const name = fold(original.name);
+  let rest = foldedQuery;
+  if (brand && rest.includes(brand)) rest = rest.replace(brand, " ");
+  rest = rest.replace(/\s+/g, " ").trim();
+  if (rest.length < 2) return rest.length > 0 && rest === name;
+  const nameWords = name.split(" ").filter((word) => word.length >= 3);
+  const words = nameWords.length > 0 ? nameWords : name ? [name] : [];
+  const queryWords = rest.split(" ").filter((word) => word.length >= 2);
+  return words.some((word) =>
+    queryWords.some(
+      (token) => token.includes(word) || word.includes(token) || editDistance(token, word) <= 1,
+    ),
   );
 }
 
@@ -50,25 +70,18 @@ function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
   const folded = fold(query);
   if (folded.length < 2) return [];
   const direct = records.filter((record) => tokensMatch(record.haystack, folded));
+  if (direct.length > 0) return direct;
   const fuse = new Fuse(records, {
     keys: ["name"],
-    threshold: 0.45,
+    threshold: 0.35,
     ignoreLocation: true,
-    minMatchCharLength: 2,
+    minMatchCharLength: 3,
     includeScore: true,
   });
-  const fuzzy = fuse
+  return fuse
     .search(folded)
-    .filter((result) => (result.score ?? 1) <= 0.45)
+    .filter((result) => (result.score ?? 1) <= 0.35)
     .map((result) => result.item);
-  const seen = new Set<string>();
-  const merged: SearchRecord[] = [];
-  for (const record of [...direct, ...fuzzy]) {
-    if (seen.has(record.id)) continue;
-    seen.add(record.id);
-    merged.push(record);
-  }
-  return merged;
 }
 
 export function searchCatalog(records: SearchRecord[], query: string): SearchPresentation {

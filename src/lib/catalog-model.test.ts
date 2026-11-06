@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug } from "./catalog-model";
-import { searchCatalog } from "./search";
+import { queryNamesOriginal, searchCatalog } from "./search";
 import { toSearchRecord } from "./catalog-model";
 import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
@@ -119,6 +119,42 @@ test("buscar un diseñador que no vendemos deja solo las alternativas", () => {
   assert.equal(result.products.length, 0);
   assert.equal(result.missingOriginals[0]?.name, "Aventus");
   assert.equal(result.alternatives[0]?.id, "club-de-nuit-intense-man");
+});
+
+test("buscar la marca enseña los perfumes sin avisar cada referencia", () => {
+  const catalog = buildCatalog([
+    product({ id: "aventus-her", name: "Aventus for Her", brand: "Creed", type: "designer" }),
+    product({
+      id: "milestone",
+      name: "Milestone",
+      brand: "Armaf",
+      type: "arabic",
+      inspiredBy: ["Millésime Impérial (Creed)"],
+    }),
+    product({
+      id: "knight",
+      name: "Knight",
+      brand: "Al Haramain",
+      type: "arabic",
+      inspiredBy: ["Aventus (Creed)"],
+    }),
+    product({ id: "red", name: "Red", brand: "Lacoste", type: "designer" }),
+    product({ id: "le-male", name: "Le Male", brand: "Jean Paul Gaultier", type: "designer", category: "Eau de Toilette" }),
+  ]);
+  const records = catalog.map(toSearchRecord);
+  const brand = searchCatalog(records, "Creed");
+  assert.equal(
+    brand.missingOriginals.filter((item) => queryNamesOriginal("Creed", item)).length,
+    0,
+  );
+  assert.ok(brand.products.some((item) => item.id === "aventus-her"));
+  assert.equal(brand.products.some((item) => item.id === "red"), false);
+  assert.ok(brand.groups.length >= 2);
+  const specific = searchCatalog(records, "Millésime");
+  const named = specific.missingOriginals.filter((item) => queryNamesOriginal("Millésime", item));
+  assert.equal(named.length, 1);
+  assert.equal(named[0]?.name, "Millésime Impérial");
+  assert.equal(specific.products.some((item) => item.id === "le-male"), false);
 });
 
 test("ordena las inspiraciones de la más cercana a la más libre y deja el set abajo", () => {
