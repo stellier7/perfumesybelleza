@@ -26285,5 +26285,597 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Sérum facial",
       tags: ["colágeno", "oro", "hialurónico"]
+    },
+  {
+      id: "esfolio-caracol",
+      slug: "esfolio-caracol",
+      name: "Caracol",
+      brand: "Esfolio",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/esfolio-caracol.webp"],
+      description: "Mascarilla facial en hoja Esfolio de caracol, de 10 unidades. El texto habla de hidratar y de líneas finas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "10 piezas",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["caracol", "mascarilla", "hoja"]
+    },
+  {
+      id: "mixsoon-glaciar",
+      slug: "mixsoon-glaciar",
+      name: "Glaciar",
+      brand: "mixsoon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/mixsoon-glaciar.webp"],
+      description: "Sérum facial mixsoon de agua de glaciar y ácido hialurónico, de 100 ml. El texto habla de hidratar y de calmar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["hialurónico", "glaciar", "hidratación"]
+    },
+  {
+      id: "beauty-of-joseon-mate",
+      slug: "beauty-of-joseon-mate",
+      name: "Mate",
+      brand: "Beauty of Joseon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-of-joseon-mate.webp"],
+      description: "Bloqueador solar en barra Beauty of Joseon, de 18 g, con artemisa y camelia. El texto habla de un acabado mate.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "18 g",
+      inStock: true,
+      category: "Protector solar",
+      tags: ["solar", "mate", "artemisa"]
+    },
+  {
+      id: "beauty-of-joseon-arroz",
+      slug: "beauty-of-joseon-arroz",
+      name: "Leche de arroz",
+      brand: "Beauty of Joseon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-of-joseon-arroz.webp"],
+      description: "Tónico facial bifásico Beauty of Joseon de leche de arroz, de 150 ml. El texto habla de hidratar y de controlar el sebo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Tónico",
+      tags: ["arroz", "tónico", "sebo"]
+    },
+  {
+      id: "salon-delantal",
+      slug: "salon-delantal",
+      name: "Delantal",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-delantal.webp"],
+      description: "Delantal de salón, negro, con bolsillo. La foto no marca marca ni tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Delantal",
+      tags: ["delantal", "salón"]
+    },
+  {
+      id: "bioaqua-mens-limpiador",
+      slug: "bioaqua-mens-limpiador",
+      name: "Men's",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-mens-limpiador.webp"],
+      description: "Limpiador facial Bioaqua Men's, de 150 ml. El texto habla de poros y de grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["hombres", "poros", "grasa"]
+    },
+  {
+      id: "kemei-km-1539",
+      slug: "kemei-km-1539",
+      name: "KM-1539",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-km-1539.webp"],
+      description: "Depiladora eléctrica Kemei KM-1539. El texto habla de cabezal oscilante y de resistencia al agua. Incluye base de carga.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depiladora", "kemei", "eléctrica"]
+    },
+  {
+      id: "salon-gorro-ducha",
+      slug: "salon-gorro-ducha",
+      name: "Ducha",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-gorro-ducha.webp"],
+      description: "Gorro de ducha, amarillo, con elástico. La foto no marca marca ni tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Gorro",
+      tags: ["gorro", "ducha"]
+    },
+  {
+      id: "salon-limon-pies",
+      slug: "salon-limon-pies",
+      name: "Limón pies",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-limon-pies.webp"],
+      description: "Set de pedicura de limón, de 4 pasos. La foto no marca la marca. Incluye una mascarilla de hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "4 piezas",
+      inStock: true,
+      category: "Pedicura",
+      tags: ["pies", "limón", "set"]
+    },
+  {
+      id: "xtracare-cerezo",
+      slug: "xtracare-cerezo",
+      name: "Cerezo",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-cerezo.webp"],
+      description: "Crema para depilar XtraCare de flor de cerezo, de 150 g, para piel normal. El texto habla de aloe. La foto incluye la espátula.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "cerezo", "aloe"]
+    },
+  {
+      id: "salon-line-sos-cachos-mango",
+      slug: "salon-line-sos-cachos-mango",
+      name: "SOS Cachos mango",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-mango.webp"],
+      description: "Set Salon Line S.O.S Cachos de aceite de mango: champú de 300 ml y acondicionador de 200 ml. El texto habla de hidratar y de frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "300 ml + 200 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["mango", "rizos", "frizz"]
+    },
+  {
+      id: "disney-toy-story-2en1",
+      slug: "disney-toy-story-2en1",
+      name: "Toy Story 2 en 1",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-toy-story-2en1.webp"],
+      description: "Champú y acondicionador Disney Pixar Toy Story, 2 en 1, de 473 ml. El texto habla de suavizar el cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["infantil", "champú", "toy story"]
+    },
+  {
+      id: "xtracare-avena-bebe",
+      slug: "xtracare-avena-bebe",
+      name: "Avena bebé",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-avena-bebe.webp"],
+      description: "Loción corporal XtraCare Baby de avena, de 227 g. El texto habla de una fragancia ligera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "227 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["bebé", "avena", "loción"]
+    },
+  {
+      id: "salon-barber",
+      slug: "salon-barber",
+      name: "Barber",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-barber.webp"],
+      description: "Navaja de afeitar, con la palabra Barber en el mango. La foto no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rasuradora",
+      tags: ["navaja", "afeitado"]
+    },
+  {
+      id: "wax-pro-ysm-5012a",
+      slug: "wax-pro-ysm-5012a",
+      name: "YSM-5012A",
+      brand: "Wax Pro",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wax-pro-ysm-5012a.webp"],
+      description: "Calentador de cera Wax Pro, modelo YSM-5012A, con tazón metálico y tapa. La foto no marca una capacidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["cera", "calentador"]
+    },
+  {
+      id: "salon-paleta",
+      slug: "salon-paleta",
+      name: "Paleta",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-paleta.webp"],
+      description: "Cepillo de paleta, con mango de silicona. La foto muestra el mismo cepillo dos veces y no marca la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "paleta", "cabello"]
+    },
+  {
+      id: "salon-banco",
+      slug: "salon-banco",
+      name: "Banco",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-banco.webp"],
+      description: "Banco giratorio de salón, negro, con asiento capitoné y base de cinco ruedas. La foto no marca la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["banco", "salón", "ruedas"]
+    },
+  {
+      id: "bioaqua-niacinamida-set",
+      slug: "bioaqua-niacinamida-set",
+      name: "Niacinamida",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-niacinamida-set.webp"],
+      description: "Set facial Bioaqua de niacinamida, de 6 piezas: tónico de 120 ml, loción de 80 ml, contorno de 20 g, sérum de 30 ml, crema de 60 g y limpiador de 100 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["niacinamida", "set", "facial"]
+    },
+  {
+      id: "bioaqua-vitamina-c-set",
+      slug: "bioaqua-vitamina-c-set",
+      name: "Vitamina C set",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-set.webp"],
+      description: "Set facial Bioaqua de vitamina C, de 6 piezas: limpiador de 100 g, tónico de 120 ml, loción de 80 ml, contorno de 20 g, sérum de 30 ml y crema de 60 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["vitamina c", "set", "facial"]
+    },
+  {
+      id: "bioaqua-retinol-set",
+      slug: "bioaqua-retinol-set",
+      name: "Retinol",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-retinol-set.webp"],
+      description: "Set facial Bioaqua de retinol, de 6 piezas: limpiador de 100 g, tónico de 120 ml, loción de 80 ml, contorno de 20 g, sérum de 30 ml y crema de 60 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["retinol", "set", "facial"]
+    },
+  {
+      id: "salon-capa-ventana",
+      slug: "salon-capa-ventana",
+      name: "Ventana",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-capa-ventana.webp"],
+      description: "Capa de peluquería negra, con ventana transparente. La foto no marca la marca ni el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Capa",
+      tags: ["capa", "peluquería", "ventana"]
+    },
+  {
+      id: "esfolio-caracol-espuma",
+      slug: "esfolio-caracol-espuma",
+      name: "Caracol espuma",
+      brand: "Esfolio",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/esfolio-caracol-espuma.webp"],
+      description: "Espuma limpiadora Esfolio de caracol, de 150 g. El texto habla de poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["caracol", "espuma", "poros"]
+    },
+  {
+      id: "purito-centella",
+      slug: "purito-centella",
+      name: "Centella",
+      brand: "Purito",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/purito-centella.webp"],
+      description: "Crema facial Purito de centella asiática, de 50 ml, sin fragancia. El texto habla de calmar y de la barrera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["centella", "sensible", "sin fragancia"]
+    },
+  {
+      id: "esfolio-caracol-manos",
+      slug: "esfolio-caracol-manos",
+      name: "Caracol manos",
+      brand: "Esfolio",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/esfolio-caracol-manos.webp"],
+      description: "Crema de manos Esfolio de caracol, de 100 ml. El texto habla de hidratar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "caracol", "hidratación"]
+    },
+  {
+      id: "salon-guantes-calor",
+      slug: "salon-guantes-calor",
+      name: "Guantes",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-guantes-calor.webp"],
+      description: "Par de guantes con puntos de agarre, en verde y rosa. La foto no marca la marca ni el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["guantes", "calor", "cabello"]
+    },
+  {
+      id: "disney-intensamente",
+      slug: "disney-intensamente",
+      name: "Intensamente",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-intensamente.webp"],
+      description: "Bálsamo labial Disney Pixar Intensamente 2, de 4,5 g. La foto reúne dos barras.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "4,5 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "bálsamo", "intensamente"]
+    },
+  {
+      id: "salon-line-maravillas",
+      slug: "salon-line-maravillas",
+      name: "Maravillas",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-maravillas.webp"],
+      description: "Aceite de tratamiento Salon Line Multy Maravilhas, de 50 ml, con plátano y ricino. El texto habla de brillo y de protección térmica.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Aceite",
+      tags: ["plátano", "ricino", "brillo"]
+    },
+  {
+      id: "disney-minnie",
+      slug: "disney-minnie",
+      name: "Minnie",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-minnie.webp"],
+      description: "Champú Disney Junior Minnie, 3 en 1, de 300 ml. También es acondicionador y gel de baño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["infantil", "minnie", "3 en 1"]
+    },
+  {
+      id: "eleve-ondas",
+      slug: "eleve-ondas",
+      name: "Ondas",
+      brand: "Élevé",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/eleve-ondas.webp"],
+      description: "Set Élevé Ondas e Cachos: champú de 900 ml y acondicionador de 900 ml, con aceite de ricino y murumuru.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "900 ml + 900 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["rizos", "ricino", "murumuru"]
     }
 ];
