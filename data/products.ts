@@ -21989,8 +21989,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/karseell-maca-moisture-500.webp"],
-      description: "Champú Karseell Maca Moisture, de 500 ml, para cabello seco y dañado.",
+      images: ["/products/karseell-maca-moisture-500.webp", "/products/karseell-maca-moisture-500-2.webp"],
+      description: "Champú Karseell Maca Moisture, de 500 ml, para cabello seco y dañado. El envase lo presenta sin sulfatos, fosfatos ni parabenos, y apto para cabello teñido.",
       notes: {
         top: [],
         heart: [],
@@ -22009,8 +22009,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/karseell-maca-repair-500.webp"],
-      description: "Acondicionador Karseell Maca Essence Repair, de 500 ml, para cabello seco y dañado.",
+      images: ["/products/karseell-maca-repair-500.webp", "/products/karseell-maca-repair-500-2.webp"],
+      description: "Acondicionador Karseell Maca Essence Repair, de 500 ml, para cabello seco y dañado. El envase lo presenta sin sulfatos, fosfatos ni parabenos, y apto para cabello teñido.",
       notes: {
         top: [],
         heart: [],
@@ -27439,5 +27439,530 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Champú",
       tags: ["argán", "cabello seco", "frizz"]
+    },
+  {
+      id: "meidu-vino-oscuro",
+      slug: "meidu-vino-oscuro",
+      name: "Vino oscuro C3",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-vino-oscuro.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono rojo vino oscuro C3, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "vino", "3 en 1"]
+    },
+  {
+      id: "meidu-cafe",
+      slug: "meidu-cafe",
+      name: "Café C4",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-cafe.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono café C4, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "café", "3 en 1"]
+    },
+  {
+      id: "meidu-castano",
+      slug: "meidu-castano",
+      name: "Castaño C6",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-castano.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono castaño C6, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "castaño", "3 en 1"]
+    },
+  {
+      id: "meidu-morado",
+      slug: "meidu-morado",
+      name: "Morado C7",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-morado.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono morado C7, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "morado", "3 en 1"]
+    },
+  {
+      id: "garden-limon",
+      slug: "garden-limon",
+      name: "Limón",
+      brand: "Garden",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/garden-limon.webp"],
+      description: "Ambientador Garden Collection de limón. El envase lo presenta como aroma fresco. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Ambientador",
+      tags: ["limón", "hogar", "aroma"]
+    },
+  {
+      id: "garden-mandarina",
+      slug: "garden-mandarina",
+      name: "Mandarina",
+      brand: "Garden",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/garden-mandarina.webp"],
+      description: "Ambientador Garden Collection de mandarina. El envase lo presenta como aroma fresco. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Ambientador",
+      tags: ["mandarina", "hogar", "aroma"]
+    },
+  {
+      id: "garden-musk",
+      slug: "garden-musk",
+      name: "Musk",
+      brand: "Garden",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/garden-musk.webp"],
+      description: "Ambientador Garden Collection de musk. El envase lo presenta como aroma para el hogar. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Ambientador",
+      tags: ["musk", "hogar", "aroma"]
+    },
+  {
+      id: "karseell-bnc-colageno",
+      slug: "karseell-bnc-colageno",
+      name: "BNC colágeno",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-bnc-colageno.webp"],
+      description: "Tratamiento capilar Karseell BNC de colágeno y argán, de 550 ml. El envase lo presenta para cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 550,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["colágeno", "argán", "cabello seco"]
+    },
+  {
+      id: "karseell-bnc-argan",
+      slug: "karseell-bnc-argan",
+      name: "BNC argán",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-bnc-argan.webp"],
+      description: "Aceite de argán Karseell BNC, para cabello seco y para el cuerpo. El envase habla de nutrientes y vitamina E. La foto no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Aceite",
+      tags: ["argán", "vitamina e", "cuerpo"]
+    },
+  {
+      id: "karseell-bnc-keratina",
+      slug: "karseell-bnc-keratina",
+      name: "BNC keratina",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-bnc-keratina.webp"],
+      description: "Tratamiento alisador Karseell BNC de keratina, de 500 ml, con colágeno y biotina. El envase habla de fijar la humedad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["keratina", "colágeno", "biotina"]
+    },
+  {
+      id: "karseell-gold-keratin",
+      slug: "karseell-gold-keratin",
+      name: "Gold Keratin",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-gold-keratin.webp"],
+      description: "Tratamiento Karseell Maca Power Gold Keratin, de 500 ml, para cabello seco y dañado. El envase habla de esencia de maca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["maca", "keratina", "cabello seco"]
+    },
+  {
+      id: "karseell-sobres",
+      slug: "karseell-sobres",
+      name: "Sobres",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-sobres.webp"],
+      description: "Set Karseell Maca Power de 24 sobres de 10 ml: champú de volumen y acondicionador de reparación. Lleva argán, vitamina E, proteínas de trigo, manzanilla y aloe.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "24 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["maca", "argán", "sobres"]
+    },
+  {
+      id: "karseell-rizos",
+      slug: "karseell-rizos",
+      name: "Rizos",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-rizos.webp"],
+      description: "Crema definidora de rizos Karseell Maca Power, de 200 ml. El envase habla de frizz, definición y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "frizz", "brillo"]
+    },
+  {
+      id: "pearl-max-platinum",
+      slug: "pearl-max-platinum",
+      name: "Super Platinum",
+      brand: "Pearl Max",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/pearl-max-platinum.webp"],
+      description: "Hojas de afeitar Pearl Max Super Platinum. Cada caja trae 5 piezas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["hojas", "afeitar", "platinum"]
+    },
+  {
+      id: "comfort-manicura",
+      slug: "comfort-manicura",
+      name: "Manicura",
+      brand: "Comfort",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/comfort-manicura.webp"],
+      description: "Silla de manicura Comfort, con bandeja. La foto no marca medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["silla", "manicura", "bandeja"]
+    },
+  {
+      id: "salon-pinzas-colores",
+      slug: "salon-pinzas-colores",
+      name: "Pinzas",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-pinzas-colores.webp"],
+      description: "Pinzas para el cabello, 12 piezas, en varios colores. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "12 piezas",
+      inStock: true,
+      category: "Pinza",
+      tags: ["pinzas", "colores", "cabello"]
+    },
+  {
+      id: "clear-therapy-zanahoria",
+      slug: "clear-therapy-zanahoria",
+      name: "Zanahoria",
+      brand: "Clear Therapy",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/clear-therapy-zanahoria.webp"],
+      description: "Jabón Clear Therapy clarificante, con aceite de zanahoria. El envase habla de la pigmentación y de las manchas. No marca el peso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Jabón",
+      tags: ["zanahoria", "manchas", "jabón"]
+    },
+  {
+      id: "beauty-style-balayage",
+      slug: "beauty-style-balayage",
+      name: "Balayage",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-balayage.webp"],
+      description: "Set de balayage Beauty Style, de 3 piezas, en rosa: dos paletas y una brocha.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "3 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["balayage", "paleta", "brocha"]
+    },
+  {
+      id: "beauty-style-balayage-mediano",
+      slug: "beauty-style-balayage-mediano",
+      name: "Balayage mediano",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-balayage-mediano.webp"],
+      description: "Set de balayage Beauty Style, de 5 piezas, mediano, con brillantina verde: brochas, peine, paleta y recipiente.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["balayage", "brocha", "paleta"]
+    },
+  {
+      id: "beauty-style-brocha",
+      slug: "beauty-style-brocha",
+      name: "Brocha",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-brocha.webp"],
+      description: "Brocha de afeitar Beauty Style, con mango de madera. La foto no marca medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["brocha", "afeitar", "madera"]
+    },
+  {
+      id: "karseell-hidratacion",
+      slug: "karseell-hidratacion",
+      name: "Hidratación",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-hidratacion.webp"],
+      description: "Acondicionador Karseell Maca Power Deeper Moisture, de 500 ml, para cabello seco y dañado. El envase lo presenta sin sulfatos, fosfatos ni parabenos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["maca", "hidratación", "sin sulfatos"]
+    },
+  {
+      id: "realsaloon-ceramica",
+      slug: "realsaloon-ceramica",
+      name: "Cerámica",
+      brand: "RealSaloon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/realsaloon-ceramica.webp"],
+      description: "Plancha RealSaloon Shine Therapy, con placas de cerámica. El envase menciona vitamina E, aguacate y aceite de argán, y control digital de 150 a 230 °C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "cerámica", "argán"]
+    },
+  {
+      id: "garden-hielo",
+      slug: "garden-hielo",
+      name: "Hielo",
+      brand: "Garden",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/garden-hielo.webp"],
+      description: "Ambientador Garden Collection Ice Fresh. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Ambientador",
+      tags: ["hielo", "hogar", "aroma"]
+    },
+  {
+      id: "meidu-vino",
+      slug: "meidu-vino",
+      name: "Vino C5",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-vino.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono rojo vino C5, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "vino", "3 en 1"]
+    },
+  {
+      id: "meidu-cafe-oscuro",
+      slug: "meidu-cafe-oscuro",
+      name: "Café oscuro C2",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-cafe-oscuro.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono café oscuro C2, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "café", "3 en 1"]
+    },
+  {
+      id: "meidu-negro",
+      slug: "meidu-negro",
+      name: "Negro C1",
+      brand: "Meidu",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/meidu-negro.webp"],
+      description: "Champú tinte Meidu 3 en 1, tono negro C1, de 500 ml. El envase habla de color, brillo e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "negro", "3 en 1"]
     }
 ];
