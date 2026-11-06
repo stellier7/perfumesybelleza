@@ -11813,5 +11813,610 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Aceite",
       tags: ["argán"]
+    },
+  {
+      id: "sinko-styling-argan-oil-conditioner",
+      slug: "sinko-styling-argan-oil-conditioner",
+      name: "Argan Oil Nourishing Conditioner",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-argan-oil-conditioner.webp"],
+      description: "Acondicionador Sinko Styling Argan Oil Nourishing, de 500 ml. Aporta hidratación profunda y devuelve suavidad al cabello seco, opaco o maltratado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "cabello seco"]
+    },
+  {
+      id: "sinko-styling-argan-oil-shampoo-500",
+      slug: "sinko-styling-argan-oil-shampoo-500",
+      name: "Argan Oil Nourishing Shampoo",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-argan-oil-shampoo-500.webp"],
+      description: "Champú Sinko Styling Argan Oil Nourishing, de 500 ml. Está diseñado para hidratar, aportar brillo y ayudar a reparar el cabello seco o dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "cabello seco"]
+    },
+  {
+      id: "yogi-care-agarwood-body-lotion",
+      slug: "yogi-care-agarwood-body-lotion",
+      name: "Agarwood Body Lotion",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-agarwood-body-lotion.webp"],
+      description: "Crema corporal Yogi Care Agarwood Body Lotion, de 250 ml, con esencia de madera de agar. Humecta en profundidad, suaviza la piel y deja una fragancia intensa y duradera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["madera de agar", "hidratación"]
+    },
+  {
+      id: "yogi-care-agarwood-body-wash",
+      slug: "yogi-care-agarwood-body-wash",
+      name: "Agarwood Body Wash",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-agarwood-body-wash.webp"],
+      description: "Gel de ducha Yogi Care Agarwood Body Wash, de 250 ml, con esencia de madera de agar. Limpia en profundidad, refresca y nutre la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Gel de ducha",
+      tags: ["madera de agar", "limpieza"]
+    },
+  {
+      id: "yogi-care-agarwood-body-scrub",
+      slug: "yogi-care-agarwood-body-scrub",
+      name: "Agarwood Body Scrub",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-agarwood-body-scrub.webp"],
+      description: "Exfoliante corporal Yogi Care Agarwood Body Scrub, de 300 ml, con extracto de madera de agar. Lleva partículas finas que retiran las células muertas sin agredir la piel, y busca quitar la resequedad superficial para dejarla suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["madera de agar", "exfoliante"]
+    },
+  {
+      id: "yogi-care-agarwood-hair-mask",
+      slug: "yogi-care-agarwood-hair-mask",
+      name: "Agarwood Hair Mask",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-agarwood-hair-mask.webp"],
+      description: "Mascarilla capilar Yogi Care Agarwood Hair Mask, de 300 ml. Acondiciona y repara en profundidad el cabello seco, dañado o encrespado, con extracto de madera de agar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["madera de agar", "cabello seco", "frizz"]
+    },
+  {
+      id: "sinko-styling-developer-10",
+      slug: "sinko-styling-developer-10",
+      name: "Developer 10 vol",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-developer-10.webp"],
+      description: "Oxidante revelador Sinko Styling Developer, al 3% (10 volúmenes), de 1000 ml. Ayuda a prevenir el daño del cabello durante el teñido. El envase lo presenta para uso profesional en salón.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["10 volúmenes", "salón", "coloración"]
+    },
+  {
+      id: "bio-reach-caviar-nutrition-mask",
+      slug: "bio-reach-caviar-nutrition-mask",
+      name: "Caviar Nutrition Mask",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-caviar-nutrition-mask.webp"],
+      description: "Mascarilla Bio-Reach Caviar Nutrition Deep Repair, de 800 ml. Es un tratamiento hidro-nutritivo y antiedad para revitalizar, hidratar y reconstruir el cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 800,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["caviar", "cabello seco", "reparación"]
+    },
+  {
+      id: "bio-reach-caviar-luxury-shampoo",
+      slug: "bio-reach-caviar-luxury-shampoo",
+      name: "Caviar Luxury Nursing Shampoo",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-caviar-luxury-shampoo.webp"],
+      description: "Champú Bio-Reach Caviar Luxury Nursing, de 1000 ml. Hidrata y repara en profundidad el cabello seco y dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["caviar", "cabello seco", "reparación"]
+    },
+  {
+      id: "bio-reach-caviar-luxury-conditioner",
+      slug: "bio-reach-caviar-luxury-conditioner",
+      name: "Caviar Luxury Nursing Conditioner",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-caviar-luxury-conditioner.webp"],
+      description: "Acondicionador Bio-Reach Caviar Luxury Nursing, de 1000 ml. Repara, hidrata y suaviza el cabello seco o dañado con extracto de caviar y antioxidantes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["caviar", "antioxidante", "cabello seco"]
+    },
+  {
+      id: "salon-line-sos-hidratacao-set",
+      slug: "salon-line-sos-hidratacao-set",
+      name: "S.O.S Hidratação",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-hidratacao-set.webp"],
+      description: "Set Salon Line S.O.S Hidratação con aceite de ricino, formado por champú de 1 L y acondicionador de 1 L. Es un tratamiento intenso de hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L + 1 L",
+      inStock: true,
+      category: "Set",
+      tags: ["aceite de ricino", "hidratación"]
+    },
+  {
+      id: "salon-line-sos-hidratacao-mascara",
+      slug: "salon-line-sos-hidratacao-mascara",
+      name: "S.O.S Hidratação Máscara",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-hidratacao-mascara.webp"],
+      description: "Mascarilla Salon Line S.O.S Hidratação, de 1 kg, con aceite de ricino. Hidrata de forma intensa, restaura la suavidad y el movimiento del cabello, y aporta fuerza y brillo. Para uso diario y todo tipo de rizos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["aceite de ricino", "hidratación", "rizos"]
+    },
+  {
+      id: "salon-line-sos-cachos-kids-creme",
+      slug: "salon-line-sos-cachos-kids-creme",
+      name: "S.O.S Cachos Kids Creme para Pentear",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-kids-creme.webp"],
+      description: "Crema para peinar Salon Line S.O.S Cachos Kids Hidratação, de 1 kg, con aroma a fresa. Es 5 en 1: pre-champú, leave-in desenredante, mascarilla, acondicionador y finalizador, para el cuidado diario de los rizos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["infantil", "rizos", "fresa"]
+    },
+  {
+      id: "salon-line-todecacho-gelatina",
+      slug: "salon-line-todecacho-gelatina",
+      name: "Gelatina #todecacho",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-todecacho-gelatina.webp"],
+      description: "Gelatina Salon Line #todecacho, de 550 g. Promete volumen y definición de rizos por 72 horas, con 15 veces más súper volumen. El envase la presenta como professional styling.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "550 g",
+      inStock: true,
+      category: "Gel",
+      tags: ["rizos", "volumen", "definición"]
+    },
+  {
+      id: "salon-line-sos-cachos-ativador",
+      slug: "salon-line-sos-cachos-ativador",
+      name: "S.O.S Cachos Ativador",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-ativador.webp"],
+      description: "Activador de rizos Salon Line S.O.S Cachos, de 300 ml, con aceite de ricino y queratina. Define los rizos, controla el frizz y aporta volumen y brillo. Indicado para cabello con química o reseco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "aceite de ricino", "queratina", "frizz"]
+    },
+  {
+      id: "yogi-care-argan-oil-conditioner-500",
+      slug: "yogi-care-argan-oil-conditioner-500",
+      name: "Argan Oil Moisturizing Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-oil-conditioner-500.webp"],
+      description: "Acondicionador Yogi Care Argan Oil Moisturizing, de 500 ml. Lleva aceite de argán marroquí, antioxidantes y vitamina E para devolver elasticidad y suavidad, sellar la cutícula y disminuir las puntas abiertas y el frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "frizz", "vitamina E"]
+    },
+  {
+      id: "yogi-care-moringa-anti-dandruff-shampoo",
+      slug: "yogi-care-moringa-anti-dandruff-shampoo",
+      name: "Moringa Anti-Dandruff Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-moringa-anti-dandruff-shampoo.webp"],
+      description: "Champú anticaspa Yogi Care Moringa, de 1000 ml. La fórmula busca combatir la caspa y promover el crecimiento del cabello. Libre de sulfatos y parabenos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["moringa", "anticaspa", "sin sulfatos"]
+    },
+  {
+      id: "sinko-styling-keratin-repair-serum",
+      slug: "sinko-styling-keratin-repair-serum",
+      name: "Keratin Repair Serum",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-keratin-repair-serum.webp"],
+      description: "Sérum reparador Sinko Styling Keratin Repair, de 100 ml. Controla el frizz, suaviza, aporta brillo y protege de los rayos UV y del daño térmico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["queratina", "frizz", "protección térmica"]
+    },
+  {
+      id: "bio-reach-argan-hair-body-serum",
+      slug: "bio-reach-argan-hair-body-serum",
+      name: "Argan Oil Hair & Body Serum",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-argan-hair-body-serum.webp"],
+      description: "Sérum capilar y corporal Bio-Reach Argan Oil, de 100 ml, con aceite de argán marroquí. Da brillo y suavidad, y ayuda a proteger el cabello del calor de las herramientas de peinado. La fórmula incluye ciclopentasiloxano, dimeticona y aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["argán", "brillo", "calor"]
+    },
+  {
+      id: "yogi-care-agarwood-hair-serum",
+      slug: "yogi-care-agarwood-hair-serum",
+      name: "Agarwood Hair Serum",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-agarwood-hair-serum.webp"],
+      description: "Sérum capilar Yogi Care Agarwood, de 100 ml. Lleva esencia de madera de agar y extractos botánicos para controlar el encrespamiento y aportar brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum",
+      tags: ["madera de agar", "frizz", "brillo"]
+    },
+  {
+      id: "yogi-care-u-colagent-hair-mask",
+      slug: "yogi-care-u-colagent-hair-mask",
+      name: "U-Colagent Hair Mask",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-colagent-hair-mask.webp"],
+      description: "Mascarilla Yogi Care U-Colagent Fruit Acid Protein, de 300 ml. Trata con ácidos de frutas y colágeno para nutrir y reparar el cabello seco o dañado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["colágeno", "ácidos de frutas", "cabello seco"]
+    },
+  {
+      id: "fairest-keratin-treatment-cream",
+      slug: "fairest-keratin-treatment-cream",
+      name: "Keratin Treatment Cream",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-keratin-treatment-cream.webp"],
+      description: "Mascarilla capilar Fairest Keratin Hair Care Treatment Cream, de la línea Pilot Plus Ceramide. Es una crema hidratante con aceite de argán, aceites naturales y aminoácidos de seda.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["queratina", "argán", "ceramida"]
+    },
+  {
+      id: "fairest-color-conditioner-5l",
+      slug: "fairest-color-conditioner-5l",
+      name: "Color Formula Conditioner",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-color-conditioner-5l.webp"],
+      description: "Acondicionador Fairest Color Formula, de 5 L, con aroma a coco, para uso en salón. Limpia en profundidad, aporta brillo, restaura el pH e hidrata el cabello seco o dañado. Lleva vitamina E y es apto para cabello normal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 L",
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["salón", "coco", "vitamina E"]
+    },
+  {
+      id: "sinko-styling-tea-tree-spray",
+      slug: "sinko-styling-tea-tree-spray",
+      name: "Tea Tree Leave-in Spray",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-tea-tree-spray.webp"],
+      description: "Spray leave-in Sinko Styling de árbol de té, de 250 ml. Hidrata el cabello seco o rebelde sin dejarlo graso, desenreda, suaviza, reduce el frizz y da una protección térmica ligera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Spray",
+      tags: ["árbol de té", "leave-in", "protección térmica"]
+    },
+  {
+      id: "sinko-styling-developer-40",
+      slug: "sinko-styling-developer-40",
+      name: "Developer 40 vol",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-developer-40.webp"],
+      description: "Oxidante en crema Sinko Styling Developer, al 12% (40 volúmenes), de 1000 ml. Fórmula profesional de salón para proteger el cabello durante la coloración.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["40 volúmenes", "salón", "coloración"]
+    },
+  {
+      id: "sinko-styling-developer-20",
+      slug: "sinko-styling-developer-20",
+      name: "Developer 20 vol",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-developer-20.webp"],
+      description: "Oxidante en crema Sinko Styling Developer, al 6% (20 volúmenes), de 1000 ml. El envase lo presenta como revelador de salón para proteger el cabello durante la coloración.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["20 volúmenes", "salón", "coloración"]
+    },
+  {
+      id: "silla-giratoria-salon",
+      slug: "silla-giratoria-salon",
+      name: "Silla giratoria capitoné",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/silla-giratoria-salon.webp"],
+      description: "Silla giratoria para salón de belleza, con respaldo y asiento de terciopelo gris capitoné, estructura dorada y base de cinco ruedas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["silla", "salón"]
+    },
+  {
+      id: "bio-reach-argan-hydrating-shampoo",
+      slug: "bio-reach-argan-hydrating-shampoo",
+      name: "Argan Oil Hydrating Shampoo",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-argan-hydrating-shampoo.webp"],
+      description: "Champú hidratante Bio-Reach Argan Oil, de 500 ml. El envase lo presenta para cabello seco y encrespado, con aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "cabello seco", "frizz"]
+    },
+  {
+      id: "bio-reach-argan-hydrating-conditioner",
+      slug: "bio-reach-argan-hydrating-conditioner",
+      name: "Argan Oil Hydrating Conditioner",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-argan-hydrating-conditioner.webp"],
+      description: "Acondicionador hidratante Bio-Reach Argan Oil, de 500 ml. El envase lo describe como un nutriente rico en antioxidantes, para reparación y tratamiento.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "antioxidante", "reparación"]
+    },
+  {
+      id: "sinko-styling-argan-oil-shampoo-300",
+      slug: "sinko-styling-argan-oil-shampoo-300",
+      name: "Argan Oil Nourishing Shampoo",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-argan-oil-shampoo-300.webp"],
+      description: "Champú nutritivo Sinko Styling Argan Oil Nourishing, de 300 ml, con aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán"]
     }
 ];
