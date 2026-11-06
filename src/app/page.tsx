@@ -39,6 +39,12 @@ const categories = [
     text: "Brumas, labios y cuidado para acompañar el perfume.",
     className: "bg-champagne-soft text-ink",
   },
+  {
+    href: "/tienda?categoria=Inspiraciones",
+    title: "Inspiraciones",
+    text: "Perfumes de la tienda inspirados en un aroma de diseñador, del más cercano al más libre.",
+    className: "bg-paper text-ink",
+  },
 ];
 
 export default function HomePage() {
@@ -78,7 +84,7 @@ export default function HomePage() {
       </section>
 
       <Shell className="py-12">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
             <Link
               key={category.href}

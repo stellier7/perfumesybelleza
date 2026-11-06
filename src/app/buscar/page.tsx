@@ -4,6 +4,7 @@ import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { getCatalog, getComparisonPairs, getSearchRecords } from "@/lib/catalog";
+import { nameWithBrand } from "@/lib/catalog-model";
 import { searchCatalog } from "@/lib/search";
 import { pageMetadata } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
@@ -40,7 +41,6 @@ async function SearchResults({
   const catalog = new Map(getCatalog().map((product) => [product.id, product]));
   const pairs = getComparisonPairs();
   const products = lookup(presentation.products.map((item) => item.id), catalog);
-  const alternatives = lookup(presentation.alternatives.map((item) => item.id), catalog);
   const hasOriginalInResults = presentation.stockedOriginals.length > 0;
 
   return (
@@ -55,8 +55,7 @@ async function SearchResults({
         <div className="mt-10 space-y-12">
           {presentation.missingOriginals.map((original) => (
             <p key={original.id} className="max-w-2xl leading-7">
-              No tenemos {original.name}
-              {original.brand ? ` de ${original.brand}` : ""} en el catálogo. Estas alternativas son para
+              No tenemos {nameWithBrand(original.name, original.brand)} en el catálogo. Estas alternativas son para
               quienes buscan un aroma similar.
             </p>
           ))}
@@ -70,27 +69,46 @@ async function SearchResults({
               </div>
             </section>
           ) : null}
-          {alternatives.length > 0 ? (
-            <section>
-              <h2 className="font-serif text-3xl">Clones / Alternativas</h2>
-              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-                {alternatives.map((product) => {
-                  const pair = pairs.find((item) => item.alternative.id === product.id);
-                  return (
-                    <div key={product.id}>
-                      <ProductCard product={product} />
-                      {pair ? (
-                        <Link href={`/comparar/${pair.slug}`} className="mt-2 inline-block text-sm text-gold">
-                          Ver comparación
-                        </Link>
-                      ) : null}
-                    </div>
-                  );
-                })}
-              </div>
+          {presentation.groups.map((group) => (
+            <section key={group.original.id}>
+              <h2 className="font-serif text-3xl">Inspirado en {group.original.name}</h2>
+              <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
+                Del más cercano al más libre. No es el perfume de la casa.
+              </p>
+              {group.clones.length > 0 ? (
+                <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+                  {group.clones.map((clone) => {
+                    const product = catalog.get(clone.id);
+                    if (!product) return null;
+                    const pair = pairs.find((item) => item.alternative.id === product.id && item.original.id === group.original.id);
+                    return (
+                      <div key={product.id}>
+                        <ProductCard product={product} />
+                        {pair ? (
+                          <Link href={`/comparar/${pair.slug}`} className="mt-2 inline-block text-sm text-gold">
+                            Ver comparación
+                          </Link>
+                        ) : null}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : null}
+              {group.sets.length > 0 ? (
+                <div className="mt-8">
+                  <h3 className="font-serif text-2xl">Sets</h3>
+                  <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
+                    {group.sets.map((set) => {
+                      const product = catalog.get(set.id);
+                      if (!product) return null;
+                      return <ProductCard key={product.id} product={product} />;
+                    })}
+                  </div>
+                </div>
+              ) : null}
             </section>
-          ) : null}
-          {products.length === 0 && alternatives.length === 0 ? (
+          ))}
+          {products.length === 0 && presentation.groups.length === 0 ? (
             <p>No encontramos ese aroma. Prueba con la marca o con menos palabras.</p>
           ) : null}
         </div>

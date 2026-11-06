@@ -6,6 +6,7 @@ import { store } from "@/config";
 const shop = [
   { href: "/tienda", label: "Tienda" },
   { href: "/tienda?tipo=arabic", label: "Perfumes árabes" },
+  { href: "/tienda?categoria=Inspiraciones", label: "Inspiraciones" },
   { href: "/tienda?tipo=designer", label: "Perfumes de diseñador" },
   { href: "/tienda?tipo=beauty", label: "Belleza" },
   { href: "/comparaciones", label: "Comparaciones" },

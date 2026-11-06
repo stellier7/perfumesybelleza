@@ -59,7 +59,23 @@ function toPublicBase(raw: RawProduct): PublicProduct {
     isReference: false,
     inspiredBy: [],
     alternatives: [],
+    inspirationRank: raw.inspirationRank,
   };
+}
+
+export function inspirationOrder(
+  left: { inspirationRank?: number; name: string },
+  right: { inspirationRank?: number; name: string },
+): number {
+  const rank = (left.inspirationRank ?? 100) - (right.inspirationRank ?? 100);
+  if (rank !== 0) return rank;
+  return left.name.localeCompare(right.name, "es");
+}
+
+export function nameWithBrand(name: string, brand: string): string {
+  if (!brand) return name;
+  if (fold(name).includes(fold(brand))) return name;
+  return `${name} de ${brand}`;
 }
 
 function referenceProduct(name: string, brand: string): PublicProduct {
@@ -73,7 +89,7 @@ function referenceProduct(name: string, brand: string): PublicProduct {
     gender: "unisex",
     price: 0,
     images: [],
-    description: `${name}${brand ? ` de ${brand}` : ""} es una referencia de aroma. No lo tenemos en el catálogo. Más abajo encuentras alternativas para quienes buscan un aroma similar.`,
+    description: `${nameWithBrand(name, brand)} es una referencia de aroma. No lo tenemos en el catálogo. Más abajo encuentras alternativas para quienes buscan un aroma similar.`,
     notes: emptyNotes(),
     sizeMl: null,
     inStock: false,
@@ -124,7 +140,12 @@ export function buildCatalog(rawProducts: RawProduct[]): PublicProduct[] {
     }
   }
 
-  return [...products, ...references.values()];
+  const catalog = [...products, ...references.values()];
+  const ranked = new Map(catalog.map((product) => [product.id, product]));
+  for (const product of catalog) {
+    product.alternatives.sort((left, right) => inspirationOrder(ranked.get(left.id) ?? left, ranked.get(right.id) ?? right));
+  }
+  return catalog;
 }
 
 export function toSearchRecord(product: PublicProduct): SearchRecord {
@@ -156,6 +177,7 @@ export function toSearchRecord(product: PublicProduct): SearchRecord {
     haystack,
     alternativeIds: product.alternatives.map((item) => item.id),
     inspiredNames: product.inspiredBy.map((item) => item.name),
+    inspirationRank: product.inspirationRank,
   };
 }
 

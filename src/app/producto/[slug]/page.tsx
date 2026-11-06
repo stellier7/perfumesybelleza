@@ -131,24 +131,38 @@ async function ProductScreen({ params }: ProductParams) {
         </section>
       ) : null}
 
-      {alternatives.length > 0 ? (
+      {alternatives.some((item) => item.category !== "Set") ? (
         <section className="mt-12">
-          <h2 className="font-serif text-3xl">Alternativas (clones)</h2>
+          <h2 className="font-serif text-3xl">Inspirado en {product.name}</h2>
           <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
-            Opciones para quienes buscan un aroma similar a {product.name}.
+            Del más cercano al más libre. No es el perfume de la casa.
           </p>
           <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {alternatives.map((alternative) => (
-              <div key={alternative.id}>
-                <ProductCard product={alternative} />
-                <Link
-                  href={`/comparar/${comparisonSlug(product.slug, alternative.slug)}`}
-                  className="mt-2 inline-block text-sm text-gold"
-                >
-                  Ver comparación
-                </Link>
-              </div>
-            ))}
+            {alternatives
+              .filter((item) => item.category !== "Set")
+              .map((alternative) => (
+                <div key={alternative.id}>
+                  <ProductCard product={alternative} />
+                  <Link
+                    href={`/comparar/${comparisonSlug(product.slug, alternative.slug)}`}
+                    className="mt-2 inline-block text-sm text-gold"
+                  >
+                    Ver comparación
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </section>
+      ) : null}
+      {alternatives.some((item) => item.category === "Set") ? (
+        <section className="mt-12">
+          <h2 className="font-serif text-3xl">Sets</h2>
+          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+            {alternatives
+              .filter((item) => item.category === "Set")
+              .map((alternative) => (
+                <ProductCard key={alternative.id} product={alternative} />
+              ))}
           </div>
         </section>
       ) : null}

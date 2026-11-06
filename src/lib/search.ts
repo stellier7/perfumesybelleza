@@ -1,6 +1,13 @@
 import Fuse from "fuse.js";
+import { inspirationOrder } from "@/lib/catalog-model";
 import { fold } from "@/lib/text";
 import type { SearchRecord } from "@/types/catalog";
+
+export type InspirationGroup = {
+  original: SearchRecord;
+  clones: SearchRecord[];
+  sets: SearchRecord[];
+};
 
 export type SearchPresentation = {
   query: string;
@@ -8,6 +15,7 @@ export type SearchPresentation = {
   stockedOriginals: SearchRecord[];
   missingOriginals: SearchRecord[];
   alternatives: SearchRecord[];
+  groups: InspirationGroup[];
 };
 
 function editDistance(left: string, right: string): number {
@@ -78,6 +86,22 @@ export function searchCatalog(records: SearchRecord[], query: string): SearchPre
     const record = byId.get(id);
     return record && !record.isReference ? [record] : [];
   });
+  alternatives.sort(inspirationOrder);
+  const groups = [...stockedOriginals, ...missingOriginals].flatMap((original) => {
+    const linked = original.alternativeIds.flatMap((id) => {
+      const record = byId.get(id);
+      return record && !record.isReference ? [record] : [];
+    });
+    if (linked.length === 0) return [];
+    const ordered = [...linked].sort(inspirationOrder);
+    return [
+      {
+        original,
+        clones: ordered.filter((item) => item.category !== "Set"),
+        sets: ordered.filter((item) => item.category === "Set"),
+      },
+    ];
+  });
   const alternativeSet = new Set(alternatives.map((item) => item.id));
   const products = hits.filter((hit) => !hit.isReference && !alternativeSet.has(hit.id));
   return {
@@ -86,6 +110,7 @@ export function searchCatalog(records: SearchRecord[], query: string): SearchPre
     stockedOriginals,
     missingOriginals,
     alternatives,
+    groups,
   };
 }
 

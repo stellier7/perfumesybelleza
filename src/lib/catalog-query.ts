@@ -2,6 +2,8 @@ import { PAGE_SIZE } from "@/config";
 import { assertNever } from "@/lib/text";
 import { GENDERS, PRODUCT_TYPES, type Gender, type ProductType, type PublicProduct } from "@/types/catalog";
 
+export const INSPIRATIONS_CATEGORY = "Inspiraciones";
+
 export const SORT_KEYS = ["destacados", "precio-asc", "precio-desc", "nombre"] as const;
 export type SortKey = (typeof SORT_KEYS)[number];
 
@@ -93,7 +95,11 @@ export function applyCatalogFilters(
   if (filters.tipo) list = list.filter((product) => product.type === filters.tipo);
   if (filters.marca) list = list.filter((product) => product.brand === filters.marca);
   if (filters.genero) list = list.filter((product) => product.gender === filters.genero);
-  if (filters.categoria) list = list.filter((product) => product.category === filters.categoria);
+  if (filters.categoria === INSPIRATIONS_CATEGORY) {
+    list = list.filter((product) => product.inspiredBy.length > 0);
+  } else if (filters.categoria) {
+    list = list.filter((product) => product.category === filters.categoria);
+  }
   if (filters.min !== null) list = list.filter((product) => product.price >= filters.min!);
   if (filters.max !== null) list = list.filter((product) => product.price <= filters.max!);
   if (filters.stock) list = list.filter((product) => product.inStock);

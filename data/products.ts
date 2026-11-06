@@ -764,7 +764,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/fakhar.webp"],
-      description: "Eau de parfum de 100 ml, frasco blanco con tapa oro rosa. Es distinto del Fakhar Black.",
+      description: "Eau de parfum de 100 ml, frasco blanco con tapa oro rosa. Es distinto del Fakhar Black. Inspirado en Y. Aroma fresco, aromático y dulce.",
       notes: {
         top: [],
         heart: [],
@@ -773,7 +773,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 1,
     },
   {
       id: "ciao-vince-camuto",
@@ -824,7 +826,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/club-de-nuit-milestone.webp"],
-      description: "Eau de parfum de 105 ml.",
+      description: "Eau de parfum de 105 ml. Inspirado en Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
         top: [],
         heart: [],
@@ -833,7 +835,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "odyssey-artisto-red",
@@ -904,7 +908,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/kismet-magic.webp"],
-      description: "Eau de parfum de 100 ml.",
+      description: "Eau de parfum de 100 ml. Inspirado en Angels' Share. Aroma de manzana, canela y coñac.",
       notes: {
         top: [],
         heart: [],
@@ -913,7 +917,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
+      inspirationRank: 2,
     },
   {
       id: "amber-oud-carbon-edition-100",
@@ -964,7 +970,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/club-de-nuit-iconic.webp"],
-      description: "Eau de parfum de 200 ml. El medallón dice Armaf.",
+      description: "Eau de parfum de 200 ml. El medallón dice Armaf. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
         top: [],
         heart: [],
@@ -974,7 +980,9 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: [],
-      featured: true
+      featured: true,
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 2,
     },
   {
       id: "212-vip",
@@ -1145,7 +1153,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/asad.webp"],
-      description: "Eau de parfum de 100 ml.",
+      description: "Eau de parfum de 100 ml. Inspirado en Sauvage Elixir. Aroma especiado, fresco y ambarado.",
       notes: {
         top: [],
         heart: [],
@@ -1155,7 +1163,9 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: [],
-      featured: true
+      featured: true,
+      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspirationRank: 1,
     },
   {
       id: "atheeri",
@@ -1186,7 +1196,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/fakhar-black.webp"],
-      description: "Eau de parfum de 100 ml. La caja dice Pride of Lattafa. Es distinto del Fakhar blanco.",
+      description: "Eau de parfum de 100 ml. La caja dice Pride of Lattafa. Es distinto del Fakhar blanco. Inspirado en Y. Aroma fresco, aromático y dulce.",
       notes: {
         top: [],
         heart: [],
@@ -1195,7 +1205,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 2,
     },
   {
       id: "scandal-absolu",
@@ -1306,7 +1318,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/set-club-de-nuit-sillage.webp"],
-      description: "Estuche de colección con el eau de parfum, un frasco plateado, desodorante, spray corporal y dos atomizadores de viaje. Los mililitros de cada pieza no se leen con claridad.",
+      description: "Estuche de colección con el eau de parfum, un frasco plateado, desodorante, spray corporal y dos atomizadores de viaje. Los mililitros de cada pieza no se leen con claridad. Inspirado en Silver Mountain Water. Aroma de té, cítricos y almizcle.",
       notes: {
         top: [],
         heart: [],
@@ -1315,7 +1327,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "360-collection-noir",
@@ -2166,7 +2180,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/set-milestone-collector.webp"],
-      description: "Estuche Milestone, a collector's pride. Incluye un spray corporal oro rosa, el perfume Club de Nuit Milestone, un jabón y un desodorante dorado. Los mililitros de cada pieza no se leen con claridad.",
+      description: "Estuche Milestone, a collector's pride. Incluye un spray corporal oro rosa, el perfume Club de Nuit Milestone, un jabón y un desodorante dorado. Los mililitros de cada pieza no se leen con claridad. Inspirado en Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
         top: [],
         heart: [],
@@ -2175,7 +2189,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "thouq",
@@ -2326,7 +2342,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/magnate-10.webp"],
-      description: "Eau de toilette de 100 ml. La caja dice Magnate Collection, 10! Pour Homme, 80% vol y 3.3 fl oz. La foto dice «Asimila: Joop! Homme».",
+      description: "Eau de toilette de 100 ml. La caja dice Magnate Collection, 10! Pour Homme, 80% vol y 3.3 fl oz. Inspirado en Joop! Homme. Aroma dulce, especiado y cálido.",
       notes: {
         top: [],
         heart: [],
@@ -2335,7 +2351,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
+      tags: [],
+      inspiredBy: ["Joop! Homme (Joop!)"],
+      inspirationRank: 1,
     },
   {
       id: "lana-dazzle",
@@ -2786,7 +2804,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/royal-bleu.webp"],
-      description: "Eau de parfum de 80 ml. Luxury Collection.",
+      description: "Eau de parfum de 80 ml. Luxury Collection. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
         top: [],
         heart: [],
@@ -2795,7 +2813,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 80,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 4,
     },
   {
       id: "velvet-gold",
@@ -3186,7 +3206,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/khamrah-dukhan.webp"],
-      description: "Eau de parfum de 100 ml. La caja y el frasco dicen Khamrah Dukhan y Lattafa.",
+      description: "Eau de parfum de 100 ml. La caja y el frasco dicen Khamrah Dukhan y Lattafa. Inspirado en Angels' Share. Con un acento ahumado.",
       notes: {
         top: [],
         heart: [],
@@ -3195,7 +3215,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
+      inspirationRank: 4,
     },
   {
       id: "teriaq",
@@ -3226,7 +3248,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/fakhar-gold.webp"],
-      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Fakhar Gold y Lattafa.",
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Fakhar Gold y Lattafa. Inspirado en Y. Una vuelta más dulce.",
       notes: {
         top: [],
         heart: [],
@@ -3235,7 +3257,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 3,
     },
   {
       id: "ajwad",
@@ -3666,7 +3690,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/khamrah-qahwa-spray.webp"],
-      description: "Perfume en spray de 300 ml. El envase dice Khamrah Qahwa y Lattafa.",
+      description: "Perfume en spray de 300 ml. El envase dice Khamrah Qahwa y Lattafa. Inspirado en Angels' Share. Con un acento de café.",
       notes: {
         top: [],
         heart: [],
@@ -3675,7 +3699,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 300,
       inStock: true,
       category: "Perfume en spray",
-      tags: ["splash"]
+      tags: ["splash"],
+      inspiredBy: ["Angels' Share (Kilian)"],
+      inspirationRank: 3,
     },
   {
       id: "musamam-spray",
@@ -3926,7 +3952,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/set-club-de-nuit-man.webp"],
-      description: "Set: gel de baño de 100 ml, eau de toilette de 105 ml, shampoo de 250 ml y desodorante de 50 ml.",
+      description: "Set: gel de baño de 100 ml, eau de toilette de 105 ml, shampoo de 250 ml y desodorante de 50 ml. Inspirado en Aventus. Aroma de piña, abedul y almizcle.",
       notes: {
         top: [],
         heart: [],
@@ -3935,7 +3961,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "seine-amour-belvico",
@@ -4106,7 +4134,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/amber-oud-bleu-edition-100.webp"],
-      description: "Eau de parfum Bleu Edition de 100 ml. Hay otra de 200 ml.",
+      description: "Eau de parfum Bleu Edition de 100 ml. Hay otra de 200 ml. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
         top: [],
         heart: [],
@@ -4115,7 +4143,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 3,
     },
   {
       id: "hawas-pink",
@@ -4306,7 +4336,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/amber-oud-bleu-edition-200.webp"],
-      description: "Eau de parfum Bleu Edition de 200 ml, con atomizador de viaje. Hay otra de 100 ml.",
+      description: "Eau de parfum Bleu Edition de 200 ml, con atomizador de viaje. Hay otra de 100 ml. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
         top: [],
         heart: [],
@@ -4315,7 +4345,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 3,
     },
   {
       id: "set-amber-oud-extreme",
@@ -4346,7 +4378,7 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 0,
       images: ["/products/laventure-femme.webp"],
-      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Al Haramain L'Aventure Femme.",
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Al Haramain L'Aventure Femme. Inspirado en Aventus for Her. Aroma frutal y fresco.",
       notes: {
         top: [],
         heart: [],
@@ -4355,7 +4387,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus for Her (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "supremacy-in-oud",
@@ -4446,7 +4480,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/tres-nuit-pour-homme.webp"],
-      description: "Eau de parfum de 100 ml. El frasco dice Tres Nuit Pour Homme.",
+      description: "Eau de parfum de 100 ml. El frasco dice Tres Nuit Pour Homme. Inspirado en Green Irish Tweed. Aroma verde, fresco y de violeta.",
       notes: {
         top: [],
         heart: [],
@@ -4455,7 +4489,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Green Irish Tweed (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "tres-jour-pour-femme",
@@ -4666,7 +4702,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/club-de-nuit-milestone-200.webp"],
-      description: "Eau de parfum de 200 ml. El frasco dice Club de Nuit Milestone y Armaf. Hay otra de 105 ml.",
+      description: "Eau de parfum de 200 ml. El frasco dice Club de Nuit Milestone y Armaf. Hay otra de 105 ml. Inspirado en Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
         top: [],
         heart: [],
@@ -4675,7 +4711,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "eter-desert-rose",
@@ -4706,7 +4744,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/set-club-de-nuit-milestone.webp"],
-      description: "Set: shampoo de 250 ml, eau de parfum de 105 ml, gel de baño de 100 ml y body spray de 50 ml.",
+      description: "Set: shampoo de 250 ml, eau de parfum de 105 ml, gel de baño de 100 ml y body spray de 50 ml. Inspirado en Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
         top: [],
         heart: [],
@@ -4715,7 +4753,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "topaz-malaky",
@@ -4846,7 +4886,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/magnate-10-mini.webp"],
-      description: "Eau de toilette. El frasco dice Magnate Collection y 10 pour homme. La caja no deja claro el tamaño.",
+      description: "Eau de toilette. El frasco dice Magnate Collection y 10 pour homme. La caja no deja claro el tamaño. Inspirado en Joop! Homme. Aroma dulce, especiado y cálido.",
       notes: {
         top: [],
         heart: [],
@@ -4855,7 +4895,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
+      tags: [],
+      inspiredBy: ["Joop! Homme (Joop!)"],
+      inspirationRank: 1,
     },
   {
       id: "amber-oud-rouge-60",
@@ -4906,7 +4948,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/khamrah-spray.webp"],
-      description: "Perfume en spray de 200 ml. El envase dice Khamrah y Lattafa.",
+      description: "Perfume en spray de 200 ml. El envase dice Khamrah y Lattafa. Inspirado en Angels' Share. Aroma de manzana, canela y coñac.",
       notes: {
         top: [],
         heart: [],
@@ -4915,7 +4957,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Perfume en spray",
-      tags: ["splash"]
+      tags: ["splash"],
+      inspiredBy: ["Angels' Share (Kilian)"],
+      inspirationRank: 1,
     },
   {
       id: "ana-abiyedh-spray",
@@ -5066,7 +5110,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/fakhar-pride-spray.webp"],
-      description: "Perfume en spray de 200 ml. El envase dice Fakhar Lattafa y Pride of Lattafa. Hay un Fakhar en eau de parfum de 100 ml.",
+      description: "Perfume en spray de 200 ml. El envase dice Fakhar Lattafa y Pride of Lattafa. Hay un Fakhar en eau de parfum de 100 ml. Inspirado en Y. Aroma fresco, aromático y dulce.",
       notes: {
         top: [],
         heart: [],
@@ -5075,7 +5119,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Perfume en spray",
-      tags: ["splash"]
+      tags: ["splash"],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 1,
     },
   {
       id: "badee-al-oud-amethyst-spray",
@@ -5906,7 +5952,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/asad-zanzibar.webp"],
-      description: "El frasco dice Asad Zanzibar y Lattafa.",
+      description: "El frasco dice Asad Zanzibar y Lattafa. Inspirado en Sauvage Elixir. Una vuelta más dulce y especiada.",
       notes: {
         top: [],
         heart: [],
@@ -5915,7 +5961,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspirationRank: 2,
     },
   {
       id: "badee-al-oud-amethyst",
@@ -6306,7 +6354,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/bharara-bleu.webp"],
-      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Bharara Bleu. La foto incluye un atomizador de viaje azul.",
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Bharara Bleu. La foto incluye un atomizador de viaje azul. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
         top: [],
         heart: [],
@@ -6315,7 +6363,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 5,
     },
   {
       id: "supremacy-noir",
@@ -6526,7 +6576,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/set-asad.webp"],
-      description: "Set Asad: perfume en spray de 200 ml, bruma para el cabello y el eau de parfum. El Asad suelto de 100 ml ya está en el catálogo.",
+      description: "Set Asad: perfume en spray de 200 ml, bruma para el cabello y el eau de parfum. El Asad suelto de 100 ml ya está en el catálogo. Inspirado en Sauvage Elixir. Aroma especiado, fresco y ambarado.",
       notes: {
         top: [],
         heart: [],
@@ -6535,7 +6585,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspirationRank: 1,
     },
   {
       id: "supremacy-pink",
@@ -8086,7 +8138,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/hunter-intense.webp"],
-      description: "El frasco y la caja dicen Hunter Intense. Hunter Killer y Hunter Jungle son otros frascos.",
+      description: "El frasco y la caja dicen Hunter Intense. Hunter Killer y Hunter Jungle son otros frascos. Inspirado en Invictus. Aroma fresco, dulce y marino.",
       notes: {
         top: [],
         heart: [],
@@ -8095,7 +8147,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Invictus (Paco Rabanne)"],
+      inspirationRank: 1,
     },
   {
       id: "polo-red-eau-de-parfum",
@@ -8366,7 +8420,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/laventure-blanche.webp"],
-      description: "El frasco y la caja lila dicen L'Aventure Blanche y Al Haramain. Femme, Knight, el de 200 ml y el set de la colección son otros.",
+      description: "El frasco y la caja lila dicen L'Aventure Blanche y Al Haramain. Femme, Knight, el de 200 ml y el set de la colección son otros. Inspirado en Silver Mountain Water. Aroma de té, cítricos y almizcle.",
       notes: {
         top: [],
         heart: [],
@@ -8375,7 +8429,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "laventure-knight",
@@ -8386,7 +8442,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/laventure-knight.webp"],
-      description: "El frasco y la caja azul dicen L'Aventure Knight y Al Haramain.",
+      description: "El frasco y la caja azul dicen L'Aventure Knight y Al Haramain. Inspirado en Aventus. Aroma de piña, abedul y almizcle.",
       notes: {
         top: [],
         heart: [],
@@ -8395,7 +8451,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
+      inspirationRank: 2,
     },
   {
       id: "laventure-200",
@@ -8406,7 +8464,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/laventure-200.webp"],
-      description: "Eau de parfum de 200 ml. La caja imprime 200 ml y 6.76 fl oz. El frasco dice L'Aventure, 200 ml y Al Haramain.",
+      description: "Eau de parfum de 200 ml. La caja imprime 200 ml y 6.76 fl oz. El frasco dice L'Aventure, 200 ml y Al Haramain. Inspirado en Aventus. Aroma de piña, abedul y almizcle.",
       notes: {
         top: [],
         heart: [],
@@ -8415,7 +8473,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "azzaro-cologne-intense",
@@ -8686,7 +8746,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/set-tres-nuit.webp"],
-      description: "Set Armaf Tres Nuit. El shower gel imprime 100 ml, el body spray 50 ml y el shampoo 250 ml. El estuche del perfume dice Tres Nuit Pour Homme. Ese eau de parfum ya está suelto, de 100 ml.",
+      description: "Set Armaf Tres Nuit. El shower gel imprime 100 ml, el body spray 50 ml y el shampoo 250 ml. El estuche del perfume dice Tres Nuit Pour Homme. Ese eau de parfum ya está suelto, de 100 ml. Inspirado en Green Irish Tweed. Aroma verde, fresco y de violeta.",
       notes: {
         top: [],
         heart: [],
@@ -8695,7 +8755,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Green Irish Tweed (Creed)"],
+      inspirationRank: 1,
     },
   {
       id: "voyage-titan",
@@ -8746,7 +8808,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/tag-him-prestige.webp"],
-      description: "Eau de parfum. La caja dice Tag Him Prestige y eau de parfum. La placa dice Tag-Him Prestige Edition.",
+      description: "Eau de parfum. La caja dice Tag Him Prestige y eau de parfum. La placa dice Tag-Him Prestige Edition. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
         top: [],
         heart: [],
@@ -8755,7 +8817,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 1,
     },
   {
       id: "le-parfait-pour-femme",
@@ -8886,7 +8950,7 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 0,
       images: ["/products/miss-armaf-voce-viva.webp"],
-      description: "Eau de parfum de 100 ml. La caja imprime e 100 ml y 3.4 fl oz. El frasco dice Miss Armaf Voce Viva. Attitude, Mystique, Catwalk y Chic ya están.",
+      description: "Eau de parfum de 100 ml. La caja imprime e 100 ml y 3.4 fl oz. El frasco dice Miss Armaf Voce Viva. Attitude, Mystique, Catwalk y Chic ya están. Inspirado en Voce Viva. Aroma floral y luminoso.",
       notes: {
         top: [],
         heart: [],
@@ -8895,7 +8959,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Voce Viva (Valentino)"],
+      inspirationRank: 1,
     },
   {
       id: "odyssey-limoni",
@@ -9446,7 +9512,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/victorioso-nero.webp"],
-      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Victorioso Nero y Maison Alhambra. La caja imprime e 100 ml y 3.4 fl oz.",
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Victorioso Nero y Maison Alhambra. La caja imprime e 100 ml y 3.4 fl oz. Inspirado en Invictus Victory. Aroma dulce, especiado y cálido.",
       notes: {
         top: [],
         heart: [],
@@ -9455,7 +9521,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Invictus Victory (Paco Rabanne)"],
+      inspirationRank: 1,
     },
   {
       id: "your-touch",
@@ -9486,7 +9554,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/jorge-di-profumo-aqua.webp"],
-      description: "El frasco dice Jorge Di Profumo, Aqua y Maison Alhambra.",
+      description: "El frasco dice Jorge Di Profumo, Aqua y Maison Alhambra. Inspirado en Acqua di Gio. Aroma acuático, cítrico y fresco.",
       notes: {
         top: [],
         heart: [],
@@ -9495,7 +9563,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Acqua di Gio (Giorgio Armani)"],
+      inspirationRank: 1,
     },
   {
       id: "bharara-queen",
@@ -9546,7 +9616,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/set-fakhar.webp"],
-      description: "Set Fakhar: perfume, bruma para el cabello y spray perfumado de 200 ml (6.67 fl oz). El spray dice Pride of Lattafa. El Fakhar de 100 ml y Fakhar Gold ya están, solos.",
+      description: "Set Fakhar: perfume, bruma para el cabello y spray perfumado de 200 ml (6.67 fl oz). El spray dice Pride of Lattafa. El Fakhar de 100 ml y Fakhar Gold ya están, solos. Inspirado en Y. Aroma fresco, aromático y dulce.",
       notes: {
         top: [],
         heart: [],
@@ -9555,7 +9625,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 1,
     },
   {
       id: "abraaj",
@@ -9606,7 +9678,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/montaigne-coco.webp"],
-      description: "Eau de parfum de 100 ml. El frasco dice Montaigne Coco y Maison Alhambra. La caja imprime eau de parfum y 3.4 fl oz.",
+      description: "Eau de parfum de 100 ml. El frasco dice Montaigne Coco y Maison Alhambra. La caja imprime eau de parfum y 3.4 fl oz. Inspirado en Coco Mademoiselle. Aroma cítrico, floral y ambarado.",
       notes: {
         top: [],
         heart: [],
@@ -9615,7 +9687,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Coco Mademoiselle (Chanel)"],
+      inspirationRank: 1,
     },
   {
       id: "emaan",
@@ -9806,7 +9880,7 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 0,
       images: ["/products/magnate-250.webp"],
-      description: "Eau de parfum de 50 ml. El frasco y la caja dicen Magnate Collection, 250 Pour Femme, e 50 ml, 80% vol y 1.7 fl oz. La foto dice «Asimila: Good Girl / Carolina Herrera».",
+      description: "Eau de parfum de 50 ml. El frasco y la caja dicen Magnate Collection, 250 Pour Femme, e 50 ml, 80% vol y 1.7 fl oz. Inspirado en Good Girl. Aroma dulce, de cacao y jazmín.",
       notes: {
         top: [],
         heart: [],
@@ -9815,7 +9889,9 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 50,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Good Girl (Carolina Herrera)"],
+      inspirationRank: 1,
     },
   {
       id: "sara-princess",

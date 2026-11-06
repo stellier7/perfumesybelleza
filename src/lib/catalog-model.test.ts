@@ -3,6 +3,7 @@ import test from "node:test";
 import { buildCatalog, comparisonPairs, parseComparisonSlug } from "./catalog-model";
 import { searchCatalog } from "./search";
 import { toSearchRecord } from "./catalog-model";
+import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
 
 function product(overrides: Partial<RawProduct> & Pick<RawProduct, "id" | "name" | "type">): RawProduct {
@@ -111,6 +112,59 @@ test("buscar un diseñador que no vendemos deja solo las alternativas", () => {
   assert.equal(result.products.length, 0);
   assert.equal(result.missingOriginals[0]?.name, "Aventus");
   assert.equal(result.alternatives[0]?.id, "club-de-nuit-intense-man");
+});
+
+test("ordena las inspiraciones de la más cercana a la más libre y deja el set abajo", () => {
+  const ranked: RawProduct[] = [
+    product({ id: "bleu-de-chanel", name: "Bleu de Chanel", brand: "Chanel", type: "designer" }),
+    product({
+      id: "lejos",
+      name: "Lejos",
+      type: "arabic",
+      inspiredBy: ["bleu-de-chanel"],
+      inspirationRank: 3,
+    }),
+    product({
+      id: "cerca",
+      name: "Cerca",
+      type: "arabic",
+      inspiredBy: ["bleu-de-chanel"],
+      inspirationRank: 1,
+    }),
+    product({
+      id: "set-bleu",
+      name: "Set Bleu",
+      type: "arabic",
+      category: "Set",
+      inspiredBy: ["bleu-de-chanel"],
+      inspirationRank: 2,
+    }),
+  ];
+  const catalog = buildCatalog(ranked);
+  const bleu = catalog.find((item) => item.id === "bleu-de-chanel");
+  assert.deepEqual(
+    bleu?.alternatives.map((item) => item.id),
+    ["cerca", "set-bleu", "lejos"],
+  );
+  const result = searchCatalog(catalog.map(toSearchRecord), "Bleu de Chanel");
+  assert.equal(result.groups[0]?.original.name, "Bleu de Chanel");
+  assert.deepEqual(
+    result.groups[0]?.clones.map((item) => item.id),
+    ["cerca", "lejos"],
+  );
+  assert.deepEqual(
+    result.groups[0]?.sets.map((item) => item.id),
+    ["set-bleu"],
+  );
+});
+
+test("la categoría Inspiraciones muestra solo los que tienen inspiración", () => {
+  const catalog = buildCatalog(raw);
+  const result = applyCatalogFilters(catalog, parseCatalogFilters({ categoria: INSPIRATIONS_CATEGORY }));
+  assert.ok(result.items.length > 0);
+  assert.ok(result.items.every((item) => item.inspiredBy.length > 0));
+  assert.equal(result.items.some((item) => item.id === "tag-him"), true);
+  assert.equal(result.items.some((item) => item.id === "bleu-de-chanel"), false);
 });
 
 test("tolera tildes y un error de escritura", () => {
