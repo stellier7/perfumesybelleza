@@ -18,7 +18,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/philos-centro.webp"],
-      description: "Eau de parfum de 100 ml. El texto de arriba escribe el nombre como Piloso.",
+      description: "Eau de parfum de 100 ml.",
       notes: {
         top: [],
         heart: [],
@@ -58,7 +58,7 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 0,
       images: ["/products/hypnotic-poison.webp"],
-      description: "Eau de toilette. La caja impresa dice 30 ml. El texto encima de la foto dice 100 ml.",
+      description: "Eau de toilette. La caja impresa dice 30 ml.",
       notes: {
         top: [],
         heart: [],
@@ -2686,7 +2686,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/lahdath.webp"],
-      description: "Eau de parfum. El texto de la foto dice 80 ml y la caja dice 2.7 fl oz. La caja también imprime 30 ml. La foto dice Lattafa Pride.",
+      description: "Eau de parfum. La caja dice 2.7 fl oz y también imprime 30 ml. La caja dice Lattafa Pride.",
       notes: {
         top: [],
         heart: [],
