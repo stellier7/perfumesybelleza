@@ -16756,5 +16756,613 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Liga",
       tags: ["ligas", "cabello", "transparentes"]
+    },
+  {
+      id: "royal-electric-shaver",
+      slug: "royal-electric-shaver",
+      name: "Electric Shaver",
+      brand: "Royal",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/royal-electric-shaver.webp"],
+      description: "Rasuradora recargable Royal Electric Shaver. El texto indica tres velocidades, de 6500, 7000 y 7500 rpm.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rasuradora",
+      tags: ["rasuradora", "recargable", "barbería"]
+    },
+  {
+      id: "remington-thermacare-pro",
+      slug: "remington-thermacare-pro",
+      name: "Thermacare Pro",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-thermacare-pro.webp"],
+      description: "Secador Remington Thermacare Pro. El texto lo presenta con rendimiento de 2200 W y aire de 80 km/h, motor DC, rejilla de cerámica con iones, 3 niveles de temperatura, 2 velocidades y botón de aire frío. Incluye concentrador y difusor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "cerámica", "iones"]
+    },
+  {
+      id: "remington-shine-therapy",
+      slug: "remington-shine-therapy",
+      name: "Shine Therapy",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-shine-therapy.webp"],
+      description: "Secador Remington Shine Therapy de aguacate y macadamia. Rejilla de cerámica con microacondicionadores de aguacate y macadamia, motor DC, 3 temperaturas, 2 velocidades, ráfaga de aire frío y filtro removible. Incluye difusor. El empaque menciona 90% más brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "aguacate", "macadamia"]
+    },
+  {
+      id: "beacysw-jasmine-jelly-spa",
+      slug: "beacysw-jasmine-jelly-spa",
+      name: "Crystal Jelly Spa Jasmine",
+      brand: "Beacysw",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beacysw-jasmine-jelly-spa.webp"],
+      description: "Spa de pies Beacysw Crystal Jelly Spa de jazmín. Incluye el jelly de 50 g y la sal de 50 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g + 50 g",
+      inStock: true,
+      category: "Pedicura",
+      tags: ["pedicura", "jazmín", "spa"]
+    },
+  {
+      id: "carotone-vanishing-serum",
+      slug: "carotone-vanishing-serum",
+      name: "Black Spot Corrector Serum",
+      brand: "Carotone",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/carotone-vanishing-serum.webp"],
+      description: "Sérum Carotone Black Spot Corrector, de 30 ml. El texto lo presenta como fórmula concentrada para atenuar manchas oscuras, marcas de acné y unificar el tono, en el rostro y en zonas como codos o rodillas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["manchas", "sérum", "tono"]
+    },
+  {
+      id: "carotone-brightening-oil",
+      slug: "carotone-brightening-oil",
+      name: "Brightening Oil",
+      brand: "Carotone",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/carotone-brightening-oil.webp"],
+      description: "Aceite iluminador Carotone Brightening Oil, de 65 ml. Fórmula 3 en 1 con betacaroteno y colágeno DSP10, para unificar el tono, aportar luminosidad y reducir la apariencia de manchas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 65,
+      inStock: true,
+      category: "Aceite",
+      tags: ["aclarante", "colágeno", "luminosidad"]
+    },
+  {
+      id: "carotone-brightening-soap",
+      slug: "carotone-brightening-soap",
+      name: "Brightening Soap",
+      brand: "Carotone",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/carotone-brightening-soap.webp"],
+      description: "Jabón aclarante Carotone Brightening Soap, con colágeno DSP10 y protección solar. El texto lo presenta con extracto de zanahoria y colágeno para unificar el tono y atenuar manchas. No marca el peso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "aclarante", "colágeno"]
+    },
+  {
+      id: "guru-nanda-luminance-dazzle",
+      slug: "guru-nanda-luminance-dazzle",
+      name: "Luminance Dazzle",
+      brand: "Guru Nanda",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/guru-nanda-luminance-dazzle.webp"],
+      description: "Cepillo dental Guru Nanda Basics Luminance Dazzle, cerdas medium de varios ángulos. El texto lo presenta para una limpieza profunda.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo dental",
+      tags: ["cepillo dental", "medium"]
+    },
+  {
+      id: "disney-toy-story-shampoo",
+      slug: "disney-toy-story-shampoo",
+      name: "Toy Story Shampoo 3 en 1",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-toy-story-shampoo.webp"],
+      description: "Champú, acondicionador y gel de ducha Disney Pixar Toy Story, 3 en 1. El envase no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "infantil", "3 en 1"]
+    },
+  {
+      id: "disney-mickey-shampoo",
+      slug: "disney-mickey-shampoo",
+      name: "Mickey and Friends Shampoo 3 en 1",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-mickey-shampoo.webp"],
+      description: "Champú, acondicionador y gel de ducha Disney Mickey and Friends, 3 en 1. El envase no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "infantil", "3 en 1"]
+    },
+  {
+      id: "ponds-clarant-b3",
+      slug: "ponds-clarant-b3",
+      name: "Clarant B3",
+      brand: "Pond's",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/ponds-clarant-b3.webp"],
+      description: "Crema facial Pond's Clarant B3, de 400 g, para piel balanceada a seca. Antimanchas, con vitamina B3, para un tono uniforme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "400 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["crema facial", "manchas", "vitamina B3"]
+    },
+  {
+      id: "ponds-rejuveness",
+      slug: "ponds-rejuveness",
+      name: "Rejuveness",
+      brand: "Pond's",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/ponds-rejuveness.webp"],
+      description: "Crema facial de día Pond's Rejuveness, de 400 g, con colágeno y vitamina E. El texto dice que ayuda a reducir la apariencia de arrugas y a una piel más firme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "400 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["crema facial", "arrugas", "colágeno"]
+    },
+  {
+      id: "eleve-loiros-mechas",
+      slug: "eleve-loiros-mechas",
+      name: "Baba Baby Loiros & Mechas",
+      brand: "Élevé",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/eleve-loiros-mechas.webp"],
+      description: "Dúo Élevé Baba Baby Loiros & Mechas para rubios, blancos, grises y mechas. Champú de 1 L y acondicionador de 900 ml, con extracto de mango y efecto antiamarillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L + 900 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["rubios", "champú", "acondicionador"]
+    },
+  {
+      id: "nevada-coconut-vitamin-e-set",
+      slug: "nevada-coconut-vitamin-e-set",
+      name: "Coco y vitamina E",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-coconut-vitamin-e-set.webp"],
+      description: "Set Nevada de coco y vitamina E: champú y acondicionador para cabello maltratado, más crema para pies. El contenido no se lee con claridad en el envase.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["coco", "cabello", "pies"]
+    },
+  {
+      id: "nevada-intimate-spray-mint",
+      slug: "nevada-intimate-spray-mint",
+      name: "Feminine Intimate Spray Mint",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-intimate-spray-mint.webp"],
+      description: "Desodorante íntimo Nevada Feminine Intimate Spray de menta, de 59.15 ml. Lleva extracto de menta. El texto lo presenta refrescante, con pH balanceado, para proteger de irritaciones y prevenir olores.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "59.15 ml",
+      inStock: true,
+      category: "Desodorante",
+      tags: ["íntimo", "menta", "desodorante"]
+    },
+  {
+      id: "nevada-aloe-face-body-lotion",
+      slug: "nevada-aloe-face-body-lotion",
+      name: "Lotion Face & Body Aloe Vera",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-aloe-face-body-lotion.webp"],
+      description: "Loción facial y corporal Nevada Barber Shop de aloe vera, de 444 ml. Fórmula hidratante y ligera, para usar después de afeitar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["aloe", "after shave", "loción"]
+    },
+  {
+      id: "beauty-style-flex-rods-coral",
+      slug: "beauty-style-flex-rods-coral",
+      name: "Rulos flexibles coral",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-flex-rods-coral.webp"],
+      description: "Rulos flexibles Beauty Style, color coral. El empaque no marca cantidad ni tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rulos",
+      tags: ["rulos", "cabello"]
+    },
+  {
+      id: "beauty-style-flex-rods-12",
+      slug: "beauty-style-flex-rods-12",
+      name: "Rulos flexibles tamaño 12",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-flex-rods-12.webp"],
+      description: "Rulos flexibles Beauty Style, tamaño 12, set de 10 unidades. El texto los presenta suaves, sin calor y para todo tipo de cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "10 unidades · tamaño 12",
+      inStock: true,
+      category: "Rulos",
+      tags: ["rulos", "sin calor"]
+    },
+  {
+      id: "salon-capa-guia",
+      slug: "salon-capa-guia",
+      name: "Capa de corte con guías",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-capa-guia.webp"],
+      description: "Capa de corte para barbería, negra, con guías de color. La foto no trae marca ni medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Capa",
+      tags: ["capa", "barbería", "corte"]
+    },
+  {
+      id: "nevada-sunscreen-spf90",
+      slug: "nevada-sunscreen-spf90",
+      name: "Sun Screen SPF 90",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-sunscreen-spf90.webp"],
+      description: "Bloqueador Nevada Sun Screen SPF 90, de 280 ml. Protección UVA/UVB, de rápida absorción, para todo tipo de piel y uso diario en rostro y cuerpo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 90", "solar", "uva"]
+    },
+  {
+      id: "carotone-clarifying-cream",
+      slug: "carotone-clarifying-cream",
+      name: "Clarifying Cream",
+      brand: "Carotone",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/carotone-clarifying-cream.webp"],
+      description: "Crema corporal aclarante Carotone Clarifying Cream, de 135 ml. Fórmula 3 en 1 de colágeno, de la línea 10 Dsp con protección solar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 135,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["aclarante", "colágeno", "corporal"]
+    },
+  {
+      id: "remington-collagen-biotin",
+      slug: "remington-collagen-biotin",
+      name: "Collagen & Biotin Therapy",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-collagen-biotin.webp"],
+      description: "Secador Remington Collagen & Biotin Therapy, de 1900 W. Rejilla de cerámica con microacondicionador de colágeno y biotina, acondicionamiento iónico de turmalina, motor DC, 3 temperaturas, 2 velocidades, ráfaga de aire frío y filtro removible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "colágeno", "biotina"]
+    },
+  {
+      id: "remington-plancha-turmalina",
+      slug: "remington-plancha-turmalina",
+      name: "Plancha de turmalina",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-plancha-turmalina.webp"],
+      description: "Plancha Remington de turmalina antiestática. Recubrimiento de cerámica y turmalina, placas flotantes y temperatura profesional ajustable. El empaque habla de menos frizz, más brillo y menos estática.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "turmalina", "cerámica"]
+    },
+  {
+      id: "beacysw-lavender-jelly-spa",
+      slug: "beacysw-lavender-jelly-spa",
+      name: "Crystal Jelly Spa Lavender",
+      brand: "Beacysw",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beacysw-lavender-jelly-spa.webp"],
+      description: "Spa de pies Beacysw Crystal Jelly Spa de lavanda. Incluye el jelly de 50 g y la sal de 50 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g + 50 g",
+      inStock: true,
+      category: "Pedicura",
+      tags: ["pedicura", "lavanda", "spa"]
+    },
+  {
+      id: "beacysw-rose-jelly-spa",
+      slug: "beacysw-rose-jelly-spa",
+      name: "Crystal Jelly Spa Rose",
+      brand: "Beacysw",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beacysw-rose-jelly-spa.webp"],
+      description: "Spa de pies Beacysw Crystal Jelly Spa de rosa. Incluye el jelly de 50 g y la sal de 50 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g + 50 g",
+      inStock: true,
+      category: "Pedicura",
+      tags: ["pedicura", "rosa", "spa"]
+    },
+  {
+      id: "nevada-kids-leave-in",
+      slug: "nevada-kids-leave-in",
+      name: "Lisinhos Perfeitos Kids",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-kids-leave-in.webp"],
+      description: "Leave-in líquido Nevada Lisinhos Perfeitos Kids, de 250 ml, para cabello liso. El texto dice que hidrata, reduce el frizz y mantiene el cabello alineado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["leave-in", "infantil", "liso"]
+    },
+  {
+      id: "remington-keratin-therapy",
+      slug: "remington-keratin-therapy",
+      name: "Keratin Therapy",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-keratin-therapy.webp"],
+      description: "Plancha Remington Keratin Therapy con aceite de argán. Placas de 2,54 cm recubiertas de cerámica con keratina y argán, pantalla digital, hasta 230 °C, y calentamiento en 30 segundos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "keratina", "argán"]
+    },
+  {
+      id: "salon-cepillo-peine-dorado",
+      slug: "salon-cepillo-peine-dorado",
+      name: "Cepillo peine dorado",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-peine-dorado.webp"],
+      description: "Cepillo y peine dorado, con cerdas y púas anchas. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "peine"]
+    },
+  {
+      id: "salon-cepillo-alisador",
+      slug: "salon-cepillo-alisador",
+      name: "Cepillo alisador",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-alisador.webp"],
+      description: "Cepillo alisador de madera, con dos caras de cerda. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "alisado"]
+    },
+  {
+      id: "nevada-stitch-baby-shampoo",
+      slug: "nevada-stitch-baby-shampoo",
+      name: "Stitch Baby Shampoo 2 en 1",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-stitch-baby-shampoo.webp"],
+      description: "Champú y gel de baño Nevada Disney Stitch 2 en 1, de 300 ml, con vitamina E y aloe vera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "infantil", "aloe"]
     }
 ];
