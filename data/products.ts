@@ -23247,5 +23247,617 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Cepillo",
       tags: ["cepillo", "desenredante"]
+    },
+  {
+      id: "sadoer-yeast",
+      slug: "sadoer-yeast",
+      name: "Yeast",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-yeast.webp"],
+      description: "Crema facial Sadoer Yeast, de 30 g, con colágeno. El texto habla de hidratar, suavizar arrugas y mejorar la elasticidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "30 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["levadura", "arrugas", "colágeno"]
+    },
+  {
+      id: "sadoer-depilatoria-mens",
+      slug: "sadoer-depilatoria-mens",
+      name: "Men's",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-depilatoria-mens.webp"],
+      description: "Crema depilatoria Sadoer Men's, de 150 ml. El texto la presenta suave, para piel sensible. La foto incluye una espátula.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "hombre", "piel sensible"]
+    },
+  {
+      id: "sadoer-arcilla-ocean",
+      slug: "sadoer-arcilla-ocean",
+      name: "Ocean",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-arcilla-ocean.webp"],
+      description: "Mascarilla en barra Sadoer Ocean, de 40 g, con centella asiática y colágeno. El texto habla de limpieza suave y firmeza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "40 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arcilla", "centella", "colágeno"]
+    },
+  {
+      id: "sadoer-arcilla-perilla",
+      slug: "sadoer-arcilla-perilla",
+      name: "Perilla",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-arcilla-perilla.webp"],
+      description: "Mascarilla en barra Sadoer Perilla, de 40 g, con shiso, rosa y centella. La foto muestra dos barras iguales. El texto habla de limpieza suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "40 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arcilla", "rosa", "centella"]
+    },
+  {
+      id: "sadoer-niacinamida",
+      slug: "sadoer-niacinamida",
+      name: "Niacinamida",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-niacinamida.webp"],
+      description: "Esencia iluminadora Sadoer de niacinamida. El texto habla de un tono más uniforme, menos manchas y más luminosidad. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Esencia facial",
+      tags: ["niacinamida", "luminosidad", "manchas"]
+    },
+  {
+      id: "sadoer-manos-naranja",
+      slug: "sadoer-manos-naranja",
+      name: "Naranja",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-manos-naranja.webp"],
+      description: "Crema de manos Sadoer, de 60 g, con fragancia de naranja.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "naranja"]
+    },
+  {
+      id: "sadoer-manos-sakura",
+      slug: "sadoer-manos-sakura",
+      name: "Sakura",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-manos-sakura.webp"],
+      description: "Crema de manos Sadoer Sakura, de 60 g, con extracto de sakura y niacinamida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "sakura", "niacinamida"]
+    },
+  {
+      id: "bioaqua-rice-cuello",
+      slug: "bioaqua-rice-cuello",
+      name: "Rice cuello",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-cuello.webp"],
+      description: "Crema para el cuello Bioaqua Rice Raw Pulp, de 110 g, con arroz y polipéptidos. El texto habla de firmeza e hidratación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "110 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["cuello", "arroz", "polipéptidos"]
+    },
+  {
+      id: "bioaqua-rice-mascarilla",
+      slug: "bioaqua-rice-mascarilla",
+      name: "Rice",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-mascarilla.webp"],
+      description: "Mascarilla facial Bioaqua Rice Raw Pulp, de 25 g, con extracto de arroz. El sobre habla de aliviar la sequedad y reducir los poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "25 g",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["arroz", "poros", "hidratación"]
+    },
+  {
+      id: "waterpik-cordless-advanced",
+      slug: "waterpik-cordless-advanced",
+      name: "Cordless Advanced 2.0",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-cordless-advanced.webp"],
+      description: "Irrigador dental inalámbrico Waterpik Cordless Advanced 2.0. La caja incluye 4 puntas y trae tres niveles de presión.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "4 puntas",
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "inalámbrico", "irrigador"]
+    },
+  {
+      id: "nono-tec-nt-cp627",
+      slug: "nono-tec-nt-cp627",
+      name: "NT-CP627",
+      brand: "N@no-Tec",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nono-tec-nt-cp627.webp"],
+      description: "Afeitadora y recortadora N@no-Tec NT-CP627, recargable, con pantalla. La foto trae el equipo completo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Rasuradora",
+      tags: ["afeitadora", "recargable", "recortadora"]
+    },
+  {
+      id: "dr-rashel-gold-collagen-24k",
+      slug: "dr-rashel-gold-collagen-24k",
+      name: "Gold Collagen 24K",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-rashel-gold-collagen-24k.webp"],
+      description: "Sérum facial Dr. Rashel Gold Collagen 24K, de 40 ml, con oro y colágeno. El texto habla de hidratar y atenuar manchas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 40,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["oro", "colágeno", "manchas"]
+    },
+  {
+      id: "nevada-cepillo-iridiscente",
+      slug: "nevada-cepillo-iridiscente",
+      name: "Cepillo iridiscente",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-cepillo-iridiscente.webp"],
+      description: "Cepillo Nevada, iridiscente. La foto muestra el mismo cepillo por los dos lados.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "desenredante"]
+    },
+  {
+      id: "salon-capa-botones",
+      slug: "salon-capa-botones",
+      name: "Capa con botones",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-capa-botones.webp"],
+      description: "Capa de barbería negra, con botones y cuello de silicón. La foto no trae marca ni medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Capa",
+      tags: ["capa", "barbería", "cuello"]
+    },
+  {
+      id: "remington-botanicals",
+      slug: "remington-botanicals",
+      name: "Botanicals",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-botanicals.webp"],
+      description: "Plancha Remington Botanicals, con placas cerámicas de 110 mm, hasta 230 °C y cable de 3 m. Lleva aloe vera, rosa mosqueta y jojoba.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "placas de 110 mm",
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "cerámica", "aloe"]
+    },
+  {
+      id: "xtracare-cocoa-shea",
+      slug: "xtracare-cocoa-shea",
+      name: "Cocoa y karité",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-cocoa-shea.webp"],
+      description: "Crema corporal XtraCare de cacao y manteca de karité, de 591 ml. El texto la presenta para suavizar la piel seca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 591,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["cacao", "karité", "piel seca"]
+    },
+  {
+      id: "dr-pen-microagujas",
+      slug: "dr-pen-microagujas",
+      name: "Microagujas",
+      brand: "Dr. Pen",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-pen-microagujas.webp"],
+      description: "Equipo de microagujas Dr. Pen. La foto muestra el aparato y los cartuchos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["microagujas", "facial"]
+    },
+  {
+      id: "pro-wax-100",
+      slug: "pro-wax-100",
+      name: "Calentador 100",
+      brand: "Pro-Wax",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/pro-wax-100.webp"],
+      description: "Calentador de cera Pro-Wax 100. El texto habla de temperatura ajustable y calentamiento rápido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["cera", "calentador"]
+    },
+  {
+      id: "bioaqua-balsamo-ceramidas",
+      slug: "bioaqua-balsamo-ceramidas",
+      name: "Ceramidas",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-balsamo-ceramidas.webp"],
+      description: "Bálsamo labial Bioaqua de ceramidas. El texto habla de hidratación y brillo. El empaque no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "ceramidas"]
+    },
+  {
+      id: "instituto-espanol-colageno",
+      slug: "instituto-espanol-colageno",
+      name: "Colágeno",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-colageno.webp"],
+      description: "Loción corporal Instituto Español de colágeno, de 500 ml. El texto habla de restaurar, reforzar y reafirmar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["colágeno", "cuerpo", "reafirmante"]
+    },
+  {
+      id: "sadoer-queilitis",
+      slug: "sadoer-queilitis",
+      name: "Queilitis",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-queilitis.webp"],
+      description: "Ungüento labial Sadoer Queilitis, de 30 g, con colágeno. El texto habla de labios suaves y reparación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "30 g",
+      inStock: true,
+      category: "Bálsamo",
+      tags: ["labios", "colágeno"]
+    },
+  {
+      id: "bioaqua-centella-locion",
+      slug: "bioaqua-centella-locion",
+      name: "Centella",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-locion.webp"],
+      description: "Loción facial Bioaqua de centella asiática, de 80 ml. El texto habla de calmar, hidratar y absorberse rápido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 80,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["centella", "acné", "calmante"]
+    },
+  {
+      id: "bioaqua-centella-tonico",
+      slug: "bioaqua-centella-tonico",
+      name: "Centella",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-tonico.webp"],
+      description: "Tónico facial Bioaqua de centella asiática, de 120 ml. El texto lo presenta calmante, para piel sensible o con tendencia al acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Tónico",
+      tags: ["centella", "acné", "calmante"]
+    },
+  {
+      id: "bioaqua-rosa-hialuronico",
+      slug: "bioaqua-rosa-hialuronico",
+      name: "Rosa hialurónico",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-hialuronico.webp"],
+      description: "Loción facial Bioaqua de rosa y ácido hialurónico. El texto habla de hidratar cara y cuello. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["rosa", "hialurónico", "poros"]
+    },
+  {
+      id: "bioaqua-vitamina-c",
+      slug: "bioaqua-vitamina-c",
+      name: "Vitamina C",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c.webp"],
+      description: "Crema facial Bioaqua de vitamina C. El texto habla de elasticidad, absorción y manchas. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["vitamina c", "manchas", "elasticidad"]
+    },
+  {
+      id: "bioaqua-rice-tonico",
+      slug: "bioaqua-rice-tonico",
+      name: "Rice",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-tonico.webp"],
+      description: "Tónico facial Bioaqua Rice Raw Pulp, de 120 ml, con extracto de arroz. La foto muestra dos frascos iguales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Tónico",
+      tags: ["arroz", "poros", "luminosidad"]
+    },
+  {
+      id: "sadoer-limpiador-colageno",
+      slug: "sadoer-limpiador-colageno",
+      name: "Colágeno",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-limpiador-colageno.webp"],
+      description: "Limpiador facial Sadoer de colágeno y nicotinamida, de 100 g. La foto muestra dos tubos iguales. El texto habla de una limpieza suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["colágeno", "niacinamida", "limpiador"]
+    },
+  {
+      id: "sadoer-manos-melocoton",
+      slug: "sadoer-manos-melocoton",
+      name: "Melocotón",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-manos-melocoton.webp"],
+      description: "Crema de manos Sadoer, de 60 g, con melocotón y niacinamida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "melocotón", "niacinamida"]
+    },
+  {
+      id: "sadoer-bluebell",
+      slug: "sadoer-bluebell",
+      name: "Bluebell",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-bluebell.webp"],
+      description: "Loción corporal Sadoer Bluebell. El texto habla de hidratación y aroma. El tubo no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["bluebell", "cuerpo", "fragancia"]
+    },
+  {
+      id: "bioaqua-moist-cream",
+      slug: "bioaqua-moist-cream",
+      name: "Coco",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-moist-cream.webp"],
+      description: "Crema facial Bioaqua Moist Cream, con coco y tiramisú. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["coco", "tiramisú", "hidratación"]
     }
 ];
