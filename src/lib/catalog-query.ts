@@ -1,11 +1,15 @@
-import { PAGE_SIZE } from "@/config";
+import { BRUMA_CATEGORY, PAGE_SIZE } from "@/config";
 import { assertNever } from "@/lib/text";
 import { GENDERS, PRODUCT_TYPES, type Gender, type ProductType, type PublicProduct } from "@/types/catalog";
 
 export const SORT_KEYS = ["destacados", "precio-asc", "precio-desc", "nombre"] as const;
 export type SortKey = (typeof SORT_KEYS)[number];
 
+export const CATALOG_SECTIONS = ["perfumeria"] as const;
+export type CatalogSection = (typeof CATALOG_SECTIONS)[number];
+
 export type CatalogFilters = {
+  seccion: CatalogSection | "";
   tipo: ProductType | "";
   marca: string;
   genero: Gender | "";
@@ -16,6 +20,11 @@ export type CatalogFilters = {
   orden: SortKey;
   pagina: number;
 };
+
+/** Diseñador, árabe, y las brumas aunque su tipo siga siendo belleza. */
+export function isPerfumeriaProduct(product: { type: ProductType; category: string }): boolean {
+  return product.type !== "beauty" || product.category === BRUMA_CATEGORY;
+}
 
 function first(value: string | string[] | undefined): string {
   if (Array.isArray(value)) return value[0] ?? "";
@@ -34,6 +43,10 @@ function isSortKey(value: string): value is SortKey {
   return (SORT_KEYS as readonly string[]).includes(value);
 }
 
+function isSection(value: string): value is CatalogSection {
+  return (CATALOG_SECTIONS as readonly string[]).includes(value);
+}
+
 function numberOrNull(value: string): number | null {
   if (!value.trim()) return null;
   const parsed = Number(value);
@@ -48,7 +61,9 @@ export function parseCatalogFilters(
   const generoValue = first(searchParams.genero);
   const ordenValue = first(searchParams.orden);
   const pagina = Number(first(searchParams.pagina));
+  const seccionValue = first(searchParams.seccion);
   return {
+    seccion: isSection(seccionValue) ? seccionValue : "",
     tipo: isProductType(tipoValue) ? tipoValue : "",
     marca: first(searchParams.marca).trim(),
     genero: isGender(generoValue) ? generoValue : "",
@@ -85,11 +100,37 @@ function sortProducts(products: PublicProduct[], orden: SortKey): PublicProduct[
   }
 }
 
+export function catalogCategoryGroups(products: PublicProduct[]): {
+  perfumeria: string[];
+  belleza: string[];
+} {
+  const perfumeria = new Set<string>();
+  const belleza = new Set<string>();
+  for (const product of products) {
+    if (product.isReference) continue;
+    (isPerfumeriaProduct(product) ? perfumeria : belleza).add(product.category);
+  }
+  const sort = (values: Set<string>) => [...values].sort((a, b) => a.localeCompare(b, "es"));
+  return {
+    perfumeria: sort(perfumeria),
+    belleza: sort(belleza).filter((category) => !perfumeria.has(category)),
+  };
+}
+
 export function applyCatalogFilters(
   products: PublicProduct[],
   filters: CatalogFilters,
 ): { items: PublicProduct[]; total: number; pages: number; page: number } {
   let list = products.filter((product) => !product.isReference);
+  switch (filters.seccion) {
+    case "":
+      break;
+    case "perfumeria":
+      list = list.filter((product) => isPerfumeriaProduct(product));
+      break;
+    default:
+      return assertNever(filters.seccion);
+  }
   if (filters.tipo) list = list.filter((product) => product.type === filters.tipo);
   if (filters.marca) list = list.filter((product) => product.brand === filters.marca);
   if (filters.genero) list = list.filter((product) => product.gender === filters.genero);
@@ -107,6 +148,7 @@ export function applyCatalogFilters(
 
 export function catalogFilterQuery(filters: CatalogFilters, page = filters.pagina): string {
   const params = new URLSearchParams();
+  if (filters.seccion) params.set("seccion", filters.seccion);
   if (filters.tipo) params.set("tipo", filters.tipo);
   if (filters.marca) params.set("marca", filters.marca);
   if (filters.genero) params.set("genero", filters.genero);

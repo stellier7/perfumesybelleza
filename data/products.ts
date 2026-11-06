@@ -792,7 +792,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: []
     },
   {
@@ -1554,7 +1554,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -1574,7 +1574,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -1594,7 +1594,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -1614,7 +1614,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -1634,7 +1634,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -3874,7 +3874,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -5454,7 +5454,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -5854,7 +5854,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -5874,7 +5874,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -5894,7 +5894,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -9314,7 +9314,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -9334,7 +9334,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -9354,7 +9354,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -9374,7 +9374,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     },
   {
@@ -10154,7 +10154,7 @@ export const rawProducts: RawProduct[] = [
       },
       sizeMl: 236,
       inStock: true,
-      category: "Perfumería",
+      category: "Brumas",
       tags: ["splash"]
     }
 ];

@@ -11,6 +11,7 @@ import type { SearchRecord } from "@/types/catalog";
 
 const links = [
   { href: "/tienda", label: "Tienda" },
+  { href: "/tienda?seccion=perfumeria", label: "Perfumería" },
   { href: "/tienda?tipo=arabic", label: "Árabes" },
   { href: "/tienda?tipo=designer", label: "Diseñador" },
   { href: "/tienda?tipo=beauty", label: "Belleza" },

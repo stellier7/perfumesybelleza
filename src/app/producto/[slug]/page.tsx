@@ -7,7 +7,7 @@ import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
 import { ProductCard } from "@/components/product-card";
 import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from "@/components/product-purchase";
 import { Shell } from "@/components/shell";
-import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
+import { BRUMA_CATEGORY, GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
 import { comparisonSlug } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
@@ -69,7 +69,7 @@ async function ProductScreen({ params }: ProductParams) {
         <div>
           <div className="max-md:pr-20">
             <p className="text-xs uppercase tracking-[0.18em] text-gold">
-              {TYPE_LABEL[product.type]} · {GENDER_LABEL[product.gender]}
+              {product.category === BRUMA_CATEGORY ? "Bruma" : TYPE_LABEL[product.type]} · {GENDER_LABEL[product.gender]}
             </p>
             <h1 className="mt-2 font-serif text-4xl leading-none md:text-6xl">{product.name}</h1>
             <p className="mt-2 text-muted">{product.brand}</p>

@@ -97,6 +97,9 @@ export const TYPE_LABEL: Record<ProductType, string> = {
   beauty: "Belleza",
 };
 
+/** Categoría de las brumas dentro de perfumería. El tipo (y el margen) no cambia. */
+export const BRUMA_CATEGORY = "Brumas";
+
 export const GENDER_LABEL: Record<Gender, string> = {
   hombre: "Hombre",
   mujer: "Mujer",

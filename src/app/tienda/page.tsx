@@ -6,7 +6,9 @@ import { GENDER_LABEL, TYPE_LABEL } from "@/config";
 import { getSellableProducts } from "@/lib/catalog";
 import {
   applyCatalogFilters,
+  catalogCategoryGroups,
   catalogFilterQuery,
+  isPerfumeriaProduct,
   parseCatalogFilters,
   type CatalogFilters,
 } from "@/lib/catalog-query";
@@ -35,18 +37,19 @@ async function Catalog({
   const filters = parseCatalogFilters(await searchParams);
   const products = getSellableProducts();
   const result = applyCatalogFilters(products, filters);
-  const brands = [...new Set(products.map((product) => product.brand))].sort((a, b) =>
+  const inSection = filters.seccion === "perfumeria" ? products.filter(isPerfumeriaProduct) : products;
+  const brands = [...new Set(inSection.map((product) => product.brand))].sort((a, b) =>
     a.localeCompare(b, "es"),
   );
-  const categories = [...new Set(products.map((product) => product.category))].sort((a, b) =>
-    a.localeCompare(b, "es"),
-  );
+  const categories = catalogCategoryGroups(inSection);
+  const title = filters.seccion === "perfumeria" ? "Perfumería" : "Tienda";
 
   return (
     <Shell className="py-8 md:py-12">
-      <h1 className="font-serif text-4xl md:text-5xl">Tienda</h1>
+      <h1 className="font-serif text-4xl md:text-5xl">{title}</h1>
       <p className="mt-3 max-w-xl text-muted">Filtra por tipo, marca, género, precio y existencia.</p>
       <form className="mt-6 grid gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
+        {filters.seccion ? <input type="hidden" name="seccion" value={filters.seccion} /> : null}
         <fieldset className="grid gap-3 rounded-3xl border border-line bg-paper p-4 text-sm">
           <legend className="px-1 text-xs uppercase tracking-[0.16em] text-gold">Filtros</legend>
           <label className="grid gap-1">
@@ -84,9 +87,20 @@ async function Catalog({
             Categoría
             <select name="categoria" defaultValue={filters.categoria} className="h-11 rounded-xl border border-line bg-ivory px-3">
               <option value="">Todas</option>
-              {categories.map((category) => (
-                <option key={category}>{category}</option>
-              ))}
+              {categories.perfumeria.length > 0 ? (
+                <optgroup label="Perfumería">
+                  {categories.perfumeria.map((category) => (
+                    <option key={category}>{category}</option>
+                  ))}
+                </optgroup>
+              ) : null}
+              {categories.belleza.length > 0 ? (
+                <optgroup label="Belleza">
+                  {categories.belleza.map((category) => (
+                    <option key={category}>{category}</option>
+                  ))}
+                </optgroup>
+              ) : null}
             </select>
           </label>
           <div className="grid grid-cols-2 gap-2">

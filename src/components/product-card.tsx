@@ -1,12 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import { TYPE_LABEL } from "@/config";
+import { BRUMA_CATEGORY, TYPE_LABEL } from "@/config";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
 export function ProductCard({ product }: { product: PublicProduct }) {
   const image = product.images[0];
   const inspired = product.inspiredBy[0];
+  const badge = !product.inStock
+    ? "Agotado"
+    : product.category === BRUMA_CATEGORY
+      ? "Bruma"
+      : TYPE_LABEL[product.type];
   return (
     <article className="flex flex-col">
       <Link
@@ -23,7 +28,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
           />
         ) : null}
         <span className="absolute left-3 top-3 rounded-full bg-paper/90 px-2.5 py-1 text-[0.7rem] uppercase tracking-[0.14em]">
-          {product.inStock ? TYPE_LABEL[product.type] : "Agotado"}
+          {badge}
         </span>
       </Link>
       <div className="mt-3 flex flex-1 flex-col">
