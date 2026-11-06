@@ -17951,5 +17951,613 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Plancha",
       tags: ["plancha", "aguacate", "cerámica"]
+    },
+  {
+      id: "amalfi-ultra-fresh",
+      slug: "amalfi-ultra-fresh",
+      name: "Enjuague Ultra Fresh",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-ultra-fresh.webp"],
+      description: "Enjuague bucal Amalfi Ultra Fresh, de 500 ml, con menta. Sin alcohol y enriquecido con flúor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Enjuague bucal",
+      tags: ["enjuague", "menta", "flúor", "sin alcohol"]
+    },
+  {
+      id: "nessrin-gala-mas-crespos",
+      slug: "nessrin-gala-mas-crespos",
+      name: "Gala Más Crespos",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-mas-crespos.webp"],
+      description: "Set de champú y acondicionador Nessrin Gala Más Crespos, con argán, coco y extracto de amaranto. El champú marca 400 ml. La presentación lo describe como natural y efectivo para el cabello crespo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Set",
+      tags: ["más crespos", "argán", "coco", "amaranto"]
+    },
+  {
+      id: "nevada-tinte-1-negro-natural",
+      slug: "nevada-tinte-1-negro-natural",
+      name: "Tinte 1 Negro Natural",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-tinte-1-negro-natural.webp"],
+      description: "Tinte permanente Nevada Natural Color, tono 1 Negro Natural. Coloración profesional con minerales nutrientes: intensidad y duración prolongada, brillo y cobertura uniforme de canas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Coloración",
+      tags: ["negro natural", "permanente", "canas", "minerales"]
+    },
+  {
+      id: "nevada-toallas-faciales",
+      slug: "nevada-toallas-faciales",
+      name: "Toallas faciales de algodón",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-toallas-faciales.webp"],
+      description: "Toallas faciales desechables Nevada de algodón, 40 toallitas. Suaves, ligeras y de varios usos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "40 toallitas",
+      inStock: true,
+      category: "Toallitas",
+      tags: ["algodón", "desechables", "facial"]
+    },
+  {
+      id: "salon-peine-alisador",
+      slug: "salon-peine-alisador",
+      name: "Peine alisador",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-peine-alisador.webp"],
+      description: "Peine alisador de salón, con peine, placa plana y mango azul. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Peine",
+      tags: ["alisado", "peine"]
+    },
+  {
+      id: "inoar-ghair-deep-cleansing",
+      slug: "inoar-ghair-deep-cleansing",
+      name: "G.Hair Deep Cleansing",
+      brand: "Inoar",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/inoar-ghair-deep-cleansing.webp"],
+      description: "Champú de limpieza profunda Inoar G.Hair, paso 1, de 1 L. Su fórmula con antioxidantes protege la fibra capilar del envejecimiento prematuro, la contaminación y el daño del sol o de las herramientas de calor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Champú",
+      tags: ["limpieza profunda", "antioxidantes", "G.Hair"]
+    },
+  {
+      id: "amalfi-gel-fijador",
+      slug: "amalfi-gel-fijador",
+      name: "Gel fijador",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-gel-fijador.webp"],
+      description: "Gel fijador Amalfi de fijación extrafuerte, de 150 ml. Protege y cuida el cabello. El envase indica un 90% de ingredientes de origen natural y fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Fijador",
+      tags: ["fijación extrafuerte", "vegano"]
+    },
+  {
+      id: "salon-aplicador-tinte",
+      slug: "salon-aplicador-tinte",
+      name: "Aplicador de tinte con peine",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-aplicador-tinte.webp"],
+      description: "Botellas aplicadoras de tinte con peine, en azul, rosa y negro. La foto las presenta juntas y no trae marca ni capacidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["tinte", "peine", "aplicador"]
+    },
+  {
+      id: "salon-gorro-desechable",
+      slug: "salon-gorro-desechable",
+      name: "Gorro desechable",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-gorro-desechable.webp"],
+      description: "Gorro desechable de salón, paquete de 100 unidades. La foto reúne varios colores en una sola referencia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 unidades",
+      inStock: true,
+      category: "Gorro",
+      tags: ["desechable", "gorro"]
+    },
+  {
+      id: "beauty-style-ganchos-negros",
+      slug: "beauty-style-ganchos-negros",
+      name: "Ganchos negros",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-ganchos-negros.webp"],
+      description: "Set de 12 ganchos negros Beauty Style, para sujetar el cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "12 piezas",
+      inStock: true,
+      category: "Pinza",
+      tags: ["ganchos", "negro"]
+    },
+  {
+      id: "shine-bow-clips",
+      slug: "shine-bow-clips",
+      name: "Ganchos moño",
+      brand: "Shine",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shine-bow-clips.webp"],
+      description: "Set de ganchos Shine con forma de moño, en negro. La tarjeta dice Shine Premium Accessory y no indica cuántas piezas trae.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["moño", "ganchos", "negro"]
+    },
+  {
+      id: "shany-claw-set-tortuga",
+      slug: "shany-claw-set-tortuga",
+      name: "Ganchos carey y negro",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-claw-set-tortuga.webp"],
+      description: "Set de ganchos Shany en carey y negro. La tarjeta no indica cuántas piezas trae.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["carey", "ganchos", "negro"]
+    },
+  {
+      id: "shany-claw-set-metal",
+      slug: "shany-claw-set-metal",
+      name: "Ganchos plateados y oro rosa",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-claw-set-metal.webp"],
+      description: "Set de ganchos Shany en plateado y oro rosa. La tarjeta no indica cuántas piezas trae.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["plateado", "oro rosa", "ganchos"]
+    },
+  {
+      id: "shany-claw-set-neutros",
+      slug: "shany-claw-set-neutros",
+      name: "Ganchos dorado, café y gris",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-claw-set-neutros.webp"],
+      description: "Set de ganchos Shany en dorado, café y gris. La tarjeta no indica cuántas piezas trae.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["dorado", "café", "gris", "ganchos"]
+    },
+  {
+      id: "shany-glitter-elastics",
+      slug: "shany-glitter-elastics",
+      name: "Colas brillantes",
+      brand: "Shany",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/shany-glitter-elastics.webp"],
+      description: "Set de colas Shany brillantes, en colores pastel y en negro. La foto reúne las dos tarjetas y no indica cuántas piezas trae cada una.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Liga",
+      tags: ["colas", "brillantes", "elástico"]
+    },
+  {
+      id: "yogi-care-agarwood-body-mist",
+      slug: "yogi-care-agarwood-body-mist",
+      name: "Agarwood Body Mist",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-agarwood-body-mist.webp"],
+      description: "Bruma corporal Yogi Care de madera de agar, de 100 ml. Envuelve la piel y deja una sensación de frescura durante el día.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Bruma",
+      tags: ["agar", "bruma", "fresca"]
+    },
+  {
+      id: "yogi-care-biotin-collagen-mask",
+      slug: "yogi-care-biotin-collagen-mask",
+      name: "Biotin & Collagen Hair Mask",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-biotin-collagen-mask.webp"],
+      description: "Mascarilla capilar Yogi Care de aceite de argán, biotina y colágeno, de 300 ml. Acondicionamiento profundo para cabello seco y dañado, con fragancia vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["argán", "biotina", "colágeno", "vegano"]
+    },
+  {
+      id: "sinko-styling-tea-tree-mask",
+      slug: "sinko-styling-tea-tree-mask",
+      name: "Rejuvenating Hair Mask Tea Tree",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-tea-tree-mask.webp"],
+      description: "Mascarilla capilar rejuvenecedora Sinko Styling de árbol de té, de 300 ml. El envase habla de limpieza profunda, estímulo del crecimiento y efecto revitalizante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["árbol de té", "rejuvenecedora"]
+    },
+  {
+      id: "nevada-liso-leave-in",
+      slug: "nevada-liso-leave-in",
+      name: "Liso Iluminado Leave-in",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-liso-leave-in.webp"],
+      description: "Leave-in termoactivador bifásico Nevada Liso Iluminado, de 250 ml, para cabello liso y alisado. Con ácido hialurónico y avena, fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["leave-in", "bifásico", "hialurónico", "avena"]
+    },
+  {
+      id: "nevada-cachos-activator",
+      slug: "nevada-cachos-activator",
+      name: "Cachos Perfeitos Activador",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-cachos-activator.webp"],
+      description: "Activador de rizos Nevada Cachos Perfeitos, de 300 ml, para cabello rizado. Con babosa y aceite de semilla de algodón, fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "babosa", "algodón"]
+    },
+  {
+      id: "nevada-cachos-gelatina",
+      slug: "nevada-cachos-gelatina",
+      name: "Cachos Perfeitos Gelatina",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-cachos-gelatina.webp"],
+      description: "Gelatina Nevada Cachos Perfeitos, de 1 kg, para cabello rizado. Con babosa y aceite de semilla de algodón. Busca la curvatura natural del rizo sin apelmazar ni resecar. Fórmula vegana, sin sulfato, petrolatos ni parabenos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Gel",
+      tags: ["gelatina", "rizos", "vegano"]
+    },
+  {
+      id: "nevada-kids-lisinhos-shampoo",
+      slug: "nevada-kids-lisinhos-shampoo",
+      name: "Lisinhos Perfeitos Kids Shampoo",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-kids-lisinhos-shampoo.webp"],
+      description: "Champú Nevada Lisinhos Perfeitos Kids, de 500 ml, para cabello liso. Limpia sin resecar y deja el cabello sedoso y brillante, con colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["kids", "liso", "colágeno"]
+    },
+  {
+      id: "nevada-sos-mask",
+      slug: "nevada-sos-mask",
+      name: "S.O.S Crecimiento Mascarilla",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-sos-mask.webp"],
+      description: "Mascarilla 3 en 1 Nevada S.O.S Crecimiento, de 1 kg, para cabello frágil, delgado y con caída. Reúne prelavado, crema hidratante y crema para peinar, con aceite de semilla de café y biotina. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["crecimiento", "biotina", "café"]
+    },
+  {
+      id: "nevada-sos-leave-in",
+      slug: "nevada-sos-leave-in",
+      name: "S.O.S Crecimiento Leave-in",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-sos-leave-in.webp"],
+      description: "Leave-in termoactivador bifásico Nevada S.O.S Crecimiento, de 250 ml, para cabello frágil, delgado y con caída. Con aceite de semilla de café y biotina. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["leave-in", "crecimiento", "biotina"]
+    },
+  {
+      id: "nevada-crespos-shampoo",
+      slug: "nevada-crespos-shampoo",
+      name: "Crespos Perfeitos Shampoo",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-crespos-shampoo.webp"],
+      description: "Champú Nevada Crespos Perfeitos, de 500 ml, para cabello rizado y en crecimiento, curvas de 3BC a 4ABC. Con aceite de coco y manteca de karité, sin sal y vegano.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["crespos", "coco", "karité", "sin sal"]
+    },
+  {
+      id: "nevada-crespos-gelatina",
+      slug: "nevada-crespos-gelatina",
+      name: "Crespos Perfeitos Gelatina",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-crespos-gelatina.webp"],
+      description: "Gelatina Nevada Crespos Perfeitos, de 1 kg, para cabello crespo en crecimiento. Con coco y manteca de karité. Busca la curvatura natural sin apelmazar ni resecar. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Gel",
+      tags: ["gelatina", "crespos", "karité"]
+    },
+  {
+      id: "nevada-liso-mask",
+      slug: "nevada-liso-mask",
+      name: "Liso Iluminado Mascarilla",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-liso-mask.webp"],
+      description: "Mascarilla 3 en 1 Nevada Liso Iluminado, de 1 kg, para cabello liso y alisado. Reúne prelavado, crema hidratante y crema para peinar, con ácido hialurónico y avena. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["liso", "hialurónico", "avena"]
+    },
+  {
+      id: "nevada-tinte-6-rubio-oscuro",
+      slug: "nevada-tinte-6-rubio-oscuro",
+      name: "Tinte 6 Rubio Oscuro",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-tinte-6-rubio-oscuro.webp"],
+      description: "Tinte permanente Nevada Natural Color, tono 6 Rubio Oscuro. Coloración profesional con minerales nutrientes: intensidad, duración y cobertura uniforme de canas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Coloración",
+      tags: ["rubio oscuro", "permanente", "canas"]
+    },
+  {
+      id: "xtracare-diabetics-lotion",
+      slug: "xtracare-diabetics-lotion",
+      name: "Diabetics Dry Skin Relief",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-diabetics-lotion.webp"],
+      description: "Crema corporal XtraCare Diabetics Dry Skin Relief, de 355 ml, sin fragancia, para piel sensible y seca. Hidrata, suaviza y ayuda a retener la humedad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 355,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["piel seca", "sin fragancia", "sensible"]
+    },
+  {
+      id: "dr-rashel-gold-caviar-cream",
+      slug: "dr-rashel-gold-caviar-cream",
+      name: "Gold Caviar Supreme Renewal",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dr-rashel-gold-caviar-cream.webp"],
+      description: "Crema facial antiedad Dr. Rashel Gold Caviar Supreme Renewal, con oro y caviar. El envase la presenta como gel cream reafirmante contra las líneas de expresión y a favor de la elasticidad. La foto no muestra el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["oro", "caviar", "antiedad", "reafirmante"]
     }
 ];
