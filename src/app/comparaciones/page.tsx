@@ -41,7 +41,11 @@ export default function ComparisonsPage() {
             </h2>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               {group.map((pair) => (
-                <Link key={pair.slug} href={`/comparar/${pair.slug}`} className="rounded-3xl border border-line bg-paper p-5">
+                <Link
+                  key={pair.slug}
+                  href={`/comparar/${pair.slug}`}
+                  className="rounded-3xl border border-line bg-paper p-5 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift"
+                >
                   <p className="text-xs uppercase tracking-[0.16em] text-gold">Alternativa</p>
                   <p className="mt-2 font-serif text-3xl">{pair.alternative.name}</p>
                   <p className="mt-1 text-sm text-muted">{pair.alternative.brand}</p>

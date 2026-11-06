@@ -80,7 +80,11 @@ export default function HomePage() {
       <Shell className="py-12">
         <div className="grid gap-4 md:grid-cols-3">
           {categories.map((category) => (
-            <Link key={category.href} href={category.href} className={`rounded-3xl p-6 ${category.className}`}>
+            <Link
+              key={category.href}
+              href={category.href}
+              className={`rounded-3xl p-6 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift ${category.className}`}
+            >
               <h2 className="font-serif text-3xl leading-none">{category.title}</h2>
               <p className="mt-3 text-sm leading-6 opacity-80">{category.text}</p>
             </Link>
@@ -116,7 +120,7 @@ export default function HomePage() {
                 <Link
                   key={pair.slug}
                   href={`/comparar/${pair.slug}`}
-                  className="rounded-3xl border border-white/10 bg-night-soft p-5"
+                  className="rounded-3xl border border-white/10 bg-night-soft p-5 transition duration-300 motion-safe:hover:-translate-y-0.5"
                 >
                   <p className="text-xs uppercase tracking-[0.16em] text-champagne">
                     {pair.original.name} y {pair.alternative.name}
@@ -150,7 +154,7 @@ export default function HomePage() {
           ["Pago", "Por transferencia. Te enviamos los datos al confirmar el pedido."],
           ["WhatsApp", "Armas el pedido en la tienda y lo recibimos listo para preparar."],
         ].map(([title, text]) => (
-          <div key={title} className="rounded-3xl border border-line bg-paper p-5">
+          <div key={title} className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
             <h3 className="font-serif text-2xl">{title}</h3>
             <p className="mt-2 text-sm leading-6 text-muted">{text}</p>
           </div>

@@ -87,7 +87,7 @@ async function Comparison({ params }: PairParams) {
         <Side product={original} role="Referencia" />
         <Side product={alternative} role="Alternativa" />
       </div>
-      <section className="mt-10 rounded-3xl bg-paper p-6">
+      <section className="mt-10 rounded-3xl bg-paper p-6 shadow-soft">
         <h2 className="font-serif text-3xl">Para quién es cada uno</h2>
         <p className="mt-3 leading-7">
           {original.verdict ?? `${original.name} es la referencia de esta comparación.`}{" "}
@@ -121,7 +121,7 @@ function Side({ product, role }: { product: PublicProduct; role: string }) {
         ? formatPrice(product.price)
         : `${formatPrice(product.price)} · Agotado`;
   return (
-    <article className="rounded-3xl border border-line bg-paper p-5">
+    <article className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
       <p className="text-xs uppercase tracking-[0.16em] text-gold">{role}</p>
       <h2 className="mt-2 font-serif text-3xl">{product.name}</h2>
       <p className="text-sm text-muted">{product.brand}</p>
