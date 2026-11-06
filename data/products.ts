@@ -11071,7 +11071,7 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/creative-natural-sculpting-clay.webp"],
+      images: ["/products/creative-natural-sculpting-clay.webp", "/products/creative-natural-sculpting-clay-2.webp"],
       description: "Arcilla modeladora Creative Natural Sculpting Clay, de 100 ml. Da textura, volumen y un aspecto mate. Se usa en el peinado para lograr fijación flexible y definición sin exceso de brillo.",
       notes: {
         top: [],
@@ -29418,7 +29418,7 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/sinko-rizos-cristal.webp"],
+      images: ["/products/sinko-rizos-cristal.webp", "/products/sinko-rizos-cristal-2.webp"],
       description: "Set Sinko Styling Healthy Curly, dos sobres de crema cristalizante de 800 ml con aceite de macadamia, para cabello dañado.",
       notes: {
         top: [],
@@ -30862,5 +30862,553 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Limpiador facial",
       tags: ["cold cream", "maquillaje", "limpieza"]
+    },
+  {
+      id: "yogi-care-argan-nourishing-500",
+      slug: "yogi-care-argan-nourishing-500",
+      name: "Argan Oil Nourishing Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-nourishing-500.webp"],
+      description: "Champú nutritivo Yogi Care Argan Oil Nourishing, de 500 ml. Lleva vitamina E, omega 3 y omega 9. Libre de parabenos, sulfatos y siliconas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "sin sulfatos", "sin siliconas"]
+    },
+  {
+      id: "sinko-styling-pink-lm-065",
+      slug: "sinko-styling-pink-lm-065",
+      name: "Semi permanente Pink LM-065",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-pink-lm-065.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrant, tono Pink LM-065, de 500 ml, con queratina hidrolizada y extractos de plantas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["tinte", "rosa", "semi permanente"]
+    },
+  {
+      id: "dreamology-argan",
+      slug: "dreamology-argan",
+      name: "Argán",
+      brand: "Dreamology",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dreamology-argan.webp"],
+      description: "Champú Dreamology de aceite de argán, de 946 ml, sin sulfatos, colorantes, parabenos ni gluten.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 946,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "sin sulfatos", "sin gluten"]
+    },
+  {
+      id: "elite-essentials-facial",
+      slug: "elite-essentials-facial",
+      name: "Cepillo facial",
+      brand: "Elite Essentials",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/elite-essentials-facial.webp"],
+      description: "Cepillo limpiador facial Elite Essentials, con dos cabezales y estuche.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "facial"]
+    },
+  {
+      id: "nevada-barbie",
+      slug: "nevada-barbie",
+      name: "Barbie",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-barbie.webp"],
+      description: "Crema corporal Nevada Kids Barbie, de 118 ml. La foto muestra cuatro tubos del mismo producto.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["barbie", "cuerpo", "niños"]
+    },
+  {
+      id: "beauty-style-secado-16",
+      slug: "beauty-style-secado-16",
+      name: "Secado madera",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-secado-16.webp"],
+      description: "Cepillo redondo de secado Beauty Style, de 16 líneas, con mango de madera y cerdas negras.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "16 líneas",
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "secado", "redondo"]
+    },
+  {
+      id: "nevada-bambu",
+      slug: "nevada-bambu",
+      name: "Bambú",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-bambu.webp"],
+      description: "Jabón en barra Nevada de bambú y manteca de karité, de 150 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "bambú", "karité"]
+    },
+  {
+      id: "zion-almohada",
+      slug: "zion-almohada",
+      name: "Almohada",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zion-almohada.webp"],
+      description: "Almohada masajeadora Zion Professional. El empaque la presenta para cuello, espalda, brazos, piernas y abdomen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Masajeador",
+      tags: ["masaje", "almohada"]
+    },
+  {
+      id: "zion-hisopos",
+      slug: "zion-hisopos",
+      name: "Hisopos",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zion-hisopos.webp"],
+      description: "Hisopos flexibles de algodón Zion, 500 piezas, con palito de papel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["hisopos", "algodón"]
+    },
+  {
+      id: "bandido-2-argan",
+      slug: "bandido-2-argan",
+      name: "2 Argán",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-2-argan.webp"],
+      description: "Cera Bandido 2 Argán, de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "argán"]
+    },
+  {
+      id: "nevada-minnie-2en1",
+      slug: "nevada-minnie-2en1",
+      name: "Minnie 2 en 1",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-minnie-2en1.webp"],
+      description: "Champú y acondicionador Nevada Kids Minnie, 2 en 1, de 1000 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["minnie", "2 en 1", "niños"]
+    },
+  {
+      id: "amalfi-rosa-mosqueta",
+      slug: "amalfi-rosa-mosqueta",
+      name: "Rosa mosqueta",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-rosa-mosqueta.webp"],
+      description: "Leche corporal Amalfi de rosa mosqueta, de 500 ml, vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["rosa mosqueta", "vegano", "cuerpo"]
+    },
+  {
+      id: "remington-compacto",
+      slug: "remington-compacto",
+      name: "Compacto",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-compacto.webp"],
+      description: "Secador compacto Remington, de 1875 W. Tres temperaturas, dos velocidades, motor DC, filtro removible, concentrador, cerámica, turmalina e iones.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "1875 w", "cerámica"]
+    },
+  {
+      id: "yogi-care-argan-gotas",
+      slug: "yogi-care-argan-gotas",
+      name: "Argán gotas",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-argan-gotas.webp"],
+      description: "Gotas de aceite de argán Yogi Care, 30 unidades de 2 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "2 ml × 30",
+      inStock: true,
+      category: "Aceite",
+      tags: ["argán", "gotas"]
+    },
+  {
+      id: "sinko-styling-moringa",
+      slug: "sinko-styling-moringa",
+      name: "Moringa",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-moringa.webp"],
+      description: "Champú Sinko Styling Moringa de limpieza profunda, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["moringa", "limpieza"]
+    },
+  {
+      id: "bioaqua-salicilico",
+      slug: "bioaqua-salicilico",
+      name: "Salicílico",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-salicilico.webp"],
+      description: "Mascarilla facial Bioaqua con ácido salicílico. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["mascarilla", "salicílico"]
+    },
+  {
+      id: "bioaqua-rosa-esencia",
+      slug: "bioaqua-rosa-esencia",
+      name: "Rosa esencia",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-esencia.webp"],
+      description: "Esencia facial Bioaqua de rosa y ácido hialurónico, de 30 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["rosa", "hialurónico", "esencia"]
+    },
+  {
+      id: "bioaqua-camelias-limpiador",
+      slug: "bioaqua-camelias-limpiador",
+      name: "Camelias limpiador",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-camelias-limpiador.webp"],
+      description: "Limpiador facial Bioaqua Camellias, de 80 g, con extracto de camelia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "80 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["camelias", "limpiador"]
+    },
+  {
+      id: "bioaqua-melocoton-fruta",
+      slug: "bioaqua-melocoton-fruta",
+      name: "Melocotón fruta",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-melocoton-fruta.webp"],
+      description: "Exfoliante corporal Bioaqua de melocotón, de 140 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "140 g",
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["melocotón", "exfoliante", "cuerpo"]
+    },
+  {
+      id: "bioaqua-vitamina-c-agua",
+      slug: "bioaqua-vitamina-c-agua",
+      name: "Vitamina C agua",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamina-c-agua.webp"],
+      description: "Agua esencial Bioaqua de vitamina C, de 300 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Esencia facial",
+      tags: ["vitamina c", "esencia"]
+    },
+  {
+      id: "bioaqua-rosa-aceite",
+      slug: "bioaqua-rosa-aceite",
+      name: "Rosa aceite",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-aceite.webp"],
+      description: "Aceite facial Bioaqua The Rose, de 30 ml, con flores secas de rosa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Aceite",
+      tags: ["rosa", "aceite"]
+    },
+  {
+      id: "bioaqua-rosa-tonico",
+      slug: "bioaqua-rosa-tonico",
+      name: "Rosa tónico",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rosa-tonico.webp"],
+      description: "Tónico facial Bioaqua de rosa y ácido hialurónico, de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Tónico",
+      tags: ["rosa", "hialurónico", "tónico"]
+    },
+  {
+      id: "sadoer-bambu",
+      slug: "sadoer-bambu",
+      name: "Bambú",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-bambu.webp"],
+      description: "Crema de manos perfumada Sadoer Bamboo Leaf, de 55 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "55 g",
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "bambú"]
+    },
+  {
+      id: "disney-frozen",
+      slug: "disney-frozen",
+      name: "Frozen",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-frozen.webp"],
+      description: "Toallas húmedas Disney Frozen Nevada Kids, 20 unidades.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "20 piezas",
+      inStock: true,
+      category: "Toallitas",
+      tags: ["frozen", "toallitas"]
+    },
+  {
+      id: "sinko-styling-arbol-te",
+      slug: "sinko-styling-arbol-te",
+      name: "Té acondicionador",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-arbol-te.webp"],
+      description: "Acondicionador Sinko Styling de árbol de té, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["árbol de té", "acondicionador"]
+    },
+  {
+      id: "yogi-care-u-colagent-sellador",
+      slug: "yogi-care-u-colagent-sellador",
+      name: "U-Colagent sellador",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-colagent-sellador.webp"],
+      description: "Tratamiento Yogi Care U-Colagent Sealer, paso 2, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["colágeno", "sellador"]
+    },
+  {
+      id: "yogi-care-u-colagent-decolorante",
+      slug: "yogi-care-u-colagent-decolorante",
+      name: "U-Colagent decolorante",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-colagent-decolorante.webp"],
+      description: "Tratamiento Yogi Care U-Colagent Hair Fiber Blonder, paso 1, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Decoloración",
+      tags: ["colágeno", "decoloración"]
     }
 ];
