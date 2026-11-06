@@ -14143,8 +14143,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/albet-keratina-colageno-shampoo.webp"],
-      description: "Champú profesional Albet Keratina + Colágeno, de 473 ml.",
+      images: ["/products/albet-keratina-colageno-shampoo.webp", "/products/albet-keratina-colageno-shampoo-2.webp"],
+      description: "Champú profesional Albet Keratina + Colágeno, de 473 ml (16 oz).",
       notes: {
         top: [],
         heart: [],
@@ -19129,5 +19129,530 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Capa",
       tags: ["capa", "barbería", "cuello"]
+    },
+  {
+      id: "transformers-bumblebee-2en1",
+      slug: "transformers-bumblebee-2en1",
+      name: "Bumblebee 2 en 1",
+      brand: "Transformers",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/transformers-bumblebee-2en1.webp"],
+      description: "Champú y acondicionador 2 en 1 Transformers Bumblebee. La foto no deja leer el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Champú",
+      tags: ["2 en 1", "bumblebee", "infantil"]
+    },
+  {
+      id: "nevada-chocokeratina-shampoo",
+      slug: "nevada-chocokeratina-shampoo",
+      name: "Chocokeratina Shampoo",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-chocokeratina-shampoo.webp"],
+      description: "Champú profesional Nevada Chocokeratina, de 513 ml. Recuperación capilar, alisado progresivo, suavidad y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 513,
+      inStock: true,
+      category: "Champú",
+      tags: ["chocokeratina", "brillo", "cacao"]
+    },
+  {
+      id: "nevada-chocokeratina-conditioner",
+      slug: "nevada-chocokeratina-conditioner",
+      name: "Chocokeratina Acondicionador",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-chocokeratina-conditioner.webp"],
+      description: "Acondicionador profesional Nevada Chocokeratina, de 510 ml, con keratina y cacao. Recuperación capilar, alisado progresivo, suavidad y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["chocokeratina", "cacao", "brillo"]
+    },
+  {
+      id: "nevada-keratina-15-conditioner",
+      slug: "nevada-keratina-15-conditioner",
+      name: "Keratina 15 en 1 Acondicionador",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratina-15-conditioner.webp"],
+      description: "Acondicionador Nevada Keratina 15 en 1, de 510 ml, anticaída. Protección UV, control de la caída y menos frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["keratina", "anticaída", "15 en 1"]
+    },
+  {
+      id: "nevada-keratina-15-shampoo",
+      slug: "nevada-keratina-15-shampoo",
+      name: "Keratina 15 en 1 Shampoo",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratina-15-shampoo.webp"],
+      description: "Champú Nevada Keratina 15 en 1, de 510 ml, anticaída. Con keratina, protección UV, control de la caída y menos frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Champú",
+      tags: ["keratina", "anticaída", "15 en 1"]
+    },
+  {
+      id: "beauty-style-roll-wax-lavender",
+      slug: "beauty-style-roll-wax-lavender",
+      name: "Cera depilatoria roll-on lavanda",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-roll-wax-lavender.webp"],
+      description: "Cera depilatoria en roll-on Beauty Style, aroma lavanda, soluble en agua. El texto la presenta para usar con tiras. No marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "cera", "lavanda"]
+    },
+  {
+      id: "beauty-style-wax-warmer",
+      slug: "beauty-style-wax-warmer",
+      name: "Calentador de cera roll-on",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-wax-warmer.webp"],
+      description: "Calentador de cera roll-on Beauty Style, con cable. La foto lo muestra en rosa y en azul.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["calentador", "cera", "roll-on"]
+    },
+  {
+      id: "salon-espejo-mano",
+      slug: "salon-espejo-mano",
+      name: "Espejo de mano",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-espejo-mano.webp"],
+      description: "Espejo de mano, de 38 × 26 cm, con marco negro. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "38 × 26 cm",
+      inStock: true,
+      category: "Espejo",
+      tags: ["espejo", "mano"]
+    },
+  {
+      id: "beauty-style-gorro-mechas",
+      slug: "beauty-style-gorro-mechas",
+      name: "Gorro para mechas",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-gorro-mechas.webp"],
+      description: "Gorro de silicón Beauty Style para mechas. La foto también muestra la aguja de mechas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Gorro",
+      tags: ["mechas", "gorro", "silicón"]
+    },
+  {
+      id: "salon-rollos-naranja",
+      slug: "salon-rollos-naranja",
+      name: "Rollos para el cabello",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-rollos-naranja.webp"],
+      description: "Rollos para el cabello, 10 unidades, color naranja. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "10 unidades",
+      inStock: true,
+      category: "Rulos",
+      tags: ["rollos", "rulos"]
+    },
+  {
+      id: "salon-rollos-bigudies",
+      slug: "salon-rollos-bigudies",
+      name: "Rollos bigudí",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-rollos-bigudies.webp"],
+      description: "Rollos bigudí, 10 piezas, color rosa. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "10 piezas",
+      inStock: true,
+      category: "Rulos",
+      tags: ["bigudí", "rulos"]
+    },
+  {
+      id: "nevada-argan-cholesterol-shampoo",
+      slug: "nevada-argan-cholesterol-shampoo",
+      name: "Argan Oil Cholesterol Shampoo",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-argan-cholesterol-shampoo.webp"],
+      description: "Champú profesional Nevada Argan Oil Cholesterol, de 510 ml. Alimenta la fibra, repara las puntas y da docilidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "puntas", "docilidad"]
+    },
+  {
+      id: "nevada-argan-cholesterol-conditioner",
+      slug: "nevada-argan-cholesterol-conditioner",
+      name: "Argan Oil Cholesterol Acondicionador",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-argan-cholesterol-conditioner.webp"],
+      description: "Acondicionador profesional Nevada Argan Oil Cholesterol, de 510 ml. Alimenta la fibra, repara las puntas y da docilidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "puntas", "docilidad"]
+    },
+  {
+      id: "beauty-style-cepillo-secado-dorado",
+      slug: "beauty-style-cepillo-secado-dorado",
+      name: "Cepillo de secado",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-cepillo-secado-dorado.webp"],
+      description: "Cepillo redondo de secado Beauty Style, de 12 líneas, con mango de madera y cerdas negras con detalle dorado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "12 líneas",
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "secado", "redondo"]
+    },
+  {
+      id: "beauty-style-cepillo-secado-negro",
+      slug: "beauty-style-cepillo-secado-negro",
+      name: "Cepillo de secado negro",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-cepillo-secado-negro.webp"],
+      description: "Cepillo redondo de secado Beauty Style, de 12 líneas, con mango negro y cerdas negras.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "12 líneas",
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "secado", "redondo"]
+    },
+  {
+      id: "salon-cepillo-silicon",
+      slug: "salon-cepillo-silicon",
+      name: "Cepillo de silicón",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-silicon.webp"],
+      description: "Cepillo masajeador de silicón para el cuero cabelludo. La foto reúne cuatro colores: aqua, azul, blanco y morado. No trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Masajeador",
+      tags: ["silicón", "masaje", "cuero cabelludo"]
+    },
+  {
+      id: "nevada-keratin-anti-frizz-conditioner",
+      slug: "nevada-keratin-anti-frizz-conditioner",
+      name: "Keratin Anti-Frizz Acondicionador",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratin-anti-frizz-conditioner.webp"],
+      description: "Acondicionador Nevada Keratin Anti-Frizz, de 510 ml. Sella la cutícula, aporta sedosidad y controla el frizz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["keratina", "anti-frizz", "cutícula"]
+    },
+  {
+      id: "albet-matizante-shampoo",
+      slug: "albet-matizante-shampoo",
+      name: "Shampoo Matizante",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-matizante-shampoo.webp"],
+      description: "Champú matizante Albet para cabellos rubios y grises, de 473 ml. El envase marca 16 oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["matizante", "rubios", "grises"]
+    },
+  {
+      id: "albet-menta-conditioner",
+      slug: "albet-menta-conditioner",
+      name: "Menta Control Grasa Acondicionador",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-menta-conditioner.webp"],
+      description: "Acondicionador profesional Albet Menta Control Grasa, de 473 ml, con extracto de menta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["menta", "grasa", "control"]
+    },
+  {
+      id: "albet-menta-shampoo",
+      slug: "albet-menta-shampoo",
+      name: "Menta Control Grasa Shampoo",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-menta-shampoo.webp"],
+      description: "Champú profesional Albet Menta Control Grasa, de 473 ml. Fórmula purificante con menta, para el exceso de grasa del cuero cabelludo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["menta", "grasa", "purificante"]
+    },
+  {
+      id: "nevada-argan-leave-in-spray",
+      slug: "nevada-argan-leave-in-spray",
+      name: "Argan Oil Leave-In Spray",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-argan-leave-in-spray.webp"],
+      description: "Spray para peinar Nevada Argan Oil, de 280 ml, sin enjuague. Con aceite de argán y vitamina E. Sella la cutícula, hidrata y aporta brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Spray",
+      tags: ["argán", "sin enjuague", "vitamina e"]
+    },
+  {
+      id: "nevada-anti-hair-loss-spray",
+      slug: "nevada-anti-hair-loss-spray",
+      name: "Anti-Hair Loss Leave-In Spray",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-anti-hair-loss-spray.webp"],
+      description: "Spray para peinar Nevada Anti-Hair Loss 15 en 1, sin enjuague, con vitamina E. Suavidad, hidratación y menos frizz. La botella y el texto de la foto no coinciden en el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Spray",
+      tags: ["anticaída", "sin enjuague", "15 en 1"]
+    },
+  {
+      id: "nevada-rosemary-spray",
+      slug: "nevada-rosemary-spray",
+      name: "Rosemary Leave-In Spray",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-rosemary-spray.webp"],
+      description: "Spray para peinar Nevada Rosemary, sin enjuague, con vitamina E. El texto habla de desenredar, suavizar y estimular el crecimiento. La botella y el texto de la foto no coinciden en el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Spray",
+      tags: ["romero", "sin enjuague", "vitamina e"]
+    },
+  {
+      id: "nevada-argan-hair-cream",
+      slug: "nevada-argan-hair-cream",
+      name: "Argan Oil Revitalizing Cream",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-argan-hair-cream.webp"],
+      description: "Crema capilar revitalizante Nevada Argan Oil, de 280 ml, sin enjuague. Con vitamina E y protección UV. Hidrata y aporta brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["argán", "sin enjuague", "vitamina e"]
+    },
+  {
+      id: "nevada-rosemary-hair-cream",
+      slug: "nevada-rosemary-hair-cream",
+      name: "Rosemary Revitalizing Cream",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-rosemary-hair-cream.webp"],
+      description: "Crema capilar revitalizante Nevada Rosemary, de 280 ml, sin enjuague. Con vitamina E y protección UV. El texto la presenta para el crecimiento desde la raíz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["romero", "sin enjuague", "crecimiento"]
+    },
+  {
+      id: "beauty-style-cepillo-desentredador",
+      slug: "beauty-style-cepillo-desentredador",
+      name: "Cepillo desenredador",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-cepillo-desentredador.webp"],
+      description: "Cepillo desenredador Beauty Style, con cuerpo de bambú.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["desenredar", "bambú"]
     }
 ];
