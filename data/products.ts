@@ -11091,8 +11091,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/bio-reach-caviar-argan-serum.webp"],
-      description: "Sérum hidratante reparador Bio-Reach Caviar & Argan Oil, de 100 ml. Lleva extracto de caviar, rico en nutrientes, vitaminas y antioxidantes, y aceite de argán para hidratar, nutrir y suavizar.",
+      images: ["/products/bio-reach-caviar-argan-serum.webp", "/products/bio-reach-caviar-argan-serum-2.webp"],
+      description: "Sérum hidratante reparador Bio-Reach Caviar & Argan Oil, de 100 ml. Lleva extracto de caviar y aceite de argán para hidratar y reparar el cabello dañado, seco o quebradizo.",
       notes: {
         top: [],
         heart: [],
@@ -12282,8 +12282,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/yogi-care-agarwood-hair-serum.webp"],
-      description: "Sérum capilar Yogi Care Agarwood, de 100 ml. Lleva esencia de madera de agar y extractos botánicos para controlar el encrespamiento y aportar brillo.",
+      images: ["/products/yogi-care-agarwood-hair-serum.webp", "/products/yogi-care-agarwood-hair-serum-2.webp"],
+      description: "Sérum capilar Yogi Care Agarwood, de 100 ml. Lleva esencia de madera de agar y extractos botánicos para nutrir, dar brillo, controlar el encrespamiento y sellar las puntas.",
       notes: {
         top: [],
         heart: [],
@@ -26877,5 +26877,567 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Set",
       tags: ["rizos", "ricino", "murumuru"]
+    },
+  {
+      id: "terapia-clara-aclarador",
+      slug: "terapia-clara-aclarador",
+      name: "Aclarador",
+      brand: "Terapia Clara",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/terapia-clara-aclarador.webp"],
+      description: "Jabón Terapia Clara aclarador purificante, con extractos de plantas. El envase habla de la pigmentación y de las manchas oscuras. No marca el peso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Jabón",
+      tags: ["manchas", "plantas", "jabón"]
+    },
+  {
+      id: "paw-paw-papaya",
+      slug: "paw-paw-papaya",
+      name: "Papaya",
+      brand: "Paw Paw",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/paw-paw-papaya.webp"],
+      description: "Jabón clarificante Paw Paw de papaya, de 100 g, con vitamina E. El envase habla de manchas, de hidratar y de la luminosidad del cutis.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Jabón",
+      tags: ["papaya", "vitamina e", "manchas"]
+    },
+  {
+      id: "disney-ariel",
+      slug: "disney-ariel",
+      name: "Ariel",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-ariel.webp"],
+      description: "Champú Disney Princess Ariel, 3 en 1, de 300 ml. También es acondicionador y gel de baño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Champú",
+      tags: ["infantil", "ariel", "3 en 1"]
+    },
+  {
+      id: "yogi-peroxido-30",
+      slug: "yogi-peroxido-30",
+      name: "30 volúmenes",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-peroxido-30.webp"],
+      description: "Peróxido Yogi Care Developer, al 9% (30 volúmenes), de 1000 ml. El envase indica que previene el daño del cabello durante la coloración y lo presenta para uso profesional.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["peróxido", "30 volúmenes", "coloración"]
+    },
+  {
+      id: "yogi-peroxido-20",
+      slug: "yogi-peroxido-20",
+      name: "20 volúmenes",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-peroxido-20.webp"],
+      description: "Peróxido Yogi Care Developer, al 6% (20 volúmenes), de 1000 ml. El envase indica que previene el daño del cabello durante la coloración y lo presenta para uso profesional.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["peróxido", "20 volúmenes", "coloración"]
+    },
+  {
+      id: "yogi-rizos",
+      slug: "yogi-rizos",
+      name: "Rizos",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-rizos.webp"],
+      description: "Acondicionador sin enjuague Yogi Care Bounce Curly, de 280 ml, con argán. Es un gel ligero para peinar el cabello y definir los rizos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["rizos", "sin enjuague", "argán"]
+    },
+  {
+      id: "yogi-bf-keratina",
+      slug: "yogi-bf-keratina",
+      name: "BF Keratina",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-bf-keratina.webp"],
+      description: "Tratamiento Yogi Care BF Keratin, paso 2, de 250 ml, para uso profesional. El envase lo presenta como tratamiento de queratina de salón.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["queratina", "salón", "paso 2"]
+    },
+  {
+      id: "bio-reach-nutri-keratin",
+      slug: "bio-reach-nutri-keratin",
+      name: "Nutri-Keratin",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-nutri-keratin.webp"],
+      description: "Set Bio-Reach Nutri-Keratin: crema alisadora (paso A) de 400 ml y neutralizante (paso B) de 400 ml, con keratina y aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "400 ml + 400 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["queratina", "argán", "alisado"]
+    },
+  {
+      id: "fairest-oxidante-3",
+      slug: "fairest-oxidante-3",
+      name: "Oxidante 3%",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-oxidante-3.webp"],
+      description: "Oxidante Fairest Color, al 3%, de 1000 ml. El envase lo presenta como revelador de color con extractos vegetales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["oxidante", "revelador", "3%"]
+    },
+  {
+      id: "fairest-oxidante-9",
+      slug: "fairest-oxidante-9",
+      name: "Oxidante 9%",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-oxidante-9.webp"],
+      description: "Oxidante Fairest Color, al 9%, de 1000 ml. El envase lo presenta como revelador de color con extractos vegetales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["oxidante", "revelador", "9%"]
+    },
+  {
+      id: "fairest-oxidante-20",
+      slug: "fairest-oxidante-20",
+      name: "Oxidante 20%",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-oxidante-20.webp"],
+      description: "Oxidante Fairest Color, al 20%, de 1000 ml. El envase lo presenta como revelador de color con extractos vegetales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Oxidante",
+      tags: ["oxidante", "revelador", "20%"]
+    },
+  {
+      id: "yogi-cuero",
+      slug: "yogi-cuero",
+      name: "Cuero",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-cuero.webp"],
+      description: "Sérum capilar Yogi Care para el cuero cabelludo, de 30 ml, con lavanda, menta y romero. El envase habla de nutrir las raíces y de calmar el cuero cabelludo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum",
+      tags: ["cuero cabelludo", "lavanda", "romero"]
+    },
+  {
+      id: "self-love-jengibre",
+      slug: "self-love-jengibre",
+      name: "Jengibre",
+      brand: "Self Love",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/self-love-jengibre.webp"],
+      description: "Sérum Self Love para el cuero cabelludo, de 30 ml, con jengibre, lavanda y menta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum",
+      tags: ["jengibre", "lavanda", "cuero cabelludo"]
+    },
+  {
+      id: "yogi-marula",
+      slug: "yogi-marula",
+      name: "Marula",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-marula.webp"],
+      description: "Aceite capilar Yogi Care Marula, de 100 ml. El envase habla de nutrir el cabello dañado, de reducir el frizz y las puntas abiertas, sin dejarlo graso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Aceite",
+      tags: ["marula", "frizz", "puntas"]
+    },
+  {
+      id: "sinko-verde",
+      slug: "sinko-verde",
+      name: "Verde LM-022",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-verde.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Verde LM-022, de 500 ml. El envase la presenta sin olor fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["verde", "semi permanente", "sin olor"]
+    },
+  {
+      id: "sinko-amarillo",
+      slug: "sinko-amarillo",
+      name: "Amarillo LM-033",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-amarillo.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Amarillo LM-033, de 500 ml. El envase la presenta sin amoníaco y sin olor fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["amarillo", "semi permanente", "sin amoníaco"]
+    },
+  {
+      id: "bio-reach-keratina-diario",
+      slug: "bio-reach-keratina-diario",
+      name: "Keratina diario",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-keratina-diario.webp"],
+      description: "Acondicionador Bio-Reach Professional Keratin, paso 4, de 415 ml. El envase lo presenta como cuidado diario de queratina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 415,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["queratina", "uso diario", "paso 4"]
+    },
+  {
+      id: "bio-reach-keratina-champu",
+      slug: "bio-reach-keratina-champu",
+      name: "Keratina champú",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-keratina-champu.webp"],
+      description: "Champú Bio-Reach Professional Keratin, paso 3, de 400 ml. El envase lo presenta como cuidado diario de queratina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "uso diario", "paso 3"]
+    },
+  {
+      id: "sinko-vino",
+      slug: "sinko-vino",
+      name: "Vino LM-055",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-vino.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Vino LM-055, de 500 ml. El envase la presenta vegana y sin amoníaco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["vino", "semi permanente", "vegano"]
+    },
+  {
+      id: "sinko-rojo",
+      slug: "sinko-rojo",
+      name: "Rojo LM-045",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-rojo.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Rojo LM-045. La botella de la foto no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Coloración",
+      tags: ["rojo", "semi permanente"]
+    },
+  {
+      id: "sinko-cobre",
+      slug: "sinko-cobre",
+      name: "Cobre LM-074",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-cobre.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Cobre LM-074, de 500 ml. El envase la presenta sin amoníaco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["cobre", "semi permanente", "sin amoníaco"]
+    },
+  {
+      id: "sinko-malva",
+      slug: "sinko-malva",
+      name: "Malva LM-064",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-malva.webp"],
+      description: "Coloración semi permanente Sinko Styling, tono Malva LM-064, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["malva", "semi permanente"]
+    },
+  {
+      id: "sinko-morado",
+      slug: "sinko-morado",
+      name: "Morado LM-066",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-morado.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Morado LM-066. La botella de la foto no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Coloración",
+      tags: ["morado", "semi permanente"]
+    },
+  {
+      id: "sinko-azul",
+      slug: "sinko-azul",
+      name: "Azul LM-088",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-azul.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Azul LM-088, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["azul", "semi permanente"]
+    },
+  {
+      id: "sinko-claro",
+      slug: "sinko-claro",
+      name: "Claro LM-000",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-claro.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Claro LM-000, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["claro", "semi permanente"]
+    },
+  {
+      id: "sinko-cafe",
+      slug: "sinko-cafe",
+      name: "Café LM-075",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-cafe.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrante, tono Café LM-075, de 500 ml. El envase la presenta sin olor fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["café", "semi permanente", "sin olor"]
+    },
+  {
+      id: "bio-reach-argan-acondicionador",
+      slug: "bio-reach-argan-acondicionador",
+      name: "Argán acondicionador",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-argan-acondicionador.webp"],
+      description: "Acondicionador Bio-Reach Argan Oil, de 280 ml. El envase lo describe como nutritivo y rico en antioxidantes, para reparación y tratamiento.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["argán", "antioxidante", "reparación"]
+    },
+  {
+      id: "bio-reach-argan-champu",
+      slug: "bio-reach-argan-champu",
+      name: "Argán champú",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-argan-champu.webp"],
+      description: "Champú hidratante Bio-Reach Argan Oil, de 280 ml, para cabello seco y encrespado, con aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 280,
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "cabello seco", "frizz"]
     }
 ];
