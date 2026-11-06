@@ -89,16 +89,19 @@ export default function HomePage() {
       </Shell>
 
       <Shell className="pb-4">
-        <div className="mb-6 flex items-end justify-between gap-4">
-          <h2 className="font-serif text-4xl">Destacados</h2>
-          <Link href="/tienda" className="text-sm text-gold">
-            Ver tienda
-          </Link>
-        </div>
+        <h2 className="mb-6 font-serif text-4xl">Destacados</h2>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {spotlight.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <Link
+            href="/tienda"
+            className="inline-flex h-12 w-full items-center justify-center rounded-full bg-ink px-8 text-sm text-ivory sm:w-auto"
+          >
+            Ver tienda
+          </Link>
         </div>
       </Shell>
 
