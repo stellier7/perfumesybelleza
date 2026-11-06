@@ -13722,5 +13722,601 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Champú",
       tags: ["rizos", "brillo"]
+    },
+  {
+      id: "let-me-be-passo-unico-1000",
+      slug: "let-me-be-passo-unico-1000",
+      name: "Passo Único Alisante",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-passo-unico-1000.webp"],
+      description: "Alisado de un solo paso Let Me Be Passo Único, de 1 L, sin pausa ni tiempo de recuperación. El envase lo presenta sin olor y sin formaldehído, con manteca de karité y proteínas vegetales. Reconstruye mientras alisa y deja brillo. Compatible con todo tipo de cabello, incluido el rubio, decolorado y con tratamiento químico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "karité", "sin formol"]
+    },
+  {
+      id: "let-me-be-passo-unico-500",
+      slug: "let-me-be-passo-unico-500",
+      name: "Passo Único Alisante",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-passo-unico-500.webp"],
+      description: "Alisado de un solo paso Let Me Be Passo Único, de 500 ml, sin pausa ni tiempo de recuperación. El envase lo presenta vegano, sin olor y sin formaldehído, con manteca de karité y proteínas vegetales. Reconstruye mientras alisa y deja brillo. Compatible con todo tipo de cabello, incluido el rubio y el decolorado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "karité", "vegano"]
+    },
+  {
+      id: "let-me-be-supreme-mask-keratin-shampoo",
+      slug: "let-me-be-supreme-mask-keratin-shampoo",
+      name: "Supreme Mask Keratin Shampoo",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-supreme-mask-keratin-shampoo.webp"],
+      description: "Champú preparatorio Let Me Be Supreme Mask Keratin, de 1 L. Es el paso de limpieza del alisado progresivo: limpia en profundidad, abre la cutícula y retira residuos de la fibra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "limpieza profunda"]
+    },
+  {
+      id: "let-me-be-supreme-mask-keratin-1000",
+      slug: "let-me-be-supreme-mask-keratin-1000",
+      name: "Supreme Mask Keratin",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-supreme-mask-keratin-1000.webp"],
+      description: "Mascarilla Let Me Be Supreme Mask Keratin, de 1 L, con maceración de flores de gardenia. Repara, reestructura, penetra y nutre. El envase promete fuerza, vitalidad, brillo intenso y máximo control.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["queratina", "gardenia", "brillo"]
+    },
+  {
+      id: "let-me-be-supreme-mask-keratin-500",
+      slug: "let-me-be-supreme-mask-keratin-500",
+      name: "Supreme Mask Keratin",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-supreme-mask-keratin-500.webp"],
+      description: "Mascarilla Let Me Be Supreme Mask Keratin, de 500 ml, con maceración de flores de gardenia. Repara y reestructura la fibra, penetra y nutre. El envase promete brillo intenso, fuerza y vitalidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["queratina", "gardenia", "brillo"]
+    },
+  {
+      id: "let-me-be-phyto-complex-1000",
+      slug: "let-me-be-phyto-complex-1000",
+      name: "Phyto Complex Alisante",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-phyto-complex-1000.webp"],
+      description: "Alisado profesional Let Me Be Phyto Complex, de 1 L. Lleva amla, argán, jojoba, macadamia, coco, aguacate, proteína de seda, vitamina E, pantenol, karité y manteca de mango. Deja el cabello más suave, con menos volumen y frizz, más brillo y más seda. Nutre, reduce la porosidad y sella la cutícula.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "argán", "macadamia"]
+    },
+  {
+      id: "let-me-be-phyto-complex-500",
+      slug: "let-me-be-phyto-complex-500",
+      name: "Phyto Complex Alisante",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-phyto-complex-500.webp"],
+      description: "Alisado profesional Let Me Be Phyto Complex, de 500 ml. Lleva amla, argán, jojoba, macadamia, coco, aguacate, proteína de seda, vitamina E, pantenol, karité y mango. Deja el cabello más suave y sin volumen, con menos frizz y más brillo. Nutre, reduce la porosidad y sella la cutícula.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "argán", "macadamia"]
+    },
+  {
+      id: "let-me-be-phyto-detox-shampoo",
+      slug: "let-me-be-phyto-detox-shampoo",
+      name: "Phyto Detox Shampoo",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-phyto-detox-shampoo.webp"],
+      description: "Champú preparatorio Let Me Be Phyto Detox, de 1 kg, con aceite de argán, aceite de aguacate y proteína de quinua. Limpia con suavidad, hidrata y aporta seda, con menos frizz. Libre de parabenos y minerales. El envase lo recomienda para uso diario y antes de un procedimiento químico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Champú",
+      tags: ["argán", "quinoa", "sin parabenos"]
+    },
+  {
+      id: "let-me-be-phyto-fiber-finish",
+      slug: "let-me-be-phyto-fiber-finish",
+      name: "Phyto Complex Fiber Finish",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-phyto-fiber-finish.webp"],
+      description: "Mascarilla finalizadora Let Me Be Phyto Complex Fiber Finish, de 1000 g. Protege y cierra una decoloración, coloración o alisado, restaura el pH e hidrata con brillo. Lleva aceites de argán, macadamia, coco y aguacate, manteca de karité y proteínas vegetales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["finalizador", "argán", "karité"]
+    },
+  {
+      id: "let-me-be-phyto-power-spray",
+      slug: "let-me-be-phyto-power-spray",
+      name: "Phyto Power Spray",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-phyto-power-spray.webp"],
+      description: "Spray finalizador Let Me Be Phyto Power, de 250 ml. Protege del calor de secadora, plancha y modelador, deja el cabello liso y con brillo, y controla el frizz. Libre de parabenos y minerales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Protector térmico",
+      tags: ["calor", "liso", "frizz"]
+    },
+  {
+      id: "cosrx-advanced-snail-96-essence",
+      slug: "cosrx-advanced-snail-96-essence",
+      name: "Advanced Snail 96 Mucin Power Essence",
+      brand: "COSRX",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/cosrx-advanced-snail-96-essence.webp"],
+      description: "Esencia facial COSRX Advanced Snail 96 Mucin Power, de 100 ml, con 96% de mucina de caracol filtrada. Nutre, calma la irritación, mejora la elasticidad, desvanece marcas y aporta luminosidad. Para piel sensible o con acné.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Esencia facial",
+      tags: ["baba de caracol", "hidratación", "acné"]
+    },
+  {
+      id: "let-me-be-selante-passo-unico",
+      slug: "let-me-be-selante-passo-unico",
+      name: "Selante Passo Único",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-selante-passo-unico.webp"],
+      description: "Sellante profesional Let Me Be Passo Único, de 1 L, con colágeno, manteca de karité y phytoqueratina. Reestructura la fibra, sella la cutícula, controla el frizz y deja brillo. El envase lo presenta para todo tipo de cabello y para uso profesional, con pH de 3,8 a 5.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "colágeno", "karité"]
+    },
+  {
+      id: "let-me-be-pro-repair-btx",
+      slug: "let-me-be-pro-repair-btx",
+      name: "Pro Repair Ultra Mask BTX",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-pro-repair-btx.webp"],
+      description: "Mascarilla Let Me Be Pro Repair Ultra Mask BTX, de 1 kg, con aceite de coco, queratina y colágeno. Reduce el volumen, hidrata, alinea y reconstruye el cabello elástico o con falta de nutrientes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["coco", "queratina", "colágeno"]
+    },
+  {
+      id: "let-me-be-blond-matiz-ultra-mask",
+      slug: "let-me-be-blond-matiz-ultra-mask",
+      name: "Blond Matiz Ultra Mask",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-blond-matiz-ultra-mask.webp"],
+      description: "Mascarilla matizante Let Me Be Blond Matiz Ultra Mask, de 1 kg, con aceite de argán, cacao y coco. Neutraliza el amarillo, mantiene el tono platino, reduce el volumen, hidrata y controla el frizz. Lleva polifenoles.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["matizador", "rubio", "argán"]
+    },
+  {
+      id: "let-me-be-supreme-btx-ultra-mask",
+      slug: "let-me-be-supreme-btx-ultra-mask",
+      name: "Supreme BTX Ultra Mask",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-supreme-btx-ultra-mask.webp"],
+      description: "Mascarilla alisadora Let Me Be Supreme BTX Ultra Mask, de 1 kg, con aceites de argán, coco y linaza. Reduce el volumen, hidrata, suaviza y mejora la flexibilidad y la caída. El envase la presenta con efecto bótox para recuperar la hidratación después de procesos físicos o químicos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["alisado", "argán", "coco"]
+    },
+  {
+      id: "let-me-be-black-matiz",
+      slug: "let-me-be-black-matiz",
+      name: "Black Blond Expert Matiz",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-black-matiz.webp"],
+      description: "Mascarilla matizante Let Me Be Black Blond Expert, de 500 g, con efecto gris plateado. Atenúa el amarillo del cabello rubio, gris o blanco, aclarado o decolorado. El envase atribuye ese amarillo al tiempo, la nicotina, la contaminación, los rayos UV y el tinte, y presenta el efecto como gradual.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 g",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["matizador", "rubio", "gris"]
+    },
+  {
+      id: "let-me-be-champagne-matizer",
+      slug: "let-me-be-champagne-matizer",
+      name: "Champagne Matizer",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-champagne-matizer.webp"],
+      description: "Mascarilla matizante Let Me Be Champagne Blond Expert, de 500 g. Elimina el amarillo y favorece tonos nacarados, con brillo y suavidad. Lleva vitamina E, bambú y brotes de aguacate. Para cabello rubio, decolorado, con mechas o reflejos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "500 g",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["matizador", "rubio", "nacarado"]
+    },
+  {
+      id: "let-me-be-velvet-drops",
+      slug: "let-me-be-velvet-drops",
+      name: "Velvet Drops",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-velvet-drops.webp"],
+      description: "Aceite capilar Let Me Be Velvet Drops, de 30 ml, con macadamia, vitamina E y omegas 3, 6, 7 y 9. Nutre, controla el frizz y el volumen, recupera elasticidad, aporta brillo, repara puntas y facilita el desenredo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Aceite",
+      tags: ["macadamia", "omega", "puntas"]
+    },
+  {
+      id: "baby-tender-baby-wipes",
+      slug: "baby-tender-baby-wipes",
+      name: "Baby Wipes",
+      brand: "Baby Tender",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/baby-tender-baby-wipes.webp"],
+      description: "Toallitas húmedas Baby Tender Baby Wipes, con aroma fresco y sin alcohol. La foto muestra el mismo paquete en rosa y en naranja. El envase no indica la cantidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Toallitas",
+      tags: ["bebé", "sin alcohol"]
+    },
+  {
+      id: "albet-keratina-colageno-conditioner",
+      slug: "albet-keratina-colageno-conditioner",
+      name: "Keratina + Colágeno Acondicionador",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-keratina-colageno-conditioner.webp"],
+      description: "Acondicionador profesional Albet Keratina + Colágeno, de 475 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 475,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["queratina", "colágeno"]
+    },
+  {
+      id: "albet-keratina-colageno-shampoo",
+      slug: "albet-keratina-colageno-shampoo",
+      name: "Keratina + Colágeno Shampoo",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-keratina-colageno-shampoo.webp"],
+      description: "Champú profesional Albet Keratina + Colágeno, de 473 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "colágeno"]
+    },
+  {
+      id: "albet-romero-shampoo",
+      slug: "albet-romero-shampoo",
+      name: "Anti-Caída Romero Shampoo",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-romero-shampoo.webp"],
+      description: "Champú profesional Albet Anti-Caída Romero, de 473 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["romero", "anticaída"]
+    },
+  {
+      id: "albet-romero-conditioner",
+      slug: "albet-romero-conditioner",
+      name: "Anti-Caída Romero Acondicionador",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-romero-conditioner.webp"],
+      description: "Acondicionador profesional Albet Anti-Caída Romero, de 473 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["romero", "anticaída"]
+    },
+  {
+      id: "albet-batana-shampoo",
+      slug: "albet-batana-shampoo",
+      name: "Batana Crecimiento Máximo Shampoo",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-batana-shampoo.webp"],
+      description: "Champú profesional Albet Batana Crecimiento Máximo, de 473 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["batana", "crecimiento"]
+    },
+  {
+      id: "albet-batana-conditioner",
+      slug: "albet-batana-conditioner",
+      name: "Batana Crecimiento Máximo Acondicionador",
+      brand: "Albet",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/albet-batana-conditioner.webp"],
+      description: "Acondicionador profesional Albet Batana Crecimiento Máximo, de 475 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 475,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["batana", "crecimiento"]
+    },
+  {
+      id: "salon-line-sos-cachos-coco-set",
+      slug: "salon-line-sos-cachos-coco-set",
+      name: "S.O.S Cachos Óleo de Coco",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-coco-set.webp"],
+      description: "Set Salon Line S.O.S Cachos Óleo de Coco, con champú de 1 L y acondicionador de 1 L. Hidrata y controla el frizz del cabello reseco, en tipos 2ABC, 3ABC y 4ABC.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L + 1 L",
+      inStock: true,
+      category: "Set",
+      tags: ["coco", "rizos", "frizz"]
+    },
+  {
+      id: "salon-line-sos-cachos-super-oleos-1kg",
+      slug: "salon-line-sos-cachos-super-oleos-1kg",
+      name: "S.O.S Cachos Super Óleos",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-super-oleos-1kg.webp"],
+      description: "Activador de rizos Salon Line S.O.S Cachos Super Óleos, de 1 kg, sin enjuague. Lleva 12 aceites, entre ellos argán, coco, macadamia y karité. Nutre, define y controla el frizz del cabello rizado y ondulado, de 3ABC a 4ABC.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "aceites", "frizz"]
+    },
+  {
+      id: "salon-line-sos-hidratacao-oliva",
+      slug: "salon-line-sos-hidratacao-oliva",
+      name: "S.O.S Hidratação Azeite de Oliva",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-hidratacao-oliva.webp"],
+      description: "Mascarilla concentrada Salon Line S.O.S Hidratação Azeite de Oliva, de 1 kg, con aceite de oliva y D-pantenol. Nutre el cabello reseco, quebradizo y con frizz, y devuelve vitalidad y suavidad a rizos y ondas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["oliva", "hidratación", "rizos"]
+    },
+  {
+      id: "salon-line-sos-cachos-cremascara",
+      slug: "salon-line-sos-cachos-cremascara",
+      name: "S.O.S Cachos Cremáscara Super Óleos",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-sos-cachos-cremascara.webp"],
+      description: "Cremáscara 2 en 1 Salon Line S.O.S Cachos Super Óleos, de 1 kg. Sirve como mascarilla de tratamiento con enjuague y como crema para peinar sin enjuague. Define, combate la resequedad y aporta brillo al cabello muy seco o poroso, de 3ABC a 4ABC.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["rizos", "aceites", "2 en 1"]
     }
 ];
