@@ -14318,5 +14318,631 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Mascarilla",
       tags: ["rizos", "aceites", "2 en 1"]
+    },
+  {
+      id: "skin1004-probio-cica-essence-toner",
+      slug: "skin1004-probio-cica-essence-toner",
+      name: "Madagascar Centella Probio-Cica Essence Toner",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-probio-cica-essence-toner.webp"],
+      description: "Tónico SKIN1004 Madagascar Centella Probio-Cica, de 210 ml, con centella de Madagascar. Calma la piel sensible, hidrata, repara la barrera, equilibra la microbiota y mejora la elasticidad. Para piel seca, madura o con la barrera debilitada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 210,
+      inStock: true,
+      category: "Tónico",
+      tags: ["centella", "barrera", "sensible"]
+    },
+  {
+      id: "skin1004-niacinamide-10-ampoule",
+      slug: "skin1004-niacinamide-10-ampoule",
+      name: "Madagascar Centella Niacinamide 10 Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-niacinamide-10-ampoule.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Niacinamide 10 Boosting Shot, de 19 ml. Lleva 10% de niacinamida, ácido tranexámico, centella asiática, zinc PCA y pantenol. Equilibra el sebo, calma, aporta un efecto antioxidante y ayuda a atenuar manchas. Para piel mixta, grasa, opaca o con textura irregular.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 19,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["niacinamida", "manchas", "centella"]
+    },
+  {
+      id: "skin1004-centella-ampoule",
+      slug: "skin1004-centella-ampoule",
+      name: "Madagascar Centella Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-centella-ampoule.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Ampoule, de 100 ml, con centella de Madagascar. Hidrata, calma rojeces e irritaciones, equilibra el sebo y estimula la regeneración. Para piel sensible, reactiva, con acné o rosácea.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "barrera", "acné"]
+    },
+  {
+      id: "skin1004-tone-brightening-cream",
+      slug: "skin1004-tone-brightening-cream",
+      name: "Madagascar Centella Tone Brightening Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tone-brightening-cream.webp"],
+      description: "Crema SKIN1004 Madagascar Centella Tone Brightening, de 75 ml, con 60% de centella asiática, niacinamida y ácido tranexámico. Hidrata, ilumina, calma y unifica el tono. Para piel sensible, seca, mixta o grasa. Va al final de la rutina de día o de noche.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["centella", "manchas", "niacinamida"]
+    },
+  {
+      id: "vt-reedle-shot-100",
+      slug: "vt-reedle-shot-100",
+      name: "Reedle Shot 100",
+      brand: "VT Cosmetics",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vt-reedle-shot-100.webp"],
+      description: "Sérum VT Cosmetics Reedle Shot 100, de 50 ml, con centella asiática, ácido hialurónico y propóleo. Calma e hidrata la barrera. El envase lo presenta con microagujas minerales y como primer paso del cuidado diario.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "hialurónico", "propóleo"]
+    },
+  {
+      id: "vt-reedle-shot-700",
+      slug: "vt-reedle-shot-700",
+      name: "Cica Reedle Shot 700",
+      brand: "VT Cosmetics",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vt-reedle-shot-700.webp"],
+      description: "Sérum VT Cosmetics Cica Reedle Shot 700, de 30 ml, con centella asiática y ácido hialurónico. Refina la textura, mejora el aspecto de los poros y alisa la superficie. El envase lo indica para la rutina de noche, cada 7 días.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "hialurónico", "textura"]
+    },
+  {
+      id: "vt-reedle-shot-lifting-cream",
+      slug: "vt-reedle-shot-lifting-cream",
+      name: "Reedle Shot Lifting Cream",
+      brand: "VT Cosmetics",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vt-reedle-shot-lifting-cream.webp"],
+      description: "Crema VT Cosmetics Reedle Shot Lifting, de 50 ml. Reafirma el contorno, mejora la elasticidad y suaviza arrugas. Hidrata, nutre, fortalece la barrera y calma la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["antiedad", "centella", "elasticidad"]
+    },
+  {
+      id: "arencia-rice-mucin-cleanser",
+      slug: "arencia-rice-mucin-cleanser",
+      name: "Rice Mucin Cleanser",
+      brand: "Arencia",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/arencia-rice-mucin-cleanser.webp"],
+      description: "Limpiador Arencia Rice Mucin, de 120 g, con polvo y agua de arroz, mucina de caracol y extracto de semilla de cacao. Limpia, desmaquilla con suavidad, ilumina y mantiene la hidratación. Para piel sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "120 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["arroz", "mucina", "sensible"]
+    },
+  {
+      id: "nida-revive-eye-cream",
+      slug: "nida-revive-eye-cream",
+      name: "Revive Eye Cream",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-revive-eye-cream.webp"],
+      description: "Crema NIDA Revive para ojos, rostro y cuello, de 40 ml, con solución prebiótica, retinal, péptidos y bakuchiol. Atiende ojeras, flacidez, líneas de expresión y arrugas. Para todo tipo de piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 40,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["ojeras", "retinal", "bakuchiol"]
+    },
+  {
+      id: "nida-arbutin-txa-serum",
+      slug: "nida-arbutin-txa-serum",
+      name: "Alpha-Arbutin TXA Pure Tone Serum",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-arbutin-txa-serum.webp"],
+      description: "Sérum NIDA Alpha-Arbutin TXA, de 50 ml, con alfa arbutina y ácido tranexámico. Corrige el tono y desvanece manchas. Para piel opaca o con manchas. Va después de la limpieza y el tónico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["arbutina", "manchas", "tono"]
+    },
+  {
+      id: "nida-white-rice-exfoliating-serum",
+      slug: "nida-white-rice-exfoliating-serum",
+      name: "White Rice Whitehead Exfoliating Serum",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-white-rice-exfoliating-serum.webp"],
+      description: "Sérum exfoliante NIDA White Rice, de 50 ml, con salvado de arroz, ácidos AHA y PHA y arbutina. Refina poros, mejora la textura y ayuda a retirar células muertas y puntos blancos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["arroz", "aha", "poros"]
+    },
+  {
+      id: "nida-rice-milky-toner",
+      slug: "nida-rice-milky-toner",
+      name: "Youth-Boosting Rice Milky Toner",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-rice-milky-toner.webp"],
+      description: "Tónico lechoso NIDA Youth-Boosting Rice, de 150 ml, con agua de salvado de arroz, pantenol, seis tipos de ácido hialurónico y ceramida NP. Aporta luminosidad, calma e hidrata. Para todo tipo de piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Tónico",
+      tags: ["arroz", "hialurónico", "ceramida"]
+    },
+  {
+      id: "nida-invisible-fit-sun-cream",
+      slug: "nida-invisible-fit-sun-cream",
+      name: "Invisible Fit Sun Cream",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-invisible-fit-sun-cream.webp"],
+      description: "Protector solar NIDA Invisible Fit Sun Cream, de 50 ml, con SPF 50+ PA++++. Lleva niacinamida, tocoferol y aloe vera. El envase lo presenta sin rastro blanco, de baja irritación y sin oxibenzona ni octinoxato.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "niacinamida", "aloe"]
+    },
+  {
+      id: "let-me-be-protein-smoothing-1000",
+      slug: "let-me-be-protein-smoothing-1000",
+      name: "Protein Smoothing",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-protein-smoothing-1000.webp"],
+      description: "Alisado de un solo paso Let Me Be Protein Smoothing, de 1 L. Restaura la fibra, controla el frizz y aporta brillo. El envase lo presenta para cabello liso, ondulado o texturizado, y sin prelavado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "proteína", "frizz"]
+    },
+  {
+      id: "let-me-be-protein-smoothing-500",
+      slug: "let-me-be-protein-smoothing-500",
+      name: "Protein Smoothing",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-protein-smoothing-500.webp"],
+      description: "Alisado de un solo paso Let Me Be Protein Smoothing, de 500 ml. Restaura la fibra, controla el frizz y aporta brillo. El envase lo presenta para cabello liso, ondulado o texturizado, y sin prelavado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "proteína", "frizz"]
+    },
+  {
+      id: "let-me-be-blond-expert-500",
+      slug: "let-me-be-blond-expert-500",
+      name: "Blond Expert Protein Smoothing",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-blond-expert-500.webp"],
+      description: "Alisado de un solo paso Let Me Be Blond Expert, de 500 ml, con efecto matizador. Lleva aminoácidos, ácido láctico y proteínas. Suaviza, aporta brillo y reduce el frizz y el volumen. El envase lo presenta para cabello rubio, gris, decolorado y para el resto de tipos, sin prechampú.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "rubio", "matizador"]
+    },
+  {
+      id: "let-me-be-blond-expert-1000",
+      slug: "let-me-be-blond-expert-1000",
+      name: "Blond Expert Protein Smoothing",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-blond-expert-1000.webp"],
+      description: "Alisado de un solo paso Let Me Be Blond Expert, de 1 L, con efecto matizador. Lleva aminoácidos, ácido láctico y proteínas. Suaviza, aporta brillo y reduce el frizz y el volumen. El envase lo presenta para cabello rubio, gris, decolorado y para el resto de tipos, sin prechampú.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["alisado", "rubio", "matizador"]
+    },
+  {
+      id: "let-me-be-supreme-mask-keratin-shampoo-500",
+      slug: "let-me-be-supreme-mask-keratin-shampoo-500",
+      name: "Supreme Mask Keratin Shampoo",
+      brand: "Let Me Be",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/let-me-be-supreme-mask-keratin-shampoo-500.webp"],
+      description: "Champú preparatorio Let Me Be Supreme Mask Keratin, de 500 ml. Limpia en profundidad, abre la cutícula y retira residuos de la fibra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "limpieza profunda"]
+    },
+  {
+      id: "nida-invisible-fit-sunscreen",
+      slug: "nida-invisible-fit-sunscreen",
+      name: "Invisible Fit Sunscreen",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-invisible-fit-sunscreen.webp"],
+      description: "Protector solar facial NIDA Invisible Fit Sunscreen, de 50 ml, con SPF 50 de amplio espectro. Lleva pantenol y vitamina E. El envase lo presenta sin rastro blanco, de baja irritación y sin oxibenzona ni octinoxato.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "pantenol", "vitamina e"]
+    },
+  {
+      id: "nida-centella-hydrating-serum",
+      slug: "nida-centella-hydrating-serum",
+      name: "Centella Hydrating Serum",
+      brand: "NIDA",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nida-centella-hydrating-serum.webp"],
+      description: "Sérum NIDA Centella Hydrating, de 50 ml, con centella asiática y ácido hialurónico. Hidrata, calma la piel sensible, equilibra el rostro y cuida la barrera.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "hialurónico", "barrera"]
+    },
+  {
+      id: "celimax-retinol-shot-serum",
+      slug: "celimax-retinol-shot-serum",
+      name: "Vita-A Retinol Shot Tightening Serum",
+      brand: "celimax",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/celimax-retinol-shot-serum.webp"],
+      description: "Sérum celimax Vita-A Retinol Shot, de 30 ml, con 0,1% de retinol, un complejo de 9 péptidos y 1% de pantenol. Reafirma, suaviza líneas de expresión y reduce el aspecto de los poros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["retinol", "péptidos", "firmeza"]
+    },
+  {
+      id: "arencia-rosehip-rice-mochi-cleanser",
+      slug: "arencia-rosehip-rice-mochi-cleanser",
+      name: "Fresh Rosehip Rice Mochi Cleanser",
+      brand: "Arencia",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/arencia-rosehip-rice-mochi-cleanser.webp"],
+      description: "Limpiador Arencia Fresh Rosehip Rice Mochi, de 120 g, con textura elástica. Limpia, exfolia con suavidad y retira impurezas y sebo sin resecar. Calma y aporta luminosidad. Para piel sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "120 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["rosa mosqueta", "arroz", "sensible"]
+    },
+  {
+      id: "arencia-green-rice-mochi-cleanser",
+      slug: "arencia-green-rice-mochi-cleanser",
+      name: "Fresh Green Rice Mochi Cleanser",
+      brand: "Arencia",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/arencia-green-rice-mochi-cleanser.webp"],
+      description: "Limpiador Arencia Fresh Green Rice Mochi, de 120 g, con textura elástica. Limpia en profundidad, reduce puntos negros y mejora la textura. Para piel grasa, con tendencia al acné o poros congestionados.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "120 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["arroz", "acné", "poros"]
+    },
+  {
+      id: "vt-reedle-shot-lifting-serum",
+      slug: "vt-reedle-shot-lifting-serum",
+      name: "Reedle Shot Lifting Serum",
+      brand: "VT Cosmetics",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vt-reedle-shot-lifting-serum.webp"],
+      description: "Sérum VT Cosmetics Reedle Shot Lifting, de 30 ml, con centella asiática, péptidos y ácido hialurónico. Mejora la elasticidad y la firmeza. El envase lo presenta con microagujas minerales.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "péptidos", "hialurónico"]
+    },
+  {
+      id: "vt-reedle-shot-lifting-eye-cream",
+      slug: "vt-reedle-shot-lifting-eye-cream",
+      name: "Reedle Shot Lifting Eye Cream",
+      brand: "VT Cosmetics",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vt-reedle-shot-lifting-eye-cream.webp"],
+      description: "Contorno de ojos VT Cosmetics Reedle Shot Lifting, de 15 ml, con centella y microagujas minerales. Mejora la elasticidad y suaviza los signos de fatiga.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 15,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["contorno", "centella", "elasticidad"]
+    },
+  {
+      id: "vt-reedle-shot-300",
+      slug: "vt-reedle-shot-300",
+      name: "Reedle Shot 300",
+      brand: "VT Cosmetics",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/vt-reedle-shot-300.webp"],
+      description: "Sérum VT Cosmetics Reedle Shot 300, de 50 ml, con centella, ácido hialurónico, niacinamida y madecasósido. Repone humedad, fortalece la barrera y exfolia con suavidad. El envase lo presenta como hipoalergénico, para todo tipo de piel, y lo indica cada 2 días.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "niacinamida", "sensible"]
+    },
+  {
+      id: "skin1004-double-cleansing-duo",
+      slug: "skin1004-double-cleansing-duo",
+      name: "Madagascar Centella Double Cleansing Duo",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-double-cleansing-duo.webp"],
+      description: "Set de doble limpieza SKIN1004 Madagascar Centella, con aceite de 200 ml y espuma de 125 ml. El aceite lleva 6 aceites vegetales y disuelve maquillaje, protector y sebo. La espuma, de pH 5, retira residuos sin resecar. Para todo tipo de piel, incluida la sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 ml + 125 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["limpieza", "centella", "sensible"]
+    },
+  {
+      id: "skin1004-probio-cica-glow-sun",
+      slug: "skin1004-probio-cica-glow-sun",
+      name: "Madagascar Centella Probio-Cica Glow Sun Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-probio-cica-glow-sun.webp"],
+      description: "Protector solar SKIN1004 Madagascar Centella Probio-Cica Glow Sun, de 50 ml, con SPF 50+ PA++++. Protege de los rayos UVA y UVB e hidrata y repara como una ampolla de cuidado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "centella", "hidratación"]
+    },
+  {
+      id: "skin1004-probio-cica-bakuchiol-eye",
+      slug: "skin1004-probio-cica-bakuchiol-eye",
+      name: "Madagascar Centella Probio-Cica Bakuchiol Eye Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-probio-cica-bakuchiol-eye.webp"],
+      description: "Contorno de ojos SKIN1004 Madagascar Centella Probio-Cica Bakuchiol, de 20 ml. Suaviza arrugas y líneas, mejora la firmeza, calma y fortalece la barrera de la zona ocular.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Contorno de ojos",
+      tags: ["bakuchiol", "centella", "firmeza"]
+    },
+  {
+      id: "skin1004-probio-cica-enrich-cream",
+      slug: "skin1004-probio-cica-enrich-cream",
+      name: "Madagascar Centella Probio-Cica Enrich Cream",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-probio-cica-enrich-cream.webp"],
+      description: "Crema SKIN1004 Madagascar Centella Probio-Cica Enrich, de 50 ml. Hidrata, repara, calma y fortalece la barrera. Para piel seca, deshidratada, sensible o madura.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["centella", "barrera", "seca"]
+    },
+  {
+      id: "skin1004-probio-cica-intensive-ampoule",
+      slug: "skin1004-probio-cica-intensive-ampoule",
+      name: "Madagascar Centella Probio-Cica Intensive Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-probio-cica-intensive-ampoule.webp"],
+      description: "Ampolla SKIN1004 Madagascar Centella Probio-Cica Intensive, de 55 ml, con centella de Madagascar. Nutre, repara la barrera, hidrata, calma y mejora la firmeza y la luminosidad. Para piel sensible, seca o dañada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 55,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "barrera", "luminosidad"]
     }
 ];
