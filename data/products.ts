@@ -17364,5 +17364,592 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Champú",
       tags: ["champú", "infantil", "aloe"]
+    },
+  {
+      id: "bioaqua-vitamin-c-cleanser",
+      slug: "bioaqua-vitamin-c-cleanser",
+      name: "Limpiador Vitamin C",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamin-c-cleanser.webp"],
+      description: "Limpiador facial Bioaqua Vitamin C, de 100 g. La etiqueta lo presenta como limpiador hidratante y refrescante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["limpiador", "vitamina c", "facial"]
+    },
+  {
+      id: "bioaqua-rice-shampoo-soap",
+      slug: "bioaqua-rice-shampoo-soap",
+      name: "Jabón champú Rice Raw Pulp",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-rice-shampoo-soap.webp"],
+      description: "Jabón champú Bioaqua Rice Raw Pulp, de 60 g, con pulpa de arroz. La caja lo presenta para cabello suave y sedoso, control de grasa, caspa y suciedad, con fórmula natural, limpieza profunda y acabado esponjoso, para todo tipo de cabello.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Champú",
+      tags: ["champú", "arroz", "jabón"]
+    },
+  {
+      id: "bioaqua-vitamin-c-white-cream",
+      slug: "bioaqua-vitamin-c-white-cream",
+      name: "Crema Vitamin C White",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-vitamin-c-white-cream.webp"],
+      description: "Crema facial Bioaqua Vitamin C White, de 50 g. La caja habla de hidratación, piel firme y elástica, alta concentración de vitamina C, tono más uniforme y piel más luminosa, de uso diario.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["crema", "vitamina c", "facial"]
+    },
+  {
+      id: "beauty-creations-berry-into-you-set",
+      slug: "beauty-creations-berry-into-you-set",
+      name: "Set Berry Into You",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-berry-into-you-set.webp"],
+      description: "Set de viaje Beauty Creations Berry Into You: neceser, manteca corporal, exfoliante de azúcar, gel de ducha y bruma corporal. La foto no deja leer el contenido de cada pieza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["set", "fresa", "corporal"]
+    },
+  {
+      id: "beauty-creations-lifes-a-peach-set",
+      slug: "beauty-creations-lifes-a-peach-set",
+      name: "Set Life's a Peach",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-lifes-a-peach-set.webp"],
+      description: "Set de viaje Beauty Creations Life's a Peach: neceser, manteca corporal, exfoliante de azúcar, gel de ducha y bruma corporal. La foto no deja leer el contenido de cada pieza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["set", "durazno", "corporal"]
+    },
+  {
+      id: "beauty-creations-sweet-as-cherry-set",
+      slug: "beauty-creations-sweet-as-cherry-set",
+      name: "Set Sweet As Cherry",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-sweet-as-cherry-set.webp"],
+      description: "Set de viaje Beauty Creations Sweet As Cherry: neceser, manteca corporal, exfoliante de azúcar, gel de ducha y bruma corporal. La foto no deja leer el contenido de cada pieza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["set", "cereza", "corporal"]
+    },
+  {
+      id: "beauty-creations-melon-times-better-set",
+      slug: "beauty-creations-melon-times-better-set",
+      name: "Set Melon Times Better",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-melon-times-better-set.webp"],
+      description: "Set de viaje Beauty Creations Melon Times Better: neceser, manteca corporal, exfoliante de azúcar, gel de ducha y bruma corporal. La foto no deja leer el contenido de cada pieza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["set", "sandía", "corporal"]
+    },
+  {
+      id: "beauty-creations-peach-lotion",
+      slug: "beauty-creations-peach-lotion",
+      name: "Loción Life's a Peach",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-peach-lotion.webp"],
+      description: "Loción corporal de doble capa Beauty Creations Life's a Peach. El contenido impreso del tubo no se confirma.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["loción", "durazno", "corporal"]
+    },
+  {
+      id: "beauty-creations-berry-body-butter",
+      slug: "beauty-creations-berry-body-butter",
+      name: "Manteca Berry Into You",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-berry-body-butter.webp"],
+      description: "Manteca corporal Beauty Creations Berry Into You, de 200 g. El envase la presenta como crema corporal hidratante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["manteca", "fresa", "corporal"]
+    },
+  {
+      id: "beauty-creations-peach-body-butter",
+      slug: "beauty-creations-peach-body-butter",
+      name: "Manteca Life's a Peach",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-peach-body-butter.webp"],
+      description: "Manteca corporal Beauty Creations Life's a Peach. El peso del envase no se lee con claridad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["manteca", "durazno", "corporal"]
+    },
+  {
+      id: "beauty-creations-melon-sugar-scrub",
+      slug: "beauty-creations-melon-sugar-scrub",
+      name: "Exfoliante Melon Times Better",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-melon-sugar-scrub.webp"],
+      description: "Exfoliante corporal de azúcar Beauty Creations Melon Times Better. El peso del envase no se lee con claridad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["exfoliante", "sandía", "azúcar"]
+    },
+  {
+      id: "beauty-creations-berry-sugar-scrub",
+      slug: "beauty-creations-berry-sugar-scrub",
+      name: "Exfoliante Berry Into You",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-berry-sugar-scrub.webp"],
+      description: "Exfoliante corporal de azúcar Beauty Creations Berry Into You, de 270 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "270 g",
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["exfoliante", "fresa", "azúcar"]
+    },
+  {
+      id: "beauty-creations-mango-sugar-scrub",
+      slug: "beauty-creations-mango-sugar-scrub",
+      name: "Exfoliante Mango With It",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-mango-sugar-scrub.webp"],
+      description: "Exfoliante corporal de azúcar Beauty Creations Mango With It. El contenido impreso del envase no se confirma.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["exfoliante", "mango", "azúcar"]
+    },
+  {
+      id: "beauty-creations-peach-sugar-scrub",
+      slug: "beauty-creations-peach-sugar-scrub",
+      name: "Exfoliante Life's a Peach",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-peach-sugar-scrub.webp"],
+      description: "Exfoliante corporal de azúcar Beauty Creations Life's a Peach. El peso del envase no se lee con claridad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["exfoliante", "durazno", "azúcar"]
+    },
+  {
+      id: "beauty-creations-mango-body-butter",
+      slug: "beauty-creations-mango-body-butter",
+      name: "Manteca Mango With It",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-mango-body-butter.webp"],
+      description: "Manteca corporal Beauty Creations Mango With It, de 200 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["manteca", "mango", "corporal"]
+    },
+  {
+      id: "beauty-creations-cherry-lotion",
+      slug: "beauty-creations-cherry-lotion",
+      name: "Loción Sweet As Cherry",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-cherry-lotion.webp"],
+      description: "Loción corporal de doble capa Beauty Creations Sweet As Cherry, de 200 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["loción", "cereza", "corporal"]
+    },
+  {
+      id: "bioaqua-peach-moisturizer",
+      slug: "bioaqua-peach-moisturizer",
+      name: "Hidratante Peach Extract",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-peach-moisturizer.webp"],
+      description: "Hidratante Bioaqua con extracto de durazno, arbutina y vitamina E. El tubo no trae el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["hidratante", "durazno", "vitamina e"]
+    },
+  {
+      id: "salon-liga-flor-dorada",
+      slug: "salon-liga-flor-dorada",
+      name: "Liga flor dorada",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-liga-flor-dorada.webp"],
+      description: "Liga negra para el cabello con flor dorada. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Liga",
+      tags: ["liga", "cabello", "flor"]
+    },
+  {
+      id: "salon-liga-mariposa-dorada",
+      slug: "salon-liga-mariposa-dorada",
+      name: "Liga mariposa dorada",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-liga-mariposa-dorada.webp"],
+      description: "Liga negra para el cabello con mariposa dorada. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Liga",
+      tags: ["liga", "cabello", "mariposa"]
+    },
+  {
+      id: "salon-coletero-elegante",
+      slug: "salon-coletero-elegante",
+      name: "Coletero elegante",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-coletero-elegante.webp"],
+      description: "Coletero negro de varias vueltas, con dos perlas rosadas y un dije de flor. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Liga",
+      tags: ["coletero", "perlas", "cabello"]
+    },
+  {
+      id: "zion-gorro-termico",
+      slug: "zion-gorro-termico",
+      name: "Gorro térmico",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zion-gorro-termico.webp"],
+      description: "Gorro térmico Zion Professional para el cabello, en rosa y negro. Promueve la absorción de los nutrientes de las mascarillas, con control de temperatura, ajuste cómodo, dos modos de calentamiento y protección de apagado. El empaque indica de 15 a 20 minutos según el modo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Gorro",
+      tags: ["gorro", "térmico", "mascarilla"]
+    },
+  {
+      id: "beauty-creations-cherry-body-butter",
+      slug: "beauty-creations-cherry-body-butter",
+      name: "Manteca Sweet As Cherry",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-cherry-body-butter.webp"],
+      description: "Manteca corporal Beauty Creations Sweet As Cherry, de 200 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "200 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["manteca", "cereza", "corporal"]
+    },
+  {
+      id: "zion-flower-clips",
+      slug: "zion-flower-clips",
+      name: "Pinzas flor",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zion-flower-clips.webp"],
+      description: "Pinzas de cabello Zion en forma de flor, en varios colores. La foto las muestra juntas como una misma referencia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Pinza",
+      tags: ["pinza", "flor", "cabello"]
+    },
+  {
+      id: "beauty-creations-mango-lotion",
+      slug: "beauty-creations-mango-lotion",
+      name: "Loción Mango With It",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-mango-lotion.webp"],
+      description: "Loción corporal de doble capa Beauty Creations Mango With It, de 200 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["loción", "mango", "corporal"]
+    },
+  {
+      id: "nevada-kids-curl-activator",
+      slug: "nevada-kids-curl-activator",
+      name: "Activador de rizos Cachinhos Perfeitos Kids",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-kids-curl-activator.webp"],
+      description: "Activador de rizos Nevada Cachinhos Perfeitos Kids, de 300 ml, para cabello ondulado y rizado. Hidrata y activa los rizos, con ligereza y brillo natural.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "infantil", "leave-in"]
+    },
+  {
+      id: "remington-keratin-dryer",
+      slug: "remington-keratin-dryer",
+      name: "Secador Keratin Therapy",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-keratin-dryer.webp"],
+      description: "Secador Remington Keratin Therapy, de 1900 W, con motor AC, dos velocidades, tres temperaturas y botón de aire frío. Incluye filtro de aire removible, concentrador y difusor, y anillo acondicionado con cerámica, iones, keratina y aceite de argán.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "keratina", "argán"]
+    },
+  {
+      id: "remington-wet2-straight",
+      slug: "remington-wet2-straight",
+      name: "Plancha Wet2 Straight",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-wet2-straight.webp"],
+      description: "Plancha Remington Wet2 Straight, que seca y alisa el cabello húmedo. Placas de 5,08 cm, temperatura máxima de 230 °C y calentamiento en 30 segundos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "húmedo", "alisado"]
+    },
+  {
+      id: "remington-shine-therapy-straight",
+      slug: "remington-shine-therapy-straight",
+      name: "Plancha Shine Therapy",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-shine-therapy-straight.webp"],
+      description: "Plancha Remington Shine Therapy con infusión de aguacate y macadamia. Placas de cerámica de 5,08 cm, pantalla digital, calentamiento en 30 segundos y temperatura máxima de 230 °C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "aguacate", "macadamia"]
+    },
+  {
+      id: "remington-shine-therapy-s12a",
+      slug: "remington-shine-therapy-s12a",
+      name: "Plancha Shine Therapy S12A",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-shine-therapy-s12a.webp"],
+      description: "Plancha Remington Shine Therapy S12A, con placas de cerámica de 25 mm por 100 mm. Temperatura máxima de 230 °C, calentamiento rápido, cinco ajustes digitales en 110 V y nueve en 220 V, de 150 °C a 230 °C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "aguacate", "cerámica"]
     }
 ];
