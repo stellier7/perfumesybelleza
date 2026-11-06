@@ -4,6 +4,7 @@ import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
 import { store } from "@/config";
+import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 import {
@@ -38,6 +39,12 @@ const categories = [
     title: "Belleza",
     text: "Brumas, labios y cuidado para acompañar el perfume.",
     className: "bg-champagne-soft text-ink",
+  },
+  {
+    href: "/tienda?categoria=Inspiraciones",
+    title: "Inspiraciones",
+    text: "Perfumes de la tienda inspirados en un aroma de diseñador, del más cercano al más libre.",
+    className: "bg-paper text-ink",
   },
 ];
 
@@ -78,7 +85,7 @@ export default function HomePage() {
       </section>
 
       <Shell className="py-12">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
             <Link
               key={category.href}
@@ -123,7 +130,7 @@ export default function HomePage() {
                   className="rounded-3xl border border-white/10 bg-night-soft p-5 transition duration-300 motion-safe:hover:-translate-y-0.5"
                 >
                   <p className="text-xs uppercase tracking-[0.16em] text-champagne">
-                    {pair.original.name} y {pair.alternative.name}
+                    {nameWithBrand(pair.original.name, pair.original.brand)} y {pair.alternative.name}
                   </p>
                   <p className="mt-3 font-serif text-2xl">
                     {pair.alternative.name}
@@ -133,8 +140,8 @@ export default function HomePage() {
                     {pair.original.isReference
                       ? "El perfume de referencia no está en el catálogo."
                       : pair.original.inStock
-                        ? `${pair.original.name}: ${hasShelfPrice(pair.original.price) ? formatPrice(pair.original.price) : "Precio por confirmar"}`
-                        : `${pair.original.name} está agotado.`}
+                        ? `${nameWithBrand(pair.original.name, pair.original.brand)}: ${hasShelfPrice(pair.original.price) ? formatPrice(pair.original.price) : "Precio por confirmar"}`
+                        : `${nameWithBrand(pair.original.name, pair.original.brand)} está agotado.`}
                     {" · "}
                     {pair.alternative.name}:{" "}
                     {hasShelfPrice(pair.alternative.price)

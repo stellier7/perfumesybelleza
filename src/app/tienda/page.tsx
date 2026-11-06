@@ -7,6 +7,7 @@ import { getSellableProducts } from "@/lib/catalog";
 import {
   applyCatalogFilters,
   catalogFilterQuery,
+  INSPIRATIONS_CATEGORY,
   parseCatalogFilters,
   type CatalogFilters,
 } from "@/lib/catalog-query";
@@ -38,7 +39,7 @@ async function Catalog({
   const brands = [...new Set(products.map((product) => product.brand))].sort((a, b) =>
     a.localeCompare(b, "es"),
   );
-  const categories = [...new Set(products.map((product) => product.category))].sort((a, b) =>
+  const categories = [INSPIRATIONS_CATEGORY, ...new Set(products.map((product) => product.category))].sort((a, b) =>
     a.localeCompare(b, "es"),
   );
 

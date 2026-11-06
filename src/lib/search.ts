@@ -1,6 +1,13 @@
 import Fuse from "fuse.js";
+import { inspirationOrder } from "@/lib/catalog-model";
 import { fold } from "@/lib/text";
 import type { SearchRecord } from "@/types/catalog";
+
+export type InspirationGroup = {
+  original: SearchRecord;
+  clones: SearchRecord[];
+  sets: SearchRecord[];
+};
 
 export type SearchPresentation = {
   query: string;
@@ -8,6 +15,7 @@ export type SearchPresentation = {
   stockedOriginals: SearchRecord[];
   missingOriginals: SearchRecord[];
   alternatives: SearchRecord[];
+  groups: InspirationGroup[];
 };
 
 function editDistance(left: string, right: string): number {
@@ -32,9 +40,29 @@ function tokensMatch(haystack: string, query: string): boolean {
   const haystackWords = haystack.split(" ");
   return queryWords.every((word) =>
     haystackWords.some((token) => {
-      if (token.includes(word) || word.includes(token)) return true;
+      if (token.includes(word)) return true;
+      if (token.length >= 4 && word.includes(token)) return true;
       return editDistance(token, word) <= 1;
     }),
+  );
+}
+
+/** La búsqueda nombra este perfume, no solo su marca. «Creed» no nombra Aventus; «Millésime» sí. */
+export function queryNamesOriginal(query: string, original: SearchRecord): boolean {
+  const foldedQuery = fold(query);
+  const brand = fold(original.brand);
+  const name = fold(original.name);
+  let rest = foldedQuery;
+  if (brand && rest.includes(brand)) rest = rest.replace(brand, " ");
+  rest = rest.replace(/\s+/g, " ").trim();
+  if (rest.length < 2) return rest.length > 0 && rest === name;
+  const nameWords = name.split(" ").filter((word) => word.length >= 3);
+  const words = nameWords.length > 0 ? nameWords : name ? [name] : [];
+  const queryWords = rest.split(" ").filter((word) => word.length >= 2);
+  return words.some((word) =>
+    queryWords.some(
+      (token) => token.includes(word) || word.includes(token) || editDistance(token, word) <= 1,
+    ),
   );
 }
 
@@ -42,25 +70,18 @@ function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
   const folded = fold(query);
   if (folded.length < 2) return [];
   const direct = records.filter((record) => tokensMatch(record.haystack, folded));
+  if (direct.length > 0) return direct;
   const fuse = new Fuse(records, {
     keys: ["name"],
-    threshold: 0.45,
+    threshold: 0.35,
     ignoreLocation: true,
-    minMatchCharLength: 2,
+    minMatchCharLength: 3,
     includeScore: true,
   });
-  const fuzzy = fuse
+  return fuse
     .search(folded)
-    .filter((result) => (result.score ?? 1) <= 0.45)
+    .filter((result) => (result.score ?? 1) <= 0.35)
     .map((result) => result.item);
-  const seen = new Set<string>();
-  const merged: SearchRecord[] = [];
-  for (const record of [...direct, ...fuzzy]) {
-    if (seen.has(record.id)) continue;
-    seen.add(record.id);
-    merged.push(record);
-  }
-  return merged;
 }
 
 export function searchCatalog(records: SearchRecord[], query: string): SearchPresentation {
@@ -78,6 +99,22 @@ export function searchCatalog(records: SearchRecord[], query: string): SearchPre
     const record = byId.get(id);
     return record && !record.isReference ? [record] : [];
   });
+  alternatives.sort(inspirationOrder);
+  const groups = [...stockedOriginals, ...missingOriginals].flatMap((original) => {
+    const linked = original.alternativeIds.flatMap((id) => {
+      const record = byId.get(id);
+      return record && !record.isReference ? [record] : [];
+    });
+    if (linked.length === 0) return [];
+    const ordered = [...linked].sort(inspirationOrder);
+    return [
+      {
+        original,
+        clones: ordered.filter((item) => item.category !== "Set"),
+        sets: ordered.filter((item) => item.category === "Set"),
+      },
+    ];
+  });
   const alternativeSet = new Set(alternatives.map((item) => item.id));
   const products = hits.filter((hit) => !hit.isReference && !alternativeSet.has(hit.id));
   return {
@@ -86,6 +123,7 @@ export function searchCatalog(records: SearchRecord[], query: string): SearchPre
     stockedOriginals,
     missingOriginals,
     alternatives,
+    groups,
   };
 }
 

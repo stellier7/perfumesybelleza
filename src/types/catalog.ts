@@ -32,6 +32,8 @@ export type RawProduct = {
   category: string;
   tags: string[];
   inspiredBy?: string[];
+  /** 1 es la inspiración más cercana. Un número mayor es más libre. */
+  inspirationRank?: number;
   longevity?: number;
   projection?: number;
   bestFor?: string[];
@@ -77,6 +79,7 @@ export type PublicProduct = {
   isReference: boolean;
   inspiredBy: FragranceRef[];
   alternatives: FragranceRef[];
+  inspirationRank?: number;
 };
 
 export type SearchRecord = {
@@ -95,4 +98,5 @@ export type SearchRecord = {
   haystack: string;
   alternativeIds: string[];
   inspiredNames: string[];
+  inspirationRank?: number;
 };

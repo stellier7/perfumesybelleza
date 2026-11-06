@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Shell } from "@/components/shell";
 import { getComparisonPairs } from "@/lib/catalog";
+import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 
@@ -36,8 +37,7 @@ export default function ComparisonsPage() {
         {[...groups.values()].map((group) => (
           <section key={group[0]?.original.id}>
             <h2 className="font-serif text-3xl">
-              {group[0]?.original.name}
-              {group[0]?.original.brand ? ` · ${group[0].original.brand}` : ""}
+              {group[0] ? nameWithBrand(group[0].original.name, group[0].original.brand) : ""}
             </h2>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               {group.map((pair) => (

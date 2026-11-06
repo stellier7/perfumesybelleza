@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildCatalog, comparisonPairs, parseComparisonSlug } from "./catalog-model";
-import { searchCatalog } from "./search";
+import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug } from "./catalog-model";
+import { queryNamesOriginal, searchCatalog } from "./search";
 import { toSearchRecord } from "./catalog-model";
+import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
 
 function product(overrides: Partial<RawProduct> & Pick<RawProduct, "id" | "name" | "type">): RawProduct {
@@ -59,6 +60,13 @@ const raw: RawProduct[] = [
   }),
 ];
 
+test("la inspiración se escribe con la marca delante del nombre", () => {
+  assert.equal(nameWithBrand("Aventus", "Creed"), "Creed Aventus");
+  assert.equal(nameWithBrand("Acqua di Gio", "Giorgio Armani"), "Giorgio Armani Acqua di Gio");
+  assert.equal(nameWithBrand("Bleu de Chanel", "Chanel"), "Bleu de Chanel");
+  assert.equal(nameWithBrand("Y", "Yves Saint Laurent"), "Yves Saint Laurent Y");
+});
+
 test("calcula alternativas y una referencia si el diseñador no está en el catálogo", () => {
   const catalog = buildCatalog(raw);
   const bleu = catalog.find((item) => item.id === "bleu-de-chanel");
@@ -111,6 +119,95 @@ test("buscar un diseñador que no vendemos deja solo las alternativas", () => {
   assert.equal(result.products.length, 0);
   assert.equal(result.missingOriginals[0]?.name, "Aventus");
   assert.equal(result.alternatives[0]?.id, "club-de-nuit-intense-man");
+});
+
+test("buscar la marca enseña los perfumes sin avisar cada referencia", () => {
+  const catalog = buildCatalog([
+    product({ id: "aventus-her", name: "Aventus for Her", brand: "Creed", type: "designer" }),
+    product({
+      id: "milestone",
+      name: "Milestone",
+      brand: "Armaf",
+      type: "arabic",
+      inspiredBy: ["Millésime Impérial (Creed)"],
+    }),
+    product({
+      id: "knight",
+      name: "Knight",
+      brand: "Al Haramain",
+      type: "arabic",
+      inspiredBy: ["Aventus (Creed)"],
+    }),
+    product({ id: "red", name: "Red", brand: "Lacoste", type: "designer" }),
+    product({ id: "le-male", name: "Le Male", brand: "Jean Paul Gaultier", type: "designer", category: "Eau de Toilette" }),
+  ]);
+  const records = catalog.map(toSearchRecord);
+  const brand = searchCatalog(records, "Creed");
+  assert.equal(
+    brand.missingOriginals.filter((item) => queryNamesOriginal("Creed", item)).length,
+    0,
+  );
+  assert.ok(brand.products.some((item) => item.id === "aventus-her"));
+  assert.equal(brand.products.some((item) => item.id === "red"), false);
+  assert.ok(brand.groups.length >= 2);
+  const specific = searchCatalog(records, "Millésime");
+  const named = specific.missingOriginals.filter((item) => queryNamesOriginal("Millésime", item));
+  assert.equal(named.length, 1);
+  assert.equal(named[0]?.name, "Millésime Impérial");
+  assert.equal(specific.products.some((item) => item.id === "le-male"), false);
+});
+
+test("ordena las inspiraciones de la más cercana a la más libre y deja el set abajo", () => {
+  const ranked: RawProduct[] = [
+    product({ id: "bleu-de-chanel", name: "Bleu de Chanel", brand: "Chanel", type: "designer" }),
+    product({
+      id: "lejos",
+      name: "Lejos",
+      type: "arabic",
+      inspiredBy: ["bleu-de-chanel"],
+      inspirationRank: 3,
+    }),
+    product({
+      id: "cerca",
+      name: "Cerca",
+      type: "arabic",
+      inspiredBy: ["bleu-de-chanel"],
+      inspirationRank: 1,
+    }),
+    product({
+      id: "set-bleu",
+      name: "Set Bleu",
+      type: "arabic",
+      category: "Set",
+      inspiredBy: ["bleu-de-chanel"],
+      inspirationRank: 2,
+    }),
+  ];
+  const catalog = buildCatalog(ranked);
+  const bleu = catalog.find((item) => item.id === "bleu-de-chanel");
+  assert.deepEqual(
+    bleu?.alternatives.map((item) => item.id),
+    ["cerca", "set-bleu", "lejos"],
+  );
+  const result = searchCatalog(catalog.map(toSearchRecord), "Bleu de Chanel");
+  assert.equal(result.groups[0]?.original.name, "Bleu de Chanel");
+  assert.deepEqual(
+    result.groups[0]?.clones.map((item) => item.id),
+    ["cerca", "lejos"],
+  );
+  assert.deepEqual(
+    result.groups[0]?.sets.map((item) => item.id),
+    ["set-bleu"],
+  );
+});
+
+test("la categoría Inspiraciones muestra solo los que tienen inspiración", () => {
+  const catalog = buildCatalog(raw);
+  const result = applyCatalogFilters(catalog, parseCatalogFilters({ categoria: INSPIRATIONS_CATEGORY }));
+  assert.ok(result.items.length > 0);
+  assert.ok(result.items.every((item) => item.inspiredBy.length > 0));
+  assert.equal(result.items.some((item) => item.id === "tag-him"), true);
+  assert.equal(result.items.some((item) => item.id === "bleu-de-chanel"), false);
 });
 
 test("tolera tildes y un error de escritura", () => {

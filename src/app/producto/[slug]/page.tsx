@@ -9,7 +9,7 @@ import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from
 import { Shell } from "@/components/shell";
 import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
-import { comparisonSlug, formatSize } from "@/lib/catalog-model";
+import { comparisonSlug, formatSize, nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -124,8 +124,7 @@ async function ProductScreen({ params }: ProductParams) {
             {product.inspiredBy.map((item) => (
               <li key={item.id}>
                 <Link href={`/producto/${item.slug}`} className="font-medium hover:text-gold">
-                  {item.name}
-                  {item.brand ? ` · ${item.brand}` : ""}
+                  {nameWithBrand(item.name, item.brand)}
                 </Link>
                 <Link href={`/comparar/${comparisonSlug(item.slug, product.slug)}`} className="ml-3 text-sm text-gold">
                   Ver comparación
@@ -136,24 +135,38 @@ async function ProductScreen({ params }: ProductParams) {
         </section>
       ) : null}
 
-      {alternatives.length > 0 ? (
+      {alternatives.some((item) => item.category !== "Set") ? (
         <section className="mt-12">
-          <h2 className="font-serif text-3xl">Alternativas (clones)</h2>
+          <h2 className="font-serif text-3xl">Inspirado en {nameWithBrand(product.name, product.brand)}</h2>
           <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
-            Opciones para quienes buscan un aroma similar a {product.name}.
+            Del más cercano al más libre. No es el perfume de la casa.
           </p>
           <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {alternatives.map((alternative) => (
-              <div key={alternative.id}>
-                <ProductCard product={alternative} />
-                <Link
-                  href={`/comparar/${comparisonSlug(product.slug, alternative.slug)}`}
-                  className="mt-2 inline-block text-sm text-gold"
-                >
-                  Ver comparación
-                </Link>
-              </div>
-            ))}
+            {alternatives
+              .filter((item) => item.category !== "Set")
+              .map((alternative) => (
+                <div key={alternative.id}>
+                  <ProductCard product={alternative} />
+                  <Link
+                    href={`/comparar/${comparisonSlug(product.slug, alternative.slug)}`}
+                    className="mt-2 inline-block text-sm text-gold"
+                  >
+                    Ver comparación
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </section>
+      ) : null}
+      {alternatives.some((item) => item.category === "Set") ? (
+        <section className="mt-12">
+          <h2 className="font-serif text-3xl">Sets</h2>
+          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+            {alternatives
+              .filter((item) => item.category === "Set")
+              .map((alternative) => (
+                <ProductCard key={alternative.id} product={alternative} />
+              ))}
           </div>
         </section>
       ) : null}

@@ -4,7 +4,8 @@ import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { getCatalog, getComparisonPairs, getSearchRecords } from "@/lib/catalog";
-import { searchCatalog } from "@/lib/search";
+import { nameWithBrand } from "@/lib/catalog-model";
+import { queryNamesOriginal, searchCatalog } from "@/lib/search";
 import { pageMetadata } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -40,8 +41,9 @@ async function SearchResults({
   const catalog = new Map(getCatalog().map((product) => [product.id, product]));
   const pairs = getComparisonPairs();
   const products = lookup(presentation.products.map((item) => item.id), catalog);
-  const alternatives = lookup(presentation.alternatives.map((item) => item.id), catalog);
   const hasOriginalInResults = presentation.stockedOriginals.length > 0;
+  const namedMissing = presentation.missingOriginals.filter((original) => queryNamesOriginal(query, original));
+  const showBrandNote = products.length === 0 && presentation.groups.length > 0 && namedMissing.length === 0;
 
   return (
     <Shell className="py-8 md:py-12">
@@ -53,13 +55,6 @@ async function SearchResults({
         <p className="mt-8 text-muted">Escribe al menos dos letras. Puedes buscar por nombre, marca o un perfume famoso.</p>
       ) : (
         <div className="mt-10 space-y-12">
-          {presentation.missingOriginals.map((original) => (
-            <p key={original.id} className="max-w-2xl leading-7">
-              No tenemos {original.name}
-              {original.brand ? ` de ${original.brand}` : ""} en el catálogo. Estas alternativas son para
-              quienes buscan un aroma similar.
-            </p>
-          ))}
           {products.length > 0 ? (
             <section>
               <h2 className="font-serif text-3xl">{hasOriginalInResults ? "En el catálogo" : "Resultados"}</h2>
@@ -70,27 +65,59 @@ async function SearchResults({
               </div>
             </section>
           ) : null}
-          {alternatives.length > 0 ? (
-            <section>
-              <h2 className="font-serif text-3xl">Clones / Alternativas</h2>
-              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-                {alternatives.map((product) => {
-                  const pair = pairs.find((item) => item.alternative.id === product.id);
-                  return (
-                    <div key={product.id}>
-                      <ProductCard product={product} />
-                      {pair ? (
-                        <Link href={`/comparar/${pair.slug}`} className="mt-2 inline-block text-sm text-gold">
-                          Ver comparación
-                        </Link>
-                      ) : null}
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
+          {namedMissing.map((original) => (
+            <p key={original.id} className="max-w-2xl leading-7">
+              No tenemos {nameWithBrand(original.name, original.brand)} en el catálogo. Estas alternativas son para
+              quienes buscan un aroma similar.
+            </p>
+          ))}
+          {showBrandNote ? (
+            <p className="max-w-2xl leading-7">
+              No hay «{query.trim()}» en el catálogo. Estas inspiraciones se acercan.
+            </p>
           ) : null}
-          {products.length === 0 && alternatives.length === 0 ? (
+          {presentation.groups.map((group) => (
+            <section key={group.original.id}>
+              <h2 className="font-serif text-3xl">
+                Inspirado en {nameWithBrand(group.original.name, group.original.brand)}
+              </h2>
+              <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
+                Del más cercano al más libre. No es el perfume de la casa.
+              </p>
+              {group.clones.length > 0 ? (
+                <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+                  {group.clones.map((clone) => {
+                    const product = catalog.get(clone.id);
+                    if (!product) return null;
+                    const pair = pairs.find((item) => item.alternative.id === product.id && item.original.id === group.original.id);
+                    return (
+                      <div key={product.id}>
+                        <ProductCard product={product} />
+                        {pair ? (
+                          <Link href={`/comparar/${pair.slug}`} className="mt-2 inline-block text-sm text-gold">
+                            Ver comparación
+                          </Link>
+                        ) : null}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : null}
+              {group.sets.length > 0 ? (
+                <div className="mt-8">
+                  <h3 className="font-serif text-2xl">Sets</h3>
+                  <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
+                    {group.sets.map((set) => {
+                      const product = catalog.get(set.id);
+                      if (!product) return null;
+                      return <ProductCard key={product.id} product={product} />;
+                    })}
+                  </div>
+                </div>
+              ) : null}
+            </section>
+          ))}
+          {products.length === 0 && presentation.groups.length === 0 ? (
             <p>No encontramos ese aroma. Prueba con la marca o con menos palabras.</p>
           ) : null}
         </div>
