@@ -26,6 +26,8 @@ export type RawProduct = {
   description: string;
   notes: FragranceNotes;
   sizeMl: number | null;
+  /** Medida que no cabe en mililitros, como 1000 g o 3 × 80 ml. */
+  sizeLabel?: string;
   inStock: boolean;
   category: string;
   tags: string[];
@@ -61,6 +63,7 @@ export type PublicProduct = {
   description: string;
   notes: FragranceNotes;
   sizeMl: number | null;
+  sizeLabel?: string;
   inStock: boolean;
   category: string;
   tags: string[];

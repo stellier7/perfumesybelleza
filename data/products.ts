@@ -10156,5 +10156,574 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Perfumería",
       tags: ["splash"]
+    },
+  {
+      id: "fairest-sulfate-free-shampoo",
+      slug: "fairest-sulfate-free-shampoo",
+      name: "Sulfate-Free Shampoo",
+      brand: "Fairest",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/fairest-sulfate-free-shampoo.webp"],
+      description: "Champú sin sulfatos Fairest, enriquecido con ceramida, para cabello dañado. Está formulado para combatir los signos del daño capilar. El envase lo presenta como Fairest Pilot.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Champú",
+      tags: ["sin sulfatos", "ceramida", "cabello dañado"]
+    },
+  {
+      id: "yogi-care-protein-collagen-treatment",
+      slug: "yogi-care-protein-collagen-treatment",
+      name: "Protein Collagen Treatment",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-protein-collagen-treatment.webp"],
+      description: "Tratamiento Yogi Care Protein Collagen, también llamado SOS Magic Hair Treatment, en presentación de viaje de 30 ml. Es una reparación de emergencia para cabello muy dañado, seco o quebradizo. Enriquecido con proteínas y colágeno para rellenar la fibra, controlar el frizz y alinear el cabello, con suavidad, brillo y manejabilidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["colágeno", "proteínas", "frizz", "cabello dañado"]
+    },
+  {
+      id: "sinko-styling-set-viaje",
+      slug: "sinko-styling-set-viaje",
+      name: "Set de viaje",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-set-viaje.webp"],
+      description: "Set de viaje Sinko Styling de cuidado capilar, con tres piezas de 80 ml. Incluye el champú Moringa Deep Cleanse, de limpieza profunda y detox, que elimina grasa, residuos y contaminación; el champú Argan Oil Nourishing, de nutrición, hidratación, suavidad y control del frizz; y el acondicionador Argan Oil Nourishing, que sella la cutícula, desenreda y restaura el brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "3 × 80 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["viaje", "argán", "moringa"]
+    },
+  {
+      id: "yogi-care-u-keratin-daily-conditioner",
+      slug: "yogi-care-u-keratin-daily-conditioner",
+      name: "U-Keratin Daily Conditioner",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-keratin-daily-conditioner.webp"],
+      description: "Acondicionador de uso diario Yogi Care U-Keratin, paso 4, de 250 ml. Formulado para mantener y extender el efecto de los tratamientos de queratina u otros alisados de salón. Ayuda a conservar el cabello suave, hidratado, manejable y sedoso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["queratina", "alisado", "uso diario"]
+    },
+  {
+      id: "yogi-care-u-keratin-daily-shampoo",
+      slug: "yogi-care-u-keratin-daily-shampoo",
+      name: "U-Keratin Daily Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-keratin-daily-shampoo.webp"],
+      description: "Champú de uso diario Yogi Care U-Keratin, número 3, de 250 ml, para el salón profesional. Prolonga el efecto de tratamientos de queratina, nanoplastia o alisados brasileños. Retiene la hidratación y protege la fibra contra el daño térmico y ambiental.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "alisado", "uso diario"]
+    },
+  {
+      id: "yogi-care-u-keratin-purifying-shampoo",
+      slug: "yogi-care-u-keratin-purifying-shampoo",
+      name: "U-Keratin Purifying Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-keratin-purifying-shampoo.webp"],
+      description: "Champú de limpieza profunda Yogi Care U-Keratin, paso 1, de 1000 ml. Es el primer paso para preparar el cabello antes de un alisado o una reconstrucción. Elimina residuos de peinado, grasa, cloro y minerales del agua, abre la cutícula y deja la hebra lista para absorber el tratamiento de queratina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "limpieza profunda", "anti residuos"]
+    },
+  {
+      id: "yogi-care-u-keratin-treatment",
+      slug: "yogi-care-u-keratin-treatment",
+      name: "U-Keratin Treatment",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-u-keratin-treatment.webp", "/products/yogi-care-u-keratin-treatment-2.webp"],
+      description: "Tratamiento capilar profesional Yogi Care U-Keratin, paso 2, de 1000 ml. Es un reconstructor a base de queratina que alisa el cabello, elimina el encrespamiento y repara la fibra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["queratina", "alisado", "frizz"]
+    },
+  {
+      id: "bio-reach-keratin-purifying-shampoo",
+      slug: "bio-reach-keratin-purifying-shampoo",
+      name: "Keratin Purifying Shampoo",
+      brand: "Bio-Reach",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bio-reach-keratin-purifying-shampoo.webp"],
+      description: "Champú de limpieza profunda Bio-Reach Professional Keratin, paso 1, de 250 ml. Elimina residuos, grasa e impurezas y prepara la hebra antes de un alisado o una reconstrucción con queratina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Champú",
+      tags: ["queratina", "limpieza profunda"]
+    },
+  {
+      id: "karseell-maca-power-conditioner",
+      slug: "karseell-maca-power-conditioner",
+      name: "Maca Power Conditioner",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-power-conditioner.webp"],
+      description: "Acondicionador anticaída Karseell Maca Power, de 500 ml, para uso profesional. Combate la debilidad y la caída con extracto de raíz de maca, que nutre el folículo y fortalece la hebra desde el interior. Lleva aceites botánicos para hidratar, suavizar, dar brillo y desenredar. Libre de sulfatos, fosfatos y parabenos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["anticaída", "maca", "sin sulfatos"]
+    },
+  {
+      id: "karseell-maca-power-shampoo",
+      slug: "karseell-maca-power-shampoo",
+      name: "Maca Power Shampoo",
+      brand: "Karseell",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/karseell-maca-power-shampoo.webp"],
+      description: "Champú anticaída Karseell Maca Power, de 500 ml, para uso profesional. Fortalece la fibra capilar, reduce la caída por rotura y el adelgazamiento, nutre el folículo y disminuye el quiebre del desgaste diario.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["anticaída", "maca", "sin sulfatos"]
+    },
+  {
+      id: "bioaqua-centella-asiatica",
+      slug: "bioaqua-centella-asiatica",
+      name: "Centella Asiática",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-centella-asiatica.webp"],
+      description: "Espuma limpiadora facial Bioaqua de centella asiática. El extracto de centella se usa por su efecto calmante, hidratante y reparador. Limpia el rostro, las impurezas, el exceso de grasa y los restos de maquillaje, y cuida la piel sensible o con tendencia al acné sin resecarla.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["centella", "piel sensible", "acné"]
+    },
+  {
+      id: "beauty-creations-pink-halo",
+      slug: "beauty-creations-pink-halo",
+      name: "Pink Halo",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-pink-halo.webp"],
+      description: "Spray desinfectante para manos Beauty Creations Pink Halo, con aroma floral almizclado. Incluye un llavero para llevarlo a todos lados.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Spray",
+      tags: ["manos", "llavero"]
+    },
+  {
+      id: "beauty-creations-sun-slay-cream",
+      slug: "beauty-creations-sun-slay-cream",
+      name: "Sun Slay Cream",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-sun-slay-cream.webp"],
+      description: "Crema hidratante y protectora Beauty Creations Sun Slay, con SPF 50, de 48 g. Combina hidratación profunda y protección solar para el día. Lleva ácido hialurónico, que retiene la humedad, y aceite de semilla de rosa mosqueta, que calma e ilumina. Rica en antioxidantes, para piel seca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "48 g",
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "ácido hialurónico", "rosa mosqueta"]
+    },
+  {
+      id: "beauty-creations-sun-slay-serum",
+      slug: "beauty-creations-sun-slay-serum",
+      name: "Sun Slay Serum",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-sun-slay-serum.webp"],
+      description: "Suero hidratante facial Beauty Creations Sun Slay, con SPF 50 y protección UVA/UVB, de 30 ml. Une el cuidado de la piel y el protector solar en un solo paso. Lleva aceite de semilla de rosa mosqueta, ácido hialurónico y niacinamida. Textura ligera, de rápida absorción, sin dejar rastro blanco.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "ácido hialurónico", "niacinamida"]
+    },
+  {
+      id: "beauty-creations-sun-slay-stick",
+      slug: "beauty-creations-sun-slay-stick",
+      name: "Sun Slay Matte Sun Stick",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-creations-sun-slay-stick.webp"],
+      description: "Barra de protector solar Beauty Creations Sun Slay Matte, con SPF 50, de 18 g. Enriquecida con extracto de té verde y ácido hialurónico para calmar, hidratar y aportar antioxidantes. Ayuda a controlar el brillo y se puede reaplicar, incluso sobre el maquillaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "18 g",
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "té verde", "control de brillo"]
+    },
+  {
+      id: "nessrin-gala-mas-lisos",
+      slug: "nessrin-gala-mas-lisos",
+      name: "Gala Más Lisos",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-mas-lisos.webp"],
+      description: "Crema Nessrin Gala Más Lisos, 2 en 1, de 1000 g, para cabello liso o alisado. Sirve para peinar sin enjuague y como tratamiento hidratante. Deja un acabado extra liso, combate el frizz y está formulada 100% vegana, con ingredientes de origen natural.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["2 en 1", "vegano", "frizz", "cabello liso"]
+    },
+  {
+      id: "nessrin-gala-potano-de-amor",
+      slug: "nessrin-gala-potano-de-amor",
+      name: "Gala Potano de Amor",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-potano-de-amor.webp"],
+      description: "Crema Nessrin Gala Potano de Amor, 2 en 1, de 1000 g, para nutrir y estilizar cabello maltratado. Se usa para peinar sin enjuague y como acondicionador profundo. Trae 18 elementos activos para nutrir, reparar y devolver vitalidad a la hebra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["2 en 1", "cabello maltratado"]
+    },
+  {
+      id: "nessrin-gala-kit-rizos-perfectos",
+      slug: "nessrin-gala-kit-rizos-perfectos",
+      name: "Gala Kit Rizos Perfectos",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-kit-rizos-perfectos.webp"],
+      description: "Kit Nessrin Gala Rizos Perfectos, de 400 ml, con champú y acondicionador 2 en 1 para cabello crespo y rizado. Ayuda a definir los rizos, hidratar en profundidad y controlar el frizz. Enriquecido con D-pantenol, aceite de ricino y manteca de karité.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Set",
+      tags: ["rizos", "champú", "acondicionador", "karité"]
+    },
+  {
+      id: "nessrin-gala-divino-kids",
+      slug: "nessrin-gala-divino-kids",
+      name: "Gala Divino Kids",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-divino-kids.webp"],
+      description: "Set Nessrin Gala Divino Kids de champú y acondicionador 2 en 1, para cabello infantil con rizos o crespos. Hidrata de la raíz a las puntas y busca dejarlo libre de frizz y nudos. Lleva D-pantenol, aceite de ricino, aceites, queratina y colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "rizos", "queratina"]
+    },
+  {
+      id: "nessrin-gala-dona-gala",
+      slug: "nessrin-gala-dona-gala",
+      name: "Gala Dona Gala",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-dona-gala.webp"],
+      description: "Crema Nessrin Gala Dona Gala, 2 en 1, de 1000 g, para peinar e hidratar cabello liso y ondulado. Lleva aceites vegetales de girasol, aguacate, coco y linaza. Fórmula vegana, de hidratación y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["2 en 1", "vegano", "cabello ondulado"]
+    },
+  {
+      id: "nessrin-gala-rizos-perfectos",
+      slug: "nessrin-gala-rizos-perfectos",
+      name: "Gala Rizos Perfectos",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-rizos-perfectos.webp"],
+      description: "Crema Nessrin Gala Rizos Perfectos, 2 en 1, de 1000 g: crema para peinar y crema hidratante. Enriquecida con D-pantenol y aceite de ricino para nutrir la hebra, definir los rizos, controlar el frizz y mantener el cabello hidratado. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["2 en 1", "vegano", "rizos", "frizz"]
+    },
+  {
+      id: "nessrin-gala-divino-kids-1000",
+      slug: "nessrin-gala-divino-kids-1000",
+      name: "Gala Divino Kids",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-divino-kids-1000.webp"],
+      description: "Crema Nessrin Gala Divino Kids, 2 en 1, de 1000 g, para cabello con crespos y rizos. Combina crema para peinar y crema hidratante, con aceites, queratina y colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["2 en 1", "infantil", "rizos", "queratina"]
+    },
+  {
+      id: "manipol-body",
+      slug: "manipol-body",
+      name: "Body",
+      brand: "Manipol",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/manipol-body.webp"],
+      description: "Masajeador portátil Manipol Body para espalda, cuello, brazos y piernas. Vibra y rota, con intensidad y velocidad ajustables, y trae 4 cabezales intercambiables.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "4 cabezales",
+      inStock: true,
+      category: "Masajeador",
+      tags: ["portátil", "masaje"]
+    },
+  {
+      id: "instituto-espanol-rosa-mosqueta",
+      slug: "instituto-espanol-rosa-mosqueta",
+      name: "Rosa Mosqueta",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-rosa-mosqueta.webp"],
+      description: "Crema regeneradora Instituto Español de rosa mosqueta, de 400 ml, con ácido hialurónico. Hidrata y nutre, suaviza la piel seca o sensible y está formulada para ayudar contra las estrías.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["rosa mosqueta", "ácido hialurónico", "estrías"]
+    },
+  {
+      id: "instituto-espanol-avena",
+      slug: "instituto-espanol-avena",
+      name: "Avena",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-avena.webp"],
+      description: "Crema hidratante Instituto Español de avena para manos y cuerpo, de 400 ml. Aporta nutrición, elasticidad, suavidad y humectación de larga duración. Elaborada con avena natural.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["avena", "manos", "cuerpo"]
+    },
+  {
+      id: "instituto-espanol-karite",
+      slug: "instituto-espanol-karite",
+      name: "Manteca de karité",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-karite.webp"],
+      description: "Manteca corporal Instituto Español de karité, de 400 ml, en textura no grasa. Enriquecida con manteca de karité para hidratar la piel seca o dañada, suavizarla y dejarla de aspecto más cuidado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["karité", "piel seca"]
+    },
+  {
+      id: "instituto-espanol-aloe-vera",
+      slug: "instituto-espanol-aloe-vera",
+      name: "Aloe Vera",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-aloe-vera.webp"],
+      description: "Crema corporal Instituto Español de aloe vera, de 400 ml, para piel seca. Ayuda a la regeneración, calma el picor y no irrita. Hidrata, suaviza y protege.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["aloe vera", "piel seca"]
+    },
+  {
+      id: "instituto-espanol-coco",
+      slug: "instituto-espanol-coco",
+      name: "Coco",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-coco.webp"],
+      description: "Crema corporal Instituto Español de coco, de 400 ml. Evita la deshidratación, nutre de forma duradera y mantiene la flexibilidad de la piel. Sin parabenos, de hidratación y protección natural.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 400,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["coco", "sin parabenos"]
     }
 ];

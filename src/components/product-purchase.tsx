@@ -23,6 +23,7 @@ export type PurchaseTarget = {
   inStock: boolean;
   isReference: boolean;
   sizeMl: number | null;
+  sizeLabel?: string;
 };
 
 function storedUtm(): Record<string, string> {
@@ -91,6 +92,7 @@ function inquiryMessage(product: PurchaseTarget, utm: Record<string, string>): s
       brand: product.brand,
       price: product.price,
       sizeMl: product.sizeMl,
+      sizeLabel: product.sizeLabel,
       utm,
     });
   }

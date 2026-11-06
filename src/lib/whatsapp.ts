@@ -71,9 +71,11 @@ export function buildProductInquiry(input: {
   brand: string;
   price: number;
   sizeMl: number | null;
+  sizeLabel?: string;
   utm?: Record<string, string>;
 }): string {
-  const size = input.sizeMl ? `\nTamaño: ${input.sizeMl} ml` : "";
+  const sizeText = input.sizeLabel ?? (input.sizeMl ? `${input.sizeMl} ml` : "");
+  const size = sizeText ? `\nTamaño: ${sizeText}` : "";
   const price = input.price > 0 ? formatPrice(input.price) : "por confirmar";
   return [
     `Hola, me interesa este producto de ${store.name}:`,

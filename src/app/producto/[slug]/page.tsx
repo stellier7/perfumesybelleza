@@ -9,7 +9,7 @@ import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from
 import { Shell } from "@/components/shell";
 import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
-import { comparisonSlug } from "@/lib/catalog-model";
+import { comparisonSlug, formatSize } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -22,9 +22,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: ProductParams): Promise<Metadata> {
   const product = getProductBySlug((await params).slug);
   if (!product) return { title: "Producto" };
+  const size = formatSize(product);
   const title = product.isReference
     ? `${product.name}: alternativas`
-    : `${product.name} de ${product.brand}`;
+    : product.type === "beauty"
+      ? size
+        ? `${product.brand} ${product.name}, ${size}`
+        : `${product.brand} ${product.name}`
+      : `${product.name} de ${product.brand}`;
   return {
     title,
     description: product.description,
@@ -84,7 +89,7 @@ async function ProductScreen({ params }: ProductParams) {
                 {hasShelfPrice(product.price) ? formatPrice(product.price) : "Precio por confirmar"}
               </p>
               <p className="mt-1 text-sm text-muted">
-                {product.sizeMl ? `${product.sizeMl} ml` : "Tamaño por confirmar"}
+                {formatSize(product) ?? "Tamaño por confirmar"}
                 {product.inStock ? "" : " · Agotado"}
               </p>
               <p className="mt-4 leading-7">{product.description}</p>
@@ -167,6 +172,7 @@ function toPurchase(product: PublicProduct): PurchaseTarget {
     inStock: product.inStock,
     isReference: product.isReference,
     sizeMl: product.sizeMl,
+    sizeLabel: product.sizeLabel,
   };
 }
 
@@ -183,6 +189,8 @@ function productJsonLd(product: PublicProduct) {
     image: product.images.map((image) => `${store.url}${image}`),
     sku: product.id,
     brand: { "@type": "Brand", name: product.brand },
+    category: product.category,
+    ...(formatSize(product) ? { size: formatSize(product) } : {}),
     ...(hasShelfPrice(product.price)
       ? {
           offers: {
