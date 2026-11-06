@@ -20262,5 +20262,610 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Toallitas",
       tags: ["toallitas", "antibacterial", "sin alcohol"]
+    },
+  {
+      id: "bs-mini-plancha",
+      slug: "bs-mini-plancha",
+      name: "Mini plancha",
+      brand: "BS Professional",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bs-mini-plancha.webp"],
+      description: "Mini plancha BS Professional, con placas de titanio de 1/2 pulgada. Llega hasta 430 °F (220 °C) y el texto la presenta para retoques y viajes.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "placas de 1/2 pulgada",
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "titanio", "viaje"]
+    },
+  {
+      id: "babylisspro-nano-titanium-plancha",
+      slug: "babylisspro-nano-titanium-plancha",
+      name: "Plancha Nano Titanium",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-nano-titanium-plancha.webp"],
+      description: "Plancha BaBylissPRO Nano Titanium, con placas de 5 pulgadas. Ajustes LED hasta 450 °F y generador de iones.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "placas de 5 pulgadas",
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "nano titanium", "iones"]
+    },
+  {
+      id: "babylisspro-cepillo-alisador",
+      slug: "babylisspro-cepillo-alisador",
+      name: "Cepillo alisador compacto",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-cepillo-alisador.webp"],
+      description: "Cepillo alisador compacto BaBylissPRO Nano Titanium. Tres temperaturas (320, 355 y 395 °F) y cerdas recubiertas de nano titanio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "nano titanium", "alisado"]
+    },
+  {
+      id: "salon-cepillo-barberia",
+      slug: "salon-cepillo-barberia",
+      name: "Cepillo de barbería",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-cepillo-barberia.webp"],
+      description: "Cepillo de limpieza de barbería, de 15 cm, con mango de madera. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "15 cm",
+      inStock: true,
+      category: "Cepillo",
+      tags: ["barbería", "cuello"]
+    },
+  {
+      id: "remington-one",
+      slug: "remington-one",
+      name: "One",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-one.webp"],
+      description: "Secador Remington One, de 900 W nominal, con motor DC. Tres temperaturas, dos velocidades y ráfaga de aire frío. Incluye difusor y concentrador.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "difusor", "900 w"]
+    },
+  {
+      id: "diamond-beauty-crema-pies",
+      slug: "diamond-beauty-crema-pies",
+      name: "Crema para pies",
+      brand: "Diamond Beauty",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/diamond-beauty-crema-pies.webp"],
+      description: "Crema para pies Diamond Beauty, para piel agrietada. Lleva aceite de romero, extracto de seda, vitamina E, colágeno y elastina. El empaque no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema para pies",
+      tags: ["pies", "romero", "seda"]
+    },
+  {
+      id: "bs-vento-velo",
+      slug: "bs-vento-velo",
+      name: "Vento Velo",
+      brand: "BS Professional",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bs-vento-velo.webp"],
+      description: "Secador BS Professional Vento Velo, de 1200 W. Motor digital sin escobillas, control de calor y tecnología iónica. Incluye difusor, boquilla y soporte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "1200 w", "iónico"]
+    },
+  {
+      id: "babylisspro-volare-2200",
+      slug: "babylisspro-volare-2200",
+      name: "Volare 2200",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-volare-2200.webp"],
+      description: "Secador BaBylissPRO Volare, de 2200 W, en rojo. La caja marca 5 configuraciones de calor y velocidad, con frío, nano titanio y filtro trasero extraíble. Incluye difusor y concentradores.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "2200 w", "nano titanium"]
+    },
+  {
+      id: "babylisspro-portofino-6600",
+      slug: "babylisspro-portofino-6600",
+      name: "Portofino 6600",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-portofino-6600.webp"],
+      description: "Secador BaBylissPRO Portofino 6600, de 2000 W, hecho en Italia. Seis ajustes de temperatura, calor infrarrojo, motor AC y nano titanio. Incluye dos concentradores, de 60 y 75 mm.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "2000 w", "italia"]
+    },
+  {
+      id: "sinko-styling-gray-lm-011",
+      slug: "sinko-styling-gray-lm-011",
+      name: "Semi permanente Gray LM-011",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-styling-gray-lm-011.webp"],
+      description: "Coloración semi permanente Sinko Styling Ultra Vibrant, tono Gray LM-011, de 500 ml. El envase la presenta sin olor fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Coloración",
+      tags: ["coloración", "gris", "semi permanente"]
+    },
+  {
+      id: "boe-crece-pelo-shampoo",
+      slug: "boe-crece-pelo-shampoo",
+      name: "Crece Pelo",
+      brand: "boé",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/boe-crece-pelo-shampoo.webp"],
+      description: "Champú fitoterapéutico boé Crece Pelo, de 470 ml. El envase lo presenta para hidratar, reparar y favorecer el crecimiento capilar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 470,
+      inStock: true,
+      category: "Champú",
+      tags: ["crecimiento", "fitoterapéutico", "aloe"]
+    },
+  {
+      id: "yogi-care-macadamia-shampoo-500",
+      slug: "yogi-care-macadamia-shampoo-500",
+      name: "Macadamia Oil Shampoo",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-care-macadamia-shampoo-500.webp"],
+      description: "Champú Yogi Care de aceite de macadamia, de 500 ml. Nutritivo e hidratante, sin parabenos, sin sulfatos y sin silicona.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["macadamia", "sin sulfatos", "hidratación"]
+    },
+  {
+      id: "salon-masajeador-cabeza",
+      slug: "salon-masajeador-cabeza",
+      name: "Masajeador de cabeza",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-masajeador-cabeza.webp"],
+      description: "Masajeador de cabeza de alambre, con mango de madera. La foto reúne azul, dorado y rojo, y no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Masajeador",
+      tags: ["cabeza", "masaje"]
+    },
+  {
+      id: "salon-bowl-tinte",
+      slug: "salon-bowl-tinte",
+      name: "Bowl para tinte",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-bowl-tinte.webp"],
+      description: "Bowl negro para mezclar tinte. La foto no trae marca ni capacidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["tinte", "bowl"]
+    },
+  {
+      id: "beauty-style-calentador-digital",
+      slug: "beauty-style-calentador-digital",
+      name: "Calentador de cera digital",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-calentador-digital.webp"],
+      description: "Calentador de cera digital Beauty Style, con termostato y rejilla metálica extraíble. El texto dice que calienta todo tipo de cera. La foto muestra la unidad negra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["cera", "calentador", "digital"]
+    },
+  {
+      id: "salon-brocha-tinte-6p11",
+      slug: "salon-brocha-tinte-6p11",
+      name: "Brocha para tinte 6P11",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-brocha-tinte-6p11.webp"],
+      description: "Brocha para tinte, modelo 6P11. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["tinte", "brocha"]
+    },
+  {
+      id: "beauty-style-peine-cola",
+      slug: "beauty-style-peine-cola",
+      name: "Peine de cola",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-peine-cola.webp"],
+      description: "Peine de cola Beauty Style, de 21 cm.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "21 cm",
+      inStock: true,
+      category: "Peine",
+      tags: ["peine", "cola"]
+    },
+  {
+      id: "remington-power-shine-3200",
+      slug: "remington-power-shine-3200",
+      name: "Power Shine 3200",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-power-shine-3200.webp"],
+      description: "Secador Remington Power Shine 3200. Motor DC, dos velocidades, ajustes de temperatura y botón de aire frío. La rejilla lleva cerámica, iones y turmalina. Incluye concentrador, difusor y filtro removible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "turmalina", "cerámica"]
+    },
+  {
+      id: "babylisspro-volare-2000",
+      slug: "babylisspro-volare-2000",
+      name: "Volare 2000",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-volare-2000.webp"],
+      description: "Secador BaBylissPRO Volare, de 2000 W, en negro, importado de Italia. Motor AC, tres temperaturas, tres velocidades, rejilla de nano titanio y botón turbo. El cable mide 2.74 m.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "2000 w", "italia"]
+    },
+  {
+      id: "babylisspro-rapido",
+      slug: "babylisspro-rapido",
+      name: "Rapido",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-rapido.webp"],
+      description: "Secador BaBylissPRO Rapido, de 2000 W, hecho en Italia. El texto marca 90 km/h, 1500 litros por minuto, generador de iones, filtro anti-ruido removible, aire frío y seis ajustes. Incluye dos boquillas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "2000 w", "italia"]
+    },
+  {
+      id: "babylisspro-nano-titanium-secador",
+      slug: "babylisspro-nano-titanium-secador",
+      name: "Secador Nano Titanium",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-nano-titanium-secador.webp"],
+      description: "Secador BaBylissPRO Nano Titanium, de 1875 W. Motor sin escobillas, iones dobles y control digital de tres temperaturas y tres velocidades, con golpe de frío. Incluye difusor, boquilla y dos peines.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "1875 w", "digital"]
+    },
+  {
+      id: "zion-optimus-pro",
+      slug: "zion-optimus-pro",
+      name: "Optimus Pro",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/zion-optimus-pro.webp"],
+      description: "Secador Zion Optimus Pro, de 800 W, con mango plegable. Dos velocidades, protección contra recalentamiento y asa para colgar. La foto lo muestra en rojo y en dorado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "800 w", "plegable"]
+    },
+  {
+      id: "remington-ceramica-ionica",
+      slug: "remington-ceramica-ionica",
+      name: "Cerámica iónica",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-ceramica-ionica.webp"],
+      description: "Secador Remington de cerámica iónica, de 1875 W. Tres temperaturas, aire frío y filtro de aire desmontable.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "1875 w", "cerámica"]
+    },
+  {
+      id: "babylisspro-prima-3000",
+      slug: "babylisspro-prima-3000",
+      name: "Prima 3000",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-prima-3000.webp"],
+      description: "Plancha BaBylissPRO Nano Titanium Prima 3000, de acero inoxidable. El texto la presenta como rizadora y alisadora, hasta 465 °F (240 °C), con placas de 1 1/4 pulgada (32 mm).",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "nano titanium", "acero"]
+    },
+  {
+      id: "babylisspro-prima-3000-limited",
+      slug: "babylisspro-prima-3000-limited",
+      name: "Prima 3000 Limited",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-prima-3000-limited.webp"],
+      description: "Plancha BaBylissPRO Nano Titanium Prima 3000, edición limitada, en azul. Alisadora de acero inoxidable, hasta 465 °F (240 °C), con placas de 1 1/4 pulgada (32 mm).",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "edición limitada", "acero"]
+    },
+  {
+      id: "bs-blu-perfetto",
+      slug: "bs-blu-perfetto",
+      name: "Blu Perfetto Titanio",
+      brand: "BS Professional",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bs-blu-perfetto.webp"],
+      description: "Plancha BS Professional Blu Perfetto Titanio, con pantalla digital y placas de titanio. El texto marca de 180 °C a 230 °C (450 °F) y tecnología iónica.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "titanio", "digital"]
+    },
+  {
+      id: "remington-keratin-therapy-set",
+      slug: "remington-keratin-therapy-set",
+      name: "Keratin Therapy Set",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-keratin-therapy-set.webp"],
+      description: "Set Remington Keratin Therapy con alisadora, rizadora de barril de 25 mm y estuche. La alisadora lleva cerámica con keratina y aceite de argán, hasta 230 °C. La rizadora llega a 205 °C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["plancha", "rizadora", "keratina"]
+    },
+  {
+      id: "remington-collagen-biotin-plancha",
+      slug: "remington-collagen-biotin-plancha",
+      name: "Plancha Collagen & Biotin",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-collagen-biotin-plancha.webp"],
+      description: "Plancha Remington Collagen & Biotin Therapy. Calienta en 15 segundos, hasta 230 °C, con placa flotante de 110 mm y cinco ajustes desde 150 °C.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha",
+      tags: ["plancha", "colágeno", "biotina"]
+    },
+  {
+      id: "remington-rizadora-2en1",
+      slug: "remington-rizadora-2en1",
+      name: "Rizadora 2 en 1",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-rizadora-2en1.webp"],
+      description: "Rizadora Remington 2 en 1, con barril cerámico de 19 mm y 32 mm. El texto la presenta para rizo definido u onda, con calentamiento rápido y punta fría.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "19 / 32 mm",
+      inStock: true,
+      category: "Rizadora",
+      tags: ["rizos", "cerámica", "2 en 1"]
+    },
+  {
+      id: "babylisspro-falco",
+      slug: "babylisspro-falco",
+      name: "Falco",
+      brand: "BaBylissPRO",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/babylisspro-falco.webp"],
+      description: "Secador BaBylissPRO Falco, de 2000 W, hecho en Italia. Motor digital, cuatro temperaturas, tres velocidades, aire frío, iones y función de memoria. Incluye difusor, dos concentradores y filtro magnético de repuesto. El cable mide 2.7 m.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Secador",
+      tags: ["secador", "2000 w", "italia"]
     }
 ];
