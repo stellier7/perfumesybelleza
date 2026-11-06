@@ -21908,8 +21908,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/waterpik-ultra.webp"],
-      description: "Irrigador dental Waterpik Ultra. Incluye 6 puntas, depósito transparente y 10 niveles de presión. Mide 14,22 × 13,46 × 25,15 cm.",
+      images: ["/products/waterpik-ultra.webp", "/products/waterpik-ultra-2.webp"],
+      description: "Irrigador dental Waterpik Ultra. Incluye 6 puntas, depósito transparente y 10 niveles de presión. Mide 14,22 × 13,46 × 25,15 cm. Las puntas son de precisión, buscadora de placa, ortodoncia y bolsillo, con limpieza de 360°.",
       notes: {
         top: [],
         heart: [],
@@ -27964,5 +27964,573 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Coloración",
       tags: ["tinte", "negro", "3 en 1"]
+    },
+  {
+      id: "beauty-style-barbero",
+      slug: "beauty-style-barbero",
+      name: "Barbero",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-barbero.webp"],
+      description: "Delantal de barbero Beauty Style, negro. El texto lo presenta de tela impermeable, ajustable y con varios bolsillos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Delantal",
+      tags: ["delantal", "barbero", "bolsillos"]
+    },
+  {
+      id: "andowl-q-am162",
+      slug: "andowl-q-am162",
+      name: "Q-AM162",
+      brand: "Andowl",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/andowl-q-am162.webp"],
+      description: "Masajeador de cabeza Andowl Q-AM162. Se enciende con un toque.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Masajeador",
+      tags: ["cabeza", "masaje", "andowl"]
+    },
+  {
+      id: "salon-carrito",
+      slug: "salon-carrito",
+      name: "Auxiliar",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-carrito.webp"],
+      description: "Carrito auxiliar de salón, de 102 × 41,5 × 40 cm, con cuatro bandejas y ruedas. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "102 × 41,5 × 40 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["carrito", "bandejas", "ruedas"]
+    },
+  {
+      id: "salon-jazz",
+      slug: "salon-jazz",
+      name: "Jazz",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-jazz.webp"],
+      description: "Carrito auxiliar Jazz, de 85 × 27 × 38,5 cm, con cinco cajones y ruedas. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "85 × 27 × 38,5 cm",
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["carrito", "cajones", "ruedas"]
+    },
+  {
+      id: "nube-sueno-bebe",
+      slug: "nube-sueno-bebe",
+      name: "Bebé",
+      brand: "Nube Sueño",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nube-sueno-bebe.webp"],
+      description: "Almohadas de apoyo Nube Sueño para bebé, en felpa. El texto las presenta ergonómicas para cuello y cabeza, hipoalergénicas y lavables. La foto muestra amarillo y azul.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Almohadillas",
+      tags: ["bebé", "felpa", "lavable"]
+    },
+  {
+      id: "waterpik-aquarius",
+      slug: "waterpik-aquarius",
+      name: "Aquarius",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-aquarius.webp"],
+      description: "Irrigador bucal Waterpik Aquarius, blanco, con 7 puntas, 10 ajustes de presión y depósito de 90 segundos. Incluye chorro clásico, cepillo, buscador de placa, ortodoncia y Pik Pocket.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "aquarius", "blanco"]
+    },
+  {
+      id: "waterpik-aquarius-azul",
+      slug: "waterpik-aquarius-azul",
+      name: "Aquarius azul",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-aquarius-azul.webp"],
+      description: "Irrigador bucal Waterpik Aquarius, azul, con 7 puntas, 10 ajustes de presión y depósito de 90 segundos. Incluye chorro clásico, cepillo, buscador de placa, ortodoncia y Pik Pocket.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "aquarius", "azul"]
+    },
+  {
+      id: "waterpik-aquarius-gris",
+      slug: "waterpik-aquarius-gris",
+      name: "Aquarius gris",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-aquarius-gris.webp"],
+      description: "Irrigador bucal Waterpik Aquarius, gris, con 7 puntas, 10 ajustes de presión y depósito de 90 segundos. Incluye chorro clásico, cepillo, buscador de placa, ortodoncia y Pik Pocket.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "aquarius", "gris"]
+    },
+  {
+      id: "waterpik-ion",
+      slug: "waterpik-ion",
+      name: "Ion",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-ion.webp"],
+      description: "Irrigador bucal Waterpik Ion, de iones de litio, con 4 a 6 semanas de uso por carga. Incluye puntas de chorro, placa, ortodoncia, bolsillo, prótesis y limpiador de lengua.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "litio", "inalámbrico"]
+    },
+  {
+      id: "waterpik-estuche",
+      slug: "waterpik-estuche",
+      name: "Estuche",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-estuche.webp"],
+      description: "Estuche Waterpik con 6 puntas: dos de chorro clásico, dos buscadoras de placa y dos de ortodoncia. Compatible con los modelos Waterpik, salvo el clásico y el blanqueador.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "6 puntas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["puntas", "estuche", "ortodoncia"]
+    },
+  {
+      id: "waterpik-chorro",
+      slug: "waterpik-chorro",
+      name: "Chorro clásico",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-chorro.webp"],
+      description: "Puntas de chorro clásico Waterpik, 2 piezas. El empaque las marca para los modelos WP-60, WP-65, WP-70, WP-72 y WP-75.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "2 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["puntas", "chorro", "waterpik"]
+    },
+  {
+      id: "master-sonic-ms-504hc",
+      slug: "master-sonic-ms-504hc",
+      name: "MS-504HC",
+      brand: "Master Sonic",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/master-sonic-ms-504hc.webp"],
+      description: "Máquina cortadora Master Sonic MS-504HC, con cable. Incluye peines, aceite y cepillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["cortadora", "cable", "peines"]
+    },
+  {
+      id: "beauty-eccerret-removedor",
+      slug: "beauty-eccerret-removedor",
+      name: "Removedor",
+      brand: "Beauty Eccerret",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-eccerret-removedor.webp"],
+      description: "Removedor de pelo Beauty Eccerret, con luz y acabado dorado. Funciona con una batería AA, incluida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["removedor", "luz", "batería"]
+    },
+  {
+      id: "lady-beauty-3en1",
+      slug: "lady-beauty-3en1",
+      name: "3 en 1",
+      brand: "Lady Beauty",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lady-beauty-3en1.webp"],
+      description: "Set Lady Beauty 3 en 1: afeitadora y limpiador facial, para piel sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["afeitadora", "facial", "sensible"]
+    },
+  {
+      id: "yogi-biotina",
+      slug: "yogi-biotina",
+      name: "Biotina",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/yogi-biotina.webp"],
+      description: "Set Yogi Care de biotina, sin sulfatos, parabenos ni siliconas: mascarilla de 50 ml, acondicionador de 30 ml, champú de 30 ml y spray de 30 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "50 ml + 30 ml + 30 ml + 30 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["biotina", "sin sulfatos", "argán"]
+    },
+  {
+      id: "eleve-progresiva",
+      slug: "eleve-progresiva",
+      name: "Progresiva",
+      brand: "Élevé",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/eleve-progresiva.webp"],
+      description: "Set Élevé progresiva orgánica, de 1 L y 1 L: champú purificante y tratamiento reductor de frizz, sin formol.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L + 1 L",
+      inStock: true,
+      category: "Set",
+      tags: ["keratina", "sin formol", "frizz"]
+    },
+  {
+      id: "sinko-te",
+      slug: "sinko-te",
+      name: "Árbol de té",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-te.webp"],
+      description: "Champú Sinko Styling rejuvenecedor de árbol de té, de 500 ml. El envase lo presenta como limpieza profunda.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["árbol de té", "limpieza", "champú"]
+    },
+  {
+      id: "sinko-jengibre",
+      slug: "sinko-jengibre",
+      name: "Jengibre",
+      brand: "Sinko Styling",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sinko-jengibre.webp"],
+      description: "Champú anticaída Sinko Styling de jengibre, de 500 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Champú",
+      tags: ["jengibre", "anticaída", "champú"]
+    },
+  {
+      id: "origem-cachos",
+      slug: "origem-cachos",
+      name: "Cachos",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-cachos.webp"],
+      description: "Tratamiento capilar Origem Cachos, de 1 kg, 3 en 1: crema para peinar, crema hidratante y cowash. Lleva coco y pantenol, y es vegano.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["rizos", "coco", "vegano"]
+    },
+  {
+      id: "origem-babosa",
+      slug: "origem-babosa",
+      name: "Babosa",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-babosa.webp"],
+      description: "Tratamiento capilar Origem Babosa, de 1 kg, 2 en 1 de hidratación y crema para peinar, para cabello seco. El envase habla de brillo y suavidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["aloe", "hidratación", "cabello seco"]
+    },
+  {
+      id: "origem-vainilla",
+      slug: "origem-vainilla",
+      name: "Vainilla",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-vainilla.webp"],
+      description: "Crema corporal Origem de vainilla, de 380 ml, vegana, con colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 380,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["vainilla", "vegano", "colágeno"]
+    },
+  {
+      id: "origem-coco",
+      slug: "origem-coco",
+      name: "Coco",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-coco.webp"],
+      description: "Crema corporal Origem de coco, de 380 ml, vegana, con colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 380,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["coco", "vegano", "colágeno"]
+    },
+  {
+      id: "origem-lavanda",
+      slug: "origem-lavanda",
+      name: "Lavanda",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-lavanda.webp"],
+      description: "Crema corporal Origem de lavanda, de 380 ml, vegana, con colágeno vegetal, para piel normal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 380,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["lavanda", "vegano", "colágeno"]
+    },
+  {
+      id: "origem-hinojo",
+      slug: "origem-hinojo",
+      name: "Hinojo",
+      brand: "Origem",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origem-hinojo.webp"],
+      description: "Crema corporal Origem Erva Doce, de 380 ml, vegana, con colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 380,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["hinojo", "vegano", "colágeno"]
+    },
+  {
+      id: "origen-cereza",
+      slug: "origen-cereza",
+      name: "Cereza",
+      brand: "Origen",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/origen-cereza.webp"],
+      description: "Crema corporal Origen de cereza y avellana, vegana, con colágeno vegetal, para piel extra seca. La foto no marca los mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["cereza", "avellana", "vegano"]
+    },
+  {
+      id: "kemei-km-2189",
+      slug: "kemei-km-2189",
+      name: "KM-2189",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-km-2189.webp"],
+      description: "Depiladora Kemei KM-2189, 7 en 1, en seco y húmedo. Incluye cepillo, masajeador, afeitadora, recortador de nariz, recortador de cejas y pulidor de uñas, con cable USB.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depiladora", "7 en 1", "usb"]
+    },
+  {
+      id: "waterpik-aquarius-pro",
+      slug: "waterpik-aquarius-pro",
+      name: "Aquarius profesional",
+      brand: "Waterpik",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/waterpik-aquarius-pro.webp"],
+      description: "Irrigador bucal Waterpik Aquarius Professional, negro, con 7 puntas, 10 ajustes y depósito de 90 segundos. El mango trae control de agua y pausa cada 30 segundos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Irrigador",
+      tags: ["dental", "aquarius", "negro"]
+    },
+  {
+      id: "morfose-impact",
+      slug: "morfose-impact",
+      name: "Ossion Impact",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-impact.webp"],
+      description: "Colonia Morfose Ossion Impact, de 300 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Colonia",
+      tags: ["colonia", "ossion", "impact"]
     }
 ];
