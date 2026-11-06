@@ -5812,7 +5812,7 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 0,
       images: ["/products/sauvage-tester.webp"],
-      description: "El vidrio dice Sauvage y Dior. El título de la foto lo marca como tester.",
+      description: "El vidrio dice Sauvage y Dior.",
       notes: {
         top: [],
         heart: [],
@@ -5821,7 +5821,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: ["tester"]
+      tags: []
     },
   {
       id: "eros-pour-femme",
