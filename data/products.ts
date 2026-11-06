@@ -24525,8 +24525,8 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/bioaqua-rice-solar.webp"],
-      description: "Protector solar en spray Bioaqua Rice Raw Pulp, de 150 ml, SPF 50+, con aloe y camomila. La foto muestra dos envases del mismo spray.",
+      images: ["/products/bioaqua-rice-solar.webp", "/products/bioaqua-rice-solar-2.webp"],
+      description: "Protector solar en spray Bioaqua Rice Raw Pulp, de 150 ml, SPF 50+, con aloe y camomila. El envase lo presenta resistente al agua y al sudor.",
       notes: {
         top: [],
         heart: [],
@@ -28532,5 +28532,593 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Colonia",
       tags: ["colonia", "ossion", "impact"]
+    },
+  {
+      id: "nessrin-ice",
+      slug: "nessrin-ice",
+      name: "Ice Gel",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-ice.webp"],
+      description: "Gel frío Nessrin Ice Gel extra fuerte, para músculos y articulaciones. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Gel",
+      tags: ["hielo", "músculos", "extra fuerte"]
+    },
+  {
+      id: "bandido-aqua-2",
+      slug: "bandido-aqua-2",
+      name: "Aqua Wax 2",
+      brand: "Bandido",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bandido-aqua-2.webp"],
+      description: "Cera Bandido Aqua Wax 2, de 150 ml. El envase habla de definición, brillo y fijación fuerte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "brillo", "fijación"]
+    },
+  {
+      id: "xtracare-femeninas",
+      slug: "xtracare-femeninas",
+      name: "Femeninas",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-femeninas.webp"],
+      description: "Toallitas femeninas XtraCare, 16 piezas, para piel sensible. El envase las presenta con pH balanceado e hipoalergénicas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "16 piezas",
+      inStock: true,
+      category: "Toallitas",
+      tags: ["toallitas", "femeninas", "ph"]
+    },
+  {
+      id: "rashel-caliente",
+      slug: "rashel-caliente",
+      name: "Caliente",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/rashel-caliente.webp"],
+      description: "Crema corporal caliente Dr. Rashel Slim Line, con algas, colágeno y chile. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["algas", "colágeno", "chile"]
+    },
+  {
+      id: "wokali-busto",
+      slug: "wokali-busto",
+      name: "Busto",
+      brand: "Fruit of the Wokali",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wokali-busto.webp"],
+      description: "Crema reafirmante de busto Fruit of the Wokali, de 150 ml, con vitamina E, colágeno y elastina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["busto", "colágeno", "elastina"]
+    },
+  {
+      id: "wokali-celulitis",
+      slug: "wokali-celulitis",
+      name: "Celulitis",
+      brand: "Fruit of the Wokali",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wokali-celulitis.webp"],
+      description: "Crema gel Fruit of the Wokali para la celulitis, de 150 ml, con vitamina E, colágeno y elastina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["celulitis", "colágeno", "elastina"]
+    },
+  {
+      id: "sure-aid-embarazo",
+      slug: "sure-aid-embarazo",
+      name: "Embarazo",
+      brand: "Sure-Aid",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sure-aid-embarazo.webp"],
+      description: "Prueba de embarazo Sure-Aid, de un paso. La caja trae 1 prueba.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 pieza",
+      inStock: true,
+      category: "Prueba",
+      tags: ["embarazo", "prueba", "un paso"]
+    },
+  {
+      id: "paraid-embarazo",
+      slug: "paraid-embarazo",
+      name: "Embarazo",
+      brand: "Paraid",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/paraid-embarazo.webp"],
+      description: "Prueba de embarazo Paraid. La caja trae 1 prueba.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 pieza",
+      inStock: true,
+      category: "Prueba",
+      tags: ["embarazo", "prueba"]
+    },
+  {
+      id: "kemei-km-2199",
+      slug: "kemei-km-2199",
+      name: "KM-2199",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-km-2199.webp"],
+      description: "Kit Kemei KM-2199, 5 en 1: depiladora, cepillo de limpieza, masajeador, afeitadora y eliminador de callos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Depilación",
+      tags: ["5 en 1", "depiladora", "callos"]
+    },
+  {
+      id: "rashel-spf-75",
+      slug: "rashel-spf-75",
+      name: "SPF 75",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/rashel-spf-75.webp"],
+      description: "Protector solar Dr. Rashel SPF 75, de 80 g, con oro y colágeno. El envase lo presenta resistente al agua y sin grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "80 g",
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 75", "oro", "colágeno"]
+    },
+  {
+      id: "wokali-infantil",
+      slug: "wokali-infantil",
+      name: "Infantil",
+      brand: "Fruit of the Wokali",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wokali-infantil.webp"],
+      description: "Protector solar infantil Fruit of the Wokali SPF 30, de 130 ml, con vitaminas A, C y E y aloe. El envase lo presenta resistente al agua y al sudor.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 130,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["infantil", "spf 30", "aloe"]
+    },
+  {
+      id: "nevada-spf-60",
+      slug: "nevada-spf-60",
+      name: "SPF 60",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-spf-60.webp"],
+      description: "Protector solar Nevada SPF 60, de 50 ml, con vitamina E. El envase lo presenta de amplio espectro, hipoalergénico y para todo tipo de piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 60", "vitamina e", "amplio espectro"]
+    },
+  {
+      id: "bioaqua-aloe-spf-60",
+      slug: "bioaqua-aloe-spf-60",
+      name: "Aloe SPF 60",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-aloe-spf-60.webp"],
+      description: "Protector solar en spray Bioaqua de aloe vera, de 150 ml, SPF 60+ PA+++. El envase lo presenta ligero, sin grasa y resistente al agua.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["aloe", "spf 60", "spray"]
+    },
+  {
+      id: "nevada-spf-45",
+      slug: "nevada-spf-45",
+      name: "SPF 45",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-spf-45.webp"],
+      description: "Protector solar Nevada SPF 45, de 50 ml, con vitamina E, ácido hialurónico y niacinamida. El envase lo presenta de amplio espectro y para todo tipo de piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 45", "hialurónico", "niacinamida"]
+    },
+  {
+      id: "rashel-after-sun",
+      slug: "rashel-after-sun",
+      name: "After Sun",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/rashel-after-sun.webp"],
+      description: "Gel post-sol Dr. Rashel, de 60 g, con aloe y vitamina E. El envase lo presenta para calmar y refrescar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Gel",
+      tags: ["post-sol", "aloe", "vitamina e"]
+    },
+  {
+      id: "sadoer-spf-50",
+      slug: "sadoer-spf-50",
+      name: "SPF 50",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-spf-50.webp"],
+      description: "Protector solar Sadoer SPF 50+ PA+++. El envase lo presenta resistente al agua y refrescante. La foto no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "agua", "refrescante"]
+    },
+  {
+      id: "sadoer-post-sol",
+      slug: "sadoer-post-sol",
+      name: "Post-sol",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-post-sol.webp"],
+      description: "Set Sadoer de protector solar SPF 50 y gel post-sol de aloe, de 40 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: ["spf 50", "aloe", "post-sol"]
+    },
+  {
+      id: "nevada-spf-90",
+      slug: "nevada-spf-90",
+      name: "SPF 90",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-spf-90.webp"],
+      description: "Protector solar Nevada SPF 90, de 50 ml, con vitamina E. El envase lo presenta de amplio espectro y para todo tipo de piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 90", "vitamina e", "amplio espectro"]
+    },
+  {
+      id: "rashel-spray-60",
+      slug: "rashel-spray-60",
+      name: "Spray SPF 60",
+      brand: "Dr. Rashel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/rashel-spray-60.webp"],
+      description: "Protector solar en spray Dr. Rashel SPF 60, de 150 ml. El envase lo presenta resistente al agua y al sudor, de rápida absorción y sin grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 60", "spray", "sin grasa"]
+    },
+  {
+      id: "beauty-style-termico",
+      slug: "beauty-style-termico",
+      name: "Térmico",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-termico.webp"],
+      description: "Gorro térmico Beauty Style para el cabello. El texto lo presenta compacto y portátil.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Gorro",
+      tags: ["gorro", "térmico", "portátil"]
+    },
+  {
+      id: "salon-rosa",
+      slug: "salon-rosa",
+      name: "Rosa",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-rosa.webp"],
+      description: "Carrito de tres bandejas, rosa, con ruedas. La foto no trae marca ni medidas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["carrito", "rosa", "ruedas"]
+    },
+  {
+      id: "bioaqua-pulpa",
+      slug: "bioaqua-pulpa",
+      name: "Pulpa",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-pulpa.webp"],
+      description: "Loción esencia Bioaqua Rice Raw Pulp, de 60 g. El envase habla de nutrición y de la barrera de la piel.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Esencia facial",
+      tags: ["arroz", "loción", "barrera"]
+    },
+  {
+      id: "wahl-color-trim",
+      slug: "wahl-color-trim",
+      name: "Color Trim",
+      brand: "Wahl",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/wahl-color-trim.webp"],
+      description: "Recortadora de barba Wahl Color Trim, con 9 peines de color, 60 minutos de uso y funcionamiento con o sin cable.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Máquina",
+      tags: ["barba", "peines", "inalámbrica"]
+    },
+  {
+      id: "salon-line-hidra-kids",
+      slug: "salon-line-hidra-kids",
+      name: "Hidra Kids",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-hidra-kids.webp"],
+      description: "Set infantil Salon Line Hidra Kids, de 300 ml y 300 ml: champú con jabón líquido y acondicionador con mascarilla, para cabello rizado. Lleva coco, manteca de karité y melón.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "300 ml + 300 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["infantil", "rizos", "coco"]
+    },
+  {
+      id: "beauty-style-camilla",
+      slug: "beauty-style-camilla",
+      name: "Camilla",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-camilla.webp"],
+      description: "Cobertores desechables de camilla Beauty Style, 10 piezas, de tela no tejida y con esquinas elásticas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "10 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["camilla", "desechable", "elástico"]
+    },
+  {
+      id: "disney-princesas",
+      slug: "disney-princesas",
+      name: "Princesas",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-princesas.webp"],
+      description: "Capa de corte Disney con princesas. La foto no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Capa",
+      tags: ["capa", "princesas", "corte"]
+    },
+  {
+      id: "salon-redondo-negro",
+      slug: "salon-redondo-negro",
+      name: "Redondo negro",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-redondo-negro.webp"],
+      description: "Cepillo redondo con mango de madera y empuñadura negra. La foto no trae marca ni medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "redondo", "madera"]
+    },
+  {
+      id: "beauty-style-redondo",
+      slug: "beauty-style-redondo",
+      name: "Redondo",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-redondo.webp"],
+      description: "Cepillo redondo Beauty Style, con mango de madera y cerdas negras. La foto no marca la medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "redondo", "madera"]
+    },
+  {
+      id: "beauty-style-ovalado",
+      slug: "beauty-style-ovalado",
+      name: "Ovalado",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-ovalado.webp"],
+      description: "Cepillo ovalado Beauty Style, con mango de madera y cerdas negras. La foto no marca la medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "ovalado", "madera"]
     }
 ];
