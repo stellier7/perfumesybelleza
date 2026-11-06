@@ -19654,5 +19654,613 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Cepillo",
       tags: ["desenredar", "bambú"]
+    },
+  {
+      id: "nevada-keratin-smoothing-kit",
+      slug: "nevada-keratin-smoothing-kit",
+      name: "Brazilian Supreme Keratin Kit",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-keratin-smoothing-kit.webp"],
+      description: "Kit de alisado Nevada Brazilian Supreme Keratin, con tres envases de 100 ml: champú de limpieza, tratamiento de keratina y finalizador.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "3 × 100 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["keratina", "kit", "alisado"]
+    },
+  {
+      id: "disney-mickey-2en1",
+      slug: "disney-mickey-2en1",
+      name: "Mickey 2 en 1",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-mickey-2en1.webp"],
+      description: "Champú y acondicionador 2 en 1 Disney Jr Mickey, de 473 ml. El contenido está en el texto de la foto; el envase no lo repite.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 473,
+      inStock: true,
+      category: "Champú",
+      tags: ["mickey", "2 en 1", "infantil"]
+    },
+  {
+      id: "peppa-pig-2en1",
+      slug: "peppa-pig-2en1",
+      name: "Peppa Pig 2 en 1",
+      brand: "Peppa Pig",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/peppa-pig-2en1.webp"],
+      description: "Champú y acondicionador 2 en 1 Peppa Pig. El texto lo presenta para limpiar y suavizar. La línea del contenido no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Champú",
+      tags: ["peppa", "2 en 1", "infantil"]
+    },
+  {
+      id: "nevada-radiant-skin-vitamin-c",
+      slug: "nevada-radiant-skin-vitamin-c",
+      name: "Radiant Skin Vitamin C",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-radiant-skin-vitamin-c.webp"],
+      description: "Crema corporal Nevada Radiant Skin con vitamina C, de 444 ml. Revitalizante, luminosidad y antioxidante.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["vitamina c", "luminosidad", "antioxidante"]
+    },
+  {
+      id: "xtracare-acne-scrub-tea-tree",
+      slug: "xtracare-acne-scrub-tea-tree",
+      name: "Oil-Free Acne Scrub Tea Tree",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-acne-scrub-tea-tree.webp"],
+      description: "Exfoliante facial espumoso XtraCare Oil-Free Acne Wash, de 150 g, con ácido salicílico al 2% y aceite de árbol de té. Fórmula sin aceite.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["acné", "ácido salicílico", "árbol de té"]
+    },
+  {
+      id: "morfose-ossion-extra-hold",
+      slug: "morfose-ossion-extra-hold",
+      name: "Ossion Extra Hold",
+      brand: "Morfose",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/morfose-ossion-extra-hold.webp"],
+      description: "Cera de peinado Morfose Ossion Extra Hold, de 150 ml. Fijación extra para todo el día, acabado sin residuos, para cabello corto o largo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Cera",
+      tags: ["cera", "fijación", "extra hold"]
+    },
+  {
+      id: "xtracare-advanced-lubricating-lotion",
+      slug: "xtracare-advanced-lubricating-lotion",
+      name: "Advanced Lubricating Lotion",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-advanced-lubricating-lotion.webp"],
+      description: "Crema corporal XtraCare Advanced Lubricating, de 444 ml, para piel extra seca. Hidrata, no grasa, y suaviza.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["piel seca", "hidratación"]
+    },
+  {
+      id: "xtracare-foot-powder",
+      slug: "xtracare-foot-powder",
+      name: "Foot Powder Spray",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-foot-powder.webp"],
+      description: "Talco en spray XtraCare Foot Powder, de 85 g, con almidón de maíz. El texto lo presenta para dejar los pies frescos y secos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "85 g",
+      inStock: true,
+      category: "Talco",
+      tags: ["pies", "talco", "maíz"]
+    },
+  {
+      id: "xtracare-hydra-plus",
+      slug: "xtracare-hydra-plus",
+      name: "Hydra Plus Body Lotion",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-hydra-plus.webp"],
+      description: "Crema corporal XtraCare Hydra Plus, de 600 ml, con aceites de almendra y linaza. Fórmula no grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 600,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["almendra", "linaza", "hidratación"]
+    },
+  {
+      id: "renecare-baby-shampoo",
+      slug: "renecare-baby-shampoo",
+      name: "Baby Shampoo",
+      brand: "ReneCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/renecare-baby-shampoo.webp"],
+      description: "Champú ReneCare Baby, de 444 ml, aroma baby. El envase lo marca suave para los ojos y apto para toda la familia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Champú",
+      tags: ["bebé", "suave", "familia"]
+    },
+  {
+      id: "peppa-pig-body-lotion",
+      slug: "peppa-pig-body-lotion",
+      name: "Crema corporal",
+      brand: "Peppa Pig",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/peppa-pig-body-lotion.webp"],
+      description: "Crema corporal Peppa Pig. La foto reúne cuatro tubos. El contenido de cada uno no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["peppa", "infantil", "hidratación"]
+    },
+  {
+      id: "xtracare-ice-cold-gel",
+      slug: "xtracare-ice-cold-gel",
+      name: "Ice Cold Gel",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-ice-cold-gel.webp"],
+      description: "Gel XtraCare Ice Cold, de 227 g, sin grasa. El texto lo presenta como alivio en frío.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "227 g",
+      inStock: true,
+      category: "Gel",
+      tags: ["frío", "gel", "sin grasa"]
+    },
+  {
+      id: "xtracare-acne-wash",
+      slug: "xtracare-acne-wash",
+      name: "Oil-Free Acne Wash",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-acne-wash.webp"],
+      description: "Limpiador facial XtraCare Oil-Free Acne Wash, de 200 ml, con ácido salicílico y aceite de árbol de té. Fórmula sin aceite.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["acné", "ácido salicílico", "árbol de té"]
+    },
+  {
+      id: "xtracare-aloe-vera-cream",
+      slug: "xtracare-aloe-vera-cream",
+      name: "Aloe Vera Cream",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-aloe-vera-cream.webp"],
+      description: "Crema XtraCare Aloe Vera, de 227 g, con extracto de aloe. El texto la presenta para hidratar y un aspecto suave.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "227 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["aloe", "hidratación"]
+    },
+  {
+      id: "nevada-dry-skin-vitamin-e",
+      slug: "nevada-dry-skin-vitamin-e",
+      name: "Dry Skin Repair Vitamin E",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-dry-skin-vitamin-e.webp"],
+      description: "Crema corporal Nevada Dry Skin Repair con vitamina E, de 444 ml. Hidratación, sedosidad y emoliente.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["vitamina e", "piel seca", "hidratación"]
+    },
+  {
+      id: "xtracare-acne-scrub-grapefruit",
+      slug: "xtracare-acne-scrub-grapefruit",
+      name: "Oil-Free Acne Scrub Pomelo",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-acne-scrub-grapefruit.webp"],
+      description: "Exfoliante facial espumoso XtraCare Oil-Free Acne Wash, de 150 g, aroma pomelo rosa, con ácido salicílico al 2%.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Exfoliante",
+      tags: ["acné", "ácido salicílico", "pomelo"]
+    },
+  {
+      id: "nevada-cremas-manos",
+      slug: "nevada-cremas-manos",
+      name: "Cremas para manos",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-cremas-manos.webp"],
+      description: "Cremas para manos Nevada. La foto reúne argán, albaricoque, coco, lavanda, oliva y almendra. El contenido de cada pomo no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["manos", "argán", "coco", "lavanda"]
+    },
+  {
+      id: "disney-frozen-body-cream",
+      slug: "disney-frozen-body-cream",
+      name: "Frozen Crema corporal",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-frozen-body-cream.webp"],
+      description: "Crema corporal Disney Frozen, de 118 ml. La foto reúne varios tubos de la misma crema.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["frozen", "infantil"]
+    },
+  {
+      id: "nevada-baby-oil",
+      slug: "nevada-baby-oil",
+      name: "Baby Oil",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-baby-oil.webp"],
+      description: "Aceite para bebé Nevada Baby Series, de 200 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Aceite",
+      tags: ["bebé", "aceite"]
+    },
+  {
+      id: "dentalguru-clinical-care",
+      slug: "dentalguru-clinical-care",
+      name: "Clinical Care+ Soft",
+      brand: "dentalguru",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/dentalguru-clinical-care.webp"],
+      description: "Cepillo dental dentalguru Clinical Care+, cerdas suaves. La foto muestra dos: uno de cerdas rojas y otro de cerdas grises.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo dental",
+      tags: ["cepillo", "suave"]
+    },
+  {
+      id: "amalfi-classic-mouthwash",
+      slug: "amalfi-classic-mouthwash",
+      name: "Enjuague Classic",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-classic-mouthwash.webp"],
+      description: "Enjuague bucal Amalfi Classic, de 500 ml, sin alcohol.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Enjuague bucal",
+      tags: ["enjuague", "sin alcohol"]
+    },
+  {
+      id: "xtracare-daily-lotion",
+      slug: "xtracare-daily-lotion",
+      name: "Daily Lubricating Lotion",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-daily-lotion.webp"],
+      description: "Crema corporal XtraCare Daily Lubricating, de 444 ml, para piel normal a seca. Sin perfume, con vitamina E, no grasa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["sin perfume", "vitamina e", "piel seca"]
+    },
+  {
+      id: "nevada-ice-gel",
+      slug: "nevada-ice-gel",
+      name: "Ice Gel Extra-Strong",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-ice-gel.webp"],
+      description: "Gel corporal Nevada Ice Gel Extra-Strong, de 227 g, sin grasa. Sensación de frío.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "227 g",
+      inStock: true,
+      category: "Gel",
+      tags: ["frío", "gel", "sin grasa"]
+    },
+  {
+      id: "xtracare-shave-cream",
+      slug: "xtracare-shave-cream",
+      name: "Shave Cream Sensitive",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-shave-cream.webp"],
+      description: "Crema de afeitar XtraCare para piel sensible, con glicerina y aloe. El envase anuncia 20% más de contenido. El peso no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Gel",
+      tags: ["afeitado", "aloe", "glicerina"]
+    },
+  {
+      id: "instituto-espanol-coco-roll-on",
+      slug: "instituto-espanol-coco-roll-on",
+      name: "Coco Roll-On",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-coco-roll-on.webp"],
+      description: "Desodorante roll-on Instituto Español de coco, antitranspirante. El texto habla de 48 horas, sin alcohol y con vitamina E. El envase no marca el contenido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Desodorante",
+      tags: ["coco", "roll-on", "sin alcohol"]
+    },
+  {
+      id: "nevada-crespos-activador",
+      slug: "nevada-crespos-activador",
+      name: "Crespos Perfeitos Activador",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-crespos-activador.webp"],
+      description: "Activador de crespos Nevada Crespos Perfeitos. El texto lo presenta para definición y volumen, en todo tipo de crespos, y marca vegano. El contenido no se lee.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["crespos", "vegano", "definición"]
+    },
+  {
+      id: "disney-princess-body-lotion",
+      slug: "disney-princess-body-lotion",
+      name: "Princess Crema corporal",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-princess-body-lotion.webp"],
+      description: "Crema corporal Disney Princess, de 118 ml. La foto reúne Bella, Ariel, Rapunzel y Cenicienta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["princesas", "infantil"]
+    },
+  {
+      id: "marvel-spiderman-wipes",
+      slug: "marvel-spiderman-wipes",
+      name: "Spider-Man Toallitas",
+      brand: "Marvel",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/marvel-spiderman-wipes.webp"],
+      description: "Toallitas antibacteriales Marvel Spider-Man. El paquete no indica la cantidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Toallitas",
+      tags: ["toallitas", "antibacterial", "spiderman"]
+    },
+  {
+      id: "disney-inside-out-body-lotion",
+      slug: "disney-inside-out-body-lotion",
+      name: "Inside Out Crema corporal",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-inside-out-body-lotion.webp"],
+      description: "Crema corporal Disney Pixar Inside Out, de 118 ml. La foto reúne cuatro tubos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["inside out", "infantil"]
+    },
+  {
+      id: "disney-toy-story-wipes",
+      slug: "disney-toy-story-wipes",
+      name: "Toy Story Toallitas",
+      brand: "Disney",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/disney-toy-story-wipes.webp"],
+      description: "Toallitas antibacteriales Disney Pixar Toy Story, 80 unidades, sin alcohol.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "80 toallitas",
+      inStock: true,
+      category: "Toallitas",
+      tags: ["toallitas", "antibacterial", "sin alcohol"]
     }
 ];
