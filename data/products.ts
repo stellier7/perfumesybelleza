@@ -22020,5 +22020,613 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Acondicionador",
       tags: ["acondicionador", "maca", "reparación"]
+    },
+  {
+      id: "salon-soporte-secadora",
+      slug: "salon-soporte-secadora",
+      name: "Soporte espiral",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-soporte-secadora.webp"],
+      description: "Soporte espiral para secadora, de acrílico transparente y base estable. La foto no trae marca. La secadora de la foto es de muestra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["secadora", "soporte", "acrílico"]
+    },
+  {
+      id: "kemei-cuchilla",
+      slug: "kemei-cuchilla",
+      name: "Cuchilla",
+      brand: "Kemei",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/kemei-cuchilla.webp"],
+      description: "Cuchilla de repuesto Kemei. El empaque no indica el modelo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["cuchilla", "repuesto", "máquina"]
+    },
+  {
+      id: "beauty-style-eco-oval",
+      slug: "beauty-style-eco-oval",
+      name: "Cepillos Eco",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-eco-oval.webp"],
+      description: "Cepillos ovalados Beauty Style Eco, en burdeos, gris y negro. La foto no marca la medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "eco", "madera"]
+    },
+  {
+      id: "beauty-style-hojillas-super-taper",
+      slug: "beauty-style-hojillas-super-taper",
+      name: "Hojillas Super Taper",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-hojillas-super-taper.webp"],
+      description: "Par de hojillas Beauty Style para máquinas Super Taper. El empaque las indica para 8100, Solid Small, 8865, RCM-826S, Pro-Basic, Wahl Professional y la cortadora Beauty Style 0523440.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "2 piezas",
+      inStock: true,
+      category: "Accesorio",
+      tags: ["hojilla", "super taper", "máquina"]
+    },
+  {
+      id: "sadoer-parches-algas",
+      slug: "sadoer-parches-algas",
+      name: "Parches de algas",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-parches-algas.webp"],
+      description: "Parches de ojos Sadoer de algas. El sobre habla de hidratar y suavizar la textura. No marca la cantidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Parches",
+      tags: ["ojos", "algas", "ojeras"]
+    },
+  {
+      id: "beauty-style-peine-plastico",
+      slug: "beauty-style-peine-plastico",
+      name: "Peine de plástico",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-peine-plastico.webp"],
+      description: "Peines de plástico Beauty Style, en negro, gris y rojo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Peine",
+      tags: ["peine", "plástico"]
+    },
+  {
+      id: "salon-soporte-pared",
+      slug: "salon-soporte-pared",
+      name: "Soporte de pared",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-soporte-pared.webp"],
+      description: "Soporte de pared, con gancho y barra acolchada. La foto no trae marca ni nombre.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["soporte", "pared", "gancho"]
+    },
+  {
+      id: "beauty-style-eco-espejo",
+      slug: "beauty-style-eco-espejo",
+      name: "Cepillo con espejo",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-eco-espejo.webp"],
+      description: "Cepillo Beauty Style Eco con espejo en el reverso. La foto muestra el mismo cepillo por los dos lados.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "espejo", "eco"]
+    },
+  {
+      id: "beauty-style-llavero",
+      slug: "beauty-style-llavero",
+      name: "Llavero",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-llavero.webp"],
+      description: "Llavero Beauty Style, con mini peine y mini recipiente.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["llavero", "mini peine"]
+    },
+  {
+      id: "salon-calcetin-gel",
+      slug: "salon-calcetin-gel",
+      name: "Calcetín de gel",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-calcetin-gel.webp"],
+      description: "Calcetín de gel, talla única, lavable y reutilizable. Con aceite de jojoba, oliva y vitamina E. La caja no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "talla única",
+      inStock: true,
+      category: "Calcetín",
+      tags: ["pies", "gel", "talones"]
+    },
+  {
+      id: "sadoer-mascarilla-negra",
+      slug: "sadoer-mascarilla-negra",
+      name: "Mascarilla negra",
+      brand: "Sadoer",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/sadoer-mascarilla-negra.webp"],
+      description: "Mascarilla negra Sadoer de carbón de bambú. El sobre no marca el tamaño. El pincel de la foto es de muestra.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["carbón", "puntos negros", "facial"]
+    },
+  {
+      id: "salon-vaporizador-negro",
+      slug: "salon-vaporizador-negro",
+      name: "Vaporizador facial negro",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-vaporizador-negro.webp"],
+      description: "Vaporizador facial de pie, con ruedas. La foto no trae marca ni potencia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Mobiliario",
+      tags: ["vapor", "facial", "salón"]
+    },
+  {
+      id: "beauty-style-peine-ancho",
+      slug: "beauty-style-peine-ancho",
+      name: "Peine de dientes anchos",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/beauty-style-peine-ancho.webp"],
+      description: "Peine de dientes anchos Beauty Style, con mango de tres púas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Peine",
+      tags: ["peine", "rizos", "púas"]
+    },
+  {
+      id: "instituto-espanol-aloe-vera-500",
+      slug: "instituto-espanol-aloe-vera-500",
+      name: "Aloe Vera",
+      brand: "Instituto Español",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/instituto-espanol-aloe-vera-500.webp"],
+      description: "Crema corporal Instituto Español Aloe Vera, de 500 ml, para manos y cuerpo. Absorción rápida, para piel sensible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["aloe", "cuerpo", "piel sensible"]
+    },
+  {
+      id: "avena-body-lotion",
+      slug: "avena-body-lotion",
+      name: "Loción corporal",
+      brand: "Avena",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/avena-body-lotion.webp"],
+      description: "Crema corporal Avena, con 99 % de avena, vitamina E y B3. El envase no marca el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["avena", "vitamina e", "cuerpo"]
+    },
+  {
+      id: "nevada-kids-spf-50",
+      slug: "nevada-kids-spf-50",
+      name: "Kids SPF 50",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-kids-spf-50.webp"],
+      description: "Protector solar Nevada Kids SPF 50, de 270 ml, resistente al agua, para UVA y UVB. El texto indica reaplicar cada 2 horas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 270,
+      inStock: true,
+      category: "Protector solar",
+      tags: ["spf 50", "niños", "uva"]
+    },
+  {
+      id: "nevada-rose-manos",
+      slug: "nevada-rose-manos",
+      name: "Rose",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-rose-manos.webp"],
+      description: "Crema de manos Nevada Rose, de 120 ml, con rosa y vitamina E.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 120,
+      inStock: true,
+      category: "Crema de manos",
+      tags: ["rosa", "manos", "vitamina e"]
+    },
+  {
+      id: "nevada-rose-depilatoria",
+      slug: "nevada-rose-depilatoria",
+      name: "Rose depilatoria",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-rose-depilatoria.webp"],
+      description: "Crema depilatoria Nevada Rose, de 100 ml, con extracto de rosas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "rosa"]
+    },
+  {
+      id: "nevada-romero-tratamiento",
+      slug: "nevada-romero-tratamiento",
+      name: "Tratamiento de romero",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-romero-tratamiento.webp"],
+      description: "Tratamiento capilar Nevada de romero, de 510 ml. El texto habla de fortalecer la raíz, estimular el crecimiento y proteger el cuero cabelludo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["romero", "raíz", "crecimiento"]
+    },
+  {
+      id: "nevada-choco-keratina",
+      slug: "nevada-choco-keratina",
+      name: "Choco Keratina",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nevada-choco-keratina.webp"],
+      description: "Tratamiento Nevada Choco Keratina, de 1 kg. El texto habla de alisado progresivo, suavidad y brillo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 kg",
+      inStock: true,
+      category: "Tratamiento",
+      tags: ["keratina", "chocolate", "alisado"]
+    },
+  {
+      id: "orange-set-pies",
+      slug: "orange-set-pies",
+      name: "Set para pies",
+      brand: "Orange",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/orange-set-pies.webp"],
+      description: "Set para pies Orange, de 4 piezas: sales de 27 g, exfoliante de 27 g, mascarilla de lodo de 27 ml y loción de 27 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "4 piezas",
+      inStock: true,
+      category: "Set",
+      tags: ["pies", "naranja", "set"]
+    },
+  {
+      id: "nessrin-gala-kids",
+      slug: "nessrin-gala-kids",
+      name: "Gala Kids",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-kids.webp"],
+      description: "Crema Nessrin Gala Kids, de 1000 g, para cabello delicado. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["infantil", "rizos", "vegano"]
+    },
+  {
+      id: "nessrin-gala-almidon",
+      slug: "nessrin-gala-almidon",
+      name: "Gala Almidón de maíz",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-almidon.webp"],
+      description: "Crema 2 en 1 Nessrin Gala de almidón de maíz, de 1000 g, con aceite de coco y D-pantenol. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["almidón", "coco", "vegano"]
+    },
+  {
+      id: "nessrin-gala-divino-potao",
+      slug: "nessrin-gala-divino-potao",
+      name: "Gala Divino Potao",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-divino-potao.webp"],
+      description: "Crema 2 en 1 Nessrin Gala Divino Potao, de 1000 g, para crespos y rizos, con aceites, queratina y colágeno vegetal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "queratina", "2 en 1"]
+    },
+  {
+      id: "nessrin-gala-mas-crespos-1000",
+      slug: "nessrin-gala-mas-crespos-1000",
+      name: "Gala Más Crespos",
+      brand: "Nessrin",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/nessrin-gala-mas-crespos-1000.webp"],
+      description: "Crema 2 en 1 Nessrin Gala Más Crespos, de 1000 g, con argán, coco, patauá y extracto de amaranto.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1000 g",
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["crespos", "argán", "2 en 1"]
+    },
+  {
+      id: "carotone-locion",
+      slug: "carotone-locion",
+      name: "Loción aclarante",
+      brand: "Carotone",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/carotone-locion.webp"],
+      description: "Loción corporal Carotone, con colágeno DSP 10 y B-caroteno. La foto muestra dos tamaños y ninguno marca el volumen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["caroteno", "colágeno", "cuerpo"]
+    },
+  {
+      id: "amalfi-cherry-gum",
+      slug: "amalfi-cherry-gum",
+      name: "Cherry Gum",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-cherry-gum.webp"],
+      description: "Jabón en crema Amalfi Cherry Gum, de 500 ml. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "manos", "vegano"]
+    },
+  {
+      id: "amalfi-melocoton",
+      slug: "amalfi-melocoton",
+      name: "Melocotón",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-melocoton.webp"],
+      description: "Jabón en crema Amalfi Melocotón, de 500 ml. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "manos", "vegano"]
+    },
+  {
+      id: "amalfi-kids",
+      slug: "amalfi-kids",
+      name: "Kids",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-kids.webp"],
+      description: "Jabón en crema Amalfi Kids, de 500 ml. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "infantil", "vegano"]
+    },
+  {
+      id: "amalfi-frutas-del-bosque",
+      slug: "amalfi-frutas-del-bosque",
+      name: "Frutas del bosque",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-frutas-del-bosque.webp"],
+      description: "Jabón en crema Amalfi Frutas del bosque, de 500 ml. Fórmula vegana.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 500,
+      inStock: true,
+      category: "Jabón",
+      tags: ["jabón", "manos", "vegano"]
     }
 ];
