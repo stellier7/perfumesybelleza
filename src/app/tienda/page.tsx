@@ -46,8 +46,8 @@ async function Catalog({
     <Shell className="py-8 md:py-12">
       <h1 className="font-serif text-4xl md:text-5xl">Tienda</h1>
       <p className="mt-3 max-w-xl text-muted">Filtra por tipo, marca, género, precio y existencia.</p>
-      <form className="mt-6 grid gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
-        <fieldset className="grid gap-3 rounded-3xl border border-line bg-paper p-4 text-sm">
+      <form className="mt-6 grid items-start gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
+        <fieldset className="grid min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm">
           <legend className="px-1 text-xs uppercase tracking-[0.16em] text-gold">Filtros</legend>
           <label className="grid gap-1">
             Tipo
@@ -89,14 +89,14 @@ async function Catalog({
               ))}
             </select>
           </label>
-          <div className="grid grid-cols-2 gap-2">
-            <label className="grid gap-1">
+          <div className="grid grid-cols-2 gap-3">
+            <label className="grid min-w-0 gap-1">
               Mínimo
-              <input name="min" type="number" min="0" defaultValue={filters.min ?? ""} className="h-11 rounded-xl border border-line bg-ivory px-3" />
+              <input name="min" inputMode="numeric" type="number" min="0" defaultValue={filters.min ?? ""} className="h-11 w-full min-w-0 rounded-xl border border-line bg-ivory px-3" />
             </label>
-            <label className="grid gap-1">
+            <label className="grid min-w-0 gap-1">
               Máximo
-              <input name="max" type="number" min="0" defaultValue={filters.max ?? ""} className="h-11 rounded-xl border border-line bg-ivory px-3" />
+              <input name="max" inputMode="numeric" type="number" min="0" defaultValue={filters.max ?? ""} className="h-11 w-full min-w-0 rounded-xl border border-line bg-ivory px-3" />
             </label>
           </div>
           <label className="flex items-center gap-2">
