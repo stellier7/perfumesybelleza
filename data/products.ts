@@ -2386,7 +2386,7 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 0,
       images: ["/products/lana-bliss.webp"],
-      description: "Eau de parfum de 100 ml. El frasco y el texto de la foto dicen Camara Lana Bliss.",
+      description: "Eau de parfum de 100 ml. El frasco dice Camara Lana Bliss.",
       notes: {
         top: [],
         heart: [],
