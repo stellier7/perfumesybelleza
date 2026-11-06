@@ -137,7 +137,7 @@ export function Checkout() {
           ))}
         </ul>
       </div>
-      <form onSubmit={submit} className="h-fit rounded-3xl border border-line bg-paper p-5">
+      <form onSubmit={submit} className="h-fit rounded-3xl border border-line bg-paper p-5 shadow-soft">
         <h2 className="font-serif text-3xl">Datos de envío</h2>
         <div className="mt-4 grid gap-3">
           <Field label="Nombre" name="name" required autoComplete="name" />

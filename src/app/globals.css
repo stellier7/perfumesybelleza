@@ -16,6 +16,8 @@
   --color-night: #171210;
   --color-night-soft: #2a221e;
   --color-whatsapp: #1faf55;
+  --shadow-soft: 0 14px 32px -22px rgb(33 25 21 / 0.55);
+  --shadow-lift: 0 18px 36px -18px rgb(33 25 21 / 0.5);
 }
 
 html {
@@ -52,6 +54,33 @@ body {
   animation: wa-pulse 2.2s ease-out infinite;
 }
 
+a.bg-ink,
+button.bg-ink {
+  box-shadow: 0 8px 16px -12px rgb(33 25 21 / 0.7);
+  transition:
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+a.bg-ink:focus-visible,
+button.bg-ink:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  a.bg-ink:hover,
+  button.bg-ink:hover {
+    background-color: var(--color-night);
+  }
+}
+
+a.bg-ink:active,
+button.bg-ink:active {
+  transform: scale(0.98);
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -73,5 +102,16 @@ body {
 
   .wa-ring {
     animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+
+  a.bg-ink:active,
+  button.bg-ink:active {
+    transform: none;
   }
 }

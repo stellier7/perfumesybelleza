@@ -11,7 +11,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
     <article className="flex flex-col">
       <Link
         href={`/producto/${product.slug}`}
-        className="relative block aspect-[4/5] overflow-hidden rounded-3xl bg-blush/50"
+        className="group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-blush/50 shadow-soft transition duration-300 hover:shadow-lift"
       >
         {image ? (
           <Image
@@ -19,7 +19,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
             alt={`${product.name} de ${product.brand}`}
             fill
             sizes="(max-width: 768px) 50vw, 25vw"
-            className="object-cover"
+            className="object-cover transition duration-500 ease-out motion-safe:group-hover:scale-[1.03]"
           />
         ) : null}
         <span className="absolute left-3 top-3 rounded-full bg-paper/90 px-2.5 py-1 text-[0.7rem] uppercase tracking-[0.14em]">

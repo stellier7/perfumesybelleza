@@ -45,7 +45,7 @@ export function CartDrawer() {
         role="dialog"
         aria-modal="true"
         aria-label="Carrito"
-        className="flex h-full w-full max-w-md flex-col bg-paper"
+        className="flex h-full w-full max-w-md flex-col bg-paper shadow-lift"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-line px-4 py-4">

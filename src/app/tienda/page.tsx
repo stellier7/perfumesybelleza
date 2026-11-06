@@ -47,7 +47,7 @@ async function Catalog({
       <h1 className="font-serif text-4xl md:text-5xl">Tienda</h1>
       <p className="mt-3 max-w-xl text-muted">Filtra por tipo, marca, género, precio y existencia.</p>
       <form className="mt-6 grid items-start gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
-        <fieldset className="grid min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm">
+        <fieldset className="grid min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm shadow-soft">
           <legend className="px-1 text-xs uppercase tracking-[0.16em] text-gold">Filtros</legend>
           <label className="grid gap-1">
             Tipo

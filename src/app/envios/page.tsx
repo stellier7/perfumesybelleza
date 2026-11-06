@@ -43,7 +43,7 @@ export default function ShippingPage() {
           ["3. Despacho", "Preparamos el paquete y lo entregamos a CAEX."],
           ["4. Rastreo", "Te compartimos la guía para que sigas el envío."],
         ].map(([title, text]) => (
-          <li key={title} className="rounded-3xl border border-line bg-paper p-5">
+          <li key={title} className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
             <h2 className="font-serif text-2xl">{title}</h2>
             <p className="mt-2 text-sm leading-6 text-muted">{text}</p>
           </li>

@@ -41,7 +41,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
   }
   return (
     <div>
-      <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-blush/40">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-blush/40 shadow-soft">
         <Image
           src={current}
           alt={`${name}, foto ${active + 1}`}
