@@ -46,6 +46,7 @@ function toPublicBase(raw: RawProduct): PublicProduct {
     description: raw.description,
     notes: raw.notes,
     sizeMl: raw.sizeMl,
+    sizeLabel: raw.sizeLabel,
     inStock: raw.inStock,
     category: raw.category,
     tags: raw.tags,
@@ -137,6 +138,7 @@ export function toSearchRecord(product: PublicProduct): SearchRecord {
       TYPE_LABEL[product.type],
       GENDER_LABEL[product.gender],
       product.tags.join(" "),
+      product.sizeLabel ?? "",
       inspired.join(" "),
     ].join(" "),
   );
@@ -164,6 +166,12 @@ export type ComparisonPair = {
   original: PublicProduct;
   alternative: PublicProduct;
 };
+
+export function formatSize(product: { sizeMl: number | null; sizeLabel?: string }): string | null {
+  if (product.sizeLabel) return product.sizeLabel;
+  if (product.sizeMl) return `${product.sizeMl} ml`;
+  return null;
+}
 
 export function comparisonSlug(originalSlug: string, alternativeSlug: string): string {
   return `${originalSlug}-vs-${alternativeSlug}`;

@@ -8,6 +8,7 @@ import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
 import { Shell } from "@/components/shell";
 import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
+import { formatSize } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { faqJsonLd } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
@@ -126,7 +127,7 @@ function Side({ product, role }: { product: PublicProduct; role: string }) {
       <h2 className="mt-2 font-serif text-3xl">{product.name}</h2>
       <p className="text-sm text-muted">{product.brand}</p>
       <p className="mt-4 text-lg">{price}</p>
-      <p className="text-sm text-muted">{product.sizeMl ? `${product.sizeMl} ml` : "Tamaño no indicado"}</p>
+      <p className="text-sm text-muted">{formatSize(product) ?? "Tamaño no indicado"}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
         <RatingMeter label="Duración" value={product.longevity} />
         <RatingMeter label="Estela" value={product.projection} />
