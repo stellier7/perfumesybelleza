@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TYPE_LABEL } from "@/config";
+import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -32,7 +33,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
           {product.name}
         </Link>
         {inspired ? (
-          <p className="mt-2 text-sm text-muted">Inspirado en {inspired.name}</p>
+          <p className="mt-2 text-sm text-muted">Inspirado en {nameWithBrand(inspired.name, inspired.brand)}</p>
         ) : null}
         <p className="mt-2 text-sm font-medium">
           {product.isReference

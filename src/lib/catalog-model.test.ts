@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildCatalog, comparisonPairs, parseComparisonSlug } from "./catalog-model";
+import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug } from "./catalog-model";
 import { searchCatalog } from "./search";
 import { toSearchRecord } from "./catalog-model";
 import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
@@ -59,6 +59,13 @@ const raw: RawProduct[] = [
     inspiredBy: ["Aventus (Creed)"],
   }),
 ];
+
+test("la inspiración se escribe con la marca delante del nombre", () => {
+  assert.equal(nameWithBrand("Aventus", "Creed"), "Creed Aventus");
+  assert.equal(nameWithBrand("Acqua di Gio", "Giorgio Armani"), "Giorgio Armani Acqua di Gio");
+  assert.equal(nameWithBrand("Bleu de Chanel", "Chanel"), "Bleu de Chanel");
+  assert.equal(nameWithBrand("Y", "Yves Saint Laurent"), "Yves Saint Laurent Y");
+});
 
 test("calcula alternativas y una referencia si el diseñador no está en el catálogo", () => {
   const catalog = buildCatalog(raw);

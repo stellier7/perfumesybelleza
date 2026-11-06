@@ -8,6 +8,7 @@ import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
 import { Shell } from "@/components/shell";
 import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
+import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { faqJsonLd } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
@@ -24,8 +25,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PairParams): Promise<Metadata> {
   const comparison = getComparisonBySlug((await params).pair);
   if (!comparison) return { title: "Comparación" };
-  const title = `${comparison.original.name} y ${comparison.alternative.name}`;
-  const description = `Compara ${comparison.original.name} con ${comparison.alternative.name}, una alternativa para quienes buscan un aroma similar.`;
+  const originalLabel = nameWithBrand(comparison.original.name, comparison.original.brand);
+  const title = `${originalLabel} y ${comparison.alternative.name}`;
+  const description = `Compara ${originalLabel} con ${comparison.alternative.name}, una alternativa para quienes buscan un aroma similar.`;
   return {
     title,
     description,
@@ -46,18 +48,19 @@ async function Comparison({ params }: PairParams) {
   const comparison = getComparisonBySlug((await params).pair);
   if (!comparison) notFound();
   const { original, alternative } = comparison;
+  const originalLabel = nameWithBrand(original.name, original.brand);
   const faqs = [
     {
       question: "¿Es el mismo perfume?",
-      answer: `No. ${alternative.name} es una alternativa para quienes buscan un aroma similar a ${original.name}. No es el perfume de la casa de diseño y no decimos que huela igual.`,
+      answer: `No. ${alternative.name} es una alternativa para quienes buscan un aroma similar a ${originalLabel}. No es el perfume de la casa de diseño y no decimos que huela igual.`,
     },
     {
       question: "¿Cuál pido si quiero el de la casa?",
       answer: original.isReference
-        ? `No trabajamos ${original.name}. ${alternative.name} es la alternativa disponible en el catálogo.`
+        ? `No trabajamos ${originalLabel}. ${alternative.name} es la alternativa disponible en el catálogo.`
         : original.inStock
-          ? `${original.name} está disponible. ${alternative.name} es la opción más accesible para el día a día.`
-          : `${original.name} está agotado. Puedes pedir ${alternative.name} o avisarnos para reposición.`,
+          ? `${originalLabel} está disponible. ${alternative.name} es la opción más accesible para el día a día.`
+          : `${originalLabel} está agotado. Puedes pedir ${alternative.name} o avisarnos para reposición.`,
     },
     {
       question: "¿Puedo pedirlos por WhatsApp?",
@@ -73,14 +76,14 @@ async function Comparison({ params }: PairParams) {
         <Link href="/comparaciones">Comparaciones</Link>
         <span> / </span>
         <span>
-          {original.name} y {alternative.name}
+          {originalLabel} y {alternative.name}
         </span>
       </nav>
       <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
-        {original.name} <span className="text-gold">y</span> {alternative.name}
+        {originalLabel} <span className="text-gold">y</span> {alternative.name}
       </h1>
       <p className="mt-4 max-w-2xl leading-7 text-muted">
-        {alternative.name} es una alternativa para quienes buscan un aroma similar a {original.name}.
+        {alternative.name} es una alternativa para quienes buscan un aroma similar a {originalLabel}.
         Aquí ves precio, tamaño y para qué momento rinde mejor cada uno.
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -90,12 +93,12 @@ async function Comparison({ params }: PairParams) {
       <section className="mt-10 rounded-3xl bg-paper p-6 shadow-soft">
         <h2 className="font-serif text-3xl">Para quién es cada uno</h2>
         <p className="mt-3 leading-7">
-          {original.verdict ?? `${original.name} es la referencia de esta comparación.`}{" "}
+          {original.verdict ?? `${originalLabel} es la referencia de esta comparación.`}{" "}
           {alternative.verdict ?? `${alternative.name} es la alternativa que tenemos en catálogo.`}
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href={`/producto/${original.slug}`} className="rounded-full border border-line px-4 py-2 text-sm">
-            Ver {original.name}
+            Ver {originalLabel}
           </Link>
           {!alternative.isReference && alternative.inStock ? (
             <Link href={`/producto/${alternative.slug}`} className="rounded-full bg-ink px-4 py-2 text-sm text-ivory">

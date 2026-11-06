@@ -72,10 +72,12 @@ export function inspirationOrder(
   return left.name.localeCompare(right.name, "es");
 }
 
+/** «Creed Aventus». Si el nombre ya trae la marca, no la repite. */
 export function nameWithBrand(name: string, brand: string): string {
-  if (!brand) return name;
-  if (fold(name).includes(fold(brand))) return name;
-  return `${name} de ${brand}`;
+  const trimmed = brand.trim();
+  if (!trimmed) return name;
+  if (fold(name).includes(fold(trimmed))) return name;
+  return `${trimmed} ${name}`;
 }
 
 function referenceProduct(name: string, brand: string): PublicProduct {

@@ -71,7 +71,9 @@ async function SearchResults({
           ) : null}
           {presentation.groups.map((group) => (
             <section key={group.original.id}>
-              <h2 className="font-serif text-3xl">Inspirado en {group.original.name}</h2>
+              <h2 className="font-serif text-3xl">
+                Inspirado en {nameWithBrand(group.original.name, group.original.brand)}
+              </h2>
               <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
                 Del más cercano al más libre. No es el perfume de la casa.
               </p>
