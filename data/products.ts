@@ -17516,14 +17516,14 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/beauty-creations-peach-lotion.webp"],
-      description: "Loción corporal de doble capa Beauty Creations Life's a Peach. El contenido impreso del tubo no se confirma.",
+      images: ["/products/beauty-creations-peach-lotion.webp", "/products/beauty-creations-peach-lotion-2.webp"],
+      description: "Loción corporal de doble capa Beauty Creations Life's a Peach, de 200 ml.",
       notes: {
         top: [],
         heart: [],
         base: []
       },
-      sizeMl: null,
+      sizeMl: 200,
       inStock: true,
       category: "Crema corporal",
       tags: ["loción", "durazno", "corporal"]
@@ -17557,14 +17557,15 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/beauty-creations-peach-body-butter.webp"],
-      description: "Manteca corporal Beauty Creations Life's a Peach. El peso del envase no se lee con claridad.",
+      images: ["/products/beauty-creations-peach-body-butter.webp", "/products/beauty-creations-peach-body-butter-2.webp"],
+      description: "Manteca corporal Beauty Creations Life's a Peach, de 200 g.",
       notes: {
         top: [],
         heart: [],
         base: []
       },
       sizeMl: null,
+      sizeLabel: "200 g",
       inStock: true,
       category: "Crema corporal",
       tags: ["manteca", "durazno", "corporal"]
@@ -17638,14 +17639,15 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/beauty-creations-peach-sugar-scrub.webp"],
-      description: "Exfoliante corporal de azúcar Beauty Creations Life's a Peach. El peso del envase no se lee con claridad.",
+      images: ["/products/beauty-creations-peach-sugar-scrub.webp", "/products/beauty-creations-peach-sugar-scrub-2.webp"],
+      description: "Exfoliante corporal de azúcar Beauty Creations Life's a Peach, de 270 g.",
       notes: {
         top: [],
         heart: [],
         base: []
       },
       sizeMl: null,
+      sizeLabel: "270 g",
       inStock: true,
       category: "Exfoliante",
       tags: ["exfoliante", "durazno", "azúcar"]
@@ -20029,7 +20031,7 @@ export const rawProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 0,
-      images: ["/products/nevada-baby-oil.webp"],
+      images: ["/products/nevada-baby-oil.webp", "/products/nevada-baby-oil-2.webp"],
       description: "Aceite para bebé Nevada Baby Series, de 200 ml.",
       notes: {
         top: [],
@@ -30324,5 +30326,541 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Crema para peinar",
       tags: ["alisado", "queratina", "aguacate"]
+    },
+  {
+      id: "bioaqua-hinojo-limpiador",
+      slug: "bioaqua-hinojo-limpiador",
+      name: "Hinojo limpiador",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-hinojo-limpiador.webp"],
+      description: "Limpiador facial Bioaqua de hinojo marino y ácido hialurónico, de 100 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["hinojo", "hialurónico", "limpiador"]
+    },
+  {
+      id: "bioaqua-camelias-esencia",
+      slug: "bioaqua-camelias-esencia",
+      name: "Camelias esencia",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-camelias-esencia.webp"],
+      description: "Esencia facial Bioaqua Camellias, de 30 ml, con extracto de camelia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["camelia", "esencia", "antioxidante"]
+    },
+  {
+      id: "bioaqua-melocoton-locion",
+      slug: "bioaqua-melocoton-locion",
+      name: "Melocotón loción",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-melocoton-locion.webp"],
+      description: "Loción corporal Bioaqua de melocotón, de 250 g, con hexapéptido.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "250 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["melocotón", "loción", "cuerpo"]
+    },
+  {
+      id: "bioaqua-arroz-rollon",
+      slug: "bioaqua-arroz-rollon",
+      name: "Arroz roll-on",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-arroz-rollon.webp"],
+      description: "Desodorante roll-on Bioaqua de pulpa de arroz, de 50 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Desodorante",
+      tags: ["arroz", "roll-on", "desodorante"]
+    },
+  {
+      id: "bioaqua-sakura-locion",
+      slug: "bioaqua-sakura-locion",
+      name: "Sakura loción",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-sakura-locion.webp"],
+      description: "Loción corporal Bioaqua Sakura, de 100 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Crema corporal",
+      tags: ["sakura", "loción", "cuerpo"]
+    },
+  {
+      id: "bioaqua-fresa-pastel",
+      slug: "bioaqua-fresa-pastel",
+      name: "Fresa pastel",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-fresa-pastel.webp"],
+      description: "Crema facial Bioaqua Strawberry Cake, de 100 g, con fragancia de pastel de fresa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "100 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["fresa", "crema", "facial"]
+    },
+  {
+      id: "bioaqua-aloe-depilatoria",
+      slug: "bioaqua-aloe-depilatoria",
+      name: "Áloe depilatoria",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-aloe-depilatoria.webp"],
+      description: "Crema depilatoria Bioaqua de áloe vera, de 60 g, para el cuerpo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "áloe", "cuerpo"]
+    },
+  {
+      id: "bioaqua-hinojo-crema",
+      slug: "bioaqua-hinojo-crema",
+      name: "Hinojo crema",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-hinojo-crema.webp"],
+      description: "Crema facial Bioaqua de hinojo marino y ácido hialurónico, de 60 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "60 g",
+      inStock: true,
+      category: "Crema facial",
+      tags: ["hinojo", "hialurónico", "crema"]
+    },
+  {
+      id: "bioaqua-serum-set",
+      slug: "bioaqua-serum-set",
+      name: "Sérum set",
+      brand: "Bioaqua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/bioaqua-serum-set.webp"],
+      description: "Set de sérums Bioaqua: vitamina C, retinol y ácido hialurónico, de 30 ml cada uno.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "30 ml + 30 ml + 30 ml",
+      inStock: true,
+      category: "Set",
+      tags: ["vitamina c", "retinol", "hialurónico"]
+    },
+  {
+      id: "remington-wet2style",
+      slug: "remington-wet2style",
+      name: "Wet2Style",
+      brand: "Remington",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/remington-wet2style.webp"],
+      description: "Cepillo de aire Remington Wet2Style, de 1200 W. Barril de cerámica, tres temperaturas, dos velocidades y ráfaga de aire frío.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Cepillo",
+      tags: ["cepillo", "cerámica", "1200w"]
+    },
+  {
+      id: "amalfi-familiar",
+      slug: "amalfi-familiar",
+      name: "Familiar",
+      brand: "Amalfi",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/amalfi-familiar.webp"],
+      description: "Champú Amalfi Dermo Care Familiar, de 1250 ml, vegano.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1250,
+      inStock: true,
+      category: "Champú",
+      tags: ["familiar", "vegano", "champú"]
+    },
+  {
+      id: "salon-rociador",
+      slug: "salon-rociador",
+      name: "Rociador",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-rociador.webp"],
+      description: "Rociador de salón. La foto no trae marca ni medida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["rociador", "salón"]
+    },
+  {
+      id: "stay-beautiful-skin-fresh",
+      slug: "stay-beautiful-skin-fresh",
+      name: "Skin fresh",
+      brand: "Stay Beautiful",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/stay-beautiful-skin-fresh.webp"],
+      description: "Crema depilatoria Stay Beautiful Skin Fresh, de 156 g, con áloe vera y vitamina E, para piernas y cuerpo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "156 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "áloe", "vitamina e"]
+    },
+  {
+      id: "skin1004-tea-trica-mask",
+      slug: "skin1004-tea-trica-mask",
+      name: "Tea-Trica",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tea-trica-mask.webp"],
+      description: "Mascarilla facial SKIN1004 Madagascar Centella Tea-Trica, 5 unidades de 25 ml, con centella, ácido salicílico y niacinamida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 × 25 ml",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["centella", "niacinamida", "mascarilla"]
+    },
+  {
+      id: "skin1004-hyalu-cica-mask",
+      slug: "skin1004-hyalu-cica-mask",
+      name: "Hyalu-Cica",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-hyalu-cica-mask.webp"],
+      description: "Mascarilla facial SKIN1004 Madagascar Centella Hyalu-Cica, 5 unidades de 25 ml, con centella y ácido hialurónico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 × 25 ml",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["centella", "hialurónico", "mascarilla"]
+    },
+  {
+      id: "skin1004-tone-glow-mask",
+      slug: "skin1004-tone-glow-mask",
+      name: "Tone Glow",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-tone-glow-mask.webp"],
+      description: "Mascarilla facial SKIN1004 Madagascar Centella Tone Brightening, 5 unidades de 25 ml, con centella, niacinamida y ácido tranexámico.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "5 × 25 ml",
+      inStock: true,
+      category: "Mascarilla facial",
+      tags: ["centella", "niacinamida", "tranexámico"]
+    },
+  {
+      id: "skin1004-centella-crema",
+      slug: "skin1004-centella-crema",
+      name: "Crema centella",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-centella-crema.webp"],
+      description: "Crema facial SKIN1004 Madagascar Centella, de 75 ml, con centella y cuatro ceramidas vegetales, de pH bajo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Crema facial",
+      tags: ["centella", "ceramidas", "crema"]
+    },
+  {
+      id: "skin1004-centella-55",
+      slug: "skin1004-centella-55",
+      name: "Ampoule",
+      brand: "SKIN1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/skin1004-centella-55.webp"],
+      description: "Sérum SKIN1004 Madagascar Centella Ampoule, de 55 ml, con centella de Madagascar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 55,
+      inStock: true,
+      category: "Sérum facial",
+      tags: ["centella", "ampolla", "barrera"]
+    },
+  {
+      id: "salon-estuche-viaje",
+      slug: "salon-estuche-viaje",
+      name: "Estuche de viaje",
+      brand: "Salón",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-estuche-viaje.webp"],
+      description: "Estuche de viaje para cepillo y pasta dental. La foto no trae marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: ["estuche", "viaje", "dental"]
+    },
+  {
+      id: "xtracare-depilatoria-avena",
+      slug: "xtracare-depilatoria-avena",
+      name: "Depilatoria avena",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-depilatoria-avena.webp"],
+      description: "Crema depilatoria XtraCare para piel seca, de 150 g, con extracto de avena.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "150 g",
+      inStock: true,
+      category: "Depilación",
+      tags: ["depilación", "avena", "piel seca"]
+    },
+  {
+      id: "salon-line-ativador-hialuronico",
+      slug: "salon-line-ativador-hialuronico",
+      name: "Ativador hialurónico",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-ativador-hialuronico.webp"],
+      description: "Activador de rizos Salon Line S.O.S Cachos, de 300 ml, con ácido hialurónico, para cabello de 2ABC a 4ABC.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "hialurónico", "activador"]
+    },
+  {
+      id: "salon-line-ativador-coco",
+      slug: "salon-line-ativador-coco",
+      name: "Ativador coco",
+      brand: "Salon Line",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/salon-line-ativador-coco.webp"],
+      description: "Activador de rizos Salon Line S.O.S Cachos, de 300 ml, con óleo de coco, para cabello de 2ABC a 4ABC.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 300,
+      inStock: true,
+      category: "Crema para peinar",
+      tags: ["rizos", "coco", "activador"]
+    },
+  {
+      id: "lisse-tannin",
+      slug: "lisse-tannin",
+      name: "Tannin",
+      brand: "Lisse Professionals",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/lisse-tannin.webp"],
+      description: "Set Lisse Professionals Tannin Treatment, de 1 L y 1 L: champú de limpieza profunda sin sulfatos y tratamiento de alisado sin formol. Vegano, con ácido tánico, aceite de coco, manteca de murumuru y queratina.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L + 1 L",
+      inStock: true,
+      category: "Set",
+      tags: ["tanino", "vegano", "sin sulfatos"]
+    },
+  {
+      id: "inoar-ghair-finalizadora",
+      slug: "inoar-ghair-finalizadora",
+      name: "G.Hair finalizadora",
+      brand: "Inoar",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/inoar-ghair-finalizadora.webp"],
+      description: "Mascarilla finalizadora Inoar G.Hair, paso 3, de 1 L.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Mascarilla",
+      tags: ["g.hair", "mascarilla", "finalizador"]
+    },
+  {
+      id: "inoar-ghair-antivolumen",
+      slug: "inoar-ghair-antivolumen",
+      name: "G.Hair antivolumen",
+      brand: "Inoar",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/inoar-ghair-antivolumen.webp"],
+      description: "Acondicionador Inoar G.Hair antivolumen, paso 2, de 1 L.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "1 L",
+      inStock: true,
+      category: "Acondicionador",
+      tags: ["g.hair", "antivolumen", "acondicionador"]
+    },
+  {
+      id: "xtracare-cold-cream",
+      slug: "xtracare-cold-cream",
+      name: "Cold Cream",
+      brand: "XtraCare",
+      type: "beauty",
+      gender: "unisex",
+      cost: 0,
+      images: ["/products/xtracare-cold-cream.webp"],
+      description: "Cold cream XtraCare, de 227 g, para retirar el maquillaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      sizeLabel: "227 g",
+      inStock: true,
+      category: "Limpiador facial",
+      tags: ["cold cream", "maquillaje", "limpieza"]
     }
 ];
