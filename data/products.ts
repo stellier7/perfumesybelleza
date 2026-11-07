@@ -180,6 +180,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "delina-lote-7081",
+      slug: "delina-lote-7081",
+      name: "Delina",
+      brand: "Parfums de Marly",
+      type: "designer",
+      gender: "mujer",
+      cost: 7081,
+      price: 9913,
+      images: ["/products/delina.webp"],
+      description: "Eau de parfum de 75 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "amber-oud-ultra-violet",
       slug: "amber-oud-ultra-violet",
       name: "Amber Oud Ultra Violet",
@@ -751,6 +772,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "aventus-for-her-lote-7500",
+      slug: "aventus-for-her-lote-7500",
+      name: "Aventus For Her",
+      brand: "Creed",
+      type: "designer",
+      gender: "mujer",
+      cost: 7500,
+      price: 13500,
+      images: ["/products/aventus-for-her.webp"],
+      description: "Eau de parfum For Her de 75 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 75,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "fakhar",
       slug: "fakhar",
       name: "Fakhar",
@@ -774,6 +816,29 @@ export const rawProducts: RawProduct[] = [
       inspirationRank: 1,
     },
   {
+      id: "fakhar-lote-854",
+      slug: "fakhar-lote-854",
+      name: "Fakhar",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 854,
+      price: 1880,
+      images: ["/products/fakhar.webp"],
+      description: "Eau de parfum de 100 ml, frasco blanco con tapa oro rosa. Es distinto del Fakhar Black. Inspirado en Yves Saint Laurent Y. Aroma fresco, aromático y dulce.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 1,
+    },
+  {
       id: "odyssey-revolution-ultra",
       slug: "odyssey-revolution-ultra",
       name: "Odyssey Revolution Ultra Edition",
@@ -782,6 +847,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 1137,
       price: 2389,
+      images: ["/products/odyssey-revolution-ultra.webp"],
+      description: "Eau de parfum Ultra Edition de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-revolution-ultra-lote-772",
+      slug: "odyssey-revolution-ultra-lote-772",
+      name: "Odyssey Revolution Ultra Edition",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 772,
+      price: 1698,
       images: ["/products/odyssey-revolution-ultra.webp"],
       description: "Eau de parfum Ultra Edition de 100 ml.",
       notes: {
@@ -839,6 +925,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "odyssey-artisto-red-lote-1013",
+      slug: "odyssey-artisto-red-lote-1013",
+      name: "Odyssey Artisto The Red",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1013,
+      price: 2127,
+      images: ["/products/odyssey-artisto-red.webp"],
+      description: "Eau de parfum The Red Edition de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "odyssey-eau-montagne",
       slug: "odyssey-eau-montagne",
       name: "Odyssey Eau Montagne",
@@ -860,6 +967,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "odyssey-eau-montagne-lote-772",
+      slug: "odyssey-eau-montagne-lote-772",
+      name: "Odyssey Eau Montagne",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 772,
+      price: 1698,
+      images: ["/products/odyssey-eau-montagne.webp"],
+      description: "Eau de parfum Mountain Edition de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "ck-in2u-him",
       slug: "ck-in2u-him",
       name: "CK IN2U Him",
@@ -868,6 +996,27 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 788,
       price: 1734,
+      images: ["/products/ck-in2u-him.webp"],
+      description: "Eau de toilette de 150 ml, versión Him.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "ck-in2u-him-lote-796",
+      slug: "ck-in2u-him-lote-796",
+      name: "CK IN2U Him",
+      brand: "Calvin Klein",
+      type: "designer",
+      gender: "hombre",
+      cost: 796,
+      price: 1750,
       images: ["/products/ck-in2u-him.webp"],
       description: "Eau de toilette de 150 ml, versión Him.",
       notes: {
@@ -904,6 +1053,29 @@ export const rawProducts: RawProduct[] = [
       inspirationRank: 2,
     },
   {
+      id: "kismet-magic-lote-477",
+      slug: "kismet-magic-lote-477",
+      name: "Kismet Magic",
+      brand: "Maison Alhambra",
+      type: "arabic",
+      gender: "unisex",
+      cost: 477,
+      price: 1145,
+      images: ["/products/kismet-magic.webp"],
+      description: "Eau de parfum de 100 ml. Inspirado en Kilian Angels' Share. Aroma de manzana, canela y coñac.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
+      inspirationRank: 2,
+    },
+  {
       id: "amber-oud-carbon-edition-100",
       slug: "amber-oud-carbon-edition-100",
       name: "Amber Oud Carbon Edition 100 ml",
@@ -925,6 +1097,48 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "amber-oud-carbon-edition-100-lote-1447",
+      slug: "amber-oud-carbon-edition-100-lote-1447",
+      name: "Amber Oud Carbon Edition 100 ml",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1447,
+      price: 3039,
+      images: ["/products/amber-oud-carbon-edition-100.webp"],
+      description: "Eau de parfum Carbon Edition de 100 ml. Hay otra foto del mismo nombre en 60 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "amber-oud-carbon-edition-100-lote-1692",
+      slug: "amber-oud-carbon-edition-100-lote-1692",
+      name: "Amber Oud Carbon Edition 100 ml",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1692,
+      price: 3552,
+      images: ["/products/amber-oud-carbon-edition-100.webp"],
+      description: "Eau de parfum Carbon Edition de 100 ml. Hay otra foto del mismo nombre en 60 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "odyssey-homme",
       slug: "odyssey-homme",
       name: "Odyssey Homme",
@@ -933,6 +1147,90 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 990,
       price: 2010,
+      images: ["/products/odyssey-homme.webp"],
+      description: "Eau de parfum de 100 ml. La tapa dice Armaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-homme-lote-892",
+      slug: "odyssey-homme-lote-892",
+      name: "Odyssey Homme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 892,
+      price: 1962,
+      images: ["/products/odyssey-homme.webp"],
+      description: "Eau de parfum de 100 ml. La tapa dice Armaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-homme-lote-737",
+      slug: "odyssey-homme-lote-737",
+      name: "Odyssey Homme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 737,
+      price: 1621,
+      images: ["/products/odyssey-homme.webp"],
+      description: "Eau de parfum de 100 ml. La tapa dice Armaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-homme-lote-720",
+      slug: "odyssey-homme-lote-720",
+      name: "Odyssey Homme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 720,
+      price: 1584,
+      images: ["/products/odyssey-homme.webp"],
+      description: "Eau de parfum de 100 ml. La tapa dice Armaf.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-homme-lote-708",
+      slug: "odyssey-homme-lote-708",
+      name: "Odyssey Homme",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 708,
+      price: 1558,
       images: ["/products/odyssey-homme.webp"],
       description: "Eau de parfum de 100 ml. La tapa dice Armaf.",
       notes: {
@@ -978,6 +1276,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 2359,
       price: 4061,
+      images: ["/products/212-vip.webp"],
+      description: "Eau de parfum de 80 ml, frasco cápsula dorado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 80,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "212-vip-lote-2039",
+      slug: "212-vip-lote-2039",
+      name: "212 VIP",
+      brand: "Carolina Herrera",
+      type: "designer",
+      gender: "mujer",
+      cost: 2039,
+      price: 4077,
       images: ["/products/212-vip.webp"],
       description: "Eau de parfum de 80 ml, frasco cápsula dorado.",
       notes: {
@@ -1117,6 +1436,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "toy-2-pearl-lote-1698",
+      slug: "toy-2-pearl-lote-1698",
+      name: "Toy 2 Pearl",
+      brand: "Moschino",
+      type: "designer",
+      gender: "mujer",
+      cost: 1698,
+      price: 3566,
+      images: ["/products/toy-2-pearl.webp"],
+      description: "Eau de parfum de 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "cuba-fierce",
       slug: "cuba-fierce",
       name: "Fierce",
@@ -1125,6 +1465,27 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 288,
       price: 690,
+      images: ["/products/cuba-fierce.webp"],
+      description: "Eau de toilette de 100 ml. La lata dice for men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-fierce-lote-268",
+      slug: "cuba-fierce-lote-268",
+      name: "Fierce",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 268,
+      price: 642,
       images: ["/products/cuba-fierce.webp"],
       description: "Eau de toilette de 100 ml. La lata dice for men.",
       notes: {
@@ -1162,6 +1523,52 @@ export const rawProducts: RawProduct[] = [
       inspirationRank: 1,
     },
   {
+      id: "asad-lote-744",
+      slug: "asad-lote-744",
+      name: "Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "hombre",
+      cost: 744,
+      price: 1634,
+      images: ["/products/asad.webp"],
+      description: "Eau de parfum de 100 ml. Inspirado en Dior Sauvage Elixir. Aroma especiado, fresco y ambarado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: [],
+      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspirationRank: 1,
+    },
+  {
+      id: "asad-lote-832",
+      slug: "asad-lote-832",
+      name: "Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "hombre",
+      cost: 832,
+      price: 1830,
+      images: ["/products/asad.webp"],
+      description: "Eau de parfum de 100 ml. Inspirado en Dior Sauvage Elixir. Aroma especiado, fresco y ambarado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: [],
+      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspirationRank: 1,
+    },
+  {
       id: "atheeri",
       slug: "atheeri",
       name: "Atheeri",
@@ -1183,6 +1590,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "atheeri-lote-1299",
+      slug: "atheeri-lote-1299",
+      name: "Atheeri",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1299,
+      price: 2859,
+      images: ["/products/atheeri.webp"],
+      description: "Lattafa Atheeri es una fragancia sofisticada y envolvente que enamora con su carácter elegante y su fondo cálido y sensual. Combina notas especiadas y florales con ámbar, maderas y almizcle en una mezcla refinada que se siente lujosa en la piel. Tiene gran proyección, larga duración y esa personalidad inconfundible de la perfumería árabe moderna. Perfecta para ocasiones especiales, noches de brillo o para sentirte exclusiva cualquier día. Un perfume que habla de elegancia y que querrás tener en tu colección.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "fakhar-black",
       slug: "fakhar-black",
       name: "Pride Fakhar Black",
@@ -1191,6 +1619,29 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 798,
       price: 1802,
+      images: ["/products/fakhar-black.webp"],
+      description: "Lattafa Pride Fakhar Black es pura elegancia masculina con carácter. Una apertura fresca y aromática de manzana, bergamota y lavanda da paso a un corazón especiado y limpio, que descansa sobre un fondo cálido y amaderado de ámbar, pachulí y almizcle. Seguro, sofisticado y magnético, es ideal para la oficina, las citas y las noches especiales. Tiene excelente proyección y una duración que te acompaña todo el día, con ese sello árabe que huele a lujo sin pagar precios de lujo. Para el hombre que entra a un lugar y se hace notar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
+      inspirationRank: 2,
+    },
+  {
+      id: "fakhar-black-lote-784",
+      slug: "fakhar-black-lote-784",
+      name: "Pride Fakhar Black",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 784,
+      price: 1726,
       images: ["/products/fakhar-black.webp"],
       description: "Lattafa Pride Fakhar Black es pura elegancia masculina con carácter. Una apertura fresca y aromática de manzana, bergamota y lavanda da paso a un corazón especiado y limpio, que descansa sobre un fondo cálido y amaderado de ámbar, pachulí y almizcle. Seguro, sofisticado y magnético, es ideal para la oficina, las citas y las noches especiales. Tiene excelente proyección y una duración que te acompaña todo el día, con ese sello árabe que huele a lujo sin pagar precios de lujo. Para el hombre que entra a un lugar y se hace notar.",
       notes: {
@@ -1355,6 +1806,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "360-collection-noir-lote-810",
+      slug: "360-collection-noir-lote-810",
+      name: "360° Collection Noir",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 810,
+      price: 1780,
+      images: ["/products/360-collection-noir.webp"],
+      description: "Eau de toilette de 100 ml para hombre. La caja dice Noir y 360° Collection for Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
       id: "360-collection",
       slug: "360-collection",
       name: "360° Collection",
@@ -1363,6 +1835,48 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 869,
       price: 1911,
+      images: ["/products/360-collection.webp"],
+      description: "Eau de toilette de 100 ml para hombre. El frasco es plateado. La caja dice 3.4 fl oz y 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "360-collection-lote-834",
+      slug: "360-collection-lote-834",
+      name: "360° Collection",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 834,
+      price: 1834,
+      images: ["/products/360-collection.webp"],
+      description: "Eau de toilette de 100 ml para hombre. El frasco es plateado. La caja dice 3.4 fl oz y 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "360-collection-lote-822",
+      slug: "360-collection-lote-822",
+      name: "360° Collection",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 822,
+      price: 1806,
       images: ["/products/360-collection.webp"],
       description: "Eau de toilette de 100 ml para hombre. El frasco es plateado. La caja dice 3.4 fl oz y 100 ml.",
       notes: {
@@ -1426,6 +1940,27 @@ export const rawProducts: RawProduct[] = [
       gender: "hombre",
       cost: 682,
       price: 1500,
+      images: ["/products/guess-seductive-homme-red.webp"],
+      description: "Eau de toilette de 100 ml. La caja dice 3.4 fl oz / 100 ml, Seductive Homme Red y Men / Homme.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "guess-seductive-homme-red-lote-694",
+      slug: "guess-seductive-homme-red-lote-694",
+      name: "Seductive Homme Red",
+      brand: "Guess",
+      type: "designer",
+      gender: "hombre",
+      cost: 694,
+      price: 1526,
       images: ["/products/guess-seductive-homme-red.webp"],
       description: "Eau de toilette de 100 ml. La caja dice 3.4 fl oz / 100 ml, Seductive Homme Red y Men / Homme.",
       notes: {
@@ -1544,6 +2079,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "odyssey-homme-white-edition-lote-676",
+      slug: "odyssey-homme-white-edition-lote-676",
+      name: "Odyssey Homme White Edition",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 676,
+      price: 1486,
+      images: ["/products/odyssey-homme-white-edition.webp"],
+      description: "Eau de parfum de 100 ml. La tapa dice Armaf. White Edition.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "kenneth-cole-black",
       slug: "kenneth-cole-black",
       name: "Black",
@@ -1552,6 +2108,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 253,
       price: 605,
+      images: ["/products/kenneth-cole-black.webp"],
+      description: "Bruma corporal de 236 ml, 8 fl oz. El frasco dice Body Mist / Brume Corporelle y For Her. El título Splash de la foto no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Perfumería",
+      tags: ["splash"]
+    },
+  {
+      id: "kenneth-cole-black-lote-226",
+      slug: "kenneth-cole-black-lote-226",
+      name: "Black",
+      brand: "Kenneth Cole",
+      type: "designer",
+      gender: "mujer",
+      cost: 226,
+      price: 408,
       images: ["/products/kenneth-cole-black.webp"],
       description: "Bruma corporal de 236 ml, 8 fl oz. El frasco dice Body Mist / Brume Corporelle y For Her. El título Splash de la foto no es la marca.",
       notes: {
@@ -1586,6 +2163,27 @@ export const rawProducts: RawProduct[] = [
       tags: ["splash"]
     },
   {
+      id: "kenneth-cole-white-lote-226",
+      slug: "kenneth-cole-white-lote-226",
+      name: "White",
+      brand: "Kenneth Cole",
+      type: "designer",
+      gender: "mujer",
+      cost: 226,
+      price: 408,
+      images: ["/products/kenneth-cole-white.webp"],
+      description: "Bruma corporal de 236 ml, 8 fl oz. El frasco dice Fragrance Mist / Brume Parfumée y For Her. El título Splash de la foto no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Perfumería",
+      tags: ["splash"]
+    },
+  {
       id: "sofia-vergara-tempting",
       slug: "sofia-vergara-tempting",
       name: "Tempting",
@@ -1594,6 +2192,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 218,
       price: 404,
+      images: ["/products/sofia-vergara-tempting.webp"],
+      description: "Bruma corporal de 236 ml. El frasco dice Fragrance Mist y Tempting Sofia Vergara. El título Splash de la foto no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Perfumería",
+      tags: ["splash"]
+    },
+  {
+      id: "sofia-vergara-tempting-lote-226",
+      slug: "sofia-vergara-tempting-lote-226",
+      name: "Tempting",
+      brand: "Sofia Vergara",
+      type: "designer",
+      gender: "mujer",
+      cost: 226,
+      price: 408,
       images: ["/products/sofia-vergara-tempting.webp"],
       description: "Bruma corporal de 236 ml. El frasco dice Fragrance Mist y Tempting Sofia Vergara. El título Splash de la foto no es la marca.",
       notes: {
@@ -1628,6 +2247,27 @@ export const rawProducts: RawProduct[] = [
       tags: ["splash"]
     },
   {
+      id: "sofia-vergara-lost-in-paradise-lote-226",
+      slug: "sofia-vergara-lost-in-paradise-lote-226",
+      name: "Lost in Paradise",
+      brand: "Sofia Vergara",
+      type: "designer",
+      gender: "mujer",
+      cost: 226,
+      price: 408,
+      images: ["/products/sofia-vergara-lost-in-paradise.webp"],
+      description: "Bruma corporal de 236 ml. El frasco dice Fragrance Mist y Lost in Paradise Sofia Vergara. El título Splash de la foto no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Perfumería",
+      tags: ["splash"]
+    },
+  {
       id: "pitbull-woman",
       slug: "pitbull-woman",
       name: "Woman",
@@ -1636,6 +2276,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 217,
       price: 433,
+      images: ["/products/pitbull-woman.webp"],
+      description: "Bruma corporal de 236 ml. El frasco dice Body Mist / Brume Corporelle y Pitbull Woman. El título Splash de la foto no es la marca.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 236,
+      inStock: true,
+      category: "Perfumería",
+      tags: ["splash"]
+    },
+  {
+      id: "pitbull-woman-lote-285",
+      slug: "pitbull-woman-lote-285",
+      name: "Woman",
+      brand: "Pitbull",
+      type: "designer",
+      gender: "mujer",
+      cost: 285,
+      price: 513,
       images: ["/products/pitbull-woman.webp"],
       description: "Bruma corporal de 236 ml. El frasco dice Body Mist / Brume Corporelle y Pitbull Woman. El título Splash de la foto no es la marca.",
       notes: {
@@ -1678,6 +2339,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 1137,
       price: 2389,
+      images: ["/products/odyssey-marshmallow.webp"],
+      description: "Eau de parfum de 100 ml. Gourmand Edition. La caja dice Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "odyssey-marshmallow-lote-994",
+      slug: "odyssey-marshmallow-lote-994",
+      name: "Odyssey Marshmallow",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 994,
+      price: 2186,
       images: ["/products/odyssey-marshmallow.webp"],
       description: "Eau de parfum de 100 ml. Gourmand Edition. La caja dice Eau de Parfum.",
       notes: {
@@ -2056,6 +2738,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 1377,
       price: 2891,
+      images: ["/products/the-lions-club-monarque.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Armaf, The Lion's Club y Monarque.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "the-lions-club-monarque-lote-1318",
+      slug: "the-lions-club-monarque-lote-1318",
+      name: "The Lion's Club Monarque",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1318,
+      price: 2768,
       images: ["/products/the-lions-club-monarque.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Armaf, The Lion's Club y Monarque.",
       notes: {
@@ -2682,6 +3385,48 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "haya-lote-658",
+      slug: "haya-lote-658",
+      name: "Haya",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 658,
+      price: 1200,
+      images: ["/products/haya.webp"],
+      description: "Eau de parfum de 100 ml. La caja dice Lattafa Haya.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "haya-lote-693",
+      slug: "haya-lote-693",
+      name: "Haya",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 693,
+      price: 1387,
+      images: ["/products/haya.webp"],
+      description: "Eau de parfum de 100 ml. La caja dice Lattafa Haya.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "set-sky",
       slug: "set-sky",
       name: "Set Sky",
@@ -2703,6 +3448,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "set-sky-lote-1000",
+      slug: "set-sky-lote-1000",
+      name: "Set Sky",
+      brand: "Dubri Niche",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1000,
+      price: 2000,
+      images: ["/products/set-sky.webp"],
+      description: "Set para hombre. Incluye una loción corporal de 100 ml, el perfume en envase azul con tapa naranja, un spray chico cuya etiqueta parece decir OT55 ML y un atomizador de viaje dorado. La caja dice Dubri Niche.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
       id: "dubai-way",
       slug: "dubai-way",
       name: "Dubai Way",
@@ -2711,6 +3477,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 583,
       price: 1113,
+      images: ["/products/dubai-way.webp"],
+      description: "Eau de parfum. La caja dice Dubai Niche, 60% vol y 2.4 fl oz. No imprime mililitros.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "dubai-way-lote-641",
+      slug: "dubai-way-lote-641",
+      name: "Dubai Way",
+      brand: "Dubai Niche",
+      type: "arabic",
+      gender: "unisex",
+      cost: 641,
+      price: 1283,
       images: ["/products/dubai-way.webp"],
       description: "Eau de parfum. La caja dice Dubai Niche, 60% vol y 2.4 fl oz. No imprime mililitros.",
       notes: {
@@ -4439,6 +5226,29 @@ export const rawProducts: RawProduct[] = [
       inspirationRank: 3,
     },
   {
+      id: "amber-oud-bleu-edition-200-lote-1970",
+      slug: "amber-oud-bleu-edition-200-lote-1970",
+      name: "Amber Oud Bleu Edition 200 ml",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1970,
+      price: 4138,
+      images: ["/products/amber-oud-bleu-edition-200.webp"],
+      description: "Eau de parfum Bleu Edition de 200 ml, con atomizador de viaje. Hay otra de 100 ml. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
+      inspirationRank: 3,
+    },
+  {
       id: "set-amber-oud-extreme",
       slug: "set-amber-oud-extreme",
       name: "Set Amber Oud Extreme",
@@ -4695,6 +5505,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "oud-black-lote-1346",
+      slug: "oud-black-lote-1346",
+      name: "Al Haramain Black",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1346,
+      price: 2826,
+      images: ["/products/oud-black.webp"],
+      description: "Extrait de parfum de 100 ml. El frasco dice Al Haramain Black.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
       id: "miss-armaf-mystique",
       slug: "miss-armaf-mystique",
       name: "Mystique",
@@ -4737,6 +5568,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "miss-armaf-catwalk-lote-1003",
+      slug: "miss-armaf-catwalk-lote-1003",
+      name: "Catwalk",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1003,
+      price: 2107,
+      images: ["/products/miss-armaf-catwalk.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Catwalk.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "miss-armaf-attitude",
       slug: "miss-armaf-attitude",
       name: "Attitude",
@@ -4745,6 +5597,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 948,
       price: 2086,
+      images: ["/products/miss-armaf-attitude.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Attitude.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "miss-armaf-attitude-lote-1003",
+      slug: "miss-armaf-attitude-lote-1003",
+      name: "Attitude",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1003,
+      price: 2107,
       images: ["/products/miss-armaf-attitude.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Attitude.",
       notes: {
@@ -4779,6 +5652,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "le-parfait-opus-lote-654",
+      slug: "le-parfait-opus-lote-654",
+      name: "Le Parfait Opus",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 654,
+      price: 1440,
+      images: ["/products/le-parfait-opus.webp"],
+      description: "Eau de parfum de 100 ml. El frasco dice Armaf, Le Parfait Pour Femme y Opus.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "miss-armaf-chic",
       slug: "miss-armaf-chic",
       name: "Chic",
@@ -4787,6 +5681,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 948,
       price: 2086,
+      images: ["/products/miss-armaf-chic.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Chic.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "miss-armaf-chic-lote-1102",
+      slug: "miss-armaf-chic-lote-1102",
+      name: "Chic",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1102,
+      price: 2316,
       images: ["/products/miss-armaf-chic.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Chic.",
       notes: {
@@ -4831,6 +5746,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 1090,
       price: 2288,
+      images: ["/products/eter-desert-rose.webp"],
+      description: "Desert Rose de Armaf es una fragancia de la familia olfativa Oriental Floral para Hombres y Mujeres. Esta fragrancia es nueva. Desert Rose se lanzó en 2024. Las Notas de Salida son rosa turca, maracuyá (fruta de la pasión) y azafrán; la Nota de Corazón es pachulí; las Notas de Fondo son ládano, vainilla, cuero y ámbar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "eter-desert-rose-lote-1053",
+      slug: "eter-desert-rose-lote-1053",
+      name: "Éter Desert Rose",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1053,
+      price: 2213,
       images: ["/products/eter-desert-rose.webp"],
       description: "Desert Rose de Armaf es una fragancia de la familia olfativa Oriental Floral para Hombres y Mujeres. Esta fragrancia es nueva. Desert Rose se lanzó en 2024. Las Notas de Salida son rosa turca, maracuyá (fruta de la pasión) y azafrán; la Nota de Corazón es pachulí; las Notas de Fondo son ládano, vainilla, cuero y ámbar.",
       notes: {
@@ -5024,6 +5960,27 @@ export const rawProducts: RawProduct[] = [
       gender: "mujer",
       cost: 712,
       price: 1566,
+      images: ["/products/art-damour.webp"],
+      description: "Eau de parfum. El frasco dice Art d'Amour Pour Femme. La caja dice Artional Perfume Series. No se lee el tamaño.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "art-damour-lote-528",
+      slug: "art-damour-lote-528",
+      name: "Art d'Amour",
+      brand: "Artional",
+      type: "arabic",
+      gender: "mujer",
+      cost: 528,
+      price: 1162,
       images: ["/products/art-damour.webp"],
       description: "Eau de parfum. El frasco dice Art d'Amour Pour Femme. La caja dice Artional Perfume Series. No se lee el tamaño.",
       notes: {
@@ -5398,6 +6355,27 @@ export const rawProducts: RawProduct[] = [
       tags: ["splash"]
     },
   {
+      id: "ajwad-gold-spray-lote-100",
+      slug: "ajwad-gold-spray-lote-100",
+      name: "Ajwad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 100,
+      price: 234,
+      images: ["/products/ajwad-gold-spray.webp"],
+      description: "Perfume en spray de 200 ml. El envase dorado dice Ajwad y Lattafa. Hay un Ajwad en eau de parfum de 60 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Perfume en spray",
+      tags: ["splash"]
+    },
+  {
       id: "legende-eternelle-rouge",
       slug: "legende-eternelle-rouge",
       name: "Légende Éternelle Rouge",
@@ -5490,6 +6468,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 870,
       price: 1912,
+      images: ["/products/the-pride-rose-oud.webp"],
+      description: "The Pride Of Armaf Rose Oud de Armaf es una fragancia de la familia olfativa Floral Frutal Gourmand para Mujeres. Esta fragrancia es nueva. The Pride Of Armaf Rose Oud se lanzó en 2024. Las Notas de Salida son piña, naranja tangerina, lichi y limón (lima ácida); las Notas de Corazón son flor de azahar del naranjo, coco y orquídea; las Notas de Fondo son vainilla, ámbar y almizcle.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "the-pride-rose-oud-lote-838",
+      slug: "the-pride-rose-oud-lote-838",
+      name: "The Pride Rose Oud",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 838,
+      price: 1844,
       images: ["/products/the-pride-rose-oud.webp"],
       description: "The Pride Of Armaf Rose Oud de Armaf es una fragancia de la familia olfativa Floral Frutal Gourmand para Mujeres. Esta fragrancia es nueva. The Pride Of Armaf Rose Oud se lanzó en 2024. Las Notas de Salida son piña, naranja tangerina, lichi y limón (lima ácida); las Notas de Corazón son flor de azahar del naranjo, coco y orquídea; las Notas de Fondo son vainilla, ámbar y almizcle.",
       notes: {
@@ -5988,6 +6987,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "hawas-for-her-lote-560",
+      slug: "hawas-for-her-lote-560",
+      name: "Hawas For Her",
+      brand: "Hawas",
+      type: "arabic",
+      gender: "mujer",
+      cost: 560,
+      price: 1232,
+      images: ["/products/hawas-for-her.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Hawas For Her.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "set-boss-bottled",
       slug: "set-boss-bottled",
       name: "Set Boss Bottled",
@@ -6200,6 +7220,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "supremacy-pour-femme-lote-743",
+      slug: "supremacy-pour-femme-lote-743",
+      name: "Supremacy Pour Femme",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "mujer",
+      cost: 743,
+      price: 1633,
+      images: ["/products/supremacy-pour-femme.webp"],
+      description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan Supremacy Pour Femme. El set va aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
       id: "jean-lowe-maitre",
       slug: "jean-lowe-maitre",
       name: "Jean Lowe Maître",
@@ -6399,6 +7440,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 758,
       price: 1668,
+      images: ["/products/supremacy-pink.webp"],
+      description: "Frasco rosa. Dice Supremacy y Afnan. El morado es Pour Femme, y el Noir y el set van aparte.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "supremacy-pink-lote-750",
+      slug: "supremacy-pink-lote-750",
+      name: "Supremacy",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "unisex",
+      cost: 750,
+      price: 2416,
       images: ["/products/supremacy-pink.webp"],
       description: "Frasco rosa. Dice Supremacy y Afnan. El morado es Pour Femme, y el Noir y el set van aparte.",
       notes: {
@@ -6811,6 +7873,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "set-daisy-marc-jacobs-lote-1925",
+      slug: "set-daisy-marc-jacobs-lote-1925",
+      name: "Set Daisy",
+      brand: "Marc Jacobs",
+      type: "designer",
+      gender: "unisex",
+      cost: 1925,
+      price: 4043,
+      images: ["/products/set-daisy-marc-jacobs.webp"],
+      description: "Set de viaje: eau de toilette de 100 ml y body lotion luminosa de 75 ml. La caja dice Daisy Marc Jacobs.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
       id: "laventure-grapefruit",
       slug: "laventure-grapefruit",
       name: "L'Aventure Grapefruit",
@@ -7147,6 +8230,27 @@ export const rawProducts: RawProduct[] = [
       tags: []
     },
   {
+      id: "cuba-royal-fortune-lote-222",
+      slug: "cuba-royal-fortune-lote-222",
+      name: "Royal Fortune",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 222,
+      price: 534,
+      images: ["/products/cuba-royal-fortune.webp"],
+      description: "Eau de toilette de 100 ml. La lata y el envase dicen Cuba Royal Fortune For Men.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
       id: "spicebomb-extreme",
       slug: "spicebomb-extreme",
       name: "Spicebomb Extreme",
@@ -7386,6 +8490,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 1377,
       price: 2891,
+      images: ["/products/the-lions-club-rugir.webp"],
+      description: "Eau de parfum. El frasco y la caja dicen Armaf, The Lion's Club y Rugir. Monarque es otro perfume de la misma línea.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "the-lions-club-rugir-lote-1318",
+      slug: "the-lions-club-rugir-lote-1318",
+      name: "The Lion's Club Rugir",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1318,
+      price: 2768,
       images: ["/products/the-lions-club-rugir.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Armaf, The Lion's Club y Rugir. Monarque es otro perfume de la misma línea.",
       notes: {
@@ -8165,6 +9290,48 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 1355,
       price: 2625,
+      images: ["/products/hugo.webp"],
+      description: "El frasco azul dice Hugo. Boss Man es el frasco transparente que dice Boss Man.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "hugo-lote-1350",
+      slug: "hugo-lote-1350",
+      name: "Hugo",
+      brand: "Hugo",
+      type: "designer",
+      gender: "unisex",
+      cost: 1350,
+      price: 2248,
+      images: ["/products/hugo.webp"],
+      description: "El frasco azul dice Hugo. Boss Man es el frasco transparente que dice Boss Man.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "hugo-lote-1122",
+      slug: "hugo-lote-1122",
+      name: "Hugo",
+      brand: "Hugo",
+      type: "designer",
+      gender: "unisex",
+      cost: 1122,
+      price: 2354,
       images: ["/products/hugo.webp"],
       description: "El frasco azul dice Hugo. Boss Man es el frasco transparente que dice Boss Man.",
       notes: {
@@ -9613,6 +10780,27 @@ export const rawProducts: RawProduct[] = [
       gender: "unisex",
       cost: 785,
       price: 1593,
+      images: ["/products/ajwad-pink-to-pink.webp"],
+      description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad, Pink to Pink y Lattafa. La caja imprime 60 ml y 2.04 fl oz. El Ajwad de 60 ml y el spray Pink to Pink ya están, solos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ajwad-pink-to-pink-lote-704",
+      slug: "ajwad-pink-to-pink-lote-704",
+      name: "Ajwad Pink to Pink",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 704,
+      price: 1328,
       images: ["/products/ajwad-pink-to-pink.webp"],
       description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad, Pink to Pink y Lattafa. La caja imprime 60 ml y 2.04 fl oz. El Ajwad de 60 ml y el spray Pink to Pink ya están, solos.",
       notes: {
