@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug } from "./catalog-model";
-import { queryNamesOriginal, searchCatalog } from "./search";
+import { queryNamesOriginal, searchCatalog, suggestionItems } from "./search";
 import { toSearchRecord } from "./catalog-model";
 import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
@@ -208,6 +208,19 @@ test("la categoría Inspiraciones muestra solo los que tienen inspiración", () 
   assert.ok(result.items.every((item) => item.inspiredBy.length > 0));
   assert.equal(result.items.some((item) => item.id === "tag-him"), true);
   assert.equal(result.items.some((item) => item.id === "bleu-de-chanel"), false);
+});
+
+test("la búsqueda pone primero el perfume más barato", () => {
+  const records = buildCatalog([
+    product({ id: "asad-caro", name: "Asad", brand: "Lattafa", type: "arabic", cost: 832, price: 1581 }),
+    product({ id: "asad-barato", name: "Asad", brand: "Lattafa", type: "arabic", cost: 744, price: 1412 }),
+  ]).map(toSearchRecord);
+  const result = searchCatalog(records, "Assad");
+  assert.deepEqual(
+    result.products.map((item) => item.id),
+    ["asad-barato", "asad-caro"],
+  );
+  assert.equal(suggestionItems(result, 2)[0]?.id, "asad-barato");
 });
 
 test("tolera tildes y un error de escritura", () => {

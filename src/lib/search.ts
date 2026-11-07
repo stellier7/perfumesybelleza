@@ -66,6 +66,13 @@ export function queryNamesOriginal(query: string, original: SearchRecord): boole
   );
 }
 
+function byCheapest(left: SearchRecord, right: SearchRecord): number {
+  const leftPrice = left.price > 0 ? left.price : Number.POSITIVE_INFINITY;
+  const rightPrice = right.price > 0 ? right.price : Number.POSITIVE_INFINITY;
+  if (leftPrice !== rightPrice) return leftPrice - rightPrice;
+  return left.name.localeCompare(right.name, "es");
+}
+
 function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
   const folded = fold(query);
   if (folded.length < 2) return [];
@@ -116,7 +123,9 @@ export function searchCatalog(records: SearchRecord[], query: string): SearchPre
     ];
   });
   const alternativeSet = new Set(alternatives.map((item) => item.id));
-  const products = hits.filter((hit) => !hit.isReference && !alternativeSet.has(hit.id));
+  const products = hits
+    .filter((hit) => !hit.isReference && !alternativeSet.has(hit.id))
+    .sort(byCheapest);
   return {
     query: trimmed,
     products,
