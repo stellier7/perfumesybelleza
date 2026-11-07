@@ -9,7 +9,12 @@ import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from
 import { Shell } from "@/components/shell";
 import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
-import { comparisonSlug, formatSize, nameWithBrand, sameScentAlternatives } from "@/lib/catalog-model";
+import {
+  comparisonSlug,
+  formatSize,
+  productSuggestions,
+  type ProductSuggestionGroup,
+} from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -53,9 +58,8 @@ export default function ProductPage({ params }: ProductParams) {
 async function ProductScreen({ params }: ProductParams) {
   const product = getProductBySlug((await params).slug);
   if (!product) notFound();
-  const catalog = getCatalog();
   const purchase = toPurchase(product);
-  const alternatives = sameScentAlternatives(product, catalog);
+  const suggestions = productSuggestions(product, getCatalog());
 
   return (
     <Shell className="py-6 md:py-10">
@@ -111,64 +115,59 @@ async function ProductScreen({ params }: ProductParams) {
         </section>
       ) : null}
 
-      {product.type === "arabic" && product.inspiredBy.length > 0 ? (
-        <section className="mt-12">
-          <h2 className="font-serif text-3xl">Inspirado en</h2>
-          <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
-            Para quienes buscan un aroma similar. No es el perfume de la casa de diseño.
-          </p>
-          <ul className="mt-4 space-y-3">
-            {product.inspiredBy.map((item) => (
-              <li key={item.id}>
-                <Link href={`/producto/${item.slug}`} className="font-medium hover:text-gold">
-                  {nameWithBrand(item.name, item.brand)}
-                </Link>
-                <Link href={`/comparar/${comparisonSlug(item.slug, product.slug)}`} className="ml-3 text-sm text-gold">
-                  Ver comparación
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-
-      {alternatives.some((item) => item.category !== "Set") ? (
-        <section className="mt-12">
-          <h2 className="font-serif text-3xl">Inspirado en {nameWithBrand(product.name, product.brand)}</h2>
-          <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
-            Del más cercano al más libre. No es el perfume de la casa.
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {alternatives
-              .filter((item) => item.category !== "Set")
-              .map((alternative) => (
-                <div key={alternative.id}>
-                  <ProductCard product={alternative} />
-                  <Link
-                    href={`/comparar/${comparisonSlug(product.slug, alternative.slug)}`}
-                    className="mt-2 inline-block text-sm text-gold"
-                  >
-                    Ver comparación
-                  </Link>
-                </div>
-              ))}
-          </div>
-        </section>
-      ) : null}
-      {alternatives.some((item) => item.category === "Set") ? (
-        <section className="mt-12">
-          <h2 className="font-serif text-3xl">Sets</h2>
-          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {alternatives
-              .filter((item) => item.category === "Set")
-              .map((alternative) => (
-                <ProductCard key={alternative.id} product={alternative} />
-              ))}
-          </div>
-        </section>
-      ) : null}
+      {suggestions.map((group) => (
+        <SuggestionSection key={group.kind} group={group} current={product} />
+      ))}
     </Shell>
   );
+}
+
+function SuggestionSection({
+  group,
+  current,
+}: {
+  group: ProductSuggestionGroup;
+  current: PublicProduct;
+}) {
+  return (
+    <section className="mt-12">
+      <h2 className="font-serif text-3xl">{group.title}</h2>
+      <p className="mt-2 max-w-xl text-sm leading-6 text-muted">{group.caption}</p>
+      <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+        {group.products.map((item) => {
+          const compare = comparisonHref(group.kind, current.slug, item.slug);
+          return (
+            <div key={item.id}>
+              <ProductCard product={item} />
+              {compare ? (
+                <Link href={compare} className="mt-2 inline-block text-sm text-gold">
+                  Ver comparación
+                </Link>
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function comparisonHref(kind: ProductSuggestionGroup["kind"], currentSlug: string, itemSlug: string): string | null {
+  switch (kind) {
+    case "clones":
+      return `/comparar/${comparisonSlug(currentSlug, itemSlug)}`;
+    case "original":
+      return `/comparar/${comparisonSlug(itemSlug, currentSlug)}`;
+    case "sets":
+    case "line":
+    case "couple":
+    case "more":
+      return null;
+    default: {
+      const unreachable: never = kind;
+      return unreachable;
+    }
+  }
 }
 
 function toPurchase(product: PublicProduct): PurchaseTarget {

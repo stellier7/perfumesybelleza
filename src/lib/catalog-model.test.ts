@@ -1,6 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug, sameScentAlternatives } from "./catalog-model";
+import {
+  buildCatalog,
+  comparisonPairs,
+  nameWithBrand,
+  parseComparisonSlug,
+  productSuggestions,
+  sameScentAlternatives,
+} from "./catalog-model";
 import { queryNamesOriginal, searchCatalog, suggestionItems } from "./search";
 import { toSearchRecord } from "./catalog-model";
 import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
@@ -245,6 +252,112 @@ test("el clon aparece debajo de cada presentación del diseñador", () => {
   );
   assert.equal(main.alternatives.some((item) => item.id === "asad"), true);
   assert.deepEqual(sameScentAlternatives(her, catalog), []);
+});
+
+test("una ficha siempre sugiere algo y el clon muestra el diseñador", () => {
+  const catalog = buildCatalog([
+    product({ id: "sauvage", name: "Sauvage", brand: "Dior", type: "designer", gender: "hombre" }),
+    product({
+      id: "sauvage-elixir",
+      name: "Sauvage Elixir",
+      brand: "Dior",
+      type: "designer",
+      gender: "hombre",
+    }),
+    product({ id: "poison", name: "Hypnotic Poison", brand: "Dior", type: "designer", gender: "mujer" }),
+    product({
+      id: "asad",
+      name: "Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "hombre",
+      price: 1330,
+      inspiredBy: ["Sauvage (Dior)"],
+    }),
+    product({
+      id: "asad-lote",
+      name: "Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "hombre",
+      price: 1200,
+    }),
+    product({
+      id: "asad-zanzibar",
+      name: "Asad Zanzibar",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+    }),
+    product({
+      id: "set-asad",
+      name: "Set Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      category: "Set",
+      inspiredBy: ["Sauvage (Dior)"],
+    }),
+    product({ id: "eros", name: "Eros", brand: "Versace", type: "designer", gender: "hombre", featured: true }),
+    product({
+      id: "eros-femme",
+      name: "Eros Pour Femme",
+      brand: "Versace",
+      type: "designer",
+      gender: "mujer",
+    }),
+    product({
+      id: "set-eros-energy",
+      name: "Set Eros Energy",
+      brand: "Versace",
+      type: "designer",
+      gender: "hombre",
+      category: "Set",
+    }),
+    product({ id: "champu", name: "Champú", brand: "Nazca", type: "beauty", category: "Champú" }),
+  ]);
+  const asad = catalog.find((item) => item.id === "asad");
+  const sauvage = catalog.find((item) => item.id === "sauvage");
+  const elixir = catalog.find((item) => item.id === "sauvage-elixir");
+  const lonely = catalog.find((item) => item.id === "eros");
+  const shampoo = catalog.find((item) => item.id === "champu");
+  assert.ok(asad && sauvage && elixir && lonely && shampoo);
+
+  const fromClone = productSuggestions(asad, catalog);
+  assert.equal(fromClone[0]?.kind, "original");
+  assert.deepEqual(
+    fromClone[0]?.products.map((item) => item.id),
+    ["sauvage"],
+  );
+  assert.deepEqual(fromClone.find((group) => group.kind === "sets")?.products.map((item) => item.id), ["set-asad"]);
+  assert.ok(fromClone.find((group) => group.kind === "line")?.products.some((item) => item.id === "asad-zanzibar"));
+  assert.ok(fromClone.find((group) => group.kind === "line")?.products.some((item) => item.id === "asad-lote"));
+  assert.equal(fromClone.some((group) => group.kind === "couple"), false);
+
+  const fromDesigner = productSuggestions(sauvage, catalog);
+  assert.equal(fromDesigner[0]?.kind, "clones");
+  assert.equal(fromDesigner[0]?.products.some((item) => item.id === "asad"), true);
+  assert.ok(fromDesigner.findIndex((group) => group.kind === "clones") < fromDesigner.findIndex((group) => group.kind === "sets"));
+  assert.deepEqual(fromDesigner.find((group) => group.kind === "couple")?.products.map((item) => item.id), ["poison"]);
+  assert.equal(fromDesigner.find((group) => group.kind === "line")?.products.some((item) => item.id === "sauvage-elixir"), true);
+
+  const femme = catalog.find((item) => item.id === "eros-femme");
+  assert.ok(femme);
+  const fromFemme = productSuggestions(femme, catalog).flatMap((group) => group.products.map((item) => item.id));
+  assert.equal(fromFemme.includes("eros"), true);
+  assert.equal(fromFemme.includes("set-eros-energy"), false);
+
+  const fromLonely = productSuggestions(lonely, catalog);
+  assert.ok(fromLonely.length > 0);
+  assert.equal(fromLonely.some((group) => group.kind === "clones"), false);
+  assert.equal(fromLonely.some((group) => group.kind === "more"), true);
+  assert.equal(productSuggestions(shampoo, catalog).length, 0);
+
+  for (const groups of [fromClone, fromDesigner, fromLonely]) {
+    const ids = groups.flatMap((group) => group.products.map((item) => item.id));
+    assert.equal(new Set(ids).size, ids.length);
+  }
+  assert.equal(fromClone.some((group) => group.products.some((item) => item.id === "asad")), false);
 });
 
 test("la categoría Inspiraciones muestra solo los que tienen inspiración", () => {

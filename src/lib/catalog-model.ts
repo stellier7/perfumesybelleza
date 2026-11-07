@@ -1,6 +1,6 @@
 import { TYPE_LABEL, GENDER_LABEL } from "@/config";
 import { shelfPrice } from "@/lib/pricing";
-import { fold, slugify } from "@/lib/text";
+import { assertNever, fold, slugify } from "@/lib/text";
 import type {
   FragranceNotes,
   FragranceRef,
@@ -339,6 +339,319 @@ export function parseComparisonSlug(
   const alternative = pair.slice(index + marker.length);
   if (!original || !alternative) return null;
   return { original, alternative };
+}
+
+export type SuggestionKind = "original" | "clones" | "sets" | "line" | "couple" | "more";
+
+export type ProductSuggestionGroup = {
+  kind: SuggestionKind;
+  title: string;
+  caption: string;
+  products: PublicProduct[];
+};
+
+const GENERIC_NAME_TOKENS = new Set([
+  "set",
+  "para",
+  "pour",
+  "eau",
+  "parfum",
+  "perfume",
+  "toilette",
+  "spray",
+  "tester",
+  "homme",
+  "femme",
+  "hombre",
+  "mujer",
+  "unisex",
+  "intense",
+  "elixir",
+  "bleu",
+  "blue",
+  "black",
+  "white",
+  "gold",
+  "rose",
+  "oud",
+  "musk",
+  "royal",
+  "silver",
+  "pink",
+  "night",
+  "mini",
+  "the",
+  "and",
+  "for",
+  "her",
+  "his",
+  "con",
+]);
+
+function nameTokens(name: string): string[] {
+  return fold(name)
+    .split(/[^a-z0-9]+/)
+    .filter((token) => {
+      if (GENERIC_NAME_TOKENS.has(token)) return false;
+      if (/^\d+$/.test(token)) return token.length >= 3;
+      return token.length >= 4;
+    });
+}
+
+function scentFamily(key: string): Set<string> {
+  const keys = new Set([key]);
+  for (const [child, parent] of Object.entries(SCENT_PARENT)) {
+    if (parent === key) keys.add(child);
+    if (child === key) keys.add(parent);
+  }
+  return keys;
+}
+
+function isPerfumeType(type: PublicProduct["type"]): boolean {
+  switch (type) {
+    case "designer":
+    case "arabic":
+      return true;
+    case "beauty":
+      return false;
+    default:
+      return assertNever(type);
+  }
+}
+
+function suggestionOrder(type: PublicProduct["type"]): SuggestionKind[] {
+  switch (type) {
+    case "arabic":
+      return ["original", "clones", "sets", "line", "couple", "more"];
+    case "designer":
+      return ["clones", "sets", "original", "line", "couple", "more"];
+    case "beauty":
+      return [];
+    default:
+      return assertNever(type);
+  }
+}
+
+function oppositeGenders(gender: PublicProduct["gender"]): Array<PublicProduct["gender"]> {
+  switch (gender) {
+    case "hombre":
+      return ["mujer"];
+    case "mujer":
+      return ["hombre"];
+    case "unisex":
+      return ["mujer", "hombre"];
+    default:
+      return assertNever(gender);
+  }
+}
+
+function byPriceThenName(left: PublicProduct, right: PublicProduct): number {
+  const leftPrice = left.price > 0 ? left.price : Number.POSITIVE_INFINITY;
+  const rightPrice = right.price > 0 ? right.price : Number.POSITIVE_INFINITY;
+  if (leftPrice !== rightPrice) return leftPrice - rightPrice;
+  return left.name.localeCompare(right.name, "es");
+}
+
+function isWholesaleName(name: string): boolean {
+  const letters = name.replace(/[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]/g, "");
+  if (!letters) return false;
+  const upper = letters.replace(/[^A-ZÁÉÍÓÚÜÑ]/g, "").length;
+  return upper / letters.length > 0.8;
+}
+
+function presentationScore(item: PublicProduct): number {
+  const bottle =
+    item.category === "Eau de Parfum" ||
+    item.category === "Eau de Toilette" ||
+    item.category === "Parfum" ||
+    item.category === "Extrait de Parfum" ||
+    item.category === "Pure Parfum";
+  return (
+    Number(!isWholesaleName(item.name)) * 20 +
+    Number(bottle) * 5 +
+    Number(Boolean(item.featured)) * 2 +
+    Number(item.inStock)
+  );
+}
+
+function byPresentation(left: PublicProduct, right: PublicProduct): number {
+  const score = presentationScore(right) - presentationScore(left);
+  if (score !== 0) return score;
+  return byPriceThenName(left, right);
+}
+
+function takeUnused(items: PublicProduct[], used: Set<string>, limit?: number): PublicProduct[] {
+  const picked: PublicProduct[] = [];
+  for (const item of items) {
+    if (used.has(item.id)) continue;
+    used.add(item.id);
+    picked.push(item);
+    if (limit !== undefined && picked.length >= limit) break;
+  }
+  return picked;
+}
+
+function sharesLine(product: PublicProduct, item: PublicProduct): boolean {
+  if (item.brand !== product.brand) return false;
+  if (fold(item.name) === fold(product.name)) return true;
+  const ownKey = scentKey(product.name, product.brand);
+  const itemKey = scentKey(item.name, item.brand);
+  if (ownKey && itemKey) return scentFamily(ownKey).has(itemKey);
+  const own = new Set(nameTokens(product.name));
+  if (own.size === 0) return false;
+  return nameTokens(item.name).some((token) => own.has(token));
+}
+
+function coupleCopy(
+  gender: PublicProduct["gender"],
+  picks: PublicProduct[],
+): { title: string; caption: string } {
+  const genders = new Set(picks.map((item) => item.gender));
+  const forHer = genders.has("mujer") && !genders.has("hombre");
+  const forHim = genders.has("hombre") && !genders.has("mujer");
+  switch (gender) {
+    case "hombre":
+      return { title: "Para ella", caption: "De la misma casa, para llevar en pareja." };
+    case "mujer":
+      return { title: "Para él", caption: "De la misma casa, para llevar en pareja." };
+    case "unisex":
+      if (forHer) return { title: "Para ella", caption: "De la misma casa, para llevar en pareja." };
+      if (forHim) return { title: "Para él", caption: "De la misma casa, para llevar en pareja." };
+      return {
+        title: "Para llevar en pareja",
+        caption: "De la misma casa: uno para ella y uno para él.",
+      };
+    default:
+      return assertNever(gender);
+  }
+}
+
+function groupCopy(
+  kind: SuggestionKind,
+  product: PublicProduct,
+  picks: PublicProduct[],
+): { title: string; caption: string } {
+  switch (kind) {
+    case "original":
+      return {
+        title: "Inspirado en",
+        caption: "Para quienes buscan un aroma similar. No es el perfume de la casa de diseño.",
+      };
+    case "clones":
+      return {
+        title: `Inspirado en ${nameWithBrand(product.name, product.brand)}`,
+        caption: "Del más cercano al más libre. No es el perfume de la casa.",
+      };
+    case "sets":
+      return { title: "Sets", caption: "Sets de esta línea." };
+    case "line":
+      return { title: "De la misma línea", caption: "Otras presentaciones y perfumes de la misma línea." };
+    case "couple":
+      return coupleCopy(product.gender, picks);
+    case "more":
+      return { title: "También te puede gustar", caption: "Otros perfumes de la tienda." };
+    default:
+      return assertNever(kind);
+  }
+}
+
+function pickCouple(product: PublicProduct, catalog: PublicProduct[], used: Set<string>): PublicProduct[] {
+  if (product.isReference) return [];
+  const targets = new Set(oppositeGenders(product.gender));
+  const ownKey = scentKey(product.name, product.brand);
+  const family = ownKey ? scentFamily(ownKey) : null;
+  const pool = catalog.filter((item) => {
+    if (used.has(item.id) || item.isReference || !isPerfumeType(item.type)) return false;
+    if (item.brand !== product.brand || !targets.has(item.gender)) return false;
+    const itemKey = scentKey(item.name, item.brand);
+    return !(family && itemKey && family.has(itemKey));
+  });
+  const source = pool.filter((item) => item.category !== "Set" && !isWholesaleName(item.name));
+  if (source.length === 0) return [];
+  if (product.gender === "unisex") {
+    const picks: PublicProduct[] = [];
+    for (const gender of ["mujer", "hombre"] as const) {
+      const match = source.filter((item) => item.gender === gender).sort(byPresentation)[0];
+      if (match) picks.push(match);
+    }
+    return picks;
+  }
+  return [...source].sort(byPresentation).slice(0, 1);
+}
+
+function pickMore(product: PublicProduct, catalog: PublicProduct[], used: Set<string>): PublicProduct[] {
+  const ranked = catalog
+    .filter((item) => !used.has(item.id) && !item.isReference && isPerfumeType(item.type))
+    .map((item) => {
+      const genderScore = item.gender === product.gender ? 4 : item.gender === "unisex" ? 2 : 0;
+      const score = genderScore + Number(item.inStock) * 2 + Number(Boolean(item.featured)) * 3;
+      return { item, score };
+    })
+    .sort(
+      (left, right) =>
+        right.score - left.score || byPriceThenName(left.item, right.item),
+    );
+  return ranked.slice(0, 4).map((entry) => entry.item);
+}
+
+/** Sugerencias de una ficha: el original, los clones, los sets, la línea y una pareja de la misma casa. */
+export function productSuggestions(
+  product: PublicProduct,
+  catalog: PublicProduct[],
+): ProductSuggestionGroup[] {
+  if (!isPerfumeType(product.type)) return [];
+  const byId = new Map(catalog.map((item) => [item.id, item]));
+  const used = new Set<string>([product.id]);
+  const alternatives = sameScentAlternatives(product, catalog);
+
+  const originals = takeUnused(
+    product.inspiredBy.flatMap((ref) => {
+      const original = byId.get(ref.id);
+      return original ? [original] : [];
+    }),
+    used,
+  );
+  const clones = takeUnused(
+    alternatives.filter((item) => item.category !== "Set"),
+    used,
+  );
+  const related = catalog.filter(
+    (item) => !used.has(item.id) && !item.isReference && isPerfumeType(item.type) && sharesLine(product, item),
+  );
+  const sets = takeUnused(
+    [
+      ...alternatives.filter((item) => item.category === "Set"),
+      ...related
+        .filter((item) => item.category === "Set")
+        .sort(byPresentation)
+        .slice(0, 4),
+    ],
+    used,
+  );
+  const line = takeUnused(
+    related.filter((item) => item.category !== "Set").sort(byPresentation),
+    used,
+    4,
+  );
+  const couple = takeUnused(pickCouple(product, catalog, used), used);
+  const specific = originals.length + clones.length + sets.length + line.length;
+  const more = specific < 4 ? takeUnused(pickMore(product, catalog, used), used) : [];
+
+  const grouped = new Map<SuggestionKind, PublicProduct[]>([
+    ["original", originals],
+    ["clones", clones],
+    ["sets", sets],
+    ["line", line],
+    ["couple", couple],
+    ["more", more],
+  ]);
+
+  return suggestionOrder(product.type).flatMap((kind) => {
+    const products = grouped.get(kind) ?? [];
+    if (products.length === 0) return [];
+    const copy = groupCopy(kind, product, products);
+    return [{ kind, title: copy.title, caption: copy.caption, products }];
+  });
 }
 
 export function comparisonPairs(products: PublicProduct[]): ComparisonPair[] {
