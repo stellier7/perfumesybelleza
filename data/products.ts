@@ -5,7 +5,7 @@ import type { RawProduct } from "../src/types/catalog";
  * Inventario de la tienda.
  * `cost` es el precio mayorista y no debe usarse en componentes de cliente.
  * Un costo en cero significa que el precio todavía no está definido.
- * `price`, si está, es el precio de venta. Si falta y hay costo, se calcula con el margen del tipo.
+ * `price` es el precio de venta: el precio al detalle del catálogo, más la misma diferencia que hay entre ese detalle y el mayorista.
  * `inStock` es la única fuente de existencia. Cámbialo aquí o con `npm run stock`.
  */
 export const rawProducts: RawProduct[] = [
@@ -17,7 +17,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 576,
-      price: 922,
+      price: 1268,
       images: ["/products/philos-centro.webp"],
       description: "Eau de parfum de 100 ml. El texto de arriba escribe el nombre como Piloso.",
       notes: {
@@ -38,7 +38,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 182,
-      price: 274,
+      price: 366,
       images: ["/products/the-secret-antonio-banderas.webp"],
       description: "Desodorante en spray. La foto no indica los mililitros.",
       notes: {
@@ -59,7 +59,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2609,
-      price: 3653,
+      price: 4697,
       images: ["/products/hypnotic-poison.webp"],
       description: "Eau de toilette. La caja impresa dice 30 ml. El texto encima de la foto dice 100 ml.",
       notes: {
@@ -80,7 +80,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 1590,
-      price: 2464,
+      price: 3338,
       images: ["/products/gorgeous-michael-kors.webp"],
       description: "Eau de parfum de 100 ml para mujer.",
       notes: {
@@ -102,7 +102,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2349,
-      price: 3523,
+      price: 4697,
       images: ["/products/linterdit-rouge.webp"],
       description: "Eau de parfum Rouge de 80 ml.",
       notes: {
@@ -124,7 +124,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 1833,
-      price: 2749,
+      price: 3665,
       images: ["/products/sexy-amber.webp"],
       description: "Eau de parfum de 100 ml.",
       notes: {
@@ -145,7 +145,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 631,
-      price: 1074,
+      price: 1517,
       images: ["/products/galatea.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Alhambra.",
       notes: {
@@ -166,7 +166,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 6482,
-      price: 9074,
+      price: 11666,
       images: ["/products/delina.webp"],
       description: "Eau de parfum de 75 ml.",
       notes: {
@@ -187,7 +187,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2242,
-      price: 2989,
+      price: 3736,
       images: ["/products/amber-oud-ultra-violet.webp"],
       description: "Amber Oud Ultra Violet. La foto no indica mililitros ni concentración.",
       notes: {
@@ -208,7 +208,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2391,
-      price: 3586,
+      price: 4781,
       images: ["/products/eros-energy.webp"],
       description: "Eau de parfum pour homme de 100 ml.",
       notes: {
@@ -230,7 +230,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2993,
-      price: 4489,
+      price: 5985,
       images: ["/products/la-belle.webp"],
       description: "Eau de parfum de 100 ml.",
       notes: {
@@ -252,7 +252,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2432,
-      price: 3648,
+      price: 4864,
       images: ["/products/acqua-di-gio.webp"],
       description: "Giorgio Armani Acqua di Giò Eau de Toilette 3.4 oz recargable: el aroma del mar y de la libertad. Creado por Alberto Morillas en 1996, abre con bergamota, limón, lima y mandarina; su corazón acuático combina notas marinas, jazmín, calone y durazno; y termina con un fondo limpio de almizcle blanco, cedro, musgo de roble, pachulí y ámbar. Fresco, elegante y atemporal, es uno de los perfumes masculinos más reconocidos del mundo y un básico para el hombre que valora la sofisticación sin esfuerzo. Su presentación recargable es práctica y sostenible. Una fragancia que evoca brisa, sol y horizonte en cada aplicación.",
       notes: {
@@ -274,7 +274,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2302,
-      price: 3132,
+      price: 3962,
       images: ["/products/linterdit.webp"],
       description: "Eau de parfum de 80 ml. Es el frasco transparente, distinto del Rouge.",
       notes: {
@@ -295,7 +295,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2231,
-      price: 3346,
+      price: 4461,
       images: ["/products/set-eros-energy.webp"],
       description: "Set con eau de parfum de 50 ml, gel de baño de 50 ml y bálsamo para después del afeitado de 50 ml.",
       notes: {
@@ -316,7 +316,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2212,
-      price: 3318,
+      price: 4424,
       images: ["/products/game-of-spades-jackpot.webp"],
       description: "Frasco de 100 ml. El texto de la foto dice eau de parfum y el frasco dice parfum.",
       notes: {
@@ -337,7 +337,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2183,
-      price: 2970,
+      price: 3757,
       images: ["/products/set-versace-man-eau-fraiche.webp"],
       description: "Set con el eau de toilette Man Eau Fraîche, un atomizador de viaje y un estuche. El tamaño del frasco principal no se lee.",
       notes: {
@@ -358,7 +358,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2715,
-      price: 4072,
+      price: 5429,
       images: ["/products/omnia-amethyst.webp"],
       description: "Eau de toilette de 100 ml.",
       notes: {
@@ -380,7 +380,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1852,
-      price: 2870,
+      price: 3888,
       images: ["/products/bharara-goddess.webp"],
       description: "Eau de parfum de 100 ml. El texto de la foto dice Goddess Women.",
       notes: {
@@ -401,7 +401,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1083,
-      price: 1678,
+      price: 2273,
       images: ["/products/ombre-oud-intense-black.webp"],
       description: "Parfum de 100 ml. La caja dice Intense Black by Armaf.",
       notes: {
@@ -422,7 +422,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1744,
-      price: 2703,
+      price: 3662,
       images: ["/products/oros-donna.webp"],
       description: "Eau de parfum de 100 ml. El estuche dice que incluye cristales.",
       notes: {
@@ -443,7 +443,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1740,
-      price: 2696,
+      price: 3652,
       images: ["/products/armaf-christian-provenzano-ii.webp"],
       description: "Pure parfum, edición II, frasco rojo.",
       notes: {
@@ -464,7 +464,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1740,
-      price: 2696,
+      price: 3652,
       images: ["/products/armaf-christian-provenzano-iii.webp"],
       description: "Pure parfum, edición III, frasco azul.",
       notes: {
@@ -485,7 +485,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1740,
-      price: 2696,
+      price: 3652,
       images: ["/products/armaf-christian-provenzano-iv.webp"],
       description: "Pure parfum, edición IV, frasco café.",
       notes: {
@@ -506,7 +506,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1740,
-      price: 2696,
+      price: 3652,
       images: ["/products/armaf-christian-provenzano-i.webp"],
       description: "Pure parfum, edición I, frasco dorado.",
       notes: {
@@ -527,7 +527,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2495,
-      price: 3742,
+      price: 4989,
       images: ["/products/polo-red-rush.webp"],
       description: "Eau de toilette de 125 ml.",
       notes: {
@@ -548,7 +548,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 677,
-      price: 984,
+      price: 1291,
       images: ["/products/so-candid.webp"],
       description: "Eau de parfum pour homme de 100 ml.",
       notes: {
@@ -569,7 +569,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 677,
-      price: 984,
+      price: 1291,
       images: ["/products/bint-hooran-rose-passion.webp"],
       description: "Rose Passion de Bint Hooran. La foto no indica mililitros ni concentración.",
       notes: {
@@ -590,7 +590,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2403,
-      price: 3605,
+      price: 4807,
       images: ["/products/ralph.webp"],
       description: "Eau de toilette de 100 ml.",
       notes: {
@@ -611,7 +611,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 677,
-      price: 984,
+      price: 1291,
       images: ["/products/anoud.webp"],
       description: "Frasco turquesa con el nombre Anoud en árabe y en latín. No se lee casa, tamaño ni concentración.",
       notes: {
@@ -632,7 +632,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 816,
-      price: 1187,
+      price: 1558,
       images: ["/products/aser.webp"],
       description: "Eau de parfum. La caja parece indicar 100 ml, pero el número no se lee completo.",
       notes: {
@@ -653,7 +653,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2370,
-      price: 3555,
+      price: 4740,
       images: ["/products/polo-red.webp"],
       description: "Eau de toilette de 200 ml.",
       notes: {
@@ -674,7 +674,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2359,
-      price: 3210,
+      price: 4061,
       images: ["/products/game-of-spades-queen.webp"],
       description: "Parfum. La foto no indica los mililitros.",
       notes: {
@@ -695,7 +695,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 910,
-      price: 1323,
+      price: 1736,
       images: ["/products/set-espectro.webp"],
       description: "Set con el eau de parfum, loción corporal de 100 ml, atomizador de 15 ml y un vial pequeño. El tamaño del frasco principal no se lee.",
       notes: {
@@ -716,7 +716,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 816,
-      price: 1187,
+      price: 1558,
       images: ["/products/mawj.webp"],
       description: "Eau de parfum. El tamaño de la caja no se lee.",
       notes: {
@@ -737,7 +737,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 8519,
-      price: 11926,
+      price: 15333,
       images: ["/products/aventus-for-her.webp"],
       description: "Eau de parfum For Her de 75 ml.",
       notes: {
@@ -758,7 +758,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 730,
-      price: 1344,
+      price: 1958,
       images: ["/products/fakhar.webp"],
       description: "Eau de parfum de 100 ml, frasco blanco con tapa oro rosa. Es distinto del Fakhar Black. Inspirado en Yves Saint Laurent Y. Aroma fresco, aromático y dulce.",
       notes: {
@@ -781,7 +781,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1137,
-      price: 1763,
+      price: 2389,
       images: ["/products/odyssey-revolution-ultra.webp"],
       description: "Eau de parfum Ultra Edition de 100 ml.",
       notes: {
@@ -802,7 +802,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1005,
-      price: 1557,
+      price: 2109,
       images: ["/products/club-de-nuit-milestone.webp"],
       description: "Eau de parfum de 105 ml. Inspirado en Creed Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
@@ -825,7 +825,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1137,
-      price: 1763,
+      price: 2389,
       images: ["/products/odyssey-artisto-red.webp"],
       description: "Eau de parfum The Red Edition de 100 ml.",
       notes: {
@@ -846,7 +846,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 944,
-      price: 1511,
+      price: 2078,
       images: ["/products/odyssey-eau-montagne.webp"],
       description: "Eau de parfum Mountain Edition de 100 ml.",
       notes: {
@@ -867,7 +867,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 788,
-      price: 1261,
+      price: 1734,
       images: ["/products/ck-in2u-him.webp"],
       description: "Eau de toilette de 150 ml, versión Him.",
       notes: {
@@ -888,7 +888,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 750,
-      price: 1200,
+      price: 1650,
       images: ["/products/kismet-magic.webp"],
       description: "Eau de parfum de 100 ml. Inspirado en Kilian Angels' Share. Aroma de manzana, canela y coñac.",
       notes: {
@@ -911,7 +911,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1526,
-      price: 2365,
+      price: 3204,
       images: ["/products/amber-oud-carbon-edition-100.webp"],
       description: "Eau de parfum Carbon Edition de 100 ml. Hay otra foto del mismo nombre en 60 ml.",
       notes: {
@@ -932,7 +932,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 990,
-      price: 1500,
+      price: 2010,
       images: ["/products/odyssey-homme.webp"],
       description: "Eau de parfum de 100 ml. La tapa dice Armaf.",
       notes: {
@@ -953,7 +953,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1652,
-      price: 2560,
+      price: 3468,
       images: ["/products/club-de-nuit-iconic.webp"],
       description: "Eau de parfum de 200 ml. El medallón dice Armaf. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
@@ -977,7 +977,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2359,
-      price: 3210,
+      price: 4061,
       images: ["/products/212-vip.webp"],
       description: "Eau de parfum de 80 ml, frasco cápsula dorado.",
       notes: {
@@ -998,7 +998,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 913,
-      price: 1460,
+      price: 2007,
       images: ["/products/boss-selection.webp"],
       description: "Eau de toilette de 100 ml.",
       notes: {
@@ -1019,7 +1019,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2368,
-      price: 3551,
+      price: 4734,
       images: ["/products/le-male.webp"],
       description: "Eau de toilette de 125 ml.",
       notes: {
@@ -1040,7 +1040,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1234,
-      price: 1913,
+      price: 2592,
       images: ["/products/paco-rabanne-xs.webp"],
       description: "Eau de toilette de 100 ml.",
       notes: {
@@ -1061,7 +1061,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 875,
-      price: 1400,
+      price: 1925,
       images: ["/products/set-guess-man-gold.webp"],
       description: "Set con body spray de 170 ml (6 fl oz), gel de ducha de 200 ml (7 fl oz) y el eau de toilette. El tamaño del eau de toilette no se lee.",
       notes: {
@@ -1082,7 +1082,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 673,
-      price: 1077,
+      price: 1481,
       images: ["/products/the-black-92.webp"],
       description: "Emper The Black 92 Eau de Parfum Unisex 3.4 oz: verde, amaderada y misteriosa. Abre con higo, hoja de laurel y bergamota, que aportan un frescor verde y ligeramente cremoso. Su corazón es seco y elegante, con cedro, vetiver y almizcle, y se cierra con un fondo cálido y ahumado de tabaco y heno. Madura, sofisticada y de aire nicho, es un perfume para hombres y mujeres que prefieren los aromas naturales, terrosos y con carácter discreto. Ideal para el día, para la oficina y para las noches tranquilas, deja una estela refinada y distinta, de esas que invitan a acercarse para descubrir más.",
       notes: {
@@ -1103,7 +1103,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 1634,
-      price: 2532,
+      price: 3430,
       images: ["/products/toy-2-pearl.webp"],
       description: "Eau de parfum de 100 ml.",
       notes: {
@@ -1124,7 +1124,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 288,
-      price: 489,
+      price: 690,
       images: ["/products/cuba-fierce.webp"],
       description: "Eau de toilette de 100 ml. La lata dice for men.",
       notes: {
@@ -1145,7 +1145,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 690,
-      price: 1442,
+      price: 2194,
       images: ["/products/asad.webp"],
       description: "Eau de parfum de 100 ml. Inspirado en Dior Sauvage Elixir. Aroma especiado, fresco y ambarado.",
       notes: {
@@ -1169,7 +1169,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1242,
-      price: 1581,
+      price: 1920,
       images: ["/products/atheeri.webp"],
       description: "Lattafa Atheeri es una fragancia sofisticada y envolvente que enamora con su carácter elegante y su fondo cálido y sensual. Combina notas especiadas y florales con ámbar, maderas y almizcle en una mezcla refinada que se siente lujosa en la piel. Tiene gran proyección, larga duración y esa personalidad inconfundible de la perfumería árabe moderna. Perfecta para ocasiones especiales, noches de brillo o para sentirte exclusiva cualquier día. Un perfume que habla de elegancia y que querrás tener en tu colección.",
       notes: {
@@ -1190,7 +1190,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 798,
-      price: 1300,
+      price: 1802,
       images: ["/products/fakhar-black.webp"],
       description: "Lattafa Pride Fakhar Black es pura elegancia masculina con carácter. Una apertura fresca y aromática de manzana, bergamota y lavanda da paso a un corazón especiado y limpio, que descansa sobre un fondo cálido y amaderado de ámbar, pachulí y almizcle. Seguro, sofisticado y magnético, es ideal para la oficina, las citas y las noches especiales. Tiene excelente proyección y una duración que te acompaña todo el día, con ese sello árabe que huele a lujo sin pagar precios de lujo. Para el hombre que entra a un lugar y se hace notar.",
       notes: {
@@ -1213,7 +1213,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 3078,
-      price: 4310,
+      price: 5542,
       images: ["/products/scandal-absolu.webp"],
       description: "Parfum pour homme. La caja impresa dice 50 ml. El texto encima de la foto dice 100 ml.",
       notes: {
@@ -1234,7 +1234,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 215,
-      price: 433,
+      price: 651,
       images: ["/products/star-wars-the-force-awakens.webp"],
       description: "Mini de Star Wars The Force Awakens, con lonchera de metal. No se lee la casa del perfume ni los mililitros.",
       notes: {
@@ -1255,7 +1255,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/le-parfait-mon-amour.webp"],
       description: "Eau de parfum pour femme de 100 ml.",
       notes: {
@@ -1276,7 +1276,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1431,
-      price: 2218,
+      price: 3005,
       images: ["/products/ombre-dor.webp"],
       description: "Ombre D'or de Armaf. El texto de la caja no se lee completo y no indica un tamaño claro.",
       notes: {
@@ -1297,7 +1297,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1143,
-      price: 1662,
+      price: 2181,
       images: ["/products/sherif.webp"],
       description: "Eau de parfum de 100 ml.",
       notes: {
@@ -1318,7 +1318,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/set-club-de-nuit-sillage.webp"],
       description: "Estuche de colección con el eau de parfum, un frasco plateado, desodorante, spray corporal y dos atomizadores de viaje. Los mililitros de cada pieza no se leen con claridad. Inspirado en Creed Silver Mountain Water. Aroma de té, cítricos y almizcle.",
       notes: {
@@ -1341,7 +1341,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 834,
-      price: 1334,
+      price: 1834,
       images: ["/products/360-collection-noir.webp"],
       description: "Eau de toilette de 100 ml para hombre. La caja dice Noir y 360° Collection for Men.",
       notes: {
@@ -1362,7 +1362,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 869,
-      price: 1390,
+      price: 1911,
       images: ["/products/360-collection.webp"],
       description: "Eau de toilette de 100 ml para hombre. El frasco es plateado. La caja dice 3.4 fl oz y 100 ml.",
       notes: {
@@ -1383,7 +1383,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 881,
-      price: 1410,
+      price: 1939,
       images: ["/products/boss-number-one.webp"],
       description: "Eau de toilette de 100 ml. El frasco dice Boss Number One. El texto de la foto dice Número One.",
       notes: {
@@ -1404,7 +1404,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1300,
-      price: 2015,
+      price: 2730,
       images: ["/products/ch-hc-men-sport.webp"],
       description: "Eau de toilette de 100 ml. El frasco dice CH HC y el texto de la foto dice CH HC Men Sport.",
       notes: {
@@ -1425,7 +1425,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 682,
-      price: 1091,
+      price: 1500,
       images: ["/products/guess-seductive-homme-red.webp"],
       description: "Eau de toilette de 100 ml. La caja dice 3.4 fl oz / 100 ml, Seductive Homme Red y Men / Homme.",
       notes: {
@@ -1446,7 +1446,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 619,
-      price: 991,
+      price: 1363,
       images: ["/products/ck-one-shock-for-him.webp"],
       description: "Eau de toilette. El texto de la foto dice 100 ml. La caja dice 3.3 fl oz.",
       notes: {
@@ -1467,7 +1467,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1017,
-      price: 1480,
+      price: 1943,
       images: ["/products/ishq-al-shuyukh-gold.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Lattafa Pride e Ishq Al Shuyukh Gold.",
       notes: {
@@ -1488,7 +1488,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 585,
-      price: 935,
+      price: 1285,
       images: ["/products/odyssey-spectra.webp"],
       description: "Eau de parfum de 50 ml, 1.7 fl oz. Rainbow Edition. La caja no imprime Armaf.",
       notes: {
@@ -1509,7 +1509,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1547,
-      price: 2397,
+      price: 3247,
       images: ["/products/gold-crystal-oudh.webp"],
       description: "Extract de parfum de 100 ml, 3.33 fl oz. La caja dice Al Haramain Since 1970 y Haramain Gold Crystal Oudh.",
       notes: {
@@ -1530,7 +1530,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 737,
-      price: 1179,
+      price: 1621,
       images: ["/products/odyssey-homme-white-edition.webp"],
       description: "Eau de parfum de 100 ml. La tapa dice Armaf. White Edition.",
       notes: {
@@ -1551,7 +1551,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 253,
-      price: 429,
+      price: 605,
       images: ["/products/kenneth-cole-black.webp"],
       description: "Bruma corporal de 236 ml, 8 fl oz. El frasco dice Body Mist / Brume Corporelle y For Her. El título Splash de la foto no es la marca.",
       notes: {
@@ -1572,7 +1572,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 218,
-      price: 314,
+      price: 410,
       images: ["/products/kenneth-cole-white.webp"],
       description: "Bruma corporal de 236 ml, 8 fl oz. El frasco dice Fragrance Mist / Brume Parfumée y For Her. El título Splash de la foto no es la marca.",
       notes: {
@@ -1593,7 +1593,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 218,
-      price: 311,
+      price: 404,
       images: ["/products/sofia-vergara-tempting.webp"],
       description: "Bruma corporal de 236 ml. El frasco dice Fragrance Mist y Tempting Sofia Vergara. El título Splash de la foto no es la marca.",
       notes: {
@@ -1614,7 +1614,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 218,
-      price: 311,
+      price: 404,
       images: ["/products/sofia-vergara-lost-in-paradise.webp"],
       description: "Bruma corporal de 236 ml. El frasco dice Fragrance Mist y Lost in Paradise Sofia Vergara. El título Splash de la foto no es la marca.",
       notes: {
@@ -1635,7 +1635,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 217,
-      price: 325,
+      price: 433,
       images: ["/products/pitbull-woman.webp"],
       description: "Bruma corporal de 236 ml. El frasco dice Body Mist / Brume Corporelle y Pitbull Woman. El título Splash de la foto no es la marca.",
       notes: {
@@ -1656,7 +1656,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1303,
-      price: 2020,
+      price: 2737,
       images: ["/products/hawas-eclat.webp"],
       description: "Eau de parfum de 100 ml, 3.38 fl oz. El frasco dice Hawas For Her y Éclat.",
       notes: {
@@ -1677,7 +1677,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1137,
-      price: 1763,
+      price: 2389,
       images: ["/products/odyssey-marshmallow.webp"],
       description: "Eau de parfum de 100 ml. Gourmand Edition. La caja dice Eau de Parfum.",
       notes: {
@@ -1698,7 +1698,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 787,
-      price: 1260,
+      price: 1733,
       images: ["/products/spectre.webp"],
       description: "Eau de parfum de 80 ml. El frasco y la caja solo dicen Spectre.",
       notes: {
@@ -1719,7 +1719,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/tag-donna-di-terra.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. El frasco dice Donna di Terra. La caja también dice 80% vol.",
       notes: {
@@ -1740,7 +1740,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1145,
-      price: 1831,
+      price: 2517,
       images: ["/products/set-maahir-legacy.webp"],
       description: "Set Maahir Legacy. Incluye el perfume con tapa de caballo, una loción o light cologne de 200 ml y un air freshener de 150 ml. Los mililitros del perfume no se leen.",
       notes: {
@@ -1761,7 +1761,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 682,
-      price: 1091,
+      price: 1500,
       images: ["/products/aura-fresh.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf Aura Fresh.",
       notes: {
@@ -1782,7 +1782,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1960,
-      price: 3039,
+      price: 4118,
       images: ["/products/set-club-de-nuit-parfum.webp"],
       description: "Set de tres frascos: Club de Nuit Iconic, Club de Nuit Untold y Club de Nuit Impériale. Los mililitros de cada uno no se leen.",
       notes: {
@@ -1803,7 +1803,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1435,
-      price: 2224,
+      price: 3013,
       images: ["/products/private-key-to-my-love.webp"],
       description: "Extrait de parfum de 100 ml. La caja dice Armaf Club de Nuit, Private Key To my Love.",
       notes: {
@@ -1824,7 +1824,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 689,
-      price: 994,
+      price: 1299,
       images: ["/products/esraa.webp"],
       description: "Aceite concentrado de 20 ml, 0.68 fl oz. La caja dice Pure Concentrated Oil.",
       notes: {
@@ -1845,7 +1845,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 801,
-      price: 1282,
+      price: 1763,
       images: ["/products/ego-exotic.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Exotic Parfum for Women y Pour Femme.",
       notes: {
@@ -1866,7 +1866,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/craze.webp"],
       description: "Eau de parfum de 100 ml para hombre. El frasco dice Armaf Luxe. La caja dice Craze for Men.",
       notes: {
@@ -1887,7 +1887,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/tag-donna-colorata.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Donna Colorata.",
       notes: {
@@ -1908,7 +1908,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1096,
-      price: 1699,
+      price: 2302,
       images: ["/products/eternity-aqua.webp"],
       description: "Eau de toilette para hombre. La placa dice 100 ml. La caja dice 3.3 fl oz.",
       notes: {
@@ -1929,7 +1929,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1305,
-      price: 2023,
+      price: 2741,
       images: ["/products/whipped-pleasure.webp"],
       description: "Eau de parfum. El texto de la foto dice 75 ml y 2.5 fl oz. La caja imprime «180 ML OZ», que no coincide.",
       notes: {
@@ -1950,7 +1950,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1801,
-      price: 2792,
+      price: 3783,
       images: ["/products/set-club-de-nuit-30.webp"],
       description: "Set de tres perfumes de 30 ml: Milestone en frasco oro rosa, Intense en frasco negro y un tercer frasco rosa cuyo nombre no se lee.",
       notes: {
@@ -1971,7 +1971,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1100,
-      price: 1706,
+      price: 2312,
       images: ["/products/oros-fleur.webp"],
       description: "Eau de parfum de 50 ml. La caja dice Oros Fleur y menciona elementos Swarovski.",
       notes: {
@@ -1992,7 +1992,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1050,
-      price: 1526,
+      price: 2002,
       images: ["/products/hadi.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Hadi y Niche Avenue.",
       notes: {
@@ -2013,7 +2013,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1137,
-      price: 1763,
+      price: 2389,
       images: ["/products/odyssey-black-forest.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. La tapa dice Armaf. La caja dice Med by Sterling Parfums.",
       notes: {
@@ -2034,7 +2034,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 702,
-      price: 1053,
+      price: 1404,
       images: ["/products/tool-box.webp"],
       description: "La caja dice The Emper Product, Tool Box, for Men y Eau de Toilette. El texto de la foto dice eau de parfum de 100 ml. El frasco también imprime 0.05 ml y 0.02 ml.",
       notes: {
@@ -2055,7 +2055,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1377,
-      price: 2134,
+      price: 2891,
       images: ["/products/the-lions-club-monarque.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Armaf, The Lion's Club y Monarque.",
       notes: {
@@ -2076,7 +2076,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 241,
-      price: 410,
+      price: 579,
       images: ["/products/cuba-jungle-zebra.webp"],
       description: "Eau de toilette de 100 ml para hombre. El envase también dice By Parfums des Champs.",
       notes: {
@@ -2097,7 +2097,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 460,
-      price: 719,
+      price: 978,
       images: ["/products/masculin-leather.webp"],
       description: "Eau de parfum. La caja dice 160 ml. El texto de la foto dice 100 ml. El frasco dice Riiffs.",
       notes: {
@@ -2118,7 +2118,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 395,
-      price: 632,
+      price: 869,
       images: ["/products/johara.webp"],
       description: "Eau de parfum de 12 ml. La caja dice Johara.",
       notes: {
@@ -2139,7 +2139,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 971,
-      price: 1314,
+      price: 1657,
       images: ["/products/luxe-bold.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Maison Alhambra Luxe Bold.",
       notes: {
@@ -2160,7 +2160,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 971,
-      price: 1314,
+      price: 1657,
       images: ["/products/luxe-emerald.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. El empaque dice Emerald.",
       notes: {
@@ -2181,7 +2181,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1305,
-      price: 2023,
+      price: 2741,
       images: ["/products/cookie-crave.webp"],
       description: "Eau de parfum Give Me Gourmand. La caja imprime 10MLC y también 2.53 fl oz. Esos dos números no coinciden.",
       notes: {
@@ -2202,7 +2202,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/set-milestone-collector.webp"],
       description: "Estuche Milestone, a collector's pride. Incluye un spray corporal oro rosa, el perfume Club de Nuit Milestone, un jabón y un desodorante dorado. Los mililitros de cada pieza no se leen con claridad. Inspirado en Creed Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
@@ -2225,7 +2225,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1244,
-      price: 1902,
+      price: 2560,
       images: ["/products/thouq.webp"],
       description: "Eau de parfum de 80 ml. La caja dice Thouq by Lattafa.",
       notes: {
@@ -2246,7 +2246,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 938,
-      price: 1500,
+      price: 2062,
       images: ["/products/turathi.webp"],
       description: "Eau de parfum de 90 ml. El frasco dice Turathi y Afnan.",
       notes: {
@@ -2267,7 +2267,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 814,
-      price: 1302,
+      price: 1790,
       images: ["/products/woody-delight.webp"],
       description: "Parfum de 110 ml, 3.8 fl oz. La caja y la placa coinciden.",
       notes: {
@@ -2288,7 +2288,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/la-rosa-gold-edition.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. La caja dice Pour Femme y Gold Edition.",
       notes: {
@@ -2309,7 +2309,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1099,
-      price: 1703,
+      price: 2307,
       images: ["/products/turbo-gts.webp"],
       description: "Eau de parfum. El texto de la foto dice 100 ml. La caja imprime «5T230ML / 3.4 FL.OZ». 3.4 fl oz coincide con 100 ml.",
       notes: {
@@ -2330,7 +2330,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1053,
-      price: 1633,
+      price: 2213,
       images: ["/products/farah-paradise.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Farah Paradise.",
       notes: {
@@ -2351,7 +2351,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 814,
-      price: 1302,
+      price: 1790,
       images: ["/products/exotic-amber.webp"],
       description: "Parfum de 110 ml, 3.8 fl oz. La caja dice Maison Luxe Exotic Amber.",
       notes: {
@@ -2372,7 +2372,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 63,
-      price: 98,
+      price: 133,
       images: ["/products/magnate-10.webp"],
       description: "Eau de toilette de 100 ml. La caja dice Magnate Collection, 10! Pour Homme, 80% vol y 3.3 fl oz. Inspirado en Joop! Homme. Aroma dulce, especiado y cálido.",
       notes: {
@@ -2395,7 +2395,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 770,
-      price: 1120,
+      price: 1470,
       images: ["/products/lana-dazzle.webp"],
       description: "Eau de parfum de 100 ml. El texto de la foto dice Camara Lana Dazzle.",
       notes: {
@@ -2416,7 +2416,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 770,
-      price: 1120,
+      price: 1470,
       images: ["/products/lana-divine.webp"],
       description: "Eau de parfum de 100 ml. El frasco y el texto de la foto dicen Camara Lana Divine.",
       notes: {
@@ -2437,7 +2437,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 770,
-      price: 1120,
+      price: 1470,
       images: ["/products/lana-bliss.webp"],
       description: "Eau de parfum de 100 ml. El frasco y el texto de la foto dicen Camara Lana Bliss.",
       notes: {
@@ -2458,7 +2458,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1755,
-      price: 2721,
+      price: 3687,
       images: ["/products/cuir-edition-noir.webp"],
       description: "La caja dice Cuir de Orientica, Édition Noir. No se leen los mililitros ni la concentración.",
       notes: {
@@ -2479,7 +2479,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1283,
-      price: 1866,
+      price: 2449,
       images: ["/products/dynasty.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. La caja dice Lattafa.",
       notes: {
@@ -2500,7 +2500,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2213,
-      price: 3320,
+      price: 4427,
       images: ["/products/viking-rio.webp"],
       description: "Parfum. La caja dice Bharara Viking Rio. Viene con un atomizador de viaje naranja. Los mililitros del frasco y del atomizador no se leen.",
       notes: {
@@ -2521,7 +2521,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1609,
-      price: 2494,
+      price: 3379,
       images: ["/products/club-de-nuit-imperiale.webp"],
       description: "Eau de parfum. La caja dice 200 ml y 6.8 fl oz. Es el frasco blanco con tapa dorada, suelto.",
       notes: {
@@ -2542,7 +2542,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 700,
-      price: 1120,
+      price: 1540,
       images: ["/products/ejaazi-intensive-silver.webp"],
       description: "Eau de parfum. La caja imprime 20 ml y también 100 ml. El frasco se ve de tamaño completo.",
       notes: {
@@ -2563,7 +2563,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 700,
-      price: 1120,
+      price: 1540,
       images: ["/products/ejaazi.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. La etiqueta dorada dice Ejaazi y الرمال. No es el Intensive Silver.",
       notes: {
@@ -2584,7 +2584,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1396,
-      price: 2164,
+      price: 2932,
       images: ["/products/areej-hanaan.webp"],
       description: "El frasco y la caja dicen Areej Hanaan y Orientica. No se leen los mililitros ni la concentración.",
       notes: {
@@ -2605,7 +2605,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1396,
-      price: 2164,
+      price: 2932,
       images: ["/products/areej-oud-anaqa.webp"],
       description: "Eau de parfum de 100 ml. El texto de la foto dice Orientica Areej Oud Anaqa.",
       notes: {
@@ -2626,7 +2626,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1396,
-      price: 2164,
+      price: 2932,
       images: ["/products/areej-shaza.webp"],
       description: "El frasco y la caja dicen Areej Shaza y Orientica. No se leen los mililitros ni la concentración.",
       notes: {
@@ -2647,7 +2647,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 958,
-      price: 1533,
+      price: 2108,
       images: ["/products/raed-luxe.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. La caja dice Ra'ed Luxe y Lattafa.",
       notes: {
@@ -2668,7 +2668,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 740,
-      price: 1135,
+      price: 1530,
       images: ["/products/haya.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Lattafa Haya.",
       notes: {
@@ -2689,7 +2689,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 910,
-      price: 1323,
+      price: 1736,
       images: ["/products/set-sky.webp"],
       description: "Set para hombre. Incluye una loción corporal de 100 ml, el perfume en envase azul con tapa naranja, un spray chico cuya etiqueta parece decir OT55 ML y un atomizador de viaje dorado. La caja dice Dubri Niche.",
       notes: {
@@ -2710,7 +2710,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 583,
-      price: 848,
+      price: 1113,
       images: ["/products/dubai-way.webp"],
       description: "Eau de parfum. La caja dice Dubai Niche, 60% vol y 2.4 fl oz. No imprime mililitros.",
       notes: {
@@ -2731,7 +2731,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1948,
-      price: 2922,
+      price: 3896,
       images: ["/products/dangerous-me.webp"],
       description: "Eau de parfum de 62 ml. El frasco y la caja dicen Paco Rabanne Dangerous Me.",
       notes: {
@@ -2752,7 +2752,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 958,
-      price: 1485,
+      price: 2012,
       images: ["/products/lahdath.webp"],
       description: "Eau de parfum. El texto de la foto dice 80 ml y la caja dice 2.7 fl oz. La caja también imprime 30 ml. La foto dice Lattafa Pride.",
       notes: {
@@ -2773,7 +2773,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/ajayeb-dubai.webp"],
       description: "Eau de parfum de 100 ml. Frasco claro con jugo amarillo y tapa dorada. La caja dice 100 ml dos veces.",
       notes: {
@@ -2794,7 +2794,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/ajayeb-dubai-negro.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. Frasco negro veteado.",
       notes: {
@@ -2815,7 +2815,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 880,
-      price: 1364,
+      price: 1848,
       images: ["/products/al-areeq-silver.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Lattafa Pride y Al Areeq Silver.",
       notes: {
@@ -2836,7 +2836,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 833,
-      price: 1291,
+      price: 1749,
       images: ["/products/wajood.webp"],
       description: "Eau de parfum de 100 ml. El texto de la foto dice Lattafa Wajood.",
       notes: {
@@ -2857,7 +2857,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1679,
-      price: 2519,
+      price: 3359,
       images: ["/products/royal-bleu.webp"],
       description: "Eau de parfum de 80 ml. Luxury Collection. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
@@ -2880,7 +2880,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1979,
-      price: 2969,
+      price: 3959,
       images: ["/products/velvet-gold.webp"],
       description: "Eau de parfum de 150 ml. Luxury Collection.",
       notes: {
@@ -2901,7 +2901,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 966,
-      price: 1499,
+      price: 2032,
       images: ["/products/historic-doria.webp"],
       description: "Eau de parfum de 100 ml. La caja también dice 3.3 fl oz.",
       notes: {
@@ -2922,7 +2922,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-red.webp"],
       description: "Eau de toilette de 100 ml, 3.3 fl oz, para hombre.",
       notes: {
@@ -2943,7 +2943,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 800,
-      price: 1279,
+      price: 1758,
       images: ["/products/afaq.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. La caja dice Lattafa Pride.",
       notes: {
@@ -2964,7 +2964,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 460,
-      price: 719,
+      price: 978,
       images: ["/products/ana-al-awwal.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. El frasco dice Ana Al Awwal y Nusuk. El texto de la foto trae «anq» en lugar de Ana.",
       notes: {
@@ -2985,7 +2985,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 600,
-      price: 900,
+      price: 1200,
       images: ["/products/mon-lumiere.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Mon Lumière y Riiffs.",
       notes: {
@@ -3006,7 +3006,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 587,
-      price: 881,
+      price: 1175,
       images: ["/products/al-jamal.webp"],
       description: "La caja dice Jamal, Al Jamal y Pour Femme. No se leen los mililitros ni la concentración. No aparece otra casa.",
       notes: {
@@ -3027,7 +3027,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 754,
-      price: 1206,
+      price: 1658,
       images: ["/products/perry-ellis-18.webp"],
       description: "Eau de toilette de 100 ml. El frasco dice Perry Ellis 18.",
       notes: {
@@ -3048,7 +3048,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 722,
-      price: 1156,
+      price: 1590,
       images: ["/products/gold-rush-man.webp"],
       description: "Eau de toilette. La caja dice Man y 3.4 fl oz. No imprime mililitros.",
       notes: {
@@ -3069,7 +3069,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2391,
-      price: 3587,
+      price: 4783,
       images: ["/products/dior-edt-rayado.webp"],
       description: "Eau de toilette de 100 ml, 3.4 fl oz. Frasco de vidrio rayado. La banda dice Parfums Christian Dior y Made in France. El nombre de la fragancia no se lee.",
       notes: {
@@ -3090,7 +3090,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 830,
-      price: 1328,
+      price: 1826,
       images: ["/products/acqua-di-parisis-al-kabir.webp"],
       description: "El frasco dice Acqua di Parisis Al Kabir y L'Atelier Oriental. No se leen con claridad los mililitros ni la concentración.",
       notes: {
@@ -3111,7 +3111,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 830,
-      price: 1328,
+      price: 1826,
       images: ["/products/acqua-di-parisis-al-amana.webp"],
       description: "El frasco dice Acqua di Parisis Al Amana y L'Atelier Oriental. No se leen con claridad los mililitros ni la concentración.",
       notes: {
@@ -3132,7 +3132,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 830,
-      price: 1328,
+      price: 1826,
       images: ["/products/acqua-di-parisis-al-baraka.webp"],
       description: "El frasco dice Acqua di Parisis Al Baraka y L'Atelier Oriental. No se leen con claridad los mililitros ni la concentración.",
       notes: {
@@ -3153,7 +3153,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 574,
-      price: 916,
+      price: 1258,
       images: ["/products/insignia-gules.webp"],
       description: "Presentamos el Hamidi Men's Insignia Gules EDP Spray, una fragancia cautivadora diseñada para el hombre moderno. Lanzado en 2023, este aromático aroma afrutado de la reconocida casa de diseño de Oriente Medio, Hamidi, es una incorporación imprescindible a su colección de fragancias. Insignia Gules se abre con una vigorizante mezcla de piña, bergamota, lavanda y limón. Estas notas de salida crean un comienzo refrescante y vibrante que llama la atención de inmediato. A medida que la fragancia evoluciona, las notas de corazón de cumarina, geranio, musgo de roble, manzana roja y rosa se despliegan, agregando una capa compleja y sofisticada al aroma. Finalmente, las notas de fondo de tonka y sándalo brindan un final cálido y duradero, lo que garantiza que la fragancia perdure elegantemente durante todo el día. Insignia Gules de Hamidi es más que una fragancia; es una experiencia. El spray EDP de 3,6 oz es perfecto para el uso diario, ya que ofrece un aroma equilibrado y duradero que se adapta a cualquier ocasión. Ya sea que se dirija a una reunión de negocios o a una salida informal, esta fragancia realzará su presencia y dejará una impresión memorable. Diseñada por Hamidi, un nombre sinónimo de calidad y lujo en el mundo de las fragancias de Oriente Medio, Insignia Gules es un testimonio de su experiencia y atención al detalle. Envasada en una botella elegante y con estilo, también es un excelente regalo para el caballero exigente de su vida. El atomizador EDP Insignia Gules para hombre de Hamidi está disponible en un cómodo tamaño de 3,6 oz y viene con el código de barras 6294015179019. Tenga en cuenta que este artículo solo es válido para envío dentro de los Estados Unidos continentales y Canadá. Eleve su gama de fragancias con Insignia Gules y experimente el encanto de un aroma finamente elaborado.",
       notes: {
@@ -3174,7 +3174,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 574,
-      price: 916,
+      price: 1258,
       images: ["/products/insignia-purpure.webp"],
       description: "Hamidi Insignia Purpure Eau De Parfum 105 ml para hombres y mujeres Presentamos el exclusivo y divertido Hamidi Insignia Purpure Eau De Parfum, perfecto tanto para hombres como para mujeres. Con su atractivo tamaño de 105 ml, experimente la fragancia encantadora y duradera que lo dejará sintiéndose seguro y renovado. ¡Estimule sus sentidos con este aroma peculiar y divertido!",
       notes: {
@@ -3195,7 +3195,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 574,
-      price: 916,
+      price: 1258,
       images: ["/products/insignia-sable.webp"],
       description: "Presentamos la última obra maestra de Hamidi, Insignia Sable EDP Spray, lanzada en 2023. Esta fragancia unisex es una incorporación sorprendente al mundo de los perfumes de Medio Oriente, elaborada meticulosamente para ofrecer una experiencia aromática única. El frasco de 3,6 oz está diseñado para capturar la esencia de la elegancia y la sofisticación, lo que la convierte en una opción perfecta para quienes aprecian las fragancias finas.",
       notes: {
@@ -3216,7 +3216,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 574,
-      price: 916,
+      price: 1258,
       images: ["/products/insignia-ermine.webp"],
       description: "Insignia Ermine pertenece a la familia Floral Fruity Gourmand, creando una deliciosa sinfonía de aromas que encantarán sus sentidos. Las notas de salida de mandarina, ruibarbo y lichi brindan un comienzo fresco y vigorizante, preparando el escenario para que florezcan las notas de corazón. A medida que se desarrolla la fragancia, será recibido por la deliciosa combinación de acorde Gourmand, frutas tropicales, peonía y rosa, que ofrece un corazón dulce y floral que es vibrante y sofisticado.",
       notes: {
@@ -3237,7 +3237,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 574,
-      price: 916,
+      price: 1258,
       images: ["/products/insignia-vert.webp"],
       description: "Descubre la cautivadora esencia de Insignia Vert de Hamidi, una fragancia unisex lanzada en 2023 que trasciende el tiempo y las tendencias. Elaborado por la reconocida casa de diseño de Medio Oriente, Hamidi, este EDP en aerosol de 3.6 oz encarna sofisticación y atractivo, lo que lo convierte en una adición imprescindible a su colección de fragancias.",
       notes: {
@@ -3258,7 +3258,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1161,
-      price: 1799,
+      price: 2437,
       images: ["/products/khamrah-dukhan.webp"],
       description: "Eau de parfum de 100 ml. La caja y el frasco dicen Khamrah Dukhan y Lattafa. Inspirado en Kilian Angels' Share. Con un acento ahumado.",
       notes: {
@@ -3281,7 +3281,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1149,
-      price: 1961,
+      price: 2773,
       images: ["/products/teriaq.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Teriaq y Lattafa.",
       notes: {
@@ -3302,7 +3302,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 705,
-      price: 1344,
+      price: 1983,
       images: ["/products/fakhar-gold.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Fakhar Gold y Lattafa. Inspirado en Yves Saint Laurent Y. Una vuelta más dulce.",
       notes: {
@@ -3325,7 +3325,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 750,
-      price: 1112,
+      price: 1474,
       images: ["/products/ajwad.webp"],
       description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad y Lattafa.",
       notes: {
@@ -3346,7 +3346,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 517,
-      price: 828,
+      price: 1139,
       images: ["/products/ameerat-al-arab.webp"],
       description: "Asdaaf Ameerat Al Arab es una fragancia pensada para sentirte toda una princesa árabe. Floral, dulce y delicadamente cremosa, combina notas luminosas con vainilla, ámbar y almizcle que dejan una estela suave, femenina y muy seductora. Elegante, romántica y de excelente duración, es perfecta para el día, las fiestas y las ocasiones especiales. Un perfume con encanto oriental, presentación preciosa y un precio increíble, ideal para consentirte o para regalar a esa persona especial.",
       notes: {
@@ -3367,7 +3367,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 623,
-      price: 842,
+      price: 1061,
       images: ["/products/ameerat-al-arab-prive-rose.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Ameerat Al Arab Prive Rose y Asdaaf.",
       notes: {
@@ -3388,7 +3388,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 579,
-      price: 927,
+      price: 1275,
       images: ["/products/presidente-al-qaid.webp"],
       description: "Eau de parfum de 100 ml. El estuche de cuero dice Al Qaid y la caja dice Presidente.",
       notes: {
@@ -3409,7 +3409,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 468,
-      price: 796,
+      price: 1124,
       images: ["/products/orient-musk.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Velvet Collection, Orient Musk y Milestone.",
       notes: {
@@ -3430,7 +3430,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 468,
-      price: 796,
+      price: 1124,
       images: ["/products/black-insenso.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Velvet Collection, Black Insenso y Milestone.",
       notes: {
@@ -3451,7 +3451,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 468,
-      price: 796,
+      price: 1124,
       images: ["/products/ambre-sun.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Velvet Collection, Ambre Sun y Milestone.",
       notes: {
@@ -3472,7 +3472,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 468,
-      price: 796,
+      price: 1124,
       images: ["/products/royal-santal.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Glorious Paris, Royal Santal y Milestone.",
       notes: {
@@ -3493,7 +3493,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 468,
-      price: 796,
+      price: 1124,
       images: ["/products/red-musk.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Glorious Paris, Red Musk y Milestone.",
       notes: {
@@ -3514,7 +3514,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 468,
-      price: 796,
+      price: 1124,
       images: ["/products/leather-intense.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Glorious Paris, Leather Intense y Milestone.",
       notes: {
@@ -3535,7 +3535,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1615,
-      price: 2502,
+      price: 3389,
       images: ["/products/set-dolce-gabbana-mini.webp"],
       description: "Set con labial de 5 ml, máscara de pestañas de 3 ml y perfume de 5 ml.",
       notes: {
@@ -3556,7 +3556,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1899,
-      price: 2944,
+      price: 3989,
       images: ["/products/amber-oud-special-edition.webp"],
       description: "Eau de parfum Special Edition de 100 ml, con atomizador de viaje. El frasco y la caja dicen Al Haramain Amber Oud.",
       notes: {
@@ -3577,7 +3577,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 793,
-      price: 1269,
+      price: 1745,
       images: ["/products/lionne-attractive.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Attractive y Lionne.",
       notes: {
@@ -3598,7 +3598,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 793,
-      price: 1269,
+      price: 1745,
       images: ["/products/lionne-seductive.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Seductive y Lionne.",
       notes: {
@@ -3619,7 +3619,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2719,
-      price: 4078,
+      price: 5437,
       images: ["/products/invictus-aqua.webp"],
       description: "Eau de toilette de 100 ml. La caja dice Invictus Aqua, rabanne y Travel Retail Exclusive.",
       notes: {
@@ -3640,7 +3640,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1899,
-      price: 2944,
+      price: 3989,
       images: ["/products/set-art-of-nature-ii.webp"],
       description: "Set Lattafa Pride: eau de parfum de 100 ml, eau de parfum de 20 ml, atomizador y perfume en spray de 200 ml. La caja dice Art of Nature II.",
       notes: {
@@ -3661,7 +3661,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1053,
-      price: 1633,
+      price: 2213,
       images: ["/products/halloween-man-mystery.webp"],
       description: "Eau de parfum de 125 ml. La caja y el frasco dicen Halloween Man Mystery.",
       notes: {
@@ -3682,7 +3682,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1099,
-      price: 1703,
+      price: 2307,
       images: ["/products/turbo-boost.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Turbo #Boost y Zakat Parfums.",
       notes: {
@@ -3703,7 +3703,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1099,
-      price: 1703,
+      price: 2307,
       images: ["/products/turbo-super-charge.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Turbo #Super Charge y Zakat Parfums.",
       notes: {
@@ -3724,7 +3724,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1282,
-      price: 1987,
+      price: 2692,
       images: ["/products/halloween-my-wish.webp"],
       description: "Eau de parfum de 30 ml. La caja y el frasco dicen Halloween My Wish.",
       notes: {
@@ -3745,7 +3745,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 583,
-      price: 848,
+      price: 1113,
       images: ["/products/pure-elegance.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Pure Elegance y Dubai Niche.",
       notes: {
@@ -3766,7 +3766,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 130,
-      price: 200,
+      price: 270,
       images: ["/products/khamrah-qahwa-spray.webp"],
       description: "Perfume en spray de 300 ml. El envase dice Khamrah Qahwa y Lattafa. Inspirado en Kilian Angels' Share. Con un acento de café.",
       notes: {
@@ -3789,7 +3789,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 130,
-      price: 200,
+      price: 270,
       images: ["/products/musamam-spray.webp"],
       description: "Perfume en spray de 300 ml. El envase dice Musamam y Lattafa.",
       notes: {
@@ -3810,7 +3810,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 816,
-      price: 1187,
+      price: 1558,
       images: ["/products/haneen.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Haneen y Niche Avenue.",
       notes: {
@@ -3831,7 +3831,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 630,
-      price: 916,
+      price: 1202,
       images: ["/products/mai-way.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Mai Way y Fragrance Deluxe.",
       notes: {
@@ -3852,7 +3852,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 770,
-      price: 1120,
+      price: 1470,
       images: ["/products/camara-lana-obsession.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Lana Obsession y Camara.",
       notes: {
@@ -3873,7 +3873,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 1236,
-      price: 1798,
+      price: 2360,
       images: ["/products/set-nitro-pour-homme.webp"],
       description: "Set de atomizadores de 10 ml. La caja dice Nitro Pour Homme.",
       notes: {
@@ -3894,7 +3894,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1003,
-      price: 1459,
+      price: 1915,
       images: ["/products/bareq.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Bareq y Ard Al Zaafaran.",
       notes: {
@@ -3915,7 +3915,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 677,
-      price: 984,
+      price: 1291,
       images: ["/products/robo-rebel.webp"],
       description: "Eau de parfum de 100 ml. El frasco y el estuche dicen Robo Rebel y L'Affair.",
       notes: {
@@ -3936,7 +3936,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 677,
-      price: 984,
+      price: 1291,
       images: ["/products/robo-elixir.webp"],
       description: "Extrait de parfum de 100 ml. El frasco y el estuche dicen Robo Elixir y L'Affair.",
       notes: {
@@ -3957,7 +3957,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 630,
-      price: 916,
+      price: 1202,
       images: ["/products/night-de-club-man.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice night de club man.",
       notes: {
@@ -3978,7 +3978,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 74,
-      price: 112,
+      price: 150,
       images: ["/products/delar-wommen-trilloon.webp"],
       description: "Bruma corporal de 250 ml. El frasco dice Wommen Trilloon, Delar y Fragrance Mist.",
       notes: {
@@ -3999,7 +3999,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1137,
-      price: 1763,
+      price: 2389,
       images: ["/products/odyssey-toffee-coffee.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Odyssey Toffee Coffee Cafe Edition.",
       notes: {
@@ -4020,7 +4020,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1431,
-      price: 2218,
+      price: 3005,
       images: ["/products/perle-dor.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf y Perle D'or.",
       notes: {
@@ -4041,7 +4041,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 1277,
-      price: 1979,
+      price: 2681,
       images: ["/products/set-club-de-nuit-man.webp"],
       description: "Set: gel de baño de 100 ml, eau de toilette de 105 ml, shampoo de 250 ml y desodorante de 50 ml. Inspirado en Creed Aventus. Aroma de piña, abedul y almizcle.",
       notes: {
@@ -4064,7 +4064,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/seine-amour-belvico.webp"],
       description: "Frasco de 100 ml. La caja dice Armaf, Seine Amour y Belvico. No dice eau de parfum.",
       notes: {
@@ -4085,7 +4085,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 860,
-      price: 1375,
+      price: 1890,
       images: ["/products/noir-de-peche.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Noir de Pêche y Scentasy.",
       notes: {
@@ -4106,7 +4106,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/sawdaa.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Armaf y Sawdaa.",
       notes: {
@@ -4127,7 +4127,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/orchestra-tempo-tune.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf, Orchèstra y Tempo Tune.",
       notes: {
@@ -4148,7 +4148,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/orchestra-legado-lux.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf, Orchèstra y Legato Lux.",
       notes: {
@@ -4169,7 +4169,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1305,
-      price: 2023,
+      price: 2741,
       images: ["/products/mallow-madness.webp"],
       description: "Eau de parfum de 75 ml. El frasco dice Mallow Madness, Give Me Gourmand y Lattafa.",
       notes: {
@@ -4190,7 +4190,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1305,
-      price: 2023,
+      price: 2741,
       images: ["/products/choco-overdose.webp"],
       description: "Eau de parfum de 75 ml. El frasco dice Choco Overdose, Give Me Gourmand y Lattafa.",
       notes: {
@@ -4211,7 +4211,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1590,
-      price: 2464,
+      price: 3338,
       images: ["/products/amber-oud-bleu-edition-100.webp"],
       description: "Eau de parfum Bleu Edition de 100 ml. Hay otra de 200 ml. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
@@ -4234,7 +4234,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1568,
-      price: 2429,
+      price: 3290,
       images: ["/products/hawas-pink.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Hawas For Her Pink.",
       notes: {
@@ -4255,7 +4255,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1523,
-      price: 2360,
+      price: 3197,
       images: ["/products/amber-oud-ruby-edition.webp"],
       description: "Eau de parfum Ruby Edition de 100 ml. El frasco y la caja dicen Al Haramain Amber Oud.",
       notes: {
@@ -4276,7 +4276,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 729,
-      price: 1166,
+      price: 1603,
       images: ["/products/davidoff-cool-water-oceanic.webp"],
       description: "Eau de toilette de 125 ml. El frasco y la caja dicen Davidoff Cool Water Oceanic Edition.",
       notes: {
@@ -4297,7 +4297,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 975,
-      price: 1560,
+      price: 2145,
       images: ["/products/perry-ellis-18-200.webp"],
       description: "Eau de toilette de 200 ml. El frasco y la lata dicen Perry Ellis 18. Hay otra de 100 ml.",
       notes: {
@@ -4318,7 +4318,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1433,
-      price: 2221,
+      price: 3009,
       images: ["/products/givenchy-gentleman.webp"],
       description: "Eau de toilette de 100 ml. El frasco y la caja dicen Givenchy Gentleman.",
       notes: {
@@ -4339,7 +4339,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1909,
-      price: 2959,
+      price: 4009,
       images: ["/products/amber-oud-carbon-edition-200.webp"],
       description: "Eau de parfum Carbon Edition de 200 ml, con atomizador de viaje. Hay otras de 60 ml y de 100 ml.",
       notes: {
@@ -4360,7 +4360,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2449,
-      price: 3673,
+      price: 4897,
       images: ["/products/fame-parfum-tester.webp"],
       description: "Parfum tester de 80 ml. La caja dice Fame, Tester y paco rabanne.",
       notes: {
@@ -4381,7 +4381,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1366,
-      price: 2117,
+      price: 2868,
       images: ["/products/zahara-amber-dubai.webp"],
       description: "Extrait de parfum de 100 ml. El frasco dice Haramain Zahara Amber Dubai.",
       notes: {
@@ -4402,7 +4402,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1657,
-      price: 2568,
+      price: 3479,
       images: ["/products/azzaro-wanted.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Azzaro Wanted.",
       notes: {
@@ -4423,7 +4423,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1887,
-      price: 2924,
+      price: 3961,
       images: ["/products/amber-oud-bleu-edition-200.webp"],
       description: "Eau de parfum Bleu Edition de 200 ml, con atomizador de viaje. Hay otra de 100 ml. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
@@ -4446,7 +4446,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1791,
-      price: 2776,
+      price: 3761,
       images: ["/products/set-amber-oud-extreme.webp"],
       description: "Set Amber Oud Extreme Gold Edition: extrait de parfum de 75 ml, desodorante en spray de 200 ml y extrait de parfum de 30 ml.",
       notes: {
@@ -4467,7 +4467,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 943,
-      price: 1508,
+      price: 2073,
       images: ["/products/laventure-femme.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Al Haramain L'Aventure Femme. Inspirado en Creed Aventus for Her. Aroma frutal y fresco.",
       notes: {
@@ -4490,7 +4490,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1115,
-      price: 1728,
+      price: 2341,
       images: ["/products/supremacy-in-oud.webp"],
       description: "Extrait de parfum de 100 ml. El frasco y la caja dicen Supremacy in Oud y Afnan.",
       notes: {
@@ -4511,7 +4511,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 548,
-      price: 877,
+      price: 1206,
       images: ["/products/curve-sport-spray.webp"],
       description: "Desodorante en aerosol de 171 g (6.0 oz). El envase dice Curve Sport, For Men y Para Hombre.",
       notes: {
@@ -4532,7 +4532,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 741,
-      price: 1186,
+      price: 1631,
       images: ["/products/rare-carbon.webp"],
       description: "Afnan Rare Carbon para hombre: intensidad y misterio en estado puro. Notas amaderadas, especiadas y profundas que proyectan poder y distinción. Lujo árabe inigualable. ¡Atrévete a lo extraordinario!",
       notes: {
@@ -4553,7 +4553,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 882,
-      price: 1411,
+      price: 1940,
       images: ["/products/set-calvin-klein-mini.webp"],
       description: "Set de 15 ml: Eternity For Women eau de parfum, Obsession eau de parfum, Escape eau de parfum y CK One eau de toilette.",
       notes: {
@@ -4574,7 +4574,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/tres-nuit-pour-homme.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Tres Nuit Pour Homme. Inspirado en Creed Green Irish Tweed. Aroma verde, fresco y de violeta.",
       notes: {
@@ -4597,7 +4597,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1482,
-      price: 2298,
+      price: 3114,
       images: ["/products/tres-jour-pour-femme.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Tres Jour Pour Femme.",
       notes: {
@@ -4618,7 +4618,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2677,
-      price: 4015,
+      price: 5353,
       images: ["/products/bad-boy-le-parfum.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Bad Boy, Carolina Herrera New York y Le Parfum.",
       notes: {
@@ -4639,7 +4639,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2391,
-      price: 3586,
+      price: 4781,
       images: ["/products/royal-amber.webp"],
       description: "Extrait de parfum de 80 ml. El frasco dice Orientica Exclusive Royal Amber, Luxury Collection.",
       notes: {
@@ -4660,7 +4660,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1506,
-      price: 2334,
+      price: 3162,
       images: ["/products/amber-oud-dubai-night.webp"],
       description: "Extrait de parfum de 100 ml. El frasco dice Haramain Amber Oud Dubai Night. La foto incluye dos muestras sueltas.",
       notes: {
@@ -4681,7 +4681,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1332,
-      price: 2064,
+      price: 2796,
       images: ["/products/oud-black.webp"],
       description: "Extrait de parfum de 100 ml. El frasco dice Al Haramain Black.",
       notes: {
@@ -4702,7 +4702,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 959,
-      price: 1505,
+      price: 2051,
       images: ["/products/miss-armaf-mystique.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Mystique.",
       notes: {
@@ -4723,7 +4723,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 948,
-      price: 1517,
+      price: 2086,
       images: ["/products/miss-armaf-catwalk.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Catwalk.",
       notes: {
@@ -4744,7 +4744,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 948,
-      price: 1517,
+      price: 2086,
       images: ["/products/miss-armaf-attitude.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Attitude.",
       notes: {
@@ -4765,7 +4765,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 638,
-      price: 1021,
+      price: 1404,
       images: ["/products/le-parfait-opus.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Armaf, Le Parfait Pour Femme y Opus.",
       notes: {
@@ -4786,7 +4786,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 948,
-      price: 1517,
+      price: 2086,
       images: ["/products/miss-armaf-chic.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Miss Armaf Chic.",
       notes: {
@@ -4807,7 +4807,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1527,
-      price: 2367,
+      price: 3207,
       images: ["/products/club-de-nuit-milestone-200.webp"],
       description: "Eau de parfum de 200 ml. El frasco dice Club de Nuit Milestone y Armaf. Hay otra de 105 ml. Inspirado en Creed Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
@@ -4830,7 +4830,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1090,
-      price: 1689,
+      price: 2288,
       images: ["/products/eter-desert-rose.webp"],
       description: "Desert Rose de Armaf es una fragancia de la familia olfativa Oriental Floral para Hombres y Mujeres. Esta fragrancia es nueva. Desert Rose se lanzó en 2024. Las Notas de Salida son rosa turca, maracuyá (fruta de la pasión) y azafrán; la Nota de Corazón es pachulí; las Notas de Fondo son ládano, vainilla, cuero y ámbar.",
       notes: {
@@ -4851,7 +4851,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1365,
-      price: 2051,
+      price: 2737,
       images: ["/products/set-club-de-nuit-milestone.webp"],
       description: "Set: shampoo de 250 ml, eau de parfum de 105 ml, gel de baño de 100 ml y body spray de 50 ml. Inspirado en Creed Millésime Impérial. Aroma salado, cítrico y fresco.",
       notes: {
@@ -4874,7 +4874,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 2123,
+      price: 2876,
       images: ["/products/topaz-malaky.webp"],
       description: "Eau de parfum de 75 ml. El frasco dice Armaf y Topaz Malaky.",
       notes: {
@@ -4895,7 +4895,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 664,
-      price: 1063,
+      price: 1462,
       images: ["/products/jawa.webp"],
       description: "El frasco dice Al Mukhmal Collection, Jawa y Hamidi. No se lee el tamaño ni si es eau de parfum.",
       notes: {
@@ -4916,7 +4916,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 665,
-      price: 1064,
+      price: 1463,
       images: ["/products/mashaer.webp"],
       description: "El frasco de terciopelo dice Al Mukhmal Collection, Mashaer y Hamidi. No se lee el tamaño ni si es eau de parfum.",
       notes: {
@@ -4937,7 +4937,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 665,
-      price: 1064,
+      price: 1463,
       images: ["/products/shaghuf.webp"],
       description: "El frasco dice Al Mukhmal Collection, Shaghuf y Hamidi. No se lee el tamaño ni si es eau de parfum.",
       notes: {
@@ -4958,7 +4958,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 75,
-      price: 107,
+      price: 139,
       images: ["/products/magnate-21.webp"],
       description: "Eau de toilette. El frasco dice Magnate Collection y 21 pour homme. El texto del frasco dice 0 ml; no se publicó ese número.",
       notes: {
@@ -4979,7 +4979,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 46,
-      price: 72,
+      price: 98,
       images: ["/products/magnate-10-mini.webp"],
       description: "Eau de toilette. El frasco dice Magnate Collection y 10 pour homme. La caja no deja claro el tamaño. Inspirado en Joop! Homme. Aroma dulce, especiado y cálido.",
       notes: {
@@ -5002,7 +5002,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1908,
-      price: 2958,
+      price: 4008,
       images: ["/products/amber-oud-rouge-60.webp"],
       description: "Eau de parfum de 60 ml. El frasco dice Haramain Amber Oud Rouge.",
       notes: {
@@ -5023,7 +5023,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 712,
-      price: 1139,
+      price: 1566,
       images: ["/products/art-damour.webp"],
       description: "Eau de parfum. El frasco dice Art d'Amour Pour Femme. La caja dice Artional Perfume Series. No se lee el tamaño.",
       notes: {
@@ -5044,7 +5044,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 150,
+      price: 200,
       images: ["/products/khamrah-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Khamrah y Lattafa. Inspirado en Kilian Angels' Share. Aroma de manzana, canela y coñac.",
       notes: {
@@ -5067,7 +5067,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 150,
+      price: 200,
       images: ["/products/badee-al-oud-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Oud For Glory, Badee Al Oud y Lattafa.",
       notes: {
@@ -5088,7 +5088,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/sheikh-al-shuyukh-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Sheikh Shuyukh y Lattafa.",
       notes: {
@@ -5109,7 +5109,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/velvet-oud-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Velvet Oud y Lattafa.",
       notes: {
@@ -5130,7 +5130,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 160,
+      price: 220,
       images: ["/products/lattafa-hayaati-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Hayaati y Lattafa.",
       notes: {
@@ -5151,7 +5151,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/ana-abiyedh-rouge-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice I Am White, Ana Abiyedh y Rouge.",
       notes: {
@@ -5172,7 +5172,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 250,
+      price: 400,
       images: ["/products/ajwad-pink-to-pink-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Ajwad, Pink to Pink y Lattafa.",
       notes: {
@@ -5193,7 +5193,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/fakhar-pride-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Fakhar Lattafa y Pride of Lattafa. Hay un Fakhar en eau de parfum de 100 ml. Inspirado en Yves Saint Laurent Y. Aroma fresco, aromático y dulce.",
       notes: {
@@ -5216,7 +5216,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 250,
+      price: 400,
       images: ["/products/badee-al-oud-amethyst-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Amethyst, Badee Al Oud y Lattafa.",
       notes: {
@@ -5237,7 +5237,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/raghba-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Raghba y Lattafa.",
       notes: {
@@ -5258,7 +5258,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/oud-mood-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Oud Mood y Lattafa.",
       notes: {
@@ -5279,7 +5279,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/mahasin-crystal-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Mahasin Crystal y Lattafa.",
       notes: {
@@ -5300,7 +5300,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 150,
+      price: 200,
       images: ["/products/yara-moi-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Yara Moi y Lattafa.",
       notes: {
@@ -5321,7 +5321,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 160,
+      price: 220,
       images: ["/products/badee-al-oud-sublime-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Sublime, Badee Al Oud y Lattafa.",
       notes: {
@@ -5342,7 +5342,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 140,
+      price: 180,
       images: ["/products/yara-tous-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Yara Tous y Lattafa.",
       notes: {
@@ -5363,7 +5363,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 100,
-      price: 167,
+      price: 234,
       images: ["/products/maahir-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Maahir y Lattafa.",
       notes: {
@@ -5384,7 +5384,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 120,
-      price: 167,
+      price: 214,
       images: ["/products/ajwad-gold-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dorado dice Ajwad y Lattafa. Hay un Ajwad en eau de parfum de 60 ml.",
       notes: {
@@ -5405,7 +5405,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 74,
-      price: 112,
+      price: 150,
       images: ["/products/legende-eternelle-rouge.webp"],
       description: "Bruma corporal de 250 ml. El frasco dice Dubai Essences, Légende Éternelle y Rouge.",
       notes: {
@@ -5426,7 +5426,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 544,
-      price: 816,
+      price: 1088,
       images: ["/products/narcisa-amber.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Narcisa for Her Amber y Milestone.",
       notes: {
@@ -5447,7 +5447,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2525,
-      price: 3787,
+      price: 5049,
       images: ["/products/invictus.webp"],
       description: "Eau de toilette de 100 ml. La caja dice Invictus y rabanne.",
       notes: {
@@ -5468,7 +5468,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1053,
-      price: 1633,
+      price: 2213,
       images: ["/products/farah-forever.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Zakat Parfums y Farah Forever.",
       notes: {
@@ -5489,7 +5489,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 870,
-      price: 1391,
+      price: 1912,
       images: ["/products/the-pride-rose-oud.webp"],
       description: "The Pride Of Armaf Rose Oud de Armaf es una fragancia de la familia olfativa Floral Frutal Gourmand para Mujeres. Esta fragrancia es nueva. The Pride Of Armaf Rose Oud se lanzó en 2024. Las Notas de Salida son piña, naranja tangerina, lichi y limón (lima ácida); las Notas de Corazón son flor de azahar del naranjo, coco y orquídea; las Notas de Fondo son vainilla, ámbar y almizcle.",
       notes: {
@@ -5510,7 +5510,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/le-parfait-panache.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Le Parfait Panache y Pour Femme.",
       notes: {
@@ -5531,7 +5531,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/ventana-pour-homme.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Armaf Ventana Pour Homme.",
       notes: {
@@ -5552,7 +5552,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/excellus.webp"],
       description: "Eau de parfum. La caja dice Armaf Excellus Women.",
       notes: {
@@ -5573,7 +5573,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 510,
-      price: 816,
+      price: 1122,
       images: ["/products/vanity-femme.webp"],
       description: "El frasco dice Armaf Vanity Femme Essence y For Her.",
       notes: {
@@ -5594,7 +5594,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1568,
-      price: 2430,
+      price: 3292,
       images: ["/products/island-bliss.webp"],
       description: "La caja dice Armaf Delights. La insignia dice Island Bliss, eau de parfum.",
       notes: {
@@ -5615,7 +5615,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1379,
-      price: 2136,
+      price: 2893,
       images: ["/products/lady-emblem.webp"],
       description: "Eau de parfum de 75 ml. La caja dice Lady Emblem y Montblanc.",
       notes: {
@@ -5636,7 +5636,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 3334,
-      price: 4667,
+      price: 6000,
       images: ["/products/sauvage-tester.webp"],
       description: "El vidrio dice Sauvage y Dior. El título de la foto lo marca como tester.",
       notes: {
@@ -5657,7 +5657,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2094,
-      price: 3141,
+      price: 4188,
       images: ["/products/eros-pour-femme.webp"],
       description: "Eau de parfum de 100 ml, 3.4 fl oz. El frasco y la caja dicen Versace Eros Pour Femme.",
       notes: {
@@ -5678,7 +5678,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 745,
-      price: 1191,
+      price: 1637,
       images: ["/products/curve-crush.webp"],
       description: "Eau de toilette de 125 ml. El frasco y la caja dicen Curve Crush For Men.",
       notes: {
@@ -5699,7 +5699,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 970,
-      price: 1711,
+      price: 2452,
       images: ["/products/zakat-z25.webp"],
       description: "El frasco y la caja dicen Zakat Parfum Z25.",
       notes: {
@@ -5720,7 +5720,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 762,
-      price: 1344,
+      price: 1926,
       images: ["/products/asad-zanzibar.webp"],
       description: "El frasco dice Asad Zanzibar y Lattafa. Inspirado en Dior Sauvage Elixir. Una vuelta más dulce y especiada.",
       notes: {
@@ -5743,7 +5743,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 850,
-      price: 1540,
+      price: 2230,
       images: ["/products/badee-al-oud-amethyst.webp"],
       description: "El frasco y la caja dicen Badee Al Oud Amethyst y Lattafa. El perfume en spray de 200 ml ya está en el catálogo.",
       notes: {
@@ -5764,7 +5764,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 611,
-      price: 929,
+      price: 1247,
       images: ["/products/ajwad-nusuk.webp"],
       description: "La caja dice Ajwad Nusuk. Ya hay un Ajwad de 60 ml.",
       notes: {
@@ -5785,7 +5785,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 150,
-      price: 250,
+      price: 350,
       images: ["/products/her-golden-secret.webp"],
       description: "Desodorante en spray de 24 h. El envase dice Her Golden Secret y Antonio Banderas.",
       notes: {
@@ -5806,7 +5806,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 150,
-      price: 250,
+      price: 350,
       images: ["/products/her-secret.webp"],
       description: "Desodorante corporal en spray de 150 ml. El envase dice Her Secret y Antonio Banderas.",
       notes: {
@@ -5827,7 +5827,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 150,
-      price: 250,
+      price: 350,
       images: ["/products/shakira-love-rock.webp"],
       description: "Desodorante en spray. El envase dice Love Rock by Shakira.",
       notes: {
@@ -5848,7 +5848,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 150,
-      price: 250,
+      price: 350,
       images: ["/products/shakira-dream.webp"],
       description: "Desodorante en spray de 24 h. El envase dice Dream you only live once y Shakira.",
       notes: {
@@ -5869,7 +5869,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 150,
-      price: 250,
+      price: 350,
       images: ["/products/shakira-rock.webp"],
       description: "Desodorante en spray. El envase dice Rock! by Shakira.",
       notes: {
@@ -5890,7 +5890,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 150,
-      price: 250,
+      price: 350,
       images: ["/products/shakira-dance-diamonds.webp"],
       description: "Desodorante en spray. El envase dice Dance Shakira Diamonds.",
       notes: {
@@ -5911,7 +5911,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 252,
-      price: 378,
+      price: 504,
       images: ["/products/perry-ellis-360-for-men.webp"],
       description: "Desodorante corporal de 200 ml. El envase dice 360° Perry Ellis For Men.",
       notes: {
@@ -5932,7 +5932,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2927,
-      price: 4390,
+      price: 5853,
       images: ["/products/olympea.webp"],
       description: "El frasco dice Olympéa. La caja dice Rabanne y Parfum.",
       notes: {
@@ -5953,7 +5953,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1459,
-      price: 2260,
+      price: 3061,
       images: ["/products/wanted-eau-de-toilette.webp"],
       description: "El frasco es el de Wanted, con jugo amarillo. Ya está Wanted en eau de parfum de 100 ml.",
       notes: {
@@ -5974,7 +5974,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1018,
-      price: 1577,
+      price: 2136,
       images: ["/products/hawas-for-her.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Hawas For Her.",
       notes: {
@@ -5995,7 +5995,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1939,
-      price: 3005,
+      price: 4071,
       images: ["/products/set-boss-bottled.webp"],
       description: "Set Boss Bottled: gel de ducha de 100 ml, perfume y desodorante en barra de 75 g.",
       notes: {
@@ -6016,7 +6016,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 915,
-      price: 1463,
+      price: 2011,
       images: ["/products/set-supremacy-pour-femme.webp"],
       description: "Set: loción corporal de 100 ml, eau de parfum y gel de ducha de 100 ml. La caja dice Supremacy Pour Femme.",
       notes: {
@@ -6037,7 +6037,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1166,
-      price: 1807,
+      price: 2448,
       images: ["/products/lacoste-l1212-rose.webp"],
       description: "Eau de toilette de 100 ml. El frasco y la caja dicen Lacoste L.12.12 Rose.",
       notes: {
@@ -6058,7 +6058,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2066,
-      price: 3099,
+      price: 4132,
       images: ["/products/game-of-spades-rouge.webp"],
       description: "Extrait de parfum. El frasco y la caja dicen Game of Spades Rouge.",
       notes: {
@@ -6079,7 +6079,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1917,
-      price: 2971,
+      price: 4025,
       images: ["/products/jimmy-choo-man-200.webp"],
       description: "Eau de toilette de 200 ml. La caja dice Jimmy Choo Man.",
       notes: {
@@ -6100,7 +6100,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1416,
-      price: 2195,
+      price: 2974,
       images: ["/products/leau-dissey.webp"],
       description: "Eau de toilette de 100 ml. El frasco y la caja dicen Issey Miyake L'Eau d'Issey.",
       notes: {
@@ -6121,7 +6121,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1189,
-      price: 1843,
+      price: 2497,
       images: ["/products/cool-water-reborn.webp"],
       description: "El frasco y la caja dicen Davidoff Cool Water Reborn, eau de toilette.",
       notes: {
@@ -6142,7 +6142,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1699,
-      price: 2634,
+      price: 3569,
       images: ["/products/bharara-bleu.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Bharara Bleu. La foto incluye un atomizador de viaje azul. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
@@ -6165,7 +6165,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 767,
-      price: 1227,
+      price: 1687,
       images: ["/products/supremacy-noir.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan Supremacy Noir.",
       notes: {
@@ -6186,7 +6186,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 753,
-      price: 1204,
+      price: 1655,
       images: ["/products/supremacy-pour-femme.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan Supremacy Pour Femme. El set va aparte.",
       notes: {
@@ -6207,7 +6207,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 698,
-      price: 1116,
+      price: 1534,
       images: ["/products/jean-lowe-maitre.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Jean Lowe Maître y Maison Alhambra.",
       notes: {
@@ -6228,7 +6228,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2655,
-      price: 3983,
+      price: 5311,
       images: ["/products/phantom.webp"],
       description: "Eau de toilette. El frasco y la caja dicen Phantom y Paco Rabanne.",
       notes: {
@@ -6249,7 +6249,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 847,
-      price: 1540,
+      price: 2233,
       images: ["/products/badee-al-oud-honor-and-glory.webp"],
       description: "El frasco dice Badee Al Oud Honor & Glory y Lattafa.",
       notes: {
@@ -6270,7 +6270,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 723,
-      price: 1156,
+      price: 1589,
       images: ["/products/ck-one-shock-for-her.webp"],
       description: "Eau de toilette de 100 ml. El frasco y la caja dicen CK One Shock for her y Calvin Klein.",
       notes: {
@@ -6291,7 +6291,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1121,
-      price: 1516,
+      price: 1911,
       images: ["/products/tharwah-silver.webp"],
       description: "El frasco dice Tharwah Silver, Lattafa Pride.",
       notes: {
@@ -6312,7 +6312,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 473,
-      price: 640,
+      price: 807,
       images: ["/products/la-rouge-baroque.webp"],
       description: "El frasco y la caja dicen La Rouge Baroque y Maison Alhambra.",
       notes: {
@@ -6333,7 +6333,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1170,
-      price: 1583,
+      price: 1996,
       images: ["/products/set-badee-al-oud-sublime.webp"],
       description: "Set Sublime: perfume en spray de 200 ml, eau de parfum y aromatizante de 300 ml. El spray suelto ya está en el catálogo.",
       notes: {
@@ -6354,7 +6354,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 971,
-      price: 1314,
+      price: 1657,
       images: ["/products/shaheen-silver.webp"],
       description: "El frasco dice Shaheen Silver, Lattafa Pride.",
       notes: {
@@ -6375,7 +6375,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1170,
-      price: 1583,
+      price: 1996,
       images: ["/products/set-asad.webp"],
       description: "Set Asad: perfume en spray de 200 ml, bruma para el cabello y el eau de parfum. El Asad suelto de 100 ml ya está en el catálogo. Inspirado en Dior Sauvage Elixir. Aroma especiado, fresco y ambarado.",
       notes: {
@@ -6398,7 +6398,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 758,
-      price: 1213,
+      price: 1668,
       images: ["/products/supremacy-pink.webp"],
       description: "Frasco rosa. Dice Supremacy y Afnan. El morado es Pour Femme, y el Noir y el set van aparte.",
       notes: {
@@ -6419,7 +6419,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 120,
-      price: 160,
+      price: 200,
       images: ["/products/mayar-spray.webp"],
       description: "Perfume en spray de 200 ml. El envase dice Mayar y Lattafa.",
       notes: {
@@ -6440,7 +6440,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1096,
-      price: 1482,
+      price: 1868,
       images: ["/products/afnan-9pm-pour-femme.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Afnan 9pm Pour Femme.",
       notes: {
@@ -6461,7 +6461,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 523,
-      price: 708,
+      price: 893,
       images: ["/products/qaed-al-fursan-unlimited.webp"],
       description: "Eau de parfum de 90 ml. El frasco blanco y la caja dicen Qaed Al Fursan Unlimited y Lattafa.",
       notes: {
@@ -6482,7 +6482,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2530,
-      price: 3795,
+      price: 5060,
       images: ["/products/montale-bubble-forever.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Montale Paris y Bubble Forever.",
       notes: {
@@ -6503,7 +6503,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2871,
-      price: 4307,
+      price: 5743,
       images: ["/products/black-opium.webp"],
       description: "El frasco dice Black Opium y Yves Saint Laurent.",
       notes: {
@@ -6524,7 +6524,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 794,
-      price: 1270,
+      price: 1746,
       images: ["/products/marc-jacobs-perfect-10.webp"],
       description: "Roller. El envase y la caja dicen Perfect y Marc Jacobs.",
       notes: {
@@ -6545,7 +6545,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2076,
-      price: 3113,
+      price: 4150,
       images: ["/products/daisy-ever-so-fresh.webp"],
       description: "El frasco y la caja dicen Daisy Marc Jacobs Ever So Fresh.",
       notes: {
@@ -6566,7 +6566,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1889,
-      price: 2927,
+      price: 3965,
       images: ["/products/daisy-marc-jacobs.webp"],
       description: "El frasco dice Daisy Marc Jacobs. Ever So Fresh y el set van aparte.",
       notes: {
@@ -6587,7 +6587,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1064,
-      price: 1648,
+      price: 2232,
       images: ["/products/halloween-blossom.webp"],
       description: "La caja dice Halloween Blossom y 100 ml.",
       notes: {
@@ -6608,7 +6608,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 850,
-      price: 1360,
+      price: 1870,
       images: ["/products/boss-woman.webp"],
       description: "Eau de parfum de 90 ml. El frasco y la caja dicen Boss Woman.",
       notes: {
@@ -6629,7 +6629,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 661,
-      price: 1058,
+      price: 1455,
       images: ["/products/burberry-her-10.webp"],
       description: "Eau de parfum de 10 ml. El roller y la caja dicen Burberry Her.",
       notes: {
@@ -6650,7 +6650,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1239,
-      price: 1919,
+      price: 2599,
       images: ["/products/odyssey-spectra-200.webp"],
       description: "Rainbow Edition. Ya está Odyssey Spectra de 50 ml. Esa caja no imprime Armaf.",
       notes: {
@@ -6671,7 +6671,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 3250,
-      price: 4550,
+      price: 5850,
       images: ["/products/oud-save-the-king.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Atkinsons London 1799 y Oud Save The King.",
       notes: {
@@ -6692,7 +6692,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2702,
-      price: 4053,
+      price: 5404,
       images: ["/products/acqua-di-gioia.webp"],
       description: "El frasco dice Acqua di Gioia y Giorgio Armani.",
       notes: {
@@ -6713,7 +6713,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 2090,
-      price: 3135,
+      price: 4180,
       images: ["/products/versace-oud-noir.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Versace Oud Noir Pour Homme.",
       notes: {
@@ -6734,7 +6734,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2587,
-      price: 3880,
+      price: 5173,
       images: ["/products/spicebomb-dark-leather.webp"],
       description: "Eau de parfum de 90 ml. El frasco y la caja dicen Spicebomb Dark Leather y Viktor & Rolf.",
       notes: {
@@ -6755,7 +6755,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 288,
-      price: 489,
+      price: 690,
       images: ["/products/cuba-bold.webp"],
       description: "Eau de toilette de 100 ml, 3.3 fl oz. La caja dice Authentic Cuba Bold For Men.",
       notes: {
@@ -6776,7 +6776,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1312,
-      price: 2034,
+      price: 2756,
       images: ["/products/black-musk.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Al Haramain Black Musk.",
       notes: {
@@ -6797,7 +6797,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1960,
-      price: 3038,
+      price: 4116,
       images: ["/products/set-daisy-marc-jacobs.webp"],
       description: "Set de viaje: eau de toilette de 100 ml y body lotion luminosa de 75 ml. La caja dice Daisy Marc Jacobs.",
       notes: {
@@ -6818,7 +6818,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 971,
-      price: 1553,
+      price: 2135,
       images: ["/products/laventure-grapefruit.webp"],
       description: "El frasco y la caja dicen Al Haramain L'Aventure Grapefruit.",
       notes: {
@@ -6839,7 +6839,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2339,
-      price: 3508,
+      price: 4677,
       images: ["/products/opium.webp"],
       description: "El frasco dice Opium y Yves Saint Laurent. Black Opium va aparte.",
       notes: {
@@ -6860,7 +6860,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2039,
-      price: 3058,
+      price: 4077,
       images: ["/products/ange-ou-demon.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Ange ou Démon y Givenchy.",
       notes: {
@@ -6881,7 +6881,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2432,
-      price: 3648,
+      price: 4864,
       images: ["/products/valentina.webp"],
       description: "Eau de parfum de 80 ml. El frasco y la caja dicen Valentina y Valentino.",
       notes: {
@@ -6902,7 +6902,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 243,
-      price: 413,
+      price: 583,
       images: ["/products/cuba-touch.webp"],
       description: "Eau de parfum de 100 ml. La lata y el envase dicen Cuba Touch For Women.",
       notes: {
@@ -6923,7 +6923,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 235,
-      price: 400,
+      price: 565,
       images: ["/products/cuba-night.webp"],
       description: "Eau de parfum de 100 ml. La lata y el envase dicen Cuba Night For Women.",
       notes: {
@@ -6944,7 +6944,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 230,
-      price: 391,
+      price: 552,
       images: ["/products/cuba-jungle-tiger.webp"],
       description: "El envase dice Cuba Jungle Tiger For Women. El tubo de al lado dice eau de parfum.",
       notes: {
@@ -6965,7 +6965,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 293,
-      price: 497,
+      price: 701,
       images: ["/products/cuba-tasty.webp"],
       description: "El frasco y la caja dicen Authentic Cuba Tasty For Women.",
       notes: {
@@ -6986,7 +6986,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 293,
-      price: 497,
+      price: 701,
       images: ["/products/cuba-mystic.webp"],
       description: "El frasco y la caja dicen Authentic Cuba Mystic For Women.",
       notes: {
@@ -7007,7 +7007,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 288,
-      price: 489,
+      price: 690,
       images: ["/products/cuba-happy.webp"],
       description: "El frasco y la caja dicen Authentic Cuba Happy For Women. La caja dice eau de parfum.",
       notes: {
@@ -7028,7 +7028,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1635,
-      price: 2534,
+      price: 3433,
       images: ["/products/amber-oud-ruby-edition-120.webp"],
       description: "El frasco y la caja dicen Al Haramain Amber Oud Ruby Edition, 120 ml. Ya está la de 100 ml.",
       notes: {
@@ -7049,7 +7049,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/odyssey-wild-one.webp"],
       description: "Gold Edition. El frasco y la caja dicen Odyssey Wild One.",
       notes: {
@@ -7070,7 +7070,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 723,
-      price: 1156,
+      price: 1589,
       images: ["/products/odyssey-tyrant.webp"],
       description: "Special Edition. La tapa dice Armaf y el frasco dice Odyssey Tyrant.",
       notes: {
@@ -7091,7 +7091,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 288,
-      price: 489,
+      price: 690,
       images: ["/products/cuba-prestige-legacy.webp"],
       description: "La lata dice Cuba Prestige Legacy, eau de toilette for men.",
       notes: {
@@ -7112,7 +7112,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-wild-heart.webp"],
       description: "Eau de toilette de 100 ml. La lata dice Cuba Wild Heart For Men.",
       notes: {
@@ -7133,7 +7133,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-royal-fortune.webp"],
       description: "Eau de toilette de 100 ml. La lata y el envase dicen Cuba Royal Fortune For Men.",
       notes: {
@@ -7154,7 +7154,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2111,
-      price: 3166,
+      price: 4221,
       images: ["/products/spicebomb-extreme.webp"],
       description: "Eau de parfum de 90 ml. El frasco y la caja dicen Spicebomb Extreme y Viktor & Rolf. Dark Leather va aparte.",
       notes: {
@@ -7175,7 +7175,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 774,
-      price: 985,
+      price: 1196,
       images: ["/products/bareq-mirage.webp"],
       description: "La caja dice Bareq Mirage, eau de parfum, by Ard Al Zaafaran. Ya está Bareq.",
       notes: {
@@ -7196,7 +7196,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 832,
-      price: 1074,
+      price: 1316,
       images: ["/products/maahir-legacy.webp"],
       description: "El frasco dice Maahir Legacy y Lattafa. El set ya está en el catálogo y no se leían los mililitros del perfume.",
       notes: {
@@ -7217,7 +7217,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 774,
-      price: 985,
+      price: 1196,
       images: ["/products/pacific-blue.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Pacific Blue y Maison Alhambra.",
       notes: {
@@ -7238,7 +7238,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 586,
-      price: 746,
+      price: 906,
       images: ["/products/andaleeb.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Andaleeb y Asdaaf.",
       notes: {
@@ -7259,7 +7259,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1370,
-      price: 1909,
+      price: 2448,
       images: ["/products/sehr.webp"],
       description: "El frasco dice Sehr y Lattafa.",
       notes: {
@@ -7280,7 +7280,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1538,
-      price: 2236,
+      price: 2934,
       images: ["/products/musamam-white-intense.webp"],
       description: "El frasco dice Musamam White Intense y Lattafa. El spray de 300 ml ya está en el catálogo.",
       notes: {
@@ -7301,7 +7301,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 971,
-      price: 1314,
+      price: 1657,
       images: ["/products/luxe-street.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Luxe Street y Maison Alhambra.",
       notes: {
@@ -7322,7 +7322,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 971,
-      price: 1314,
+      price: 1657,
       images: ["/products/luxe-nightlife.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Luxe Nightlife y Maison Alhambra.",
       notes: {
@@ -7343,7 +7343,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 900,
-      price: 1314,
+      price: 1728,
       images: ["/products/qaed-al-fursan-untamed.webp"],
       description: "El frasco marrón y la caja dicen Qaed Al Fursan Untamed y Lattafa. Unlimited es el frasco blanco.",
       notes: {
@@ -7364,7 +7364,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 1135,
-      price: 1759,
+      price: 2383,
       images: ["/products/lionheart-woman.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Lionheart Woman y Club de Nuit. El lateral de la caja imprime e 100 ml.",
       notes: {
@@ -7385,7 +7385,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1377,
-      price: 2134,
+      price: 2891,
       images: ["/products/the-lions-club-rugir.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Armaf, The Lion's Club y Rugir. Monarque es otro perfume de la misma línea.",
       notes: {
@@ -7406,7 +7406,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 565,
-      price: 903,
+      price: 1241,
       images: ["/products/derby-club-house-blanche.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Derby Club House Blanche, Armaf y e 100 ml, 3.4 fl oz.",
       notes: {
@@ -7427,7 +7427,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 712,
-      price: 1139,
+      price: 1566,
       images: ["/products/odyssey-aoud.webp"],
       description: "Odyssey Aoud de Armaf es una fragancia de la familia olfativa Amaderada Especiada para Hombres. Esta fragrancia es nueva. Odyssey Aoud se lanzó en 2023. Las Notas de Salida son lavanda, azafrán y nuez moscada; las Notas de Corazón son madera de oud y notas amaderadas; las Notas de Fondo son pachulí, ambroxan y almizcle.",
       notes: {
@@ -7448,7 +7448,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2049,
-      price: 3074,
+      price: 4099,
       images: ["/products/in-love-with-you.webp"],
       description: "El frasco y la caja dicen In Love With You y Emporio Armani. Because It's You es el otro frasco, el de la caja crema.",
       notes: {
@@ -7469,7 +7469,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2090,
-      price: 2831,
+      price: 3572,
       images: ["/products/because-its-you.webp"],
       description: "Eau de parfum pour femme de 100 ml. La caja imprime e 100 ml y 3.3 fl oz.",
       notes: {
@@ -7490,7 +7490,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2236,
-      price: 3353,
+      price: 4470,
       images: ["/products/oud-saffron.webp"],
       description: "Eau de parfum. La caja dice Orientica, Luxury Collection y Oud Saffron.",
       notes: {
@@ -7511,7 +7511,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 1461,
-      price: 2264,
+      price: 3067,
       images: ["/products/set-boss-the-scent.webp"],
       description: "Set de Boss The Scent For Her. La crema imprime perfumed body lotion de 75 ml, 2.5 fl oz. El perfume dice Boss.",
       notes: {
@@ -7532,7 +7532,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1587,
-      price: 2247,
+      price: 2907,
       images: ["/products/set-sweet-like-candy.webp"],
       description: "Set Sweet Like Candy by Ariana Grande. Un tubo imprime body souffle de 100 ml, 3.4 fl oz. El estuche trae otro tubo, el perfume y un pompón.",
       notes: {
@@ -7553,7 +7553,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2780,
-      price: 4170,
+      price: 5560,
       images: ["/products/set-laventure-collection.webp"],
       description: "Estuche Haramain L'Aventure Collection. Se ven Gold, L'Aventure, Femme, Rose y un mini negro. L'Aventure Femme ya está suelta.",
       notes: {
@@ -7574,7 +7574,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1744,
-      price: 2703,
+      price: 3662,
       images: ["/products/the-most-wanted.webp"],
       description: "Eau de toilette intense de 50 ml. La caja imprime e 50 ml y 1.69 fl oz. Wanted eau de parfum y Wanted eau de toilette de 100 ml ya están.",
       notes: {
@@ -7595,7 +7595,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 725,
-      price: 1160,
+      price: 1595,
       images: ["/products/addicted-madame.webp"],
       description: "Parfum de 120 ml. La caja imprime e 120 ml y 4 fl oz. El frasco dice Addicted Madame y Hamidi.",
       notes: {
@@ -7616,7 +7616,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 597,
-      price: 845,
+      price: 1093,
       images: ["/products/narissa.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Narissa for her y Maison Alhambra. La caja imprime e 100 ml.",
       notes: {
@@ -7637,7 +7637,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 1300,
-      price: 1993,
+      price: 2686,
       images: ["/products/set-odyssey-mega.webp"],
       description: "Set Armaf Odyssey Mega Limited Edition. El shampoo imprime 250 ml, el body spray 50 ml y el shower gel 100 ml, for men. El perfume, en funda amarilla, dice eau de parfum.",
       notes: {
@@ -7658,7 +7658,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 668,
-      price: 1045,
+      price: 1422,
       images: ["/products/just-for-you.webp"],
       description: "Eau de parfum pour femme. El frasco dice Armaf y Just For You.",
       notes: {
@@ -7679,7 +7679,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1304,
-      price: 2021,
+      price: 2738,
       images: ["/products/odyssey-mega-200.webp"],
       description: "Eau de parfum Limited Edition. La funda dice Odyssey Mega. La tapa dice Armaf. El set Odyssey Mega es otro producto.",
       notes: {
@@ -7700,7 +7700,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 771,
-      price: 1126,
+      price: 1481,
       images: ["/products/le-parfait-azure.webp"],
       description: "Eau de parfum pour femme. El frasco y la caja dicen Armaf, Le Parfait y Azure. Panache, Opus y Mon Amour son otros de la línea.",
       notes: {
@@ -7721,7 +7721,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1825,
-      price: 2904,
+      price: 3983,
       images: ["/products/set-milestone-intense-man-sillage.webp"],
       description: "Estuche de tres frascos: Club de Nuit Milestone, Club de Nuit Intense Man y Club de Nuit Sillage. El set de 30 ml que ya está trae un tercer frasco rosa sin nombre.",
       notes: {
@@ -7742,7 +7742,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1265,
-      price: 1554,
+      price: 1843,
       images: ["/products/teriaq-intense.webp"],
       description: "El frasco negro y dorado y la caja dicen Teriaq Intense y Lattafa. Teriaq, sin intense, ya está como eau de parfum de 100 ml.",
       notes: {
@@ -7763,7 +7763,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 710,
-      price: 1135,
+      price: 1560,
       images: ["/products/sakeena.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco y la caja dicen Sakeena y Lattafa.",
       notes: {
@@ -7784,7 +7784,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1265,
-      price: 1961,
+      price: 2657,
       images: ["/products/la-collection-dantiquites-1505.webp"],
       description: "El frasco negro y la caja dorada dicen La Collection d'antiquités 1505, Lattafa y Pride.",
       notes: {
@@ -7805,7 +7805,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1265,
-      price: 1961,
+      price: 2657,
       images: ["/products/ajwaa.webp"],
       description: "El frasco tiene forma de piña y dice Ajwaa. La caja dice Lattafa. Ajwad es otro frasco, de 60 ml, y Ajwad Nusuk es el de 100 ml.",
       notes: {
@@ -7826,7 +7826,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 533,
-      price: 853,
+      price: 1173,
       images: ["/products/rave-now.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Rave y Now.",
       notes: {
@@ -7847,7 +7847,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 552,
-      price: 883,
+      price: 1214,
       images: ["/products/opulent-musk.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco dice Opulent Musk y Lattafa.",
       notes: {
@@ -7868,7 +7868,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 650,
-      price: 1333,
+      price: 2016,
       images: ["/products/ameer-al-arab.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco y la caja dicen Ameer Al Arab y Asdaaf.",
       notes: {
@@ -7889,7 +7889,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 955,
-      price: 1528,
+      price: 2101,
       images: ["/products/set-oud-mood.webp"],
       description: "Set Lattafa Oud Mood. El spray imprime perfumed spray de 200 ml y ya está suelto en la tienda. El estuche también trae el eau de parfum y un fresh hair mist.",
       notes: {
@@ -7910,7 +7910,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1145,
-      price: 1831,
+      price: 2517,
       images: ["/products/set-badee-al-oud-honor-and-glory.webp"],
       description: "Set blanco y dorado de Badee Al Oud Honor & Glory. El spray imprime perfumed spray de 200 ml. También trae el eau de parfum y un fresh hair mist. El eau de parfum suelto ya está, y el set rojo Sublime es otro.",
       notes: {
@@ -7931,7 +7931,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 3008,
-      price: 4210,
+      price: 5412,
       images: ["/products/linterdit-intense.webp"],
       description: "El frasco oscuro y la caja dicen L'Interdit Givenchy y eau de parfum intense. El L'Interdit que ya está es el frasco transparente, sin intense.",
       notes: {
@@ -7952,7 +7952,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1445,
-      price: 2240,
+      price: 3035,
       images: ["/products/be-delicious-fresh-blossom.webp"],
       description: "La tapa y el frasco dicen DKNY Be Delicious Fresh Blossom. La caja dice Donna Karan New York.",
       notes: {
@@ -7973,7 +7973,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1068,
-      price: 1656,
+      price: 2244,
       images: ["/products/eternity-for-men.webp"],
       description: "Eau de toilette for men. El frasco dice Eternity For Men y Calvin Klein. Eternity Aqua es el otro, el azul.",
       notes: {
@@ -7994,7 +7994,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1298,
-      price: 2011,
+      price: 2724,
       images: ["/products/eternity-aqua-200.webp"],
       description: "Eau de toilette for men. El frasco dice Eternity For Men Aqua y Calvin Klein. El Eternity Aqua que ya está es de 100 ml.",
       notes: {
@@ -8015,7 +8015,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 823,
-      price: 1316,
+      price: 1809,
       images: ["/products/hunter-intense.webp"],
       description: "Hunter Intense de Armaf es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Las Notas de Salida son bergamota, toronja (pomelo), mandarina y limón (lima ácida); las Notas de Corazón son lavanda, geranio, ylang-ylang y nardos; las Notas de Fondo son pimienta negra y cardamomo.",
       notes: {
@@ -8038,7 +8038,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2536,
-      price: 3804,
+      price: 5072,
       images: ["/products/polo-red-eau-de-parfum.webp"],
       description: "Eau de parfum. El frasco dice Polo Red y Ralph Lauren. El Polo Red que ya está es eau de toilette de 200 ml.",
       notes: {
@@ -8059,7 +8059,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1883,
-      price: 2919,
+      price: 3955,
       images: ["/products/polo-blue-sport.webp"],
       description: "El frasco y la caja dicen Polo Ralph Lauren Blue Sport. La caja imprime 125 ml.",
       notes: {
@@ -8080,7 +8080,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2245,
-      price: 3368,
+      price: 4491,
       images: ["/products/polo.webp"],
       description: "Eau de toilette de 118 ml. El frasco verde dice Polo Ralph Lauren. La caja imprime eau de toilette natural spray y 4 fl oz. Polo Red y Polo Blue Sport son otros.",
       notes: {
@@ -8101,7 +8101,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 772,
-      price: 1236,
+      price: 1700,
       images: ["/products/very-purple.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Very Purple y Perry Ellis. La caja imprime 3.4 fl oz y 100 ml.",
       notes: {
@@ -8122,7 +8122,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 648,
-      price: 1037,
+      price: 1426,
       images: ["/products/guess-marciano.webp"],
       description: "El frasco y la caja dicen Guess by Marciano. El borde de la caja imprime 3.4 fl oz.",
       notes: {
@@ -8143,7 +8143,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1962,
-      price: 3040,
+      price: 4118,
       images: ["/products/set-moschino-toy-2.webp"],
       description: "Set Moschino Toy 2. El tubo imprime perfumed body lotion. El mini dice eau de parfum. El oso grande no imprime tamaño. Toy 2 Pearl ya está, y es otro.",
       notes: {
@@ -8164,7 +8164,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1355,
-      price: 1990,
+      price: 2625,
       images: ["/products/hugo.webp"],
       description: "El frasco azul dice Hugo. Boss Man es el frasco transparente que dice Boss Man.",
       notes: {
@@ -8185,7 +8185,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 746,
-      price: 1193,
+      price: 1640,
       images: ["/products/perry-ellis-18-fuego.webp"],
       description: "Eau de toilette de 100 ml. La caja imprime 3.4 fl oz y 100 ml, y el frasco dice Perry Ellis 18 Fuego. El 18 que ya está no dice Fuego. También hay un 18 de 200 ml.",
       notes: {
@@ -8206,7 +8206,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 1827,
-      price: 2805,
+      price: 3783,
       images: ["/products/mavie.webp"],
       description: "La caja dice Mavie pour femme y Boss. El frasco rosa dice Boss.",
       notes: {
@@ -8227,7 +8227,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 864,
-      price: 1383,
+      price: 1902,
       images: ["/products/afnan-9am.webp"],
       description: "9AM Pour Femme de Afnan es una fragancia luminosa y femenina que despierta los sentidos desde la primera hora del día. Este Eau de Parfum de 3.4 oz ofrece un aroma floral y frutal, suave y fresco, con un corazón delicado y una base cremosa de vainilla y almizcle que deja una estela dulce, limpia y elegante. Es perfecto para el día a día, la oficina, la universidad, los paseos y todos esos momentos en los que quieres lucir fresca y natural. Con buena duración y la riqueza de la perfumería árabe, ofrece una calidad sorprendente a un precio accesible. Es un regalo encantador para mamá, hermana, pareja o amiga. Si buscas un aroma bonito y fácil de amar, 9AM Pour Femme es tu compañero ideal. ¡Pídelo hoy y empieza cada mañana con un aroma radiante!",
       notes: {
@@ -8248,7 +8248,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1598,
-      price: 2477,
+      price: 3356,
       images: ["/products/black-xs.webp"],
       description: "El frasco en forma de corazón dice Black XS. La caja también. XS, sin Black, ya está y es otro frasco.",
       notes: {
@@ -8269,7 +8269,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 733,
-      price: 1172,
+      price: 1611,
       images: ["/products/infini-oud.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco y la caja dicen Infini Oud y Maison Alhambra.",
       notes: {
@@ -8290,7 +8290,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 832,
-      price: 1331,
+      price: 1830,
       images: ["/products/boss-man.webp"],
       description: "El frasco transparente dice Boss, Hugo Boss y Man. Hugo, el frasco azul, es otro.",
       notes: {
@@ -8311,7 +8311,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 898,
-      price: 1437,
+      price: 1976,
       images: ["/products/laventure-blanche.webp"],
       description: "El frasco y la caja lila dicen L'Aventure Blanche y Al Haramain. Femme, Knight, el de 200 ml y el set de la colección son otros. Inspirado en Creed Silver Mountain Water. Aroma de té, cítricos y almizcle.",
       notes: {
@@ -8334,7 +8334,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 923,
-      price: 1477,
+      price: 2031,
       images: ["/products/laventure-knight.webp"],
       description: "El frasco y la caja azul dicen L'Aventure Knight y Al Haramain. Inspirado en Creed Aventus. Aroma de piña, abedul y almizcle.",
       notes: {
@@ -8357,7 +8357,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1211,
-      price: 1877,
+      price: 2543,
       images: ["/products/laventure-200.webp"],
       description: "Eau de parfum de 200 ml. La caja imprime 200 ml y 6.76 fl oz. El frasco dice L'Aventure, 200 ml y Al Haramain. Inspirado en Creed Aventus. Aroma de piña, abedul y almizcle.",
       notes: {
@@ -8380,7 +8380,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 1043,
-      price: 1617,
+      price: 2191,
       images: ["/products/azzaro-cologne-intense.webp"],
       description: "Cologne intense. El frasco dice Azzaro Pour Homme y Cologne Intense. The Most Wanted y Wanted son otros frascos.",
       notes: {
@@ -8401,7 +8401,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-orange.webp"],
       description: "Eau de toilette de 100 ml. La lata imprime eau de toilette natural spray, 100 ml y 3.3 fl oz. El frasco dice Cuba Orange.",
       notes: {
@@ -8422,7 +8422,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-grey.webp"],
       description: "Eau de toilette for men de 100 ml. La lata imprime 100 ml y 3.3 fl oz. El frasco dice Cuba Grey.",
       notes: {
@@ -8443,7 +8443,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-green.webp"],
       description: "Eau de toilette for men de 100 ml. La lata imprime 100 ml y 3.3 fl oz. El frasco dice Cuba Green.",
       notes: {
@@ -8464,7 +8464,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 233,
-      price: 396,
+      price: 559,
       images: ["/products/cuba-brazil.webp"],
       description: "Eau de toilette for men de 100 ml. La lata imprime natural spray, for men, 100 ml y 3.3 fl oz. El frasco dice Cuba Brazil.",
       notes: {
@@ -8485,7 +8485,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 537,
-      price: 735,
+      price: 933,
       images: ["/products/mahasin-crystal-violet.webp"],
       description: "Eau de parfum. El frasco violeta dice Mahasin Crystal y eau de parfum. La caja imprime 3.4 fl oz. Mahasin Crystal en spray ya está, y es el atomizador suelto.",
       notes: {
@@ -8506,7 +8506,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1100,
-      price: 1500,
+      price: 1900,
       images: ["/products/the-kingdom.webp"],
       description: "Eau de parfum de 100 ml. El frasco rosa dorado, con rayas, y la caja dicen The Kingdom y Lattafa. La caja imprime 100 ml y 3.4 fl oz. The Kingdom Dorado es el frasco con cristales.",
       notes: {
@@ -8527,7 +8527,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1100,
-      price: 1500,
+      price: 1900,
       images: ["/products/the-kingdom-dorado.webp"],
       description: "Eau de parfum de 100 ml. El frasco dorado, con cristales en el borde, y la caja dicen The Kingdom y Lattafa. La caja imprime 100 ml y 3.4 fl oz. Lo llamé dorado para distinguirlo en la tienda: la caja no imprime esa palabra. El otro es el frasco rosa dorado, sin cristales.",
       notes: {
@@ -8548,7 +8548,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 570,
-      price: 750,
+      price: 930,
       images: ["/products/karat.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco y la caja dicen Karat y Maison Alhambra.",
       notes: {
@@ -8569,7 +8569,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 537,
-      price: 735,
+      price: 933,
       images: ["/products/avant.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco y la caja dicen Avant y Maison Alhambra.",
       notes: {
@@ -8590,7 +8590,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 460,
-      price: 650,
+      price: 840,
       images: ["/products/intensity.webp"],
       description: "Eau de parfum pour homme de 100 ml. La caja imprime 100 ml y 3.4 fl oz. El frasco dice Intensity y Vurv.",
       notes: {
@@ -8611,7 +8611,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 537,
-      price: 735,
+      price: 933,
       images: ["/products/lail-maleki.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Lail Maleki y Lattafa.",
       notes: {
@@ -8632,7 +8632,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/beau-star.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime e 100 ml y 3.4 fl oz. El frasco y la caja dicen Beau Star y Armaf.",
       notes: {
@@ -8653,7 +8653,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 947,
-      price: 1515,
+      price: 2083,
       images: ["/products/set-tres-nuit.webp"],
       description: "Set Armaf Tres Nuit. El shower gel imprime 100 ml, el body spray 50 ml y el shampoo 250 ml. El estuche del perfume dice Tres Nuit Pour Homme. Ese eau de parfum ya está suelto, de 100 ml. Inspirado en Creed Green Irish Tweed. Aroma verde, fresco y de violeta.",
       notes: {
@@ -8676,7 +8676,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 732,
-      price: 1171,
+      price: 1610,
       images: ["/products/voyage-titan.webp"],
       description: "El frasco dice Armaf, Voyage Titan y pour homme.",
       notes: {
@@ -8697,7 +8697,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/hunter-killer.webp"],
       description: "La caja imprime Hunter Killer, Bullet y e 100 ml, 3.4 fl oz. La correa dice Armaf. Hunter Intense y Hunter Jungle son otros.",
       notes: {
@@ -8718,7 +8718,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 543,
-      price: 868,
+      price: 1193,
       images: ["/products/tag-him-prestige.webp"],
       description: "Eau de parfum. La caja dice Tag Him Prestige y eau de parfum. La placa dice Tag-Him Prestige Edition. Inspirado en Bleu de Chanel. Aroma fresco, amaderado y limpio.",
       notes: {
@@ -8741,7 +8741,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/le-parfait-pour-femme.webp"],
       description: "Eau de parfum pour femme de 100 ml. La caja imprime e 100 ml y 3.4 fl oz. Azure, Panache, Opus y Pour Homme son otros de la línea.",
       notes: {
@@ -8762,7 +8762,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/le-parfait-pour-homme.webp"],
       description: "Eau de parfum pour homme de 100 ml. La caja imprime e 100 ml y 3.4 fl oz. El frasco dice Armaf y Le Parfait Pour Homme.",
       notes: {
@@ -8783,7 +8783,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/hunter-jungle.webp"],
       description: "La caja imprime Hunter Jungle y e 100 ml, 3.4 fl oz. El frasco dice Armaf. Hunter Intense y Hunter Killer son otros.",
       notes: {
@@ -8804,7 +8804,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 801,
-      price: 1282,
+      price: 1763,
       images: ["/products/ego-tigre.webp"],
       description: "Parfum for men. La caja dice Armaf Ego y Tigre, parfum for men. Ego Exotic ya está, y es otro.",
       notes: {
@@ -8825,7 +8825,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 850,
-      price: 1359,
+      price: 1868,
       images: ["/products/blue-sky.webp"],
       description: "Eau de parfum de 105 ml. La caja imprime Armaf, Blue Sky y e 105 ml.",
       notes: {
@@ -8846,7 +8846,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 581,
-      price: 929,
+      price: 1277,
       images: ["/products/tres-nuit-valentina.webp"],
       description: "El frasco dice Tres Nuit Valentina Pour Femme. El set de hombre y el Tres Nuit Pour Homme suelto son otros.",
       notes: {
@@ -8867,7 +8867,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 950,
-      price: 1520,
+      price: 2090,
       images: ["/products/miss-armaf-voce-viva.webp"],
       description: "Eau de parfum de 100 ml. La caja imprime e 100 ml y 3.4 fl oz. El frasco dice Miss Armaf Voce Viva. Attitude, Mystique, Catwalk y Chic ya están. Inspirado en Valentino Voce Viva. Aroma floral y luminoso.",
       notes: {
@@ -8890,7 +8890,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 676,
-      price: 1081,
+      price: 1486,
       images: ["/products/odyssey-limoni.webp"],
       description: "Eau de parfum Fresh Edition. La caja y la funda dicen Armaf y Odyssey Limoni.",
       notes: {
@@ -8911,7 +8911,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 631,
-      price: 1010,
+      price: 1389,
       images: ["/products/momento-fleur.webp"],
       description: "Eau de parfum pour femme. El frasco y la caja dicen Armaf y Momento Fleur.",
       notes: {
@@ -8932,7 +8932,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 939,
-      price: 1408,
+      price: 1877,
       images: ["/products/liam.webp"],
       description: "El frasco y la caja dicen Liam y Lattafa. El líquido es azul.",
       notes: {
@@ -8953,7 +8953,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "mujer",
       cost: 2181,
-      price: 3272,
+      price: 4363,
       images: ["/products/set-dylan-blue.webp"],
       description: "Set Versace Dylan Blue Pour Femme. Un tubo dice sublime body lotion y el otro bath & shower gel. También hay un estuche negro. El perfume es el frasco azul y dorado.",
       notes: {
@@ -8974,7 +8974,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 614,
-      price: 982,
+      price: 1350,
       images: ["/products/le-femme.webp"],
       description: "Le Femme de Armaf es una fragancia de la familia olfativa Floral Frutal para Mujeres. Las Notas de Salida son ciruela, naranja, gardenia y bergamota; las Notas de Corazón son jazmín, azafrán, lirio de los valles (muguete) y rosa; las Notas de Fondo son vainilla, notas amaderadas, pachulí y almizcle blanco.",
       notes: {
@@ -8995,7 +8995,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1134,
-      price: 1758,
+      price: 2382,
       images: ["/products/royal-sapphire.webp"],
       description: "Royal Sapphire de Lattafa Perfumes es una fragancia de la familia olfativa para Hombres y Mujeres. Esta fragrancia es nueva. Royal Sapphire se lanzó en 2022. Las Notas de Salida son mandarina, azafrán y limón (lima ácida); las Notas de Corazón son jazmín y rosa; las Notas de Fondo son ámbar gris, vainilla y almizcle.",
       notes: {
@@ -9016,7 +9016,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 528,
-      price: 844,
+      price: 1160,
       images: ["/products/derby-club-house-gold.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Armaf, Derby Club House Women, Gold y e 100 ml, 3.4 fl oz. Blanche es el frasco blanco.",
       notes: {
@@ -9037,7 +9037,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1420,
-      price: 2201,
+      price: 2982,
       images: ["/products/amber-oud-white-edition.webp"],
       description: "El frasco y la caja dicen Haramain Amber Oud, White Edition y 100 ml. La caja también dice Al Haramain Since 1970.",
       notes: {
@@ -9058,7 +9058,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2176,
-      price: 3001,
+      price: 3826,
       images: ["/products/viking-kashmir.webp"],
       description: "La caja y el frasco dicen Bharara y Viking Kashmir. La foto trae un atomizador de viaje con el mismo nombre.",
       notes: {
@@ -9079,7 +9079,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 3165,
-      price: 4365,
+      price: 5565,
       images: ["/products/angel.webp"],
       description: "Eau de parfum de 100 ml. La caja dice Angel, Mugler, étoile rechargeable y e 100 ml.",
       notes: {
@@ -9100,7 +9100,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2020,
-      price: 3099,
+      price: 4178,
       images: ["/products/viking-dubai.webp"],
       description: "La caja y el frasco dicen Bharara y Viking Dubai. La foto trae un atomizador de viaje con el mismo nombre.",
       notes: {
@@ -9121,7 +9121,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1877,
-      price: 2910,
+      price: 3943,
       images: ["/products/khanjar.webp"],
       description: "Frasco en forma de daga. La placa dice Khanjar y Niche Emarate Parfums.",
       notes: {
@@ -9142,7 +9142,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 778,
-      price: 1245,
+      price: 1712,
       images: ["/products/infini-rose.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Infini Rose y Maison Alhambra. El lateral imprime eau de parfum y 3.4 fl oz. Infini Oud es otro perfume.",
       notes: {
@@ -9163,7 +9163,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 673,
-      price: 1077,
+      price: 1481,
       images: ["/products/ahal-al-fakhar.webp"],
       description: "El frasco y la caja dicen Ahal Al Fakhar y Asdaaf.",
       notes: {
@@ -9184,7 +9184,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 649,
-      price: 1039,
+      price: 1429,
       images: ["/products/24-carat-white-gold.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice 24 Carat White Gold, eau de parfum y 100 ml, 3.4 fl oz.",
       notes: {
@@ -9205,7 +9205,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2838,
-      price: 4257,
+      price: 5676,
       images: ["/products/212-vip-are-you-on-the-list.webp"],
       description: "El frasco dice 212 VIP y Herrera. La caja dice 212 VIP y Are You on the List? El 212 VIP de 80 ml ya está en el catálogo.",
       notes: {
@@ -9226,7 +9226,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 408,
-      price: 693,
+      price: 978,
       images: ["/products/24-carat-pure-gold.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice 24 Carat Pure Gold, eau de parfum y 100 ml, 3.4 fl oz. White Gold es el frasco plateado.",
       notes: {
@@ -9247,7 +9247,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1489,
-      price: 2308,
+      price: 3127,
       images: ["/products/set-yara-tous.webp"],
       description: "Presentamos el set de regalo Lattafa Ladies Yara Moi, una fascinante colección de fragancias lanzada en 2022. Este exquisito set de regalo está elaborado por la reconocida casa de diseño de Oriente Medio, Lattafa, y pertenece a la familia de fragancias amaderadas y ambarinas. Perfecto para la mujer sofisticada, Yara Moi está diseñado para cautivar y encantar. Las notas de salida de este encantador aroma presentan el delicado y dulce aroma del jazmín combinado con la deliciosa esencia del melocotón. A medida que se desarrolla la fragancia, las notas de corazón revelan una cálida y acogedora mezcla de ámbar y caramelo, creando un encanto verdaderamente irresistible. Las notas de fondo de sándalo y pachulí añaden una profundidad rica y terrosa, dejando una impresión duradera. El set de regalo Lattafa Ladies Yara Moi incluye un Eau de Parfum de 3,4 oz, un desodorante en aerosol de 6,67 oz y un spray para el cabello de 1,7 oz, lo que brinda una experiencia de fragancia completa. Ya sea que esté buscando un capricho personal o el regalo perfecto, este set seguramente lo deleitará. Los prácticos tamaños hacen que sea fácil llevar tu aroma favorito a donde quiera que vayas. Con su lujosa composición y su elegante empaque, el set de regalo Yara Moi es una opción ideal para cualquier ocasión. La combinación única de notas garantiza una experiencia de fragancia versátil y duradera que te hará sentir segura y atractiva. Ten en cuenta que este artículo solo está disponible para envío dentro de los Estados Unidos continentales y Canadá. Agrega el set de regalo Lattafa Ladies Yara Moi a tu colección hoy y disfruta del encanto cautivador de esta exquisita fragancia. Este artículo solo es válido para envío dentro de los Estados Unidos continentales y Canadá.",
       notes: {
@@ -9268,7 +9268,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1377,
-      price: 2134,
+      price: 2891,
       images: ["/products/the-lions-club-feroce.webp"],
       description: "El frasco y la caja dicen Armaf, The Lion's Club y Féroce. Monarque y Rugir son otros de la línea.",
       notes: {
@@ -9289,7 +9289,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 218,
-      price: 314,
+      price: 410,
       images: ["/products/fancy-love.webp"],
       description: "Bruma de 236 ml, 8 fl oz. El frasco dice Fancy Love, Jessica Simpson, Fragrance Mist y Brume Parfumée. El título Splash no es la marca.",
       notes: {
@@ -9310,7 +9310,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2443,
-      price: 3750,
+      price: 5057,
       images: ["/products/armani-code.webp"],
       description: "Eau de toilette. El frasco dice Armani Code. La caja dice Giorgio Armani, eau de toilette y vaporisateur rechargeable.",
       notes: {
@@ -9331,7 +9331,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2392,
-      price: 3587,
+      price: 4782,
       images: ["/products/bharara-chocolate.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Bharara Chocolate, eau de parfum y 100 ml, 3.4 fl oz. La foto trae un atomizador de viaje.",
       notes: {
@@ -9352,7 +9352,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 850,
-      price: 1461,
+      price: 2072,
       images: ["/products/glacier-bella.webp"],
       description: "El frasco y el envase cilíndrico dicen Glacier Bella, Maison Alhambra y eau de parfum.",
       notes: {
@@ -9373,7 +9373,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 800,
-      price: 1223,
+      price: 1646,
       images: ["/products/victorioso-nero.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Victorioso Nero y Maison Alhambra. La caja imprime e 100 ml y 3.4 fl oz. Inspirado en Paco Rabanne Invictus Victory. Aroma dulce, especiado y cálido.",
       notes: {
@@ -9396,7 +9396,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 700,
-      price: 1202,
+      price: 1704,
       images: ["/products/your-touch.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Your Touch, For Women y Maison Alhambra. El lateral imprime 120 ml.",
       notes: {
@@ -9417,7 +9417,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 700,
-      price: 1202,
+      price: 1704,
       images: ["/products/jorge-di-profumo-aqua.webp"],
       description: "El frasco dice Jorge Di Profumo, Aqua y Maison Alhambra. Inspirado en Giorgio Armani Acqua di Gio. Aroma acuático, cítrico y fresco.",
       notes: {
@@ -9440,7 +9440,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1680,
-      price: 2604,
+      price: 3528,
       images: ["/products/bharara-queen.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Bharara Queen, eau de parfum y 100 ml, 3.4 fl oz. La caja trae un atomizador de viaje. Game of Spades Queen es otro perfume.",
       notes: {
@@ -9461,7 +9461,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 1836,
-      price: 2845,
+      price: 3854,
       images: ["/products/boss-bottled.webp"],
       description: "El frasco dice Boss y Hugo Boss. La caja dice Boss Bottled y 100 ml. El set Boss Bottled ya está en el catálogo.",
       notes: {
@@ -9482,7 +9482,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1160,
-      price: 1798,
+      price: 2436,
       images: ["/products/set-fakhar.webp"],
       description: "Set Fakhar: perfume, bruma para el cabello y spray perfumado de 200 ml (6.67 fl oz). El spray dice Pride of Lattafa. El Fakhar de 100 ml y Fakhar Gold ya están, solos. Inspirado en Yves Saint Laurent Y. Aroma fresco, aromático y dulce.",
       notes: {
@@ -9505,7 +9505,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 569,
-      price: 822,
+      price: 1075,
       images: ["/products/abraaj.webp"],
       description: "Aceite concentrado de 20 ml, 0.67 fl oz. La caja dice Abraaj, Lattafa y Pure Concentrated Oil.",
       notes: {
@@ -9526,7 +9526,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 569,
-      price: 822,
+      price: 1075,
       images: ["/products/pink-shimmer-secret-intense.webp"],
       description: "Eau de parfum de 100 ml. El frasco y la caja dicen Pink Shimmer Secret Intense y Maison Alhambra. La caja imprime 100 ml y 3.4 fl oz.",
       notes: {
@@ -9547,7 +9547,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 537,
-      price: 735,
+      price: 933,
       images: ["/products/montaigne-coco.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Montaigne Coco y Maison Alhambra. La caja imprime eau de parfum y 3.4 fl oz. Inspirado en Chanel Coco Mademoiselle. Aroma cítrico, floral y ambarado.",
       notes: {
@@ -9570,7 +9570,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 820,
-      price: 1254,
+      price: 1688,
       images: ["/products/emaan.webp"],
       description: "La caja dice Emaan, Lattafa y eau de parfum. El frasco es de terciopelo azul.",
       notes: {
@@ -9591,7 +9591,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 820,
-      price: 1254,
+      price: 1688,
       images: ["/products/maahir.webp"],
       description: "El frasco dice Maahir y Lattafa. La tapa es una cabeza de caballo. Maahir Legacy y el spray Maahir ya están en el catálogo.",
       notes: {
@@ -9612,7 +9612,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 785,
-      price: 1189,
+      price: 1593,
       images: ["/products/ajwad-pink-to-pink.webp"],
       description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad, Pink to Pink y Lattafa. La caja imprime 60 ml y 2.04 fl oz. El Ajwad de 60 ml y el spray Pink to Pink ya están, solos.",
       notes: {
@@ -9633,7 +9633,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 953,
-      price: 1525,
+      price: 2097,
       images: ["/products/armaf-niche-oud.webp"],
       description: "El frasco, el tubo y la caja dicen Armaf Niche Oud.",
       notes: {
@@ -9654,7 +9654,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 856,
-      price: 1369,
+      price: 1882,
       images: ["/products/red-sky.webp"],
       description: "El frasco y la caja dicen Armaf y Red Sky. La bandeja interior dice eau de parfum. Blue Sky es otro de la línea.",
       notes: {
@@ -9675,7 +9675,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1133,
-      price: 1756,
+      price: 2379,
       images: ["/products/check-mate-queen.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Check Mate, Queen, eau de parfum y e 100 ml, 3.4 fl oz. La tapa es una reina de ajedrez.",
       notes: {
@@ -9696,7 +9696,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2521,
-      price: 3477,
+      price: 4433,
       images: ["/products/the-only-one.webp"],
       description: "El frasco dice Dolce & Gabbana y The Only One. La caja dice eau de parfum intense. Galaxy Concept Only One es otro producto.",
       notes: {
@@ -9717,7 +9717,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 3025,
-      price: 3964,
+      price: 4903,
       images: ["/products/omnia-crystalline.webp"],
       description: "Eau de toilette de 100 ml. El frasco y la caja dicen Bvlgari y Omnia Crystalline. La caja imprime eau de toilette y 3.4 fl oz. Omnia Amethyst ya está en el catálogo.",
       notes: {
@@ -9738,7 +9738,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 663,
-      price: 1060,
+      price: 1457,
       images: ["/products/aura.webp"],
       description: "Aura de Armaf es una fragancia de la familia olfativa Oriental para Hombres. Aura se lanzó en 2015. Las Notas de Salida son cardamomo negro, limón (lima ácida), bergamota y manzana; las Notas de Corazón son violeta, geranio, iris, lavanda y pimienta; las Notas de Fondo son almizcle, ámbar, sándalo y vetiver.",
       notes: {
@@ -9759,7 +9759,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "mujer",
       cost: 63,
-      price: 75,
+      price: 87,
       images: ["/products/magnate-250.webp"],
       description: "Eau de parfum de 50 ml. El frasco y la caja dicen Magnate Collection, 250 Pour Femme, e 50 ml, 80% vol y 1.7 fl oz. Inspirado en Carolina Herrera Good Girl. Aroma dulce, de cacao y jazmín.",
       notes: {
@@ -9782,7 +9782,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 46,
-      price: 72,
+      price: 98,
       images: ["/products/magnate-19.webp"],
       description: "Eau de toilette de 50 ml. El frasco y la caja dicen Magnate Collection, 19 pour homme y e 50 ml, 1.7 fl oz.",
       notes: {
@@ -9803,7 +9803,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 2162,
-      price: 2882,
+      price: 3602,
       images: ["/products/carolina-herrera-new-york.webp"],
       description: "Eau de parfum de 100 ml. El frasco dice Carolina Herrera y eau de parfum. La caja dice Carolina Herrera New York, e 100 ml y 3.4 fl oz.",
       notes: {
@@ -9824,7 +9824,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 2402,
-      price: 3202,
+      price: 4002,
       images: ["/products/club-de-nuit-oud.webp"],
       description: "Parfum de 105 ml. El frasco dice Armaf, Club de Nuit Oud, parfum y e 105 ml.",
       notes: {
@@ -9845,7 +9845,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 617,
-      price: 986,
+      price: 1355,
       images: ["/products/the-dome-millennium.webp"],
       description: "El frasco y la caja dicen The Dome Collection, Millennium y Hamidi.",
       notes: {
@@ -9866,7 +9866,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 617,
-      price: 986,
+      price: 1355,
       images: ["/products/the-dome-astrodome.webp"],
       description: "Las notas de salida de Astrodome presentan una mezcla refrescante de lavanda, enebro y limón. Estos aromas iniciales crean un comienzo vigorizante y vibrante que eleva instantáneamente tus sentidos. A medida que la fragancia se asienta, emergen las notas de corazón de ládano español, flor de naranja y nuez moscada, agregando una profundidad rica y especiada que es cálida y seductora. La colección dome es un homenaje perfumado al brillo arquitectónico, donde cada fragancia refleja la fuerza, el poder, la integridad y la belleza atemporal inherentes a las cúpulas más distinguidas del mundo. TAJ EDP Spray 100ML de Hamidi Experimenta el epítome del lujo con un aroma que te transporta a un mundo de opulencia y esplendor, evocando el encanto de la realeza y el romance. Notas de Salida: Rosa, clavo, frambuesa, grosella negra, canela, notas medias - pachulí, sándalo Notas de base - almizcle, benjuí, ámbar",
       notes: {
@@ -9887,7 +9887,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 395,
-      price: 632,
+      price: 869,
       images: ["/products/laila.webp"],
       description: "Aceite concentrado de 20 ml. La caja dice Hamidi, Laila y Pure Concentrated Oil.",
       notes: {
@@ -9908,7 +9908,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 395,
-      price: 632,
+      price: 869,
       images: ["/products/qais.webp"],
       description: "Aceite concentrado de 20 ml. La caja dice Hamidi, Qais y Pure Concentrated Oil.",
       notes: {
@@ -9929,7 +9929,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 395,
-      price: 632,
+      price: 869,
       images: ["/products/asal.webp"],
       description: "La caja dice Hamidi, Asal y Concentrated Perfume Oil.",
       notes: {
@@ -9950,7 +9950,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 395,
-      price: 632,
+      price: 869,
       images: ["/products/durriyah.webp"],
       description: "Aceite concentrado de 12 ml. La caja dice Hamidi, Durriyah, Pure Concentrated Oil y 12 ml.",
       notes: {
@@ -9971,7 +9971,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 776,
-      price: 1241,
+      price: 1706,
       images: ["/products/privee-no-11.webp"],
       description: "Eau de parfum. El frasco y la caja dicen Privee No. 11 y eau de parfum. El fondo dice Armaf. La foto trae un atomizador de viaje.",
       notes: {
@@ -9992,7 +9992,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 776,
-      price: 1241,
+      price: 1706,
       images: ["/products/privee-no-10.webp"],
       description: "Eau de parfum. El frasco, la caja y el atomizador dicen Privee No. 10 y eau de parfum. El fondo dice Armaf.",
       notes: {
@@ -10013,7 +10013,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 617,
-      price: 986,
+      price: 1355,
       images: ["/products/the-dome-taj.webp"],
       description: "Presentamos Hamidi's Taj, un exquisito Eau de Parfum (EDP) en aerosol de 3.4 oz de la colección The Dome, diseñado exclusivamente para hombres. Esta cautivadora fragancia pertenece a la familia Ámbar Especiada, que ofrece un perfil aromático rico y complejo que es a la vez audaz y sofisticado. Taj es una creación de la reconocida casa de diseño Hamidi, conocida por sus lujosas fragancias de Medio Oriente. En la salida, Taj se abre con una tentadora mezcla de rosa, clavo, frambuesa, grosella negra y canela. Esta combinación crea un aroma atractivo y vigorizante que capta la atención al instante. A medida que se desarrolla la fragancia, emergen las notas de corazón de pachulí y sándalo, que agregan profundidad y calidez al aroma. Finalmente, las notas de base de almizcle, benjuí y ámbar brindan un final duradero y memorable que permanece en la piel. Hamidi's Taj es más que una fragancia; es una experiencia. Perfecto para el hombre moderno que aprecia las cosas buenas de la vida, este EDP en aerosol es un testimonio de elegancia y estilo. Ya sea que vayas a un evento especial o simplemente quieras hacer una declaración, Taj es la opción perfecta. Diseñado para hombres que buscan un aroma exclusivo que se destaque, Taj de Hamidi está disponible exclusivamente para envío en los Estados Unidos continentales y Canadá. Eleve su colección de fragancias con esta excepcional incorporación de Hamidi.",
       notes: {
@@ -10034,7 +10034,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 715,
-      price: 1144,
+      price: 1573,
       images: ["/products/fusion-amity.webp"],
       description: "Notas de fondo: Cuero, pachulí, almizcle: una rica mezcla que se encuentra tanto en fragancias masculinas como en fragancias femeninas, creando un aroma inolvidable que perdura con sofisticación y atractivo.",
       notes: {
@@ -10055,7 +10055,7 @@ export const rawProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 863,
-      price: 1381,
+      price: 1899,
       images: ["/products/merneith.webp"],
       description: "Parfum. El frasco dice Hamidi, Merneith, Legacy Collection y parfum.",
       notes: {
@@ -10076,7 +10076,7 @@ export const rawProducts: RawProduct[] = [
       type: "designer",
       gender: "unisex",
       cost: 251,
-      price: 376,
+      price: 501,
       images: ["/products/perry-ellis-aqua.webp"],
       description: "Body spray desodorante. El envase dice Perry Ellis Aqua, deodorizing body spray y 6 oz, 170 g. Galaxy Concept Aqua es otro producto.",
       notes: {
