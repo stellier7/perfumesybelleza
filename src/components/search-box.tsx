@@ -4,9 +4,16 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useId, useMemo, useState, type FormEvent } from "react";
 import { TYPE_LABEL } from "@/config";
+import { sectionLabel } from "@/lib/catalog-section";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
-import { searchCatalog, suggestionItems } from "@/lib/search";
+import { searchPath, suggestionsForQuery } from "@/lib/search";
 import type { SearchRecord } from "@/types/catalog";
+
+function suggestionKind(item: SearchRecord): string {
+  if (item.section === "cuidado") return sectionLabel(item.section);
+  if (item.isReference) return "Referencia";
+  return TYPE_LABEL[item.type];
+}
 
 function SearchForm({
   records,
@@ -20,7 +27,7 @@ function SearchForm({
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const suggestions = useMemo(
-    () => suggestionItems(searchCatalog(records, query), 6),
+    () => suggestionsForQuery(records, query, 6),
     [records, query],
   );
 
@@ -29,7 +36,7 @@ function SearchForm({
     const trimmed = query.trim();
     if (trimmed.length < 2) return;
     setOpen(false);
-    router.push(`/buscar?q=${encodeURIComponent(trimmed)}`);
+    router.push(searchPath(records, trimmed));
   }
 
   return (
@@ -60,18 +67,14 @@ function SearchForm({
             suggestions.map((item) => (
               <li key={item.id}>
                 <Link
-                  href={
-                    item.isReference
-                      ? `/buscar?q=${encodeURIComponent(item.name)}`
-                      : `/producto/${item.slug}`
-                  }
+                  href={item.isReference ? searchPath(records, item.name) : `/producto/${item.slug}`}
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-between gap-3 px-4 py-3 hover:bg-ivory"
                 >
                   <span>
                     <span className="block font-medium">{item.name}</span>
                     <span className="block text-xs text-muted">
-                      {item.brand} · {item.isReference ? "Referencia" : TYPE_LABEL[item.type]}
+                      {item.brand} · {suggestionKind(item)}
                       {!item.inStock && !item.isReference ? " · Agotado" : ""}
                     </span>
                   </span>

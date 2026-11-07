@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
 import { inspirationOrder } from "@/lib/catalog-model";
+import { CATALOG_SECTIONS, type CatalogSection } from "@/lib/catalog-section";
 import { fold } from "@/lib/text";
 import type { SearchRecord } from "@/types/catalog";
 
@@ -91,10 +92,96 @@ function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
     .map((result) => result.item);
 }
 
-export function searchCatalog(records: SearchRecord[], query: string): SearchPresentation {
+function containsPhrase(query: string, phrase: string): boolean {
+  return query === phrase || query.startsWith(`${phrase} `) || query.endsWith(` ${phrase}`) || query.includes(` ${phrase} `);
+}
+
+/** La marca pertenece a una sola sección. */
+function brandMatches(brand: string, query: string): boolean {
+  const foldedBrand = fold(brand);
+  const foldedQuery = fold(query);
+  if (foldedBrand.length < 2 || foldedQuery.length < 2) return false;
+  if (containsPhrase(foldedQuery, foldedBrand)) return true;
+  return foldedQuery.length >= 3 && foldedBrand.startsWith(foldedQuery);
+}
+
+function sectionsWithField(
+  records: SearchRecord[],
+  query: string,
+  field: "brand" | "category",
+  matches: (value: string, query: string) => boolean,
+): CatalogSection[] {
+  const found = new Set<CatalogSection>();
+  for (const record of records) {
+    if (record.isReference) continue;
+    if (matches(record[field], query)) found.add(record.section);
+  }
+  return CATALOG_SECTIONS.filter((section) => found.has(section));
+}
+
+function categoryMatches(category: string, query: string): boolean {
+  const foldedCategory = fold(category);
+  const foldedQuery = fold(query);
+  if (foldedCategory.length < 3 || foldedQuery.length < 3) return false;
+  return containsPhrase(foldedQuery, foldedCategory);
+}
+
+/** Secciones que responden esta búsqueda. Si la sección viene fija, se respeta. */
+export function searchSections(
+  records: SearchRecord[],
+  query: string,
+  locked?: CatalogSection,
+): CatalogSection[] {
+  if (locked) return [locked];
+  if (fold(query).length < 2) return [];
+  const byBrand = sectionsWithField(records, query, "brand", brandMatches);
+  if (byBrand.length > 0) return byBrand;
+  const byCategory = sectionsWithField(records, query, "category", categoryMatches);
+  if (byCategory.length > 0) return byCategory;
+  return CATALOG_SECTIONS.filter(
+    (section) => matchRecords(records.filter((record) => record.section === section), query).length > 0,
+  );
+}
+
+export function searchPath(records: SearchRecord[], query: string): string {
   const trimmed = query.trim();
-  const hits = matchRecords(records, trimmed);
-  const byId = new Map(records.map((record) => [record.id, record]));
+  const params = new URLSearchParams({ q: trimmed });
+  const sections = searchSections(records, trimmed);
+  if (sections.length === 1) params.set("seccion", sections[0]);
+  return `/buscar?${params}`;
+}
+
+export function suggestionsForQuery(
+  records: SearchRecord[],
+  query: string,
+  limit = 6,
+  locked?: CatalogSection,
+): SearchRecord[] {
+  const sections = searchSections(records, query, locked);
+  if (sections.length === 0) return [];
+  const perSection = Math.max(1, Math.ceil(limit / sections.length));
+  const seen = new Set<string>();
+  const items: SearchRecord[] = [];
+  for (const section of sections) {
+    for (const item of suggestionItems(searchCatalog(records, query, section), perSection)) {
+      if (seen.has(item.id)) continue;
+      seen.add(item.id);
+      items.push(item);
+      if (items.length >= limit) return items;
+    }
+  }
+  return items;
+}
+
+export function searchCatalog(
+  records: SearchRecord[],
+  query: string,
+  section?: CatalogSection,
+): SearchPresentation {
+  const scoped = section ? records.filter((record) => record.section === section) : records;
+  const trimmed = query.trim();
+  const hits = matchRecords(scoped, trimmed);
+  const byId = new Map(scoped.map((record) => [record.id, record]));
   const originals = hits.filter((hit) => hit.type === "designer" || hit.isReference);
   const stockedOriginals = originals.filter((hit) => !hit.isReference);
   const missingOriginals = originals.filter((hit) => hit.isReference);

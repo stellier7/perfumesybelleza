@@ -1,4 +1,5 @@
 import { PAGE_SIZE } from "@/config";
+import { catalogSection, isCatalogSection, type CatalogSection } from "@/lib/catalog-section";
 import { assertNever } from "@/lib/text";
 import { GENDERS, PRODUCT_TYPES, type Gender, type ProductType, type PublicProduct } from "@/types/catalog";
 
@@ -8,6 +9,7 @@ export const SORT_KEYS = ["destacados", "precio-asc", "precio-desc", "nombre"] a
 export type SortKey = (typeof SORT_KEYS)[number];
 
 export type CatalogFilters = {
+  seccion: CatalogSection;
   tipo: ProductType | "";
   marca: string;
   genero: Gender | "";
@@ -50,8 +52,16 @@ export function parseCatalogFilters(
   const generoValue = first(searchParams.genero);
   const ordenValue = first(searchParams.orden);
   const pagina = Number(first(searchParams.pagina));
+  const tipo = isProductType(tipoValue) ? tipoValue : "";
+  const seccionValue = first(searchParams.seccion);
+  const seccion: CatalogSection = isCatalogSection(seccionValue)
+    ? seccionValue
+    : tipo === "beauty"
+      ? "cuidado"
+      : "perfumes";
   return {
-    tipo: isProductType(tipoValue) ? tipoValue : "",
+    seccion,
+    tipo: tipo && catalogSection(tipo) === seccion ? tipo : "",
     marca: first(searchParams.marca).trim(),
     genero: isGender(generoValue) ? generoValue : "",
     categoria: first(searchParams.categoria).trim(),
@@ -91,11 +101,13 @@ export function applyCatalogFilters(
   products: PublicProduct[],
   filters: CatalogFilters,
 ): { items: PublicProduct[]; total: number; pages: number; page: number } {
-  let list = products.filter((product) => !product.isReference);
+  let list = products.filter(
+    (product) => !product.isReference && catalogSection(product.type) === filters.seccion,
+  );
   if (filters.tipo) list = list.filter((product) => product.type === filters.tipo);
   if (filters.marca) list = list.filter((product) => product.brand === filters.marca);
   if (filters.genero) list = list.filter((product) => product.gender === filters.genero);
-  if (filters.categoria === INSPIRATIONS_CATEGORY) {
+  if (filters.seccion === "perfumes" && filters.categoria === INSPIRATIONS_CATEGORY) {
     list = list.filter((product) => product.inspiredBy.length > 0);
   } else if (filters.categoria) {
     list = list.filter((product) => product.category === filters.categoria);
@@ -113,6 +125,7 @@ export function applyCatalogFilters(
 
 export function catalogFilterQuery(filters: CatalogFilters, page = filters.pagina): string {
   const params = new URLSearchParams();
+  params.set("seccion", filters.seccion);
   if (filters.tipo) params.set("tipo", filters.tipo);
   if (filters.marca) params.set("marca", filters.marca);
   if (filters.genero) params.set("genero", filters.genero);

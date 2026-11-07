@@ -8,7 +8,7 @@ const shop = [
   { href: "/tienda?tipo=arabic", label: "Perfumes árabes" },
   { href: "/tienda?categoria=Inspiraciones", label: "Inspiraciones" },
   { href: "/tienda?tipo=designer", label: "Perfumes de diseñador" },
-  { href: "/tienda?tipo=beauty", label: "Belleza" },
+  { href: "/tienda?seccion=cuidado", label: "Cuidado personal" },
   { href: "/comparaciones", label: "Comparaciones" },
 ];
 

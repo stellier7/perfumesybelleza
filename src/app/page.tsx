@@ -4,6 +4,7 @@ import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
 import { store } from "@/config";
+import { catalogSection } from "@/lib/catalog-section";
 import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
@@ -35,9 +36,9 @@ const categories = [
     className: "bg-blush text-ink",
   },
   {
-    href: "/tienda?tipo=beauty",
-    title: "Belleza",
-    text: "Brumas, labios y cuidado para acompañar el perfume.",
+    href: "/tienda?seccion=cuidado",
+    title: "Cuidado personal",
+    text: "Cabello, piel y cuerpo, con sus propias marcas y categorías.",
     className: "bg-champagne-soft text-ink",
   },
   {
@@ -51,7 +52,9 @@ const categories = [
 export default function HomePage() {
   const records = getSearchRecords();
   const featured = getFeaturedProducts();
-  const spotlight = (featured.length > 0 ? featured : getSellableProducts()).slice(0, 8);
+  const spotlight = (featured.length > 0 ? featured : getSellableProducts())
+    .filter((product) => catalogSection(product.type) === "perfumes")
+    .slice(0, 8);
   const pairs = getComparisonPairs().slice(0, 4);
   return (
     <>

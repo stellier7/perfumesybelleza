@@ -1,4 +1,5 @@
 import { TYPE_LABEL, GENDER_LABEL } from "@/config";
+import { catalogSection } from "@/lib/catalog-section";
 import { shelfPrice } from "@/lib/pricing";
 import { assertNever, fold, slugify } from "@/lib/text";
 import type {
@@ -305,6 +306,7 @@ export function toSearchRecord(product: PublicProduct): SearchRecord {
     inStock: product.inStock,
     isReference: product.isReference,
     category: product.category,
+    section: catalogSection(product.type),
     tags: product.tags,
     haystack,
     alternativeIds: product.alternatives.map((item) => item.id),

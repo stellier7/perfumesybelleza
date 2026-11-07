@@ -7,10 +7,11 @@ import {
   parseComparisonSlug,
   productSuggestions,
   sameScentAlternatives,
+  toSearchRecord,
 } from "./catalog-model";
-import { queryNamesOriginal, searchCatalog, suggestionItems } from "./search";
-import { toSearchRecord } from "./catalog-model";
-import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
+import { queryNamesOriginal, searchCatalog, searchPath, searchSections, suggestionItems, suggestionsForQuery } from "./search";
+import { catalogSection } from "./catalog-section";
+import { applyCatalogFilters, catalogFilterQuery, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
 
 function product(overrides: Partial<RawProduct> & Pick<RawProduct, "id" | "name" | "type">): RawProduct {
@@ -385,6 +386,93 @@ test("la búsqueda pone primero el perfume más barato", () => {
     ["asad-barato", "asad-caro"],
   );
   assert.equal(suggestionItems(result, 2)[0]?.id, "asad-barato");
+});
+
+test("perfumes y cuidado personal no comparten marcas ni resultados", () => {
+  const catalog = buildCatalog([
+    product({ id: "asad", name: "Asad", brand: "Lattafa", type: "arabic", category: "Eau de Parfum" }),
+    product({
+      id: "crema",
+      name: "Crema facial",
+      brand: "Bioaqua",
+      type: "beauty",
+      category: "Crema facial",
+    }),
+    product({ id: "bio", name: "Bio", brand: "Otra Casa", type: "arabic", category: "Eau de Toilette" }),
+    product({
+      id: "crema-perfume",
+      name: "Crema perfumada",
+      brand: "Lattafa",
+      type: "arabic",
+      category: "Crema perfumada",
+    }),
+  ]);
+  const perfumeFilters = parseCatalogFilters({});
+  assert.equal(perfumeFilters.seccion, "perfumes");
+  assert.deepEqual(
+    applyCatalogFilters(catalog, perfumeFilters).items.map((item) => item.id),
+    ["asad", "bio", "crema-perfume"],
+  );
+  const perfumeBrands = new Set(
+    catalog.filter((item) => catalogSection(item.type) === "perfumes").map((item) => item.brand),
+  );
+  assert.deepEqual(perfumeBrands, new Set(["Lattafa", "Otra Casa"]));
+  assert.equal(perfumeBrands.has("Bioaqua"), false);
+
+  const cuidado = applyCatalogFilters(catalog, parseCatalogFilters({ seccion: "cuidado" }));
+  assert.deepEqual(
+    cuidado.items.map((item) => item.id),
+    ["crema"],
+  );
+  assert.equal(applyCatalogFilters(catalog, parseCatalogFilters({ seccion: "cuidado", marca: "Lattafa" })).total, 0);
+  assert.equal(applyCatalogFilters(catalog, parseCatalogFilters({ marca: "Bioaqua" })).total, 0);
+  assert.equal(applyCatalogFilters(catalog, parseCatalogFilters({ categoria: "Crema facial" })).total, 0);
+  assert.equal(parseCatalogFilters({ tipo: "beauty" }).seccion, "cuidado");
+  assert.equal(parseCatalogFilters({ tipo: "arabic" }).seccion, "perfumes");
+  assert.equal(parseCatalogFilters({ seccion: "cuidado", tipo: "designer" }).tipo, "");
+  assert.match(catalogFilterQuery(parseCatalogFilters({ seccion: "cuidado" }), 2), /seccion=cuidado/);
+  assert.match(catalogFilterQuery(parseCatalogFilters({ seccion: "cuidado" }), 2), /pagina=2/);
+
+  const records = catalog.map(toSearchRecord);
+  assert.deepEqual(searchSections(records, "Bioaqua"), ["cuidado"]);
+  assert.deepEqual(searchCatalog(records, "Bioaqua", "cuidado").products.map((item) => item.id), ["crema"]);
+  assert.equal(searchCatalog(records, "Bioaqua", "perfumes").products.length, 0);
+  assert.deepEqual(
+    suggestionsForQuery(records, "Bioaqua").map((item) => item.id),
+    ["crema"],
+  );
+  assert.equal(searchPath(records, "Bioaqua"), "/buscar?q=Bioaqua&seccion=cuidado");
+  assert.deepEqual(searchSections(records, "Crema facial"), ["cuidado"]);
+  assert.deepEqual(searchSections(records, "Lattafa"), ["perfumes"]);
+  assert.equal(
+    searchCatalog(records, "Lattafa", "perfumes").products.some((item) => item.section === "cuidado"),
+    false,
+  );
+});
+
+test("inspiraciones sigue dentro de perfumes", () => {
+  const catalog = buildCatalog([
+    product({
+      id: "clone",
+      name: "Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      inspiredBy: ["Sauvage (Dior)"],
+    }),
+    product({
+      id: "bruma",
+      name: "Bruma",
+      brand: "Bioaqua",
+      type: "beauty",
+      category: "Bruma",
+      inspiredBy: ["Sauvage (Dior)"],
+    }),
+  ]);
+  const result = applyCatalogFilters(catalog, parseCatalogFilters({ categoria: INSPIRATIONS_CATEGORY }));
+  assert.deepEqual(
+    result.items.map((item) => item.id),
+    ["clone"],
+  );
 });
 
 test("tolera tildes y un error de escritura", () => {

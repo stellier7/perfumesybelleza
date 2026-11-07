@@ -94,6 +94,8 @@ export type SearchRecord = {
   inStock: boolean;
   isReference: boolean;
   category: string;
+  /** perfumes (diseñador y árabe) o cuidado (belleza). */
+  section: "perfumes" | "cuidado";
   tags: string[];
   haystack: string;
   alternativeIds: string[];

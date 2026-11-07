@@ -14,7 +14,7 @@ const links = [
   { href: "/tienda?tipo=arabic", label: "Árabes" },
   { href: "/tienda?categoria=Inspiraciones", label: "Inspiraciones" },
   { href: "/tienda?tipo=designer", label: "Diseñador" },
-  { href: "/tienda?tipo=beauty", label: "Belleza" },
+  { href: "/tienda?seccion=cuidado", label: "Cuidado" },
   { href: "/comparaciones", label: "Comparaciones" },
 ];
 

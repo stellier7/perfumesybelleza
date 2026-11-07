@@ -11,8 +11,9 @@ import {
   parseCatalogFilters,
   type CatalogFilters,
 } from "@/lib/catalog-query";
+import { catalogSection, CATALOG_SECTIONS, sectionLabel, sectionTypes } from "@/lib/catalog-section";
 import { pageMetadata } from "@/lib/seo";
-import { GENDERS, PRODUCT_TYPES } from "@/types/catalog";
+import { GENDERS } from "@/types/catalog";
 
 export const metadata = pageMetadata({
   title: "Tienda",
@@ -36,34 +37,62 @@ async function Catalog({
   const filters = parseCatalogFilters(await searchParams);
   const products = getSellableProducts();
   const result = applyCatalogFilters(products, filters);
-  const brands = [...new Set(products.map((product) => product.brand))].sort((a, b) =>
+  const sectionProducts = products.filter((product) => catalogSection(product.type) === filters.seccion);
+  const brands = [...new Set(sectionProducts.map((product) => product.brand))].sort((a, b) =>
     a.localeCompare(b, "es"),
   );
-  const categories = [INSPIRATIONS_CATEGORY, ...new Set(products.map((product) => product.category))].sort((a, b) =>
-    a.localeCompare(b, "es"),
-  );
+  const categories = [
+    ...(filters.seccion === "perfumes" ? [INSPIRATIONS_CATEGORY] : []),
+    ...new Set(sectionProducts.map((product) => product.category)),
+  ].sort((a, b) => a.localeCompare(b, "es"));
+  const types = sectionTypes(filters.seccion);
+  const selectedBrand = brands.includes(filters.marca) ? filters.marca : "";
+  const selectedCategory = categories.includes(filters.categoria) ? filters.categoria : "";
 
   return (
     <Shell className="py-8 md:py-12">
-      <h1 className="font-serif text-4xl md:text-5xl">Tienda</h1>
-      <p className="mt-3 max-w-xl text-muted">Filtra por tipo, marca, género, precio y existencia.</p>
+      <p className="text-xs uppercase tracking-[0.28em] text-gold">Tienda</p>
+      <h1 className="mt-3 font-serif text-4xl md:text-5xl">{sectionLabel(filters.seccion)}</h1>
+      <nav className="mt-5 flex flex-wrap gap-2" aria-label="Sección de la tienda">
+        {CATALOG_SECTIONS.map((section) => {
+          const current = section === filters.seccion;
+          return (
+            <Link
+              key={section}
+              href={`/tienda?seccion=${section}`}
+              aria-current={current ? "page" : undefined}
+              className={`inline-flex h-11 items-center rounded-full px-4 text-sm ${current ? "bg-ink text-ivory" : "border border-line"}`}
+            >
+              {sectionLabel(section)}
+            </Link>
+          );
+        })}
+      </nav>
+      <p className="mt-4 max-w-xl text-muted">
+        {filters.seccion === "cuidado"
+          ? "Filtra por marca, categoría, precio y existencia."
+          : "Filtra por tipo, marca, género, precio y existencia."}
+      </p>
       <form className="mt-6 grid items-start gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
         <fieldset className="grid min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm shadow-soft">
           <legend className="px-1 text-xs uppercase tracking-[0.16em] text-gold">Filtros</legend>
-          <label className="grid gap-1">
-            Tipo
-            <select name="tipo" defaultValue={filters.tipo} className="h-11 rounded-xl border border-line bg-ivory px-3">
-              <option value="">Todos</option>
-              {PRODUCT_TYPES.map((type) => (
-                <option key={type} value={type}>
-                  {TYPE_LABEL[type]}
-                </option>
-              ))}
-            </select>
-          </label>
+          <input type="hidden" name="seccion" value={filters.seccion} />
+          {types.length > 1 ? (
+            <label className="grid gap-1">
+              Tipo
+              <select name="tipo" defaultValue={filters.tipo} className="h-11 rounded-xl border border-line bg-ivory px-3">
+                <option value="">Todos</option>
+                {types.map((type) => (
+                  <option key={type} value={type}>
+                    {TYPE_LABEL[type]}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : null}
           <label className="grid gap-1">
             Marca
-            <select name="marca" defaultValue={filters.marca} className="h-11 rounded-xl border border-line bg-ivory px-3">
+            <select name="marca" defaultValue={selectedBrand} className="h-11 rounded-xl border border-line bg-ivory px-3">
               <option value="">Todas</option>
               {brands.map((brand) => (
                 <option key={brand}>{brand}</option>
@@ -83,7 +112,7 @@ async function Catalog({
           </label>
           <label className="grid gap-1">
             Categoría
-            <select name="categoria" defaultValue={filters.categoria} className="h-11 rounded-xl border border-line bg-ivory px-3">
+            <select name="categoria" defaultValue={selectedCategory} className="h-11 rounded-xl border border-line bg-ivory px-3">
               <option value="">Todas</option>
               {categories.map((category) => (
                 <option key={category}>{category}</option>
@@ -122,7 +151,11 @@ async function Catalog({
             {result.total} {result.total === 1 ? "producto" : "productos"}
           </p>
           {result.items.length === 0 ? (
-            <p>No hay productos con esos filtros.</p>
+            <p>
+              {sectionProducts.length === 0
+                ? "Todavía no hay productos en esta sección."
+                : "No hay productos con esos filtros."}
+            </p>
           ) : (
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
               {result.items.map((product) => (
