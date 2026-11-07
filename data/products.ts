@@ -22,7 +22,7 @@ export const rawProducts: RawProduct[] = [
       cost: 576,
       price: 1095,
       images: ["/products/philos-centro.webp"],
-      description: "Eau de parfum de 100 ml. El texto de arriba escribe el nombre como Piloso.",
+      description: "Eau de parfum de 100 ml.",
       notes: {
         top: [],
         heart: [],
@@ -64,7 +64,7 @@ export const rawProducts: RawProduct[] = [
       cost: 2609,
       price: 3966,
       images: ["/products/hypnotic-poison.webp"],
-      description: "Eau de toilette. La caja impresa dice 30 ml. El texto encima de la foto dice 100 ml.",
+      description: "Eau de toilette. La caja impresa dice 30 ml.",
       notes: {
         top: [],
         heart: [],
@@ -3146,7 +3146,7 @@ export const rawProducts: RawProduct[] = [
       cost: 770,
       price: 1295,
       images: ["/products/lana-bliss.webp"],
-      description: "Eau de parfum de 100 ml. El frasco y el texto de la foto dicen Camara Lana Bliss.",
+      description: "Eau de parfum de 100 ml. El frasco dice Camara Lana Bliss.",
       notes: {
         top: [],
         heart: [],
@@ -3545,7 +3545,7 @@ export const rawProducts: RawProduct[] = [
       cost: 958,
       price: 1485,
       images: ["/products/lahdath.webp"],
-      description: "Eau de parfum. El texto de la foto dice 80 ml y la caja dice 2.7 fl oz. La caja también imprime 30 ml. La foto dice Lattafa Pride.",
+      description: "Eau de parfum. La caja dice 2.7 fl oz y también imprime 30 ml. La caja dice Lattafa Pride.",
       notes: {
         top: [],
         heart: [],
@@ -6644,7 +6644,7 @@ export const rawProducts: RawProduct[] = [
       cost: 3334,
       price: 5067,
       images: ["/products/sauvage-tester.webp"],
-      description: "El vidrio dice Sauvage y Dior. El título de la foto lo marca como tester.",
+      description: "El vidrio dice Sauvage y Dior.",
       notes: {
         top: [],
         heart: [],
@@ -6653,7 +6653,7 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: ["tester"]
+      tags: []
     },
   {
       id: "eros-pour-femme",
