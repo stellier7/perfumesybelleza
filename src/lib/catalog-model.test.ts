@@ -93,6 +93,10 @@ test("calcula alternativas y una referencia si el diseñador no está en el cat�
   assert.equal("cost" in bleu, false);
   const intense = catalog.find((item) => item.id === "club-de-nuit-intense-man");
   assert.equal(intense?.inspiredBy[0]?.id, "ref-aventus");
+  assert.match(
+    productSuggestions(intense, catalog).find((group) => group.kind === "original")?.caption ?? "",
+    /No lo tenemos/,
+  );
   assert.equal(aventus.alternatives[0]?.id, "club-de-nuit-intense-man");
 });
 
@@ -325,6 +329,7 @@ test("una ficha siempre sugiere algo y el clon muestra el diseñador", () => {
 
   const fromClone = productSuggestions(asad, catalog);
   assert.equal(fromClone[0]?.kind, "original");
+  assert.match(fromClone[0]?.caption ?? "", /también en la tienda/);
   assert.deepEqual(
     fromClone[0]?.products.map((item) => item.id),
     ["sauvage"],

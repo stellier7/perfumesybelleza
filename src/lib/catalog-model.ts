@@ -533,10 +533,15 @@ function groupCopy(
 ): { title: string; caption: string } {
   switch (kind) {
     case "original":
-      return {
-        title: "Inspirado en",
-        caption: "Para quienes buscan un aroma similar. No es el perfume de la casa de diseño.",
-      };
+      return picks.some((item) => !item.isReference)
+        ? {
+            title: "Inspirado en",
+            caption: "El perfume de la casa, también en la tienda.",
+          }
+        : {
+            title: "Inspirado en",
+            caption: "Para quienes buscan un aroma similar. No lo tenemos en el catálogo.",
+          };
     case "clones":
       return {
         title: `Inspirado en ${nameWithBrand(product.name, product.brand)}`,
