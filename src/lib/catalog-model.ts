@@ -65,11 +65,14 @@ function toPublicBase(raw: RawProduct): PublicProduct {
 }
 
 export function inspirationOrder(
-  left: { inspirationRank?: number; name: string },
-  right: { inspirationRank?: number; name: string },
+  left: { inspirationRank?: number; name: string; price?: number },
+  right: { inspirationRank?: number; name: string; price?: number },
 ): number {
   const rank = (left.inspirationRank ?? 100) - (right.inspirationRank ?? 100);
   if (rank !== 0) return rank;
+  const leftPrice = left.price && left.price > 0 ? left.price : Number.POSITIVE_INFINITY;
+  const rightPrice = right.price && right.price > 0 ? right.price : Number.POSITIVE_INFINITY;
+  if (leftPrice !== rightPrice) return leftPrice - rightPrice;
   return left.name.localeCompare(right.name, "es");
 }
 
@@ -104,6 +107,79 @@ function referenceProduct(name: string, brand: string): PublicProduct {
   };
 }
 
+/** Lo más específico va primero. Un estuche con varios aromas no entra en una sola familia. */
+const SCENT_RULES: Array<[RegExp, string]> = [
+  [/\bsauvage elixir\b/, "sauvage-elixir"],
+  [/\bsauvage\b/, "sauvage"],
+  [/\baventus for her\b/, "aventus-for-her"],
+  [/\baventus\b/, "aventus"],
+  [/\bbleu de chanel\b/, "bleu-de-chanel"],
+  [/\binvictus victory\b/, "invictus-victory"],
+  [/\binvictus aqua\b/, "invictus-aqua"],
+  [/\binvictus\b/, "invictus"],
+  [/\bacqua di gio profondo\b/, "acqua-di-gio-profondo"],
+  [/\bacqua di gio elixir\b/, "acqua-di-gio-elixir"],
+  [/\bacqua di gioia\b/, "acqua-di-gioia"],
+  [/\bacqua di gio\b/, "acqua-di-gio"],
+  [/\bvery good girl\b/, "very-good-girl"],
+  [/\bgood\s?girl\b/, "good-girl"],
+  [/\bblack opium\b/, "black-opium"],
+  [/\bblack xs\b/, "black-xs"],
+  [/\bultra male\b/, "ultra-male"],
+  [/\ble beau\b/, "le-beau"],
+  [/\ble male\b/, "le-male"],
+  [/\beros energy\b/, "eros-energy"],
+  [/\beros\b/, "eros"],
+  [/\bangel elixir\b/, "angel-elixir"],
+  [/\bange ou\b|\bangel y demonio\b/, "ange-ou-demon"],
+  [/\bangel\b/, "angel"],
+  [/\bthe most wanted\b|\bmost wanted\b/, "most-wanted"],
+  [/\bbad boy\b/, "bad-boy"],
+  [/\bscandal\b/, "scandal"],
+  [/\bdylan blue\b/, "dylan-blue"],
+  [/\b1 million\b|\bone million\b/, "1-million"],
+  [/\bcoco mademoiselle\b/, "coco-mademoiselle"],
+  [/\blady million\b/, "lady-million"],
+  [/\bphantom\b/, "phantom"],
+  [/\binterdit\b/, "l-interdit"],
+  [/\bdelina\b/, "delina"],
+  [/\bspicebomb\b|\bspice bomb\b/, "spicebomb"],
+  [/\bpolo red\b/, "polo-red"],
+  [/\bcool water\b/, "cool-water"],
+  [/\b212 vip\b/, "212-vip"],
+  [/\b212\b/, "212"],
+  [/\berba gold\b/, "erba-gold"],
+  [/\berba pura\b/, "erba-pura"],
+  [/\bbaccarat rouge\b|\bbr540\b|\bbr 540\b/, "baccarat-rouge"],
+  [/\bmillesime imperial\b/, "millesime"],
+  [/\bsilver mountain water\b/, "silver-mountain"],
+  [/\bgreen irish tweed\b/, "green-irish-tweed"],
+  [/\bvoce viva\b/, "voce-viva"],
+  [/\bombre leather\b/, "ombre-leather"],
+  [/\bangels'? share\b/, "angels-share"],
+  [/\bbianco latte\b/, "bianco-latte"],
+  [/\boud for greatness\b/, "oud-for-greatness"],
+  [/\boud satin mood\b/, "oud-satin-mood"],
+  [/\bvalentina\b/, "valentina"],
+  [/\bjoop\b/, "joop"],
+  [/\bla belle\b/, "la-belle"],
+  [/\bfame\b/, "fame"],
+  [/\bopium\b/, "opium"],
+];
+
+const SCENT_PARENT: Record<string, string> = {
+  "sauvage-elixir": "sauvage",
+};
+
+export function scentKey(name: string, brand: string): string | null {
+  const blob = fold(`${brand} ${name}`);
+  if (blob.includes("+") || blob.includes("wardrobe")) return null;
+  for (const [pattern, key] of SCENT_RULES) {
+    if (pattern.test(blob)) return key;
+  }
+  return null;
+}
+
 export function buildCatalog(rawProducts: RawProduct[]): PublicProduct[] {
   const products = rawProducts.map(toPublicBase);
   const byId = new Map(products.map((product) => [product.id, product]));
@@ -111,15 +187,42 @@ export function buildCatalog(rawProducts: RawProduct[]): PublicProduct[] {
   const byName = new Map(products.map((product) => [fold(product.name), product]));
   const references = new Map<string, PublicProduct>();
 
+  function stockedScent(name: string, brand: string): PublicProduct | undefined {
+    const key = scentKey(name, brand);
+    if (!key) return undefined;
+    const matches = products.filter((item) => {
+      if (item.type !== "designer" || item.category === "Set") return false;
+      if (item.sizeMl !== null && item.sizeMl < 30) return false;
+      return scentKey(item.name, item.brand) === key;
+    });
+    const exact = matches.find((item) => fold(item.name) === fold(name));
+    if (exact) return exact;
+    const extra = ["blush", "elixir", "intense", "profondo", "aqua", "victory", "absolu", "extreme", "glam"];
+    const penalty = (item: PublicProduct) => {
+      const folded = fold(item.name);
+      const wanted = fold(name);
+      return extra.reduce(
+        (score, word) => score + (folded.includes(word) && !wanted.includes(word) ? 1 : 0),
+        0,
+      );
+    };
+    return [...matches].sort(
+      (left, right) =>
+        penalty(left) - penalty(right) ||
+        left.name.length - right.name.length ||
+        left.name.localeCompare(right.name, "es"),
+    )[0];
+  }
+
   function resolve(token: string): PublicProduct {
     const folded = fold(token);
     const parsed = parseInspiredLabel(token);
-    const direct =
-      byId.get(token) ??
-      bySlug.get(token) ??
-      byName.get(folded) ??
-      byName.get(fold(parsed.name));
+    const direct = byId.get(token) ?? bySlug.get(token);
     if (direct && !direct.isReference) return direct;
+    const named = byName.get(folded) ?? byName.get(fold(parsed.name));
+    if (named && named.type === "designer" && !named.isReference) return named;
+    const stocked = stockedScent(parsed.name, parsed.brand);
+    if (stocked) return stocked;
 
     const slug = slugify(parsed.name);
     const id = `ref-${slug}`;
@@ -149,6 +252,31 @@ export function buildCatalog(rawProducts: RawProduct[]): PublicProduct[] {
     product.alternatives.sort((left, right) => inspirationOrder(ranked.get(left.id) ?? left, ranked.get(right.id) ?? right));
   }
   return catalog;
+}
+
+/** Clones del mismo aroma, también en las otras presentaciones de ese diseñador. */
+export function sameScentAlternatives(product: PublicProduct, catalog: PublicProduct[]): PublicProduct[] {
+  const ids = new Set(product.alternatives.map((item) => item.id));
+  const key = product.type === "designer" || product.isReference ? scentKey(product.name, product.brand) : null;
+  if (key) {
+    const keys = new Set([key]);
+    for (const [child, parent] of Object.entries(SCENT_PARENT)) {
+      if (parent === key) keys.add(child);
+    }
+    for (const item of catalog) {
+      if (item.type !== "designer" && !item.isReference) continue;
+      const itemKey = scentKey(item.name, item.brand);
+      if (!itemKey || !keys.has(itemKey)) continue;
+      for (const alternative of item.alternatives) ids.add(alternative.id);
+    }
+  }
+  const byId = new Map(catalog.map((item) => [item.id, item]));
+  return [...ids]
+    .flatMap((id) => {
+      const item = byId.get(id);
+      return item && item.id !== product.id && item.type !== "designer" ? [item] : [];
+    })
+    .sort(inspirationOrder);
 }
 
 export function toSearchRecord(product: PublicProduct): SearchRecord {

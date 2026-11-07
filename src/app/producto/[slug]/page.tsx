@@ -9,7 +9,7 @@ import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from
 import { Shell } from "@/components/shell";
 import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
-import { comparisonSlug, formatSize, nameWithBrand } from "@/lib/catalog-model";
+import { comparisonSlug, formatSize, nameWithBrand, sameScentAlternatives } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -53,12 +53,9 @@ export default function ProductPage({ params }: ProductParams) {
 async function ProductScreen({ params }: ProductParams) {
   const product = getProductBySlug((await params).slug);
   if (!product) notFound();
-  const catalog = new Map(getCatalog().map((item) => [item.id, item]));
+  const catalog = getCatalog();
   const purchase = toPurchase(product);
-  const alternatives = product.alternatives.flatMap((item) => {
-    const match = catalog.get(item.id);
-    return match ? [match] : [];
-  });
+  const alternatives = sameScentAlternatives(product, catalog);
 
   return (
     <Shell className="py-6 md:py-10">

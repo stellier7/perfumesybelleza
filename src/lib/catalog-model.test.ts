@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug } from "./catalog-model";
+import { buildCatalog, comparisonPairs, nameWithBrand, parseComparisonSlug, sameScentAlternatives } from "./catalog-model";
 import { queryNamesOriginal, searchCatalog, suggestionItems } from "./search";
 import { toSearchRecord } from "./catalog-model";
 import { applyCatalogFilters, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
@@ -199,6 +199,52 @@ test("ordena las inspiraciones de la más cercana a la más libre y deja el set 
     result.groups[0]?.sets.map((item) => item.id),
     ["set-bleu"],
   );
+});
+
+test("el clon aparece debajo de cada presentación del diseñador", () => {
+  const catalog = buildCatalog([
+    product({ id: "sauvage", name: "Sauvage", brand: "Dior", type: "designer" }),
+    product({ id: "sauvage-edp", name: "Dior Sauvage Eau de Parfum", brand: "Dior", type: "designer" }),
+    product({ id: "aventus-her", name: "Aventus For Her", brand: "Creed", type: "designer" }),
+    product({
+      id: "asad",
+      name: "Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      price: 1330,
+      inspiredBy: ["Sauvage (Dior)"],
+    }),
+    product({
+      id: "set-asad",
+      name: "Set Asad",
+      brand: "Lattafa",
+      type: "arabic",
+      category: "Set",
+      price: 1500,
+      inspiredBy: ["Sauvage (Dior)"],
+    }),
+    product({
+      id: "cdni",
+      name: "Club de Nuit Intense Man",
+      brand: "Armaf",
+      type: "arabic",
+      inspiredBy: ["Aventus (Creed)"],
+    }),
+  ]);
+  const bottle = catalog.find((item) => item.id === "sauvage-edp");
+  const main = catalog.find((item) => item.id === "sauvage");
+  const her = catalog.find((item) => item.id === "aventus-her");
+  assert.ok(bottle && main && her);
+  assert.deepEqual(
+    sameScentAlternatives(bottle, catalog).map((item) => item.id),
+    ["asad", "set-asad"],
+  );
+  assert.deepEqual(
+    sameScentAlternatives(main, catalog).map((item) => item.id),
+    ["asad", "set-asad"],
+  );
+  assert.equal(main.alternatives.some((item) => item.id === "asad"), true);
+  assert.deepEqual(sameScentAlternatives(her, catalog), []);
 });
 
 test("la categoría Inspiraciones muestra solo los que tienen inspiración", () => {

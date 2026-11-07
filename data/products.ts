@@ -1522,7 +1522,7 @@ export const rawProducts: RawProduct[] = [
       category: "Eau de Parfum",
       tags: [],
       featured: true,
-      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspiredBy: ["Sauvage (Dior)"],
       inspirationRank: 1,
     },
   {
@@ -1545,7 +1545,7 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: [],
-      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspiredBy: ["Sauvage (Dior)"],
       inspirationRank: 1,
     },
   {
@@ -1568,7 +1568,7 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: [],
-      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspiredBy: ["Sauvage (Dior)"],
       inspirationRank: 1,
     },
   {
@@ -2963,7 +2963,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 90,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Tygar (Bvlgari)"],
     },
   {
       id: "woody-delight",
@@ -5356,7 +5357,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Ombre Leather (Tom Ford)"],
     },
   {
       id: "set-calvin-klein-mini",
@@ -5952,7 +5954,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 60,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "art-damour",
@@ -6418,7 +6421,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Narciso For Her (Narciso Rodriguez)"],
     },
   {
       id: "invictus",
@@ -6734,7 +6738,7 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Parfum",
       tags: [],
-      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspiredBy: ["Sauvage (Dior)"],
       inspirationRank: 2,
     },
   {
@@ -7367,7 +7371,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "set-badee-al-oud-sublime",
@@ -7431,7 +7436,7 @@ export const rawProducts: RawProduct[] = [
       inStock: true,
       category: "Set",
       tags: [],
-      inspiredBy: ["Sauvage Elixir (Dior)"],
+      inspiredBy: ["Sauvage (Dior)"],
       inspirationRank: 1,
     },
   {
@@ -7453,7 +7458,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "supremacy-pink-lote-750",
@@ -7474,7 +7480,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "mayar-spray",
@@ -7537,7 +7544,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 90,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "montale-bubble-forever",
@@ -8461,7 +8469,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 90,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "lionheart-woman",
@@ -8629,7 +8638,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 150,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Oud Satin Mood (Maison Francis Kurkdjian)"],
     },
   {
       id: "set-boss-the-scent",
@@ -8860,7 +8870,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)", "Silver Mountain Water (Creed)", "Aventus (Creed)"],
     },
   {
       id: "teriaq-intense",
@@ -10027,7 +10038,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Valentina (Valentino)"],
     },
   {
       id: "miss-armaf-voce-viva",
@@ -11530,7 +11542,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "set-lattafa-2pc-mayar-3-4-edp-6-7-perfumed-spray-w-soft-window-box",
@@ -11845,7 +11858,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 90,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "lattafa-qaed-al-fursan-3-04-edp-u-lote-582",
@@ -11866,7 +11880,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 90,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "ph-paris-hilton-3-4-edp-w",
@@ -12139,7 +12154,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "lacoste-eau-de-lacoste-l-12-12-blanc-3-3-edt-m",
@@ -12265,7 +12281,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "coach-new-york-3-0-edt-w",
@@ -12307,7 +12324,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 150,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Ultra Male (Jean Paul Gaultier)"],
     },
   {
       id: "set-lattafa-2pc-yara-3-4-edp-6-8-perfumed-spray-w-soft-window-box",
@@ -12601,7 +12619,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
     },
   {
       id: "lattafa-khamrah-edp-sp",
@@ -12622,7 +12641,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
     },
   {
       id: "katy-perry-meow-d-edp-100ml-sp",
@@ -13126,7 +13146,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
       id: "armaf-club-de-nuit-sillage-h-edp-105ml-sp-lote-1053",
@@ -13147,7 +13168,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
       id: "armaf-club-de-nuit-sillage-h-edp-105ml-sp-lote-1290",
@@ -13168,7 +13190,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
       id: "lattafa-set-yara-100ml-12ml-hairmist",
@@ -13210,7 +13233,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
     },
   {
       id: "lattafa-set-khamrah-qahwa-100ml-12ml-hairmist",
@@ -13231,7 +13255,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
     },
   {
       id: "emper-stallion-53-morning-dive-edp-sp-100ml",
@@ -13609,7 +13634,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-asad-bourbon-edp-sp-lote-833",
@@ -13630,7 +13656,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-khamrha-waha",
@@ -13651,7 +13678,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
     },
   {
       id: "lattafa-khamrha-waha-lote-1397",
@@ -13672,7 +13700,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
     },
   {
       id: "asdaaf-ameerat-al-arab-edp",
@@ -13777,7 +13806,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Angels' Share (Kilian)"],
     },
   {
       id: "emper-ocean-breeze-100ml-edp-sp",
@@ -14365,7 +14395,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "armaf-club-de-nuit-untold-u-edp-105ml-sp-lote-1436",
@@ -14386,7 +14417,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "christian-dior-sauvage-h-parfum-100ml-sp",
@@ -15583,7 +15615,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "mont-blanc-legend-men-3-4-oz-edp-sp",
@@ -15982,7 +16015,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Pura (Xerjoff)"],
     },
   {
       id: "rasasi-hawas-diva-w-edp-sp-3-38oz",
@@ -16024,7 +16058,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Invictus (Paco Rabanne)"],
     },
   {
       id: "curve-chill-w-edt-sp-3-4oz",
@@ -16150,7 +16185,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "armaf-club-de-nuit-intense-m-edt-sp-3-6oz",
@@ -16171,7 +16207,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "nautica-blue-sail-m-edt-sp-3-4oz",
@@ -16864,7 +16901,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 80,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "perry-ellis-reserve-women-3-4-oz-edp-spray",
@@ -17011,7 +17049,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Oud for Greatness (Initio)"],
     },
   {
       id: "lattafa-pride-nebras-unisex-3-4-oz-edp-sp",
@@ -17431,7 +17470,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "azzaro-chrome-men-3-4-oz-parfum-spray",
@@ -17620,7 +17660,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Ultra Male (Jean Paul Gaultier)"],
     },
   {
       id: "antonio-banderas-blue-seduction-women-6-7-oz-edt-sp",
@@ -17746,7 +17787,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 75,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Pura (Xerjoff)"],
     },
   {
       id: "360-collection-coral-w-3pc-set-3-4oz-edp-sp-3-0oz-shower-gel-7-5ml-edp-sp",
@@ -18376,7 +18418,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Pura (Xerjoff)"],
     },
   {
       id: "amber-oud-gold",
@@ -18397,7 +18440,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Pura (Xerjoff)"],
     },
   {
       id: "angel-elixir-w-edp-sp-3-3oz-refillable",
@@ -18922,7 +18966,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Pura (Xerjoff)"],
     },
   {
       id: "hamidi-maison-luxe-patchouli-imperial-3-4-edp-perfume-spray",
@@ -19489,7 +19534,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "armaf-cdn-iconic-6-8-edp-spr-lote-1768",
@@ -19510,7 +19556,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "armaf-cdn-iconic-6-8-edp-spr-lote-1920",
@@ -19531,7 +19578,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "burberry-her-femme-eau-parfum",
@@ -19678,7 +19726,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Pura (Xerjoff)"],
     },
   {
       id: "set-perry-ellis-18-men-4pc-set-new-upc",
@@ -19867,7 +19916,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "perfume-clud-de-nuit-intense-lote-981",
@@ -19888,7 +19938,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "armaf-odyssey-mandarin-sky-3-4",
@@ -20056,7 +20107,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
       id: "afnan-zimaya-sharaf-the-club-3-4-edp-u",
@@ -20329,7 +20381,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 80,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Oud Satin Mood (Maison Francis Kurkdjian)"],
     },
   {
       id: "d-g-dolce-gabbana-k-pour-homme-6-7-edp-m",
@@ -21022,7 +21075,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 250,
       inStock: true,
       category: "Perfume en spray",
-      tags: []
+      tags: [],
+      inspiredBy: ["Ultra Male (Jean Paul Gaultier)"],
     },
   {
       id: "ls-armaf-lux-odyssey-candee-3-4-edp-10ml-travel-spr-3-4-bl-8-4-body-mist",
@@ -21148,7 +21202,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 10,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "ms-armaf-cdn-sillage-3-4-edt-4pc",
@@ -21169,7 +21224,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
       id: "ms-armaf-cdn-sillage-3-4-edt-4pc-lote-1454",
@@ -21190,7 +21246,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
       id: "ms-armaf-voyage-blue-3-4-edp-spr-3-4bl-1-7deo-8-4shampoo",
@@ -21295,7 +21352,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 10,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "ms-armaf-lux-cdn-club-de-nuit-iconic-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-spr-2",
@@ -21316,7 +21374,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 10,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "ms-armaf-odyssey-limoni-3-4-edp-spr-3-4-sg-1-7-bs-8-4-shampoo",
@@ -21421,7 +21480,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Invictus (Paco Rabanne)"],
     },
   {
       id: "armaf-odyssey-aoud-oud-edition-6-8-can-body-spray",
@@ -21463,7 +21523,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "armaf-cdn-club-de-nuit-8-4-edp-spr-5-ml-refillable-atomiser",
@@ -21862,7 +21923,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
     },
   {
       id: "armaf-odyssey-pink-pop-3-4-edp-spr",
@@ -22093,7 +22155,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Tygar (Bvlgari)"],
     },
   {
       id: "lattafa-shuyukh-sheikh-luxe-edition-eau-parfum-sp-100ml",
@@ -22513,7 +22576,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Oud for Greatness (Initio)"],
     },
   {
       id: "est-versace-eros-d-edp100ml-luxurybl100ml-luxurysg100ml-pouchredondo-4pzas",
@@ -22912,7 +22976,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Extrait de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Erba Gold (Xerjoff)"],
     },
   {
       id: "yves-saint-laurent-y-h-le-parfum-100ml-sp",
@@ -23836,7 +23901,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 7,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)", "Oud Satin Mood (Maison Francis Kurkdjian)", "Bleu de Chanel (Chanel)"],
     },
   {
       id: "versace-cryistal-noir",
@@ -24004,7 +24070,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Coco Mademoiselle (Chanel)"],
     },
   {
       id: "ariana-grande-splash-ari",
@@ -24466,7 +24533,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Y (Yves Saint Laurent)"],
     },
   {
       id: "ard-taj-al-malik-the-king-crown-edp-sp",
@@ -24697,7 +24765,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-set-yara-candy-100ml-12ml-hair-mist-3pzas",
@@ -24907,7 +24976,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-set-yara-edp-4x5ml-yara-moi-yara-tous-yara-candy",
@@ -25012,7 +25082,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-mayar-cherry-inten",
@@ -25264,7 +25335,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "perfumed-spray-yara",
@@ -25726,7 +25798,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "armaf-oros-fleur-1-7-edp-spr",
@@ -25810,7 +25883,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
     },
   {
       id: "lattafa-eclaire-banoffi-edp-sp",
@@ -25831,7 +25905,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
     },
   {
       id: "lattafa-lail-maleki-moroccan-blue-edp-sp",
@@ -28015,7 +28090,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "set-ck-calvin-klein-2pc-eternity-for-men-3-3-edp-1-0-edp-m-hard-box",
@@ -28519,7 +28595,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 300,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "perfumed-spray-asad-bourbo",
@@ -28540,7 +28617,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfume en spray",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "perfumed-spray-mayar-natural-intense-sp",
@@ -28729,7 +28807,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-mayar-edp-sp",
@@ -28771,7 +28850,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-eclaire-edp-sp",
@@ -28792,7 +28872,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
     },
   {
       id: "perfumed-spray-asad",
@@ -28813,7 +28894,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfume en spray",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "maison-como-moiselle-edp",
@@ -28834,7 +28916,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Coco Mademoiselle (Chanel)"],
     },
   {
       id: "versace-dylan-blue-ph-m-2026-h-b-3pc-set-3-4oz-edt-sp-10ml-edt-sp-trousse",
@@ -29695,7 +29778,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 105,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Coco Mademoiselle (Chanel)"],
     },
   {
       id: "armaf-skye-3-4-edp-spr",
@@ -29842,7 +29926,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "armaf-cdn-club-de-nuit-urban-man-elixir-8-4-250-ml-edp-spr-5-ml-refillable-atomi",
@@ -29863,7 +29948,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "armaf-miss-grandeur-3-4-edp-spr",
@@ -30052,7 +30138,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 7,
       inStock: true,
       category: "Set",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "armaf-cdn-untold-6-8-edp-spr",
@@ -30073,7 +30160,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "armaf-cdn-milestone-6-7-edp-s",
@@ -30094,7 +30182,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
     },
   {
       id: "armaf-cdn-milestone-6-7-edp-s-lote-1626",
@@ -30115,7 +30204,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Millésime Impérial (Creed)"],
     },
   {
       id: "club-de-nuit-intense-man-limte",
@@ -30136,7 +30226,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "armaf-miss-voceviva-3-4-edp-s",
@@ -30157,7 +30248,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Voce Viva (Valentino)"],
     },
   {
       id: "armaf-cdn-lion-heart-3-4-edp-spr",
@@ -30199,7 +30291,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
+      tags: [],
+      inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
       id: "ls-armaf-le-femme-3-4-4pc",
@@ -30472,7 +30565,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Perfumería",
-      tags: []
+      tags: [],
+      inspiredBy: ["Oud for Greatness (Initio)"],
     },
   {
       id: "galaxy-deo-spray-200ml-le-boy",
@@ -30850,7 +30944,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "lattafa-asad-elixir-m-edp-sp-3-4oz",
@@ -30871,7 +30966,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "jean-paul-gaultier-ultra-male-intense-m-edt-sp-4-2oz-2",
@@ -30997,7 +31093,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Ombre Leather (Tom Ford)"],
     },
   {
       id: "set-de-crema-corporal-y-splash",
@@ -31081,7 +31178,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Narciso For Her (Narciso Rodriguez)"],
     },
   {
       id: "emper-le-chameau-save-elixir-uni-edp-spr-85ml",
@@ -31102,7 +31200,8 @@ export const rawProducts: RawProduct[] = [
       sizeMl: 85,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
+      tags: [],
+      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "emper-le-chameau-metropolis-gold-fw-edp-spr-100ml",
