@@ -4,6 +4,7 @@ import {
   type CatalogFilters,
 } from "@/lib/catalog-query";
 import { CATALOG_SECTIONS, catalogSection, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
+import { homeImage } from "@/lib/home-images";
 import { assertNever } from "@/lib/text";
 import type { ProductType } from "@/types/catalog";
 
@@ -19,6 +20,7 @@ export type HomeCard = {
   text: string;
   className: string;
   href: string;
+  image: string | null;
 };
 
 export type HomeDepartment = HomeCard & {
@@ -79,6 +81,7 @@ function perfumeChildren(products: ShelfItem[]): HomeCard[] {
       text: "Alternativas para quienes buscan un aroma similar.",
       className: tone(cards.length),
       href: shopHref({ seccion: "perfumes", tipo: "arabic" }),
+      image: homeImage("perfumes-arabes"),
     });
   }
   if (perfumes.some((product) => product.type === "designer")) {
@@ -88,6 +91,7 @@ function perfumeChildren(products: ShelfItem[]): HomeCard[] {
       text: "Piezas de casa para regalo o para quien ya tiene su firma.",
       className: tone(cards.length),
       href: shopHref({ seccion: "perfumes", tipo: "designer" }),
+      image: homeImage("perfumes-disenador"),
     });
   }
   const sets = perfumes.filter((product) => product.category === "Set").length;
@@ -98,6 +102,7 @@ function perfumeChildren(products: ShelfItem[]): HomeCard[] {
       text: "Sets de perfume, árabes y de diseñador.",
       className: tone(cards.length),
       href: shopHref({ seccion: "perfumes", categoria: "Set" }),
+      image: homeImage("perfumes-sets"),
     });
   }
   const inspired = perfumes.filter((product) => product.inspired).length;
@@ -108,6 +113,7 @@ function perfumeChildren(products: ShelfItem[]): HomeCard[] {
       text: "Del más cercano al aroma de diseñador, hasta el más libre.",
       className: tone(cards.length),
       href: shopHref({ seccion: "perfumes", categoria: INSPIRATIONS_CATEGORY }),
+      image: homeImage("perfumes-inspiraciones"),
     });
   }
   return cards;
@@ -125,13 +131,17 @@ function categoryChildren(products: ShelfItem[], section: CatalogSection, pinned
     ...pinned.filter((name) => counts.has(name)),
     ...[...counts.keys()].filter((name) => !pinned.includes(name)).sort((a, b) => a.localeCompare(b, "es")),
   ];
-  return names.map((name, index) => ({
-    id: `${section}-${name}`,
-    title: name,
-    text: countLabel(counts.get(name) ?? 0),
-    className: tone(index),
-    href: shopHref({ seccion: section, categoria: name }),
-  }));
+  return names.map((name, index) => {
+    const id = `${section}-${name}`;
+    return {
+      id,
+      title: name,
+      text: countLabel(counts.get(name) ?? 0),
+      className: tone(index),
+      href: shopHref({ seccion: section, categoria: name }),
+      image: homeImage(id),
+    };
+  });
 }
 
 function childrenFor(section: CatalogSection, products: ShelfItem[]): HomeCard[] {
@@ -156,6 +166,7 @@ export function homeDepartments(products: ShelfItem[]): HomeDepartment[] {
     text: sectionCopy[section].text,
     className: sectionCopy[section].className,
     href: shopHref({ seccion: section }),
+    image: homeImage(section),
     children: childrenFor(section, products),
   }));
 }

@@ -1,12 +1,15 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AutoRail } from "@/components/auto-rail";
 import type { HomeCard, HomeDepartment } from "@/lib/home-rail";
 
-const cardClass =
+const plainClass =
   "flex h-full w-[18rem] flex-col rounded-3xl p-6 text-left shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift";
+const photoClass =
+  "group relative flex h-[23rem] w-[18rem] flex-col justify-end overflow-hidden rounded-3xl p-6 text-left text-ivory shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift";
 
 export function CategoryRail({ departments }: { departments: HomeDepartment[] }) {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -51,27 +54,44 @@ export function CategoryRail({ departments }: { departments: HomeDepartment[] })
       >
         {cards.map((card) => {
           const nested = departments.find((department) => department.id === card.id);
+          const className = card.image ? photoClass : `${plainClass} ${card.className}`;
           if (nested && nested.children.length > 0) {
             return (
-              <button
-                key={card.id}
-                type="button"
-                className={`${cardClass} ${card.className}`}
-                onClick={() => open(card.id)}
-              >
-                <p className="font-serif text-3xl leading-none">{card.title}</p>
-                <p className="mt-3 text-sm leading-6 opacity-80">{card.text}</p>
+              <button key={card.id} type="button" className={className} onClick={() => open(card.id)}>
+                <CardFace card={card} />
               </button>
             );
           }
           return (
-            <Link key={card.id} href={card.href} className={`${cardClass} ${card.className}`}>
-              <p className="font-serif text-3xl leading-none">{card.title}</p>
-              <p className="mt-3 text-sm leading-6 opacity-80">{card.text}</p>
+            <Link key={card.id} href={card.href} className={className}>
+              <CardFace card={card} />
             </Link>
           );
         })}
       </AutoRail>
     </div>
+  );
+}
+
+function CardFace({ card }: { card: HomeCard }) {
+  const copy = (
+    <>
+      <p className="font-serif text-3xl leading-none">{card.title}</p>
+      <p className={`mt-3 text-sm leading-6 ${card.image ? "text-ivory/90" : "opacity-80"}`}>{card.text}</p>
+    </>
+  );
+  if (!card.image) return copy;
+  return (
+    <>
+      <Image
+        src={card.image}
+        alt=""
+        fill
+        sizes="288px"
+        className="object-cover transition duration-500 motion-safe:group-hover:scale-[1.04]"
+      />
+      <span className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/25 to-transparent" />
+      <span className="relative">{copy}</span>
+    </>
   );
 }

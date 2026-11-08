@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AutoRail } from "@/components/auto-rail";
 import { CategoryRail } from "@/components/category-rail";
@@ -56,19 +57,28 @@ export default function HomePage() {
         }}
       />
       <section className="relative z-20 border-b border-line">
-        <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-          <div className="absolute -right-10 top-0 h-64 w-64 rounded-full bg-blush blur-3xl" />
-        </div>
-        <Shell className="relative py-14 md:py-20">
-          <p className="text-xs uppercase tracking-[0.28em] text-gold">Honduras</p>
-          <h1 className="mt-3 max-w-xl font-serif text-5xl leading-[0.95] md:text-7xl">
-            El aroma que te queda.
-          </h1>
-          <p className="mt-5 max-w-md text-base leading-7 text-muted">
-            Perfumes de diseñador, alternativas árabes y belleza, con envío a todo el país.
-          </p>
-          <div className="mt-8 max-w-xl">
-            <SearchBox records={records} variant="hero" />
+        <Shell className="grid items-center gap-8 py-10 md:grid-cols-2 md:gap-12 md:py-16">
+          <div>
+            <p className="text-xs uppercase tracking-[0.28em] text-gold">Honduras</p>
+            <h1 className="mt-3 max-w-xl font-serif text-5xl leading-[0.95] md:text-7xl">
+              El aroma que te queda.
+            </h1>
+            <p className="mt-5 max-w-md text-base leading-7 text-muted">
+              Perfumes de diseñador, alternativas árabes y belleza, con envío a todo el país.
+            </p>
+            <div className="mt-8 max-w-xl">
+              <SearchBox records={records} variant="hero" />
+            </div>
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lift">
+            <Image
+              src="/home/hero.webp"
+              alt="Frascos de perfume y un tarro de crema sobre piedra clara"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </Shell>
       </section>
