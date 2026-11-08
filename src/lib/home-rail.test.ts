@@ -1,33 +1,67 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { CATALOG_SECTIONS } from "./catalog-section";
-import { homeRailItems } from "./home-rail";
+import { homeDepartments, type ShelfItem } from "./home-rail";
 
-test("el inicio lista perfumes, cuidado, skincare y el resto de departamentos", () => {
-  const items = homeRailItems();
+function item(type: ShelfItem["type"], category: string, inspired = false): ShelfItem {
+  return { type, category, inspired };
+}
+
+const shelf: ShelfItem[] = [
+  item("arabic", "Eau de Parfum"),
+  item("designer", "Eau de Parfum"),
+  item("arabic", "Set", true),
+  item("designer", "Set"),
+  item("beauty", "Shampoo"),
+  item("beauty", "Skincare coreano"),
+  item("beauty", "Skincare coreano"),
+  item("beauty", "Acondicionador"),
+];
+
+test("el inicio abre perfumes en árabes, diseñador, sets e inspiraciones", () => {
+  const departments = homeDepartments(shelf);
   assert.deepEqual(
-    items.map((item) => item.title),
-    [
-      "Perfumes",
-      "Cuidado personal",
-      "Skincare coreano",
-      "Perfumes árabes",
-      "Perfumes de diseñador",
-      "Inspiraciones",
-    ],
+    departments.map((department) => department.title),
+    ["Perfumes", "Cuidado personal"],
   );
-  const korean = items.find((item) => item.title === "Skincare coreano");
-  assert.ok(korean);
-  const koreanHref = decodeURIComponent(korean.href.replaceAll("+", " "));
-  assert.match(koreanHref, /seccion=cuidado/);
-  assert.match(koreanHref, /categoria=Skincare coreano/);
-  for (const section of CATALOG_SECTIONS) {
-    assert.ok(
-      items.some((item) => {
-        const href = decodeURIComponent(item.href.replaceAll("+", " "));
-        return href.includes(`seccion=${section}`) && !href.includes("categoria=");
-      }),
-    );
-  }
-  assert.equal(new Set(items.map((item) => item.href)).size, items.length);
+  const perfumes = departments[0];
+  assert.ok(perfumes);
+  assert.deepEqual(
+    perfumes.children.map((card) => card.title),
+    ["Árabes", "Diseñador", "Sets", "Inspiraciones"],
+  );
+  const sets = perfumes.children.find((card) => card.title === "Sets");
+  assert.ok(sets);
+  const setsHref = decodeURIComponent(sets.href.replaceAll("+", " "));
+  assert.match(setsHref, /seccion=perfumes/);
+  assert.match(setsHref, /categoria=Set/);
+  assert.doesNotMatch(setsHref, /tipo=/);
+});
+
+test("cuidado personal pone skincare primero y suma las categorías nuevas", () => {
+  const cuidado = homeDepartments([...shelf, item("beauty", "Gel de baño")]).find(
+    (department) => department.id === "cuidado",
+  );
+  assert.ok(cuidado);
+  assert.deepEqual(
+    cuidado.children.map((card) => card.title),
+    ["Skincare coreano", "Acondicionador", "Gel de baño", "Shampoo"],
+  );
+  assert.equal(cuidado.children[0]?.text, "2 productos");
+  const korean = decodeURIComponent(cuidado.children[0]?.href.replaceAll("+", " ") ?? "");
+  assert.match(korean, /seccion=cuidado/);
+  assert.match(korean, /categoria=Skincare coreano/);
+});
+
+test("un estante sin sets ni inspiraciones no inventa esos botones", () => {
+  const perfumes = homeDepartments([item("arabic", "Eau de Parfum")])[0];
+  assert.deepEqual(
+    perfumes?.children.map((card) => card.title),
+    ["Árabes"],
+  );
+});
+
+test("cada sección de la tienda tiene un departamento", () => {
+  const ids = homeDepartments(shelf).map((department) => department.id);
+  for (const section of CATALOG_SECTIONS) assert.ok(ids.includes(section));
 });

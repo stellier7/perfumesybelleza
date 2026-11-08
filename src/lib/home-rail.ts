@@ -3,27 +3,48 @@ import {
   INSPIRATIONS_CATEGORY,
   type CatalogFilters,
 } from "@/lib/catalog-query";
-import { CATALOG_SECTIONS, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
+import { CATALOG_SECTIONS, catalogSection, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
+import { assertNever } from "@/lib/text";
+import type { ProductType } from "@/types/catalog";
 
-export type HomeRailItem = {
-  href: string;
+export type ShelfItem = {
+  type: ProductType;
+  category: string;
+  inspired: boolean;
+};
+
+export type HomeCard = {
+  id: string;
   title: string;
   text: string;
   className: string;
+  href: string;
+};
+
+export type HomeDepartment = HomeCard & {
+  children: HomeCard[];
 };
 
 const SECTION_ORDER: CatalogSection[] = ["perfumes", "cuidado"];
 
-const sectionCopy: Record<CatalogSection, Pick<HomeRailItem, "text" | "className">> = {
+const sectionCopy: Record<CatalogSection, Pick<HomeCard, "text" | "className">> = {
   perfumes: {
-    text: "Árabes, diseñador e inspiraciones, en un mismo estante.",
+    text: "Árabes, diseñador, sets e inspiraciones.",
     className: "bg-night text-ivory",
   },
   cuidado: {
-    text: "Cabello, piel y cuerpo, con sus propias marcas y categorías.",
+    text: "Cabello, piel, cuerpo y skincare coreano.",
     className: "bg-champagne-soft text-ink",
   },
 };
+
+const tones = [
+  "bg-night text-ivory",
+  "bg-champagne-soft text-ink",
+  "bg-blush text-ink",
+  "bg-paper text-ink",
+  "bg-night-soft text-ivory",
+];
 
 function shopHref(filters: Pick<CatalogFilters, "seccion"> & Partial<CatalogFilters>): string {
   return `/tienda${catalogFilterQuery({
@@ -40,50 +61,101 @@ function shopHref(filters: Pick<CatalogFilters, "seccion"> & Partial<CatalogFilt
   })}`;
 }
 
-const spotlights: HomeRailItem[] = [
-  {
-    href: shopHref({ seccion: "cuidado", categoria: "Skincare coreano" }),
-    title: "Skincare coreano",
-    text: "Joseon, COSRX, SKIN1004 y el resto del cuidado coreano.",
-    className: "bg-night-soft text-ivory",
-  },
-  {
-    href: shopHref({ seccion: "perfumes", tipo: "arabic" }),
-    title: "Perfumes árabes",
-    text: "Alternativas para quienes buscan un aroma similar, con precios de uso frecuente.",
-    className: "bg-paper text-ink",
-  },
-  {
-    href: shopHref({ seccion: "perfumes", tipo: "designer" }),
-    title: "Perfumes de diseñador",
-    text: "Piezas de casa para regalo o para quien ya tiene su firma.",
-    className: "bg-blush text-ink",
-  },
-  {
-    href: shopHref({ seccion: "perfumes", categoria: INSPIRATIONS_CATEGORY }),
-    title: "Inspiraciones",
-    text: "Perfumes de la tienda inspirados en un aroma de diseñador, del más cercano al más libre.",
-    className: "bg-paper text-ink",
-  },
-];
-
-function sectionItem(section: CatalogSection): HomeRailItem {
-  return {
-    href: shopHref({ seccion: section }),
-    title: sectionLabel(section),
-    text: sectionCopy[section].text,
-    className: sectionCopy[section].className,
-  };
+function countLabel(count: number): string {
+  return count === 1 ? "1 producto" : `${count} productos`;
 }
 
-export function homeRailItems(): HomeRailItem[] {
+function tone(index: number): string {
+  return tones[index % tones.length] ?? tones[0];
+}
+
+function perfumeChildren(products: ShelfItem[]): HomeCard[] {
+  const perfumes = products.filter((product) => catalogSection(product.type) === "perfumes");
+  const cards: HomeCard[] = [];
+  if (perfumes.some((product) => product.type === "arabic")) {
+    cards.push({
+      id: "perfumes-arabes",
+      title: "Árabes",
+      text: "Alternativas para quienes buscan un aroma similar.",
+      className: tone(cards.length),
+      href: shopHref({ seccion: "perfumes", tipo: "arabic" }),
+    });
+  }
+  if (perfumes.some((product) => product.type === "designer")) {
+    cards.push({
+      id: "perfumes-disenador",
+      title: "Diseñador",
+      text: "Piezas de casa para regalo o para quien ya tiene su firma.",
+      className: tone(cards.length),
+      href: shopHref({ seccion: "perfumes", tipo: "designer" }),
+    });
+  }
+  const sets = perfumes.filter((product) => product.category === "Set").length;
+  if (sets > 0) {
+    cards.push({
+      id: "perfumes-sets",
+      title: "Sets",
+      text: "Sets de perfume, árabes y de diseñador.",
+      className: tone(cards.length),
+      href: shopHref({ seccion: "perfumes", categoria: "Set" }),
+    });
+  }
+  const inspired = perfumes.filter((product) => product.inspired).length;
+  if (inspired > 0) {
+    cards.push({
+      id: "perfumes-inspiraciones",
+      title: INSPIRATIONS_CATEGORY,
+      text: "Del más cercano al aroma de diseñador, hasta el más libre.",
+      className: tone(cards.length),
+      href: shopHref({ seccion: "perfumes", categoria: INSPIRATIONS_CATEGORY }),
+    });
+  }
+  return cards;
+}
+
+function categoryChildren(products: ShelfItem[], section: CatalogSection, pinned: string[]): HomeCard[] {
+  const counts = new Map<string, number>();
+  for (const product of products) {
+    if (catalogSection(product.type) !== section) continue;
+    const name = product.category.trim();
+    if (!name) continue;
+    counts.set(name, (counts.get(name) ?? 0) + 1);
+  }
+  const names = [
+    ...pinned.filter((name) => counts.has(name)),
+    ...[...counts.keys()].filter((name) => !pinned.includes(name)).sort((a, b) => a.localeCompare(b, "es")),
+  ];
+  return names.map((name, index) => ({
+    id: `${section}-${name}`,
+    title: name,
+    text: countLabel(counts.get(name) ?? 0),
+    className: tone(index),
+    href: shopHref({ seccion: section, categoria: name }),
+  }));
+}
+
+function childrenFor(section: CatalogSection, products: ShelfItem[]): HomeCard[] {
+  switch (section) {
+    case "perfumes":
+      return perfumeChildren(products);
+    case "cuidado":
+      return categoryChildren(products, section, ["Skincare coreano"]);
+    default:
+      return assertNever(section);
+  }
+}
+
+export function homeDepartments(products: ShelfItem[]): HomeDepartment[] {
   const ordered = [
     ...SECTION_ORDER.filter((section) => CATALOG_SECTIONS.includes(section)),
     ...CATALOG_SECTIONS.filter((section) => !SECTION_ORDER.includes(section)),
   ];
-  const sections = ordered.map(sectionItem);
-  const cuidado = sections.findIndex((item) => item.href === shopHref({ seccion: "cuidado" }));
-  const items = [...sections];
-  items.splice(cuidado === -1 ? items.length : cuidado + 1, 0, ...spotlights);
-  return items;
+  return ordered.map((section) => ({
+    id: section,
+    title: sectionLabel(section),
+    text: sectionCopy[section].text,
+    className: sectionCopy[section].className,
+    href: shopHref({ seccion: section }),
+    children: childrenFor(section, products),
+  }));
 }

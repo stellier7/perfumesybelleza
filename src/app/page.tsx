@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { AutoRail } from "@/components/auto-rail";
+import { CategoryRail } from "@/components/category-rail";
 import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
 import { store } from "@/config";
 import { catalogSection } from "@/lib/catalog-section";
-import { homeRailItems } from "@/lib/home-rail";
+import { homeDepartments } from "@/lib/home-rail";
 import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
@@ -26,7 +27,13 @@ export const metadata = pageMetadata({
 
 export default function HomePage() {
   const records = getSearchRecords();
-  const categories = homeRailItems();
+  const departments = homeDepartments(
+    getSellableProducts().map((product) => ({
+      type: product.type,
+      category: product.category,
+      inspired: product.inspiredBy.length > 0,
+    })),
+  );
   const featured = getFeaturedProducts();
   const spotlight =
     featured.length > 0
@@ -67,25 +74,7 @@ export default function HomePage() {
       </section>
 
       <Shell className="py-12">
-        <AutoRail
-          label="Categorías"
-          title={
-            <h2 id="categorias" className="font-serif text-4xl">
-              Categorías
-            </h2>
-          }
-        >
-          {categories.map((category) => (
-            <Link
-              key={category.href}
-              href={category.href}
-                className={`flex h-full w-[18rem] flex-col rounded-3xl p-6 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift ${category.className}`}
-            >
-              <p className="font-serif text-3xl leading-none">{category.title}</p>
-              <p className="mt-3 text-sm leading-6 opacity-80">{category.text}</p>
-            </Link>
-          ))}
-        </AutoRail>
+        <CategoryRail departments={departments} />
       </Shell>
 
       <Shell className="pb-4">
