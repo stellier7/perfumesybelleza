@@ -366,6 +366,101 @@ test("una ficha siempre sugiere algo y el clon muestra el diseñador", () => {
   assert.equal(fromClone.some((group) => group.products.some((item) => item.id === "asad")), false);
 });
 
+test("la ampolla de centella sugiere la crema, el tónico y otras con centella", () => {
+  const catalog = buildCatalog([
+    product({
+      id: "ampoule",
+      name: "Madagascar Centella Ampoule",
+      brand: "Skin1004",
+      type: "beauty",
+      category: "Skincare coreano",
+    }),
+    product({
+      id: "cream",
+      name: "Madagascar Centella Cream",
+      brand: "Skin1004",
+      type: "beauty",
+      category: "Skincare coreano",
+    }),
+    product({
+      id: "toner",
+      name: "Madagascar Centella Toning Toner",
+      brand: "Skin1004",
+      type: "beauty",
+      category: "Skincare coreano",
+    }),
+    product({
+      id: "foam",
+      name: "Madagascar Centella Foam",
+      brand: "Skin1004",
+      type: "beauty",
+      category: "Skincare coreano",
+    }),
+    product({
+      id: "pore",
+      name: "Madagascar Centella Poremizing Gel Cream",
+      brand: "Skin1004",
+      type: "beauty",
+      category: "Skincare coreano",
+    }),
+    product({
+      id: "purito",
+      name: "Centella Cream",
+      brand: "Purito",
+      type: "beauty",
+      category: "Crema facial",
+    }),
+    product({
+      id: "anua",
+      name: "Heartleaf Toner",
+      brand: "Anua",
+      type: "beauty",
+      category: "Skincare coreano",
+    }),
+    product({
+      id: "shampoo",
+      name: "Maca Shampoo",
+      brand: "Karseell",
+      type: "beauty",
+      category: "Shampoo",
+    }),
+    product({
+      id: "conditioner",
+      name: "Maca Acondicionador",
+      brand: "Karseell",
+      type: "beauty",
+      category: "Acondicionador",
+    }),
+    product({
+      id: "salon",
+      name: "Salon Line Shampoo",
+      brand: "Salon Line",
+      type: "beauty",
+      category: "Shampoo",
+    }),
+  ]);
+  const ampoule = catalog.find((item) => item.id === "ampoule");
+  assert.ok(ampoule);
+  const groups = productSuggestions(ampoule, catalog);
+  assert.deepEqual(
+    groups.map((group) => group.kind),
+    ["line", "family", "more"],
+  );
+  assert.deepEqual(groups[0]?.products.map((item) => item.id).sort(), ["cream", "foam", "toner"]);
+  const family = groups[1]?.products.map((item) => item.id) ?? [];
+  assert.ok(family.includes("pore"));
+  assert.ok(family.includes("purito"));
+  assert.equal(family.includes("cream"), false);
+  assert.deepEqual(groups[2]?.products.map((item) => item.id), ["anua"]);
+
+  const maca = catalog.find((item) => item.id === "shampoo");
+  assert.ok(maca);
+  const hair = productSuggestions(maca, catalog);
+  assert.equal(hair[0]?.kind, "line");
+  assert.deepEqual(hair[0]?.products.map((item) => item.id), ["conditioner"]);
+  assert.deepEqual(hair[1]?.products.map((item) => item.id), ["salon"]);
+});
+
 test("la categoría Inspiraciones muestra solo los que tienen inspiración", () => {
   const catalog = buildCatalog(raw);
   const result = applyCatalogFilters(catalog, parseCatalogFilters({ categoria: INSPIRATIONS_CATEGORY }));

@@ -347,7 +347,7 @@ export function parseComparisonSlug(
   return { original, alternative };
 }
 
-export type SuggestionKind = "original" | "clones" | "sets" | "line" | "couple" | "more";
+export type SuggestionKind = "original" | "clones" | "sets" | "line" | "family" | "couple" | "more";
 
 export type ProductSuggestionGroup = {
   kind: SuggestionKind;
@@ -432,7 +432,7 @@ function suggestionOrder(type: PublicProduct["type"]): SuggestionKind[] {
     case "designer":
       return ["clones", "sets", "original", "line", "couple", "more"];
     case "beauty":
-      return [];
+      return ["line", "family", "more"];
     default:
       return assertNever(type);
   }
@@ -557,6 +557,8 @@ function groupCopy(
       return { title: "Sets", caption: "Sets de esta línea." };
     case "line":
       return { title: "De la misma línea", caption: "Otras presentaciones y perfumes de la misma línea." };
+    case "family":
+      return { title: "De la misma familia", caption: "Otras fórmulas con el mismo ingrediente." };
     case "couple":
       return coupleCopy(product.gender, picks);
     case "more":
@@ -605,12 +607,192 @@ function pickMore(product: PublicProduct, catalog: PublicProduct[], used: Set<st
   return ranked.slice(0, 4).map((entry) => entry.item);
 }
 
+const CARE_SUBLINES = [
+  "poremizing",
+  "hyalu cica",
+  "tea trica",
+  "probio cica",
+  "tone brightening",
+  "air fit",
+  "retinol",
+];
+
+const CARE_INGREDIENTS: Array<[string, string[]]> = [
+  ["centella", ["centella"]],
+  ["heartleaf", ["heartleaf", "hoja de corazon"]],
+  ["maca", ["maca"]],
+  ["snail", ["snail", "baba de caracol"]],
+  ["niacinamide", ["niacinamide", "niacinamida"]],
+];
+
+const INGREDIENT_LABEL: Record<string, string> = {
+  centella: "centella",
+  heartleaf: "heartleaf",
+  maca: "maca",
+  snail: "baba de caracol",
+  niacinamide: "niacinamida",
+};
+
+function careHay(name: string): string {
+  return fold(name).replace(/[-_/]+/g, " ");
+}
+
+function hasTerm(hay: string, term: string): boolean {
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "\\s+");
+  return new RegExp(`(?:^|\\s)${escaped}(?:\\s|$)`).test(hay);
+}
+
+function careStep(name: string): string {
+  const hay = careHay(name);
+  const steps: Array<[string, string[]]> = [
+    ["ampoule", ["ampoule", "ampolla"]],
+    ["cream", ["cream", "crema"]],
+    ["toner", ["toner", "tonico"]],
+    ["foam", ["foam", "espuma"]],
+    ["oil", ["oil", "aceite"]],
+    ["sun", ["suncream", "sunscreen", "solar"]],
+    ["serum", ["serum", "suero"]],
+    ["cleanser", ["cleanser", "limpiador", "milk"]],
+    ["mist", ["mist"]],
+    ["mask", ["mask", "mascarilla"]],
+    ["gel", ["gel"]],
+  ];
+  let best: { step: string; index: number } | null = null;
+  for (const [step, words] of steps) {
+    for (const word of words) {
+      if (!hasTerm(hay, word)) continue;
+      const index = hay.indexOf(word);
+      if (!best || index < best.index) best = { step, index };
+    }
+  }
+  return best?.step ?? "otro";
+}
+
+function careFocus(product: PublicProduct): { line: string; ingredient: string } {
+  const hay = careHay(product.name);
+  const subline = CARE_SUBLINES.find((line) => hasTerm(hay, line)) ?? "";
+  const ingredient = CARE_INGREDIENTS.find(([, words]) => words.some((word) => hasTerm(hay, word)))?.[0] ?? "";
+  const brand = fold(product.brand);
+  if (subline) return { line: `${brand}:${subline}`, ingredient };
+  if (ingredient) return { line: `${brand}:${ingredient}`, ingredient };
+  return { line: "", ingredient: "" };
+}
+
+function ingredientLabel(ingredient: string): string {
+  return INGREDIENT_LABEL[ingredient] ?? ingredient;
+}
+
+function byTrending(left: PublicProduct, right: PublicProduct): number {
+  const stepOrder = Number(careStep(left.name) === "otro") - Number(careStep(right.name) === "otro");
+  return right.trending - left.trending || stepOrder || left.name.localeCompare(right.name, "es");
+}
+
+function takeVaried(
+  current: PublicProduct,
+  items: PublicProduct[],
+  used: Set<string>,
+  limit: number,
+  diversity: (item: PublicProduct) => string = (item) => careStep(item.name),
+  maxSameBrand = limit,
+): PublicProduct[] {
+  const seenNames = new Set<string>();
+  const sorted = items
+    .filter((item) => {
+      if (used.has(item.id)) return false;
+      const name = careHay(item.name);
+      if (seenNames.has(name)) return false;
+      seenNames.add(name);
+      return true;
+    })
+    .sort(byTrending);
+  const picked: PublicProduct[] = [];
+  const seenKeys = new Set<string>();
+  let sameBrand = 0;
+  const currentKey = diversity(current);
+  const preferred = sorted.filter((item) => diversity(item) !== currentKey);
+  const sameKind = sorted.filter((item) => diversity(item) === currentKey);
+  for (const item of [...preferred, ...sameKind]) {
+    if (picked.length >= limit) break;
+    const key = diversity(item);
+    if (seenKeys.has(key)) continue;
+    if (fold(item.brand) === fold(current.brand) && sameBrand >= maxSameBrand) continue;
+    seenKeys.add(key);
+    if (fold(item.brand) === fold(current.brand)) sameBrand += 1;
+    picked.push(item);
+  }
+  for (const item of sorted) {
+    if (picked.length >= limit) break;
+    if (picked.some((chosen) => chosen.id === item.id)) continue;
+    picked.push(item);
+  }
+  for (const item of picked) used.add(item.id);
+  return picked;
+}
+
+/** En cuidado, la rutina de la misma línea va primero, luego el ingrediente y lo parecido. */
+function careSuggestions(product: PublicProduct, catalog: PublicProduct[]): ProductSuggestionGroup[] {
+  const focus = careFocus(product);
+  const used = new Set<string>([product.id]);
+  const pool = catalog.filter((item) => item.type === "beauty" && !item.isReference);
+  const line = focus.line
+    ? takeVaried(
+        product,
+        pool.filter((item) => careFocus(item).line === focus.line),
+        used,
+        4,
+      )
+    : [];
+  const family = focus.ingredient
+    ? takeVaried(
+        product,
+        pool.filter((item) => careFocus(item).ingredient === focus.ingredient && careFocus(item).line !== focus.line),
+        used,
+        4,
+        (item) => careFocus(item).line,
+        3,
+      )
+    : [];
+  const more = takeVaried(
+    product,
+    pool.filter((item) => item.brand === product.brand || item.category === product.category),
+    used,
+    4,
+  );
+  const label = ingredientLabel(focus.ingredient);
+  const groups: ProductSuggestionGroup[] = [];
+  if (line.length > 0) {
+    groups.push({
+      kind: "line",
+      title: "De la misma rutina",
+      caption: "La crema, el tónico y el resto de esta línea.",
+      products: line,
+    });
+  }
+  if (family.length > 0) {
+    groups.push({
+      kind: "family",
+      title: label ? `También con ${label}` : "De la misma familia",
+      caption: "Otras fórmulas con el mismo ingrediente.",
+      products: family,
+    });
+  }
+  if (more.length > 0) {
+    groups.push({
+      kind: "more",
+      title: "También te puede gustar",
+      caption: "Otras piezas parecidas.",
+      products: more,
+    });
+  }
+  return groups;
+}
+
 /** Sugerencias de una ficha: el original, los clones, los sets, la línea y una pareja de la misma casa. */
 export function productSuggestions(
   product: PublicProduct,
   catalog: PublicProduct[],
 ): ProductSuggestionGroup[] {
-  if (!isPerfumeType(product.type)) return [];
+  if (!isPerfumeType(product.type)) return careSuggestions(product, catalog);
   const byId = new Map(catalog.map((item) => [item.id, item]));
   const used = new Set<string>([product.id]);
   const alternatives = sameScentAlternatives(product, catalog);

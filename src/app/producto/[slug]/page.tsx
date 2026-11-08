@@ -164,6 +164,7 @@ function comparisonHref(kind: ProductSuggestionGroup["kind"], currentSlug: strin
       return `/comparar/${comparisonSlug(itemSlug, currentSlug)}`;
     case "sets":
     case "line":
+    case "family":
     case "couple":
     case "more":
       return null;
