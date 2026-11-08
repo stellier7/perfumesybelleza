@@ -25,6 +25,12 @@
       "url": "https://distribuidorasbc.com/catalogo/742",
       "name": "Skincare coreano",
       "count": 60
+    },
+    {
+      "file": "data/categoria-13.json",
+      "url": "https://distribuidorasbc.com/shop/categoria/13",
+      "name": "Maquillaje y uñas",
+      "count": 1148
     }
   ]
 }
