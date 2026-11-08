@@ -49,7 +49,7 @@ function parseType(value: string): ProductType | null {
   const folded = fold(value);
   if (folded === "designer" || folded === "disenador" || folded === "disenadora") return "designer";
   if (folded === "arabic" || folded === "arabe" || folded === "arabes") return "arabic";
-  if (folded === "beauty" || folded === "belleza") return "beauty";
+  if (folded === "beauty" || folded === "belleza" || folded === "cuidado" || folded === "cuidado personal") return "beauty";
   if ((PRODUCT_TYPES as readonly string[]).includes(folded)) return folded as ProductType;
   return null;
 }

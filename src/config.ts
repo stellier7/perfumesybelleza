@@ -94,7 +94,7 @@ export const PIXEL_ORDER_EVENT = "Lead" as const;
 export const TYPE_LABEL: Record<ProductType, string> = {
   designer: "Diseñador",
   arabic: "Árabe",
-  beauty: "Belleza",
+  beauty: "Cuidado personal",
 };
 
 export const GENDER_LABEL: Record<Gender, string> = {
