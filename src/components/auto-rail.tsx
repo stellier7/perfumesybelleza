@@ -1,19 +1,23 @@
 "use client";
 
 import { Children, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
+import { advanceRail, railOrigin, railTrackOrder, type RailDirection } from "@/lib/rail-motion";
 
 const SPEED = 48;
 
 export function AutoRail({
   label,
   title,
+  direction = "left",
   children,
 }: {
   label: string;
   title?: ReactNode;
+  direction?: RailDirection;
   children: ReactNode;
 }) {
   const scroller = useRef<HTMLDivElement>(null);
+  const offset = useRef(0);
   const reasons = useRef(new Set<string>());
   const timers = useRef(new Map<string, number>());
   const manual = useRef(false);
@@ -22,6 +26,7 @@ export function AutoRail({
   const suppressClick = useRef(false);
   const [paused, setPaused] = useState(false);
   const [reduced, setReduced] = useState(false);
+  const [repeat, setRepeat] = useState(1);
   const items = Children.toArray(children);
 
   useEffect(() => () => detachDrag.current?.(), []);
@@ -36,18 +41,38 @@ export function AutoRail({
 
   useEffect(() => {
     const el = scroller.current;
+    if (!el || reduced || repeat >= 8) return;
+    const set = el.querySelector<HTMLElement>("[data-rail-set]");
+    if (!set || set.offsetWidth === 0) return;
+    if (set.offsetWidth > el.clientWidth + 1) return;
+    setRepeat((count) => count + 1);
+  }, [items.length, reduced, repeat]);
+
+  useEffect(() => {
+    const el = scroller.current;
     if (!el || reduced) return;
     let frame = 0;
     let last = performance.now();
+    let seeded = false;
     const tick = (now: number) => {
       const dt = Math.min(32, now - last);
       last = now;
       const set = el.querySelector<HTMLElement>("[data-rail-set]");
       const width = set?.offsetWidth ?? 0;
-      const running = !manual.current && reasons.current.size === 0 && width > el.clientWidth + 1;
+      const canScroll = width > el.clientWidth + 1;
+      if (canScroll && !seeded) {
+        offset.current = railOrigin(width, direction);
+        el.scrollLeft = offset.current;
+        seeded = true;
+      }
+      // scrollLeft del navegador trunca la fracción y, con scroll suave, anima cada paso.
+      // La posición vive en un número propio para que el carril avance de corrido.
+      const running = seeded && canScroll && !manual.current && reasons.current.size === 0;
       if (running) {
-        el.scrollLeft += (SPEED * dt) / 1000;
-        if (el.scrollLeft >= width) el.scrollLeft -= width;
+        offset.current = advanceRail(offset.current, width, (SPEED * dt) / 1000, direction);
+        el.scrollLeft = offset.current;
+      } else if (seeded) {
+        offset.current = el.scrollLeft;
       }
       frame = requestAnimationFrame(tick);
     };
@@ -58,7 +83,7 @@ export function AutoRail({
       for (const timer of pending.values()) window.clearTimeout(timer);
       pending.clear();
     };
-  }, [reduced, items.length]);
+  }, [direction, reduced, items.length, repeat]);
 
   function hold(reason: string, on: boolean) {
     if (on) reasons.current.add(reason);
@@ -88,7 +113,10 @@ export function AutoRail({
       if (!current || !node) return;
       const dx = pointer.clientX - current.x;
       if (Math.abs(dx) > 6) current.moved = true;
-      if (current.moved) node.scrollLeft = current.left - dx;
+      if (current.moved) {
+        node.scrollLeft = current.left - dx;
+        offset.current = node.scrollLeft;
+      }
     };
     const up = () => {
       detachDrag.current?.();
@@ -130,7 +158,7 @@ export function AutoRail({
       </div>
       <div
         ref={scroller}
-        className="no-scrollbar cursor-grab overflow-x-auto overscroll-x-contain active:cursor-grabbing"
+        className="no-scrollbar scroll-auto cursor-grab overflow-x-auto overscroll-x-contain active:cursor-grabbing"
         role="region"
         aria-label={label}
         tabIndex={0}
@@ -161,22 +189,28 @@ export function AutoRail({
         onWheel={() => bump("wheel", 1200)}
       >
         <div className="flex w-max">
-          <div data-rail-set="" className="flex gap-4 pr-4">
-            {items.map((item, index) => (
-              <div key={index} className="shrink-0">
-                {item}
-              </div>
-            ))}
-          </div>
-          {reduced ? null : (
-            <div className="flex gap-4 pr-4" aria-hidden="true" inert>
-              {items.map((item, index) => (
-                <div key={index} className="shrink-0">
+          {railTrackOrder(direction).map((part) => {
+            if (part === "loop" && reduced) return null;
+            const cards = Array.from({ length: repeat }, (_, copy) =>
+              items.map((item, index) => (
+                <div key={`${copy}-${index}`} className="shrink-0">
                   {item}
                 </div>
-              ))}
-            </div>
-          )}
+              )),
+            );
+            if (part === "live") {
+              return (
+                <div key={part} data-rail-set="" className="flex gap-4 pr-4">
+                  {cards}
+                </div>
+              );
+            }
+            return (
+              <div key={part} className="flex gap-4 pr-4" aria-hidden="true" inert>
+                {cards}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -79,6 +79,7 @@ export default function HomePage() {
 
       <Shell className="pb-4">
         <AutoRail
+          direction="left"
           label="Productos destacados"
           title={
             <h2 id="destacados" className="font-serif text-4xl">

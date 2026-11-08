@@ -97,6 +97,7 @@ button.bg-ink:active {
 
 .no-scrollbar {
   scrollbar-width: none;
+  scroll-behavior: auto;
 }
 
 .no-scrollbar::-webkit-scrollbar {

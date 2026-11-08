@@ -30,6 +30,7 @@ export function CategoryRail({ departments }: { departments: HomeDepartment[] })
   return (
     <div className={animate ? (direction === "forward" ? "rail-in" : "rail-back") : undefined} key={openId ?? "inicio"}>
       <AutoRail
+        direction="right"
         label={current ? current.title : "Categorías"}
         title={
           <div className="flex min-w-0 flex-wrap items-center gap-3">

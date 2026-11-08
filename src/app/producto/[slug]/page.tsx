@@ -16,12 +16,15 @@ import {
   type ProductSuggestionGroup,
 } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { prerenderProductParams } from "@/lib/prerender-paths";
 import type { PublicProduct } from "@/types/catalog";
 
 type ProductParams = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return getCatalog().map((product) => ({ slug: product.slug }));
+  const params = prerenderProductParams(getCatalog());
+  if (params.length > 0) return params;
+  return [{ slug: "sin-producto" }];
 }
 
 export async function generateMetadata({ params }: ProductParams): Promise<Metadata> {

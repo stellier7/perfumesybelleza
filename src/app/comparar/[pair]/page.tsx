@@ -10,16 +10,14 @@ import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
 import { formatSize, nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { prerenderComparisonParams } from "@/lib/prerender-paths";
 import { faqJsonLd } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
 
 type PairParams = { params: Promise<{ pair: string }> };
 
 export function generateStaticParams() {
-  const pairs = getComparisonPairs().map((pair) => ({ pair: pair.slug }));
-  // Cache Components exige al menos un resultado aunque todavía no haya comparaciones.
-  if (pairs.length > 0) return pairs;
-  return [{ pair: "sin-comparaciones" }];
+  return prerenderComparisonParams(getComparisonPairs().map((pair) => pair.slug));
 }
 
 export async function generateMetadata({ params }: PairParams): Promise<Metadata> {
