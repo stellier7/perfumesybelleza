@@ -1,0 +1,1050 @@
+{
+  "catalogId": 742,
+  "catalogName": "Skincare coreano",
+  "sourceUrl": "https://distribuidorasbc.com/catalogo/742",
+  "currency": "HNL",
+  "count": 60,
+  "note": "Selección de skincare coreano. La mayoría ya estaba en Cuidado Personal.",
+  "products": [
+    {
+      "id": 18460,
+      "sku": "8809640737190",
+      "name": "Azelaic Acid 10 Hyaluron Redness Soothing Serum [30ml]",
+      "brand": "Anua",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 454,
+          "salePrice": 681
+        },
+        {
+          "wholesalePrice": 598,
+          "salePrice": 957
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809640737190/XDY5CygN7LMure7Fs4iEg0uxyKZj7Vv5Zt3bsYMV.jpg"
+      ]
+    },
+    {
+      "id": 18461,
+      "sku": "8809640732829",
+      "name": "Heartleaf Pore Control Cleansing Oil [200ml]",
+      "brand": "Anua",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 411,
+          "salePrice": 658
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809640732829/3GYvCeAIh4shhTKsEmLRlUEo5M2qNY5rpmPgFBkN.jpg"
+      ]
+    },
+    {
+      "id": 18478,
+      "sku": "8809640730092",
+      "name": "Heartleaf 77 Soothing Toner [2025 Version - 250ml]",
+      "brand": "Anua",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 529,
+          "salePrice": 847
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809640730092/V0vMDvmBkSgCSb2hMkz4CY0Jnf7iEIKhxEUpm5J1.png"
+      ]
+    },
+    {
+      "id": 23980,
+      "sku": "8809640734427",
+      "name": "ESPUMA LIMPIADORA PROFUNDA POROS HOJA DE CORAZÓN Y QUERCETINOL",
+      "brand": "Anua",
+      "subcategory": "Limpiador Facial",
+      "prices": [
+        {
+          "wholesalePrice": 294,
+          "salePrice": 441
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809640734427/B7iuddXWVYElnqJjdCaPYpPkG0rlT4x01vJUU26s.jpg"
+      ]
+    },
+    {
+      "id": 23982,
+      "sku": "8809640734526",
+      "name": "SÉRUM NIACINAMIDA 10 TXA 4",
+      "brand": "Anua",
+      "subcategory": "Suero Facial",
+      "prices": [
+        {
+          "wholesalePrice": 454,
+          "salePrice": 681
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809640734526/5ksoEHtrE8SGgCgQtPJpLYll360zmmdzqVmSIbeJ.jpg"
+      ]
+    },
+    {
+      "id": 18470,
+      "sku": "8809864766884",
+      "name": "Matte Sun Stick [18g]",
+      "brand": "Beauty of Joseon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 446,
+          "salePrice": 714
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809864766884/3zCGZCTcTJlJaxB3w1kSJaZh4F7xGxzYndhnMkim.jpg",
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809864766884/Kg8mLoQufYdFbDpSbfzpofPFE7RI3Ek9Y2dLwsPt.jpg"
+      ]
+    },
+    {
+      "id": 18471,
+      "sku": "8809782555508",
+      "name": "Relief Sun [50ml]",
+      "brand": "Beauty of Joseon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 394,
+          "salePrice": 591
+        },
+        {
+          "wholesalePrice": 448,
+          "salePrice": 717
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809782555508/AVSAeEk17VUsqs2MgyhkkQzNImsm9oj8NJgPsGhn.jpg",
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809782555508/JGx1KGZ4hW8OFFZ8g747tGrktGbJVP6ipabC7WKL.jpg"
+      ]
+    },
+    {
+      "id": 18472,
+      "sku": "8809525249565",
+      "name": "Dynasty Cream [50g]",
+      "brand": "Beauty of Joseon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 600,
+          "salePrice": 960
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809525249565/E5ufljcTTEJcICo0YT7zxbgOpyXx5gTSai0YrBvt.jpg"
+      ]
+    },
+    {
+      "id": 18473,
+      "sku": "8809968130239",
+      "name": "Glow Replenishing Rice Milk [150ml]",
+      "brand": "Beauty of Joseon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 450,
+          "salePrice": 720
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809968130239/PumnhHSRorSMMtgT11vyljWw7YteFMwC5KHpjC95.jpg"
+      ]
+    },
+    {
+      "id": 23991,
+      "sku": "8809968132523",
+      "name": "PARCHES PARA OJERAS REVITALIZANTES",
+      "brand": "Beauty of Joseon",
+      "subcategory": "Mascarilla Facial",
+      "prices": [
+        {
+          "wholesalePrice": 437,
+          "salePrice": 656
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809968132523/QIKBYU1jE7OW1E4w13QdLG8Q5LbnEotXePWgA60L.jpg"
+      ]
+    },
+    {
+      "id": 18464,
+      "sku": "8809416470511",
+      "name": "Low pH Good Morning Gel Cleanser [150ml]",
+      "brand": "COSRX",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 252,
+          "salePrice": 404
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809416470511/9gNLUmlnocPNJMBNsbZbgEt4rNRWdeZxNTByQ8Qa.jpg"
+      ]
+    },
+    {
+      "id": 18468,
+      "sku": "8809416470016",
+      "name": "Advanced Snail 92 All In One Cream [100g]",
+      "brand": "COSRX",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 471,
+          "salePrice": 707
+        },
+        {
+          "wholesalePrice": 476,
+          "salePrice": 762
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809416470016/2zoVtmupBtbJfS7zsWIVTZbZBnzpoR0EF4GpdD8c.png",
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809416470016/GMfMuKANwJXLlgRzPKgbEd6swvvI8foO6pY4HZWA.png",
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809416470016/yGXO99pUTfxHN9JCozs7POvCrdextdZEAFItjrOi.png"
+      ]
+    },
+    {
+      "id": 18469,
+      "sku": "8809416470009",
+      "name": "Advanced Snail 96 Mucin Power Essence [100ml]",
+      "brand": "COSRX",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 424,
+          "salePrice": 679
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809416470009/pHGHj3VXuoFFGbQYSe3F4D3eqKZDA1WyDeKbY6Ad.png"
+      ]
+    },
+    {
+      "id": 23988,
+      "sku": "8809598452305",
+      "name": "ADVANCED SNAIL PARCHES DE HIDROGEL PARA OJOS",
+      "brand": "COSRX",
+      "subcategory": "Mascarilla Facial",
+      "prices": [
+        {
+          "wholesalePrice": 529,
+          "salePrice": 794
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809598452305/TZpbUUowD5RWk2lg7mgoWuVdysrM0VBgJkvveTFZ.jpg"
+      ]
+    },
+    {
+      "id": 18431,
+      "sku": "8809732910760",
+      "name": "Glacier Water Hyaluronic Acid Serum Jumbo [300ml]",
+      "brand": "mixsoon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 467,
+          "salePrice": 748
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809732910760/xp2c8LybveO6tqOB1jW3oLxOOMuOpPZbYmqULP2z.jpg"
+      ]
+    },
+    {
+      "id": 18432,
+      "sku": "8809732911873",
+      "name": "Bean Cleansing Oil Jumbo [195ml]",
+      "brand": "mixsoon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 377,
+          "salePrice": 566
+        },
+        {
+          "wholesalePrice": 429,
+          "salePrice": 687
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809732911873/K8HXMO69Kda7pnB2jV2SPDpWkwpQ8Z8ZRyIdtLac.jpg"
+      ]
+    },
+    {
+      "id": 18433,
+      "sku": "8809732910159",
+      "name": "Bean Essence [50ml]",
+      "brand": "mixsoon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 615,
+          "salePrice": 900
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809732910159/CWjxekMDTv0lr3hmn5kncHjm8VIRw13ZsOba2Lft.jpg"
+      ]
+    },
+    {
+      "id": 18434,
+      "sku": "8809732912214",
+      "name": "Centella Cleansing Foam [2024 Version - 150ml]",
+      "brand": "mixsoon",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 310,
+          "salePrice": 496
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809732912214/gaWXXpT59TFcIHKpDGGQV2XP58IMhpB1Fz7TmtOe.jpg"
+      ]
+    },
+    {
+      "id": 23989,
+      "sku": "8809732914584",
+      "name": "SÉRUM SOLAR DE FRIJOL",
+      "brand": "mixsoon",
+      "subcategory": "Protector Solar",
+      "prices": [
+        {
+          "wholesalePrice": 256,
+          "salePrice": 384
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809732914584/FSmMsbBxBB7cuYw47ablw2xBx6AerfOnIZTCMBi2.jpg"
+      ]
+    },
+    {
+      "id": 18435,
+      "sku": "8809576261653",
+      "name": "Madagascar Centella Poremizing Deep Cleansing Foam [125ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 275,
+          "salePrice": 413
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261653/HQ9V3A94GfXxAOc39cOEuIiE9Hc0QuEC7Wujrwde.jpg"
+      ]
+    },
+    {
+      "id": 18437,
+      "sku": "8809576261646",
+      "name": "Madagascar Centella Poremizing Light Gel Cream [75ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 343,
+          "salePrice": 515
+        },
+        {
+          "wholesalePrice": 420,
+          "salePrice": 729
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261646/SlE6RHesyBjyKMsnXcf7bMB4acWdU7MbufW5BBUJ.jpg"
+      ]
+    },
+    {
+      "id": 18439,
+      "sku": "8809913832850",
+      "name": "Madagascar Centella Hyalu-Cica Gentle Cleansing Milk [200ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 386,
+          "salePrice": 579
+        },
+        {
+          "wholesalePrice": 420,
+          "salePrice": 672
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913832850/EAEO71rlJUaD3ubmVGrff0poyUsmIc85hfl41USq.jpg"
+      ]
+    },
+    {
+      "id": 18440,
+      "sku": "8809576261493",
+      "name": "Madagascar Centella Hyalu-Cica Moisture Cream [75ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 406,
+          "salePrice": 609
+        },
+        {
+          "wholesalePrice": 450,
+          "salePrice": 720
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261493/4ITaVJB6UwoeLG1zGpE2yM2nHPWg8Ht42D2Q49Up.png"
+      ]
+    },
+    {
+      "id": 18442,
+      "sku": "8809576261455",
+      "name": "Madagascar Centella Poremizing Clear Toner [210ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 341,
+          "salePrice": 512
+        },
+        {
+          "wholesalePrice": 379,
+          "salePrice": 607
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261455/PzUPinJyKweBVsPzK6QdBzNgOfwNzgpvfzFC1pG3.jpg"
+      ]
+    },
+    {
+      "id": 18443,
+      "sku": "8809576260441",
+      "name": "Madagascar Centella Cream [75ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 478,
+          "salePrice": 765
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576260441/egKljkNfQhIx9fNH5foeJcARvrHsaIOtBfjMEC6y.jpg"
+      ]
+    },
+    {
+      "id": 18444,
+      "sku": "8809913830641",
+      "name": "Madagascar Centella Double Cleansing Duo Set [2 pcs]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 578,
+          "salePrice": 867
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830641/h3biWZNrLCDbLwDlgajoX9ffz3VMwHkrGZgrHv1d.jpg"
+      ]
+    },
+    {
+      "id": 18445,
+      "sku": "8809576260700",
+      "name": "Madagascar Centella Hyalu-Cica Brightening Toner [210ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 364,
+          "salePrice": 546
+        },
+        {
+          "wholesalePrice": 407,
+          "salePrice": 652
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576260700/YvcZVPn2YwCu68C08iZYsVTPMN4TcrYXGHLnay9V.jpg"
+      ]
+    },
+    {
+      "id": 18446,
+      "sku": "8809576261486",
+      "name": "Madagascar Centella Hyalu-Cica First Ampoule Jumbo [100ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 460,
+          "salePrice": 690
+        },
+        {
+          "wholesalePrice": 514,
+          "salePrice": 823
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261486/bHGqzgufGJxTMrT4C6R3x4MOdkLmX7fb4a8mtD7Z.jpg"
+      ]
+    },
+    {
+      "id": 18448,
+      "sku": "8809576261301",
+      "name": "Madagascar Centella Air-Fit Suncream Plus [50ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 359,
+          "salePrice": 539
+        },
+        {
+          "wholesalePrice": 397,
+          "salePrice": 636
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261301/8Isiq9JaJvsEM0nki8zrYt3nz99LWilFSKobgnGq.jpg"
+      ]
+    },
+    {
+      "id": 18449,
+      "sku": "8809576260601",
+      "name": "Madagascar Centella Ampoule [55ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 332,
+          "salePrice": 532
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576260601/F31OuFoiRuJvhUiAG2bYlu0jteNNNwqP6IRrHq0H.jpg"
+      ]
+    },
+    {
+      "id": 18462,
+      "sku": "8809913831440",
+      "name": "Madagascar Centella Tone Brightening Glow Mask Set [25ml x 5 sheets]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 243,
+          "salePrice": 389
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913831440/cPJ6V11P1ajiJHtO8f6WyYQjsMkmHC5HGYV6fcqF.jpg"
+      ]
+    },
+    {
+      "id": 18475,
+      "sku": "8809913830337",
+      "name": "Madagascar Centella Tea-Trica Spot Cream [20ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 329,
+          "salePrice": 494
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830337/pRzlKOHP72dVNLyaFfRLEwxbAuJAnFa7uKzGsR3S.jpg"
+      ]
+    },
+    {
+      "id": 18476,
+      "sku": "8809913832041",
+      "name": "Madagascar Centella Hyalu-Cica Hydrating Mask Set [23ml x 5 sheets]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 243,
+          "salePrice": 389
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913832041/JJMkXgzVqqpzSZXlN2yJ1vvu2tWYtoIobWqA9cqk.jpg"
+      ]
+    },
+    {
+      "id": 18477,
+      "sku": "8809913830191",
+      "name": "Madagascar Centella Hyalu-Cica Cloudy Mist [2024 Version - 120ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 359,
+          "salePrice": 539
+        },
+        {
+          "wholesalePrice": 400,
+          "salePrice": 640
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830191/NFOnsBbmYQbA40kUKQQrYAWeZn56nKT3fESrxUxt.jpg"
+      ]
+    },
+    {
+      "id": 18484,
+      "sku": "8809576261141",
+      "name": "Madagascar Centella Toning Toner [210ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 353,
+          "salePrice": 530
+        },
+        {
+          "wholesalePrice": 393,
+          "salePrice": 629
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261141/XapgosqTc4NTg7KMbnV6nZyB3fx5QO7nyCOyu6mQ.jpg"
+      ]
+    },
+    {
+      "id": 18485,
+      "sku": "8809576261165",
+      "name": "Madagascar Centella Tone Brightening Boosting Toner [210ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 359,
+          "salePrice": 539
+        },
+        {
+          "wholesalePrice": 400,
+          "salePrice": 640
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261165/5o4dQQh4VIekPS7vGQsRn26rYm1Xfs8mXGGMvvlx.png"
+      ]
+    },
+    {
+      "id": 18486,
+      "sku": "8809913830627",
+      "name": "Madagascar Centella Tone Brightening Capsule Ampoule [50ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 364,
+          "salePrice": 583
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830627/OhUOAptZV3FsyW5UDkNwsxOEAJgwJST5uHdZNj7E.jpg"
+      ]
+    },
+    {
+      "id": 18487,
+      "sku": "8809576261615",
+      "name": "Madagascar Centella Tone Brightening Capsule Cream [75ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 433,
+          "salePrice": 650
+        },
+        {
+          "wholesalePrice": 479,
+          "salePrice": 767
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261615/ixNaAhYpq7rURWztmsgSzmR9qqwJdPEh0UCsfFqe.png"
+      ]
+    },
+    {
+      "id": 18488,
+      "sku": "8809576261189",
+      "name": "Madagascar Centella Tone Brightening Cleansing Gel Foam [125ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 263,
+          "salePrice": 395
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261189/lzmoHqObtHFvVF4Z0fTSmnYz9wsleBZwhs89mTFK.png"
+      ]
+    },
+    {
+      "id": 18489,
+      "sku": "8809576261660",
+      "name": "Madagascar Centella Tea-Trica Purifying Toner [210ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 394,
+          "salePrice": 591
+        },
+        {
+          "wholesalePrice": 443,
+          "salePrice": 709
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261660/AxCzAxJWwUadkYTLIgUexaCp5QkFtHcMzjTymLRO.jpg"
+      ]
+    },
+    {
+      "id": 18490,
+      "sku": "8809913832065",
+      "name": "Madagascar Centella Tea-Trica Relaxing Mask Set [24ml x 5 sheets]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 243,
+          "salePrice": 389
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913832065/sIuy55RpgBNsy5KCtUfOabHEV8twYfgAf56RCd5l.jpg"
+      ]
+    },
+    {
+      "id": 18491,
+      "sku": "8809576261677",
+      "name": "Madagascar Centella Tea-Trica Relief Ampoule [100ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 454,
+          "salePrice": 681
+        },
+        {
+          "wholesalePrice": 497,
+          "salePrice": 796
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261677/XOrRG033WDlkpjuIENekoKAQCY71nghfG0YV1CY2.jpg"
+      ]
+    },
+    {
+      "id": 18492,
+      "sku": "8809913830610",
+      "name": "Madagascar Centella Tea-Trica Soothing Sun Milk [50ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 359,
+          "salePrice": 539
+        },
+        {
+          "wholesalePrice": 507,
+          "salePrice": 812
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830610/WQejjQe3dt1HBI7umpyr0WwFnyo0lxN082MA1hSI.jpg"
+      ]
+    },
+    {
+      "id": 18493,
+      "sku": "8809913832515",
+      "name": "Lab in Nature Madagascar Centella Retinol 0.2 Boosting Shot Ampoule [30ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 366,
+          "salePrice": 549
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913832515/yj1X1rdb8ha5kyi190YLwr4RQfchVZJvZj02cxop.jpg"
+      ]
+    },
+    {
+      "id": 18494,
+      "sku": "8809913830047",
+      "name": "Madagascar Centella Tea-Trica B5 Cream [75ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 353,
+          "salePrice": 530
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830047/1YS0VtRqn4wRWRY3CfW1BifMVdgVmhV9B2xjK1ia.png"
+      ]
+    },
+    {
+      "id": 18495,
+      "sku": "8809576261714",
+      "name": "Madagascar Centella Tea-trica BHA Foam [125ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 284,
+          "salePrice": 426
+        },
+        {
+          "wholesalePrice": 314,
+          "salePrice": 503
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261714/HtXQsxRaxQfE3vb6vp6rFUh0ot9Pv8TWzVZWJywg.jpg"
+      ]
+    },
+    {
+      "id": 18496,
+      "sku": "8809913832867",
+      "name": "Madagascar Centella Tea-Trica Mild Peeling Gel [125ml]",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 401,
+          "salePrice": 642
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913832867/to8hTAEpDpuXNEEfe0KERaCeUdedbn5xWIiq8h4x.jpg"
+      ]
+    },
+    {
+      "id": 23766,
+      "sku": "8809576261110",
+      "name": "SKIN1004 MADAGASCAR CENTELLA ACEITE LIMPIADOR LIGERO 200ML",
+      "brand": "SKIN1004",
+      "subcategory": "Limpiador Facial",
+      "prices": [
+        {
+          "wholesalePrice": 349,
+          "salePrice": 524
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261110/lvqMYP5NJn7cTgrKzvtgNSdBiSSCBol518XeMPhm.jpg"
+      ]
+    },
+    {
+      "id": 23767,
+      "sku": "8809576261127",
+      "name": "SKIN1004 MADAGASCAR CENTELLA ESPUMA EN AMPOLLA 125ML",
+      "brand": "SKIN1004",
+      "subcategory": "Limpiador Facial",
+      "prices": [
+        {
+          "wholesalePrice": 287,
+          "salePrice": 431
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261127/r1FhQvo7z6qfQAyOjeQULoYXl1dQSPgz5M7x07WD.png"
+      ]
+    },
+    {
+      "id": 23768,
+      "sku": "8809576260663",
+      "name": "SKIN1004 MADAGASCAR CENTELLA AMPOLLA 100ML",
+      "brand": "SKIN1004",
+      "subcategory": "Suero Facial",
+      "prices": [
+        {
+          "wholesalePrice": 442,
+          "salePrice": 663
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576260663/uCqA8z6xSJYeceWDTM1rUDvEs3Na3h63uxk7noh5.png"
+      ]
+    },
+    {
+      "id": 23769,
+      "sku": "8809576261134",
+      "name": "SKIN1004 MADAGASCAR CENTELLA CREMA CALMANTE 75ML",
+      "brand": "SKIN1004",
+      "subcategory": "Crema Facial",
+      "prices": [
+        {
+          "wholesalePrice": 382,
+          "salePrice": 573
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261134/dDUVHP65XfwP8nETh46wsaEBa4atMP8mFBYdLSBS.jpg"
+      ]
+    },
+    {
+      "id": 23770,
+      "sku": "8809576261172",
+      "name": "SKIN1004 MADAGASCAR CENTELLA AMPOLLA EN CÁPSULAS ILUMINADORA DE TONO 100ML",
+      "brand": "SKIN1004",
+      "subcategory": "Suero Facial",
+      "prices": [
+        {
+          "wholesalePrice": 387,
+          "salePrice": 581
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261172/7FTRVe1LEtWD1Vptn2EUsbfvkD0UwO6VN36FIEcM.png"
+      ]
+    },
+    {
+      "id": 23771,
+      "sku": "8809576261622",
+      "name": "SKIN1004 MADAGASCAR CENTELLA PROTECTOR SOLAR TONE-UP ILUMINADOR DE TONO 50ML",
+      "brand": "SKIN1004",
+      "subcategory": "Protector Solar",
+      "prices": [
+        {
+          "wholesalePrice": 347,
+          "salePrice": 521
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261622/XHqdDXyAOCeop7brNkyjsWOoWbXbRgnwpBgNI8yB.jpg"
+      ]
+    },
+    {
+      "id": 23772,
+      "sku": "8809576261462",
+      "name": "SKIN1004 MADAGASCAR CENTELLA AMPOLLA FRESCA MINIMIZADORA DE POROS 100ML",
+      "brand": "SKIN1004",
+      "subcategory": "Suero Facial",
+      "prices": [
+        {
+          "wholesalePrice": 332,
+          "salePrice": 498
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261462/oXJ38UyahQWPeHc31lO0n64elSGpT65A6OXMKT48.png"
+      ]
+    },
+    {
+      "id": 23773,
+      "sku": "8809913831327",
+      "name": "SKIN1004 MADAGASCAR CENTELLA MASCARILLA CLARIFICANTE MINIMIZADORA DE POROS 23ML X 5UDS",
+      "brand": "SKIN1004",
+      "subcategory": "Mascarilla Facial",
+      "prices": [
+        {
+          "wholesalePrice": 213,
+          "salePrice": 320
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913831327/7iBHJSR1Y7rqepQSaQfHKKQydFkGghe6AgXb1RAf.png"
+      ]
+    },
+    {
+      "id": 23774,
+      "sku": "8809913832485",
+      "name": "SKIN1004 MADAGASCAR CENTELLA PROTECTOR SOLAR ACABADO ATERCIOPELADO MINIMIZADOR DE POROS 50ML",
+      "brand": "SKIN1004",
+      "subcategory": "Protector Solar",
+      "prices": [
+        {
+          "wholesalePrice": 364,
+          "salePrice": 546
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913832485/QZYmZEfdWCyArhx693EtxvKXqUA7cNq6Qnc0bEkj.jpg"
+      ]
+    },
+    {
+      "id": 23775,
+      "sku": "8809913833482",
+      "name": "SKIN1004 MADAGASCAR CENTELLA KIT DE VIAJE MINIMIZADOR DE POROS",
+      "brand": "SKIN1004",
+      "subcategory": "Suero Facial",
+      "prices": [
+        {
+          "wholesalePrice": 474,
+          "salePrice": 711
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913833482/cAd1wPKWRB10Fr9XVacGDayak9jQCDrmdV1ummOV.jpg"
+      ]
+    },
+    {
+      "id": 23776,
+      "sku": "8809576261691",
+      "name": "SKIN1004 PARCHE CUBRE IMPERFECCIONES 22UDS",
+      "brand": "SKIN1004",
+      "subcategory": "Mascarilla Facial",
+      "prices": [
+        {
+          "wholesalePrice": 95,
+          "salePrice": 143
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261691/X7KmizSQMEdvTudJwHHfT2iXhxe8CAlRaij8cvYx.png"
+      ]
+    },
+    {
+      "id": 23777,
+      "sku": "8809576261738",
+      "name": "SKIN1004 MADAGASCAR CENTELLA PROBIO-CICA TÓNICO ESENCIA 210ML",
+      "brand": "SKIN1004",
+      "subcategory": "Tonico Facial",
+      "prices": [
+        {
+          "wholesalePrice": 362,
+          "salePrice": 543
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809576261738/JtVL9IjQKdZnwXKBh5xtSk3DFYzLHLoKfPP3fgp6.png"
+      ]
+    },
+    {
+      "id": 23778,
+      "sku": "8809913830146",
+      "name": "SKIN1004 MADAGASCAR CENTELLA PROBIO-CICA AMPOLLA INTENSIVA 95ML",
+      "brand": "SKIN1004",
+      "subcategory": "Suero Facial",
+      "prices": [
+        {
+          "wholesalePrice": 534,
+          "salePrice": 801
+        }
+      ],
+      "images": [
+        "https://distribuidora-sbc-cdn.ingeniacode.com/images/distribuidorasbc/C11/8809913830146/qXZ1AWKhNevhcXB6uVLv5AxmbU2TnQndAgAAzB2W.jpg"
+      ]
+    }
+  ]
+}

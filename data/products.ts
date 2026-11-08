@@ -32907,7 +32907,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36551,7 +36551,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Mascarilla facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36593,7 +36593,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Protector solar",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36614,7 +36614,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Mascarilla facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36677,7 +36677,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36719,7 +36719,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Limpiador facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36824,7 +36824,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 195,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36845,7 +36845,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 195,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36866,7 +36866,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 30,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36887,7 +36887,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 30,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36909,7 +36909,7 @@ const careProducts: RawProduct[] = [
       sizeMl: null,
       sizeLabel: "100 g",
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36931,7 +36931,7 @@ const careProducts: RawProduct[] = [
       sizeMl: null,
       sizeLabel: "100 g",
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36952,7 +36952,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38001,7 +38001,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38695,7 +38695,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38716,7 +38716,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38737,7 +38737,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 30,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38758,7 +38758,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38779,7 +38779,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38800,7 +38800,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 20,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38821,7 +38821,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38842,7 +38842,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 95,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38863,7 +38863,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Tónico facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38884,7 +38884,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38905,7 +38905,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Protector solar",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38926,7 +38926,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 23,
       inStock: true,
-      category: "Mascarilla facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38947,7 +38947,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38968,7 +38968,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38989,7 +38989,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39010,7 +39010,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39031,7 +39031,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39052,7 +39052,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39073,7 +39073,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39094,7 +39094,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39115,7 +39115,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 125,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39136,7 +39136,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 200,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39157,7 +39157,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 200,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39178,7 +39178,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39199,7 +39199,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39220,7 +39220,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39241,7 +39241,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 120,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39262,7 +39262,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39283,7 +39283,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39304,7 +39304,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39325,7 +39325,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39346,7 +39346,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39367,7 +39367,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39388,7 +39388,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 125,
       inStock: true,
-      category: "Limpiador facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39409,7 +39409,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 200,
       inStock: true,
-      category: "Limpiador facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39430,7 +39430,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39451,7 +39451,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 20,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39472,7 +39472,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39493,7 +39493,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Mascarilla facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39514,7 +39514,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39535,7 +39535,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39556,7 +39556,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -39577,7 +39577,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 210,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -47501,7 +47501,7 @@ const careProducts: RawProduct[] = [
       sizeMl: null,
       sizeLabel: "50 g",
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -47627,7 +47627,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 250,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -53059,7 +53059,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 150,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -53081,7 +53081,7 @@ const careProducts: RawProduct[] = [
       sizeMl: null,
       sizeLabel: "18 g",
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -53123,7 +53123,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 300,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -57196,7 +57196,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 55,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -57217,7 +57217,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 75,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -57238,7 +57238,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 25,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -57259,7 +57259,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 23,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -57280,7 +57280,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 24,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -58410,10 +58410,11 @@ const careProducts: RawProduct[] = [
       id: "skin1004-tone-up-sunscreen",
       slug: "skin1004-tone-up-sunscreen",
       name: "Madagascar Centella Tone Brightening Tone-Up Sunscreen",
-      brand: "SKIN1004",
+      brand: "Skin1004",
       type: "beauty",
       gender: "unisex",
-      cost: 0,
+      cost: 347,
+      price: 608,
       images: ["/products/skin1004-tone-up-sunscreen.webp"],
       description: "Protector solar SKIN1004 Madagascar Centella Tone Brightening Tone-Up, de 50 ml, SPF 50+ PA++++. Es un filtro híbrido, físico y químico, con efecto aclarante e iluminador. Apto para todo tipo de piel, incluidas las sensibles, mixtas y grasas.",
       notes: {
@@ -58423,7 +58424,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: 50,
       inStock: true,
-      category: "Protector solar",
+      category: "Skincare coreano",
       tags: ["spf 50", "iluminador", "centella"]
     },
   {
@@ -58934,6 +58935,195 @@ const careProducts: RawProduct[] = [
       inStock: true,
       category: "Acondicionador",
       tags: ["árbol de té", "acondicionador"]
+    },
+  {
+      id: "heartleaf-pore-control-cleansing-oil-200ml",
+      slug: "heartleaf-pore-control-cleansing-oil-200ml",
+      name: "Heartleaf Pore Control Cleansing Oil [200ml]",
+      brand: "Anua",
+      type: "beauty",
+      gender: "unisex",
+      cost: 411,
+      price: 782,
+      images: ["/products/heartleaf-pore-control-cleansing-oil-200ml.webp"],
+      description: "Limpiador facial de 200 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 200,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "low-ph-good-morning-gel-cleanser-150ml",
+      slug: "low-ph-good-morning-gel-cleanser-150ml",
+      name: "Low pH Good Morning Gel Cleanser [150ml]",
+      brand: "Cosrx",
+      type: "beauty",
+      gender: "unisex",
+      cost: 252,
+      price: 480,
+      images: ["/products/low-ph-good-morning-gel-cleanser-150ml.webp"],
+      description: "Limpiador facial de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "centella-cleansing-foam-2024-version-150ml",
+      slug: "centella-cleansing-foam-2024-version-150ml",
+      name: "Centella Cleansing Foam [2024 Version - 150ml]",
+      brand: "Mixsoon",
+      type: "beauty",
+      gender: "unisex",
+      cost: 310,
+      price: 589,
+      images: ["/products/centella-cleansing-foam-2024-version-150ml.webp"],
+      description: "Limpiador facial de 150 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 150,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "madagascar-centella-poremizing-deep-cleansing-foam-125ml",
+      slug: "madagascar-centella-poremizing-deep-cleansing-foam-125ml",
+      name: "Madagascar Centella Poremizing Deep Cleansing Foam [125ml]",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 275,
+      price: 482,
+      images: ["/products/madagascar-centella-poremizing-deep-cleansing-foam-125ml.webp"],
+      description: "Limpiador facial de 125 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "madagascar-centella-tone-brightening-capsule-ampoule-50ml",
+      slug: "madagascar-centella-tone-brightening-capsule-ampoule-50ml",
+      name: "Madagascar Centella Tone Brightening Capsule Ampoule [50ml]",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 364,
+      price: 693,
+      images: ["/products/madagascar-centella-tone-brightening-capsule-ampoule-50ml.webp"],
+      description: "Suero facial de 50 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 50,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "lab-in-nature-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml",
+      slug: "lab-in-nature-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml",
+      name: "Lab in Nature Madagascar Centella Retinol 0.2 Boosting Shot Ampoule [30ml]",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 366,
+      price: 641,
+      images: ["/products/lab-in-nature-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml.webp"],
+      description: "Suero facial de 30 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 30,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "madagascar-centella-tea-trica-bha-foam-125ml",
+      slug: "madagascar-centella-tea-trica-bha-foam-125ml",
+      name: "Madagascar Centella Tea-trica BHA Foam [125ml]",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 284,
+      price: 497,
+      images: ["/products/madagascar-centella-tea-trica-bha-foam-125ml.webp"],
+      description: "Limpiador facial de 125 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "madagascar-centella-tea-trica-bha-foam-125ml-2",
+      slug: "madagascar-centella-tea-trica-bha-foam-125ml-2",
+      name: "Madagascar Centella Tea-trica BHA Foam [125ml]",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 314,
+      price: 598,
+      images: ["/products/madagascar-centella-tea-trica-bha-foam-125ml-2.webp"],
+      description: "Limpiador facial de 125 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "madagascar-centella-tea-trica-mild-peeling-gel-125ml",
+      slug: "madagascar-centella-tea-trica-mild-peeling-gel-125ml",
+      name: "Madagascar Centella Tea-Trica Mild Peeling Gel [125ml]",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      cost: 401,
+      price: 763,
+      images: ["/products/madagascar-centella-tea-trica-mild-peeling-gel-125ml.webp"],
+      description: "Exfoliante facial de 125 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
     },
 ];
 
