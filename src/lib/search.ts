@@ -67,11 +67,79 @@ export function queryNamesOriginal(query: string, original: SearchRecord): boole
   );
 }
 
-function byCheapest(left: SearchRecord, right: SearchRecord): number {
-  const leftPrice = left.price > 0 ? left.price : Number.POSITIVE_INFINITY;
-  const rightPrice = right.price > 0 ? right.price : Number.POSITIVE_INFINITY;
-  if (leftPrice !== rightPrice) return leftPrice - rightPrice;
-  return left.name.localeCompare(right.name, "es");
+const NAME_NOISE = new Set([
+  "edp",
+  "edt",
+  "edc",
+  "sp",
+  "parfum",
+  "eau",
+  "de",
+  "toilette",
+  "pour",
+  "homme",
+  "femme",
+  "men",
+  "man",
+  "ml",
+  "oz",
+  "set",
+  "est",
+]);
+
+function coreName(record: SearchRecord): string {
+  const brand = fold(record.brand);
+  const words = fold(record.name)
+    .split(" ")
+    .filter((word) => word.length > 0 && word !== brand && !NAME_NOISE.has(word) && !/^\d+(?:[.,]\d+)?$/.test(word));
+  return words.join(" ");
+}
+
+/** Qué tanto el producto es lo que se escribió. 100 es el nombre, sin la marca ni el tamaño. */
+function resemblance(record: SearchRecord, query: string): number {
+  const folded = fold(query);
+  const name = fold(record.name);
+  const full = fold(`${record.brand} ${record.name}`);
+  const core = coreName(record);
+  if (core === folded || name === folded || full === folded) return 100;
+  if (fold(record.brand) === folded) return 60;
+  if (core.startsWith(`${folded} `) || name.startsWith(`${folded} `)) return 92;
+  if (core.includes(folded) || name.includes(folded) || full.includes(folded)) {
+    const extra = Math.max(0, core.split(" ").filter(Boolean).length - folded.split(" ").filter(Boolean).length);
+    return Math.max(70, 88 - extra * 4);
+  }
+  const words = folded.split(" ").filter((word) => word.length >= 2);
+  if (words.length === 0) return 0;
+  const tokens = full.split(" ").filter((word) => word.length > 0);
+  let covered = 0;
+  for (const word of words) {
+    if (tokens.some((token) => token === word || token.includes(word) || word.includes(token))) {
+      covered += 1;
+      continue;
+    }
+    if (tokens.some((token) => editDistance(token, word) <= 1)) covered += 0.6;
+  }
+  const ratio = Math.round((covered / words.length) * 50);
+  if (fold(record.brand) === folded) return Math.max(60, ratio);
+  return ratio;
+}
+
+function byPrompt(query: string): (left: SearchRecord, right: SearchRecord) => number {
+  return (left, right) => {
+    const closeness = resemblance(right, query) - resemblance(left, query);
+    if (closeness !== 0) return closeness;
+    const trending = right.trending - left.trending;
+    if (trending !== 0) return trending;
+    const side =
+      Number(left.category === "Set" || left.category === "Desodorante") -
+      Number(right.category === "Set" || right.category === "Desodorante");
+    if (side !== 0) return side;
+    const coreLength = coreName(left).length - coreName(right).length;
+    if (coreLength !== 0) return coreLength;
+    const nameLength = fold(left.name).length - fold(right.name).length;
+    if (nameLength !== 0) return nameLength;
+    return left.name.localeCompare(right.name, "es") || left.id.localeCompare(right.id);
+  };
 }
 
 function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
@@ -182,9 +250,10 @@ export function searchCatalog(
   const trimmed = query.trim();
   const hits = matchRecords(scoped, trimmed);
   const byId = new Map(scoped.map((record) => [record.id, record]));
+  const order = byPrompt(trimmed);
   const originals = hits.filter((hit) => hit.type === "designer" || hit.isReference);
-  const stockedOriginals = originals.filter((hit) => !hit.isReference);
-  const missingOriginals = originals.filter((hit) => hit.isReference);
+  const stockedOriginals = originals.filter((hit) => !hit.isReference).sort(order);
+  const missingOriginals = originals.filter((hit) => hit.isReference).sort(order);
   const alternativeIds = new Set<string>();
   for (const original of originals) {
     for (const id of original.alternativeIds) alternativeIds.add(id);
@@ -210,9 +279,7 @@ export function searchCatalog(
     ];
   });
   const alternativeSet = new Set(alternatives.map((item) => item.id));
-  const products = hits
-    .filter((hit) => !hit.isReference && !alternativeSet.has(hit.id))
-    .sort(byCheapest);
+  const products = hits.filter((hit) => !hit.isReference && !alternativeSet.has(hit.id)).sort(order);
   return {
     query: trimmed,
     products,

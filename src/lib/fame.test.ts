@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { buildCatalog } from "./catalog-model";
 import { applyCatalogFilters, parseCatalogFilters } from "./catalog-query";
-import { compareFame, fameRank, pickFamous, type FameSubject } from "./fame";
+import { compareFame, fameRank, pickFamous, trendingScore, type FameSubject } from "./fame";
 import type { RawProduct } from "../types/catalog";
 
 function item(id: string, brand: string, name: string, category = "Eau de Parfum"): FameSubject {
@@ -27,6 +27,18 @@ function raw(id: string, brand: string, name: string, type: RawProduct["type"], 
     tags: [],
   };
 }
+
+test("la tendencia baja desde la línea más buscada hasta el producto desconocido", () => {
+  const sauvage = trendingScore(item("sauvage", "Dior", "Sauvage"));
+  const yara = trendingScore(item("yara", "Lattafa", "Yara"));
+  const maca = trendingScore(item("maca", "Karseell", "Maca shampoo", "Shampoo"));
+  const cuba = trendingScore(item("cuba", "Cuba", "Jungle Zebra"));
+  assert.equal(sauvage, 100);
+  assert.ok(sauvage > yara);
+  assert.ok(yara > maca);
+  assert.ok(maca > cuba);
+  assert.ok(cuba <= 20);
+});
 
 test("sauvage, good girl, libre y yara salen antes que un perfume desconocido", () => {
   const products = [

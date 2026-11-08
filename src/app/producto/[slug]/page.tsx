@@ -82,6 +82,7 @@ async function ProductScreen({ params }: ProductParams) {
             </p>
             <h1 className="mt-2 font-serif text-4xl leading-none md:text-6xl">{product.name}</h1>
             <p className="mt-2 text-muted">{product.brand}</p>
+            <p className="mt-2 text-sm text-gold">Tendencia {product.trending}</p>
           </div>
           {product.isReference ? (
             <p className="mt-6 leading-7">

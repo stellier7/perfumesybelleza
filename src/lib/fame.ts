@@ -223,6 +223,18 @@ export function fameRank(product: Pick<FameSubject, "brand" | "name">): number {
   return bestHit(product).rank;
 }
 
+/**
+ * 100 es la línea más buscada. Una casa conocida queda cerca de 40
+ * y un producto sin referencia queda en 12.
+ */
+export function trendingScore(product: Pick<FameSubject, "brand" | "name">): number {
+  const rank = fameRank(product);
+  if (rank >= FAME_UNKNOWN) return 12;
+  if (rank >= 200) return 40;
+  if (rank >= 100) return Math.max(50, 68 - Math.round((rank - 100) / 4));
+  return 100 - Math.min(28, rank - 1);
+}
+
 export function fameKey(product: FameSubject): string {
   const hit = bestHit(product);
   if (hit.key) return hit.key;

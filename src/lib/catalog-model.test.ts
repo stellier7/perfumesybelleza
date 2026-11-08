@@ -375,17 +375,24 @@ test("la categoría Inspiraciones muestra solo los que tienen inspiración", () 
   assert.equal(result.items.some((item) => item.id === "bleu-de-chanel"), false);
 });
 
-test("la búsqueda pone primero el perfume más barato", () => {
+test("la búsqueda pone primero lo que más se parece y desempata con la tendencia", () => {
   const records = buildCatalog([
-    product({ id: "asad-caro", name: "Asad", brand: "Lattafa", type: "arabic", cost: 832, price: 1581 }),
-    product({ id: "asad-barato", name: "Asad", brand: "Lattafa", type: "arabic", cost: 744, price: 1412 }),
+    product({ id: "esraa", name: "Esraa", brand: "Lattafa", type: "arabic", cost: 100, price: 200 }),
+    product({ id: "yara", name: "Yara", brand: "Lattafa", type: "arabic", cost: 900, price: 1800 }),
+    product({ id: "moi", name: "Yara Moi", brand: "Lattafa", type: "arabic", cost: 1200, price: 2400 }),
+    product({ id: "elixir", name: "Yara Elixir", brand: "Lattafa", type: "arabic", cost: 1500, price: 3000 }),
+    product({ id: "set-yara", name: "LATTAFA SET YARA 100ML", brand: "Lattafa", type: "arabic", category: "Set", cost: 80, price: 160 }),
+    product({ id: "candy", name: "LATTAFA YARA CANDY EDP SP", brand: "Lattafa", type: "arabic", cost: 50, price: 120 }),
+    product({ id: "bottle", name: "LATTAFA YARA EDP SP", brand: "Lattafa", type: "arabic", cost: 800, price: 1600 }),
   ]).map(toSearchRecord);
-  const result = searchCatalog(records, "Assad");
-  assert.deepEqual(
-    result.products.map((item) => item.id),
-    ["asad-barato", "asad-caro"],
-  );
-  assert.equal(suggestionItems(result, 2)[0]?.id, "asad-barato");
+  assert.ok((records.find((item) => item.id === "yara")?.trending ?? 0) > (records.find((item) => item.id === "esraa")?.trending ?? 0));
+  const brand = searchCatalog(records, "Lattafa");
+  assert.ok(brand.products.findIndex((item) => item.id === "yara") < brand.products.findIndex((item) => item.id === "esraa"));
+  assert.equal(suggestionItems(brand, 1)[0]?.id, "yara");
+  assert.ok(brand.products.findIndex((item) => item.id === "bottle") < brand.products.findIndex((item) => item.id === "candy"));
+  assert.ok(brand.products.findIndex((item) => item.id === "bottle") < brand.products.findIndex((item) => item.id === "set-yara"));
+  assert.equal(searchCatalog(records, "Yara Elixir").products[0]?.id, "elixir");
+  assert.equal(searchCatalog(records, "Yara").products[0]?.id, "yara");
 });
 
 test("perfumes y cuidado personal no comparten marcas ni resultados", () => {

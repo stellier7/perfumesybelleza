@@ -75,7 +75,7 @@ function SearchForm({
                   <span>
                     <span className="block font-medium">{item.name}</span>
                     <span className="block text-xs text-muted">
-                      {item.brand} · {suggestionKind(item)}
+                      {item.brand} · Tendencia {item.trending} · {suggestionKind(item)}
                       {!item.inStock && !item.isReference ? " · Agotado" : ""}
                     </span>
                   </span>

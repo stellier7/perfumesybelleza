@@ -76,6 +76,8 @@ export type PublicProduct = {
   cons?: string[];
   verdict?: string;
   featured?: boolean;
+  /** 100 es lo más buscado. 12 es un producto sin referencia de tendencia. */
+  trending: number;
   isReference: boolean;
   inspiredBy: FragranceRef[];
   alternatives: FragranceRef[];
@@ -90,6 +92,7 @@ export type SearchRecord = {
   type: ProductType;
   gender: Gender;
   price: number;
+  trending: number;
   image: string | null;
   inStock: boolean;
   isReference: boolean;

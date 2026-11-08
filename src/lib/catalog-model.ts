@@ -1,5 +1,6 @@
 import { TYPE_LABEL, GENDER_LABEL } from "@/config";
 import { catalogSection } from "@/lib/catalog-section";
+import { trendingScore } from "@/lib/fame";
 import { shelfPrice } from "@/lib/pricing";
 import { assertNever, fold, slugify } from "@/lib/text";
 import type {
@@ -58,6 +59,7 @@ function toPublicBase(raw: RawProduct): PublicProduct {
     cons: raw.cons,
     verdict: raw.verdict,
     featured: raw.featured,
+    trending: trendingScore(raw),
     isReference: false,
     inspiredBy: [],
     alternatives: [],
@@ -102,6 +104,7 @@ function referenceProduct(name: string, brand: string): PublicProduct {
     inStock: false,
     category: "Referencia",
     tags: [name, brand].filter(Boolean),
+    trending: trendingScore({ brand, name }),
     isReference: true,
     inspiredBy: [],
     alternatives: [],
@@ -302,6 +305,7 @@ export function toSearchRecord(product: PublicProduct): SearchRecord {
     type: product.type,
     gender: product.gender,
     price: product.price,
+    trending: product.trending,
     image: product.images[0] ?? null,
     inStock: product.inStock,
     isReference: product.isReference,
