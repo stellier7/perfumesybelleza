@@ -22,7 +22,7 @@ test("el inicio abre perfumes en árabes, diseñador, sets e inspiraciones", () 
   const departments = homeDepartments(shelf);
   assert.deepEqual(
     departments.map((department) => department.title),
-    ["Perfumes", "Cuidado personal"],
+    ["Perfumes", "Cuidado personal", "Skincare coreano"],
   );
   const perfumes = departments[0];
   assert.ok(perfumes);
@@ -38,19 +38,50 @@ test("el inicio abre perfumes en árabes, diseñador, sets e inspiraciones", () 
   assert.doesNotMatch(setsHref, /tipo=/);
 });
 
-test("cuidado personal pone skincare primero y suma las categorías nuevas", () => {
+test("cuidado personal queda en cabello y cuerpo, y suma las categorías nuevas", () => {
   const cuidado = homeDepartments([...shelf, item("beauty", "Gel de baño")]).find(
     (department) => department.id === "cuidado",
   );
   assert.ok(cuidado);
   assert.deepEqual(
     cuidado.children.map((card) => card.title),
-    ["Skincare coreano", "Acondicionador", "Gel de baño", "Shampoo"],
+    ["Acondicionador", "Gel de baño", "Shampoo"],
   );
-  assert.equal(cuidado.children[0]?.text, "2 productos");
-  const korean = decodeURIComponent(cuidado.children[0]?.href.replaceAll("+", " ") ?? "");
-  assert.match(korean, /seccion=cuidado/);
-  assert.match(korean, /categoria=Skincare coreano/);
+  assert.equal(cuidado.text, "Cabello, cuerpo y el cuidado de todos los días.");
+});
+
+test("belleza agrupa maquillaje y el resto de belleza, y skincare coreano va aparte", () => {
+  const departments = homeDepartments([
+    ...shelf,
+    item("beauty", "Maquillaje"),
+    item("beauty", "Maquillaje"),
+    item("beauty", "Uñas"),
+    item("beauty", "Crema facial"),
+  ]);
+  assert.deepEqual(
+    departments.map((department) => department.title),
+    ["Perfumes", "Cuidado personal", "Belleza", "Skincare coreano"],
+  );
+  const belleza = departments.find((department) => department.id === "belleza");
+  assert.ok(belleza);
+  assert.equal(belleza.image, "/home/cuidado-maquillaje.webp");
+  assert.deepEqual(
+    belleza.children.map((card) => card.title),
+    ["Maquillaje", "Uñas", "Crema facial"],
+  );
+  assert.equal(belleza.children[0]?.text, "2 productos");
+  const makeup = decodeURIComponent(belleza.children[0]?.href.replaceAll("+", " ") ?? "");
+  assert.match(makeup, /seccion=cuidado/);
+  assert.match(makeup, /categoria=Maquillaje/);
+  const korean = departments.find((department) => department.id === "skincare-coreano");
+  assert.ok(korean);
+  assert.deepEqual(korean.children, []);
+  assert.equal(korean.image, "/home/cuidado-skincare-coreano.webp");
+  const href = decodeURIComponent(korean.href.replaceAll("+", " "));
+  assert.match(href, /seccion=cuidado/);
+  assert.match(href, /categoria=Skincare coreano/);
+  const cuidado = departments.find((department) => department.id === "cuidado");
+  assert.deepEqual(cuidado?.children.map((card) => card.title), ["Acondicionador", "Shampoo"]);
 });
 
 test("un estante sin sets ni inspiraciones no inventa esos botones", () => {

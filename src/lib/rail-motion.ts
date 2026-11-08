@@ -31,6 +31,13 @@ export function railOrigin(width: number, direction: RailDirection): number {
   }
 }
 
+/** Deja la posición dentro de una copia. El duplicado se ve igual, así que el salto no se nota. */
+export function containRail(position: number, width: number): number {
+  if (width <= 0) return 0;
+  const wrapped = position % width;
+  return wrapped < 0 ? wrapped + width : wrapped;
+}
+
 /** Avanza en píxeles reales, fracciones incluidas, y salta al otro extremo del loop. */
 export function advanceRail(
   position: number,
@@ -50,6 +57,5 @@ export function advanceRail(
     default:
       return assertNever(direction);
   }
-  const wrapped = next % width;
-  return wrapped < 0 ? wrapped + width : wrapped;
+  return containRail(next, width);
 }

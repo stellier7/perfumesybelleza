@@ -1,9 +1,22 @@
 "use client";
 
 import { Children, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
-import { advanceRail, railOrigin, railTrackOrder, type RailDirection } from "@/lib/rail-motion";
+import { advanceRail, containRail, railOrigin, railTrackOrder, type RailDirection } from "@/lib/rail-motion";
 
 const SPEED = 48;
+
+function wheelScale(mode: number, clientWidth: number): number {
+  switch (mode) {
+    case WheelEvent.DOM_DELTA_PIXEL:
+      return 1;
+    case WheelEvent.DOM_DELTA_LINE:
+      return 16;
+    case WheelEvent.DOM_DELTA_PAGE:
+      return clientWidth;
+    default:
+      return 1;
+  }
+}
 
 export function AutoRail({
   label,
@@ -21,7 +34,13 @@ export function AutoRail({
   const reasons = useRef(new Set<string>());
   const timers = useRef(new Map<string, number>());
   const manual = useRef(false);
-  const drag = useRef<{ x: number; left: number; moved: boolean } | null>(null);
+  const drag = useRef<{
+    x: number;
+    y: number;
+    left: number;
+    moved: boolean;
+    axis: "x" | "y" | null;
+  } | null>(null);
   const detachDrag = useRef<(() => void) | null>(null);
   const suppressClick = useRef(false);
   const [paused, setPaused] = useState(false);
@@ -71,16 +90,50 @@ export function AutoRail({
       if (running) {
         offset.current = advanceRail(offset.current, width, (SPEED * dt) / 1000, direction);
         el.scrollLeft = offset.current;
-      } else if (seeded) {
+      } else if (seeded && reasons.current.size === 0) {
+        // Con el dedo o la rueda puestos, la posición la lleva el gesto.
+        // Leer scrollLeft aquí la devolvía al borde y el carril se sentía trabado.
         offset.current = el.scrollLeft;
       }
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
+    const pauseFor = (reason: string, ms: number) => {
+      reasons.current.add(reason);
+      const previous = timers.current.get(reason);
+      if (previous) window.clearTimeout(previous);
+      timers.current.set(
+        reason,
+        window.setTimeout(() => {
+          reasons.current.delete(reason);
+          timers.current.delete(reason);
+        }, ms),
+      );
+    };
+    const onWheel = (event: WheelEvent) => {
+      const horizontal = event.shiftKey && event.deltaX === 0 ? event.deltaY : event.deltaX;
+      const vertical = event.shiftKey && event.deltaX === 0 ? 0 : event.deltaY;
+      if (horizontal === 0 || Math.abs(horizontal) <= Math.abs(vertical)) return;
+      const width = el.querySelector<HTMLElement>("[data-rail-set]")?.offsetWidth ?? 0;
+      if (width <= el.clientWidth + 1) return;
+      event.preventDefault();
+      pauseFor("wheel", 1400);
+      offset.current = containRail(
+        offset.current + horizontal * wheelScale(event.deltaMode, el.clientWidth),
+        width,
+      );
+      el.scrollLeft = offset.current;
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
     const pending = timers.current;
+    const activeReasons = reasons.current;
     return () => {
       cancelAnimationFrame(frame);
-      for (const timer of pending.values()) window.clearTimeout(timer);
+      el.removeEventListener("wheel", onWheel);
+      for (const [reason, timer] of pending) {
+        window.clearTimeout(timer);
+        activeReasons.delete(reason);
+      }
       pending.clear();
     };
   }, [direction, reduced, items.length, repeat]);
@@ -101,30 +154,54 @@ export function AutoRail({
   }
 
   function onPointerDown(event: ReactPointerEvent<HTMLDivElement>) {
-    if (event.pointerType !== "mouse" || event.button !== 0) return;
+    if (event.button !== 0) return;
     const el = scroller.current;
     if (!el) return;
     detachDrag.current?.();
-    drag.current = { x: event.clientX, left: el.scrollLeft, moved: false };
+    drag.current = {
+      x: event.clientX,
+      y: event.clientY,
+      left: offset.current,
+      moved: false,
+      axis: null,
+    };
     hold("drag", true);
     const move = (pointer: PointerEvent) => {
       const current = drag.current;
       const node = scroller.current;
       if (!current || !node) return;
       const dx = pointer.clientX - current.x;
-      if (Math.abs(dx) > 6) current.moved = true;
-      if (current.moved) {
-        node.scrollLeft = current.left - dx;
-        offset.current = node.scrollLeft;
+      const dy = pointer.clientY - current.y;
+      if (current.axis === null && (Math.abs(dx) > 6 || Math.abs(dy) > 6)) {
+        current.axis = Math.abs(dx) >= Math.abs(dy) ? "x" : "y";
       }
+      if (current.axis === "y") {
+        detachDrag.current?.();
+        drag.current = null;
+        hold("drag", false);
+        return;
+      }
+      if (current.axis !== "x") return;
+      current.moved = true;
+      const width = node.querySelector<HTMLElement>("[data-rail-set]")?.offsetWidth ?? 0;
+      const raw = current.left - dx;
+      const looping = !reduced && width > node.clientWidth + 1;
+      const next = looping ? containRail(raw, width) : raw;
+      node.scrollLeft = next;
+      offset.current = next;
+      pointer.preventDefault();
     };
     const up = () => {
+      const moved = drag.current?.moved ?? false;
       detachDrag.current?.();
-      if (drag.current?.moved) suppressClick.current = true;
+      if (moved) {
+        suppressClick.current = true;
+        bump("settle", 700);
+      }
       drag.current = null;
       hold("drag", false);
     };
-    window.addEventListener("pointermove", move);
+    window.addEventListener("pointermove", move, { passive: false });
     window.addEventListener("pointerup", up);
     window.addEventListener("pointercancel", up);
     detachDrag.current = () => {
@@ -158,7 +235,7 @@ export function AutoRail({
       </div>
       <div
         ref={scroller}
-        className="no-scrollbar scroll-auto cursor-grab overflow-x-auto overscroll-x-contain active:cursor-grabbing"
+        className="no-scrollbar scroll-auto cursor-grab touch-pan-y overflow-x-auto overscroll-x-contain active:cursor-grabbing"
         role="region"
         aria-label={label}
         tabIndex={0}
@@ -186,7 +263,6 @@ export function AutoRail({
         }}
         onTouchStart={() => bump("touch", 1200)}
         onTouchEnd={() => bump("touch", 900)}
-        onWheel={() => bump("wheel", 1200)}
       >
         <div className="flex w-max">
           {railTrackOrder(direction).map((part) => {

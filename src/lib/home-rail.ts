@@ -3,9 +3,8 @@ import {
   INSPIRATIONS_CATEGORY,
   type CatalogFilters,
 } from "@/lib/catalog-query";
-import { CATALOG_SECTIONS, catalogSection, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
+import { catalogSection, sectionLabel } from "@/lib/catalog-section";
 import { homeImage } from "@/lib/home-images";
-import { assertNever } from "@/lib/text";
 import type { ProductType } from "@/types/catalog";
 
 export type ShelfItem = {
@@ -27,16 +26,39 @@ export type HomeDepartment = HomeCard & {
   children: HomeCard[];
 };
 
-const SECTION_ORDER: CatalogSection[] = ["perfumes", "cuidado"];
+const KOREAN_SKINCARE = "Skincare coreano";
 
-const sectionCopy: Record<CatalogSection, Pick<HomeCard, "text" | "className">> = {
+/** Maquillaje y belleza en general. Cabello, cuerpo y herramientas siguen en cuidado personal. */
+const BELLEZA_CATEGORIES = new Set([
+  "Maquillaje",
+  "Uñas",
+  "Crema facial",
+  "Mascarilla facial",
+  "Limpiador facial",
+  "Protector solar",
+  "Suero facial",
+  "Tónico facial",
+  "Exfoliante facial",
+]);
+
+type CareShelf = "cuidado" | "belleza" | "skincare";
+
+const sectionCopy = {
   perfumes: {
     text: "Árabes, diseñador, sets e inspiraciones.",
     className: "bg-night text-ivory",
   },
   cuidado: {
-    text: "Cabello, piel, maquillaje, uñas y skincare coreano.",
+    text: "Cabello, cuerpo y el cuidado de todos los días.",
     className: "bg-champagne-soft text-ink",
+  },
+  belleza: {
+    text: "Maquillaje, uñas y belleza en general.",
+    className: "bg-blush text-ink",
+  },
+  skincare: {
+    text: "La rutina coreana para la piel.",
+    className: "bg-paper text-ink",
   },
 };
 
@@ -119,12 +141,18 @@ function perfumeChildren(products: ShelfItem[]): HomeCard[] {
   return cards;
 }
 
-function categoryChildren(products: ShelfItem[], section: CatalogSection, pinned: string[]): HomeCard[] {
+function careShelf(category: string): CareShelf {
+  if (category === KOREAN_SKINCARE) return "skincare";
+  if (BELLEZA_CATEGORIES.has(category)) return "belleza";
+  return "cuidado";
+}
+
+function categoryChildren(products: ShelfItem[], shelf: CareShelf, pinned: string[]): HomeCard[] {
   const counts = new Map<string, number>();
   for (const product of products) {
-    if (catalogSection(product.type) !== section) continue;
+    if (catalogSection(product.type) !== "cuidado") continue;
     const name = product.category.trim();
-    if (!name) continue;
+    if (!name || careShelf(name) !== shelf) continue;
     counts.set(name, (counts.get(name) ?? 0) + 1);
   }
   const names = [
@@ -132,41 +160,61 @@ function categoryChildren(products: ShelfItem[], section: CatalogSection, pinned
     ...[...counts.keys()].filter((name) => !pinned.includes(name)).sort((a, b) => a.localeCompare(b, "es")),
   ];
   return names.map((name, index) => {
-    const id = `${section}-${name}`;
+    const id = `cuidado-${name}`;
     return {
       id,
       title: name,
       text: countLabel(counts.get(name) ?? 0),
       className: tone(index),
-      href: shopHref({ seccion: section, categoria: name }),
+      href: shopHref({ seccion: "cuidado", categoria: name }),
       image: homeImage(id),
     };
   });
 }
 
-function childrenFor(section: CatalogSection, products: ShelfItem[]): HomeCard[] {
-  switch (section) {
-    case "perfumes":
-      return perfumeChildren(products);
-    case "cuidado":
-      return categoryChildren(products, section, ["Skincare coreano"]);
-    default:
-      return assertNever(section);
-  }
-}
-
 export function homeDepartments(products: ShelfItem[]): HomeDepartment[] {
-  const ordered = [
-    ...SECTION_ORDER.filter((section) => CATALOG_SECTIONS.includes(section)),
-    ...CATALOG_SECTIONS.filter((section) => !SECTION_ORDER.includes(section)),
+  const departments: HomeDepartment[] = [
+    {
+      id: "perfumes",
+      title: sectionLabel("perfumes"),
+      text: sectionCopy.perfumes.text,
+      className: sectionCopy.perfumes.className,
+      href: shopHref({ seccion: "perfumes" }),
+      image: homeImage("perfumes"),
+      children: perfumeChildren(products),
+    },
+    {
+      id: "cuidado",
+      title: sectionLabel("cuidado"),
+      text: sectionCopy.cuidado.text,
+      className: sectionCopy.cuidado.className,
+      href: shopHref({ seccion: "cuidado" }),
+      image: homeImage("cuidado"),
+      children: categoryChildren(products, "cuidado", []),
+    },
   ];
-  return ordered.map((section) => ({
-    id: section,
-    title: sectionLabel(section),
-    text: sectionCopy[section].text,
-    className: sectionCopy[section].className,
-    href: shopHref({ seccion: section }),
-    image: homeImage(section),
-    children: childrenFor(section, products),
-  }));
+  const belleza = categoryChildren(products, "belleza", ["Maquillaje", "Uñas"]);
+  if (belleza.length > 0) {
+    departments.push({
+      id: "belleza",
+      title: "Belleza",
+      text: sectionCopy.belleza.text,
+      className: sectionCopy.belleza.className,
+      href: shopHref({ seccion: "cuidado" }),
+      image: homeImage("belleza"),
+      children: belleza,
+    });
+  }
+  if (categoryChildren(products, "skincare", []).length > 0) {
+    departments.push({
+      id: "skincare-coreano",
+      title: KOREAN_SKINCARE,
+      text: sectionCopy.skincare.text,
+      className: sectionCopy.skincare.className,
+      href: shopHref({ seccion: "cuidado", categoria: KOREAN_SKINCARE }),
+      image: homeImage("skincare-coreano"),
+      children: [],
+    });
+  }
+  return departments;
 }

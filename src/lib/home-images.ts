@@ -39,8 +39,13 @@ const READY = new Set([
   "cuidado-secadora-de-cabello",
 ]);
 
+const ALIAS: Record<string, string> = {
+  belleza: "cuidado-maquillaje",
+  "skincare-coreano": "cuidado-skincare-coreano",
+};
+
 export function homeImage(id: string): string | null {
-  const slug = slugify(id);
+  const slug = ALIAS[id] ?? slugify(id);
   if (!READY.has(slug)) return null;
   return `/home/${slug}.webp`;
 }
