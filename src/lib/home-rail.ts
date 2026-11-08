@@ -33,7 +33,7 @@ const sectionCopy: Record<CatalogSection, Pick<HomeCard, "text" | "className">> 
     className: "bg-night text-ivory",
   },
   cuidado: {
-    text: "Cabello, piel, cuerpo y skincare coreano.",
+    text: "Cabello, piel, maquillaje, uñas y skincare coreano.",
     className: "bg-champagne-soft text-ink",
   },
 };
