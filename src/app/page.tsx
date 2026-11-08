@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { AutoRail } from "@/components/auto-rail";
 import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
 import { store } from "@/config";
 import { catalogSection } from "@/lib/catalog-section";
+import { homeRailItems } from "@/lib/home-rail";
 import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
@@ -22,39 +24,16 @@ export const metadata = pageMetadata({
   path: "/",
 });
 
-const categories = [
-  {
-    href: "/tienda?tipo=arabic",
-    title: "Perfumes árabes",
-    text: "Alternativas para quienes buscan un aroma similar, con precios de uso frecuente.",
-    className: "bg-night text-ivory",
-  },
-  {
-    href: "/tienda?tipo=designer",
-    title: "Perfumes de diseñador",
-    text: "Piezas de casa para regalo o para quien ya tiene su firma.",
-    className: "bg-blush text-ink",
-  },
-  {
-    href: "/tienda?seccion=cuidado",
-    title: "Cuidado personal",
-    text: "Cabello, piel y cuerpo, con sus propias marcas y categorías.",
-    className: "bg-champagne-soft text-ink",
-  },
-  {
-    href: "/tienda?categoria=Inspiraciones",
-    title: "Inspiraciones",
-    text: "Perfumes de la tienda inspirados en un aroma de diseñador, del más cercano al más libre.",
-    className: "bg-paper text-ink",
-  },
-];
-
 export default function HomePage() {
   const records = getSearchRecords();
+  const categories = homeRailItems();
   const featured = getFeaturedProducts();
-  const spotlight = (featured.length > 0 ? featured : getSellableProducts())
-    .filter((product) => catalogSection(product.type) === "perfumes")
-    .slice(0, 8);
+  const spotlight =
+    featured.length > 0
+      ? featured
+      : getSellableProducts()
+          .filter((product) => catalogSection(product.type) === "perfumes")
+          .slice(0, 8);
   const pairs = getComparisonPairs().slice(0, 4);
   return (
     <>
@@ -88,27 +67,42 @@ export default function HomePage() {
       </section>
 
       <Shell className="py-12">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <AutoRail
+          label="Categorías"
+          title={
+            <h2 id="categorias" className="font-serif text-4xl">
+              Categorías
+            </h2>
+          }
+        >
           {categories.map((category) => (
             <Link
               key={category.href}
               href={category.href}
-              className={`rounded-3xl p-6 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift ${category.className}`}
+                className={`flex h-full w-[18rem] flex-col rounded-3xl p-6 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift ${category.className}`}
             >
-              <h2 className="font-serif text-3xl leading-none">{category.title}</h2>
+              <p className="font-serif text-3xl leading-none">{category.title}</p>
               <p className="mt-3 text-sm leading-6 opacity-80">{category.text}</p>
             </Link>
           ))}
-        </div>
+        </AutoRail>
       </Shell>
 
       <Shell className="pb-4">
-        <h2 className="mb-6 font-serif text-4xl">Destacados</h2>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <AutoRail
+          label="Productos destacados"
+          title={
+            <h2 id="destacados" className="font-serif text-4xl">
+              Destacados
+            </h2>
+          }
+        >
           {spotlight.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <div key={product.id} className="w-[16.5rem]">
+              <ProductCard product={product} />
+            </div>
           ))}
-        </div>
+        </AutoRail>
         <div className="mt-8 flex justify-center">
           <Link
             href="/tienda"
