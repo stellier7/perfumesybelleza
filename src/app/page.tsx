@@ -12,12 +12,7 @@ import { homeDepartments } from "@/lib/home-rail";
 import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
-import {
-  getComparisonPairs,
-  getFeaturedProducts,
-  getSearchRecords,
-  getSellableProducts,
-} from "@/lib/catalog";
+import { getComparisonPairs, getFeaturedProducts, getSellableProducts } from "@/lib/catalog";
 
 export const metadata = pageMetadata({
   title: "Perfumes y belleza en Honduras",
@@ -27,7 +22,6 @@ export const metadata = pageMetadata({
 });
 
 export default function HomePage() {
-  const records = getSearchRecords();
   const departments = homeDepartments(
     getSellableProducts().map((product) => ({
       type: product.type,
@@ -67,7 +61,7 @@ export default function HomePage() {
               Perfumes de diseñador, alternativas árabes y belleza, con envío a todo el país.
             </p>
             <div className="mt-8 max-w-xl">
-              <SearchBox records={records} variant="hero" />
+              <SearchBox variant="hero" />
             </div>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lift">

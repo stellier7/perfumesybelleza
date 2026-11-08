@@ -7,7 +7,6 @@ import { Logo } from "@/components/logo";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { store } from "@/config";
-import type { SearchRecord } from "@/types/catalog";
 
 const links = [
   { href: "/tienda", label: "Tienda" },
@@ -18,7 +17,7 @@ const links = [
   { href: "/comparaciones", label: "Comparaciones" },
 ];
 
-export function Header({ records }: { records: SearchRecord[] }) {
+export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-ivory/90 backdrop-blur">
@@ -45,7 +44,7 @@ export function Header({ records }: { records: SearchRecord[] }) {
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-2">
-          <SearchBox records={records} variant="header" />
+          <SearchBox variant="header" />
           <CartButton />
         </div>
       </Shell>

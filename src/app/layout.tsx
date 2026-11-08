@@ -9,7 +9,6 @@ import { MetaPixel } from "@/components/meta-pixel";
 import { UtmCapture } from "@/components/utm-capture";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { store } from "@/config";
-import { getSearchRecords } from "@/lib/catalog";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -40,7 +39,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  const records = getSearchRecords();
   return (
     <html lang="es" className={`${outfit.variable} ${cormorant.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
@@ -48,7 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Saltar al contenido
         </a>
         <CartProvider>
-          <Header records={records} />
+          <Header />
           <main id="contenido" className="flex-1 pb-28 md:pb-0">
             {children}
           </main>

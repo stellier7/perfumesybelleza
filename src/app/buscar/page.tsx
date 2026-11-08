@@ -53,7 +53,7 @@ async function SearchResults({
     <Shell className="py-8 md:py-12">
       <h1 className="font-serif text-4xl md:text-5xl">Buscar</h1>
       <div className="mt-6 max-w-xl">
-        <SearchBox records={records} variant="hero" />
+        <SearchBox variant="hero" />
       </div>
       {query.trim().length < 2 ? (
         <p className="mt-8 text-muted">Escribe al menos dos letras. Puedes buscar por nombre, marca o un perfume famoso.</p>

@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useId, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useId, useMemo, useState, type FormEvent } from "react";
 import { TYPE_LABEL } from "@/config";
 import { sectionLabel } from "@/lib/catalog-section";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { searchPath, suggestionsForQuery } from "@/lib/search";
+import { loadSearchRecords } from "@/lib/search-index";
 import type { SearchRecord } from "@/types/catalog";
 
 function suggestionKind(item: SearchRecord): string {
@@ -95,14 +96,22 @@ function SearchForm({
   );
 }
 
-export function SearchBox({
-  records,
-  variant,
-}: {
-  records: SearchRecord[];
-  variant: "hero" | "header";
-}) {
+export function SearchBox({ variant }: { variant: "hero" | "header" }) {
+  const [records, setRecords] = useState<SearchRecord[]>([]);
   const [sheet, setSheet] = useState(false);
+  useEffect(() => {
+    let active = true;
+    loadSearchRecords()
+      .then((next) => {
+        if (active) setRecords(next);
+      })
+      .catch(() => {
+        if (active) setRecords([]);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
   if (variant === "hero") {
     return <SearchForm records={records} placeholder="Busca tu perfume favorito" />;
   }
