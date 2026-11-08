@@ -18,42 +18,29 @@ const shelf: ShelfItem[] = [
   item("beauty", "Acondicionador"),
 ];
 
-test("el inicio abre perfumes en árabes, diseñador, sets e inspiraciones", () => {
+function hrefOf(path: string): string {
+  return decodeURIComponent(path.replaceAll("+", " "));
+}
+
+test("las categorías del inicio entran directo a la tienda", () => {
   const departments = homeDepartments(shelf);
   assert.deepEqual(
     departments.map((department) => department.title),
     ["Perfumes", "Cuidado personal", "Skincare coreano"],
   );
-  const perfumes = departments[0];
-  assert.ok(perfumes);
-  assert.deepEqual(
-    perfumes.children.map((card) => card.title),
-    ["Árabes", "Diseñador", "Sets", "Inspiraciones"],
-  );
-  const sets = perfumes.children.find((card) => card.title === "Sets");
-  assert.ok(sets);
-  const setsHref = decodeURIComponent(sets.href.replaceAll("+", " "));
-  assert.match(setsHref, /seccion=perfumes/);
-  assert.match(setsHref, /categoria=Set/);
-  assert.doesNotMatch(setsHref, /tipo=/);
+  const perfumes = hrefOf(departments[0]?.href ?? "");
+  assert.match(perfumes, /seccion=perfumes/);
+  assert.doesNotMatch(perfumes, /categoria=/);
+  assert.doesNotMatch(perfumes, /tipo=/);
+  const cuidado = departments.find((department) => department.id === "cuidado");
+  assert.equal(cuidado?.text, "Cabello, cuerpo y el cuidado de todos los días.");
+  assert.match(hrefOf(cuidado?.href ?? ""), /seccion=cuidado/);
+  assert.doesNotMatch(hrefOf(cuidado?.href ?? ""), /categoria=/);
 });
 
-test("cuidado personal queda en cabello y cuerpo, y suma las categorías nuevas", () => {
-  const cuidado = homeDepartments([...shelf, item("beauty", "Gel de baño")]).find(
-    (department) => department.id === "cuidado",
-  );
-  assert.ok(cuidado);
-  assert.deepEqual(
-    cuidado.children.map((card) => card.title),
-    ["Acondicionador", "Gel de baño", "Shampoo"],
-  );
-  assert.equal(cuidado.text, "Cabello, cuerpo y el cuidado de todos los días.");
-});
-
-test("belleza agrupa maquillaje y el resto de belleza, y skincare coreano va aparte", () => {
+test("belleza y skincare coreano son tarjetas, no una segunda fila", () => {
   const departments = homeDepartments([
     ...shelf,
-    item("beauty", "Maquillaje"),
     item("beauty", "Maquillaje"),
     item("beauty", "Uñas"),
     item("beauty", "Crema facial"),
@@ -65,31 +52,21 @@ test("belleza agrupa maquillaje y el resto de belleza, y skincare coreano va apa
   const belleza = departments.find((department) => department.id === "belleza");
   assert.ok(belleza);
   assert.equal(belleza.image, "/home/cuidado-maquillaje.webp");
-  assert.deepEqual(
-    belleza.children.map((card) => card.title),
-    ["Maquillaje", "Uñas", "Crema facial"],
-  );
-  assert.equal(belleza.children[0]?.text, "2 productos");
-  const makeup = decodeURIComponent(belleza.children[0]?.href.replaceAll("+", " ") ?? "");
-  assert.match(makeup, /seccion=cuidado/);
-  assert.match(makeup, /categoria=Maquillaje/);
+  assert.match(hrefOf(belleza.href), /seccion=cuidado/);
+  assert.doesNotMatch(hrefOf(belleza.href), /categoria=/);
   const korean = departments.find((department) => department.id === "skincare-coreano");
   assert.ok(korean);
-  assert.deepEqual(korean.children, []);
   assert.equal(korean.image, "/home/cuidado-skincare-coreano.webp");
-  const href = decodeURIComponent(korean.href.replaceAll("+", " "));
+  const href = hrefOf(korean.href);
   assert.match(href, /seccion=cuidado/);
   assert.match(href, /categoria=Skincare coreano/);
-  const cuidado = departments.find((department) => department.id === "cuidado");
-  assert.deepEqual(cuidado?.children.map((card) => card.title), ["Acondicionador", "Shampoo"]);
 });
 
-test("un estante sin sets ni inspiraciones no inventa esos botones", () => {
-  const perfumes = homeDepartments([item("arabic", "Eau de Parfum")])[0];
-  assert.deepEqual(
-    perfumes?.children.map((card) => card.title),
-    ["Árabes"],
+test("sin maquillaje ni skincare no se inventan esas tarjetas", () => {
+  const titles = homeDepartments([item("arabic", "Eau de Parfum"), item("beauty", "Shampoo")]).map(
+    (department) => department.title,
   );
+  assert.deepEqual(titles, ["Perfumes", "Cuidado personal"]);
 });
 
 test("cada sección de la tienda tiene un departamento", () => {

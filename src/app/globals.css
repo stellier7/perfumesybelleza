@@ -104,44 +104,12 @@ button.bg-ink:active {
   display: none;
 }
 
-@keyframes rail-in {
-  from {
-    opacity: 0;
-    transform: translateX(1rem);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes rail-back {
-  from {
-    opacity: 0;
-    transform: translateX(-1rem);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.rail-in {
-  animation: rail-in 280ms ease;
-}
-
-.rail-back {
-  animation: rail-back 280ms ease;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
-  .wa-ring,
-  .rail-in,
-  .rail-back {
+  .wa-ring {
     animation: none;
   }
 
