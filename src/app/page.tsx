@@ -7,12 +7,12 @@ import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
 import { store } from "@/config";
-import { catalogSection } from "@/lib/catalog-section";
-import { homeDepartments } from "@/lib/home-rail";
+import { isSpotlightFiller, pickFamous } from "@/lib/fame";
+import { homeDepartments, homeShelf, SPOTLIGHTS } from "@/lib/home-rail";
 import { nameWithBrand } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
-import { getComparisonPairs, getFeaturedProducts, getSellableProducts } from "@/lib/catalog";
+import { getComparisonPairs, getSellableProducts } from "@/lib/catalog";
 
 export const metadata = pageMetadata({
   title: "Perfumes y belleza en Honduras",
@@ -29,13 +29,14 @@ export default function HomePage() {
       inspired: product.inspiredBy.length > 0,
     })),
   );
-  const featured = getFeaturedProducts();
-  const spotlight =
-    featured.length > 0
-      ? featured
-      : getSellableProducts()
-          .filter((product) => catalogSection(product.type) === "perfumes")
-          .slice(0, 8);
+  const sellable = getSellableProducts().filter((product) => product.inStock);
+  const spotlights = SPOTLIGHTS.map((shelf) => ({
+    ...shelf,
+    products: pickFamous(
+      sellable.filter((product) => homeShelf(product) === shelf.id && !isSpotlightFiller(product)),
+      10,
+    ),
+  })).filter((shelf) => shelf.products.length > 0);
   const pairs = getComparisonPairs().slice(0, 4);
   return (
     <>
@@ -81,30 +82,30 @@ export default function HomePage() {
         <CategoryRail departments={departments} />
       </Shell>
 
-      <Shell className="pb-4">
-        <AutoRail
-          direction="left"
-          label="Productos destacados"
-          title={
-            <h2 id="destacados" className="font-serif text-4xl">
-              Destacados
-            </h2>
-          }
-        >
-          {spotlight.map((product) => (
-            <div key={product.id} className="w-[16.5rem]">
-              <ProductCard product={product} />
-            </div>
-          ))}
-        </AutoRail>
-        <div className="mt-8 flex justify-center">
-          <Link
-            href="/tienda"
-            className="inline-flex h-12 w-full items-center justify-center rounded-full bg-ink px-8 text-sm text-ivory sm:w-auto"
+      <Shell className="space-y-14 pb-4">
+        {spotlights.map((shelf) => (
+          <AutoRail
+            key={shelf.id}
+            direction="left"
+            label={shelf.title}
+            title={
+              <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
+                <h2 id={shelf.id === "perfumes" ? "destacados" : shelf.id} className="font-serif text-4xl">
+                  {shelf.title}
+                </h2>
+                <Link href={shelf.href} className="mb-1 text-sm text-muted underline-offset-4 hover:underline">
+                  Ver todo
+                </Link>
+              </div>
+            }
           >
-            Ver tienda
-          </Link>
-        </div>
+            {shelf.products.map((product) => (
+              <div key={product.id} className="w-[16.5rem]">
+                <ProductCard product={product} />
+              </div>
+            ))}
+          </AutoRail>
+        ))}
       </Shell>
 
       {pairs.length > 0 ? (

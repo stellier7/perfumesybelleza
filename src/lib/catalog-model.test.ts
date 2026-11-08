@@ -411,7 +411,7 @@ test("perfumes y cuidado personal no comparten marcas ni resultados", () => {
   assert.equal(perfumeFilters.seccion, "perfumes");
   assert.deepEqual(
     applyCatalogFilters(catalog, perfumeFilters).items.map((item) => item.id),
-    ["asad", "bio", "crema-perfume"],
+    ["asad", "crema-perfume", "bio"],
   );
   const perfumeBrands = new Set(
     catalog.filter((item) => catalogSection(item.type) === "perfumes").map((item) => item.brand),

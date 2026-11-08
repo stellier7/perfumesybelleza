@@ -1,5 +1,6 @@
 import { PAGE_SIZE } from "@/config";
 import { catalogSection, isCatalogSection, type CatalogSection } from "@/lib/catalog-section";
+import { orderByFame } from "@/lib/fame";
 import { assertNever } from "@/lib/text";
 import { GENDERS, PRODUCT_TYPES, type Gender, type ProductType, type PublicProduct } from "@/types/catalog";
 
@@ -89,9 +90,7 @@ function sortProducts(products: PublicProduct[], orden: SortKey): PublicProduct[
     case "nombre":
       return list.sort(byName);
     case "destacados":
-      return list.sort(
-        (a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)) || byName(a, b),
-      );
+      return orderByFame(list);
     default:
       return assertNever(orden);
   }

@@ -35,6 +35,8 @@ const BELLEZA_CATEGORIES = new Set([
 
 type CareShelf = "cuidado" | "belleza" | "skincare";
 
+export type HomeShelf = "perfumes" | CareShelf;
+
 const sectionCopy = {
   perfumes: {
     text: "Árabes, diseñador, sets e inspiraciones.",
@@ -74,6 +76,22 @@ function careShelf(category: string): CareShelf {
   if (BELLEZA_CATEGORIES.has(category)) return "belleza";
   return "cuidado";
 }
+
+export function homeShelf(product: { type: ProductType; category: string }): HomeShelf {
+  if (catalogSection(product.type) === "perfumes") return "perfumes";
+  return careShelf(product.category.trim());
+}
+
+export const SPOTLIGHTS: { id: HomeShelf; title: string; href: string }[] = [
+  { id: "perfumes", title: "Destacados de perfumería", href: shopHref({ seccion: "perfumes" }) },
+  { id: "cuidado", title: "Destacados de cuidado personal", href: shopHref({ seccion: "cuidado" }) },
+  { id: "belleza", title: "Destacados de belleza", href: shopHref({ seccion: "cuidado" }) },
+  {
+    id: "skincare",
+    title: "Destacados de skincare coreano",
+    href: shopHref({ seccion: "cuidado", categoria: KOREAN_SKINCARE }),
+  },
+];
 
 function hasCareShelf(products: ShelfItem[], shelf: CareShelf): boolean {
   return products.some((product) => {
