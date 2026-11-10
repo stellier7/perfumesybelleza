@@ -66,8 +66,8 @@ export function Checkout() {
     );
   }
 
-  const shipping = department ? shippingCost(department) : null;
-  const total = subtotal + (shipping ?? 0);
+  const shipping = shippingCost();
+  const total = subtotal + shipping;
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -92,7 +92,7 @@ export function Checkout() {
     } catch {
       utm = {};
     }
-    const shippingAmount = shippingCost(customer.department);
+    const shippingAmount = shippingCost();
     const orderTotal = subtotal + shippingAmount;
     const message = buildOrderMessage({ lines, shipping: shippingAmount, customer, utm });
     trackPixel(PIXEL_ORDER_EVENT, {
@@ -174,11 +174,11 @@ export function Checkout() {
           </div>
           <div className="flex justify-between">
             <dt>Envío</dt>
-            <dd>{shipping === null ? "Elige el departamento" : formatPrice(shipping)}</dd>
+            <dd>{formatPrice(shipping)}</dd>
           </div>
           <div className="flex justify-between text-base font-medium">
             <dt>Total</dt>
-            <dd>{shipping === null ? "—" : formatPrice(total)}</dd>
+            <dd>{formatPrice(total)}</dd>
           </div>
         </dl>
         <p className="mt-3 text-xs leading-5 text-muted">Pago por transferencia. El mensaje incluye el pedido y tus datos.</p>

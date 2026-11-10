@@ -44,6 +44,8 @@ export const store = {
   hours: "Lunes a sábado, 8:00 a.m. – 6:00 p.m. (hora de Honduras)",
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
+  /** Hora de Honduras en que se arman los pedidos confirmados de ese día. */
+  orderFillTime: "5:00 p.m.",
   shippingDays: "1 a 2 días hábiles",
   carrier: "CAEX (Cargo Expreso)",
 } as const;
@@ -79,15 +81,8 @@ export const DEPARTMENTS = [
 
 export type Department = (typeof DEPARTMENTS)[number];
 
-/** Lempiras. Los departamentos que no aparecen usan la tarifa base. */
-export const SHIPPING_DEFAULT_LPS = 95;
-
-export const SHIPPING_BY_DEPARTMENT: Partial<Record<Department, number>> = {
-  "Francisco Morazán": 80,
-  Cortés: 80,
-  "Gracias a Dios": 180,
-  "Islas de la Bahía": 160,
-};
+/** Lempiras. La misma tarifa a cualquier departamento. */
+export const SHIPPING_LPS = 150;
 
 /** Evento de Meta cuando el pedido se abre en WhatsApp. Cámbialo a "Purchase" si quieres optimizar por compra. */
 export const PIXEL_ORDER_EVENT = "Lead" as const;

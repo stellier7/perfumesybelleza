@@ -1,5 +1,6 @@
 import { BankDetails } from "@/components/bank-details";
 import { Shell } from "@/components/shell";
+import { store } from "@/config";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -23,7 +24,11 @@ export default function PaymentPage() {
         <li>Confirma el total del mensaje, con envío incluido.</li>
         <li>Transfiere ese monto a la cuenta.</li>
         <li>Responde el chat de WhatsApp con la captura o el número de referencia.</li>
-        <li>En cuanto cuadre el pago, despachamos con CAEX y te mandamos la guía.</li>
+        <li>
+          Cuando cuadra el pago, el pedido entra en el armado de las {store.orderFillTime} Si el pago cuadra después
+          de esa hora, se arma al día siguiente. Luego sale con {store.carrier} y te mandamos la guía. La entrega
+          tarda {store.shippingDays}.
+        </li>
       </ol>
     </Shell>
   );

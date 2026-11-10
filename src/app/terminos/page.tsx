@@ -1,5 +1,6 @@
 import { Shell } from "@/components/shell";
-import { store } from "@/config";
+import { SHIPPING_LPS, store } from "@/config";
+import { formatPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -14,9 +15,11 @@ export default function TermsPage() {
       <h1 className="font-serif text-4xl md:text-5xl">Términos</h1>
       <div className="mt-6 space-y-4 leading-7">
         <p>
-          Los precios están en lempiras e incluyen el margen publicado en la tienda. El envío se suma según
-          el departamento. Un pedido queda confirmado cuando recibimos la transferencia por el total del
-          mensaje de WhatsApp y el comprobante cuadra.
+          Los precios están en lempiras e incluyen el margen publicado en la tienda. El envío cuesta{" "}
+          {formatPrice(SHIPPING_LPS)} a cualquier departamento. Los pedidos se arman todos los días a las{" "}
+          {store.orderFillTime} y, a partir de ahí, la entrega tarda {store.shippingDays}. Un pedido queda
+          confirmado cuando recibimos la transferencia por el total del mensaje de WhatsApp y el comprobante
+          cuadra.
         </p>
         <p>
           La existencia de la página es la que mantenemos a mano. Si un producto se agota entre el mensaje y

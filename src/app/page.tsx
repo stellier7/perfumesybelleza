@@ -6,7 +6,7 @@ import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { JsonLd } from "@/components/json-ld";
-import { store } from "@/config";
+import { SHIPPING_LPS, store } from "@/config";
 import { isSpotlightFiller, pickFamous } from "@/lib/fame";
 import { homeDepartments, homeShelf, SPOTLIGHTS } from "@/lib/home-rail";
 import { nameWithBrand } from "@/lib/catalog-model";
@@ -17,7 +17,7 @@ import { getComparisonPairs, getSellableProducts } from "@/lib/catalog";
 export const metadata = pageMetadata({
   title: "Perfumes y belleza en Honduras",
   description:
-    "Perfumes de diseñador, alternativas árabes y belleza. Envío a todo Honduras en 1 a 2 días hábiles, pago por transferencia y atención por WhatsApp.",
+    `Perfumes de diseñador, alternativas árabes y belleza. Envío de ${formatPrice(SHIPPING_LPS)} a todo Honduras. Los pedidos se arman todos los días a las ${store.orderFillTime} y llegan en ${store.shippingDays}. Pago por transferencia y atención por WhatsApp.`,
   path: "/",
 });
 
@@ -151,7 +151,10 @@ export default function HomePage() {
 
       <Shell className="grid gap-4 py-12 md:grid-cols-3">
         {[
-          ["Envío", `A todo Honduras en ${store.shippingDays} con ${store.carrier}.`],
+          [
+            "Envío",
+            `${formatPrice(SHIPPING_LPS)} a todo Honduras con ${store.carrier}. Los pedidos se arman todos los días a las ${store.orderFillTime} Lo que se confirma después se arma al día siguiente, y la entrega tarda ${store.shippingDays}.`,
+          ],
           ["Pago", "Por transferencia. Te enviamos los datos al confirmar el pedido."],
           ["WhatsApp", "Armas el pedido en la tienda y lo recibimos listo para preparar."],
         ].map(([title, text]) => (

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { SHIPPING_LPS } from "@/config";
 import { formatPrice } from "@/lib/pricing";
 import { useCart } from "@/components/cart/cart-provider";
 
@@ -93,7 +94,7 @@ export function CartDrawer() {
             <span>Subtotal</span>
             <span>{formatPrice(subtotal)}</span>
           </div>
-          <p className="mb-4 text-xs text-muted">El envío se calcula al elegir tu departamento.</p>
+          <p className="mb-4 text-xs text-muted">Envío de {formatPrice(SHIPPING_LPS)} a todo Honduras.</p>
           <Link
             href="/carrito"
             onClick={() => setDrawerOpen(false)}

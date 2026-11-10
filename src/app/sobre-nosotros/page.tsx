@@ -24,7 +24,8 @@ export default function AboutPage() {
         </p>
         <p>
           La existencia la actualizamos a mano. Si un producto dice agotado, puedes pedir que te avisemos por
-          WhatsApp. El envío sale con {store.carrier} después de la transferencia.
+          WhatsApp. El envío sale con {store.carrier}. Los pedidos se arman todos los días a las {store.orderFillTime}{" "}
+          y llegan en {store.shippingDays}.
         </p>
       </div>
     </Shell>

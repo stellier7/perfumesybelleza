@@ -6,7 +6,8 @@ import { CartButton } from "@/components/cart/cart-drawer";
 import { Logo } from "@/components/logo";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
-import { store } from "@/config";
+import { SHIPPING_LPS, store } from "@/config";
+import { formatPrice } from "@/lib/pricing";
 
 const links = [
   { href: "/tienda", label: "Tienda" },
@@ -22,7 +23,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-ivory/90 backdrop-blur">
       <p className="bg-night px-4 py-2 text-center text-xs tracking-wide text-champagne-soft">
-        Envío a todo Honduras en {store.shippingDays} con {store.carrier}
+        Envío de {formatPrice(SHIPPING_LPS)} con {store.carrier}. Pedidos listos todos los días a las{" "}
+        {store.orderFillTime} Entrega en {store.shippingDays}.
       </p>
       <Shell className="flex h-16 items-center gap-3">
         <button
