@@ -109,6 +109,6 @@ export function buildGreeting(utm?: Record<string, string>): string {
     .join("\n");
 }
 
-export function whatsappUrl(message: string, number = store.whatsappNumber): string {
+export function whatsappUrl(message: string, number: string = store.whatsappNumber): string {
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
