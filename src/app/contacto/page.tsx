@@ -17,6 +17,14 @@ export default function ContactPage() {
         Atendemos por WhatsApp. {store.hours}. Si ya armaste un pedido, usa el carrito para que el mensaje
         lleve los precios.
       </p>
+      <p className="mt-4 flex flex-col gap-1 text-sm">
+        <a className="hover:text-gold" href={`https://wa.me/${store.whatsappNumber}`}>
+          WhatsApp {store.whatsappDisplay}
+        </a>
+        <a className="hover:text-gold" href={`mailto:${store.email}`}>
+          {store.email}
+        </a>
+      </p>
       <ContactForm />
     </Shell>
   );

@@ -28,8 +28,8 @@ export default function PrivacyPage() {
           anuncios de Meta.
         </p>
         <p>
-          Para pedir una corrección o el borrado de un mensaje, escríbenos por WhatsApp a {store.name}. Los
-          datos del pago los ve el banco que uses para la transferencia.
+          Para pedir una corrección o el borrado de un mensaje, escríbenos por WhatsApp al {store.whatsappDisplay}{" "}
+          o a {store.email}. Los datos del pago los ve el banco que uses para la transferencia.
         </p>
       </div>
     </Shell>

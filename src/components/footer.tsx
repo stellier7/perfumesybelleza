@@ -38,6 +38,15 @@ export function Footer() {
         <div>
           <p className="text-xs uppercase tracking-[0.18em] text-gold">Contacto</p>
           <p className="mt-3 text-sm leading-6">{store.hours}</p>
+          <a
+            className="mt-2 block text-sm hover:text-gold"
+            href={`https://wa.me/${store.whatsappNumber}`}
+          >
+            WhatsApp {store.whatsappDisplay}
+          </a>
+          <a className="mt-1 block text-sm hover:text-gold" href={`mailto:${store.email}`}>
+            {store.email}
+          </a>
           <a className="mt-2 block text-sm hover:text-gold" href={store.instagram}>
             Instagram
           </a>

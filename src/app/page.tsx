@@ -47,6 +47,8 @@ export default function HomePage() {
           name: store.name,
           description: store.description,
           url: store.url,
+          telephone: `+${store.whatsappNumber}`,
+          email: store.email,
           areaServed: "Honduras",
           currenciesAccepted: "HNL",
         }}
