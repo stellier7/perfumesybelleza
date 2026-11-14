@@ -43,6 +43,7 @@ export function buildOrderMessage(input: {
     )
     .join("\n");
   const notes = input.customer.notes.trim();
+  const address = input.customer.address.trim();
   const lines = [
     `Hola, quiero hacer este pedido en ${store.name}:`,
     "",
@@ -57,7 +58,7 @@ export function buildOrderMessage(input: {
     `Teléfono: ${input.customer.phone.trim()}`,
     `Departamento: ${input.customer.department}`,
     `Ciudad: ${input.customer.city.trim()}`,
-    `Dirección: ${input.customer.address.trim()}`,
+    address ? `Dirección: ${address}` : null,
     notes ? `Notas: ${notes}` : null,
     "",
     "Pago por transferencia.",

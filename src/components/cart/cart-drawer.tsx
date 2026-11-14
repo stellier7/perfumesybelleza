@@ -49,8 +49,8 @@ export function CartDrawer() {
         className="flex h-full w-full max-w-md flex-col bg-paper shadow-lift"
         onClick={(event) => event.stopPropagation()}
       >
-        <div className="flex items-center justify-between border-b border-line px-4 py-4">
-          <h2 className="font-serif text-3xl">Tu carrito</h2>
+        <div className="flex items-center justify-between border-b border-line px-4 py-3">
+          <h2 className="font-serif text-2xl">Tu carrito</h2>
           <button type="button" onClick={() => setDrawerOpen(false)} className="text-sm">
             Cerrar
           </button>
@@ -59,19 +59,19 @@ export function CartDrawer() {
           {lines.length === 0 ? (
             <p className="text-muted">Todavía no agregas productos.</p>
           ) : (
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {lines.map((line) => (
                 <li key={line.id} className="flex gap-3">
-                  <div className="relative h-20 w-16 shrink-0 overflow-hidden rounded-xl bg-blush/50">
+                  <div className="relative h-16 w-14 shrink-0 overflow-hidden rounded-xl bg-blush/50">
                     {line.image ? (
                       <Image src={line.image} alt="" fill sizes="64px" className="object-cover" />
                     ) : null}
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-xs uppercase tracking-[0.14em] text-muted">{line.brand}</p>
-                    <p className="font-medium">{line.name}</p>
-                    <p className="text-sm">{formatPrice(line.price)}</p>
-                    <div className="mt-2 flex items-center gap-2">
+                    <p className="line-clamp-2 text-sm font-medium leading-5">{line.name}</p>
+                    <div className="mt-1.5 flex items-center gap-2">
+                      <p className="text-sm">{formatPrice(line.price)}</p>
                       <button type="button" className="h-8 w-8 rounded-full border border-line" onClick={() => setQty(line.id, line.qty - 1)} aria-label="Quitar uno">
                         −
                       </button>

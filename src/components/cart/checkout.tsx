@@ -107,25 +107,25 @@ export function Checkout() {
   }
 
   return (
-    <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+    <div className="grid gap-6 pb-28 md:grid-cols-[minmax(0,1.15fr)_minmax(17rem,0.85fr)] md:items-start md:gap-8 md:pb-0 lg:gap-10">
       <div>
-        <h1 className="font-serif text-4xl md:text-5xl">Carrito</h1>
-        <ul className="mt-6 divide-y divide-line">
+        <h1 className="font-serif text-3xl md:text-4xl">Carrito</h1>
+        <ul className="mt-3 divide-y divide-line md:mt-4">
           {lines.map((line) => (
-            <li key={line.id} className="flex gap-3 py-4">
-              <div className="relative h-24 w-20 shrink-0 overflow-hidden rounded-2xl bg-blush/50">
+            <li key={line.id} className="flex gap-3 py-3">
+              <div className="relative h-16 w-14 shrink-0 overflow-hidden rounded-xl bg-blush/50 md:h-20 md:w-16">
                 {line.image ? <Image src={line.image} alt="" fill sizes="80px" className="object-cover" /> : null}
               </div>
               <div className="min-w-0 flex-1">
-                <p className="text-xs uppercase tracking-[0.14em] text-muted">{line.brand}</p>
-                <p className="font-medium">{line.name}</p>
-                <p className="text-sm">{formatPrice(line.price)}</p>
-                <div className="mt-2 flex items-center gap-2">
-                  <button type="button" className="h-9 w-9 rounded-full border border-line" onClick={() => setQty(line.id, line.qty - 1)} aria-label="Quitar uno">
+                <p className="text-[0.65rem] uppercase tracking-[0.14em] text-muted">{line.brand}</p>
+                <p className="line-clamp-2 text-sm font-medium leading-5">{line.name}</p>
+                <div className="mt-1.5 flex items-center gap-2">
+                  <p className="text-sm">{formatPrice(line.price)}</p>
+                  <button type="button" className="h-8 w-8 rounded-full border border-line" onClick={() => setQty(line.id, line.qty - 1)} aria-label="Quitar uno">
                     −
                   </button>
-                  <span className="w-6 text-center text-sm">{line.qty}</span>
-                  <button type="button" className="h-9 w-9 rounded-full border border-line" onClick={() => setQty(line.id, line.qty + 1)} aria-label="Agregar uno">
+                  <span className="w-5 text-center text-sm">{line.qty}</span>
+                  <button type="button" className="h-8 w-8 rounded-full border border-line" onClick={() => setQty(line.id, line.qty + 1)} aria-label="Agregar uno">
                     +
                   </button>
                   <button type="button" className="ml-auto text-xs text-muted" onClick={() => remove(line.id)}>
@@ -137,9 +137,9 @@ export function Checkout() {
           ))}
         </ul>
       </div>
-      <form onSubmit={submit} className="h-fit rounded-3xl border border-line bg-paper p-5 shadow-soft">
-        <h2 className="font-serif text-3xl">Datos de envío</h2>
-        <div className="mt-4 grid gap-3">
+      <form onSubmit={submit} className="h-fit rounded-2xl border border-line bg-paper p-4 shadow-soft md:rounded-3xl md:p-5">
+        <h2 className="font-serif text-2xl">Datos de envío</h2>
+        <div className="mt-3 grid gap-2.5">
           <Field label="Nombre" name="name" required autoComplete="name" />
           <Field label="Teléfono" name="phone" required autoComplete="tel" inputMode="tel" />
           <label className="grid gap-1 text-sm">
@@ -149,7 +149,7 @@ export function Checkout() {
               required
               value={department}
               onChange={(event) => setDepartment(event.target.value)}
-              className="h-12 rounded-xl border border-line bg-ivory px-3"
+              className="h-11 rounded-xl border border-line bg-ivory px-3"
             >
               <option value="">Elige un departamento</option>
               {DEPARTMENTS.map((item) => (
@@ -160,14 +160,17 @@ export function Checkout() {
             </select>
           </label>
           <Field label="Ciudad" name="city" required autoComplete="address-level2" />
-          <Field label="Dirección" name="address" required autoComplete="street-address" />
+          <Field label="Dirección" name="address" optional autoComplete="street-address" />
           <label className="grid gap-1 text-sm">
-            Notas
-            <textarea name="notes" rows={3} className="rounded-xl border border-line bg-ivory px-3 py-2" />
+            <span className="flex items-baseline justify-between gap-2">
+              Notas
+              <span className="text-xs font-normal text-muted">Opcional</span>
+            </span>
+            <textarea name="notes" rows={2} className="rounded-xl border border-line bg-ivory px-3 py-2" />
           </label>
         </div>
         {error ? <p className="mt-3 text-sm text-blush-deep">{error}</p> : null}
-        <dl className="mt-5 space-y-2 text-sm">
+        <dl className="mt-4 space-y-1.5 text-sm">
           <div className="flex justify-between">
             <dt>Subtotal</dt>
             <dd>{formatPrice(subtotal)}</dd>
@@ -181,10 +184,18 @@ export function Checkout() {
             <dd>{formatPrice(total)}</dd>
           </div>
         </dl>
-        <p className="mt-3 text-xs leading-5 text-muted">Pago por transferencia. El mensaje incluye el pedido y tus datos.</p>
-        <button type="submit" className="mt-4 h-12 w-full rounded-full bg-ink text-sm text-ivory">
+        <p className="mt-3 text-xs leading-5 text-muted">Pago por transferencia. La dirección puede ir en el chat.</p>
+        <button type="submit" className="mt-4 hidden h-11 w-full items-center justify-center rounded-full bg-ink text-sm text-ivory md:flex">
           Pedir por WhatsApp
         </button>
+        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper/95 px-4 py-3 backdrop-blur md:hidden">
+          <div className="mx-auto flex max-w-6xl items-center gap-3">
+            <p className="min-w-0 text-sm font-medium">{formatPrice(total)}</p>
+            <button type="submit" className="h-11 flex-1 rounded-full bg-ink text-sm text-ivory">
+              Pedir por WhatsApp
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   );
@@ -194,24 +205,29 @@ function Field({
   label,
   name,
   required,
+  optional,
   autoComplete,
   inputMode,
 }: {
   label: string;
   name: string;
   required?: boolean;
+  optional?: boolean;
   autoComplete?: string;
   inputMode?: "tel" | "text";
 }) {
   return (
     <label className="grid gap-1 text-sm">
-      {label}
+      <span className="flex items-baseline justify-between gap-2">
+        {label}
+        {optional ? <span className="text-xs font-normal text-muted">Opcional</span> : null}
+      </span>
       <input
         name={name}
         required={required}
         autoComplete={autoComplete}
         inputMode={inputMode}
-        className="h-12 rounded-xl border border-line bg-ivory px-3"
+        className="h-11 rounded-xl border border-line bg-ivory px-3"
       />
     </label>
   );

@@ -22,7 +22,26 @@ test("el pedido incluye piezas, envío, total, datos y la transferencia", () => 
   assert.match(message, /Pago por transferencia\./);
   assert.match(message, /utm_source=instagram/);
   assert.match(message, /utm_campaign=verano/);
+  assert.match(message, /Dirección: Col\. Trejo, casa 12/);
   const url = whatsappUrl(message, "50400000000");
   assert.ok(url.startsWith("https://wa.me/50400000000?text="));
   assert.equal(decodeURIComponent(url.split("text=")[1] ?? ""), message);
+});
+
+test("una dirección en blanco no bloquea el pedido", () => {
+  const message = buildOrderMessage({
+    lines: [{ name: "Tag Him", brand: "Armaf", qty: 1, price: 690 }],
+    shipping: 150,
+    customer: {
+      name: "Ana López",
+      phone: "99990000",
+      department: "Cortés",
+      city: "San Pedro Sula",
+      address: "   ",
+      notes: "",
+    },
+  });
+  assert.equal(message.includes("Dirección"), false);
+  assert.match(message, /Total: L 690\.00\nEnvío: L 150\.00\nTotal con envío: L 840\.00/);
+  assert.match(message, /San Pedro Sula/);
 });

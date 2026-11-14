@@ -28,23 +28,23 @@ const legal = [
 export function Footer() {
   return (
     <footer className="mt-16 border-t border-line bg-paper">
-      <Shell className="grid gap-10 py-12 md:grid-cols-4">
-        <div className="md:col-span-1">
+      <Shell className="grid gap-8 py-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 lg:py-12">
+        <div className="min-w-0">
           <Logo />
           <p className="mt-4 text-sm leading-6 text-muted">{store.description}</p>
         </div>
         <LinkList title="Tienda" links={shop} />
         <LinkList title="Ayuda" links={help} />
-        <div>
+        <div className="min-w-0">
           <p className="text-xs uppercase tracking-[0.18em] text-gold">Contacto</p>
           <p className="mt-3 text-sm leading-6">{store.hours}</p>
           <a
-            className="mt-2 block text-sm hover:text-gold"
+            className="mt-2 block break-words text-sm hover:text-gold"
             href={`https://wa.me/${store.whatsappNumber}`}
           >
             WhatsApp {store.whatsappDisplay}
           </a>
-          <a className="mt-1 block text-sm hover:text-gold" href={`mailto:${store.email}`}>
+          <a className="mt-1 block break-all text-sm hover:text-gold" href={`mailto:${store.email}`}>
             {store.email}
           </a>
           <a className="mt-2 block text-sm hover:text-gold" href={store.instagram}>
@@ -82,7 +82,7 @@ export function Footer() {
 
 function LinkList({ title, links }: { title: string; links: Array<{ href: string; label: string }> }) {
   return (
-    <div>
+    <div className="min-w-0">
       <p className="text-xs uppercase tracking-[0.18em] text-gold">{title}</p>
       <ul className="mt-3 space-y-2 text-sm">
         {links.map((link) => (

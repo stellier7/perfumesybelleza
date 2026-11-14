@@ -11,7 +11,7 @@ export const metadata = pageMetadata({
 
 export default function CartPage() {
   return (
-    <Shell className="py-8 md:py-12">
+    <Shell className="py-5 md:py-8">
       <Checkout />
     </Shell>
   );
