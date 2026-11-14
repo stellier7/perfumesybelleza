@@ -37,8 +37,8 @@ export const store = {
   locale: "es_HN",
   city: "Honduras",
   /** Número con código de país, sin + ni espacios. */
-  whatsappNumber: "50496784674",
-  whatsappDisplay: "+504 9678-4674",
+  whatsappNumber: "50492670387",
+  whatsappDisplay: "+504 9267-0387",
   whatsappGreeting: "Hola, vi Perfumes y Belleza y quiero información.",
   email: "perfumesybellezahn@gmail.com",
   hours: "Lunes a sábado, 8:00 a.m. – 6:00 p.m. (hora de Honduras)",
