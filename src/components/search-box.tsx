@@ -17,16 +17,18 @@ function suggestionKind(item: SearchRecord): string {
   return TYPE_LABEL[item.type];
 }
 
-const SEARCH_PLACEHOLDER = "Busca perfume, skincare o shampoo";
+const SEARCH_PLACEHOLDER = "Busca productos, skincare, o productos de belleza";
 
 function SearchForm({
   records,
   placeholder,
   initialQuery,
+  layout,
 }: {
   records: SearchRecord[];
   placeholder: string;
   initialQuery: string;
+  layout: "hero" | "header";
 }) {
   const router = useRouter();
   const fieldId = useId();
@@ -36,6 +38,7 @@ function SearchForm({
     () => suggestionsForQuery(records, query, 6),
     [records, query],
   );
+  const stacked = layout === "hero";
 
   function go(event: FormEvent) {
     event.preventDefault();
@@ -46,7 +49,11 @@ function SearchForm({
   }
 
   return (
-    <form onSubmit={go} className="relative" role="search">
+    <form
+      onSubmit={go}
+      className={stacked ? "relative flex flex-col gap-2" : "relative"}
+      role="search"
+    >
       <label htmlFor={fieldId} className="sr-only">
         Buscar producto
       </label>
@@ -60,9 +67,20 @@ function SearchForm({
         onFocus={() => setOpen(true)}
         placeholder={placeholder}
         autoComplete="off"
-        className="h-14 w-full rounded-full border border-line bg-paper px-5 pr-28 text-base outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+        className={
+          stacked
+            ? "h-14 w-full rounded-full border border-line bg-paper px-4 text-[13px] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:px-5 sm:text-base"
+            : "h-14 w-full rounded-full border border-line bg-paper px-5 pr-28 text-base outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+        }
       />
-      <button type="submit" className="absolute right-2 top-2 h-10 rounded-full bg-ink px-4 text-sm text-ivory">
+      <button
+        type="submit"
+        className={
+          stacked
+            ? "h-11 rounded-full bg-ink px-4 text-sm text-ivory"
+            : "absolute right-2 top-2 h-10 rounded-full bg-ink px-4 text-sm text-ivory"
+        }
+      >
         Buscar
       </button>
       {open && query.trim().length >= 2 ? (
@@ -135,12 +153,19 @@ export function SearchBox({
     };
   }, []);
   if (variant === "hero") {
-    return <SearchForm records={records} placeholder={SEARCH_PLACEHOLDER} initialQuery={initialQuery} />;
+    return (
+      <SearchForm
+        records={records}
+        placeholder={SEARCH_PLACEHOLDER}
+        initialQuery={initialQuery}
+        layout="hero"
+      />
+    );
   }
   return (
     <>
       <div className="hidden w-72 shrink-0 lg:block">
-        <SearchForm records={records} placeholder="Buscar" initialQuery={initialQuery} />
+        <SearchForm records={records} placeholder="Buscar" initialQuery={initialQuery} layout="header" />
       </div>
       <button
         type="button"
@@ -161,7 +186,12 @@ export function SearchBox({
               Cerrar
             </button>
           </div>
-          <SearchForm records={records} placeholder={SEARCH_PLACEHOLDER} initialQuery={initialQuery} />
+          <SearchForm
+            records={records}
+            placeholder={SEARCH_PLACEHOLDER}
+            initialQuery={initialQuery}
+            layout="hero"
+          />
         </div>
       ) : null}
     </>
