@@ -3,12 +3,23 @@ import { Suspense } from "react";
 import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
+import { GENDER_LABEL } from "@/config";
 import { getCatalog, getComparisonPairs, getSearchRecords } from "@/lib/catalog";
 import { nameWithBrand } from "@/lib/catalog-model";
-import { isCatalogSection, sectionLabel } from "@/lib/catalog-section";
-import { queryNamesOriginal, searchCatalog, searchSections, type SearchPresentation } from "@/lib/search";
+import { isCatalogSection, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
+import {
+  narrowSearch,
+  parseSearchNarrowing,
+  queryNamesOriginal,
+  searchCatalog,
+  searchFacetRecords,
+  searchNarrowingActive,
+  searchSections,
+  type SearchNarrowing,
+  type SearchPresentation,
+} from "@/lib/search";
 import { pageMetadata } from "@/lib/seo";
-import type { PublicProduct } from "@/types/catalog";
+import { GENDERS, type PublicProduct, type SearchRecord } from "@/types/catalog";
 
 export const metadata = pageMetadata({
   title: "Buscar",
@@ -40,25 +51,36 @@ async function SearchResults({
   const seccionRaw = params.seccion;
   const requested = (Array.isArray(seccionRaw) ? seccionRaw[0] : seccionRaw) ?? "";
   const locked = isCatalogSection(requested) ? requested : undefined;
+  const filters = parseSearchNarrowing(params);
   const records = getSearchRecords();
   const catalog = new Map(getCatalog().map((product) => [product.id, product]));
   const pairs = getComparisonPairs();
   const sections = query.trim().length < 2 ? [] : searchSections(records, query, locked);
-  const blocks = sections
+  const found = sections
     .map((section) => ({ section, presentation: searchCatalog(records, query, section) }))
     .filter((block) => hasSearchResults(block.presentation));
-  const showSectionTitle = blocks.length > 1;
+  const facets = found.flatMap((block) => searchFacetRecords(block.presentation));
+  const blocks = found
+    .map((block) => ({ ...block, presentation: narrowSearch(block.presentation, filters) }))
+    .filter((block) => hasSearchResults(block.presentation));
+  const showSectionTitle = found.length > 1;
+  const ready = query.trim().length >= 2;
 
   return (
     <Shell className="py-8 md:py-12">
       <h1 className="font-serif text-4xl md:text-5xl">Buscar</h1>
       <div className="mt-6 max-w-xl">
-        <SearchBox variant="hero" />
+        <SearchBox variant="hero" initialQuery={query} />
       </div>
-      {query.trim().length < 2 ? (
-        <p className="mt-8 text-muted">Escribe al menos dos letras. Puedes buscar por nombre, marca o un perfume famoso.</p>
+      {ready && found.length > 0 ? (
+        <SearchRefine query={query} section={locked} filters={filters} records={facets} />
+      ) : null}
+      {!ready ? (
+        <p className="mt-8 text-muted">Escribe al menos dos letras. Puedes buscar por nombre, marca o producto.</p>
+      ) : found.length === 0 ? (
+        <p className="mt-10">No encontramos eso. Prueba con la marca o con menos palabras.</p>
       ) : blocks.length === 0 ? (
-        <p className="mt-10">No encontramos ese aroma. Prueba con la marca o con menos palabras.</p>
+        <p className="mt-10">No hay productos con esos filtros.</p>
       ) : (
         <div className="mt-10 space-y-16">
           {blocks.map((block) => (
@@ -77,6 +99,80 @@ async function SearchResults({
         </div>
       )}
     </Shell>
+  );
+}
+
+function uniqueSorted(values: string[]): string[] {
+  return [...new Set(values)].sort((left, right) => left.localeCompare(right, "es"));
+}
+
+function SearchRefine({
+  query,
+  section,
+  filters,
+  records,
+}: {
+  query: string;
+  section: CatalogSection | undefined;
+  filters: SearchNarrowing;
+  records: SearchRecord[];
+}) {
+  const brands = uniqueSorted(records.map((record) => record.brand));
+  const categories = uniqueSorted(records.map((record) => record.category));
+  const clear = new URLSearchParams({ q: query });
+  if (section) clear.set("seccion", section);
+  return (
+    <form action="/buscar" className="mt-6 grid gap-3 rounded-3xl border border-line bg-paper p-4 text-sm md:grid-cols-2 xl:grid-cols-4">
+      <input type="hidden" name="q" value={query} />
+      {section ? <input type="hidden" name="seccion" value={section} /> : null}
+      <label className="grid gap-1">
+        Género
+        <select name="genero" defaultValue={filters.genero} className="h-11 rounded-xl border border-line bg-ivory px-3">
+          <option value="">Todos</option>
+          {GENDERS.map((gender) => (
+            <option key={gender} value={gender}>
+              {GENDER_LABEL[gender]}
+            </option>
+          ))}
+        </select>
+      </label>
+      {categories.length > 1 ? (
+        <label className="grid gap-1">
+          Categoría
+          <select name="categoria" defaultValue={filters.categoria} className="h-11 rounded-xl border border-line bg-ivory px-3">
+            <option value="">Todas</option>
+            {categories.map((category) => (
+              <option key={category}>{category}</option>
+            ))}
+          </select>
+        </label>
+      ) : null}
+      {brands.length > 1 ? (
+        <label className="grid gap-1">
+          Marca
+          <select name="marca" defaultValue={filters.marca} className="h-11 rounded-xl border border-line bg-ivory px-3">
+            <option value="">Todas</option>
+            {brands.map((brand) => (
+              <option key={brand}>{brand}</option>
+            ))}
+          </select>
+        </label>
+      ) : null}
+      <div className="flex flex-wrap items-center gap-3 self-end">
+        <label className="flex items-center gap-2">
+          <input type="checkbox" name="stock" value="1" defaultChecked={filters.stock} />
+          Con existencia
+        </label>
+        <button type="submit" className="h-11 rounded-full bg-ink px-4 text-ivory">
+          Filtrar
+        </button>
+        {searchNarrowingActive(filters) ? (
+          <Link href={`/buscar?${clear.toString()}`} className="text-sm text-gold">
+            Quitar filtros
+          </Link>
+        ) : null}
+      </div>
+    </form>
   );
 }
 

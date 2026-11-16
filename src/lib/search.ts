@@ -2,7 +2,7 @@ import Fuse from "fuse.js";
 import { inspirationOrder } from "@/lib/catalog-model";
 import { CATALOG_SECTIONS, type CatalogSection } from "@/lib/catalog-section";
 import { fold } from "@/lib/text";
-import type { SearchRecord } from "@/types/catalog";
+import { GENDERS, type Gender, type SearchRecord } from "@/types/catalog";
 
 export type InspirationGroup = {
   original: SearchRecord;
@@ -43,6 +43,8 @@ function tokensMatch(haystack: string, query: string): boolean {
     haystackWords.some((token) => {
       if (token.includes(word)) return true;
       if (token.length >= 4 && word.includes(token)) return true;
+      // «Yara» no puede parecerse a «para»: el error de una letra solo vale en palabras más largas.
+      if (token.length < 5 || word.length < 5) return false;
       return editDistance(token, word) <= 1;
     }),
   );
@@ -142,11 +144,15 @@ function byPrompt(query: string): (left: SearchRecord, right: SearchRecord) => n
   };
 }
 
-function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
+function directRecords(records: SearchRecord[], query: string): SearchRecord[] {
   const folded = fold(query);
   if (folded.length < 2) return [];
-  const direct = records.filter((record) => tokensMatch(record.haystack, folded));
-  if (direct.length > 0) return direct;
+  return records.filter((record) => tokensMatch(record.haystack, folded));
+}
+
+function fuzzyRecords(records: SearchRecord[], query: string): SearchRecord[] {
+  const folded = fold(query);
+  if (folded.length < 3) return [];
   const fuse = new Fuse(records, {
     keys: ["name"],
     threshold: 0.35,
@@ -158,6 +164,12 @@ function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
     .search(folded)
     .filter((result) => (result.score ?? 1) <= 0.35)
     .map((result) => result.item);
+}
+
+function matchRecords(records: SearchRecord[], query: string): SearchRecord[] {
+  const direct = directRecords(records, query);
+  if (direct.length > 0) return direct;
+  return fuzzyRecords(records, query);
 }
 
 function containsPhrase(query: string, phrase: string): boolean {
@@ -206,9 +218,10 @@ export function searchSections(
   if (byBrand.length > 0) return byBrand;
   const byCategory = sectionsWithField(records, query, "category", categoryMatches);
   if (byCategory.length > 0) return byCategory;
-  return CATALOG_SECTIONS.filter(
-    (section) => matchRecords(records.filter((record) => record.section === section), query).length > 0,
-  );
+  const inSection = (section: CatalogSection) => records.filter((record) => record.section === section);
+  const direct = CATALOG_SECTIONS.filter((section) => directRecords(inSection(section), query).length > 0);
+  if (direct.length > 0) return direct;
+  return CATALOG_SECTIONS.filter((section) => fuzzyRecords(inSection(section), query).length > 0);
 }
 
 export function searchPath(records: SearchRecord[], query: string): string {
@@ -288,6 +301,84 @@ export function searchCatalog(
     alternatives,
     groups,
   };
+}
+
+export type SearchNarrowing = {
+  genero: Gender | "";
+  marca: string;
+  categoria: string;
+  stock: boolean;
+};
+
+function firstParam(value: string | string[] | undefined): string {
+  if (Array.isArray(value)) return value[0] ?? "";
+  return value ?? "";
+}
+
+function isGender(value: string): value is Gender {
+  return (GENDERS as readonly string[]).includes(value);
+}
+
+export function parseSearchNarrowing(
+  searchParams: Record<string, string | string[] | undefined>,
+): SearchNarrowing {
+  const genero = firstParam(searchParams.genero);
+  return {
+    genero: isGender(genero) ? genero : "",
+    marca: firstParam(searchParams.marca).trim(),
+    categoria: firstParam(searchParams.categoria).trim(),
+    stock: firstParam(searchParams.stock) === "1",
+  };
+}
+
+export function searchNarrowingActive(filters: SearchNarrowing): boolean {
+  return Boolean(filters.genero || filters.marca || filters.categoria || filters.stock);
+}
+
+function matchesNarrowing(record: SearchRecord, filters: SearchNarrowing): boolean {
+  if (filters.genero && record.gender !== filters.genero) return false;
+  if (filters.marca && record.brand !== filters.marca) return false;
+  if (filters.categoria && record.category !== filters.categoria) return false;
+  if (filters.stock && !record.inStock) return false;
+  return true;
+}
+
+/** Deja la búsqueda en el mismo orden y quita lo que no pasa el filtro. */
+export function narrowSearch(presentation: SearchPresentation, filters: SearchNarrowing): SearchPresentation {
+  if (!searchNarrowingActive(filters)) return presentation;
+  const keep = (record: SearchRecord) => matchesNarrowing(record, filters);
+  const groups = presentation.groups.flatMap((group) => {
+    const clones = group.clones.filter(keep);
+    const sets = group.sets.filter(keep);
+    if (clones.length === 0 && sets.length === 0) return [];
+    return [{ ...group, clones, sets }];
+  });
+  return {
+    ...presentation,
+    products: presentation.products.filter(keep),
+    stockedOriginals: presentation.stockedOriginals.filter(keep),
+    missingOriginals: presentation.missingOriginals.filter(keep),
+    alternatives: presentation.alternatives.filter(keep),
+    groups,
+  };
+}
+
+/** Productos que se pueden comprar en esta búsqueda, antes de filtrar. */
+export function searchFacetRecords(presentation: SearchPresentation): SearchRecord[] {
+  const seen = new Set<string>();
+  const items: SearchRecord[] = [];
+  const add = (record: SearchRecord) => {
+    if (record.isReference || seen.has(record.id)) return;
+    seen.add(record.id);
+    items.push(record);
+  };
+  for (const record of presentation.products) add(record);
+  for (const record of presentation.stockedOriginals) add(record);
+  for (const group of presentation.groups) {
+    for (const record of group.clones) add(record);
+    for (const record of group.sets) add(record);
+  }
+  return items;
 }
 
 export function suggestionItems(presentation: SearchPresentation, limit = 6): SearchRecord[] {

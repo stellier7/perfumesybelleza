@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useMemo, useState, type FormEvent } from "react";
@@ -16,16 +17,20 @@ function suggestionKind(item: SearchRecord): string {
   return TYPE_LABEL[item.type];
 }
 
+const SEARCH_PLACEHOLDER = "Busca perfume, skincare o shampoo";
+
 function SearchForm({
   records,
   placeholder,
+  initialQuery,
 }: {
   records: SearchRecord[];
   placeholder: string;
+  initialQuery: string;
 }) {
   const router = useRouter();
   const fieldId = useId();
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery);
   const [open, setOpen] = useState(false);
   const suggestions = useMemo(
     () => suggestionsForQuery(records, query, 6),
@@ -43,7 +48,7 @@ function SearchForm({
   return (
     <form onSubmit={go} className="relative" role="search">
       <label htmlFor={fieldId} className="sr-only">
-        Busca tu perfume favorito
+        Buscar producto
       </label>
       <input
         id={fieldId}
@@ -61,7 +66,7 @@ function SearchForm({
         Buscar
       </button>
       {open && query.trim().length >= 2 ? (
-        <ul className="absolute z-30 mt-2 max-h-80 w-full overflow-auto rounded-2xl border border-line bg-paper shadow-lg">
+        <ul className="absolute z-30 mt-2 max-h-96 w-full overflow-auto rounded-2xl border border-line bg-paper shadow-lg">
           {suggestions.length === 0 ? (
             <li className="px-4 py-3 text-sm text-muted">Sin coincidencias. Prueba con la marca o el nombre.</li>
           ) : (
@@ -70,9 +75,20 @@ function SearchForm({
                 <Link
                   href={item.isReference ? searchPath(records, item.name) : `/producto/${item.slug}`}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between gap-3 px-4 py-3 hover:bg-ivory"
+                  className="flex items-center justify-between gap-3 px-3 py-2 hover:bg-ivory"
                 >
-                  <span>
+                  {item.image ? (
+                    <Image
+                      src={item.image}
+                      alt=""
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 shrink-0 rounded-lg object-cover"
+                    />
+                  ) : (
+                    <span className="h-12 w-12 shrink-0 rounded-lg bg-blush/50" aria-hidden="true" />
+                  )}
+                  <span className="min-w-0 flex-1">
                     <span className="block font-medium">{item.name}</span>
                     <span className="block text-xs text-muted">
                       {item.brand} · Tendencia {item.trending} · {suggestionKind(item)}
@@ -96,7 +112,13 @@ function SearchForm({
   );
 }
 
-export function SearchBox({ variant }: { variant: "hero" | "header" }) {
+export function SearchBox({
+  variant,
+  initialQuery = "",
+}: {
+  variant: "hero" | "header";
+  initialQuery?: string;
+}) {
   const [records, setRecords] = useState<SearchRecord[]>([]);
   const [sheet, setSheet] = useState(false);
   useEffect(() => {
@@ -113,12 +135,12 @@ export function SearchBox({ variant }: { variant: "hero" | "header" }) {
     };
   }, []);
   if (variant === "hero") {
-    return <SearchForm records={records} placeholder="Busca tu perfume favorito" />;
+    return <SearchForm records={records} placeholder={SEARCH_PLACEHOLDER} initialQuery={initialQuery} />;
   }
   return (
     <>
       <div className="hidden w-72 shrink-0 lg:block">
-        <SearchForm records={records} placeholder="Buscar" />
+        <SearchForm records={records} placeholder="Buscar" initialQuery={initialQuery} />
       </div>
       <button
         type="button"
@@ -139,7 +161,7 @@ export function SearchBox({ variant }: { variant: "hero" | "header" }) {
               Cerrar
             </button>
           </div>
-          <SearchForm records={records} placeholder="Busca tu perfume favorito" />
+          <SearchForm records={records} placeholder={SEARCH_PLACEHOLDER} initialQuery={initialQuery} />
         </div>
       ) : null}
     </>

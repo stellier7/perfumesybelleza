@@ -9,7 +9,16 @@ import {
   sameScentAlternatives,
   toSearchRecord,
 } from "./catalog-model";
-import { queryNamesOriginal, searchCatalog, searchPath, searchSections, suggestionItems, suggestionsForQuery } from "./search";
+import {
+  narrowSearch,
+  parseSearchNarrowing,
+  queryNamesOriginal,
+  searchCatalog,
+  searchPath,
+  searchSections,
+  suggestionItems,
+  suggestionsForQuery,
+} from "./search";
 import { catalogSection } from "./catalog-section";
 import { applyCatalogFilters, catalogFilterQuery, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
@@ -490,6 +499,35 @@ test("la búsqueda pone primero lo que más se parece y desempata con la tendenc
   assert.equal(searchCatalog(records, "Yara").products[0]?.id, "yara");
 });
 
+test("el filtro de una búsqueda deja el género y conserva el orden", () => {
+  const records = buildCatalog([
+    product({ id: "yara", name: "Yara", brand: "Lattafa", type: "arabic", gender: "mujer", category: "Eau de Parfum" }),
+    product({ id: "moi", name: "Yara Moi", brand: "Lattafa", type: "arabic", gender: "mujer", category: "Eau de Parfum" }),
+    product({ id: "asad", name: "Asad", brand: "Lattafa", type: "arabic", gender: "hombre", category: "Eau de Parfum" }),
+    product({
+      id: "crema",
+      name: "Centella Cream",
+      brand: "Skin1004",
+      type: "beauty",
+      gender: "unisex",
+      category: "Skincare coreano",
+      inStock: false,
+    }),
+  ]).map(toSearchRecord);
+  const open = searchCatalog(records, "Lattafa");
+  const women = narrowSearch(open, { genero: "mujer", marca: "", categoria: "", stock: false });
+  assert.deepEqual(
+    women.products.map((item) => item.id),
+    open.products.filter((item) => item.gender === "mujer").map((item) => item.id),
+  );
+  assert.equal(women.products.some((item) => item.id === "asad"), false);
+  const cream = searchCatalog(records, "Centella", "cuidado");
+  const stocked = narrowSearch(cream, { genero: "", marca: "", categoria: "", stock: true });
+  assert.equal(stocked.products.length, 0);
+  assert.equal(parseSearchNarrowing({ genero: "otro" }).genero, "");
+  assert.equal(parseSearchNarrowing({ genero: "hombre", stock: "1" }).stock, true);
+});
+
 test("perfumes y cuidado personal no comparten marcas ni resultados", () => {
   const catalog = buildCatalog([
     product({ id: "asad", name: "Asad", brand: "Lattafa", type: "arabic", category: "Eau de Parfum" }),
@@ -575,6 +613,23 @@ test("inspiraciones sigue dentro de perfumes", () => {
     result.items.map((item) => item.id),
     ["clone"],
   );
+});
+
+test("yara no arrastra un producto que solo dice para", () => {
+  const records = buildCatalog([
+    product({ id: "yara", name: "Yara", brand: "Lattafa", type: "arabic", gender: "mujer" }),
+    product({
+      id: "ninos",
+      name: "Shampoo para niños",
+      brand: "Nessrin",
+      type: "beauty",
+      category: "Shampoo",
+    }),
+    product({ id: "lampara", name: "LAMPARA", brand: "Beauty Style", type: "beauty", category: "Uñas" }),
+  ]).map(toSearchRecord);
+  const result = searchCatalog(records, "Yara");
+  assert.deepEqual(result.products.map((item) => item.id), ["yara"]);
+  assert.deepEqual(searchSections(records, "Yara"), ["perfumes"]);
 });
 
 test("tolera tildes y un error de escritura", () => {
