@@ -6,7 +6,6 @@ import { Shell } from "@/components/shell";
 import { GENDER_LABEL } from "@/config";
 import { getCatalog, getComparisonPairs, getSearchRecords } from "@/lib/catalog";
 import { displayTitle } from "@/lib/catalog-model";
-import { sentenceCase } from "@/lib/text";
 import { isCatalogSection, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
 import {
   narrowSearch,
@@ -155,7 +154,7 @@ function SearchRefine({
             <option value="">Todas</option>
             {brands.map((brand) => (
               <option key={brand} value={brand}>
-                {sentenceCase(brand)}
+                {brand}
               </option>
             ))}
           </select>

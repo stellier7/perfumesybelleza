@@ -12,7 +12,6 @@ import {
   type CatalogFilters,
 } from "@/lib/catalog-query";
 import { catalogSection, CATALOG_SECTIONS, sectionLabel, sectionTypes } from "@/lib/catalog-section";
-import { sentenceCase } from "@/lib/text";
 import { pageMetadata } from "@/lib/seo";
 import { GENDERS } from "@/types/catalog";
 
@@ -97,7 +96,7 @@ async function Catalog({
               <option value="">Todas</option>
               {brands.map((brand) => (
                 <option key={brand} value={brand}>
-                  {sentenceCase(brand)}
+                  {brand}
                 </option>
               ))}
             </select>

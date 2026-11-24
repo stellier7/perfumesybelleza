@@ -2,7 +2,7 @@ import { TYPE_LABEL, GENDER_LABEL } from "@/config";
 import { catalogSection } from "@/lib/catalog-section";
 import { trendingScore } from "@/lib/fame";
 import { shelfPrice } from "@/lib/pricing";
-import { assertNever, fold, sentenceCase, slugify } from "@/lib/text";
+import { assertNever, fold, slugify } from "@/lib/text";
 import type {
   FragranceNotes,
   FragranceRef,
@@ -98,7 +98,7 @@ function referenceProduct(name: string, brand: string): PublicProduct {
     gender: "unisex",
     price: 0,
     images: [],
-    description: `${sentenceCase(nameWithBrand(name, brand))} es una referencia de aroma. No lo tenemos en el catálogo. Más abajo encuentras alternativas para quienes buscan un aroma similar.`,
+    description: `${displayTitle({ name, brand, sizeMl: null })} es una referencia de aroma. No lo tenemos en el catálogo. Más abajo encuentras alternativas para quienes buscan un aroma similar.`,
     notes: emptyNotes(),
     sizeMl: null,
     inStock: false,
@@ -333,9 +333,126 @@ export function formatSize(product: { sizeMl: number | null; sizeLabel?: string 
   return null;
 }
 
+const TITLE_ACRONYMS = new Set([
+  "EDP",
+  "EDT",
+  "EDC",
+  "VIP",
+  "SPF",
+  "UV",
+  "BB",
+  "CC",
+  "ASB",
+  "DEO",
+  "SG",
+  "UPC",
+  "SOS",
+  "SP",
+  "SPR",
+]);
+
+const TITLE_PARTICLES = new Set([
+  "de",
+  "del",
+  "di",
+  "du",
+  "da",
+  "do",
+  "dos",
+  "das",
+  "y",
+  "e",
+  "a",
+  "en",
+  "con",
+  "para",
+  "por",
+  "pour",
+  "le",
+  "la",
+  "les",
+  "the",
+  "of",
+  "for",
+  "and",
+  "et",
+  "van",
+  "von",
+  "al",
+]);
+
+function isShouting(value: string): boolean {
+  const letters = value.replace(/[^\p{L}]/gu, "");
+  if (letters.length < 2) return false;
+  const upper = letters.replace(/[^\p{Lu}]/gu, "").length;
+  return upper / letters.length > 0.8;
+}
+
+function polishToken(token: string, isFirst: boolean): string {
+  if (token.includes("-")) {
+    return token
+      .split("-")
+      .map((part, index) => polishToken(part, isFirst && index === 0))
+      .join("-");
+  }
+  if (token.includes("/") && !/^\/[a-z]+$/i.test(token)) {
+    return token
+      .split("/")
+      .map((part, index) => (part ? polishToken(part, isFirst && index === 0) : ""))
+      .join("/");
+  }
+  const size = token.match(/^(\d+(?:[.,]\d+)?)(ml|oz|kg|g)\.?$/i);
+  if (size) return `${size[1]}${size[2].toLowerCase()}`;
+  if (/^(?:ml|oz|kg)$/i.test(token)) return token.toLowerCase();
+  if (/^\([a-z]\)$/i.test(token)) return token.toUpperCase();
+  if (/^\/[a-z]+$/i.test(token)) return `/${token.slice(1).toUpperCase()}`;
+  const letters = token.replace(/[^\p{L}]/gu, "");
+  const compact = letters.toUpperCase();
+  if (TITLE_ACRONYMS.has(compact) && compact.length === letters.length) {
+    return token.replace(letters, compact);
+  }
+  if (/\d/.test(token) && letters.length > 0 && letters.length <= 4) return token.toUpperCase();
+  const lower = token.toLocaleLowerCase("es-HN");
+  const word = lower.replace(/[^\p{L}]/gu, "");
+  if (!isFirst && TITLE_PARTICLES.has(word)) return lower;
+  return lower.replace(/\p{L}/u, (letter) => letter.toLocaleUpperCase("es-HN"));
+}
+
+/** Ordena un título en mayúsculas de la distribuidora. El texto guardado no cambia. */
+function tidyShoutedName(name: string, brand: string): string {
+  const original = name.trim().replace(/\s+/g, " ");
+  if (original.startsWith("=")) return original;
+  let value = original.replace(/^T\.\s*/i, "");
+  value = value.replace(/\(([^)]*)\)/g, (_, inner: string) => {
+    const body = inner.trim();
+    if (/^[a-z]$/i.test(body)) return ` (${body.toUpperCase()}) `;
+    return ` ${body} `;
+  });
+  value = value.replace(/(?:\s+SP\.?|\s+SPR\.?)\s*$/i, "");
+  value = value.replace(/\s+/g, " ").trim();
+  const initials = brand
+    .split(/\s+/)
+    .filter((part) => part.length > 0)
+    .map((part) => part[0] ?? "")
+    .join("")
+    .toUpperCase();
+  if (initials.length >= 2) {
+    const split = value.match(/^(\S+)\s+(.+)$/);
+    if (split && split[1].replace(/\./g, "").toUpperCase() === initials) value = split[2];
+  }
+  return value
+    .split(" ")
+    .filter((token) => token.length > 0)
+    .map((token, index) => polishToken(token, index === 0))
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 /**
- * Título para la tienda: nombre, marca si no va ya en el nombre, y tamaño si existe.
- * Una mayúscula y el resto en minúscula. El nombre guardado no cambia.
+ * Título para la tienda: marca, nombre y tamaño.
+ * Un nombre ya escrito se respeta. Uno en mayúsculas se ordena, sin el prefijo T. ni el SP final.
+ * El nombre guardado no cambia.
  */
 export function displayTitle(product: {
   name: string;
@@ -343,17 +460,17 @@ export function displayTitle(product: {
   sizeMl: number | null;
   sizeLabel?: string;
 }): string {
-  const name = product.name.trim();
   const brand = product.brand.trim();
+  const name = isShouting(product.name) ? tidyShoutedName(product.name, brand) : product.name.trim().replace(/\s+/g, " ");
+  const parts = brand && !fold(name).includes(fold(brand)) ? [brand, name] : [name];
+  let title = parts.join(" ").replace(/\s+/g, " ").trim();
   const size = formatSize(product);
-  const parts = [name];
-  if (brand && !fold(name).includes(fold(brand))) parts.push(brand);
-  if (size) {
-    const compactName = fold(name).replace(/\s+/g, "");
-    const compactSize = fold(size).replace(/\s+/g, "");
-    if (!compactName.includes(compactSize)) parts.push(size);
-  }
-  return sentenceCase(parts.join(", "));
+  if (!size) return title;
+  const compactTitle = fold(title).replace(/\s+/g, "");
+  const compactSize = fold(size).replace(/\s+/g, "");
+  if (compactTitle.includes(compactSize) || /\d+(?:[.,]\d+)?\s*(?:ml|oz|g|kg)\b/i.test(title)) return title;
+  title = `${title} ${size}`.replace(/\s+/g, " ").trim();
+  return title;
 }
 
 export function comparisonSlug(originalSlug: string, alternativeSlug: string): string {

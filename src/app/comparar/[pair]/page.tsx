@@ -9,7 +9,7 @@ import { Shell } from "@/components/shell";
 import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
 import { displayTitle, formatSize } from "@/lib/catalog-model";
-import { sentenceCase } from "@/lib/text";
+import { fold } from "@/lib/text";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { prerenderComparisonParams } from "@/lib/prerender-paths";
 import { faqJsonLd } from "@/lib/seo";
@@ -127,8 +127,10 @@ function Side({ product, role }: { product: PublicProduct; role: string }) {
   return (
     <article className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
       <p className="text-xs uppercase tracking-[0.16em] text-gold">{role}</p>
-      <h2 className="mt-2 font-serif text-3xl leading-tight">{sentenceCase(product.name)}</h2>
-      <p className="text-sm text-muted">{sentenceCase(product.brand)}</p>
+      <h2 className="mt-2 font-serif text-3xl leading-tight">{displayTitle(product)}</h2>
+      {fold(displayTitle(product)).includes(fold(product.brand)) ? null : (
+        <p className="text-sm text-muted">{product.brand}</p>
+      )}
       <p className="mt-4 text-lg">{price}</p>
       <p className="text-sm text-muted">{formatSize(product) ?? "Tamaño no indicado"}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
