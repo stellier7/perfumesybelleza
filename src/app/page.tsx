@@ -9,7 +9,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SHIPPING_LPS, store } from "@/config";
 import { isSpotlightFiller, pickFamous } from "@/lib/fame";
 import { homeDepartments, homeShelf, SPOTLIGHTS } from "@/lib/home-rail";
-import { nameWithBrand } from "@/lib/catalog-model";
+import { displayTitle } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 import { getComparisonPairs, getSellableProducts } from "@/lib/catalog";
@@ -123,21 +123,21 @@ export default function HomePage() {
                   href={`/comparar/${pair.slug}`}
                   className="rounded-3xl border border-white/10 bg-night-soft p-5 transition duration-300 motion-safe:hover:-translate-y-0.5"
                 >
-                  <p className="text-xs uppercase tracking-[0.16em] text-champagne">
-                    {nameWithBrand(pair.original.name, pair.original.brand)} y {pair.alternative.name}
+                  <p className="text-sm text-champagne">
+                    {displayTitle(pair.original)} y {displayTitle(pair.alternative)}
                   </p>
                   <p className="mt-3 font-serif text-2xl">
-                    {pair.alternative.name}
+                    {displayTitle(pair.alternative)}
                     <span className="text-champagne-soft"> · alternativa</span>
                   </p>
                   <p className="mt-2 text-sm text-champagne-soft">
                     {pair.original.isReference
                       ? "El perfume de referencia no está en el catálogo."
                       : pair.original.inStock
-                        ? `${nameWithBrand(pair.original.name, pair.original.brand)}: ${hasShelfPrice(pair.original.price) ? formatPrice(pair.original.price) : "Precio por confirmar"}`
-                        : `${nameWithBrand(pair.original.name, pair.original.brand)} está agotado.`}
+                        ? `${displayTitle(pair.original)}: ${hasShelfPrice(pair.original.price) ? formatPrice(pair.original.price) : "Precio por confirmar"}`
+                        : `${displayTitle(pair.original)} está agotado.`}
                     {" · "}
-                    {pair.alternative.name}:{" "}
+                    {displayTitle(pair.alternative)}:{" "}
                     {hasShelfPrice(pair.alternative.price)
                       ? formatPrice(pair.alternative.price)
                       : "Precio por confirmar"}

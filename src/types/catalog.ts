@@ -89,6 +89,8 @@ export type SearchRecord = {
   slug: string;
   name: string;
   brand: string;
+  sizeMl: number | null;
+  sizeLabel?: string;
   type: ProductType;
   gender: Gender;
   price: number;

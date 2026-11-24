@@ -6,7 +6,9 @@ import { useRouter } from "next/navigation";
 import { useEffect, useId, useMemo, useState, type FormEvent } from "react";
 import { TYPE_LABEL } from "@/config";
 import { sectionLabel } from "@/lib/catalog-section";
+import { formatSize } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { sentenceCase } from "@/lib/text";
 import { searchPath, suggestionsForQuery } from "@/lib/search";
 import { loadSearchRecords } from "@/lib/search-index";
 import type { SearchRecord } from "@/types/catalog";
@@ -107,9 +109,10 @@ function SearchForm({
                     <span className="h-12 w-12 shrink-0 rounded-lg bg-blush/50" aria-hidden="true" />
                   )}
                   <span className="min-w-0 flex-1">
-                    <span className="block font-medium">{item.name}</span>
+                    <span className="block font-medium">{sentenceCase(item.name)}</span>
                     <span className="block text-xs text-muted">
-                      {item.brand} · Tendencia {item.trending} · {suggestionKind(item)}
+                      {sentenceCase(item.brand)}
+                      {formatSize(item) ? ` · ${formatSize(item)}` : ""} · Tendencia {item.trending} · {suggestionKind(item)}
                       {!item.inStock && !item.isReference ? " · Agotado" : ""}
                     </span>
                   </span>

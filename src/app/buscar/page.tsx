@@ -5,7 +5,8 @@ import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 import { GENDER_LABEL } from "@/config";
 import { getCatalog, getComparisonPairs, getSearchRecords } from "@/lib/catalog";
-import { nameWithBrand } from "@/lib/catalog-model";
+import { displayTitle } from "@/lib/catalog-model";
+import { sentenceCase } from "@/lib/text";
 import { isCatalogSection, sectionLabel, type CatalogSection } from "@/lib/catalog-section";
 import {
   narrowSearch,
@@ -153,7 +154,9 @@ function SearchRefine({
           <select name="marca" defaultValue={filters.marca} className="h-11 rounded-xl border border-line bg-ivory px-3">
             <option value="">Todas</option>
             {brands.map((brand) => (
-              <option key={brand}>{brand}</option>
+              <option key={brand} value={brand}>
+                {sentenceCase(brand)}
+              </option>
             ))}
           </select>
         </label>
@@ -214,7 +217,7 @@ function SectionResults({
       ) : null}
       {namedMissing.map((original) => (
         <p key={original.id} className="max-w-2xl leading-7">
-          No tenemos {nameWithBrand(original.name, original.brand)} en el catálogo. Estas alternativas son para
+          No tenemos {displayTitle(original)} en el catálogo. Estas alternativas son para
           quienes buscan un aroma similar.
         </p>
       ))}
@@ -226,7 +229,7 @@ function SectionResults({
       {presentation.groups.map((group) => (
         <div key={group.original.id}>
           <h3 className="font-serif text-3xl">
-            Inspirado en {nameWithBrand(group.original.name, group.original.brand)}
+            Inspirado en {displayTitle(group.original)}
           </h3>
           <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
             Del más cercano al más libre. No es el perfume de la casa.

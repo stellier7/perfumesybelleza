@@ -11,10 +11,12 @@ import { GENDER_LABEL, TYPE_LABEL, store } from "@/config";
 import { getCatalog, getProductBySlug } from "@/lib/catalog";
 import {
   comparisonSlug,
+  displayTitle,
   formatSize,
   productSuggestions,
   type ProductSuggestionGroup,
 } from "@/lib/catalog-model";
+import { sentenceCase } from "@/lib/text";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { prerenderProductParams } from "@/lib/prerender-paths";
 import type { PublicProduct } from "@/types/catalog";
@@ -30,14 +32,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: ProductParams): Promise<Metadata> {
   const product = getProductBySlug((await params).slug);
   if (!product) return { title: "Producto" };
-  const size = formatSize(product);
-  const title = product.isReference
-    ? `${product.name}: alternativas`
-    : product.type === "beauty"
-      ? size
-        ? `${product.brand} ${product.name}, ${size}`
-        : `${product.brand} ${product.name}`
-      : `${product.name} de ${product.brand}`;
+  const title = product.isReference ? `${displayTitle(product)}: alternativas` : displayTitle(product);
   return {
     title,
     description: product.description,
@@ -71,17 +66,17 @@ async function ProductScreen({ params }: ProductParams) {
       <nav className="text-sm text-muted">
         <Link href="/tienda">Tienda</Link>
         <span> / </span>
-        <span>{product.name}</span>
+        <span>{sentenceCase(product.name)}</span>
       </nav>
       <div className="mt-4 grid gap-8 md:grid-cols-2">
-        <ProductGallery images={product.images} name={product.name} />
+        <ProductGallery images={product.images} name={displayTitle(product)} />
         <div>
           <div className="max-md:pr-20">
             <p className="text-xs uppercase tracking-[0.18em] text-gold">
               {TYPE_LABEL[product.type]} · {GENDER_LABEL[product.gender]}
             </p>
-            <h1 className="mt-2 font-serif text-4xl leading-none md:text-6xl">{product.name}</h1>
-            <p className="mt-2 text-muted">{product.brand}</p>
+            <h1 className="mt-2 font-serif text-4xl leading-tight md:text-6xl">{sentenceCase(product.name)}</h1>
+            <p className="mt-2 text-muted">{sentenceCase(product.brand)}</p>
             <p className="mt-2 text-sm text-gold">Tendencia {product.trending}</p>
           </div>
           {product.isReference ? (
@@ -198,11 +193,11 @@ function productJsonLd(product: PublicProduct) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.name,
+    name: displayTitle(product),
     description: product.description,
     image: product.images.map((image) => `${store.url}${image}`),
     sku: product.id,
-    brand: { "@type": "Brand", name: product.brand },
+    brand: { "@type": "Brand", name: sentenceCase(product.brand) },
     category: product.category,
     ...(formatSize(product) ? { size: formatSize(product) } : {}),
     ...(hasShelfPrice(product.price)

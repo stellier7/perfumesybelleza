@@ -8,7 +8,8 @@ import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
 import { Shell } from "@/components/shell";
 import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
-import { formatSize, nameWithBrand } from "@/lib/catalog-model";
+import { displayTitle, formatSize } from "@/lib/catalog-model";
+import { sentenceCase } from "@/lib/text";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { prerenderComparisonParams } from "@/lib/prerender-paths";
 import { faqJsonLd } from "@/lib/seo";
@@ -23,9 +24,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PairParams): Promise<Metadata> {
   const comparison = getComparisonBySlug((await params).pair);
   if (!comparison) return { title: "Comparación" };
-  const originalLabel = nameWithBrand(comparison.original.name, comparison.original.brand);
-  const title = `${originalLabel} y ${comparison.alternative.name}`;
-  const description = `Compara ${originalLabel} con ${comparison.alternative.name}, una alternativa para quienes buscan un aroma similar.`;
+  const originalLabel = displayTitle(comparison.original);
+  const alternativeLabel = displayTitle(comparison.alternative);
+  const title = `${originalLabel} y ${alternativeLabel}`;
+  const description = `Compara ${originalLabel} con ${alternativeLabel}, una alternativa para quienes buscan un aroma similar.`;
   return {
     title,
     description,
@@ -46,19 +48,20 @@ async function Comparison({ params }: PairParams) {
   const comparison = getComparisonBySlug((await params).pair);
   if (!comparison) notFound();
   const { original, alternative } = comparison;
-  const originalLabel = nameWithBrand(original.name, original.brand);
+  const originalLabel = displayTitle(original);
+  const alternativeLabel = displayTitle(alternative);
   const faqs = [
     {
       question: "¿Es el mismo perfume?",
-      answer: `No. ${alternative.name} es una alternativa para quienes buscan un aroma similar a ${originalLabel}. No es el perfume de la casa de diseño y no decimos que huela igual.`,
+      answer: `No. ${alternativeLabel} es una alternativa para quienes buscan un aroma similar a ${originalLabel}. No es el perfume de la casa de diseño y no decimos que huela igual.`,
     },
     {
       question: "¿Cuál pido si quiero el de la casa?",
       answer: original.isReference
-        ? `No trabajamos ${originalLabel}. ${alternative.name} es la alternativa disponible en el catálogo.`
+        ? `No trabajamos ${originalLabel}. ${alternativeLabel} es la alternativa disponible en el catálogo.`
         : original.inStock
-          ? `${originalLabel} está disponible. ${alternative.name} es la opción más accesible para el día a día.`
-          : `${originalLabel} está agotado. Puedes pedir ${alternative.name} o avisarnos para reposición.`,
+          ? `${originalLabel} está disponible. ${alternativeLabel} es la opción más accesible para el día a día.`
+          : `${originalLabel} está agotado. Puedes pedir ${alternativeLabel} o avisarnos para reposición.`,
     },
     {
       question: "¿Puedo pedirlos por WhatsApp?",
@@ -74,14 +77,14 @@ async function Comparison({ params }: PairParams) {
         <Link href="/comparaciones">Comparaciones</Link>
         <span> / </span>
         <span>
-          {originalLabel} y {alternative.name}
+          {originalLabel} y {alternativeLabel}
         </span>
       </nav>
       <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
-        {originalLabel} <span className="text-gold">y</span> {alternative.name}
+        {originalLabel} <span className="text-gold">y</span> {alternativeLabel}
       </h1>
       <p className="mt-4 max-w-2xl leading-7 text-muted">
-        {alternative.name} es una alternativa para quienes buscan un aroma similar a {originalLabel}.
+        {alternativeLabel} es una alternativa para quienes buscan un aroma similar a {originalLabel}.
         Aquí ves precio, tamaño y para qué momento rinde mejor cada uno.
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -92,7 +95,7 @@ async function Comparison({ params }: PairParams) {
         <h2 className="font-serif text-3xl">Para quién es cada uno</h2>
         <p className="mt-3 leading-7">
           {original.verdict ?? `${originalLabel} es la referencia de esta comparación.`}{" "}
-          {alternative.verdict ?? `${alternative.name} es la alternativa que tenemos en catálogo.`}
+          {alternative.verdict ?? `${alternativeLabel} es la alternativa que tenemos en catálogo.`}
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href={`/producto/${original.slug}`} className="rounded-full border border-line px-4 py-2 text-sm">
@@ -100,7 +103,7 @@ async function Comparison({ params }: PairParams) {
           </Link>
           {!alternative.isReference && alternative.inStock ? (
             <Link href={`/producto/${alternative.slug}`} className="rounded-full bg-ink px-4 py-2 text-sm text-ivory">
-              Pedir {alternative.name}
+              Pedir {alternativeLabel}
             </Link>
           ) : null}
         </div>
@@ -124,8 +127,8 @@ function Side({ product, role }: { product: PublicProduct; role: string }) {
   return (
     <article className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
       <p className="text-xs uppercase tracking-[0.16em] text-gold">{role}</p>
-      <h2 className="mt-2 font-serif text-3xl">{product.name}</h2>
-      <p className="text-sm text-muted">{product.brand}</p>
+      <h2 className="mt-2 font-serif text-3xl leading-tight">{sentenceCase(product.name)}</h2>
+      <p className="text-sm text-muted">{sentenceCase(product.brand)}</p>
       <p className="mt-4 text-lg">{price}</p>
       <p className="text-sm text-muted">{formatSize(product) ?? "Tamaño no indicado"}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
@@ -166,7 +169,7 @@ function productOffer(product: PublicProduct) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.name,
+    name: displayTitle(product),
     description: product.description,
     image: product.images.map((image) => `${store.url}${image}`),
     brand: { "@type": "Brand", name: product.brand },

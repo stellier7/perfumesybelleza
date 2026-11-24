@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState, type MouseEvent } from "react";
 import { useCart } from "@/components/cart/cart-provider";
+import { formatSize } from "@/lib/catalog-model";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { trackPixel } from "@/lib/pixel";
 import { UTM_STORAGE_KEY } from "@/config";
@@ -125,6 +126,7 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
         brand: product.brand,
         price: product.price,
         image: product.images[0] ?? null,
+        sizeLabel: formatSize(product) ?? undefined,
       },
       1,
     );

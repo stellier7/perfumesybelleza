@@ -3,6 +3,7 @@ import test from "node:test";
 import {
   buildCatalog,
   comparisonPairs,
+  displayTitle,
   nameWithBrand,
   parseComparisonSlug,
   productSuggestions,
@@ -20,6 +21,7 @@ import {
   suggestionsForQuery,
 } from "./search";
 import { catalogSection } from "./catalog-section";
+import { sentenceCase } from "./text";
 import { applyCatalogFilters, catalogFilterQuery, INSPIRATIONS_CATEGORY, parseCatalogFilters } from "./catalog-query";
 import type { RawProduct } from "../types/catalog";
 
@@ -82,6 +84,37 @@ test("la inspiración se escribe con la marca delante del nombre", () => {
   assert.equal(nameWithBrand("Acqua di Gio", "Giorgio Armani"), "Giorgio Armani Acqua di Gio");
   assert.equal(nameWithBrand("Bleu de Chanel", "Chanel"), "Bleu de Chanel");
   assert.equal(nameWithBrand("Y", "Yves Saint Laurent"), "Yves Saint Laurent Y");
+});
+
+test("el título visible ordena nombre, marca y tamaño sin cambiar el guardado", () => {
+  assert.equal(sentenceCase("SAUVAGE"), "Sauvage");
+  assert.equal(sentenceCase("Acqua di Gio"), "Acqua di gio");
+  assert.equal(sentenceCase("212 VIP"), "212 Vip");
+  assert.equal(
+    displayTitle({
+      name: "JEAN PAUL GAULTIER GAULTIER DIVINE COUTURE 3.4 EDP (W)",
+      brand: "Jean Paul Gaultier",
+      sizeMl: 100,
+    }),
+    "Jean paul gaultier gaultier divine couture 3.4 edp (w), 100 ml",
+  );
+  assert.equal(
+    displayTitle({ name: "Acqua di Gio", brand: "Giorgio Armani", sizeMl: 100 }),
+    "Acqua di gio, giorgio armani, 100 ml",
+  );
+  assert.equal(displayTitle({ name: "Bleu de Chanel", brand: "Chanel", sizeMl: null }), "Bleu de chanel");
+  assert.equal(
+    displayTitle({ name: "PERRY ELLIS 360 RED /D EDP 100ML SP.", brand: "Perry Ellis", sizeMl: 100 }),
+    "Perry ellis 360 red /d edp 100ml sp.",
+  );
+  assert.equal(
+    displayTitle({ name: "Crema", brand: "Bioaqua", sizeMl: null, sizeLabel: "50 g" }),
+    "Crema, bioaqua, 50 g",
+  );
+  assert.equal(
+    displayTitle({ name: "Philos Centro", brand: "Philos", sizeMl: null }),
+    "Philos centro",
+  );
 });
 
 test("calcula alternativas y una referencia si el diseñador no está en el catálogo", () => {

@@ -20,6 +20,8 @@ export type CartLine = {
   price: number;
   image: string | null;
   qty: number;
+  /** Tamaño para mostrar. El nombre guardado sigue siendo el de la distribuidora. */
+  sizeLabel?: string;
 };
 
 type CartContextValue = {
@@ -60,6 +62,7 @@ function readCart(): CartLine[] {
           price: line.price,
           image: line.image ?? null,
           qty: Math.min(MAX_QTY, Math.max(1, Number(line.qty) || 1)),
+          sizeLabel: typeof line.sizeLabel === "string" && line.sizeLabel.trim() ? line.sizeLabel.trim() : undefined,
         },
       ];
     });
@@ -131,7 +134,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
           const existing = current.find((line) => line.id === item.id);
           if (!existing) return [...current, { ...item, qty: Math.min(MAX_QTY, qty) }];
           return current.map((line) =>
-            line.id === item.id ? { ...line, qty: Math.min(MAX_QTY, line.qty + qty) } : line,
+            line.id === item.id
+              ? { ...line, sizeLabel: line.sizeLabel ?? item.sizeLabel, qty: Math.min(MAX_QTY, line.qty + qty) }
+              : line,
           );
         });
         setDrawerOpen(true);

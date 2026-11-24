@@ -2,7 +2,7 @@ import { TYPE_LABEL, GENDER_LABEL } from "@/config";
 import { catalogSection } from "@/lib/catalog-section";
 import { trendingScore } from "@/lib/fame";
 import { shelfPrice } from "@/lib/pricing";
-import { assertNever, fold, slugify } from "@/lib/text";
+import { assertNever, fold, sentenceCase, slugify } from "@/lib/text";
 import type {
   FragranceNotes,
   FragranceRef,
@@ -98,7 +98,7 @@ function referenceProduct(name: string, brand: string): PublicProduct {
     gender: "unisex",
     price: 0,
     images: [],
-    description: `${nameWithBrand(name, brand)} es una referencia de aroma. No lo tenemos en el catálogo. Más abajo encuentras alternativas para quienes buscan un aroma similar.`,
+    description: `${sentenceCase(nameWithBrand(name, brand))} es una referencia de aroma. No lo tenemos en el catálogo. Más abajo encuentras alternativas para quienes buscan un aroma similar.`,
     notes: emptyNotes(),
     sizeMl: null,
     inStock: false,
@@ -302,6 +302,8 @@ export function toSearchRecord(product: PublicProduct): SearchRecord {
     slug: product.slug,
     name: product.name,
     brand: product.brand,
+    sizeMl: product.sizeMl,
+    sizeLabel: product.sizeLabel,
     type: product.type,
     gender: product.gender,
     price: product.price,
@@ -329,6 +331,29 @@ export function formatSize(product: { sizeMl: number | null; sizeLabel?: string 
   if (product.sizeLabel) return product.sizeLabel;
   if (product.sizeMl) return `${product.sizeMl} ml`;
   return null;
+}
+
+/**
+ * Título para la tienda: nombre, marca si no va ya en el nombre, y tamaño si existe.
+ * Una mayúscula y el resto en minúscula. El nombre guardado no cambia.
+ */
+export function displayTitle(product: {
+  name: string;
+  brand: string;
+  sizeMl: number | null;
+  sizeLabel?: string;
+}): string {
+  const name = product.name.trim();
+  const brand = product.brand.trim();
+  const size = formatSize(product);
+  const parts = [name];
+  if (brand && !fold(name).includes(fold(brand))) parts.push(brand);
+  if (size) {
+    const compactName = fold(name).replace(/\s+/g, "");
+    const compactSize = fold(size).replace(/\s+/g, "");
+    if (!compactName.includes(compactSize)) parts.push(size);
+  }
+  return sentenceCase(parts.join(", "));
 }
 
 export function comparisonSlug(originalSlug: string, alternativeSlug: string): string {
@@ -550,7 +575,7 @@ function groupCopy(
           };
     case "clones":
       return {
-        title: `Inspirado en ${nameWithBrand(product.name, product.brand)}`,
+        title: `Inspirado en ${displayTitle(product)}`,
         caption: "Del más cercano al más libre. No es el perfume de la casa.",
       };
     case "sets":

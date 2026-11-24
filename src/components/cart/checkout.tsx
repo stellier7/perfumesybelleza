@@ -7,6 +7,7 @@ import { BankDetails } from "@/components/bank-details";
 import { useCart } from "@/components/cart/cart-provider";
 import { DEPARTMENTS, PIXEL_ORDER_EVENT, UTM_STORAGE_KEY } from "@/config";
 import { formatPrice } from "@/lib/pricing";
+import { sentenceCase } from "@/lib/text";
 import { trackPixel } from "@/lib/pixel";
 import { shippingCost } from "@/lib/shipping";
 import { sanitizeUtm } from "@/lib/utm";
@@ -117,8 +118,11 @@ export function Checkout() {
                 {line.image ? <Image src={line.image} alt="" fill sizes="80px" className="object-cover" /> : null}
               </div>
               <div className="min-w-0 flex-1">
-                <p className="text-[0.65rem] uppercase tracking-[0.14em] text-muted">{line.brand}</p>
-                <p className="line-clamp-2 text-sm font-medium leading-5">{line.name}</p>
+                <p className="text-sm text-muted">
+                  {sentenceCase(line.brand)}
+                  {line.sizeLabel ? ` · ${line.sizeLabel}` : ""}
+                </p>
+                <p className="line-clamp-2 text-sm font-medium leading-5">{sentenceCase(line.name)}</p>
                 <div className="mt-1.5 flex items-center gap-2">
                   <p className="text-sm">{formatPrice(line.price)}</p>
                   <button type="button" className="h-8 w-8 rounded-full border border-line" onClick={() => setQty(line.id, line.qty - 1)} aria-label="Quitar uno">

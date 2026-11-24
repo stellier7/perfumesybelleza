@@ -12,6 +12,7 @@ import {
   type CatalogFilters,
 } from "@/lib/catalog-query";
 import { catalogSection, CATALOG_SECTIONS, sectionLabel, sectionTypes } from "@/lib/catalog-section";
+import { sentenceCase } from "@/lib/text";
 import { pageMetadata } from "@/lib/seo";
 import { GENDERS } from "@/types/catalog";
 
@@ -95,7 +96,9 @@ async function Catalog({
             <select name="marca" defaultValue={selectedBrand} className="h-11 rounded-xl border border-line bg-ivory px-3">
               <option value="">Todas</option>
               {brands.map((brand) => (
-                <option key={brand}>{brand}</option>
+                <option key={brand} value={brand}>
+                  {sentenceCase(brand)}
+                </option>
               ))}
             </select>
           </label>
