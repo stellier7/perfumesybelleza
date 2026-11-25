@@ -94,10 +94,10 @@ async function Catalog({
       </div>
       <form className="mt-6 grid items-start gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
         <details open className="filter-panel min-w-0">
-          <summary className="flex h-11 cursor-pointer items-center border border-line bg-paper px-4 text-sm md:hidden">
+          <summary className="flex h-11 cursor-pointer items-center rounded-full border border-line bg-paper px-4 text-sm md:hidden">
             Filtros y orden
           </summary>
-        <fieldset className="mt-3 grid min-w-0 content-start gap-3 self-start border border-line bg-paper p-4 text-sm md:mt-0">
+        <fieldset className="mt-3 grid min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm md:mt-0">
           <legend className="px-1 text-xs uppercase tracking-[0.16em] text-gold">Filtros</legend>
           <input type="hidden" name="seccion" value={filters.seccion} />
           {types.length > 1 ? (
@@ -167,7 +167,7 @@ async function Catalog({
               <option value="nombre">Nombre</option>
             </select>
           </label>
-          <button type="submit" className="h-11 bg-ink text-ivory">
+          <button type="submit" className="h-11 rounded-full bg-ink text-ivory">
             Aplicar
           </button>
         </fieldset>

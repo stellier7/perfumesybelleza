@@ -46,7 +46,7 @@ export function ProductRail({
 
 export function TextLink({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <Link href={href} className="inline-flex h-11 items-center border border-current px-4 text-sm">
+    <Link href={href} className="inline-flex h-11 items-center rounded-full border border-current px-4 text-sm">
       {children}
     </Link>
   );

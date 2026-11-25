@@ -28,7 +28,7 @@ export function RecentRail() {
           {items.map((item) => (
             <li key={item.id} className="w-36 shrink-0">
               <Link href={`/producto/${item.slug}`} className="block">
-                <span className="relative block aspect-[4/5] overflow-hidden bg-stone">
+                <span className="relative block aspect-[4/5] overflow-hidden rounded-3xl bg-blush/50">
                   {item.image ? <Image src={item.image} alt="" fill sizes="144px" className="object-cover" /> : null}
                 </span>
                 <span className="mt-2 block font-serif text-lg leading-tight">

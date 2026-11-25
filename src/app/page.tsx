@@ -125,7 +125,7 @@ export default function HomePage() {
                 </TextLink>
               </div>
             </div>
-            <div className="relative aspect-[4/5] overflow-hidden bg-paper">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-paper shadow-lift ring-4 ring-sage">
               <Image
                 src="/home/cuidado-skincare-coreano.webp"
                 alt="Productos de skincare coreano"
@@ -146,7 +146,7 @@ export default function HomePage() {
 
       <section className="border-y border-line">
         <Shell className="grid items-center gap-8 py-14 md:grid-cols-2 md:py-16">
-          <div className="relative min-h-80 overflow-hidden bg-night md:min-h-[32rem]">
+          <div className="relative min-h-80 overflow-hidden rounded-[2rem] bg-night shadow-lift ring-4 ring-paper md:min-h-[32rem]">
             <Image
               src="/home/perfumes-disenador.webp"
               alt="Frascos de perfumería de diseñador"
@@ -171,7 +171,7 @@ export default function HomePage() {
               <ul className="mt-8 flex flex-wrap gap-2">
                 {designers.map((entry) => (
                   <li key={entry.brand}>
-                    <Link href={brandHref("designer", entry.brand)} className="inline-flex h-10 items-center border border-line bg-paper px-3 text-sm">
+                    <Link href={brandHref("designer", entry.brand)} className="inline-flex h-10 items-center rounded-full border border-line bg-paper px-3 text-sm">
                       {entry.brand}
                     </Link>
                   </li>
@@ -199,7 +199,7 @@ export default function HomePage() {
             </div>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {pairs.map((pair) => (
-                <Link key={pair.slug} href={`/comparar/${pair.slug}`} className="border border-white/15 p-5">
+                <Link key={pair.slug} href={`/comparar/${pair.slug}`} className="rounded-3xl border border-white/15 bg-night-soft p-5">
                   <p className="text-sm text-champagne">{displayTitle(pair.original)}</p>
                   <p className="mt-3 font-serif text-2xl">
                     {displayTitle(pair.alternative)}
@@ -215,9 +215,9 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      <Shell className="grid gap-px bg-line py-14 md:grid-cols-4">
+      <Shell className="grid gap-4 py-14 md:grid-cols-4">
         {benefits.map(([title, text]) => (
-          <article key={title} className="bg-ivory p-5">
+          <article key={title} className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
             <h2 className="font-serif text-2xl">{title}</h2>
             <p className="mt-2 text-sm leading-6 text-muted">{text}</p>
           </article>

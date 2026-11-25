@@ -79,7 +79,7 @@ async function Finder({
             </option>
           ))}
         </Select>
-        <button type="submit" className="h-11 bg-ink text-sm text-ivory md:col-span-4 md:w-fit md:px-6">
+        <button type="submit" className="h-11 rounded-full bg-ink text-sm text-ivory md:col-span-4 md:w-fit md:px-6">
           Ver fragancias
         </button>
       </form>
@@ -92,7 +92,7 @@ async function Finder({
               key={family.id}
               href={fragranceHref(next, 1)}
               aria-current={current ? "true" : undefined}
-              className={`inline-flex h-10 items-center px-3 text-sm ${current ? "bg-ink text-ivory" : "border border-line"}`}
+              className={`inline-flex h-10 items-center rounded-full px-3 text-sm ${current ? "bg-ink text-ivory" : "border border-line"}`}
             >
               {family.label}
             </Link>
@@ -132,7 +132,7 @@ function Select({
   return (
     <label className="grid gap-1 text-sm">
       {label}
-      <select name={name} defaultValue={defaultValue} className="h-11 border border-line bg-paper px-3">
+      <select name={name} defaultValue={defaultValue} className="h-11 rounded-xl border border-line bg-paper px-3">
         {children}
       </select>
     </label>

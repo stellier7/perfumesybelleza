@@ -113,7 +113,7 @@ export function CartDrawer() {
           <Link
             href="/carrito"
             onClick={() => setDrawerOpen(false)}
-            className={`flex h-12 items-center justify-center bg-ink text-sm text-ivory ${lines.length === 0 ? "pointer-events-none opacity-40" : ""}`}
+            className={`flex h-12 items-center justify-center rounded-full bg-ink text-sm text-ivory ${lines.length === 0 ? "pointer-events-none opacity-40" : ""}`}
             aria-disabled={lines.length === 0}
           >
             Ir a pagar

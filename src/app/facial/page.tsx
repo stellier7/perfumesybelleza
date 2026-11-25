@@ -41,7 +41,7 @@ export default function FacialPage() {
         aparte.
       </p>
       <div className="mt-6 flex flex-wrap gap-3 text-sm">
-        <Link href="/rutina" className="inline-flex h-11 items-center border border-ink px-4">
+        <Link href="/rutina" className="inline-flex h-11 items-center rounded-full border border-ink px-4">
           Armar una rutina
         </Link>
       </div>

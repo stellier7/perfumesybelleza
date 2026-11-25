@@ -53,7 +53,7 @@ async function Routine({
       <form action="/rutina" className="mt-8 grid gap-3 md:grid-cols-4">
         <label className="grid gap-1 text-sm">
           Paso
-          <select name="paso" defaultValue={query.step} className="h-11 border border-line bg-paper px-3">
+          <select name="paso" defaultValue={query.step} className="h-11 rounded-xl border border-line bg-paper px-3">
             <option value="">Todos</option>
             {ROUTINE_STEPS.map((step) => (
               <option key={step.id} value={step.id}>
@@ -64,7 +64,7 @@ async function Routine({
         </label>
         <label className="grid gap-1 text-sm">
           Piel, si la ficha lo dice
-          <select name="piel" defaultValue={query.skin} className="h-11 border border-line bg-paper px-3">
+          <select name="piel" defaultValue={query.skin} className="h-11 rounded-xl border border-line bg-paper px-3">
             <option value="">Sin filtrar</option>
             {SKIN_TYPES.map((skin) => (
               <option key={skin.id} value={skin.id}>
@@ -75,7 +75,7 @@ async function Routine({
         </label>
         <label className="grid gap-1 text-sm">
           Ingrediente en la ficha
-          <select name="ingrediente" defaultValue={query.ingredient} className="h-11 border border-line bg-paper px-3">
+          <select name="ingrediente" defaultValue={query.ingredient} className="h-11 rounded-xl border border-line bg-paper px-3">
             <option value="">Cualquiera</option>
             {INGREDIENT_PREFS.map((item) => (
               <option key={item.id} value={item.id}>
@@ -88,7 +88,7 @@ async function Routine({
           <input type="checkbox" name="coreano" value="1" defaultChecked={query.korean} />
           Solo skincare coreano
         </label>
-        <button type="submit" className="h-11 bg-ink text-sm text-ivory md:col-span-4 md:w-fit md:px-6">
+        <button type="submit" className="h-11 rounded-full bg-ink text-sm text-ivory md:col-span-4 md:w-fit md:px-6">
           Ver rutina
         </button>
       </form>
@@ -101,7 +101,7 @@ async function Routine({
               key={step.id}
               href={routineHref(next, 1)}
               aria-current={current ? "true" : undefined}
-              className={`inline-flex h-10 shrink-0 items-center px-3 text-sm ${current ? "bg-ink text-ivory" : "border border-line"}`}
+              className={`inline-flex h-10 shrink-0 items-center rounded-full px-3 text-sm ${current ? "bg-ink text-ivory" : "border border-line"}`}
             >
               {step.label}
             </Link>

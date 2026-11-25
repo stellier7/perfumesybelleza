@@ -118,7 +118,7 @@ async function ProductScreen({ params }: ProductParams) {
               </p>
               <p className="mt-4 leading-7">{product.description}</p>
               {facts.length > 0 ? (
-                <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden border border-line bg-line">
+                <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line">
                   {facts.map((fact) => (
                     <div key={fact.label} className="bg-paper px-4 py-3">
                       <dt className="text-[0.68rem] uppercase tracking-[0.16em] text-muted">{fact.label}</dt>
@@ -127,7 +127,7 @@ async function ProductScreen({ params }: ProductParams) {
                   ))}
                 </dl>
               ) : null}
-              <div className="mt-4 border border-line bg-stone/50 px-4 py-4 text-sm leading-6">
+              <div className="mt-4 rounded-3xl border border-line bg-stone/50 px-4 py-4 text-sm leading-6">
                 <p>
                   Envío de {formatPrice(SHIPPING_LPS)} a todo Honduras con {store.carrier}. Los pedidos confirmados se
                   arman a las {store.orderFillTime} y la entrega tarda {store.shippingDays}.

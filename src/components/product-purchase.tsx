@@ -51,13 +51,13 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
   }, [zoom]);
 
   if (!current) {
-    return <div className="aspect-[4/5] bg-stone" />;
+    return <div className="aspect-[4/5] rounded-3xl bg-blush/60" />;
   }
   return (
     <div>
       <button
         type="button"
-        className="relative block aspect-[4/5] w-full overflow-hidden bg-stone"
+        className="relative block aspect-[4/5] w-full overflow-hidden rounded-3xl bg-blush/40 shadow-soft"
         onClick={() => setZoom(true)}
         aria-label={`Ampliar foto de ${name}`}
       >
@@ -84,7 +84,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
             onClick={(event) => event.stopPropagation()}
           >
             <Image src={current} alt={`${name}, foto ampliada`} fill sizes="100vw" className="object-contain" />
-            <button type="button" className="absolute right-2 top-2 bg-paper px-3 py-2 text-sm" onClick={() => setZoom(false)}>
+            <button type="button" className="absolute right-2 top-2 rounded-full bg-paper px-3 py-2 text-sm" onClick={() => setZoom(false)}>
               Cerrar
             </button>
           </div>
@@ -97,7 +97,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
               key={image}
               type="button"
               onClick={() => setActive(index)}
-              className={`relative h-16 w-14 overflow-hidden border ${index === active ? "border-ink" : "border-transparent"}`}
+              className={`relative h-16 w-14 overflow-hidden rounded-xl border ${index === active ? "border-ink" : "border-transparent"}`}
               aria-label={`Ver foto ${index + 1}`}
             >
               <Image src={image} alt="" fill sizes="56px" className="object-cover" />
@@ -177,7 +177,7 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
   }
 
   const quantity = canBuy ? (
-    <div className="flex items-center border border-line">
+    <div className="flex items-center rounded-full border border-line">
       <button type="button" className="h-11 w-10" onClick={() => setQty((value) => Math.max(1, value - 1))} aria-label="Reducir cantidad">
         −
       </button>
@@ -200,16 +200,16 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
         {quantity}
         <div className="hidden flex-wrap items-center gap-3 md:flex">
           {canBuy ? (
-            <button type="button" onClick={add} className="h-12 flex-1 bg-ink px-5 text-sm text-ivory">
+            <button type="button" onClick={add} className="h-12 flex-1 rounded-full bg-ink px-5 text-sm text-ivory">
               Agregar al carrito
             </button>
           ) : null}
           {canBuy ? (
-            <button type="button" onClick={buyNow} className="h-12 border border-ink px-5 text-sm">
+            <button type="button" onClick={buyNow} className="h-12 rounded-full border border-ink px-5 text-sm">
               Comprar ahora
             </button>
           ) : null}
-          <a href={href} onClick={openChat} target="_blank" rel="noopener noreferrer" className="flex h-12 flex-1 items-center justify-center border border-line px-5 text-sm">
+          <a href={href} onClick={openChat} target="_blank" rel="noopener noreferrer" className="flex h-12 flex-1 items-center justify-center rounded-full border border-line px-5 text-sm">
             {label}
           </a>
         </div>
@@ -218,11 +218,11 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
         <div className="flex items-center gap-2 pr-16">
           <p className="min-w-0 flex-1 text-sm font-medium">{priceLabel}</p>
           {canBuy ? (
-            <button type="button" onClick={buyNow} className="h-11 bg-ink px-4 text-sm text-ivory">
+            <button type="button" onClick={buyNow} className="h-11 rounded-full bg-ink px-4 text-sm text-ivory">
               Comprar
             </button>
           ) : null}
-          <a href={href} onClick={openChat} target="_blank" rel="noopener noreferrer" className="flex h-11 items-center border border-ink px-3 text-xs">
+          <a href={href} onClick={openChat} target="_blank" rel="noopener noreferrer" className="flex h-11 items-center rounded-full border border-ink px-3 text-xs">
             {!product.inStock ? "Avísame" : canBuy ? "WhatsApp" : "Consultar"}
           </a>
         </div>

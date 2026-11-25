@@ -18,7 +18,7 @@ export function CategoryMosaic({ tiles }: { tiles: EditorialTile[] }) {
         <Link
           key={tile.id}
           href={tile.href}
-          className={`group relative flex min-h-52 flex-col justify-end overflow-hidden p-5 ${index === 0 ? "col-span-2 min-h-80 md:row-span-2 md:min-h-[34rem]" : ""} ${toneClass[tile.tone]}`}
+          className={`group relative flex min-h-52 flex-col justify-end overflow-hidden rounded-3xl p-5 shadow-soft ${index === 0 ? "col-span-2 min-h-80 md:row-span-2 md:min-h-[34rem]" : ""} ${toneClass[tile.tone]}`}
         >
           {tile.image ? (
             <Image

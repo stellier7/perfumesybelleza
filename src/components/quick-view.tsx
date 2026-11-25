@@ -54,10 +54,10 @@ export function QuickView({ product }: { product: QuickProduct }) {
             role="dialog"
             aria-modal="true"
             aria-labelledby={titleId}
-            className="grid w-full max-w-3xl gap-5 bg-paper p-4 sm:grid-cols-[16rem_1fr] sm:p-6"
+            className="grid w-full max-w-3xl gap-5 rounded-3xl bg-paper p-4 sm:grid-cols-[16rem_1fr] sm:p-6"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="relative aspect-[4/5] overflow-hidden bg-stone">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-blush/50">
               {product.images[0] ? (
                 <Image src={product.images[0]} alt="" fill sizes="256px" className="object-cover" />
               ) : null}

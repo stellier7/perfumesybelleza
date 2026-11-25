@@ -15,7 +15,7 @@ export function Pager({
   return (
     <nav className="mt-8 flex items-center justify-between text-sm" aria-label={label}>
       {page > 1 ? (
-        <Link href={hrefFor(page - 1)} className="border border-line px-4 py-2">
+        <Link href={hrefFor(page - 1)} className="rounded-full border border-line px-4 py-2">
           Anterior
         </Link>
       ) : (
@@ -25,7 +25,7 @@ export function Pager({
         {page} de {pages}
       </span>
       {page < pages ? (
-        <Link href={hrefFor(page + 1)} className="border border-line px-4 py-2">
+        <Link href={hrefFor(page + 1)} className="rounded-full border border-line px-4 py-2">
           Siguiente
         </Link>
       ) : (

@@ -36,7 +36,7 @@ export function Header() {
       <Shell className="flex h-16 items-center gap-3">
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center border border-line lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line lg:hidden"
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}

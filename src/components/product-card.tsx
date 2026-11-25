@@ -55,7 +55,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
       <div className="relative">
         <Link
           href={`/producto/${product.slug}`}
-          className="group relative block aspect-[4/5] overflow-hidden bg-stone"
+          className="group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-blush/50 shadow-soft"
         >
           {image ? (
             <Image
@@ -78,10 +78,10 @@ export function ProductCard({ product }: { product: PublicProduct }) {
         </Link>
         <div className="absolute left-3 top-3 flex flex-col items-start gap-1.5">
           {product.featured && product.inStock ? (
-            <span className="bg-paper/95 px-2 py-1 text-[0.65rem] uppercase tracking-[0.16em]">Destacado</span>
+            <span className="rounded-full bg-paper/95 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.16em]">Destacado</span>
           ) : null}
           {!product.inStock && !product.isReference ? (
-            <span className="bg-ink/90 px-2 py-1 text-[0.65rem] uppercase tracking-[0.16em] text-ivory">Agotado</span>
+            <span className="rounded-full bg-ink/90 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.16em] text-ivory">Agotado</span>
           ) : null}
         </div>
         <SaveButton

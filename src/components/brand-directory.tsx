@@ -30,7 +30,7 @@ export function BrandDirectory({ brands }: { brands: BrandLink[] }) {
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            className="h-11 border border-line bg-paper px-3"
+            className="h-11 rounded-full border border-line bg-paper px-4"
             placeholder="Lattafa, Anua, Dior…"
           />
         </label>
@@ -47,7 +47,7 @@ export function BrandDirectory({ brands }: { brands: BrandLink[] }) {
               type="button"
               aria-pressed={section === value}
               onClick={() => setSection(value)}
-              className={`h-11 px-4 text-sm ${section === value ? "bg-ink text-ivory" : "border border-line"}`}
+              className={`h-11 rounded-full px-4 text-sm ${section === value ? "bg-ink text-ivory" : "border border-line"}`}
             >
               {label}
             </button>

@@ -31,7 +31,7 @@ export function NewsletterInvite() {
       onClick={openChat}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex h-12 items-center bg-ivory px-5 text-sm text-ink"
+      className="inline-flex h-12 items-center rounded-full bg-ivory px-5 text-sm text-ink"
     >
       Quiero recibir novedades
     </a>
