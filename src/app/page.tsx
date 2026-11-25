@@ -53,8 +53,12 @@ export default function HomePage() {
           currenciesAccepted: "HNL",
         }}
       />
-      <section className="relative z-20 border-b border-line">
-        <Shell className="grid items-center gap-8 py-10 md:grid-cols-2 md:gap-12 md:py-16">
+      <section
+        className="relative z-20 border-b border-line bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{ backgroundImage: "url(/home/hero-fondo.webp)" }}
+      >
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ivory/80 via-ivory/55 to-ivory/40 md:bg-gradient-to-r md:from-ivory/82 md:via-ivory/55 md:to-ivory/25" />
+        <Shell className="relative grid items-center gap-8 py-10 md:grid-cols-2 md:gap-12 md:py-16">
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-gold">Honduras</p>
             <h1 className="mt-3 max-w-xl font-serif text-5xl leading-[0.95] md:text-7xl">
@@ -67,10 +71,10 @@ export default function HomePage() {
               <SearchBox variant="hero" />
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lift">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lift ring-4 ring-paper">
             <Image
-              src="/home/hero.webp"
-              alt="Frascos de perfume y un tarro de crema sobre piedra clara"
+              src="/home/hero-marco.webp"
+              alt="Estantería de perfumes, velas y flores en una boutique"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
