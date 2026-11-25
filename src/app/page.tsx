@@ -1,44 +1,67 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AutoRail } from "@/components/auto-rail";
-import { CategoryRail } from "@/components/category-rail";
-import { HeroBackdrop } from "@/components/hero-backdrop";
-import { ProductCard } from "@/components/product-card";
-import { SearchBox } from "@/components/search-box";
-import { Shell } from "@/components/shell";
+import { CategoryMosaic } from "@/components/home/category-mosaic";
+import { HomeHero } from "@/components/home/hero";
+import { NewsletterInvite } from "@/components/home/newsletter";
+import { ProductRail, TextLink } from "@/components/home/product-rail";
+import { FaqList } from "@/components/faq";
 import { JsonLd } from "@/components/json-ld";
+import { RecentRail } from "@/components/recent-rail";
+import { Shell } from "@/components/shell";
 import { SHIPPING_LPS, store } from "@/config";
-import { isSpotlightFiller, pickFamous } from "@/lib/fame";
-import { homeDepartments, homeShelf, SPOTLIGHTS } from "@/lib/home-rail";
+import { getComparisonPairs, getFeaturedProducts, getSellableProducts } from "@/lib/catalog";
 import { displayTitle } from "@/lib/catalog-model";
+import { editorialTiles, topBrands } from "@/lib/home-editorial";
+import { homeShelf } from "@/lib/home-rail";
+import { isSpotlightFiller, pickFamous } from "@/lib/fame";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
-import { pageMetadata } from "@/lib/seo";
-import { getComparisonPairs, getSellableProducts } from "@/lib/catalog";
+import { faqJsonLd, pageMetadata } from "@/lib/seo";
+import { storeFaqs } from "@/lib/store-copy";
+import { KOREAN_CATEGORY } from "@/lib/routine-finder";
 
 export const metadata = pageMetadata({
   title: "Perfumes y belleza en Honduras",
   description:
-    `Perfumes de diseñador, alternativas árabes y belleza. Envío de ${formatPrice(SHIPPING_LPS)} a todo Honduras. Los pedidos se arman todos los días a las ${store.orderFillTime} y llegan en ${store.shippingDays}. Pago por transferencia y atención por WhatsApp.`,
+    "Fragancias de diseñador, casas árabes, skincare coreano y belleza. Envío a todo Honduras y pedidos por WhatsApp.",
   path: "/",
 });
 
+function brandHref(type: "designer" | "arabic", brand: string): string {
+  const params = new URLSearchParams({ seccion: "perfumes", tipo: type, marca: brand });
+  return `/tienda?${params.toString()}`;
+}
+
 export default function HomePage() {
-  const departments = homeDepartments(
-    getSellableProducts().map((product) => ({
-      type: product.type,
-      category: product.category,
-      inspired: product.inspiredBy.length > 0,
-    })),
-  );
-  const sellable = getSellableProducts().filter((product) => product.inStock);
-  const spotlights = SPOTLIGHTS.map((shelf) => ({
-    ...shelf,
-    products: pickFamous(
-      sellable.filter((product) => homeShelf(product) === shelf.id && !isSpotlightFiller(product)),
-      10,
+  const sellable = getSellableProducts();
+  const stocked = sellable.filter((product) => product.inStock);
+  const featured = getFeaturedProducts();
+  const featuredIds = new Set(featured.map((product) => product.id));
+  const perfumes = pickFamous(
+    stocked.filter(
+      (product) => homeShelf(product) === "perfumes" && !isSpotlightFiller(product) && !featuredIds.has(product.id),
     ),
-  })).filter((shelf) => shelf.products.length > 0);
-  const pairs = getComparisonPairs().slice(0, 4);
+    8,
+  );
+  const korean = stocked.filter((product) => product.category === KOREAN_CATEGORY);
+  const koreanRail = pickFamous(
+    korean.filter((product) => !isSpotlightFiller(product)),
+    8,
+  );
+  const makeup = pickFamous(
+    stocked.filter((product) => product.category === "Maquillaje" && !isSpotlightFiller(product)),
+    8,
+  );
+  const tiles = editorialTiles(sellable);
+  const designers = topBrands(sellable, "designer", 8);
+  const pairs = getComparisonPairs().slice(0, 3);
+  const faqs = storeFaqs();
+  const benefits = [
+    ["Envío", `${formatPrice(SHIPPING_LPS)} a todo Honduras con ${store.carrier}. Pedidos listos a las ${store.orderFillTime}. Entrega en ${store.shippingDays}.`],
+    ["Pago", "Transferencia bancaria. Te enviamos los datos de la cuenta al confirmar el pedido por WhatsApp."],
+    ["Atención", `${store.hours}. El pedido se arma en la tienda y llega listo al chat.`],
+    ["Claridad", "Una alternativa se presenta como alternativa. No la describimos como el perfume de la casa."],
+  ];
+
   return (
     <>
       <JsonLd
@@ -54,96 +77,136 @@ export default function HomePage() {
           currenciesAccepted: "HNL",
         }}
       />
-      <section className="relative z-20 overflow-hidden border-b border-line">
-        <HeroBackdrop />
-        <div className="pointer-events-none absolute inset-0 bg-ivory/40" />
-        <Shell className="relative grid items-center gap-8 py-10 md:grid-cols-2 md:gap-12 md:py-16">
-          <div>
-            <p className="text-xs uppercase tracking-[0.28em] text-gold">Honduras</p>
-            <h1 className="mt-3 max-w-xl font-serif text-5xl leading-[0.95] md:text-7xl">
-              El aroma que te queda.
-            </h1>
-            <p className="mt-5 max-w-md text-base leading-7 text-muted">
-              Perfumes de diseñador, alternativas árabes y belleza, con envío a todo el país.
-            </p>
-            <div className="mt-8 max-w-xl">
-              <SearchBox variant="hero" />
+      <JsonLd data={faqJsonLd(faqs)} />
+      <HomeHero />
+      <Shell className="py-12 md:py-16">
+        <p className="text-[0.7rem] uppercase tracking-[0.22em] text-gold">Categorías</p>
+        <h2 className="mt-2 max-w-xl font-serif text-4xl md:text-5xl">Entra directo a lo que buscas.</h2>
+        <div className="mt-8">
+          <CategoryMosaic tiles={tiles} />
+        </div>
+      </Shell>
+
+      <Shell className="pb-4">
+        <ProductRail
+          id="seleccion"
+          eyebrow="Casa"
+          title="Selección de la casa"
+          href="/tienda?seccion=perfumes"
+          products={featured}
+        />
+      </Shell>
+
+      <Shell className="py-8">
+        <ProductRail
+          id="buscados"
+          eyebrow="Perfumería"
+          title="Las líneas más buscadas"
+          href="/tienda?seccion=perfumes"
+          products={perfumes}
+        />
+      </Shell>
+
+      {korean.length > 0 ? (
+        <section className="mt-8 bg-sage">
+          <Shell className="grid items-center gap-8 py-14 md:grid-cols-2 md:py-16">
+            <div>
+              <p className="text-[0.7rem] uppercase tracking-[0.22em] text-gold">Korean Beauty</p>
+              <h2 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">Cuidado coreano, con ficha y paso de rutina.</h2>
+              <p className="mt-4 max-w-md text-sm leading-6 text-muted">
+                {korean.length} productos en skincare coreano. La rutina agrupa limpiadores, sérums, cremas y
+                solares según el nombre o la categoría. No inventamos tipo de piel ni ingredientes que la ficha no
+                menciona.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <TextLink href="/rutina">Armar una rutina</TextLink>
+                <TextLink href={`/tienda?seccion=cuidado&categoria=${encodeURIComponent(KOREAN_CATEGORY)}`}>
+                  Ver la categoría
+                </TextLink>
+              </div>
             </div>
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lift ring-4 ring-paper">
+            <div className="relative aspect-[4/5] overflow-hidden bg-paper">
+              <Image
+                src="/home/cuidado-skincare-coreano.webp"
+                alt="Productos de skincare coreano"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+          </Shell>
+        </section>
+      ) : null}
+
+      {koreanRail.length > 0 ? (
+        <Shell className="py-12">
+          <ProductRail title="Skincare coreano" href={`/tienda?seccion=cuidado&categoria=${encodeURIComponent(KOREAN_CATEGORY)}`} products={koreanRail} />
+        </Shell>
+      ) : null}
+
+      <section className="border-y border-line">
+        <Shell className="grid items-center gap-8 py-14 md:grid-cols-2 md:py-16">
+          <div className="relative min-h-80 overflow-hidden bg-night md:min-h-[32rem]">
             <Image
-              src="/home/hero-marco.webp"
-              alt="Estantería de perfumes, velas y flores en una boutique"
+              src="/home/perfumes-disenador.webp"
+              alt="Frascos de perfumería de diseñador"
               fill
-              priority
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
+          <div>
+            <p className="text-[0.7rem] uppercase tracking-[0.22em] text-gold">Perfumería</p>
+            <h2 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">Diseñador y casas árabes, en el mismo mostrador.</h2>
+            <p className="mt-4 max-w-md text-sm leading-6 text-muted">
+              Elige por casa, concentración o una palabra del nombre. Las notas de salida, corazón y fondo se
+              muestran solo cuando el producto las trae.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <TextLink href="/tienda?seccion=perfumes&tipo=designer">Diseñador</TextLink>
+              <TextLink href="/tienda?seccion=perfumes&tipo=arabic">Árabes</TextLink>
+              <TextLink href="/encontrar">Encontrar perfume</TextLink>
+            </div>
+            {designers.length > 0 ? (
+              <ul className="mt-8 flex flex-wrap gap-2">
+                {designers.map((entry) => (
+                  <li key={entry.brand}>
+                    <Link href={brandHref("designer", entry.brand)} className="inline-flex h-10 items-center border border-line bg-paper px-3 text-sm">
+                      {entry.brand}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
         </Shell>
       </section>
 
-      <Shell className="py-12">
-        <CategoryRail departments={departments} />
-      </Shell>
-
-      <Shell className="space-y-14 pb-4">
-        {spotlights.map((shelf) => (
-          <AutoRail
-            key={shelf.id}
-            direction="left"
-            label={shelf.title}
-            title={
-              <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
-                <h2 id={shelf.id === "perfumes" ? "destacados" : shelf.id} className="font-serif text-4xl">
-                  {shelf.title}
-                </h2>
-                <Link href={shelf.href} className="mb-1 text-sm text-muted underline-offset-4 hover:underline">
-                  Ver todo
-                </Link>
-              </div>
-            }
-          >
-            {shelf.products.map((product) => (
-              <div key={product.id} className="w-[16.5rem]">
-                <ProductCard product={product} />
-              </div>
-            ))}
-          </AutoRail>
-        ))}
-      </Shell>
+      {makeup.length > 0 ? (
+        <Shell className="py-12">
+          <ProductRail title="Maquillaje" href="/tienda?seccion=cuidado&categoria=Maquillaje" products={makeup} />
+        </Shell>
+      ) : null}
 
       {pairs.length > 0 ? (
-        <section className="mt-14 bg-night text-ivory">
-          <Shell className="py-12">
-            <h2 className="max-w-lg font-serif text-4xl leading-tight">
-              ¿Buscas un perfume famoso? Mira sus alternativas
-            </h2>
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <section className="bg-night text-ivory">
+          <Shell className="py-14">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <h2 className="max-w-lg font-serif text-4xl leading-tight">Si buscas un perfume famoso, mira su alternativa.</h2>
+              <Link href="/comparaciones" className="text-sm text-champagne underline-offset-4 hover:underline">
+                Ver comparaciones
+              </Link>
+            </div>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
               {pairs.map((pair) => (
-                <Link
-                  key={pair.slug}
-                  href={`/comparar/${pair.slug}`}
-                  className="rounded-3xl border border-white/10 bg-night-soft p-5 transition duration-300 motion-safe:hover:-translate-y-0.5"
-                >
-                  <p className="text-sm text-champagne">
-                    {displayTitle(pair.original)} y {displayTitle(pair.alternative)}
-                  </p>
+                <Link key={pair.slug} href={`/comparar/${pair.slug}`} className="border border-white/15 p-5">
+                  <p className="text-sm text-champagne">{displayTitle(pair.original)}</p>
                   <p className="mt-3 font-serif text-2xl">
                     {displayTitle(pair.alternative)}
-                    <span className="text-champagne-soft"> · alternativa</span>
+                    <span className="text-champagne"> · alternativa</span>
                   </p>
-                  <p className="mt-2 text-sm text-champagne-soft">
-                    {pair.original.isReference
-                      ? "El perfume de referencia no está en el catálogo."
-                      : pair.original.inStock
-                        ? `${displayTitle(pair.original)}: ${hasShelfPrice(pair.original.price) ? formatPrice(pair.original.price) : "Precio por confirmar"}`
-                        : `${displayTitle(pair.original)} está agotado.`}
-                    {" · "}
-                    {displayTitle(pair.alternative)}:{" "}
-                    {hasShelfPrice(pair.alternative.price)
-                      ? formatPrice(pair.alternative.price)
-                      : "Precio por confirmar"}
+                  <p className="mt-2 text-sm text-champagne/80">
+                    {hasShelfPrice(pair.alternative.price) ? formatPrice(pair.alternative.price) : "Precio por confirmar"}
                   </p>
                 </Link>
               ))}
@@ -152,21 +215,41 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      <Shell className="grid gap-4 py-12 md:grid-cols-3">
-        {[
-          [
-            "Envío",
-            `${formatPrice(SHIPPING_LPS)} a todo Honduras con ${store.carrier}. Los pedidos se arman todos los días a las ${store.orderFillTime} Lo que se confirma después se arma al día siguiente, y la entrega tarda ${store.shippingDays}.`,
-          ],
-          ["Pago", "Por transferencia. Te enviamos los datos al confirmar el pedido."],
-          ["WhatsApp", "Armas el pedido en la tienda y lo recibimos listo para preparar."],
-        ].map(([title, text]) => (
-          <div key={title} className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
-            <h3 className="font-serif text-2xl">{title}</h3>
+      <Shell className="grid gap-px bg-line py-14 md:grid-cols-4">
+        {benefits.map(([title, text]) => (
+          <article key={title} className="bg-ivory p-5">
+            <h2 className="font-serif text-2xl">{title}</h2>
             <p className="mt-2 text-sm leading-6 text-muted">{text}</p>
-          </div>
+          </article>
         ))}
       </Shell>
+
+      <section className="bg-night text-ivory">
+        <Shell className="grid items-center gap-8 py-14 md:grid-cols-[1.2fr_auto]">
+          <div>
+            <p className="text-[0.7rem] uppercase tracking-[0.22em] text-champagne">Novedades</p>
+            <h2 className="mt-3 max-w-xl font-serif text-4xl leading-tight">Lanzamientos y promociones, por WhatsApp.</h2>
+            <p className="mt-4 max-w-lg text-sm leading-6 text-champagne/85">
+              La tienda no tiene una lista de correo. Si quieres avisos, el mensaje se abre en el chat de{" "}
+              {store.whatsappDisplay}.
+            </p>
+          </div>
+          <NewsletterInvite />
+        </Shell>
+      </section>
+
+      <Shell id="preguntas" className="py-14">
+        <h2 className="font-serif text-4xl">Preguntas frecuentes</h2>
+        <div className="mt-6 max-w-3xl">
+          <FaqList items={faqs} />
+        </div>
+        <div className="mt-6 flex flex-wrap gap-4 text-sm">
+          <Link href="/envios" className="underline-offset-4 hover:underline">Envíos</Link>
+          <Link href="/como-pagar" className="underline-offset-4 hover:underline">Cómo pagar</Link>
+          <Link href="/politica-de-devoluciones" className="underline-offset-4 hover:underline">Devoluciones</Link>
+        </div>
+      </Shell>
+      <RecentRail />
     </>
   );
 }

@@ -191,7 +191,7 @@ export function Checkout() {
           Pedir por WhatsApp
         </button>
         <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper/95 px-4 py-3 backdrop-blur md:hidden">
-          <div className="mx-auto flex max-w-6xl items-center gap-3">
+            <div className="mx-auto flex max-w-7xl items-center gap-3">
             <p className="min-w-0 text-sm font-medium">{formatPrice(total)}</p>
             <button type="submit" className="h-11 flex-1 rounded-full bg-ink text-sm text-ivory">
               Pedir por WhatsApp

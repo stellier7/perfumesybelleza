@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import { SHIPPING_LPS } from "@/config";
 import { displayTitle } from "@/lib/catalog-model";
 import { formatPrice } from "@/lib/pricing";
+import { shippingCost } from "@/lib/shipping";
 import { useCart } from "@/components/cart/cart-provider";
 
 export function CartButton() {
@@ -96,14 +96,31 @@ export function CartDrawer() {
             <span>Subtotal</span>
             <span>{formatPrice(subtotal)}</span>
           </div>
-          <p className="mb-4 text-xs text-muted">Envío de {formatPrice(SHIPPING_LPS)} a todo Honduras.</p>
+          {lines.length > 0 ? (
+            <>
+              <div className="mb-1 flex justify-between text-sm">
+                <span>Envío</span>
+                <span>{formatPrice(shippingCost())}</span>
+              </div>
+              <div className="mb-4 flex justify-between text-sm font-medium">
+                <span>Total</span>
+                <span>{formatPrice(subtotal + shippingCost())}</span>
+              </div>
+            </>
+          ) : (
+            <p className="mb-4 text-xs text-muted">El envío se calcula al armar el pedido.</p>
+          )}
           <Link
             href="/carrito"
             onClick={() => setDrawerOpen(false)}
-            className="flex h-12 items-center justify-center rounded-full bg-ink text-sm text-ivory"
+            className={`flex h-12 items-center justify-center bg-ink text-sm text-ivory ${lines.length === 0 ? "pointer-events-none opacity-40" : ""}`}
+            aria-disabled={lines.length === 0}
           >
-            Ver carrito y pedir
+            Ir a pagar
           </Link>
+          <button type="button" onClick={() => setDrawerOpen(false)} className="mt-2 h-11 w-full text-sm text-muted">
+            Seguir viendo
+          </button>
         </div>
       </div>
     </div>

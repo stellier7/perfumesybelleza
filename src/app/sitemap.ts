@@ -14,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/politica-de-devoluciones",
     "/terminos",
     "/privacidad",
+    "/encontrar",
+    "/rutina",
+    "/facial",
+    "/marcas",
   ];
   return [
     ...staticPaths.map((path) => ({

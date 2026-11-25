@@ -4,9 +4,15 @@ import { cn } from "@/lib/cn";
 export function Shell({
   children,
   className,
+  id,
 }: {
   children: ReactNode;
   className?: string;
+  id?: string;
 }) {
-  return <div className={cn("mx-auto w-full max-w-6xl px-4", className)}>{children}</div>;
+  return (
+    <div id={id} className={cn("mx-auto w-full max-w-7xl px-4", className)}>
+      {children}
+    </div>
+  );
 }
