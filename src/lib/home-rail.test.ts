@@ -51,12 +51,12 @@ test("belleza y skincare coreano son tarjetas, no una segunda fila", () => {
   );
   const belleza = departments.find((department) => department.id === "belleza");
   assert.ok(belleza);
-  assert.equal(belleza.image, "/home/cuidado-maquillaje.webp");
+  assert.equal(belleza.image, null);
   assert.match(hrefOf(belleza.href), /seccion=cuidado/);
   assert.doesNotMatch(hrefOf(belleza.href), /categoria=/);
   const korean = departments.find((department) => department.id === "skincare-coreano");
   assert.ok(korean);
-  assert.equal(korean.image, "/home/cuidado-skincare-coreano.webp");
+  assert.equal(korean.image, null);
   const href = hrefOf(korean.href);
   assert.match(href, /seccion=cuidado/);
   assert.match(href, /categoria=Skincare coreano/);
@@ -67,6 +67,85 @@ test("sin maquillaje ni skincare no se inventan esas tarjetas", () => {
     (department) => department.title,
   );
   assert.deepEqual(titles, ["Perfumes", "Cuidado personal"]);
+});
+
+test("la foto de la categoría es un producto de esa sección", () => {
+  const departments = homeDepartments([
+    {
+      id: "sauvage",
+      type: "designer",
+      category: "Eau de Parfum",
+      inspired: false,
+      name: "Sauvage",
+      brand: "Dior",
+      image: "/products/sauvage.webp",
+      inStock: true,
+    },
+    {
+      id: "otro",
+      type: "designer",
+      category: "Eau de Parfum",
+      inspired: false,
+      name: "Algo distinto",
+      brand: "Otra casa",
+      image: "/products/otro.webp",
+      inStock: true,
+    },
+    {
+      id: "agotado",
+      type: "designer",
+      category: "Eau de Parfum",
+      inspired: false,
+      name: "Sauvage",
+      brand: "Dior",
+      image: "/products/agotado.webp",
+      inStock: false,
+    },
+    {
+      id: "shampoo",
+      type: "beauty",
+      category: "Shampoo",
+      inspired: false,
+      name: "Maca Shampoo",
+      brand: "Karseell",
+      image: "/products/shampoo.webp",
+      inStock: true,
+    },
+    {
+      id: "cushion",
+      type: "beauty",
+      category: "Maquillaje",
+      inspired: false,
+      name: "Cushion Solar Suave",
+      brand: "Round Lab",
+      image: "/products/cushion.webp",
+      inStock: true,
+    },
+    {
+      id: "mascara",
+      type: "beauty",
+      category: "Maquillaje",
+      inspired: false,
+      name: "4D Mascara",
+      brand: "Missha",
+      image: "/products/mascara.webp",
+      inStock: true,
+    },
+    {
+      id: "sun",
+      type: "beauty",
+      category: "Skincare coreano",
+      inspired: false,
+      name: "Relief Sun",
+      brand: "Beauty of Joseon",
+      image: "/products/sun.webp",
+      inStock: true,
+    },
+  ]);
+  assert.equal(departments.find((department) => department.id === "perfumes")?.image, "/products/sauvage.webp");
+  assert.equal(departments.find((department) => department.id === "cuidado")?.image, "/products/shampoo.webp");
+  assert.equal(departments.find((department) => department.id === "belleza")?.image, "/products/mascara.webp");
+  assert.equal(departments.find((department) => department.id === "skincare-coreano")?.image, "/products/sun.webp");
 });
 
 test("cada sección de la tienda tiene un departamento", () => {

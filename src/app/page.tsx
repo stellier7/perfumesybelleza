@@ -24,9 +24,14 @@ export const metadata = pageMetadata({
 export default function HomePage() {
   const departments = homeDepartments(
     getSellableProducts().map((product) => ({
+      id: product.id,
+      name: product.name,
+      brand: product.brand,
       type: product.type,
       category: product.category,
       inspired: product.inspiredBy.length > 0,
+      image: product.images[0] ?? null,
+      inStock: product.inStock,
     })),
   );
   const sellable = getSellableProducts().filter((product) => product.inStock);

@@ -1,12 +1,17 @@
 import { catalogFilterQuery, type CatalogFilters } from "@/lib/catalog-query";
 import { catalogSection, sectionLabel } from "@/lib/catalog-section";
-import { homeImage } from "@/lib/home-images";
+import { isSpotlightFiller, pickFamous } from "@/lib/fame";
 import type { ProductType } from "@/types/catalog";
 
 export type ShelfItem = {
   type: ProductType;
   category: string;
   inspired: boolean;
+  id?: string;
+  name?: string;
+  brand?: string;
+  image?: string | null;
+  inStock?: boolean;
 };
 
 export type HomeCard = {
@@ -100,6 +105,30 @@ function hasCareShelf(products: ShelfItem[], shelf: CareShelf): boolean {
   });
 }
 
+function coverImage(products: ShelfItem[], shelf: HomeShelf): string | null {
+  const eligible = products.filter((product) => {
+    if (!product.image || product.inStock === false) return false;
+    if (homeShelf(product) !== shelf) return false;
+    const name = product.name?.trim() ?? "";
+    const brand = product.brand?.trim() ?? "";
+    if (!name || !brand) return false;
+    return !isSpotlightFiller({ id: product.id ?? name, name, brand, category: product.category });
+  });
+  const withoutPosters = eligible.filter((product) => !/solar|sunscreen|\bspf\b/i.test(product.name ?? ""));
+  const pool = shelf === "belleza" && withoutPosters.length > 0 ? withoutPosters : eligible;
+  const [pick] = pickFamous(
+    pool.map((product) => ({
+      id: product.id ?? product.name ?? product.category,
+      name: product.name ?? "",
+      brand: product.brand ?? "",
+      category: product.category,
+      image: product.image,
+    })),
+    1,
+  );
+  return pick?.image ?? null;
+}
+
 export function homeDepartments(products: ShelfItem[]): HomeCard[] {
   const departments: HomeCard[] = [
     {
@@ -108,7 +137,7 @@ export function homeDepartments(products: ShelfItem[]): HomeCard[] {
       text: sectionCopy.perfumes.text,
       className: sectionCopy.perfumes.className,
       href: shopHref({ seccion: "perfumes" }),
-      image: homeImage("perfumes"),
+      image: coverImage(products, "perfumes"),
     },
     {
       id: "cuidado",
@@ -116,7 +145,7 @@ export function homeDepartments(products: ShelfItem[]): HomeCard[] {
       text: sectionCopy.cuidado.text,
       className: sectionCopy.cuidado.className,
       href: shopHref({ seccion: "cuidado" }),
-      image: homeImage("cuidado"),
+      image: coverImage(products, "cuidado"),
     },
   ];
   if (hasCareShelf(products, "belleza")) {
@@ -126,7 +155,7 @@ export function homeDepartments(products: ShelfItem[]): HomeCard[] {
       text: sectionCopy.belleza.text,
       className: sectionCopy.belleza.className,
       href: shopHref({ seccion: "cuidado" }),
-      image: homeImage("belleza"),
+      image: coverImage(products, "belleza"),
     });
   }
   if (hasCareShelf(products, "skincare")) {
@@ -136,7 +165,7 @@ export function homeDepartments(products: ShelfItem[]): HomeCard[] {
       text: sectionCopy.skincare.text,
       className: sectionCopy.skincare.className,
       href: shopHref({ seccion: "cuidado", categoria: KOREAN_SKINCARE }),
-      image: homeImage("skincare-coreano"),
+      image: coverImage(products, "skincare"),
     });
   }
   return departments;
