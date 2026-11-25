@@ -104,6 +104,58 @@ button.bg-ink:active {
   display: none;
 }
 
+/* La foto va anclada al hero y se desplaza con el scroll del navegador, sin medir nada en cada frame. */
+.hero-stage {
+  clip-path: inset(0);
+  view-timeline-name: --hero;
+}
+
+.hero-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 145%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-photo {
+      animation: hero-drift linear both;
+      animation-timeline: --hero;
+      animation-range: cover;
+    }
+  }
+}
+
+@supports not (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-photo {
+      position: fixed;
+      height: max(58vw, 100lvh);
+      min-height: 0;
+    }
+  }
+}
+
+@keyframes hero-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  45% {
+    transform: translate3d(0, -3%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -22%, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
