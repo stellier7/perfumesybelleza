@@ -2,22 +2,25 @@
 
 @theme inline {
   --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-cormorant), ui-serif, Georgia, "Times New Roman", serif;
-  --color-ivory: #f6f0e8;
-  --color-paper: #fffdfb;
-  --color-ink: #211915;
-  --color-muted: #72655d;
-  --color-line: #e6d8cb;
-  --color-blush: #f3d5ce;
-  --color-blush-deep: #c98984;
-  --color-champagne: #c4a36a;
-  --color-champagne-soft: #ead7b0;
-  --color-gold: #8c6733;
-  --color-night: #171210;
-  --color-night-soft: #2a221e;
-  --color-whatsapp: #1faf55;
-  --shadow-soft: 0 14px 32px -22px rgb(33 25 21 / 0.55);
-  --shadow-lift: 0 18px 36px -18px rgb(33 25 21 / 0.5);
+  --font-serif: var(--font-display), ui-serif, Georgia, "Times New Roman", serif;
+  --color-ivory: #f8f6f2;
+  --color-paper: #ffffff;
+  --color-ink: #202020;
+  --color-muted: #5e5a54;
+  --color-line: #eae7e1;
+  --color-blush: #f6e8e4;
+  --color-blush-deep: #8d4b45;
+  --color-champagne: #d8c6a5;
+  --color-champagne-soft: #efe6d6;
+  --color-gold: #6f5a38;
+  --color-night: #202020;
+  --color-night-soft: #2c2c2c;
+  --color-sage: #e7efe8;
+  --color-rose: #f6e8e4;
+  --color-stone: #eae7e1;
+  --color-whatsapp: #1f8f4d;
+  --shadow-soft: 0 12px 28px -22px rgb(32 32 32 / 0.35);
+  --shadow-lift: 0 18px 36px -28px rgb(32 32 32 / 0.4);
 }
 
 html {
@@ -153,6 +156,12 @@ button.bg-ink:active {
 
   100% {
     transform: translate3d(0, -22%, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-panel {
+    display: contents;
   }
 }
 

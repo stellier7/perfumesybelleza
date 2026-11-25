@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { Fraunces, Outfit } from "next/font/google";
 import { Suspense } from "react";
 import { CartProvider } from "@/components/cart/cart-provider";
 import { CartDrawer } from "@/components/cart/cart-drawer";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { MetaPixel } from "@/components/meta-pixel";
+import { MobileNav } from "@/components/mobile-nav";
 import { UtmCapture } from "@/components/utm-capture";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { store } from "@/config";
@@ -17,10 +18,10 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
+const display = Fraunces({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
-  variable: "--font-cormorant",
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es" className={`${outfit.variable} ${cormorant.variable} h-full antialiased`}>
+    <html lang="es" className={`${outfit.variable} ${display.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         <a href="#contenido" className="skip-link">
           Saltar al contenido
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </main>
           <Footer />
           <WhatsAppButton />
+          <MobileNav />
           <CartDrawer />
         </CartProvider>
         <Suspense fallback={null}>

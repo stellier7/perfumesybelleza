@@ -1,14 +1,19 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Shell } from "@/components/shell";
-import { store } from "@/config";
+import { SHIPPING_LPS, store } from "@/config";
+import { formatPrice } from "@/lib/pricing";
 
 const shop = [
-  { href: "/tienda", label: "Tienda" },
-  { href: "/tienda?tipo=arabic", label: "Perfumes árabes" },
-  { href: "/tienda?categoria=Inspiraciones", label: "Inspiraciones" },
-  { href: "/tienda?tipo=designer", label: "Perfumes de diseñador" },
-  { href: "/tienda?seccion=cuidado", label: "Cuidado personal" },
+  { href: "/tienda?seccion=perfumes", label: "Perfumes" },
+  { href: "/tienda?seccion=perfumes&tipo=designer", label: "Diseñador" },
+  { href: "/tienda?seccion=perfumes&tipo=arabic", label: "Árabes" },
+  { href: "/tienda?seccion=cuidado&categoria=Skincare+coreano", label: "Skincare coreano" },
+  { href: "/tienda?seccion=cuidado&categoria=Maquillaje", label: "Maquillaje" },
+  { href: "/facial", label: "Cuidado facial" },
+  { href: "/marcas", label: "Marcas" },
+  { href: "/encontrar", label: "Encontrar perfume" },
+  { href: "/rutina", label: "Rutina K-Beauty" },
   { href: "/comparaciones", label: "Comparaciones" },
 ];
 
@@ -16,6 +21,7 @@ const help = [
   { href: "/envios", label: "Envíos" },
   { href: "/como-pagar", label: "Cómo pagar" },
   { href: "/politica-de-devoluciones", label: "Devoluciones" },
+  { href: "/#preguntas", label: "Preguntas frecuentes" },
   { href: "/contacto", label: "Contacto" },
   { href: "/sobre-nosotros", label: "Sobre nosotros" },
 ];
@@ -27,27 +33,27 @@ const legal = [
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-line bg-paper">
-      <Shell className="grid gap-8 py-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 lg:py-12">
-        <div className="min-w-0">
+    <footer className="mt-8 border-t border-line bg-paper">
+      <Shell className="grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-12">
+        <div className="lg:col-span-4">
           <Logo />
-          <p className="mt-4 text-sm leading-6 text-muted">{store.description}</p>
+          <p className="mt-4 max-w-sm text-sm leading-6 text-muted">{store.description}</p>
+          <p className="mt-4 text-sm leading-6">
+            Envío {formatPrice(SHIPPING_LPS)} con {store.carrier}. Pago por transferencia.
+          </p>
         </div>
-        <LinkList title="Tienda" links={shop} />
-        <LinkList title="Ayuda" links={help} />
-        <div className="min-w-0">
-          <p className="text-xs uppercase tracking-[0.18em] text-gold">Contacto</p>
+        <LinkList title="Tienda" links={shop} className="lg:col-span-3" />
+        <LinkList title="Ayuda" links={help} className="lg:col-span-2" />
+        <div className="lg:col-span-3">
+          <p className="text-[0.7rem] uppercase tracking-[0.18em] text-gold">Contacto</p>
           <p className="mt-3 text-sm leading-6">{store.hours}</p>
-          <a
-            className="mt-2 block break-words text-sm hover:text-gold"
-            href={`https://wa.me/${store.whatsappNumber}`}
-          >
+          <a className="mt-2 block text-sm hover:text-gold" href={`https://wa.me/${store.whatsappNumber}`}>
             WhatsApp {store.whatsappDisplay}
           </a>
           <a className="mt-1 block break-all text-sm hover:text-gold" href={`mailto:${store.email}`}>
             {store.email}
           </a>
-          <a className="mt-2 block text-sm hover:text-gold" href={store.instagram}>
+          <a className="mt-3 block text-sm hover:text-gold" href={store.instagram}>
             Instagram
           </a>
           <a className="mt-1 block text-sm hover:text-gold" href={store.facebook}>
@@ -66,12 +72,7 @@ export function Footer() {
         <p>© {store.name}. Precios en lempiras.</p>
         <p className="mt-1">
           Hecho por{" "}
-          <a
-            href="https://www.iagodigital.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gold"
-          >
+          <a href="https://www.iagodigital.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
             iAGO Digital
           </a>
         </p>
@@ -80,10 +81,18 @@ export function Footer() {
   );
 }
 
-function LinkList({ title, links }: { title: string; links: Array<{ href: string; label: string }> }) {
+function LinkList({
+  title,
+  links,
+  className,
+}: {
+  title: string;
+  links: Array<{ href: string; label: string }>;
+  className?: string;
+}) {
   return (
-    <div className="min-w-0">
-      <p className="text-xs uppercase tracking-[0.18em] text-gold">{title}</p>
+    <div className={className}>
+      <p className="text-[0.7rem] uppercase tracking-[0.18em] text-gold">{title}</p>
       <ul className="mt-3 space-y-2 text-sm">
         {links.map((link) => (
           <li key={link.href}>

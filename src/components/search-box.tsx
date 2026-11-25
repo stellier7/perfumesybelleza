@@ -110,7 +110,7 @@ function SearchForm({
                   <span className="min-w-0 flex-1">
                     <span className="block font-medium">{displayTitle(item)}</span>
                     <span className="block text-xs text-muted">
-                      Tendencia {item.trending} · {suggestionKind(item)}
+                      {item.brand} · {suggestionKind(item)}
                       {!item.inStock && !item.isReference ? " · Agotado" : ""}
                     </span>
                   </span>
