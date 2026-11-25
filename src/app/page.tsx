@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AutoRail } from "@/components/auto-rail";
 import { CategoryRail } from "@/components/category-rail";
+import { HeroBackdrop } from "@/components/hero-backdrop";
 import { ProductCard } from "@/components/product-card";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
@@ -53,12 +54,8 @@ export default function HomePage() {
           currenciesAccepted: "HNL",
         }}
       />
-      <section className="relative z-20 isolate overflow-hidden border-b border-line [clip-path:inset(0)]">
-        <img
-          src="/home/hero-fondo.webp"
-          alt=""
-          className="pointer-events-none fixed inset-0 -z-10 h-screen w-full object-cover"
-        />
+      <section className="relative z-20 overflow-hidden border-b border-line">
+        <HeroBackdrop />
         <div className="pointer-events-none absolute inset-0 bg-ivory/40" />
         <Shell className="relative grid items-center gap-8 py-10 md:grid-cols-2 md:gap-12 md:py-16">
           <div>
