@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HeroBackdrop } from "@/components/hero-backdrop";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
 
 export function HomeHero() {
   return (
-    <section className="relative z-20 overflow-hidden border-b border-line">
-      <HeroBackdrop />
+    <section className="hero-stage relative z-20 overflow-hidden border-b border-line">
+      {/* next/image no admite el desplazamiento de esta foto con el scroll. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/home/hero-fondo.webp" alt="" className="hero-photo pointer-events-none" />
       <div className="pointer-events-none absolute inset-0 bg-ivory/40" />
       <Shell className="relative grid items-end gap-10 py-10 md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.9fr)] md:gap-14 md:py-16">
         <div>
