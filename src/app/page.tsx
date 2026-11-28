@@ -88,7 +88,45 @@ export default function HomePage() {
         </div>
       </Shell>
 
-      <Shell className="pb-4">
+      <section className="border-y border-line">
+        <Shell className="grid items-center gap-8 py-14 md:grid-cols-2 md:py-16">
+          <div className="relative min-h-80 overflow-hidden rounded-[2rem] bg-night shadow-lift ring-4 ring-paper md:min-h-[32rem]">
+            <Image
+              src="/home/perfumes-disenador.webp"
+              alt="Frascos de perfumería de diseñador"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-[0.7rem] uppercase tracking-[0.22em] text-gold">Perfumería</p>
+            <h2 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">Diseñador y casas árabes, en el mismo mostrador.</h2>
+            <p className="mt-4 max-w-md text-sm leading-6 text-muted">
+              Elige por casa, concentración o una palabra del nombre. Las notas de salida, corazón y fondo se
+              muestran solo cuando el producto las trae.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <TextLink href="/tienda?seccion=perfumes&tipo=designer">Diseñador</TextLink>
+              <TextLink href="/tienda?seccion=perfumes&tipo=arabic">Árabes</TextLink>
+              <TextLink href="/encontrar">Encontrar perfume</TextLink>
+            </div>
+            {designers.length > 0 ? (
+              <ul className="mt-8 flex flex-wrap gap-2">
+                {designers.map((entry) => (
+                  <li key={entry.brand}>
+                    <Link href={brandHref("designer", entry.brand)} className="inline-flex h-10 items-center rounded-full border border-line bg-paper px-3 text-sm">
+                      {entry.brand}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        </Shell>
+      </section>
+
+      <Shell className="pt-12 pb-4 md:pt-16">
         <ProductRail
           id="seleccion"
           eyebrow="Casa"
@@ -144,44 +182,6 @@ export default function HomePage() {
           <ProductRail title="Skincare coreano" href={`/tienda?seccion=cuidado&categoria=${encodeURIComponent(KOREAN_CATEGORY)}`} products={koreanRail} />
         </Shell>
       ) : null}
-
-      <section className="border-y border-line">
-        <Shell className="grid items-center gap-8 py-14 md:grid-cols-2 md:py-16">
-          <div className="relative min-h-80 overflow-hidden rounded-[2rem] bg-night shadow-lift ring-4 ring-paper md:min-h-[32rem]">
-            <Image
-              src="/home/perfumes-disenador.webp"
-              alt="Frascos de perfumería de diseñador"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-[0.7rem] uppercase tracking-[0.22em] text-gold">Perfumería</p>
-            <h2 className="mt-3 font-serif text-4xl leading-tight md:text-5xl">Diseñador y casas árabes, en el mismo mostrador.</h2>
-            <p className="mt-4 max-w-md text-sm leading-6 text-muted">
-              Elige por casa, concentración o una palabra del nombre. Las notas de salida, corazón y fondo se
-              muestran solo cuando el producto las trae.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <TextLink href="/tienda?seccion=perfumes&tipo=designer">Diseñador</TextLink>
-              <TextLink href="/tienda?seccion=perfumes&tipo=arabic">Árabes</TextLink>
-              <TextLink href="/encontrar">Encontrar perfume</TextLink>
-            </div>
-            {designers.length > 0 ? (
-              <ul className="mt-8 flex flex-wrap gap-2">
-                {designers.map((entry) => (
-                  <li key={entry.brand}>
-                    <Link href={brandHref("designer", entry.brand)} className="inline-flex h-10 items-center rounded-full border border-line bg-paper px-3 text-sm">
-                      {entry.brand}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </div>
-        </Shell>
-      </section>
 
       {makeup.length > 0 ? (
         <Shell className="py-12">
