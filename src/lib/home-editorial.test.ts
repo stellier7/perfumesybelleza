@@ -7,7 +7,7 @@ test("el mosaico solo muestra categorías que existen", () => {
     { type: "arabic", category: "Eau de Parfum", brand: "Lattafa" },
     { type: "beauty", category: "Shampoo", brand: "Karseell" },
   ]).map((tile) => tile.title);
-  assert.deepEqual(titles, ["Perfumes", "Esenciales"]);
+  assert.deepEqual(titles, ["Perfumes", "Esenciales", "Todos"]);
 });
 
 test("maquillaje, facial, uñas y skincare entran cuando hay productos", () => {
@@ -19,7 +19,28 @@ test("maquillaje, facial, uñas y skincare entran cuando hay productos", () => {
     { type: "beauty", category: "Uñas", brand: "Staleks" },
     { type: "beauty", category: "Shampoo", brand: "Karseell" },
   ]).map((tile) => tile.title);
-  assert.deepEqual(titles, ["Perfumes", "Korean Skincare", "Maquillaje", "Cuidado facial", "Uñas", "Esenciales"]);
+  assert.deepEqual(titles, [
+    "Perfumes",
+    "Korean Skincare",
+    "Maquillaje",
+    "Cuidado facial",
+    "Uñas",
+    "Esenciales",
+    "Todos",
+  ]);
+});
+
+test("todos abre la tienda cuando hay catálogo", () => {
+  const tiles = editorialTiles([{ type: "beauty", category: "Shampoo", brand: "Karseell" }]);
+  const todos = tiles.find((tile) => tile.id === "todos");
+  assert.ok(todos);
+  assert.equal(todos.title, "Todos");
+  assert.equal(todos.href, "/tienda?seccion=perfumes");
+  assert.equal(todos.image, "/home/perfumes-sets.webp");
+});
+
+test("sin productos el mosaico queda vacío", () => {
+  assert.deepEqual(editorialTiles([]), []);
 });
 
 test("las marcas se ordenan por cantidad", () => {

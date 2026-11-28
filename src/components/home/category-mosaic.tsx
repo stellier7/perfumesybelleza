@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/cn";
 import type { EditorialTile } from "@/lib/home-editorial";
+import { mosaicImageSizes, mosaicTileClass } from "@/lib/mosaic-layout";
 
 const toneClass: Record<EditorialTile["tone"], string> = {
   night: "bg-night text-ivory",
@@ -18,14 +20,18 @@ export function CategoryMosaic({ tiles }: { tiles: EditorialTile[] }) {
         <Link
           key={tile.id}
           href={tile.href}
-          className={`group relative flex min-h-52 flex-col justify-end overflow-hidden rounded-3xl p-5 shadow-soft ${index === 0 ? "col-span-2 min-h-80 md:row-span-2 md:min-h-[34rem]" : ""} ${toneClass[tile.tone]}`}
+          className={cn(
+            "group relative flex min-h-52 flex-col justify-end overflow-hidden rounded-3xl p-5 shadow-soft",
+            mosaicTileClass(index, tiles.length),
+            toneClass[tile.tone],
+          )}
         >
           {tile.image ? (
             <Image
               src={tile.image}
               alt=""
               fill
-              sizes={index === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"}
+              sizes={mosaicImageSizes(index, tiles.length)}
               className="object-cover transition duration-700 ease-out motion-safe:group-hover:scale-[1.04]"
             />
           ) : null}
