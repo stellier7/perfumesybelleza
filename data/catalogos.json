@@ -1,36 +1,36 @@
 {
-  "savedOn": "2026-11-07",
+  "savedOn": "2026-11-27",
   "note": "Línea de base para la revisión semanal. Cada archivo es el último scrape. La próxima vez se compara id, nombre, precio mayorista, precio de venta y existencia, y se anotan los que faltan y los nuevos.",
   "sources": [
     {
       "file": "data/catalogo-674.json",
       "url": "https://distribuidorasbc.com/catalogo/674",
       "name": "Perfumería para hombre",
-      "count": 795
+      "count": 835
     },
     {
       "file": "data/categoria-6.json",
       "url": "https://distribuidorasbc.com/shop/categoria/6",
       "name": "Perfumería",
-      "count": 1280
+      "count": 1417
     },
     {
       "file": "data/cuidado-personal.json",
       "url": "https://distribuidorasbc.com/shop/categoria/11",
       "name": "Cuidado personal",
-      "count": 1106
+      "count": 1089
     },
     {
       "file": "data/catalogo-742.json",
       "url": "https://distribuidorasbc.com/catalogo/742",
       "name": "Skincare coreano",
-      "count": 60
+      "count": 71
     },
     {
       "file": "data/categoria-13.json",
       "url": "https://distribuidorasbc.com/shop/categoria/13",
       "name": "Maquillaje y uñas",
-      "count": 1148
+      "count": 1109
     }
   ]
 }

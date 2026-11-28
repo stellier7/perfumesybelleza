@@ -1615,29 +1615,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "fakhar-black",
-      slug: "fakhar-black",
-      name: "Pride Fakhar Black",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "unisex",
-      cost: 798,
-      price: 1300,
-      images: ["/products/fakhar-black.webp"],
-      description: "Lattafa Pride Fakhar Black es pura elegancia masculina con carácter. Una apertura fresca y aromática de manzana, bergamota y lavanda da paso a un corazón especiado y limpio, que descansa sobre un fondo cálido y amaderado de ámbar, pachulí y almizcle. Seguro, sofisticado y magnético, es ideal para la oficina, las citas y las noches especiales. Tiene excelente proyección y una duración que te acompaña todo el día, con ese sello árabe que huele a lujo sin pagar precios de lujo. Para el hombre que entra a un lugar y se hace notar.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Y (Yves Saint Laurent)"],
-      inspirationRank: 2,
-    },
-  {
       id: "fakhar-black-lote-784",
       slug: "fakhar-black-lote-784",
       name: "Pride Fakhar Black",
@@ -3073,29 +3050,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "magnate-10",
-      slug: "magnate-10",
-      name: "10! Pour Homme",
-      brand: "Magnate",
-      type: "arabic",
-      gender: "hombre",
-      cost: 63,
-      price: 116,
-      images: ["/products/magnate-10.webp"],
-      description: "Eau de toilette de 100 ml. La caja dice Magnate Collection, 10! Pour Homme, 80% vol y 3.3 fl oz. Inspirado en Joop! Homme. Aroma dulce, especiado y cálido.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: [],
-      inspiredBy: ["Joop! Homme (Joop!)"],
-      inspirationRank: 1,
-    },
-  {
       id: "lana-dazzle",
       slug: "lana-dazzle",
       name: "Lana Dazzle",
@@ -4117,7 +4071,7 @@ const perfumeProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 750,
-      price: 1293,
+      price: 1103,
       images: ["/products/ajwad.webp"],
       description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad y Lattafa.",
       notes: {
@@ -5912,29 +5866,6 @@ const perfumeProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Toilette",
       tags: []
-    },
-  {
-      id: "magnate-10-mini",
-      slug: "magnate-10-mini",
-      name: "10 Pour Homme",
-      brand: "Magnate",
-      type: "arabic",
-      gender: "hombre",
-      cost: 46,
-      price: 85,
-      images: ["/products/magnate-10-mini.webp"],
-      description: "Eau de toilette. El frasco dice Magnate Collection y 10 pour homme. La caja no deja claro el tamaño. Inspirado en Joop! Homme. Aroma dulce, especiado y cálido.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: [],
-      inspiredBy: ["Joop! Homme (Joop!)"],
-      inspirationRank: 1,
     },
   {
       id: "amber-oud-rouge-60",
@@ -9106,27 +9037,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "eternity-for-men",
-      slug: "eternity-for-men",
-      name: "Eternity For Men",
-      brand: "Calvin Klein",
-      type: "designer",
-      gender: "hombre",
-      cost: 1068,
-      price: 1832,
-      images: ["/products/eternity-for-men.webp"],
-      description: "Eau de toilette for men. El frasco dice Eternity For Men y Calvin Klein. Eternity Aqua es el otro, el azul.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
       id: "eternity-aqua-200",
       slug: "eternity-aqua-200",
       name: "Eternity Aqua 200 ml",
@@ -10423,27 +10333,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "set-yara-tous",
-      slug: "set-yara-tous",
-      name: "Set Yara Tous",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1489,
-      price: 2308,
-      images: ["/products/set-yara-tous.webp"],
-      description: "Presentamos el set de regalo Lattafa Ladies Yara Moi, una fascinante colección de fragancias lanzada en 2022. Este exquisito set de regalo está elaborado por la reconocida casa de diseño de Oriente Medio, Lattafa, y pertenece a la familia de fragancias amaderadas y ambarinas. Perfecto para la mujer sofisticada, Yara Moi está diseñado para cautivar y encantar. Las notas de salida de este encantador aroma presentan el delicado y dulce aroma del jazmín combinado con la deliciosa esencia del melocotón. A medida que se desarrolla la fragancia, las notas de corazón revelan una cálida y acogedora mezcla de ámbar y caramelo, creando un encanto verdaderamente irresistible. Las notas de fondo de sándalo y pachulí añaden una profundidad rica y terrosa, dejando una impresión duradera. El set de regalo Lattafa Ladies Yara Moi incluye un Eau de Parfum de 3,4 oz, un desodorante en aerosol de 6,67 oz y un spray para el cabello de 1,7 oz, lo que brinda una experiencia de fragancia completa. Ya sea que esté buscando un capricho personal o el regalo perfecto, este set seguramente lo deleitará. Los prácticos tamaños hacen que sea fácil llevar tu aroma favorito a donde quiera que vayas. Con su lujosa composición y su elegante empaque, el set de regalo Yara Moi es una opción ideal para cualquier ocasión. La combinación única de notas garantiza una experiencia de fragancia versátil y duradera que te hará sentir segura y atractiva. Ten en cuenta que este artículo solo está disponible para envío dentro de los Estados Unidos continentales y Canadá. Agrega el set de regalo Lattafa Ladies Yara Moi a tu colección hoy y disfruta del encanto cautivador de esta exquisita fragancia. Este artículo solo es válido para envío dentro de los Estados Unidos continentales y Canadá.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "the-lions-club-feroce",
       slug: "the-lions-club-feroce",
       name: "The Lion's Club Féroce",
@@ -11448,7 +11337,7 @@ const perfumeProducts: RawProduct[] = [
       type: "designer",
       gender: "hombre",
       cost: 738,
-      price: 1600,
+      price: 1401,
       images: ["/products/guess-seductive-homme-noir-3-4-edt-m.webp"],
       description: "Seductive Homme Noir de Guess es una fragancia masculina intensa, moderna y magnética. Este Eau de Toilette de 3.4 oz combina una apertura fresca con un corazón especiado y una base profunda de maderas y ámbar que dejan una estela oscura, sensual y muy atractiva. Es el perfume perfecto para las noches, las citas y las salidas en las que quieres causar impresión, aunque su versatilidad también permite lucirlo en el día. Con el estilo inconfundible de Guess, un frasco negro elegante y una buena relación calidad-precio, es una opción perfecta para quienes buscan seducir sin gastar de más. También funciona muy bien como regalo para él. Si quieres un aroma con actitud y presencia, Seductive Homme Noir es para ti. ¡Haz tu pedido y atrévete a seducir!",
       notes: {
@@ -11715,27 +11604,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "tommy-hilfiger-now-girl-3-4-oz-edt-sp-new-upc",
-      slug: "tommy-hilfiger-now-girl-3-4-oz-edt-sp-new-upc",
-      name: "TOMMY HILFIGER NOW GIRL 3.4 OZ EDT SP NEW UPC",
-      brand: "Tommy Hilfiger",
-      type: "designer",
-      gender: "mujer",
-      cost: 904,
-      price: 1609,
-      images: ["/products/tommy-hilfiger-now-girl-3-4-oz-edt-sp-new-upc.webp"],
-      description: "Crema perfumada. 100 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Crema perfumada",
-      tags: []
-    },
-  {
       id: "jean-paul-gaultier-le-beau-le-parfum-4-2-edp-intense-m",
       slug: "jean-paul-gaultier-le-beau-le-parfum-4-2-edp-intense-m",
       name: "JEAN PAUL GAULTIER LE BEAU LE PARFUM 4.2 EDP INTENSE (M)",
@@ -11754,27 +11622,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 125,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "set-pe-perry-ellis-3pc-360-collection-for-men-3-4-edt-3-0-sg-0-25-edt-spray-m-de",
-      slug: "set-pe-perry-ellis-3pc-360-collection-for-men-3-4-edt-3-0-sg-0-25-edt-spray-m-de",
-      name: "SET PE PERRY ELLIS 3PC 360 COLLECTION FOR MEN 3.4 EDT+3.0 SG+0.25 EDT SPRAY (M) DELUXE CANNISTER",
-      brand: "Perry Ellis",
-      type: "designer",
-      gender: "hombre",
-      cost: 831,
-      price: 1478,
-      images: ["/products/set-pe-perry-ellis-3pc-360-collection-for-men-3-4-edt-3-0-sg-0-25-edt-spray-m-de.webp"],
-      description: "Este set de 3 piezas de Perry Ellis 360 Collection For Men es el regalo perfecto para el hombre moderno, presentado en una elegante lata deluxe. Incluye Eau de Toilette de 3.4 oz, gel de ducha de 3.0 oz y un spray de Eau de Toilette de 0.25 oz, ideal para llevar en el bolsillo, el gimnasio o el carro y retocar tu aroma en cualquier momento. Su fragancia masculina es fresca, aromática y amaderada, con un carácter limpio, seguro y fácil de llevar tanto en la oficina como en una salida casual. Es perfecto para cumpleaños, Día del Padre, Navidad o aniversarios, y una excelente manera de cuidar tu aroma y tu piel. Un set completo, con gran presentación y un precio muy atractivo: ¡consíguelo hoy!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
       tags: []
     },
   {
@@ -11818,49 +11665,6 @@ const perfumeProducts: RawProduct[] = [
       inStock: true,
       category: "Set",
       tags: []
-    },
-  {
-      id: "ch-carolina-herrera-212-3-4-edt-m",
-      slug: "ch-carolina-herrera-212-3-4-edt-m",
-      name: "CH CAROLINA HERRERA 212 3.4 EDT (M)",
-      brand: "Carolina Herrera",
-      type: "designer",
-      gender: "hombre",
-      cost: 2083,
-      price: 3436,
-      images: ["/products/ch-carolina-herrera-212-3-4-edt-m.webp"],
-      description: "212 de Carolina Herrera es la fragancia masculina urbana y sofisticada que define el estilo de la gran ciudad. Este Eau de Toilette de 3.4 oz abre con una frescura cítrica y vibrante, se desarrolla con un corazón especiado de jengibre y matices aromáticos, y se asienta sobre una base de maderas blancas y almizcle limpio que deja una estela elegante y magnética. Es el aroma perfecto para el hombre moderno, seguro y con ambición, ideal para el trabajo, las salidas nocturnas y las ocasiones especiales. Con el prestigio de Carolina Herrera y un diseño que transmite exclusividad, es un clásico que siempre acierta como regalo. Si quieres proyectar éxito, estilo y confianza en cada paso, 212 es la elección ganadora. ¡Haz tu pedido hoy!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "lattafa-qaed-al-fursan-3-04-edp-u",
-      slug: "lattafa-qaed-al-fursan-3-04-edp-u",
-      name: "LATTAFA QAED AL FURSAN 3.04 EDP (U)",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "unisex",
-      cost: 515,
-      price: 979,
-      images: ["/products/lattafa-qaed-al-fursan-3-04-edp-u.webp"],
-      description: "Qaed Al Fursan de Lattafa es una fragancia unisex en Eau de Parfum de 3.04 oz que se destaca por su carácter audaz y su sello único. Combina un inicio frutal vibrante con un corazón cálido y un fondo de ámbar, vainilla y maderas que lo vuelve envolvente, adictivo y de gran duración. Es un aroma que proyecta confianza y presencia, ideal tanto para hombres como para mujeres que aman los perfumes con personalidad fuerte y diferente. Perfecto para las salidas, las reuniones y los días en que quieres que te recuerden, ofrece la riqueza de la perfumería árabe a un precio excepcional. Con su excelente rendimiento y su estela inconfundible, es una compra que no te decepcionará. ¡Elige Qaed Al Fursan y reina con tu propio estilo!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 90,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Aventus (Creed)"],
     },
   {
       id: "lattafa-qaed-al-fursan-3-04-edp-u-lote-582",
@@ -11916,111 +11720,6 @@ const perfumeProducts: RawProduct[] = [
       price: 1733,
       images: ["/products/ph-paris-hilton-heiress-3-4-edp-w.webp", "/products/ph-paris-hilton-heiress-3-4-edp-w-2.webp"],
       description: "Heiress de Paris Hilton es una fragancia para la mujer que vive la vida con estilo y diversión. Este Eau de Parfum de 3.4 oz despliega un aroma dulce, frutal y floral con un fondo cálido de vainilla, almizcle y maderas suaves, creando una estela alegre, glamurosa y muy femenina. Es perfecta para las salidas con amigas, las citas, las fiestas y el uso diario cuando quieres un toque especial. Su frasco con detalles llamativos refleja la personalidad extravagante de la marca y se convierte en una pieza bonita para tu tocador y en un regalo que siempre gusta. Con una duración agradable y un precio accesible, te permite sentirte como una verdadera heredera sin gastar de más. ¡Haz tu pedido y vive cada día con actitud de reina!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "ph-paris-hilton-heiress-3-4-edp-w-lote-1144",
-      slug: "ph-paris-hilton-heiress-3-4-edp-w-lote-1144",
-      name: "PH PARIS HILTON HEIRESS 3.4 EDP (W)",
-      brand: "Paris Hilton",
-      type: "designer",
-      gender: "mujer",
-      cost: 1144,
-      price: 1962,
-      images: ["/products/ph-paris-hilton-heiress-3-4-edp-w.webp", "/products/ph-paris-hilton-heiress-3-4-edp-w-2.webp"],
-      description: "Heiress de Paris Hilton es una fragancia para la mujer que vive la vida con estilo y diversión. Este Eau de Parfum de 3.4 oz despliega un aroma dulce, frutal y floral con un fondo cálido de vainilla, almizcle y maderas suaves, creando una estela alegre, glamurosa y muy femenina. Es perfecta para las salidas con amigas, las citas, las fiestas y el uso diario cuando quieres un toque especial. Su frasco con detalles llamativos refleja la personalidad extravagante de la marca y se convierte en una pieza bonita para tu tocador y en un regalo que siempre gusta. Con una duración agradable y un precio accesible, te permite sentirte como una verdadera heredera sin gastar de más. ¡Haz tu pedido y vive cada día con actitud de reina!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "ph-paris-hilton-can-can-burlesque-3-4-edp-w",
-      slug: "ph-paris-hilton-can-can-burlesque-3-4-edp-w",
-      name: "PH PARIS HILTON CAN CAN BURLESQUE 3.4 EDP (W)",
-      brand: "Paris Hilton",
-      type: "designer",
-      gender: "mujer",
-      cost: 880,
-      price: 1565,
-      images: ["/products/ph-paris-hilton-can-can-burlesque-3-4-edp-w.webp"],
-      description: "Can Can Burlesque de Paris Hilton es una fragancia femenina audaz, coqueta y llena de glamour. Este Eau de Parfum de 3.4 oz desprende un aroma dulce y envolvente, con acordes frutales y florales que se funden en una base cremosa de vainilla, almizcle y maderas suaves, creando una estela seductora e inolvidable. Inspirado en el espíritu teatral y lleno de brillo del cabaret, es el perfume perfecto para las noches de fiesta, las citas y las ocasiones en las que quieres ser el centro de atención. Su frasco elegante con detalles que recuerdan al escenario es una joya para tu tocador y un regalo que encanta. Con buena duración y precio accesible, es el toque de glamour que le faltaba a tu colección. ¡Sube el telón y haz tu pedido!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "fc-real-madrid-3-4-edt-m",
-      slug: "fc-real-madrid-3-4-edt-m",
-      name: "FC REAL MADRID 3.4 EDT (M)",
-      brand: "Realmadrid",
-      type: "arabic",
-      gender: "hombre",
-      cost: 300,
-      price: 615,
-      images: ["/products/fc-real-madrid-3-4-edt-m.webp"],
-      description: "¡Para los verdaderos madridistas! Real Madrid Eau de Toilette de 3.4 oz es la fragancia con el espíritu del club más grande del mundo. Su aroma es fresco, deportivo y energizante, con una salida vibrante, un corazón aromático y un fondo suave y amaderado que te acompaña durante todo el día con una sensación de limpieza y vitalidad. Es ideal para ir al estadio, ver el partido con amigos, entrenar, ir al trabajo o simplemente lucir tu pasión por el equipo. Su frasco con el diseño oficial del club lo convierte en una pieza que cualquier fanático querrá tener y en un regalo perfecto para cumpleaños, Navidad o el Día del Padre. Con un precio súper accesible, es el perfume que todo hincha debe tener. ¡Pídelo ya y siente la pasión del Real Madrid!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "th-tommy-hilfiger-tommy-3-4-edt-m-no-cello",
-      slug: "th-tommy-hilfiger-tommy-3-4-edt-m-no-cello",
-      name: "TH TOMMY HILFIGER TOMMY 3.4 EDT (M) NO CELLO",
-      brand: "Tommy Hilfiger",
-      type: "designer",
-      gender: "hombre",
-      cost: 797,
-      price: 1417,
-      images: ["/products/th-tommy-hilfiger-tommy-3-4-edt-m-no-cello.webp"],
-      description: "Tommy de Tommy Hilfiger es la frescura americana en su mejor versión. Este Eau de Toilette de 3.4 oz abre con una mezcla vibrante de cítricos y menta, continúa con un corazón aromático de lavanda y matices verdes, y termina en una base de maderas y ámbar que aporta carácter y calidez. Es un perfume masculino ligero, limpio y versátil, ideal para el trabajo, el gimnasio, la universidad y cualquier plan casual, y su frescura lo hace perfecto para el clima cálido. Con el respaldo de una marca icónica y un precio súper accesible, es uno de esos aromas de uso diario que nunca falla y que siempre recibe elogios. Si buscas un clásico confiable que te haga sentir fresco, seguro y listo para todo, Tommy es tu perfume. ¡Compra el tuyo hoy!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "afnan-9am-pour-femme-3-4-edp-w",
-      slug: "afnan-9am-pour-femme-3-4-edp-w",
-      name: "AFNAN 9AM POUR FEMME 3.4 EDP (W)",
-      brand: "Afnan",
-      type: "arabic",
-      gender: "mujer",
-      cost: 843,
-      price: 1348,
-      images: ["/products/afnan-9am-pour-femme-3-4-edp-w.webp", "/products/afnan-9am-pour-femme-3-4-edp-w-2.webp"],
-      description: "9AM Pour Femme de Afnan es una fragancia luminosa y femenina que despierta los sentidos desde la primera hora del día. Este Eau de Parfum de 3.4 oz ofrece un aroma floral y frutal, suave y fresco, con un corazón delicado y una base cremosa de vainilla y almizcle que deja una estela dulce, limpia y elegante. Es perfecto para el día a día, la oficina, la universidad, los paseos y todos esos momentos en los que quieres lucir fresca y natural. Con buena duración y la riqueza de la perfumería árabe, ofrece una calidad sorprendente a un precio accesible. Es un regalo encantador para mamá, hermana, pareja o amiga. Si buscas un aroma bonito y fácil de amar, 9AM Pour Femme es tu compañero ideal. ¡Pídelo hoy y empieza cada mañana con un aroma radiante!",
       notes: {
         top: [],
         heart: [],
@@ -12157,27 +11856,6 @@ const perfumeProducts: RawProduct[] = [
       category: "Set",
       tags: [],
       inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
-    },
-  {
-      id: "lacoste-eau-de-lacoste-l-12-12-blanc-3-3-edt-m",
-      slug: "lacoste-eau-de-lacoste-l-12-12-blanc-3-3-edt-m",
-      name: "LACOSTE EAU DE LACOSTE L.12.12 BLANC 3.3 EDT (M)",
-      brand: "Lacoste",
-      type: "designer",
-      gender: "hombre",
-      cost: 1382,
-      price: 2369,
-      images: ["/products/lacoste-eau-de-lacoste-l-12-12-blanc-3-3-edt-m.webp"],
-      description: "L.12.12 Blanc de Lacoste es el perfume masculino más fresco, limpio y reconocido de la línea. Este Eau de Toilette de 3.3 oz abre con pomelo y cardamomo, avanza con un corazón aromático de romero y matices verdes, y se cierra con una base de cedro y almizcle que transmite pureza y sofisticación deportiva. Es el compañero ideal para el día a día: la oficina, la universidad, el gimnasio o un fin de semana relajado, y su frescura lo hace perfecto para el clima cálido. Con la elegancia inconfundible de Lacoste, es un aroma de buen gusto que siempre deja una impresión positiva y que funciona como regalo seguro para papá, hermano o pareja. Si buscas un clásico atemporal que huela a limpio y a éxito, L.12.12 Blanc es tu elección.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
     },
   {
       id: "ag-ariana-grande-thank-u-next-3-4-edp-w",
@@ -12434,27 +12112,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "est-paco-rabanne-one-million-h-edt100ml-edt20ml-2pzas-travel-duo",
-      slug: "est-paco-rabanne-one-million-h-edt100ml-edt20ml-2pzas-travel-duo",
-      name: "EST.PACO RABANNE ONE MILLION /H EDT100ML+EDT20ML - 2PZAS - TRAVEL DUO",
-      brand: "Paco Rabanne",
-      type: "designer",
-      gender: "hombre",
-      cost: 2552,
-      price: 4211,
-      images: ["/products/est-paco-rabanne-one-million-h-edt100ml-edt20ml-2pzas-travel-duo.webp", "/products/est-paco-rabanne-one-million-h-edt100ml-edt20ml-2pzas-travel-duo-2.webp"],
-      description: "Paco Rabanne One Million en estuche Travel Duo de 2 piezas: EDT de 100 ml más EDT de 20 ml, ideal para llevar siempre contigo. Un perfume masculino icónico y magnético, con mandarina sanguina, pomelo y menta frescos, un corazón especiado de canela y cuero, y un fondo cálido de ámbar y maderas. Un aroma de ganador que atrae miradas y nunca pasa desapercibido. Perfecto como regalo y para viajar con estilo. ¡Tu fragancia de confianza, siempre a la mano!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "valentino-uomo-h-edt-50ml-sp",
       slug: "valentino-uomo-h-edt-50ml-sp",
       name: "VALENTINO UOMO /H EDT 50ML SP",
@@ -12476,27 +12133,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "t-carolina-herrera-212-vip-rose-d-edp-80ml-sp",
-      slug: "t-carolina-herrera-212-vip-rose-d-edp-80ml-sp",
-      name: "T.CAROLINA HERRERA 212 VIP ROSE /D EDP 80ML SP.",
-      brand: "Carolina Herrera",
-      type: "designer",
-      gender: "mujer",
-      cost: 2156,
-      price: 3557,
-      images: ["/products/t-carolina-herrera-212-vip-rose-d-edp-80ml-sp.webp"],
-      description: "Carolina Herrera 212 VIP Rosé EDP de 80 ml es la fiesta hecha perfume para la mujer glamorosa y divertida. Abre con pimienta rosa y un burbujeante acorde de champán rosado, continúa con rosas y durazno jugoso, y cierra con un fondo suave de almizcle y vainilla. Un aroma alegre, chic y sumamente femenino que te hace sentir en la mejor celebración de la ciudad. Perfecto para fiestas, citas, brindis y noches inolvidables, con excelente duración y estela. ¡Brinda por ti misma con el perfume más coqueto y luminoso del momento!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 80,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "perry-ellis-360-red-d-edp-100ml-sp",
       slug: "perry-ellis-360-red-d-edp-100ml-sp",
       name: "PERRY ELLIS 360 RED /D EDP 100ML SP.",
@@ -12515,27 +12151,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "perry-ellis-360-d-edt-100ml-sp",
-      slug: "perry-ellis-360-d-edt-100ml-sp",
-      name: "PERRY ELLIS 360 /D EDT 100ML SP",
-      brand: "Perry Ellis",
-      type: "designer",
-      gender: "mujer",
-      cost: 1022,
-      price: 1753,
-      images: ["/products/perry-ellis-360-d-edt-100ml-sp.webp"],
-      description: "Perry Ellis 360 para mujer en EDT de 100 ml es frescura y feminidad para cada día. Una fragancia ligera, limpia y alegre con acordes florales y frutales que se asientan en un fondo suave de almizcle, perfecta para sentirte cómoda y radiante desde la mañana. Es ideal para la oficina, la universidad, los días calurosos y las salidas casuales, con una estela agradable que nunca resulta pesada. Un clásico accesible, fácil de llevar y de combinar con cualquier outfit. ¡Dale un toque de frescura a tu rutina con este favorito de siempre!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -12740,27 +12355,6 @@ const perfumeProducts: RawProduct[] = [
       price: 4646,
       images: ["/products/givenchy-gentleman-society-h-edp-100ml-sp.webp"],
       description: "Givenchy Gentleman Society es elegancia moderna para el caballero contemporáneo. Este EDP de 100 ml combina narciso, salvia y maderas nobles con un fondo suave de almizcle, logrando un aroma sofisticado, limpio y distinguido. Ideal para el trabajo, reuniones y eventos formales, donde la imagen lo es todo. Una fragancia de casa de alta costura francesa, con duración y proyección de primera. ¡Eleva tu estilo con el aroma de los verdaderos caballeros!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "giorgio-armani-stronger-with-you-intensely-h-edp-100ml",
-      slug: "giorgio-armani-stronger-with-you-intensely-h-edp-100ml",
-      name: "GIORGIO ARMANI STRONGER WITH YOU INTENSELY /H EDP 100ML",
-      brand: "Giorgio Armani",
-      type: "designer",
-      gender: "hombre",
-      cost: 2866,
-      price: 4728,
-      images: ["/products/giorgio-armani-stronger-with-you-intensely-h-edp-100ml.webp"],
-      description: "Giorgio Armani Stronger With You Intensely es una fragancia masculina cálida, dulce y absolutamente seductora. Este EDP de 100 ml reúne pimienta rosa, lavanda y canela con castaña, vainilla y ámbar en un acorde cremoso y adictivo. Intensidad, sensualidad y una estela que se queda mucho tiempo en la ropa y la piel. Ideal para noches frías, citas y ocasiones especiales. Uno de los favoritos del momento para quienes quieren ser recordados. ¡Más fuerte contigo, más irresistible con él!",
       notes: {
         top: [],
         heart: [],
@@ -12982,27 +12576,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "coach-new-york-wild-rose-d-edp-90ml-sp",
-      slug: "coach-new-york-wild-rose-d-edp-90ml-sp",
-      name: "COACH NEW YORK WILD ROSE /D EDP 90ML SP.",
-      brand: "Coach",
-      type: "designer",
-      gender: "mujer",
-      cost: 1829,
-      price: 3137,
-      images: ["/products/coach-new-york-wild-rose-d-edp-90ml-sp.webp"],
-      description: "Coach New York Wild Rose es una explosión floral fresca, romántica y llena de personalidad. Este EDP de 90 ml combina notas de mandarina con rosa salvaje, flores delicadas y un fondo suave de almizcle, logrando un aroma alegre, femenino y muy fácil de amar. Perfecto para el día a día, paseos y citas, con un estilo juvenil y elegante. Una fragancia de marca reconocida a un precio que enamora. ¡Floréce con cada rociada y siéntete radiante!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 90,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "carolina-herrera-ch-d-edt-100ml-sp",
       slug: "carolina-herrera-ch-d-edt-100ml-sp",
       name: "CAROLINA HERRERA CH /D EDT 100ML SP",
@@ -13076,27 +12649,6 @@ const perfumeProducts: RawProduct[] = [
       price: 2835,
       images: ["/products/bharara-rey-de-reyes-h-edp-100ml.webp"],
       description: "Bharara Rey de Reyes es un EDP masculino de 100 ml que se vive como una declaración de poder. Su carácter intenso y oriental mezcla especias cálidas, ámbar y maderas profundas en una composición lujosa, magnética y de gran presencia. Una fragancia pensada para el hombre seguro de sí mismo que quiere dejar una estela inolvidable en cada entrada. Excelente duración y proyección, ideal para noches, eventos y ocasiones especiales. Elige el aroma de los que mandan.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "armaf-yum-yum-d-edp-100ml",
-      slug: "armaf-yum-yum-d-edp-100ml",
-      name: "ARMAF YUM YUM /D EDP 100ML",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "mujer",
-      cost: 1290,
-      price: 1999,
-      images: ["/products/armaf-yum-yum-d-edp-100ml.webp", "/products/armaf-yum-yum-d-edp-100ml-2.webp"],
-      description: "Armaf Yum Yum es pura tentación en un frasco de 100 ml EDP para mujer. Un perfume dulce, gourmand y juguetón, con un acorde cremoso de vainilla y notas frutales que despiertan los sentidos y dejan una estela deliciosa y adictiva. Perfecto para quienes aman los aromas golosos, femeninos y con mucha personalidad. Larga duración, excelente proyección y un precio irresistible: el perfume que todos van a preguntarte cómo se llama. ¡Dulce, divertido y totalmente irresistible!",
       notes: {
         top: [],
         heart: [],
@@ -13726,27 +13278,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "lattafa-qimmah-for-women",
-      slug: "lattafa-qimmah-for-women",
-      name: "LATTAFA QIMMAH FOR WOMEN",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "mujer",
-      cost: 613,
-      price: 1165,
-      images: ["/products/lattafa-qimmah-for-women.webp", "/products/lattafa-qimmah-for-women-2.webp"],
-      description: "Lattafa Qimmah for Women es una fragancia femenina fresca, floral y elegante, ideal para mujeres que aman destacar con delicadeza. Sus notas luminosas y frutales se abren paso hacia un corazón floral suave, mientras un fondo de almizcle y maderas suaves deja una estela dulce, limpia y muy femenina. Cómoda, versátil y fácil de usar, es perfecta para el trabajo, el día a día y las salidas. Con muy buena duración y un precio imbatible, es un perfume que querrás repetir una y otra vez.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "lattafa-hayaati-al-maleky-edp",
       slug: "lattafa-hayaati-al-maleky-edp",
       name: "LATTAFA HAYAATI AL MALEKY EDP",
@@ -13757,27 +13288,6 @@ const perfumeProducts: RawProduct[] = [
       price: 1073,
       images: ["/products/lattafa-hayaati-al-maleky-edp.webp"],
       description: "Lattafa Hayaati Al Maleky es una fragancia de aire real, pensada para quienes disfrutan lo elegante y lo distinguido. Sus notas orientales y especiadas se mezclan con maderas nobles y un fondo cálido de ámbar y almizcle que se siente rico, envolvente y muy masculino. Con gran proyección y larga duración, es perfecta para la oficina, las reuniones y las noches especiales. Un perfume con presencia, carácter y un precio que enamora, para el hombre que quiere oler a éxito en cada momento.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "mag-f-riif-emperor-for-man-edp",
-      slug: "mag-f-riif-emperor-for-man-edp",
-      name: "MAG-F RIIF EMPEROR FOR MAN EDP",
-      brand: "Riiffs",
-      type: "arabic",
-      gender: "hombre",
-      cost: 711,
-      price: 1352,
-      images: ["/products/mag-f-riif-emperor-for-man-edp.webp"],
-      description: "F Riif Emperor For Man es una fragancia masculina de porte imponente, pensada para el hombre que quiere sentirse como un emperador. Sus notas frescas y especiadas abren paso a un corazón elegante y a un fondo cálido de maderas, ámbar y almizcle que deja una estela viril, sofisticada y duradera. Con gran proyección y mucha personalidad, es ideal para la oficina, las citas y las noches especiales. Un perfume con presencia, carácter y un precio irresistible.",
       notes: {
         top: [],
         heart: [],
@@ -13958,27 +13468,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "versace-dylan-blue-d-edp-100ml-sp",
-      slug: "versace-dylan-blue-d-edp-100ml-sp",
-      name: "VERSACE DYLAN BLUE /D EDP 100ML SP",
-      brand: "Versace",
-      type: "designer",
-      gender: "mujer",
-      cost: 2288,
-      price: 3775,
-      images: ["/products/versace-dylan-blue-d-edp-100ml-sp.webp", "/products/versace-dylan-blue-d-edp-100ml-sp-2.webp"],
-      description: "Versace Dylan Blue pour Femme EDP de 100 ml es una fragancia floral y frutal intensa, moderna y con mucho carácter. Grosella negra y pera jugosa en la apertura, un corazón de freesia y peonía, y un fondo elegante de almizcle y maderas. Un aroma sofisticado, femenino y seguro que funciona igual de bien de día que de noche. Con la firma de Versace y la distinción de su frasco azul, es una excelente opción para regalar o para consentirte. ¡Azul profundo, elegancia total y presencia inolvidable!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "valentino-uomo-h-edt-100ml-sp",
       slug: "valentino-uomo-h-edt-100ml-sp",
       name: "VALENTINO UOMO /H EDT 100ML SP",
@@ -14123,27 +13612,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Parfum",
-      tags: []
-    },
-  {
-      id: "valentino-donna-born-in-roma-intense-d-edp-100ml-sp",
-      slug: "valentino-donna-born-in-roma-intense-d-edp-100ml-sp",
-      name: "VALENTINO DONNA BORN IN ROMA INTENSE /D EDP 100ML SP",
-      brand: "Valentino",
-      type: "designer",
-      gender: "mujer",
-      cost: 4130,
-      price: 6276,
-      images: ["/products/valentino-donna-born-in-roma-intense-d-edp-100ml-sp.webp"],
-      description: "Valentino Donna Born in Roma Intense es seducción y fuerza femenina en un EDP de 100 ml. Jazmín, pimienta rosa y una vainilla bourbon envolvente se mezclan con maderas y notas minerales en una estela cálida, moderna y adictiva que acompaña durante horas. Es un perfume pensado para la mujer segura de sí misma, que sabe lo que quiere y quiere ser recordada. Ideal para el día, la noche y cualquier ocasión especial, con la firma elegante de Valentino. Un regalo de lujo que nunca falla. ¡Vive la intensidad de Roma en tu piel!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
       tags: []
     },
   {
@@ -14378,28 +13846,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "armaf-club-de-nuit-untold-u-edp-105ml-sp",
-      slug: "armaf-club-de-nuit-untold-u-edp-105ml-sp",
-      name: "ARMAF CLUB DE NUIT UNTOLD /U EDP 105ML SP",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1214,
-      price: 1882,
-      images: ["/products/armaf-club-de-nuit-untold-u-edp-105ml-sp.webp", "/products/armaf-club-de-nuit-untold-u-edp-105ml-sp-2.webp"],
-      description: "Club de Nuit Untold de Armaf es una fragancia unisex en EDP de 105 ml, intensa, misteriosa y absolutamente adictiva. Sus notas especiadas y cálidas se funden con ámbar, maderas profundas y un toque cremoso de vainilla, logrando un aroma envolvente, sensual y con una proyección que se hace notar. Ideal para noches especiales, citas y ocasiones donde quieres dejar huella. Un perfume de nicho en espíritu, con duración larga y personalidad de sobra para hombres y mujeres.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 105,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
-    },
-  {
       id: "armaf-club-de-nuit-untold-u-edp-105ml-sp-lote-1436",
       slug: "armaf-club-de-nuit-untold-u-edp-105ml-sp-lote-1436",
       name: "ARMAF CLUB DE NUIT UNTOLD /U EDP 105ML SP",
@@ -14611,27 +14057,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "calvin-klein-euphoria-d-edp-100ml-sp",
-      slug: "calvin-klein-euphoria-d-edp-100ml-sp",
-      name: "CALVIN KLEIN EUPHORIA /D EDP 100ML SP",
-      brand: "Calvin Klein",
-      type: "designer",
-      gender: "mujer",
-      cost: 1737,
-      price: 2979,
-      images: ["/products/calvin-klein-euphoria-d-edp-100ml-sp.webp"],
-      description: "Calvin Klein Euphoria es un clásico femenino de seducción en EDP de 100 ml. Sus notas de granada, caqui y orquídea negra abren paso a un corazón sensual de lotus y caoba, sobre un fondo profundo de ámbar y almizcle. Un aroma exótico, misterioso y elegante que ha enamorado a generaciones. Perfecto para noches especiales, citas y cuando quieras sentirte irresistible. Una fragancia atemporal que nunca pasa de moda y siempre deja huella. ¡Déjate envolver por la euforia!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "adidas-uefa-champions-league-h-edt-100ml-arena-edition",
       slug: "adidas-uefa-champions-league-h-edt-100ml-arena-edition",
       name: "ADIDAS UEFA CHAMPIONS LEAGUE /H EDT 100ML - ARENA EDITION",
@@ -14663,27 +14088,6 @@ const perfumeProducts: RawProduct[] = [
       price: 3337,
       images: ["/products/chloe.webp"],
       description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
-      id: "perry-ellis18-sensual-w-3-4ozedp-sp",
-      slug: "perry-ellis18-sensual-w-3-4ozedp-sp",
-      name: "PERRY ELLIS18 SENSUAL(W)3.4ozEDP SP",
-      brand: "Perry Ellis",
-      type: "designer",
-      gender: "mujer",
-      cost: 733,
-      price: 1393,
-      images: ["/products/perry-ellis18-sensual-w-3-4ozedp-sp.webp"],
-      description: "Sensualidad suave y femenina en un aroma cálido. En su pirámide olfativa, Perry Ellis 18 Sensual para mujer (Eau de Parfum, 100 ml) combina frutas y cítricos en la salida, flores blancas en el corazón y vainilla y almizcle en el fondo. Elegante y envolvente, ideal para la noche. Llévatela y empieza a recibir cumplidos desde la primera aplicación.",
       notes: {
         top: [],
         heart: [],
@@ -14905,27 +14309,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "armaf-club-de-nuit-urban-man-m-edp-sp-3-6oz",
-      slug: "armaf-club-de-nuit-urban-man-m-edp-sp-3-6oz",
-      name: "ARMAF CLUB DE NUIT URBAN MAN(M)EDP SP 3.6oz",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "hombre",
-      cost: 770,
-      price: 1231,
-      images: ["/products/armaf-club-de-nuit-urban-man-m-edp-sp-3-6oz.webp", "/products/armaf-club-de-nuit-urban-man-m-edp-sp-3-6oz-2.webp"],
-      description: "Elegancia urbana con mucha personalidad y gran duración. En su pirámide olfativa, Armaf Club de Nuit Urban Man para hombre (Eau de Parfum, 100 ml) combina bergamota, limón y manzana en la salida, jazmín y cardamomo en el corazón y ámbar, vainilla, haba tonka y cedro en el fondo. Sofisticado y moderno, para el hombre que marca su estilo. Una vez que la uses, será tu firma personal; asegura la tuya antes de que se agote.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 105,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "adidas-victory-league-h-edt-100ml-sp",
       slug: "adidas-victory-league-h-edt-100ml-sp",
       name: "ADIDAS VICTORY LEAGUE /H EDT 100ML SP",
@@ -15131,27 +14514,6 @@ const perfumeProducts: RawProduct[] = [
         base: []
       },
       sizeMl: 125,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "fantasy-w-edp-sp-3-3oz",
-      slug: "fantasy-w-edp-sp-3-3oz",
-      name: "FANTASY(W)EDP SP 3.3oz",
-      brand: "Britney Spears",
-      type: "designer",
-      gender: "mujer",
-      cost: 733,
-      price: 1393,
-      images: ["/products/fantasy-w-edp-sp-3-3oz.webp"],
-      description: "Dulce, juguetona y provocadora: el perfume que lo empezó todo. En su pirámide olfativa, Britney Spears Fantasy para mujer (Eau de Parfum, 100 ml) combina kiwi, lichi y membrillo en la salida, jazmín, orquídea y notas de pastelito en el corazón y almizcle, maderas y chocolate blanco en el fondo. Una fragancia llena de diversión y encanto para las amantes de lo dulce. Date el gusto de oler increíble: es la mejor inversión en tu imagen.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
       tags: []
@@ -15493,27 +14855,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "curve-connect-w-edt-sp-3-4oz",
-      slug: "curve-connect-w-edt-sp-3-4oz",
-      name: "CURVE CONNECT(W)EDT SP 3.4oz",
-      brand: "Curve",
-      type: "designer",
-      gender: "mujer",
-      cost: 482,
-      price: 988,
-      images: ["/products/curve-connect-w-edt-sp-3-4oz.webp"],
-      description: "Una fragancia luminosa y femenina que conecta con tu lado más espontáneo. Curve Connect, Eau de Toilette de 100 ml para mujer, abre con frutas frescas y cítricos; en el corazón se despliegan flores blancas delicadas, y la estela final descansa sobre almizcle suave y maderas claras. Fresca y alegre, ideal para estudiar, trabajar o salir con amigas. Una vez que la uses, será tu firma personal; asegura la tuya antes de que se agote.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
       id: "curve-connect-m-edc-sp-4-2oz",
       slug: "curve-connect-m-edc-sp-4-2oz",
       name: "CURVE CONNECT(M)EDC SP 4.2oz",
@@ -15638,27 +14979,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "cuba-black-m-edt-sp-3-4oz",
-      slug: "cuba-black-m-edt-sp-3-4oz",
-      name: "CUBA BLACK(M)EDT SP 3.4oz",
-      brand: "Cuba",
-      type: "designer",
-      gender: "hombre",
-      cost: 236,
-      price: 484,
-      images: ["/products/cuba-black-m-edt-sp-3-4oz.webp", "/products/cuba-black-m-edt-sp-3-4oz-2.webp"],
-      description: "Intenso, nocturno y masculino. Cuba Black, Eau de Toilette de 100 ml para hombre, abre con cítricos y especias; en el corazón se despliegan lavanda y notas aromáticas, y la estela final descansa sobre maderas y ámbar. Una fragancia de carácter, ideal para salir de noche. Hazla tuya hoy y descubre por qué quienes la prueban no quieren volver a otra.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -15788,27 +15108,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "paris-hilton-platinum-rush-w-edp-sp-3-4oz",
-      slug: "paris-hilton-platinum-rush-w-edp-sp-3-4oz",
-      name: "PARIS HILTON PLATINUM RUSH(W)EDP SP 3.4oz",
-      brand: "Paris Hilton",
-      type: "designer",
-      gender: "mujer",
-      cost: 811,
-      price: 1444,
-      images: ["/products/paris-hilton-platinum-rush-w-edp-sp-3-4oz.webp"],
-      description: "Brillo y glamour en un frasco inspirado en la vida de lujo. Paris Hilton Platinum Rush, Eau de Parfum de 100 ml para mujer, abre con frutas jugosas y flores brillantes; en el corazón se despliegan jazmín y rosa, y la estela final descansa sobre almizcle y vainilla. Divertida, femenina y perfecta para el día o la noche. Date el gusto de oler increíble: es la mejor inversión en tu imagen.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "adidas-ice-dive-m-edt-sp-3-3oz",
       slug: "adidas-ice-dive-m-edt-sp-3-3oz",
       name: "ADIDAS ICE DIVE(M)EDT SP 3.3oz",
@@ -15914,27 +15213,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "azzaro-the-most-wanted-intense-m-edp-sp-3-38oz",
-      slug: "azzaro-the-most-wanted-intense-m-edp-sp-3-38oz",
-      name: "AZZARO THE MOST WANTED INTENSE(M)EDP SP 3.38oz",
-      brand: "Azzaro",
-      type: "designer",
-      gender: "hombre",
-      cost: 2115,
-      price: 3490,
-      images: ["/products/azzaro-the-most-wanted-intense-m-edp-sp-3-38oz.webp"],
-      description: "Azzaro The Most Wanted Intense es una fragancia para hombre en Eau de Parfum de 100 ml. Magnetismo masculino en una concentración intensa y duradera. Su salida reúne bergamota y cardamomo; el corazón revela caramelo y especias; y el fondo deja madera ámbar, haba tonka y vainilla. Seductor y cálido, ideal para citas y noches memorables. Date el gusto de oler increíble: es la mejor inversión en tu imagen.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "versace-eros-flame-m-edp-sp-3-4oz",
       slug: "versace-eros-flame-m-edp-sp-3-4oz",
       name: "VERSACE EROS FLAME(M)EDP SP 3.4oz",
@@ -15998,49 +15276,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "al-haramain-amber-oud-gold-u-edp-sp-3-4oz",
-      slug: "al-haramain-amber-oud-gold-u-edp-sp-3-4oz",
-      name: "AL HARAMAIN AMBER OUD GOLD(U)EDP SP 3.4oz",
-      brand: "Al Haramain",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1448,
-      price: 2245,
-      images: ["/products/al-haramain-amber-oud-gold-u-edp-sp-3-4oz.webp"],
-      description: "Un tesoro árabe de ámbar y dulzura, lujoso y envolvente. Al Haramain Amber Oud Gold Edition, Eau de Parfum de 100 ml unisex, abre con bergamota, melón y piña; en el corazón se despliegan jazmín y rosa, y la estela final descansa sobre ámbar, vainilla, haba tonka y almizcle. Unisex con una estela inconfundible, ideal para quienes aman las fragancias orientales. Regálate (o regala) una fragancia que se queda en la memoria: pídela hoy.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Erba Pura (Xerjoff)"],
-    },
-  {
-      id: "rasasi-hawas-diva-w-edp-sp-3-38oz",
-      slug: "rasasi-hawas-diva-w-edp-sp-3-38oz",
-      name: "RASASI HAWAS DIVA(W)EDP SP 3.38oz",
-      brand: "Rasasi",
-      type: "arabic",
-      gender: "mujer",
-      cost: 1002,
-      price: 1553,
-      images: ["/products/rasasi-hawas-diva-w-edp-sp-3-38oz.webp"],
-      description: "La versión femenina de la línea Hawas: frutal, vibrante y llena de glamour. En su pirámide olfativa, Rasasi Hawas Diva para mujer (Eau de Parfum, 100 ml) combina frutas jugosas y cítricos en la salida, flores blancas y rosa en el corazón y almizcle, ámbar y vainilla en el fondo. Ideal para mujeres que aman destacar con un aroma dulce y sofisticado. Hazla tuya hoy y descubre por qué quienes la prueban no quieren volver a otra.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "rasasi-hawas-m-edp-sp-3-38oz",
       slug: "rasasi-hawas-m-edp-sp-3-38oz",
       name: "RASASI HAWAS(M)EDP SP 3.38oz",
@@ -16061,27 +15296,6 @@ const perfumeProducts: RawProduct[] = [
       category: "Eau de Parfum",
       tags: [],
       inspiredBy: ["Invictus (Paco Rabanne)"],
-    },
-  {
-      id: "curve-chill-w-edt-sp-3-4oz",
-      slug: "curve-chill-w-edt-sp-3-4oz",
-      name: "CURVE CHILL(W)EDT SP 3.4oz",
-      brand: "Curve",
-      type: "designer",
-      gender: "mujer",
-      cost: 495,
-      price: 1014,
-      images: ["/products/curve-chill-w-edt-sp-3-4oz.webp", "/products/curve-chill-w-edt-sp-3-4oz-2.webp"],
-      description: "Frescura cristalina y femenina que transmite calma y buen ánimo. En su pirámide olfativa, Curve Chill para mujer (Eau de Toilette, 100 ml) combina mandarina y pepino en la salida, peonía y jazmín en el corazón y almizcle blanco y notas ambaradas suaves en el fondo. Un aroma juvenil y relajado para usar todos los días, de la mañana a la tarde. Hazla tuya hoy y descubre por qué quienes la prueban no quieren volver a otra.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
     },
   {
       id: "curve-black-m-edc-sp-4-2oz",
@@ -16190,28 +15404,6 @@ const perfumeProducts: RawProduct[] = [
       inspiredBy: ["Sauvage (Dior)"],
     },
   {
-      id: "armaf-club-de-nuit-intense-m-edt-sp-3-6oz",
-      slug: "armaf-club-de-nuit-intense-m-edt-sp-3-6oz",
-      name: "ARMAF CLUB DE NUIT INTENSE(M)EDT SP 3.6oz",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "hombre",
-      cost: 955,
-      price: 1528,
-      images: ["/products/armaf-club-de-nuit-intense-m-edt-sp-3-6oz.webp", "/products/armaf-club-de-nuit-intense-m-edt-sp-3-6oz-2.webp", "/products/armaf-club-de-nuit-intense-m-edt-sp-3-6oz-3.webp", "/products/armaf-club-de-nuit-intense-m-edt-sp-3-6oz-4.webp"],
-      description: "La leyenda árabe que se atrevió a competir con los grandes de nicho y ganó una legión de seguidores. Armaf Club de Nuit Intense Man, Eau de Toilette de 100 ml para hombre, abre con limón, piña, bergamota, grosella negra y manzana; en el corazón se despliegan abedul, rosa y jazmín, y la estela final descansa sobre almizcle, ámbar gris, pachulí y vainilla. Un aroma de presencia magnética para la oficina, las cenas y cada ocasión en la que quieras que te recuerden. Hazla tuya hoy y descubre por qué quienes la prueban no quieren volver a otra.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 105,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: [],
-      inspiredBy: ["Aventus (Creed)"],
-    },
-  {
       id: "nautica-blue-sail-m-edt-sp-3-4oz",
       slug: "nautica-blue-sail-m-edt-sp-3-4oz",
       name: "NAUTICA BLUE SAIL(M)EDT SP 3.4oz",
@@ -16222,27 +15414,6 @@ const perfumeProducts: RawProduct[] = [
       price: 964,
       images: ["/products/nautica-blue-sail-m-edt-sp-3-4oz.webp"],
       description: "La brisa del mar hecha fragancia: aventura, libertad y horizonte abierto. Nautica Blue Sail, Eau de Toilette de 100 ml para hombre, abre con bergamota y notas marinas; en el corazón se despliegan lavanda y geranio, y la estela final descansa sobre almizcle, cedro y ámbar. Muy fácil de usar, ideal para el clima cálido y los días de playa o ciudad. Regálate (o regala) una fragancia que se queda en la memoria: pídela hoy.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "antonio-bandera-s-blue-seduction-m-edt-sp-3-4oz",
-      slug: "antonio-bandera-s-blue-seduction-m-edt-sp-3-4oz",
-      name: "ANTONIO BANDERA'S BLUE SEDUCTION(M)EDT SP 3.4oz",
-      brand: "Antonio Banderas",
-      type: "designer",
-      gender: "hombre",
-      cost: 544,
-      price: 1033,
-      images: ["/products/antonio-bandera-s-blue-seduction-m-edt-sp-3-4oz.webp"],
-      description: "Mediterráneo, magnético y siempre seductor. Antonio Banderas Blue Seduction, Eau de Toilette de 100 ml para hombre, abre con bergamota, mandarina y cardamomo; en el corazón se despliegan salvia y especias, y la estela final descansa sobre cedro, ámbar y almizcle. Un perfume fresco y varonil para el día y las noches de verano. Regálate (o regala) una fragancia que se queda en la memoria: pídela hoy.",
       notes: {
         top: [],
         heart: [],
@@ -16338,48 +15509,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "al-haramain-amber-oud-aqua-dubai-unisex-3-4-oz-extrait-de-parfum",
-      slug: "al-haramain-amber-oud-aqua-dubai-unisex-3-4-oz-extrait-de-parfum",
-      name: "AL HARAMAIN AMBER OUD AQUA DUBAI UNISEX 3.4 OZ EXTRAIT DE PARFUM",
-      brand: "Al Haramain",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1600,
-      price: 2480,
-      images: ["/products/al-haramain-amber-oud-aqua-dubai-unisex-3-4-oz-extrait-de-parfum.webp"],
-      description: "Frescura elegante en su presentación más generosa. Al Haramain Amber Oud Aqua Dubai (Extrait de Parfum, 3.4 oz) combina en la salida bergamota, mandarina y notas verdes con un corazón tropical y sofisticado de melón, piña, ámbar y grosella negra. El fondo de almizcle, vainilla, gálbano y petitgrain aporta calidez, profundidad y una fijación que se nota. Unisex, aromático y frutal, con la intensidad de un extrait de parfum y el sello de una casa árabe de prestigio. Ideal para quienes buscan una fragancia luminosa, pulida y memorable para el día a día o para ocasiones especiales.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Extrait de Parfum",
-      tags: []
-    },
-  {
-      id: "al-haramain-amber-oud-aqua-dubai-unisex-3-4-oz-extrait-de-parfum-lote-1744",
-      slug: "al-haramain-amber-oud-aqua-dubai-unisex-3-4-oz-extrait-de-parfum-lote-1744",
-      name: "AL HARAMAIN AMBER OUD AQUA DUBAI UNISEX 3.4 OZ EXTRAIT DE PARFUM",
-      brand: "Al Haramain",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1744,
-      price: 2704,
-      images: ["/products/al-haramain-amber-oud-aqua-dubai-unisex-3-4-oz-extrait-de-parfum.webp"],
-      description: "Frescura elegante en su presentación más generosa. Al Haramain Amber Oud Aqua Dubai (Extrait de Parfum, 3.4 oz) combina en la salida bergamota, mandarina y notas verdes con un corazón tropical y sofisticado de melón, piña, ámbar y grosella negra. El fondo de almizcle, vainilla, gálbano y petitgrain aporta calidez, profundidad y una fijación que se nota. Unisex, aromático y frutal, con la intensidad de un extrait de parfum y el sello de una casa árabe de prestigio. Ideal para quienes buscan una fragancia luminosa, pulida y memorable para el día a día o para ocasiones especiales.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Extrait de Parfum",
-      tags: []
-    },
-  {
       id: "dior-sauvage-men-6-7-oz-edt-spray",
       slug: "dior-sauvage-men-6-7-oz-edt-spray",
       name: "DIOR SAUVAGE MEN 6.7 OZ. EDT SPRAY",
@@ -16440,48 +15569,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Parfum",
-      tags: []
-    },
-  {
-      id: "adidas-ice-dive-men-3-4-oz-edt-sp",
-      slug: "adidas-ice-dive-men-3-4-oz-edt-sp",
-      name: "ADIDAS ICE DIVE MEN 3.4 OZ EDT SP",
-      brand: "Adidas",
-      type: "designer",
-      gender: "hombre",
-      cost: 252,
-      price: 518,
-      images: ["/products/adidas-ice-dive-men-3-4-oz-edt-sp.webp"],
-      description: "Frescura helada desde el primer spray. Adidas Ice Dive abre con un estallido de menta, toronja, bergamota, yuzu, mandarina, kiwi, lavanda y anís que despierta los sentidos al instante. En el corazón, el geranio, el sándalo y el pachulí le dan un carácter aromático y amaderado, y en el fondo la pimienta, el almizcle, el ámbar gris, el haba tonka y la vainilla dejan una estela limpia, cálida y envolvente. Lanzado en 2001, es el aliado ideal del hombre activo que quiere oler impecable en el gimnasio, la oficina o durante un día de calor. Eau de Toilette de 3.4 oz (100 ml): un clásico deportivo, fresco y siempre fácil de usar.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "valentino-born-in-roma-coral-fantasy-men-3-4-oz-edt-sp",
-      slug: "valentino-born-in-roma-coral-fantasy-men-3-4-oz-edt-sp",
-      name: "VALENTINO BORN IN ROMA CORAL FANTASY MEN 3.4 OZ EDT SP",
-      brand: "Valentino",
-      type: "designer",
-      gender: "hombre",
-      cost: 3072,
-      price: 4668,
-      images: ["/products/valentino-born-in-roma-coral-fantasy-men-3-4-oz-edt-sp.webp", "/products/valentino-born-in-roma-coral-fantasy-men-3-4-oz-edt-sp-2.webp"],
-      description: "Un atardecer en Roma convertido en perfume. Valentino Uomo Born in Roma Coral Fantasy (Eau de Toilette, 3.4 oz) abre con manzana roja, cardamomo y bergamota de Calabria, un inicio jugoso, especiado y luminoso. El corazón de lavanda, geranio bourbon y salvia sclarea aporta frescura aromática, y el fondo de hoja de tabaco, pachulí y vetiver haitiano deja un final cálido, seco y masculino. Lanzado en 2022 en un frasco coral con el sello Rockstud, es moderno, audaz y fácil de llevar. Para el hombre con estilo que quiere destacar en el día y en la noche.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -16566,48 +15653,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "emper-selina-women-3-4-oz-edp-sp",
-      slug: "emper-selina-women-3-4-oz-edp-sp",
-      name: "EMPER SELINA WOMEN 3.4 OZ EDP SP",
-      brand: "Emper",
-      type: "arabic",
-      gender: "mujer",
-      cost: 555,
-      price: 1055,
-      images: ["/products/emper-selina-women-3-4-oz-edp-sp.webp", "/products/emper-selina-women-3-4-oz-edp-sp-2.webp"],
-      description: "Soñadora, floral y totalmente irresistible. Emper Selina (Eau de Parfum para mujer, 3.4 oz) se abre con bergamota, lichi, ruibarbo y nuez moscada, un inicio fresco y delicioso. En el corazón se abren la rosa, el almizcle y la vainilla, y el fondo de cashmeran, incienso, cedro y vetiver haitiano deja una estela cálida, sofisticada y duradera. Un floral frutal moderno que combina dulzura y elegancia, perfecto para el día, las citas y cualquier ocasión especial. Para la mujer que irradia encanto y quiere un perfume que hable por ella.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "emper-genius-victory-men-3-4-oz-edt-sp",
-      slug: "emper-genius-victory-men-3-4-oz-edt-sp",
-      name: "EMPER GENIUS VICTORY MEN 3.4 OZ EDT SP",
-      brand: "Emper",
-      type: "arabic",
-      gender: "hombre",
-      cost: 714,
-      price: 1356,
-      images: ["/products/emper-genius-victory-men-3-4-oz-edt-sp.webp"],
-      description: "Para el hombre que nació para ganar. Emper Genius Victory (3.4 oz) se abre con pimienta rosa y limón, un inicio chispeante y lleno de energía. En el corazón, el olíbano y la lavanda forman un acorde aromático y ligeramente místico, y el fondo de vainilla, haba tonka y ámbar deja una estela dulce, cálida y duradera. Un oriental especiado de carácter amaderado, perfecto para el trabajo, las salidas nocturnas y las citas especiales. Seguridad, madurez y elegancia en un perfume que se recuerda mucho después de haber salido de la habitación.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -16800,27 +15845,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "moschino-toy-boy-men-3-4-oz-edp-sp",
-      slug: "moschino-toy-boy-men-3-4-oz-edp-sp",
-      name: "MOSCHINO TOY BOY MEN 3.4 OZ. EDP SP",
-      brand: "Moschino",
-      type: "designer",
-      gender: "hombre",
-      cost: 1558,
-      price: 2672,
-      images: ["/products/moschino-toy-boy-men-3-4-oz-edp-sp.webp"],
-      description: "Moschino Toy Boy Eau de Parfum 3.4 oz: la elegancia irónica de un osito con carácter. Lanzado en 2019 y creado por Yann Vasnier, abre con pimienta rosa, pera, nuez moscada de Indonesia, elemí y bergamota italiana. Su corazón combina rosa, clavo, magnolia y flor de lino, y se cierra con un fondo de vetiver haitiano, cashmeran, sándalo, ámbar y almizcle. Una fragancia masculina especiada y amaderada con una rosa inesperada que la hace diferente a todo lo demás. Dirigida al hombre dinámico, apasionado y con personalidad, es ideal para quienes quieren destacar con un perfume original, con diseño inconfundible de Moschino en su frasco negro.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "nautica-voyage-sport-men-3-4-oz-edt",
       slug: "nautica-voyage-sport-men-3-4-oz-edt",
       name: "NAUTICA VOYAGE SPORT MEN 3.4 OZ. EDT",
@@ -16948,27 +15972,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "set-afnan-9am-dive-men-3pc-3-4-oz-edp-sp-5-0-oz-shower-gel-5-0-oz-deo",
-      slug: "set-afnan-9am-dive-men-3pc-3-4-oz-edp-sp-5-0-oz-shower-gel-5-0-oz-deo",
-      name: "SET AFNAN 9AM DIVE MEN ( 3PC ) 3.4 OZ EDP SP / 5.0 OZ SHOWER GEL / 5.0 OZ DEO",
-      brand: "Afnan",
-      type: "arabic",
-      gender: "hombre",
-      cost: 1236,
-      price: 1915,
-      images: ["/products/set-afnan-9am-dive-men-3pc-3-4-oz-edp-sp-5-0-oz-shower-gel-5-0-oz-deo.webp"],
-      description: "Set Afnan 9AM Dive 3 piezas para hombre: eau de parfum de 3.4 oz, gel de ducha de 5.0 oz y desodorante de 5.0 oz. Una fragancia aromática acuática, lanzada en 2022, que abre con limón, menta, grosella negra y pimienta rosa; su corazón combina manzana, cedro e incienso; y se cierra con un fondo de jengibre, sándalo, pachulí y jazmín. Fresca, enérgica y moderna, es el aroma perfecto para empezar el día. Este set completo permite vivir la experiencia de la mañana desde la ducha hasta el perfume, y es un regalo ideal para el hombre que disfruta de un cuidado personal completo con carácter fresco y limpio.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "perry-ellis-360-red-men-3-4-oz-edt-sp",
       slug: "perry-ellis-360-red-men-3-4-oz-edt-sp",
       name: "PERRY ELLIS 360 RED MEN 3.4 OZ EDT SP",
@@ -16987,27 +15990,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "set-cristiano-ronaldo-cr7-men-3-pc-3-4-oz-edt-sp-5-1-oz-sg-5-1-oz-bs",
-      slug: "set-cristiano-ronaldo-cr7-men-3-pc-3-4-oz-edt-sp-5-1-oz-sg-5-1-oz-bs",
-      name: "SET CRISTIANO RONALDO CR7 MEN ( 3 PC ) 3.4 OZ EDT SP / 5.1 OZ SG / 5.1 OZ BS",
-      brand: "CR7",
-      type: "designer",
-      gender: "hombre",
-      cost: 1139,
-      price: 1953,
-      images: ["/products/set-cristiano-ronaldo-cr7-men-3-pc-3-4-oz-edt-sp-5-1-oz-sg-5-1-oz-bs.webp"],
-      description: "Set Cristiano Ronaldo CR7 3 piezas para hombre: eau de toilette de 3.4 oz, gel de ducha de 5.1 oz y spray corporal de 5.1 oz. Una fragancia fougère aromática lanzada en 2017, que abre con bergamota, artemisa, cardamomo y lavanda; su corazón combina canela, cedro, iris y tabaco; y se cierra con un fondo cálido de sándalo, vainilla, ámbar y almizcle. Deportiva, elegante y con carácter, es el aroma del hombre disciplinado y seguro de sí mismo. Este set reúne todo para una rutina completa, desde la ducha hasta el perfume, y es una excelente opción para regalar a los fans del fútbol y del buen estilo.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
       tags: []
     },
   {
@@ -17135,27 +16117,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "giorgio-armani-acqua-di-gio-men-3-4-oz-edt-sp-refillable",
-      slug: "giorgio-armani-acqua-di-gio-men-3-4-oz-edt-sp-refillable",
-      name: "GIORGIO ARMANI ACQUA DI GIO MEN 3.4 OZ EDT SP REFILLABLE",
-      brand: "Giorgio Armani",
-      type: "designer",
-      gender: "hombre",
-      cost: 2565,
-      price: 4232,
-      images: ["/products/giorgio-armani-acqua-di-gio-men-3-4-oz-edt-sp-refillable.webp"],
-      description: "Giorgio Armani Acqua di Giò Eau de Toilette 3.4 oz recargable: el aroma del mar y de la libertad. Creado por Alberto Morillas en 1996, abre con bergamota, limón, lima y mandarina; su corazón acuático combina notas marinas, jazmín, calone y durazno; y termina con un fondo limpio de almizcle blanco, cedro, musgo de roble, pachulí y ámbar. Fresco, elegante y atemporal, es uno de los perfumes masculinos más reconocidos del mundo y un básico para el hombre que valora la sofisticación sin esfuerzo. Su presentación recargable es práctica y sostenible. Una fragancia que evoca brisa, sol y horizonte en cada aplicación.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -17324,27 +16285,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Parfum",
-      tags: []
-    },
-  {
-      id: "carolina-herrera-212-sexy-women-3-4-oz-edp-sp",
-      slug: "carolina-herrera-212-sexy-women-3-4-oz-edp-sp",
-      name: "CAROLINA HERRERA 212 SEXY WOMEN 3.4 OZ EDP SP",
-      brand: "Carolina Herrera",
-      type: "designer",
-      gender: "mujer",
-      cost: 2766,
-      price: 4563,
-      images: ["/products/carolina-herrera-212-sexy-women-3-4-oz-edp-sp.webp"],
-      description: "Carolina Herrera 212 Sexy Eau de Parfum 3.4 oz: la sensualidad neoyorquina con un toque dulce y seductor. Creada en 2004 por Rosendo Mateu, abre con pimienta rosa, mandarina y bergamota. En su corazón florece un ramo de algodón de azúcar, gardenia, pelargonio y rosa, y se cierra con un fondo cálido y envolvente de vainilla, almizcle, sándalo, caramelo, violeta y pachulí. Dulce, empolvada y adictiva, es un perfume femenino para quienes quieren sentirse atractivas, seguras y glamorosas. Perfecta para citas, noches y ocasiones especiales, es de esas fragancias que dejan un recuerdo cálido en quien se acerca.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
       tags: []
     },
   {
@@ -17790,27 +16730,6 @@ const perfumeProducts: RawProduct[] = [
       category: "Eau de Parfum",
       tags: [],
       inspiredBy: ["Erba Pura (Xerjoff)"],
-    },
-  {
-      id: "360-collection-coral-w-3pc-set-3-4oz-edp-sp-3-0oz-shower-gel-7-5ml-edp-sp",
-      slug: "360-collection-coral-w-3pc-set-3-4oz-edp-sp-3-0oz-shower-gel-7-5ml-edp-sp",
-      name: "360 COLLECTION CORAL(W)3PC SET(3.4oz edp sp,3.0oz Shower Gel,7.5ml edp sp)",
-      brand: "Perry Ellis",
-      type: "designer",
-      gender: "mujer",
-      cost: 909,
-      price: 1619,
-      images: ["/products/360-collection-coral-w-3pc-set-3-4oz-edp-sp-3-0oz-shower-gel-7-5ml-edp-sp.webp"],
-      description: "Sumérgete en un oasis tropical de feminidad radiante con el set de 3 piezas de Perry Ellis 360 Collection Coral, una experiencia aromática que celebra la frescura alegre y el encanto floral afrutado. El Eau de Parfum incluido en este lujoso conjunto arranca con notas de salida efervescentes y chispeantes de bergamota italiana, prosecco de durazno, manzana asiática y pimienta rosa, despertando los sentidos con su jugo vibrante y coqueto. Su corazón romántico revela un bouquet de jazmín blanco, peonía y lirio de los valles, aportando una elegancia suave y luminosa. Su seductor fondo cálido se basa en ámbar blanco, maderas de cachemira, haba tonka y almizcle, brindando una estela envolvente y duradera. Acompañado de gel de ducha y una miniatura, este set es el regalo perfecto para deslumbrar con sofisticación y dulzura todos los días.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
     },
   {
       id: "amor-amor-w-edt-sp-1-0oz-new-pack",
@@ -18401,28 +17320,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "al-haramain-amber-oud-gold-u-edp-sp-3-4oz-2",
-      slug: "al-haramain-amber-oud-gold-u-edp-sp-3-4oz-2",
-      name: "AL HARAMAIN AMBER OUD GOLD(U)EDP SP 3.4oz",
-      brand: "Al Haramain",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1486,
-      price: 2303,
-      images: ["/products/al-haramain-amber-oud-gold-u-edp-sp-3-4oz-2.webp", "/products/al-haramain-amber-oud-gold-u-edp-sp-3-4oz-2-2.webp"],
-      description: "Amber Oud Gold Edition, de Al Haramain, fue lanzada en 2018 como una fragancia unisex y rápidamente se hizo popular por su parecido con perfumes de nicho de mayor precio. Abre con bergamota y notas verdes, generando una salida fresca que da paso a un corazón jugoso de melón, piña y notas dulces sobre un fondo de ámbar. La base cierra en maderas, vainilla y almizcle, dejando una estela dulce y cálida de gran proyección y larga duración en la piel. Es una fragancia ámbar-vainilla afrutada pensada tanto para hombre como para mujer, ideal para climas cálidos o uso nocturno.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Erba Pura (Xerjoff)"],
-    },
-  {
       id: "amber-oud-gold",
       slug: "amber-oud-gold",
       name: "AMBER OUD GOLD",
@@ -18949,28 +17846,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "al-haramain-amber-oud-gold-unisex-6-7-oz-edp-sp",
-      slug: "al-haramain-amber-oud-gold-unisex-6-7-oz-edp-sp",
-      name: "AL HARAMAIN AMBER OUD GOLD UNISEX 6.7 OZ. EDP SP",
-      brand: "Al Haramain",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1829,
-      price: 2834,
-      images: ["/products/al-haramain-amber-oud-gold-unisex-6-7-oz-edp-sp.webp"],
-      description: "Eau de Parfum. 200 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 200,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Erba Pura (Xerjoff)"],
-    },
-  {
       id: "hamidi-maison-luxe-patchouli-imperial-3-4-edp-perfume-spray",
       slug: "hamidi-maison-luxe-patchouli-imperial-3-4-edp-perfume-spray",
       name: "Hamidi Maison Luxe Patchouli Imperial 3.4 EDP Perfume Spray",
@@ -19412,48 +18287,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "alharamain-gold",
-      slug: "alharamain-gold",
-      name: "ALHARAMAIN GOLD",
-      brand: "Al Haramain",
-      type: "arabic",
-      gender: "hombre",
-      cost: 1573,
-      price: 2438,
-      images: ["/products/alharamain-gold.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
-      id: "perfume-curve-sport",
-      slug: "perfume-curve-sport",
-      name: "PERFUME CURVE SPORT",
-      brand: "Curve",
-      type: "designer",
-      gender: "hombre",
-      cost: 587,
-      price: 1117,
-      images: ["/products/perfume-curve-sport.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "carolina-herrera-edt-sp-3-3oz-newpack",
       slug: "carolina-herrera-edt-sp-3-3oz-newpack",
       name: "CAROLINA HERRERA EDT SP 3.3oz(NEWPACK)",
@@ -19583,27 +18416,6 @@ const perfumeProducts: RawProduct[] = [
       inspiredBy: ["Bleu de Chanel (Chanel)"],
     },
   {
-      id: "burberry-her-femme-eau-parfum",
-      slug: "burberry-her-femme-eau-parfum",
-      name: "BURBERRY HER FEMME EAU PARFUM",
-      brand: "Burberry",
-      type: "designer",
-      gender: "mujer",
-      cost: 3293,
-      price: 4792,
-      images: ["/products/burberry-her-femme-eau-parfum.webp", "/products/burberry-her-femme-eau-parfum-2.webp"],
-      description: "Floral frutal afrutado vibrante Mandarina, hojas verdes Jazmín, rosa Madera de Cachemira, ámbar",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Parfum",
-      tags: []
-    },
-  {
       id: "360-pink-edp",
       slug: "360-pink-edp",
       name: "360 PINK EDP",
@@ -19622,27 +18434,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "ck-calvin-klein-eternity-3-3-edt-m",
-      slug: "ck-calvin-klein-eternity-3-3-edt-m",
-      name: "CK CALVIN KLEIN ETERNITY 3.3 EDT (M)",
-      brand: "Calvin Klein",
-      type: "designer",
-      gender: "hombre",
-      cost: 1067,
-      price: 1829,
-      images: ["/products/ck-calvin-klein-eternity-3-3-edt-m.webp"],
-      description: "Eau de Toilette.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -19729,27 +18520,6 @@ const perfumeProducts: RawProduct[] = [
       category: "Set",
       tags: [],
       inspiredBy: ["Erba Pura (Xerjoff)"],
-    },
-  {
-      id: "set-perry-ellis-18-men-4pc-set-new-upc",
-      slug: "set-perry-ellis-18-men-4pc-set-new-upc",
-      name: "SET PERRY ELLIS 18 MEN ( 4PC SET )NEW UPC",
-      brand: "Perry Ellis",
-      type: "designer",
-      gender: "hombre",
-      cost: 1095,
-      price: 1879,
-      images: ["/products/set-perry-ellis-18-men-4pc-set-new-upc.webp"],
-      description: "Set.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
     },
   {
       id: "18-women",
@@ -20112,48 +18882,6 @@ const perfumeProducts: RawProduct[] = [
       inspiredBy: ["Silver Mountain Water (Creed)"],
     },
   {
-      id: "afnan-zimaya-sharaf-the-club-3-4-edp-u",
-      slug: "afnan-zimaya-sharaf-the-club-3-4-edp-u",
-      name: "AFNAN ZIMAYA SHARAF THE CLUB 3.4 EDP (U)",
-      brand: "Afnan",
-      type: "arabic",
-      gender: "unisex",
-      cost: 749,
-      price: 1424,
-      images: ["/products/afnan-zimaya-sharaf-the-club-3-4-edp-u.webp"],
-      description: "Afnan Zimaya Sharaf The Club Extrait de Parfum (2023) celebra la fuerza y el éxito con una composición sensual y audaz. Se abre con piña, bergamota, manzana y flores blancas, revela un corazón fresco y afrutado de abedul, ámbar y azahar, y se asienta en una base oriental de musgo de roble, ámbar gris y almizcle, ofreciendo un aroma memorable inspirado en la línea Aventus.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "hb-hugo-boss-deep-red-2-5-edp-w",
-      slug: "hb-hugo-boss-deep-red-2-5-edp-w",
-      name: "HB HUGO BOSS DEEP RED 2.5 EDP (W)",
-      brand: "Hugo Boss",
-      type: "designer",
-      gender: "mujer",
-      cost: 845,
-      price: 1503,
-      images: ["/products/hb-hugo-boss-deep-red-2-5-edp-w.webp"],
-      description: "Seducción en estado puro. Deep Red es una fragancia intensa, provocativa y misteriosa, diseñada para la mujer audaz que toma la iniciativa. Su adictiva mezcla de naranja sanguina, grosellas negras, flor de mariposa y un fondo cálido de vainilla y madera de sándalo crea un aroma embriagador y sumamente sensual. Es un perfume de contrastes: dulce pero oscuro, elegante pero atrevido. Ideal para la noche, citas románticas o momentos de conquista absoluta. (Familia Olfativa: Oriental Vainilla).",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 75,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
       id: "pr-paco-rabanne-invictus-victory-3-4-edp-extreme-m",
       slug: "pr-paco-rabanne-invictus-victory-3-4-edp-extreme-m",
       name: "PR PACO RABANNE INVICTUS VICTORY 3.4 EDP EXTREME (M)",
@@ -20280,27 +19008,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "set-d-g-dolce-gabbana-3pc-light-blue-pour-homme-3-4-edt-1-7-sg-2-6-deo-stick-m-h",
-      slug: "set-d-g-dolce-gabbana-3pc-light-blue-pour-homme-3-4-edt-1-7-sg-2-6-deo-stick-m-h",
-      name: "SET D&G DOLCE & GABBANA 3PC LIGHT BLUE POUR HOMME 3.4 EDT+1.7 SG+2.6 DEO STICK (M) HARD BOX",
-      brand: "Dolce & Gabbana",
-      type: "designer",
-      gender: "hombre",
-      cost: 1951,
-      price: 3346,
-      images: ["/products/set-d-g-dolce-gabbana-3pc-light-blue-pour-homme-3-4-edt-1-7-sg-2-6-deo-stick-m-h.webp"],
-      description: "El secreto del hombre magnético y seguro de sí mismo. Light Blue Pour Homme es una obra maestra de la perfumería que captura la frescura del mar Mediterráneo en una botella. Este increíble set es el regalo definitivo, ofreciendo una experiencia completa con el perfume, gel de baño y desodorante. Su aroma cítrico y amaderado es increíblemente refrescante pero profundamente masculino. Es de esos perfumes que garantizan cumplidos a lo largo del día gracias a su estela limpia y seductora. Ideal para uso diario, días soleados, oficina o citas casuales. ¡Un infalible que nunca falla! (Familia Olfativa: Cítrica Aromática).",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "set-versace-3pc-dylan-blue-pour-homme-3-4-edt-5-0-sg-0-17-edt-mini-m-hard-box",
       slug: "set-versace-3pc-dylan-blue-pour-homme-3-4-edt-5-0-sg-0-17-edt-mini-m-hard-box",
       name: "SET VERSACE 3PC DYLAN BLUE POUR HOMME 3.4 EDT+5.0 SG+0.17 EDT MINI (M) HARD BOX",
@@ -20340,27 +19047,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Set",
-      tags: []
-    },
-  {
-      id: "lacoste-eau-de-lacoste-l-12-12-blanc-5-9-edt-m",
-      slug: "lacoste-eau-de-lacoste-l-12-12-blanc-5-9-edt-m",
-      name: "LACOSTE EAU DE LACOSTE L.12.12 BLANC 5.9 EDT (M)",
-      brand: "Lacoste",
-      type: "designer",
-      gender: "hombre",
-      cost: 1671,
-      price: 2864,
-      images: ["/products/lacoste-eau-de-lacoste-l-12-12-blanc-5-9-edt-m.webp"],
-      description: "Lacoste Eau de Lacoste L.12.12 Blanc Eau de Toilette (2011) es una fragancia amaderada aromática inspirada en el icónico polo Lacoste. Se abre con toronja, cardamomo y romero, revela un corazón floral de ylang-ylang y tuberosa, y se asienta en una base masculina de cedro de Virginia, vetiver, gamuza y cuero, transmitiendo elegancia relajada y frescura deportiva.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 174,
-      inStock: true,
-      category: "Eau de Toilette",
       tags: []
     },
   {
@@ -20701,27 +19387,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "set-armaf-4pc-club-de-nuit-3-4-edp-0-34-edp-travel-spray-3-4-bl-8-4-body-mist-w",
-      slug: "set-armaf-4pc-club-de-nuit-3-4-edp-0-34-edp-travel-spray-3-4-bl-8-4-body-mist-w",
-      name: "SET ARMAF 4PC CLUB DE NUIT 3.4 EDP+0.34 EDP TRAVEL SPRAY+3.4 BL+8.4 BODY MIST (W) HARD BOX",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "mujer",
-      cost: 1368,
-      price: 2120,
-      images: ["/products/set-armaf-4pc-club-de-nuit-3-4-edp-0-34-edp-travel-spray-3-4-bl-8-4-body-mist-w.webp"],
-      description: "Si buscas oler a millonaria sin gastar una fortuna, este es el perfume. Club de Nuit Woman es una joya de la perfumería árabe, famosa mundialmente por su increíble parecido a las fragancias más exclusivas de diseñador. Este set super completo es una bomba de sensualidad: combina notas cítricas vibrantes con un corazón de rosa, jazmín y un fondo dulce de vainilla y pachulí. Su duración es bestial y su estela llena cualquier habitación. Ideal para cenas elegantes, fiestas o cualquier ocasión donde el objetivo sea ser el centro de atención. (Familia Olfativa: Floral Frutal).",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "ag-ariana-grande-mod-blush-3-4-edp-w",
       slug: "ag-ariana-grande-mod-blush-3-4-edp-w",
       name: "AG ARIANA GRANDE MOD BLUSH 3.4 EDP (W)",
@@ -20827,27 +19492,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "set-moschino-4pc-toy-boy-3-4-edp-3-4-sg-3-4-asb-0-30-edp-spray-m-hard-box",
-      slug: "set-moschino-4pc-toy-boy-3-4-edp-3-4-sg-3-4-asb-0-30-edp-spray-m-hard-box",
-      name: "SET MOSCHINO 4PC TOY BOY 3.4 EDP+3.4 SG+3.4 ASB+0.30 EDP SPRAY (M) HARD BOX",
-      brand: "Moschino",
-      type: "designer",
-      gender: "hombre",
-      cost: 1822,
-      price: 3125,
-      images: ["/products/set-moschino-4pc-toy-boy-3-4-edp-3-4-sg-3-4-asb-0-30-edp-spray-m-hard-box.webp"],
-      description: "Este set de 4 piezas Moschino Toy Boy para hombre incluye eau de parfum de 3.4 oz, gel de ducha, bálsamo after shave y un spray de viaje de 0.30 oz. La fragancia amaderada especiada y ambarina (2019) se abre con bergamota italiana, pera verde, elemi, pimienta rosa y nuez moscada indonesia, revela un corazón de magnolia, rosa absoluta y clavo, y se asienta en una base de vetiver haitiano, cashmerán, sándalo y almizcle.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "d-g-dolce-gabbana-k-pour-homme-3-3-edt-m",
       slug: "d-g-dolce-gabbana-k-pour-homme-3-3-edt-m",
       name: "D&G DOLCE & GABBANA K POUR HOMME 3.3 EDT (M)",
@@ -20890,27 +19534,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "davidoff-cool-water-3-4-edt-w",
-      slug: "davidoff-cool-water-3-4-edt-w",
-      name: "DAVIDOFF COOL WATER 3.4 EDT (W)",
-      brand: "Davidoff",
-      type: "designer",
-      gender: "mujer",
-      cost: 740,
-      price: 1606,
-      images: ["/products/davidoff-cool-water-3-4-edt-w.webp"],
-      description: "Davidoff Cool Water Woman Eau de Toilette es una fragancia floral acuática lanzada en 1996, creada por Pierre Bourdon. Se abre con melón, piña y limón junto a un toque de casis, revela un corazón floral de lirio de los valles, jazmín y rosa, y se asienta en una base sensual de almizcle, vetiver, sándalo y vainilla, evocando la frescura irresistible del mar en un frasco azul en forma de gota.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
       id: "notas-salida-frambuesa-pera-corazon-coco-rosa-fondo-macarons-almizcle",
       slug: "notas-salida-frambuesa-pera-corazon-coco-rosa-fondo-macarons-almizcle",
       name: "Notas: salida frambuesa, pera; corazón coco, rosa; fondo macarons, almizcle.",
@@ -20921,27 +19544,6 @@ const perfumeProducts: RawProduct[] = [
       price: 2488,
       images: ["/products/notas-salida-frambuesa-pera-corazon-coco-rosa-fondo-macarons-almizcle.webp"],
       description: "SET AG ARIANA GRANDE 3PC THANK U NEXT 3.4 EDP3.4 BODY SOUFFLE3.4 SG (W) HARD BOX 2025 PACKAGING",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
-      id: "set-davidoff-5pc-cool-water-4-2-edt-2-5-asb-2-4-deo-stick-2-5-sg-0-5-edt-m-hard",
-      slug: "set-davidoff-5pc-cool-water-4-2-edt-2-5-asb-2-4-deo-stick-2-5-sg-0-5-edt-m-hard",
-      name: "SET DAVIDOFF 5PC COOL WATER 4.2 EDT+2.5 ASB+2.4 DEO STICK+2.5 SG+0.5 EDT (M) HARD DISPLAY BOX",
-      brand: "Davidoff",
-      type: "designer",
-      gender: "hombre",
-      cost: 1131,
-      price: 1938,
-      images: ["/products/set-davidoff-5pc-cool-water-4-2-edt-2-5-asb-2-4-deo-stick-2-5-sg-0-5-edt-m-hard.webp"],
-      description: "Set.",
       notes: {
         top: [],
         heart: [],
@@ -21159,27 +19761,6 @@ const perfumeProducts: RawProduct[] = [
         base: []
       },
       sizeMl: 100,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
-      id: "ls-armaf-lux-cdn-club-de-nuit-maleka-3-4-edp-10-ml-travel-spray-3-4-bl-8-4-body",
-      slug: "ls-armaf-lux-cdn-club-de-nuit-maleka-3-4-edp-10-ml-travel-spray-3-4-bl-8-4-body",
-      name: "LS-ARMAF LUX CDN CLUB DE NUIT MALEKA 3.4 EDP/10 ML TRAVEL SPRAY / 3.4 BL/8.4 BODY MIST",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "mujer",
-      cost: 1604,
-      price: 2486,
-      images: ["/products/ls-armaf-lux-cdn-club-de-nuit-maleka-3-4-edp-10-ml-travel-spray-3-4-bl-8-4-body.webp"],
-      description: "Cofre real de lujo 4 piezas (EDP 100ml + Travel 10ml + Loción 100ml + Mist 250ml). Su combinación de frutas silvestres maduras, orquídeas finas, maderas preciosas y vainilla ambarada ofrece una sofisticación inigualable. Notas: Frutas silvestres, notas florales, maderas nobles, ámbar y vainilla. Deja una huella imborrable de riqueza y encanto.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 10,
       inStock: true,
       category: "Set",
       tags: []
@@ -21991,27 +20572,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "perfume-clun-de-nuit-intense",
-      slug: "perfume-clun-de-nuit-intense",
-      name: "PERFUME CLUN DE NUIT INTENSE",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "hombre",
-      cost: 1418,
-      price: 2198,
-      images: ["/products/perfume-clun-de-nuit-intense.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "armaf-beach-party-3-4-edp-spr",
       slug: "armaf-beach-party-3-4-edp-spr",
       name: "ARMAF BEACH PARTY 3.4 EDP SPR",
@@ -22433,27 +20993,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "yves-saint-lauren-my-slf-eau-p",
-      slug: "yves-saint-lauren-my-slf-eau-p",
-      name: "YVES SAINT LAUREN MY SLF EAU P",
-      brand: "Ralph Lauren",
-      type: "designer",
-      gender: "mujer",
-      cost: 3593,
-      price: 5462,
-      images: ["/products/yves-saint-lauren-my-slf-eau-p.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "ysl-libre-w-edp-intense-sp-3-0oz",
       slug: "ysl-libre-w-edp-intense-sp-3-0oz",
       name: "YSL LIBRE(W.)EDP INTENSE SP 3.0oz",
@@ -22527,27 +21066,6 @@ const perfumeProducts: RawProduct[] = [
       price: 1533,
       images: ["/products/armaf-el-cielo-3-4-edp-spr.webp"],
       description: "Eau de Parfum.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "givenchy-organza-women-3-4-oz-edp-sp",
-      slug: "givenchy-organza-women-3-4-oz-edp-sp",
-      name: "GIVENCHY ORGANZA WOMEN 3.4 OZ EDP SP",
-      brand: "Givenchy",
-      type: "designer",
-      gender: "mujer",
-      cost: 2205,
-      price: 3639,
-      images: ["/products/givenchy-organza-women-3-4-oz-edp-sp.webp"],
-      description: "Eau de Parfum. 100 ml.",
       notes: {
         top: [],
         heart: [],
@@ -22800,27 +21318,6 @@ const perfumeProducts: RawProduct[] = [
       cost: 1400,
       price: 2401,
       images: ["/products/jimmy-choo-illicit-flower-women-3-4-oz-edt-sp.webp"],
-      description: "Eau de Toilette. 100 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "hugo-boss-bottled-night-h-edt-100ml-sp",
-      slug: "hugo-boss-bottled-night-h-edt-100ml-sp",
-      name: "HUGO BOSS BOTTLED NIGHT /H EDT 100ML SP",
-      brand: "Hugo Boss",
-      type: "designer",
-      gender: "hombre",
-      cost: 1300,
-      price: 2230,
-      images: ["/products/hugo-boss-bottled-night-h-edt-100ml-sp.webp"],
       description: "Eau de Toilette. 100 ml.",
       notes: {
         top: [],
@@ -23165,27 +21662,6 @@ const perfumeProducts: RawProduct[] = [
         base: []
       },
       sizeMl: 50,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
-      id: "perfume-sauvage",
-      slug: "perfume-sauvage",
-      name: "PERFUME SAUVAGE",
-      brand: "Dior",
-      type: "designer",
-      gender: "mujer",
-      cost: 3567,
-      price: 5422,
-      images: ["/products/perfume-sauvage.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
       inStock: true,
       category: "Perfumería",
       tags: []
@@ -24117,27 +22593,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "armaf-odysey-mandarin-sky-elix",
-      slug: "armaf-odysey-mandarin-sky-elix",
-      name: "ARMAF ODYSEY MANDARIN SKY ELIX",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "hombre",
-      cost: 1200,
-      price: 1860,
-      images: ["/products/armaf-odysey-mandarin-sky-elix.webp", "/products/armaf-odysey-mandarin-sky-elix-2.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "armaf-odysey-mandarin-sky-elix-lote-1228",
       slug: "armaf-odysey-mandarin-sky-elix-lote-1228",
       name: "ARMAF ODYSEY MANDARIN SKY ELIX",
@@ -24896,27 +23351,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "lattafa-qimmah-for-women-2",
-      slug: "lattafa-qimmah-for-women-2",
-      name: "LATTAFA QIMMAH FOR WOMEN",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "mujer",
-      cost: 641,
-      price: 1123,
-      images: ["/products/lattafa-qimmah-for-women-2.webp"],
-      description: "Lattafa Qimmah for Women: oriental dulce y elegante, con notas afrutadas y florales sobre vainilla, caramelo y maderas. Femenino, cálido y envolvente.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "maison-jean-lowe-azure-edp-sp-100ml",
       slug: "maison-jean-lowe-azure-edp-sp-100ml",
       name: "MAISON JEAN LOWE AZURE EDP SP 100ML",
@@ -25487,27 +23921,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "cuba-la-vida-w-bucket-4pc-set-3-3oz-edp-sp-1-17oz-edp-sp-6-6oz-body-sp-6-6oz-bod",
-      slug: "cuba-la-vida-w-bucket-4pc-set-3-3oz-edp-sp-1-17oz-edp-sp-6-6oz-body-sp-6-6oz-bod",
-      name: "CUBA LA VIDA(W)(BUCKET) 4PC SET(3.3oz edp sp,1.17oz edp sp,6.6oz Body sp,6.6oz Body Lotion)",
-      brand: "Cuba",
-      type: "designer",
-      gender: "mujer",
-      cost: 507,
-      price: 963,
-      images: ["/products/cuba-la-vida-w-bucket-4pc-set-3-3oz-edp-sp-1-17oz-edp-sp-6-6oz-body-sp-6-6oz-bod.webp"],
-      description: "Set de 4 piezas Cuba La Vida (presentación cubeta): EDP 3.3oz + mini + body spray + loción. ¡La vida completa al precio de uno!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "paris-hilton-splash-platinum-rush",
       slug: "paris-hilton-splash-platinum-rush",
       name: "PARIS HILTON SPLASH PLATINUM RUSH",
@@ -25888,28 +24301,6 @@ const perfumeProducts: RawProduct[] = [
       inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
     },
   {
-      id: "lattafa-eclaire-banoffi-edp-sp",
-      slug: "lattafa-eclaire-banoffi-edp-sp",
-      name: "LATTAFA ECLAIRE BANOFFI EDP SP",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "unisex",
-      cost: 1400,
-      price: 2275,
-      images: ["/products/lattafa-eclaire-banoffi-edp-sp.webp"],
-      description: "Eau de Parfum.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
-    },
-  {
       id: "lattafa-lail-maleki-moroccan-blue-edp-sp",
       slug: "lattafa-lail-maleki-moroccan-blue-edp-sp",
       name: "LATTAFA LAIL MALEKI MOROCCAN BLUE EDP SP",
@@ -25947,27 +24338,6 @@ const perfumeProducts: RawProduct[] = [
         base: []
       },
       sizeMl: null,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "afnan-9pm-women-3-4-oz-edp-sp",
-      slug: "afnan-9pm-women-3-4-oz-edp-sp",
-      name: "AFNAN 9PM WOMEN 3.4 OZ.EDP SP",
-      brand: "Afnan",
-      type: "arabic",
-      gender: "mujer",
-      cost: 857,
-      price: 1372,
-      images: ["/products/afnan-9pm-women-3-4-oz-edp-sp.webp"],
-      description: "Afnan 9PM para mujer: seducción nocturna dulce e intensa. Notas cálidas y envolventes con vainilla y ámbar que cautivan a cada paso. Lujo árabe a gran precio. ¡Conquista la noche!",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
       tags: []
@@ -26288,27 +24658,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "splash-aqua-kiss",
-      slug: "splash-aqua-kiss",
-      name: "SPLASH AQUA KISS",
-      brand: "Victoria's Secret",
-      type: "designer",
-      gender: "mujer",
-      cost: 370,
-      price: 537,
-      images: ["/products/splash-aqua-kiss.webp"],
-      description: "Perfume en spray.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfume en spray",
-      tags: []
-    },
-  {
       id: "splash-bare-vanilla",
       slug: "splash-bare-vanilla",
       name: "SPLASH BARE VANILLA",
@@ -26339,27 +24688,6 @@ const perfumeProducts: RawProduct[] = [
       cost: 370,
       price: 537,
       images: ["/products/splash-amber-romance.webp"],
-      description: "Perfume en spray.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfume en spray",
-      tags: []
-    },
-  {
-      id: "splash-romantic",
-      slug: "splash-romantic",
-      name: "SPLASH ROMANTIC",
-      brand: "Victoria's Secret",
-      type: "designer",
-      gender: "mujer",
-      cost: 370,
-      price: 537,
-      images: ["/products/splash-romantic.webp", "/products/splash-romantic-2.webp"],
       description: "Perfume en spray.",
       notes: {
         top: [],
@@ -26558,27 +24886,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "dolce-gabbana-pour-homme-est",
-      slug: "dolce-gabbana-pour-homme-est",
-      name: "DOLCE & GABBANA POUR HOMME EST",
-      brand: "Dolce & Gabbana",
-      type: "designer",
-      gender: "hombre",
-      cost: 1651,
-      price: 2402,
-      images: ["/products/dolce-gabbana-pour-homme-est.webp"],
-      description: "Gourmand dulce y suave estilo algodón de azúcar Lavanda, pera, bergamota Praliné, orquídea, coco Almizcle, madera de cachemira",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
       tags: []
     },
   {
@@ -27149,27 +25456,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "elizabith-arden-5th-avenue-eau",
-      slug: "elizabith-arden-5th-avenue-eau",
-      name: "ELIZABITH ARDEN 5TH AVENUE EAU",
-      brand: "Elizabeth Arden",
-      type: "designer",
-      gender: "mujer",
-      cost: 950,
-      price: 1444,
-      images: ["/products/elizabith-arden-5th-avenue-eau.webp"],
-      description: "Perfumería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "ch-goodgirl-blush-elixir-2-8-edp",
       slug: "ch-goodgirl-blush-elixir-2-8-edp",
       name: "CH GOODGIRL BLUSH ELIXIR 2.8 EDP",
@@ -27577,27 +25863,6 @@ const perfumeProducts: RawProduct[] = [
       gender: "mujer",
       cost: 3073,
       price: 4669,
-      images: ["/products/lancome-la-viet-est-belle-rose-extraordinaire-d-edp-100ml.webp"],
-      description: "Eau de Parfum. 100 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: []
-    },
-  {
-      id: "lancome-la-viet-est-belle-rose-extraordinaire-d-edp-100ml-lote-3280",
-      slug: "lancome-la-viet-est-belle-rose-extraordinaire-d-edp-100ml-lote-3280",
-      name: "LANCOME LA VIET EST BELLE ROSE EXTRAORDINAIRE /D EDP 100ML",
-      brand: "Lancôme",
-      type: "designer",
-      gender: "mujer",
-      cost: 3280,
-      price: 4772,
       images: ["/products/lancome-la-viet-est-belle-rose-extraordinaire-d-edp-100ml.webp"],
       description: "Eau de Parfum. 100 ml.",
       notes: {
@@ -28389,27 +26654,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "my-way-eau-de-parfum-giorgio-armani",
-      slug: "my-way-eau-de-parfum-giorgio-armani",
-      name: "MY WAY EAU DE PARFUM GIORGIO ARMANI",
-      brand: "Giorgio Armani",
-      type: "designer",
-      gender: "mujer",
-      cost: 2950,
-      price: 4293,
-      images: ["/products/my-way-eau-de-parfum-giorgio-armani.webp"],
-      description: "Crema perfumada.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Crema perfumada",
-      tags: []
-    },
-  {
       id: "giorgio-armani-my-way-d-parfum-90ml-sp",
       slug: "giorgio-armani-my-way-d-parfum-90ml-sp",
       name: "GIORGIO ARMANI MY WAY /D PARFUM 90ML SP",
@@ -28515,27 +26759,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "adidas-pure-game-3-4-edt-m-2",
-      slug: "adidas-pure-game-3-4-edt-m-2",
-      name: "ADIDAS PURE GAME 3.4 EDT (M)",
-      brand: "Adidas",
-      type: "designer",
-      gender: "hombre",
-      cost: 240,
-      price: 480,
-      images: ["/products/adidas-pure-game-3-4-edt-m-2.webp"],
-      description: "Eau de Toilette.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Eau de Toilette",
-      tags: []
-    },
-  {
       id: "lattafa-al-noble-ameer-edp-sp",
       slug: "lattafa-al-noble-ameer-edp-sp",
       name: "LATTAFA AL NOBLE AMEER EDP SP",
@@ -28576,28 +26799,6 @@ const perfumeProducts: RawProduct[] = [
       inStock: true,
       category: "Eau de Toilette",
       tags: []
-    },
-  {
-      id: "perfumed-spray-asad-sp-300ml",
-      slug: "perfumed-spray-asad-sp-300ml",
-      name: "PERFUMED SPRAY ASAD SP 300ML",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "hombre",
-      cost: 130,
-      price: 235,
-      images: ["/products/perfumed-spray-asad-sp-300ml.webp"],
-      description: "Perfumería. 300 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 300,
-      inStock: true,
-      category: "Perfumería",
-      tags: [],
-      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "perfumed-spray-asad-bourbo",
@@ -28875,28 +27076,6 @@ const perfumeProducts: RawProduct[] = [
       category: "Eau de Parfum",
       tags: [],
       inspiredBy: ["Bianco Latte (Giardini di Toscana)"],
-    },
-  {
-      id: "perfumed-spray-asad",
-      slug: "perfumed-spray-asad",
-      name: "PERFUMED SPRAY ASAD",
-      brand: "Lattafa",
-      type: "arabic",
-      gender: "hombre",
-      cost: 100,
-      price: 160,
-      images: ["/products/perfumed-spray-asad.webp"],
-      description: "Perfume en spray.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfume en spray",
-      tags: [],
-      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "maison-como-moiselle-edp",
@@ -29212,27 +27391,6 @@ const perfumeProducts: RawProduct[] = [
       sizeMl: 100,
       inStock: true,
       category: "Eau de Toilette",
-      tags: []
-    },
-  {
-      id: "versace-eros-flame-m-h-b-3pc-set-3-4oz-edp-sp-5-0oz-bath-shower-gel-5ml-edp-spl",
-      slug: "versace-eros-flame-m-h-b-3pc-set-3-4oz-edp-sp-5-0oz-bath-shower-gel-5ml-edp-spl",
-      name: "VERSACE EROS FLAME(M)(H/B)3PC SET(3.4oz edp sp,5.0oz Bath & Shower Gel,5ml edp spl mini)",
-      brand: "Versace",
-      type: "designer",
-      gender: "hombre",
-      cost: 2281,
-      price: 3763,
-      images: ["/products/versace-eros-flame-m-h-b-3pc-set-3-4oz-edp-sp-5-0oz-bath-shower-gel-5ml-edp-spl.webp"],
-      description: "Set.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
       tags: []
     },
   {
@@ -29907,28 +28065,6 @@ const perfumeProducts: RawProduct[] = [
       inStock: true,
       category: "Perfumería",
       tags: []
-    },
-  {
-      id: "ms-armaf-cdn-club-de-nuit-untold-3-4-1-7-body-spr-2-6-deo-stick-3-4bl-4pc",
-      slug: "ms-armaf-cdn-club-de-nuit-untold-3-4-1-7-body-spr-2-6-deo-stick-3-4bl-4pc",
-      name: "MS-ARMAF CDN CLUB DE NUIT UNTOLD 3.4/1.7 BODY SPR/2.6 DEO STICK /3.4BL-4PC",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "mujer",
-      cost: 1626,
-      price: 2521,
-      images: ["/products/ms-armaf-cdn-club-de-nuit-untold-3-4-1-7-body-spr-2-6-deo-stick-3-4bl-4pc.webp"],
-      description: "Set.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: [],
-      inspiredBy: ["Baccarat Rouge 540 (Maison Francis Kurkdjian)"],
     },
   {
       id: "armaf-cdn-club-de-nuit-urban-man-elixir-8-4-250-ml-edp-spr-5-ml-refillable-atomi",
@@ -30780,27 +28916,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "est-hasbro-50ml-my-little-pony-2pza",
-      slug: "est-hasbro-50ml-my-little-pony-2pza",
-      name: "EST-HASBRO 50ML MY LITTLE PONY 2PZA",
-      brand: "Nevada",
-      type: "arabic",
-      gender: "mujer",
-      cost: 101,
-      price: 172,
-      images: ["/products/est-hasbro-50ml-my-little-pony-2pza.webp"],
-      description: "Perfumería. 50 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 50,
-      inStock: true,
-      category: "Perfumería",
-      tags: []
-    },
-  {
       id: "prf-disney-100ml-minnie-rosado",
       slug: "prf-disney-100ml-minnie-rosado",
       name: "PRF-DISNEY 100ML MINNIE ROSADO",
@@ -31119,27 +29234,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "ms-armaf-club-de-nuit-3-4-4pc",
-      slug: "ms-armaf-club-de-nuit-3-4-4pc",
-      name: "MS-ARMAF CLUB DE NUIT 3.4-4PC",
-      brand: "Armaf",
-      type: "arabic",
-      gender: "hombre",
-      cost: 1277,
-      price: 1979,
-      images: ["/products/ms-armaf-club-de-nuit-3-4-4pc.webp"],
-      description: "Set.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Set",
-      tags: []
-    },
-  {
       id: "emper-the-night-s-treasure-intense-fw-edp-spr-100ml",
       slug: "emper-the-night-s-treasure-intense-fw-edp-spr-100ml",
       name: "EMPER THE NIGHT'S TREASURE INTENSE FW EDP SPR 100ML",
@@ -31181,28 +29275,6 @@ const perfumeProducts: RawProduct[] = [
       category: "Eau de Parfum",
       tags: [],
       inspiredBy: ["Narciso For Her (Narciso Rodriguez)"],
-    },
-  {
-      id: "emper-le-chameau-save-elixir-uni-edp-spr-85ml",
-      slug: "emper-le-chameau-save-elixir-uni-edp-spr-85ml",
-      name: "EMPER LE CHAMEAU SAVE ELIXIR UNI EDP SPR 85ML",
-      brand: "Emper",
-      type: "arabic",
-      gender: "hombre",
-      cost: 536,
-      price: 938,
-      images: ["/products/emper-le-chameau-save-elixir-uni-edp-spr-85ml.webp"],
-      description: "Inspirada en Sauvage Elixir de Dior. Le Chameau Save Elixir es una fragancia masculina elegante y vibrante que mezcla la frescura cítrica con un corazón herbario y una base cálida amaderada. Se abre con una explosión de pomelo, acompañada por especias intensas como canela, nuez moscada y cardamomo, lo que le da un carácter enérgico y exótico. En el centro, una nota clásica de lavanda aporta sofisticación y un matiz relajante. La base profunda y masculina combina sándalo cremoso, patchulí, ámbar, vetiver haitiano y un toque de licorice (regaliz), que dejan una estela duradera, terrosa y refinada.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 85,
-      inStock: true,
-      category: "Eau de Parfum",
-      tags: [],
-      inspiredBy: ["Sauvage (Dior)"],
     },
   {
       id: "emper-le-chameau-metropolis-gold-fw-edp-spr-100ml",
@@ -31856,27 +29928,6 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "galaxy-spray-le-desir",
-      slug: "galaxy-spray-le-desir",
-      name: "GALAXY SPRAY LE DESIR",
-      brand: "Galaxy Concept",
-      type: "arabic",
-      gender: "hombre",
-      cost: 147,
-      price: 207,
-      images: ["/products/galaxy-spray-le-desir.webp"],
-      description: "Perfume en spray.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Perfume en spray",
-      tags: []
-    },
-  {
       id: "armaf-le-parfait-azure-6-7spr",
       slug: "armaf-le-parfait-azure-6-7spr",
       name: "ARMAF LE PARFAIT AZURE 6.7SPR",
@@ -31919,16 +29970,37 @@ const perfumeProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "prf-sara-princess-100ml-1",
-      slug: "prf-sara-princess-100ml-1",
-      name: "PRF-SARA PRINCESS 100ML 1",
-      brand: "Nevada",
+      id: "ajwad-lote-1",
+      slug: "ajwad-lote-1",
+      name: "Ajwad",
+      brand: "Lattafa",
       type: "arabic",
-      gender: "mujer",
-      cost: 121,
-      price: 217,
-      images: ["/products/prf-sara-princess-100ml-1.webp", "/products/prf-sara-princess-100ml-1-2.webp"],
-      description: "Perfumería. 100 ml.",
+      gender: "unisex",
+      cost: 750,
+      price: 1293,
+      images: ["/products/ajwad.webp"],
+      description: "Eau de parfum de 60 ml. El frasco y la caja dicen Ajwad y Lattafa.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 60,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "paco-rabanne-1-million-lucky-m-edt-sp-3-4oz-lote-1",
+      slug: "paco-rabanne-1-million-lucky-m-edt-sp-3-4oz-lote-1",
+      name: "PACO RABANNE-1-MILLION LUCKY(M)EDT SP 3.4oz",
+      brand: "Paco Rabanne",
+      type: "designer",
+      gender: "hombre",
+      cost: 2855,
+      price: 4710,
+      images: ["/products/paco-rabanne-1-million-lucky-m-edt-sp-3-4oz.webp"],
+      description: "La fragancia de la suerte, elegante y llena de carisma. Paco Rabanne 1 Million Lucky, Eau de Toilette de 100 ml para hombre, abre con toronja, ciruela y avellana; en el corazón se despliegan miel y cedro, y la estela final descansa sobre musgo de roble, pachulí y ámbar. Un perfume sofisticado con una estela dulce y adictiva, para salir de noche y para ocasiones especiales. Hazla tuya hoy y descubre por qué quienes la prueban no quieren volver a otra.",
       notes: {
         top: [],
         heart: [],
@@ -31936,7 +30008,3157 @@ const perfumeProducts: RawProduct[] = [
       },
       sizeMl: 100,
       inStock: true,
-      category: "Perfumería",
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-lote-1",
+      slug: "armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-lote-1",
+      name: "ARMAF ODYSSEY MANDARIN SKY(M)EDP SP 3.4oz",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 880,
+      price: 1407,
+      images: ["/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-2.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-3.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-4.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-5.webp"],
+      description: "Un viaje luminoso y moderno que huele a cielo abierto y a energía contagiosa. Armaf Odyssey Mandarin Sky, Eau de Parfum de 100 ml para hombre, abre con mandarina jugosa, bergamota y cardamomo; en el corazón se despliegan lavanda y salvia, y la estela final descansa sobre vainilla, haba tonka, cedro y almizcle. Perfecto para quien busca un perfume fresco, dulce y elegante con excelente duración. Llévatela y empieza a recibir cumplidos desde la primera aplicación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-lote-2",
+      slug: "armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-lote-2",
+      name: "ARMAF ODYSSEY MANDARIN SKY(M)EDP SP 3.4oz",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 893,
+      price: 1429,
+      images: ["/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-2.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-3.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-4.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-5.webp"],
+      description: "Un viaje luminoso y moderno que huele a cielo abierto y a energía contagiosa. Armaf Odyssey Mandarin Sky, Eau de Parfum de 100 ml para hombre, abre con mandarina jugosa, bergamota y cardamomo; en el corazón se despliegan lavanda y salvia, y la estela final descansa sobre vainilla, haba tonka, cedro y almizcle. Perfecto para quien busca un perfume fresco, dulce y elegante con excelente duración. Llévatela y empieza a recibir cumplidos desde la primera aplicación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-lote-3",
+      slug: "armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-lote-3",
+      name: "ARMAF ODYSSEY MANDARIN SKY(M)EDP SP 3.4oz",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1021,
+      price: 1430,
+      images: ["/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-2.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-3.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-4.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-3-4oz-5.webp"],
+      description: "Un viaje luminoso y moderno que huele a cielo abierto y a energía contagiosa. Armaf Odyssey Mandarin Sky, Eau de Parfum de 100 ml para hombre, abre con mandarina jugosa, bergamota y cardamomo; en el corazón se despliegan lavanda y salvia, y la estela final descansa sobre vainilla, haba tonka, cedro y almizcle. Perfecto para quien busca un perfume fresco, dulce y elegante con excelente duración. Llévatela y empieza a recibir cumplidos desde la primera aplicación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "giorgio-armani-acqua-di-gio-h-edp-100ml-lote-1",
+      slug: "giorgio-armani-acqua-di-gio-h-edp-100ml-lote-1",
+      name: "GIORGIO ARMANI ACQUA DI GIO /H EDP 100ML",
+      brand: "Giorgio Armani",
+      type: "designer",
+      gender: "hombre",
+      cost: 2781,
+      price: 4589,
+      images: ["/products/giorgio-armani-acqua-di-gio-h-edp-100ml.webp"],
+      description: "Eau de Parfum. 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "azzaro-forever-wanted-elixir-m-parfum-sp-3-38oz-lote-1",
+      slug: "azzaro-forever-wanted-elixir-m-parfum-sp-3-38oz-lote-1",
+      name: "AZZARO FOREVER WANTED ELIXIR(M)PARFUM SP 3.38oz",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 2632,
+      price: 4343,
+      images: ["/products/azzaro-forever-wanted-elixir-m-parfum-sp-3-38oz.webp"],
+      description: "Parfum. 100 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "ms-armaf-cdn-club-de-nuit-intense-parfum-travel-buddy-set-intense-edp-12-ml-spr-",
+      slug: "ms-armaf-cdn-club-de-nuit-intense-parfum-travel-buddy-set-intense-edp-12-ml-spr-",
+      name: "MS-ARMAF CDN CLUB DE NUIT INTENSE PARFUM TRAVEL BUDDY SET INTENSE EDP 12 ML SPR + INTENSE EDP 12 ML OIL ROLL ON/LUXURY CASE & POUCH - 312840",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 1947,
+      price: 2454,
+      images: ["/products/ms-armaf-cdn-club-de-nuit-intense-parfum-travel-buddy-set-intense-edp-12-ml-spr-.webp"],
+      description: "Club de Nuit Intense Parfum Travel Buddy Set de Armaf es el compañero de viaje perfecto para el hombre que no quiere separarse de su aroma. Todo gira en torno al corazón de la fragancia: abedul ahumado, jazmín y rosa, un trío que combina un toque floral elegante con una profundidad ahumada muy masculina y mucha personalidad. La salida es vibrante, con limón, bergamota y manzana, y el fondo se afirma con almizcle, ámbar gris, pachulí y vainilla para una estela duradera. El set incluye un spray EDP de 12 ml y una versión en aceite roll-on de 12 ml, presentados en un lujoso estuche con bolsa, ideales para retocar tu aroma en el trabajo, el gimnasio o un viaje, y un regalo que se ve y se siente",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 12,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "ms-armaf-lux-odyssey-homme-black-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-spray-3",
+      slug: "ms-armaf-lux-odyssey-homme-black-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-spray-3",
+      name: "MS-ARMAF LUX ODYSSEY HOMME BLACK 3.4 EDP/10ML TRAVEL SPR/3.4 SG/6.8 BODY SPRAY - 313730",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 1566,
+      price: 2687,
+      images: ["/products/ms-armaf-lux-odyssey-homme-black-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-spray-3.webp", "/products/ms-armaf-lux-odyssey-homme-black-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-spray-3-2.webp"],
+      description: "Odyssey Homme Black de Armaf, en un completo set de regalo, es una fragancia masculina oscura, moderna y seductora. Su corazón es el alma del perfume: lavanda y especias, un corazón aromático y especiado con mucho carácter. Abre con cítricos y bergamota y cierra con un fondo de haba tonka, ámbar y maderas. Ideal para la noche y para quien busca un aroma varonil y elegante. Viene como set de regalo que incluye perfume EDP de 100 ml, travel spray de 10 ml, gel de ducha de 100 ml y body spray de 200 ml: una forma completa y económica de perfumarte de pies a cabeza o de regalar con éxito.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "ms-armaf-lux-cdn-club-de-nuit",
+      slug: "ms-armaf-lux-cdn-club-de-nuit",
+      name: "MS-ARMAF LUX CDN CLUB DE NUIT",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 1602,
+      price: 2301,
+      images: ["/products/ms-armaf-lux-cdn-club-de-nuit.webp"],
+      description: "Club de Nuit Classic de Armaf, en un completo set de regalo, es la expresión clásica de la línea que convirtió a Armaf en un fenómeno: una fragancia masculina potente, elegante y de gran carácter que se siente segura desde el primer rocío. Cuando la salida se disipa, el corazón de jazmín, rosa y abedul ahumado toma el protagonismo, un trío que aporta un toque floral sofisticado, una nota ahumada muy masculina y una profundidad que le da personalidad al aroma. La salida trae limón, bergamota y un acento afrutado de piña, mientras que el fondo se apoya en almizcle, ámbar gris, pachulí y vainilla que prolongan la estela durante horas. Es ideal para la oficina, una cena o una salida nocturna, y",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "ms-armaf-lux-odyssey-mandarin-sky-ltd-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-sp",
+      slug: "ms-armaf-lux-odyssey-mandarin-sky-ltd-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-sp",
+      name: "MS-ARMAF LUX ODYSSEY MANDARIN SKY LTD 3.4 EDP/10ML TRAVEL SPR/3.4 SG/6.8 BODY SPRAY - 313731",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1454,
+      price: 2296,
+      images: ["/products/ms-armaf-lux-odyssey-mandarin-sky-ltd-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-sp.webp", "/products/ms-armaf-lux-odyssey-mandarin-sky-ltd-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-sp-2.webp"],
+      description: "Odyssey Mandarin Sky de Armaf, en un completo set de regalo, es una fragancia de aroma cítrico-dulce, alegre y vibrante, pensada para destacar con un perfil fresco y moderno. Cuando la salida se disipa, el corazón de lavanda y jazmín toma el protagonismo, un corazón aromático y floral que equilibra la acidez cítrica con suavidad. Abre con mandarina y bergamota jugosas y cierra con un fondo de vainilla, haba tonka y ámbar. Es versátil para el día y la noche, fácil de llevar y de las que reciben cumplidos. Viene como set de regalo que incluye perfume EDP de 100 ml, travel spray de 10 ml, gel de ducha de 100 ml y body spray de 200 ml: una forma completa y económica de perfumarte de pies a cabez",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "ms-armaf-lux-cdn-club-de-nuit-milestone-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-",
+      slug: "ms-armaf-lux-cdn-club-de-nuit-milestone-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-",
+      name: "MS-ARMAF LUX CDN CLUB DE NUIT MILESTONE 3.4 EDP/10ML TRAVEL SPR/3.4 SG/6.8 BODY SPRAY - 313377",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1671,
+      price: 2591,
+      images: ["/products/ms-armaf-lux-cdn-club-de-nuit-milestone-3-4-edp-10ml-travel-spr-3-4-sg-6-8-body-.webp"],
+      description: "Club de Nuit Milestone de Armaf, en un completo set de regalo, es una fragancia masculina fresca y aromática con un toque moderno y elegante. En el corazón se revela su verdadero carácter, con lavanda, geranio y jazmín, un corazón aromático y floral limpio, equilibrado y seguro. Todo reposa sobre una base de ámbar, maderas y almizcle tras una apertura de cítricos brillantes y manzana. Funciona en el día a día, la oficina y reuniones sociales. Viene como set de regalo que incluye perfume EDP de 100 ml, travel spray de 10 ml, gel de ducha de 100 ml y body spray de 200 ml: una forma completa y económica de perfumarte de pies a cabeza o de regalar con éxito.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "m-cyrus-sport-3-4-edt-spr-8378",
+      slug: "m-cyrus-sport-3-4-edt-spr-8378",
+      name: "M-CYRUS SPORT 3.4 EDT SPR - 8378",
+      brand: "Cyrus",
+      type: "arabic",
+      gender: "hombre",
+      cost: 553,
+      price: 1051,
+      images: ["/products/m-cyrus-sport-3-4-edt-spr-8378.webp"],
+      description: "Cyrus Sport es un aroma masculino deportivo, fresco y juvenil. Las notas de corazón —lavanda y notas marinas— son su sello distintivo, un corazón aromático y limpio, lleno de energía. Todo reposa sobre una base de maderas y almizcle tras una apertura de cítricos. Una opción práctica para entrenar, salir de día y mantenerte fresco todo el tiempo. Cada frasco de 100 ml (Eau de Toilette) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "m-d-g-velvet-amber-sun-3-3-edp-spr-312852",
+      slug: "m-d-g-velvet-amber-sun-3-3-edp-spr-312852",
+      name: "M-D&G VELVET AMBER SUN 3.3 EDP SPR - 312852",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "hombre",
+      cost: 6515,
+      price: 9903,
+      images: ["/products/m-d-g-velvet-amber-sun-3-3-edp-spr-312852.webp"],
+      description: "Velvet Amber Sun de Dolce & Gabbana es una fragancia cálida, ambarada y lujosa. Su corazón es el alma del perfume: ámbar y vainilla, un corazón cálido, envolvente y aterciopelado. Todo reposa sobre una base de sándalo y almizcle tras una apertura de cítricos y especias. Ideal para noches frescas y ocasiones especiales. Cada frasco de 100 ml (Eau de Parfum) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-versace-bright-crystal-absolu-3-0-edp-spr-24084-24084",
+      slug: "l-versace-bright-crystal-absolu-3-0-edp-spr-24084-24084",
+      name: "L-VERSACE BRIGHT CRYSTAL ABSOLU 3.0 EDP SPR - 24084 24084",
+      brand: "Versace",
+      type: "designer",
+      gender: "mujer",
+      cost: 2960,
+      price: 3730,
+      images: ["/products/l-versace-bright-crystal-absolu-3-0-edp-spr-24084-24084.webp"],
+      description: "Bright Crystal Absolu de Versace es una fragancia femenina luminosa, floral y elegante. Las notas de corazón —peonía, magnolia y flor de loto— son su sello distintivo, un corazón floral fresco, brillante y sofisticado. La salida trae granada y yuzu, mientras que el fondo se apoya en almizcle y ámbar. Perfecta para el día y las citas. Su formato de 90 ml (Eau de Parfum) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-allure-1-7-edt-spr-185",
+      slug: "l-allure-1-7-edt-spr-185",
+      name: "L-ALLURE 1.7 EDT SPR - 185",
+      brand: "Chanel",
+      type: "designer",
+      gender: "mujer",
+      cost: 4448,
+      price: 6762,
+      images: ["/products/l-allure-1-7-edt-spr-185.webp"],
+      description: "Allure de Chanel es una fragancia femenina elegante, sofisticada y atemporal. Cuando la salida se disipa, el corazón de jazmín y rosa toma el protagonismo, un corazón floral refinado y sensual. Abre con mandarina y durazno y cierra con un fondo de vainilla, almizcle y sándalo. Ideal para ocasiones especiales. Se presenta en un frasco de 50 ml (Eau de Toilette), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "m-rl-safari-4-2-edt-spr-10218",
+      slug: "m-rl-safari-4-2-edt-spr-10218",
+      name: "M-RL SAFARI 4.2 EDT SPR - 10218",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 2314,
+      price: 3818,
+      images: ["/products/m-rl-safari-4-2-edt-spr-10218.webp"],
+      description: "Safari de Ralph Lauren es una fragancia masculina elegante, aromática y de carácter clásico. En el corazón se revela su verdadero carácter, con salvia y cedro, un corazón aromático y amaderado, clásico y varonil. Todo reposa sobre una base de almizcle y maderas tras una apertura de bergamota y cítricos. Perfecta para el trabajo y ocasiones formales. Cada frasco de 125 ml (Eau de Toilette) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "m-rl-polo-earth-3-4-edt-spr-35676",
+      slug: "m-rl-polo-earth-3-4-edt-spr-35676",
+      name: "M-RL POLO EARTH 3.4 EDT SPR - 35676",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 2463,
+      price: 4063,
+      images: ["/products/m-rl-polo-earth-3-4-edt-spr-35676.webp"],
+      description: "Polo Earth de Ralph Lauren es una fragancia masculina fresca y natural, de aire verde. Su corazón es el alma del perfume: notas verdes y aromáticas, un corazón fresco, terroso y limpio. La salida trae cítricos, mientras que el fondo se apoya en maderas y almizcle. Ideal para el día a día. Su formato de 100 ml (Eau de Toilette) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-ck-euphoria-5-5-edp-spr-23419",
+      slug: "l-ck-euphoria-5-5-edp-spr-23419",
+      name: "L-CK EUPHORIA 5.5 EDP SPR - 23419",
+      brand: "Calvin Klein",
+      type: "designer",
+      gender: "mujer",
+      cost: 2186,
+      price: 3608,
+      images: ["/products/l-ck-euphoria-5-5-edp-spr-23419.webp"],
+      description: "Euphoria de Calvin Klein es una fragancia femenina sensual, misteriosa y oriental. Las notas de corazón —orquídea negra, flor de loto y champaca— son su sello distintivo, un corazón floral exótico, oscuro y envolvente. Abre con granada y caqui y cierra con un fondo de caoba, ámbar, almizcle y violeta. Perfecta para noches y ocasiones especiales. Se presenta en un frasco de 160 ml (Eau de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-territoire-blue-3-4-edp-spr-20580",
+      slug: "m-territoire-blue-3-4-edp-spr-20580",
+      name: "M-TERRITOIRE BLUE 3.4 EDP SPR - 20580",
+      brand: "Territore",
+      type: "arabic",
+      gender: "hombre",
+      cost: 607,
+      price: 1153,
+      images: ["/products/m-territoire-blue-3-4-edp-spr-20580.webp"],
+      description: "Territoire Blue es una fragancia masculina fresca, azul y marina. Cuando la salida se disipa, el corazón de lavanda y notas acuáticas toma el protagonismo, un corazón fresco, aromático y relajado. Todo reposa sobre una base de maderas y almizcle tras una apertura de cítricos. Una opción cómoda para el día a día. Cada frasco de 100 ml (Eau de Parfum) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ms-versace-eau-fraiche-extreme-3-4-5ml-edt-spr-5-0sg-314179",
+      slug: "ms-versace-eau-fraiche-extreme-3-4-5ml-edt-spr-5-0sg-314179",
+      name: "MS-VERSACE EAU FRAICHE EXTREME 3.4+5ML EDT SPR/5.0SG - 314179",
+      brand: "Versace",
+      type: "designer",
+      gender: "hombre",
+      cost: 3824,
+      price: 5812,
+      images: ["/products/ms-versace-eau-fraiche-extreme-3-4-5ml-edt-spr-5-0sg-314179.webp"],
+      description: "Eau Fraîche Extreme de Versace, en un completo set de regalo, es una fragancia masculina fresca e intensa, con aire mediterráneo. En el corazón se revela su verdadero carácter, con cedro y estragón, un corazón aromático y amaderado, fresco y elegante. La salida trae bergamota y cítricos, mientras que el fondo se apoya en almizcle y maderas. Perfecta para el día y el calor. Viene como set de regalo que incluye perfume EDT de 100 ml con miniatura de 5 ml y gel de ducha de 150 ml: una forma completa y económica de perfumarte de pies a cabeza o de regalar con éxito.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 5,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "m-azzaro-chrome-azure-3-4-edt-spr-312990",
+      slug: "m-azzaro-chrome-azure-3-4-edt-spr-312990",
+      name: "M-AZZARO CHROME AZURE 3.4 EDT SPR - 312990",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 1568,
+      price: 2690,
+      images: ["/products/m-azzaro-chrome-azure-3-4-edt-spr-312990.webp"],
+      description: "Chrome Azure de Azzaro es una fragancia masculina fresca y acuática, limpia y energizante. Las notas de corazón —notas marinas y salvia— son su sello distintivo, un corazón aromático, fresco y refrescante. Todo reposa sobre una base de almizcle y maderas tras una apertura de bergamota y cítricos. Ideal para el día a día, el calor y la oficina. Cada frasco de 100 ml (Eau de Toilette) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-lancome-la-nuit-tresor-intense-1-7-edp-spr-313187",
+      slug: "l-lancome-la-nuit-tresor-intense-1-7-edp-spr-313187",
+      name: "L-LANCOME LA NUIT TRESOR INTENSE 1.7 EDP SPR - 313187",
+      brand: "Lancôme",
+      type: "designer",
+      gender: "mujer",
+      cost: 2288,
+      price: 3777,
+      images: ["/products/l-lancome-la-nuit-tresor-intense-1-7-edp-spr-313187.webp"],
+      description: "La Nuit Trésor Intense de Lancôme es una fragancia femenina de noche, sensual, intensa y envolvente. Cuando la salida se disipa, el corazón de rosa negra y jazmín toma el protagonismo, un corazón floral oscuro, aterciopelado y seductor. La salida trae lichi y frambuesa, mientras que el fondo se apoya en vainilla, praliné, pachulí y sándalo. Perfecta para noches especiales y clima fresco. Su formato de 50 ml (Eau de Parfum) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-guess-i-am-yours-2-5-edt-spr-20459",
+      slug: "l-guess-i-am-yours-2-5-edt-spr-20459",
+      name: "L-GUESS I AM YOURS 2.5 EDT SPR - 20459",
+      brand: "Guess",
+      type: "designer",
+      gender: "mujer",
+      cost: 958,
+      price: 1707,
+      images: ["/products/l-guess-i-am-yours-2-5-edt-spr-20459.webp"],
+      description: "I Am Yours de Guess es una fragancia femenina romántica, juvenil y coqueta. En el corazón se revela su verdadero carácter, con flores blancas, un corazón floral suave y luminoso. Abre con frutas y cítricos y cierra con un fondo de almizcle y vainilla. Ideal para el día a día y las citas. Se presenta en un frasco de 75 ml (Eau de Toilette), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-d-g-queen-3-4-edp-spr-35313",
+      slug: "l-d-g-queen-3-4-edp-spr-35313",
+      name: "L-D&G QUEEN 3.4 EDP SPR - 35313",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "mujer",
+      cost: 1848,
+      price: 2956,
+      images: ["/products/l-d-g-queen-3-4-edp-spr-35313.webp"],
+      description: "Queen de Dolce & Gabbana es una fragancia femenina regia, floral y sofisticada. Su corazón es el alma del perfume: rosa y gardenia, un corazón floral elegante y cremoso. Todo reposa sobre una base de almizcle y maderas tras una apertura de frutas y cítricos. Perfecta para ocasiones especiales. Cada frasco de 100 ml (Eau de Parfum) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-burberry-classic-3-3-edp-spr-31160",
+      slug: "l-burberry-classic-3-3-edp-spr-31160",
+      name: "L-BURBERRY CLASSIC 3.3 EDP SPR - 31160",
+      brand: "Burberry",
+      type: "designer",
+      gender: "mujer",
+      cost: 1368,
+      price: 2347,
+      images: ["/products/l-burberry-classic-3-3-edp-spr-31160.webp"],
+      description: "Burberry Classic de Burberry es una fragancia femenina elegante y refinada, de estilo clásico. Las notas de corazón —rosa y peonía— son su sello distintivo, un corazón floral elegante y sofisticado. La salida trae frutas y cítricos, mientras que el fondo se apoya en almizcle y maderas. Ideal para el trabajo y para quien busca un aroma atemporal. Su formato de 100 ml (Eau de Parfum) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-armaf-delights-island-breeze-3-4-edp-spr-313335",
+      slug: "m-armaf-delights-island-breeze-3-4-edp-spr-313335",
+      name: "M-ARMAF DELIGHTS ISLAND BREEZE 3.4 EDP SPR - 313335",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1199,
+      price: 1858,
+      images: ["/products/m-armaf-delights-island-breeze-3-4-edp-spr-313335.webp"],
+      description: "Delights Island Breeze de Armaf es una fragancia fresca y tropical que evoca vacaciones, playa y buen ánimo. Cuando la salida se disipa, el corazón de coco y flores tropicales toma el protagonismo, un corazón cremoso, veraniego y relajante. Abre con cítricos y frutas y cierra con un fondo de vainilla, almizcle y maderas claras. Perfecta para el calor y para quien disfruta de aromas suaves y alegres. Se presenta en un frasco de 100 ml (Eau de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-rl-ralph-s-club-3-4-edp-spr-33500",
+      slug: "m-rl-ralph-s-club-3-4-edp-spr-33500",
+      name: "M-RL RALPH'S CLUB 3.4 EDP SPR - 33500",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 2288,
+      price: 3777,
+      images: ["/products/m-rl-ralph-s-club-3-4-edp-spr-33500.webp"],
+      description: "Ralph's Club de Ralph Lauren es una fragancia masculina elegante, aromática y sofisticada. Las notas de corazón —notas aromáticas y especiadas— son su sello distintivo, un corazón sofisticado y varonil. Abre con cítricos y cierra con un fondo de maderas y ámbar. Una opción refinada para ocasiones formales y sociales. Se presenta en un frasco de 100 ml (Eau de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-azzaro-chrome-legend-1-4-spr-33453",
+      slug: "m-azzaro-chrome-legend-1-4-spr-33453",
+      name: "M-AZZARO CHROME LEGEND 1.4 SPR - 33453",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 832,
+      price: 1482,
+      images: ["/products/m-azzaro-chrome-legend-1-4-spr-33453.webp"],
+      description: "Chrome Legend de Azzaro es una fragancia masculina fresca y aromática, limpia y elegante. Cuando la salida se disipa, el corazón de salvia y cedro toma el protagonismo, un corazón aromático y amaderado, fresco y varonil. Todo reposa sobre una base de almizcle y maderas tras una apertura de bergamota y cítricos. Ideal para el día a día y la oficina. Cada frasco de 40 ml es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-rose-noire-rouge-3-3-edp-spr-36206",
+      slug: "l-rose-noire-rouge-3-3-edp-spr-36206",
+      name: "L-ROSE NOIRE ROUGE 3.3 EDP SPR - 36206",
+      brand: "Rose Noire",
+      type: "arabic",
+      gender: "mujer",
+      cost: 494,
+      price: 1013,
+      images: ["/products/l-rose-noire-rouge-3-3-edp-spr-36206.webp"],
+      description: "Rose Noire es una fragancia floral femenina centrada en la rosa, elegante y romántica. Su corazón es el alma del perfume: rosa, un corazón floral intenso, aterciopelado y sensual. Abre con frutas y cítricos suaves y cierra con un fondo de almizcle y madera. Una opción de excelente relación calidad-precio para el día a día. Se presenta en un frasco de 100 ml (Eau de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-rose-noire-emotion-3-3-edp-s-29204",
+      slug: "l-rose-noire-emotion-3-3-edp-s-29204",
+      name: "L-ROSE NOIRE EMOTION 3.3 EDP S - 29204",
+      brand: "Rose Noire",
+      type: "arabic",
+      gender: "mujer",
+      cost: 494,
+      price: 1013,
+      images: ["/products/l-rose-noire-emotion-3-3-edp-s-29204.webp"],
+      description: "Rose Noire es una fragancia floral femenina centrada en la rosa, elegante y romántica. Las notas de corazón —rosa— son su sello distintivo, un corazón floral intenso, aterciopelado y sensual. Todo reposa sobre una base de almizcle y madera tras una apertura de frutas y cítricos suaves. Una opción de excelente relación calidad-precio para el día a día. Cada frasco de 100 ml (Eau de Parfum) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-lacoste-touch-of-pink-3-0-spr-2831",
+      slug: "l-lacoste-touch-of-pink-3-0-spr-2831",
+      name: "L-LACOSTE TOUCH OF PINK 3.0 SPR - 2831",
+      brand: "Lacoste",
+      type: "designer",
+      gender: "mujer",
+      cost: 1354,
+      price: 2323,
+      images: ["/products/l-lacoste-touch-of-pink-3-0-spr-2831.webp"],
+      description: "Touch of Pink de Lacoste es una fragancia femenina dulce, floral y coqueta. Su corazón es el alma del perfume: peonía y fresia, un corazón floral suave y alegre. Todo reposa sobre una base de almizcle y vainilla tras una apertura de frutas y cítricos. Perfecta para el día a día. Cada frasco de 90 ml es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-guess-1981-indigo-3-4-edt-spr-29656",
+      slug: "l-guess-1981-indigo-3-4-edt-spr-29656",
+      name: "L-GUESS 1981 INDIGO 3.4 EDT SPR - 29656",
+      brand: "Guess",
+      type: "designer",
+      gender: "mujer",
+      cost: 813,
+      price: 1284,
+      images: ["/products/l-guess-1981-indigo-3-4-edt-spr-29656.webp"],
+      description: "1981 Indigo de Guess es una fragancia femenina fresca y juvenil, moderna y sofisticada. Cuando la salida se disipa, el corazón de jazmín y flores blancas toma el protagonismo, un corazón floral limpio y luminoso. Abre con bergamota y mandarina y cierra con un fondo de almizcle y maderas claras. Ideal para el día a día con un aroma agradable y versátil. Se presenta en un frasco de 100 ml (Eau de Toilette), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-et-white-diamond-3-3-edt-spr-7429",
+      slug: "l-et-white-diamond-3-3-edt-spr-7429",
+      name: "L-ET WHITE DIAMOND 3.3 EDT SPR - 7429",
+      brand: "Elizabeth Taylor",
+      type: "designer",
+      gender: "mujer",
+      cost: 1105,
+      price: 1895,
+      images: ["/products/l-et-white-diamond-3-3-edt-spr-7429.webp"],
+      description: "White Diamonds de Elizabeth Taylor es un icono floral femenino, elegante y atemporal. En el corazón se revela su verdadero carácter, con narciso, rosa, lirio de los valles, jazmín, ylang-ylang, nardo e iris, un bouquet floral opulento, empolvado y clásico. Todo reposa sobre una base de almizcle, sándalo y ámbar tras una apertura de aldehídos, bergamota y neroli. Una fragancia de glamour clásico para ocasiones especiales. Cada frasco de 100 ml (Eau de Toilette) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-ck-eternity-intense-3-4-edp-spr-27963",
+      slug: "l-ck-eternity-intense-3-4-edp-spr-27963",
+      name: "L-CK ETERNITY INTENSE 3.4 EDP SPR - 27963",
+      brand: "Calvin Klein",
+      type: "designer",
+      gender: "mujer",
+      cost: 1774,
+      price: 3043,
+      images: ["/products/l-ck-eternity-intense-3-4-edp-spr-27963.webp"],
+      description: "Eternity Intense de Calvin Klein es una versión más profunda y sensual del clásico femenino de Calvin Klein. Su corazón es el alma del perfume: lirio de los valles, rosa y jazmín, un corazón floral delicado, romántico y cremoso. La salida trae bergamota y notas frescas, mientras que el fondo se apoya en sándalo, vainilla y almizcle. Una elección elegante para el día y las ocasiones románticas. Su formato de 100 ml (Eau de Parfum) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-bora-bora-3-4-edp-spr-931",
+      slug: "l-bora-bora-3-4-edp-spr-931",
+      name: "L-BORA BORA 3.4 EDP SPR - 931",
+      brand: "Bora Bora",
+      type: "arabic",
+      gender: "mujer",
+      cost: 649,
+      price: 1234,
+      images: ["/products/l-bora-bora-3-4-edp-spr-931.webp"],
+      description: "Bora Bora es una fragancia femenina tropical, fresca y alegre. Las notas de corazón —flores tropicales— son su sello distintivo, un corazón floral exótico y luminoso. Abre con cítricos y frutas y cierra con un fondo de almizcle y maderas claras. Ideal para el día a día y el clima cálido. Se presenta en un frasco de 100 ml (Eau de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ms-armaf-cdn-club-de-nuit-intense-parfum-travel-buddy-set-intense-edp-12-ml-spr--2",
+      slug: "ms-armaf-cdn-club-de-nuit-intense-parfum-travel-buddy-set-intense-edp-12-ml-spr--2",
+      name: "MS-ARMAF CDN CLUB DE NUIT INTENSE PARFUM TRAVEL BUDDY SET INTENSE EDP 12 ML SPR + PRECIEUX 12 ML EDP SPR/LUXURY CASE & POUCH - 312572",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 2031,
+      price: 3483,
+      images: ["/products/ms-armaf-cdn-club-de-nuit-intense-parfum-travel-buddy-set-intense-edp-12-ml-spr--2.webp"],
+      description: "Club de Nuit Intense Parfum Travel Buddy Set de Armaf reúne dos de los aromas más queridos de la casa en un estuche de lujo con bolsa, pensado para viajar con estilo. Del lado de Intense, su corazón de abedul ahumado, jazmín y rosa aporta carácter, elegancia y profundidad; del lado de Precieux, el corazón floral de iris, jazmín y rosa añade un toque empolvado y refinado. Con salidas cítricas y afrutadas, y fondos de ámbar, almizcle, pachulí y vainilla, ambos perfiles dejan una estela larga y sofisticada. Incluye dos sprays EDP de 12 ml, perfectos para llevar en el bolso o el maletín y para descubrir el universo Club de Nuit, o para regalar con total seguridad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 12,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "m-armaf-cdn-club-de-nuit-sillage-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313",
+      slug: "m-armaf-cdn-club-de-nuit-sillage-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313",
+      name: "M-ARMAF CDN CLUB DE NUIT SILLAGE 8.4 (250 ML) EDP SPR + 5 ML REFILLABLE ATOMISER - 313282",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 2193,
+      price: 3433,
+      images: ["/products/m-armaf-cdn-club-de-nuit-sillage-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313.webp", "/products/m-armaf-cdn-club-de-nuit-sillage-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313-2.webp"],
+      description: "Club de Nuit Sillage de Armaf es una fragancia masculina fresca y elegante con una estela refinada. Las notas de corazón —jazmín y cedro— son su sello distintivo, un corazón floral-amaderado limpio y sofisticado. La salida trae bergamota y notas frescas, mientras que el fondo se apoya en ámbar, vetiver y almizcle. Es versátil para el trabajo y las ocasiones formales, con buena proyección. Su formato grande de 250 ml (Eau de Parfum) incluye un atomizador recargable de 5 ml para llevarlo contigo a todas partes, y rinde muchísimo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-curve-chill-4-2-edc-spr-8364",
+      slug: "m-curve-chill-4-2-edc-spr-8364",
+      name: "M-CURVE CHILL 4.2 EDC SPR - 8364",
+      brand: "Curve",
+      type: "designer",
+      gender: "hombre",
+      cost: 490,
+      price: 1005,
+      images: ["/products/m-curve-chill-4-2-edc-spr-8364.webp"],
+      description: "Curve Chill de Curve es una colonia masculina fresca y deportiva que transmite frescura inmediata. En el corazón se revela su verdadero carácter, con notas acuáticas y geranio, un corazón limpio y aromático que mantiene la sensación de frescor. Abre con cítricos y menta y cierra con un fondo de almizcle y maderas suaves. Ideal para el gimnasio, el calor y cualquier jornada activa a un precio accesible. Se presenta en un frasco de 125 ml (Eau de Cologne), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Cologne",
+      tags: []
+    },
+  {
+      id: "l-curve-wave-3-4-edt-spr-1505",
+      slug: "l-curve-wave-3-4-edt-spr-1505",
+      name: "L-CURVE WAVE 3.4 EDT SPR - 1505",
+      brand: "Curve",
+      type: "designer",
+      gender: "mujer",
+      cost: 620,
+      price: 1118,
+      images: ["/products/l-curve-wave-3-4-edt-spr-1505.webp"],
+      description: "Curve Wave de Curve es una fragancia femenina fresca, ligera y juvenil, ideal para el día a día. Su corazón es el alma del perfume: lirio y flores blancas, un corazón floral suave, limpio y luminoso. Todo reposa sobre una base de almizcle y maderas claras tras una apertura de cítricos y frutas. Es perfecta para el trabajo, la universidad y el clima cálido; un aroma cómodo y alegre. Cada frasco de 100 ml (Eau de Toilette) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-armaf-cdn-club-de-nuit-3-6-100-ml-parfum-extreme-edition-spr-312863",
+      slug: "l-armaf-cdn-club-de-nuit-3-6-100-ml-parfum-extreme-edition-spr-312863",
+      name: "L-ARMAF CDN CLUB DE NUIT 3.6 (100 ML) PARFUM EXTREME EDITION SPR - 312863",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1963,
+      price: 2960,
+      images: ["/products/l-armaf-cdn-club-de-nuit-3-6-100-ml-parfum-extreme-edition-spr-312863.webp"],
+      description: "Club de Nuit Parfum Extreme Edition de Armaf es la edición más intensa y concentrada de la línea para mujer, con presencia y personalidad de sobra. Las notas de corazón —rosa, jazmín e iris— son su sello distintivo, un corazón floral profundo, cálido y empolvado que se siente lujoso. Abre con notas frutales y cítricas y cierra con un fondo de ámbar, almizcle y vainilla. Su concentración de parfum ofrece una fijación prolongada, perfecta para noches especiales y clima fresco. Se presenta en un frasco de 100 ml (Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "m-armaf-cdn-club-de-nuit-iconic-2-37-70-ml-extrait-de-parfum-spr-313797",
+      slug: "m-armaf-cdn-club-de-nuit-iconic-2-37-70-ml-extrait-de-parfum-spr-313797",
+      name: "M-ARMAF CDN CLUB DE NUIT ICONIC 2.37 (70 ML) EXTRAIT DE PARFUM SPR - 313797",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1306,
+      price: 2063,
+      images: ["/products/m-armaf-cdn-club-de-nuit-iconic-2-37-70-ml-extrait-de-parfum-spr-313797.webp"],
+      description: "Club de Nuit Iconic de Armaf es una fragancia masculina intensa, moderna y llamativa, hecha para convertirse en el aroma insignia de quien la usa. Cuando la salida se disipa, el corazón de jazmín, cedro y toques especiados toma el protagonismo, un corazón floral-amaderado de gran elegancia y sensualidad. Todo reposa sobre una base de ámbar, vainilla, pachulí y almizcle que dan calidez y duración tras una apertura de cítricos frescos y un toque afrutado. Es una elección brillante para salidas nocturnas, eventos y ocasiones donde quieres que te recuerden. Presentado como extrait de parfum, ofrece mayor concentración y una fijación superior a la de una EDP. Cada frasco de 70 ml (Extrait de Parf",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 70,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-cdn-club-de-nuit-imperiale-3-6-edp-spr-34769",
+      slug: "l-armaf-cdn-club-de-nuit-imperiale-3-6-edp-spr-34769",
+      name: "L-ARMAF CDN CLUB DE NUIT IMPERIALE 3.6 EDP SPR - 34769",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1116,
+      price: 1729,
+      images: ["/products/l-armaf-cdn-club-de-nuit-imperiale-3-6-edp-spr-34769.webp"],
+      description: "Club de Nuit Imperiale de Armaf es una fragancia femenina de carácter noble y elegante, pensada para sentirse como realeza. Su corazón es el alma del perfume: rosa, jazmín y flor de azahar, un ramillete floral cremoso, sensual y delicado que enamora. Abre con frutas suaves y cítricos y cierra con un fondo de almizcle, madera y vainilla. Es ideal para eventos, citas y celebraciones donde quieres proyectar clase y feminidad. Se presenta en un frasco de 105 ml (Eau de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-armaf-cdn-club-de-nuit-intense-overdose-ja-3-4-extrait-de-parfum-spray-314123",
+      slug: "m-armaf-cdn-club-de-nuit-intense-overdose-ja-3-4-extrait-de-parfum-spray-314123",
+      name: "M-ARMAF CDN CLUB DE NUIT INTENSE OVERDOSE \"JA\" 3.4 EXTRAIT DE PARFUM SPRAY - 314123",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1774,
+      price: 2750,
+      images: ["/products/m-armaf-cdn-club-de-nuit-intense-overdose-ja-3-4-extrait-de-parfum-spray-314123.webp"],
+      description: "Club de Nuit Intense Overdose de Armaf es la versión más concentrada y atrevida de la familia Club de Nuit: un extrait de parfum masculino de gran intensidad. Las notas de corazón —abedul, jazmín y rosa— son su sello distintivo, notas presentes aquí con mayor concentración para ofrecer un corazón ahumado, floral y profundo. Todo reposa sobre una base de ámbar, almizcle, pachulí y vainilla tras una apertura de cítricos y fruta dulce. Con extrait de parfum, pocas aplicaciones bastan para lograr una proyección y duración sobresalientes, ideal para ocasiones de peso. Cada frasco de 100 ml (Extrait de Parfum) es una invitación a hacer de este aroma tu sello personal.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
+      id: "m-armaf-cdn-club-de-nuit-classic-3-6-edt-spr-21544",
+      slug: "m-armaf-cdn-club-de-nuit-classic-3-6-edt-spr-21544",
+      name: "M-ARMAF CDN CLUB DE NUIT CLASSIC 3.6 EDT SPR - 21544",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 793,
+      price: 1269,
+      images: ["/products/m-armaf-cdn-club-de-nuit-classic-3-6-edt-spr-21544.webp"],
+      description: "Club de Nuit Classic de Armaf es la expresión clásica de la línea que convirtió a Armaf en un fenómeno: una fragancia masculina potente, elegante y de gran carácter que se siente segura desde el primer rocío. Su corazón es el alma del perfume: jazmín, rosa y abedul ahumado, un trío que aporta un toque floral sofisticado, una nota ahumada muy masculina y una profundidad que le da personalidad al aroma. La salida trae limón, bergamota y un acento afrutado de piña, mientras que el fondo se apoya en almizcle, ámbar gris, pachulí y vainilla que prolongan la estela durante horas. Es ideal para la oficina, una cena o una salida nocturna, y su proyección y duración la han vuelto favorita de quienes",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-versace-dylan-turquoise-3-4-edt-spr-32369-32369",
+      slug: "l-versace-dylan-turquoise-3-4-edt-spr-32369-32369",
+      name: "L-VERSACE DYLAN TURQUOISE 3.4 EDT SPR - 32369 32369",
+      brand: "Versace",
+      type: "designer",
+      gender: "mujer",
+      cost: 2152,
+      price: 3228,
+      images: ["/products/l-versace-dylan-turquoise-3-4-edt-spr-32369-32369.webp"],
+      description: "Dylan Turquoise de Versace es una fragancia femenina fresca, luminosa y mediterránea. En el corazón se revela su verdadero carácter, con fresia y flor de loto, un corazón floral acuático, fresco y vibrante. La salida trae pera y mandarina, mientras que el fondo se apoya en almizcle y maderas claras. Perfecta para el día y el clima cálido. Su formato de 100 ml (Eau de Toilette) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-rose-noire-absolue-3-3-edp-s-18588",
+      slug: "l-rose-noire-absolue-3-3-edp-s-18588",
+      name: "L-ROSE NOIRE ABSOLUE 3.3 EDP S - 18588",
+      brand: "Rose Noire",
+      type: "arabic",
+      gender: "mujer",
+      cost: 494,
+      price: 1013,
+      images: ["/products/l-rose-noire-absolue-3-3-edp-s-18588.webp"],
+      description: "Rose Noire es una fragancia floral femenina centrada en la rosa, elegante y romántica. Cuando la salida se disipa, el corazón de rosa toma el protagonismo, un corazón floral intenso, aterciopelado y sensual. La salida trae frutas y cítricos suaves, mientras que el fondo se apoya en almizcle y madera. Una opción de excelente relación calidad-precio para el día a día. Su formato de 100 ml (Eau de Parfum) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "m-ck-one-6-7-edt-spr-8205",
+      slug: "m-ck-one-6-7-edt-spr-8205",
+      name: "M-CK ONE 6.7 EDT SPR - 8205",
+      brand: "Calvin Klein",
+      type: "designer",
+      gender: "unisex",
+      cost: 1194,
+      price: 2048,
+      images: ["/products/m-ck-one-6-7-edt-spr-8205.webp"],
+      description: "CK One de Calvin Klein es la fragancia unisex icónica de los años 90, fresca, limpia y atemporal. Su corazón es el alma del perfume: jazmín, violeta, nuez moscada y rosa, un corazón floral-aromático luminoso, limpio y versátil. Abre con bergamota, piña y cardamomo y cierra con un fondo de almizcle, ámbar y cedro. Una fragancia para compartir, ideal para el día a día. Se presenta en un frasco de 200 ml (Eau de Toilette), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "m-curve-crush-4-2-edt-spr-8368",
+      slug: "m-curve-crush-4-2-edt-spr-8368",
+      name: "M-CURVE CRUSH 4.2 EDT SPR - 8368",
+      brand: "Curve",
+      type: "designer",
+      gender: "hombre",
+      cost: 832,
+      price: 1482,
+      images: ["/products/m-curve-crush-4-2-edt-spr-8368.webp"],
+      description: "Curve Crush de Curve es una fragancia masculina fresca y energética, con espíritu joven y deportivo. Cuando la salida se disipa, el corazón de jengibre y especias toma el protagonismo, un corazón picante y vibrante que le da chispa. La salida trae cítricos frescos, mientras que el fondo se apoya en maderas y almizcle. Perfecta para el día a día de quien busca un aroma moderno, limpio y fácil de usar. Su formato de 125 ml (Eau de Toilette) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "l-armaf-cdn-club-de-nuit-private-key-to-my-love-3-4-extrait-de-parfum-spr-35212",
+      slug: "l-armaf-cdn-club-de-nuit-private-key-to-my-love-3-4-extrait-de-parfum-spr-35212",
+      name: "L-ARMAF CDN CLUB DE NUIT PRIVATE KEY TO MY LOVE 3.4 EXTRAIT DE PARFUM SPR - 35212",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1433,
+      price: 2221,
+      images: ["/products/l-armaf-cdn-club-de-nuit-private-key-to-my-love-3-4-extrait-de-parfum-spr-35212.webp"],
+      description: "Club de Nuit Private Key To My Love de Armaf es un extrait de parfum femenino romántico e íntimo, ideal para quien quiere un aroma envolvente y personal. Su corazón es el alma del perfume: rosa y jazmín, un corazón floral cálido, sensual y cremoso. Abre con frutas dulces y cierra con un fondo de vainilla, ámbar y almizcle. Gracias a su concentración de extrait, dura muchas horas y es un regalo muy especial. Se presenta en un frasco de 100 ml (Extrait de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-cdn-club-de-nuit-private-key-to-my-love-3-4-extrait-de-parfum-spr-35212-2",
+      slug: "l-armaf-cdn-club-de-nuit-private-key-to-my-love-3-4-extrait-de-parfum-spr-35212-2",
+      name: "L-ARMAF CDN CLUB DE NUIT PRIVATE KEY TO MY LOVE 3.4 EXTRAIT DE PARFUM SPR - 35212",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1454,
+      price: 2221,
+      images: ["/products/l-armaf-cdn-club-de-nuit-private-key-to-my-love-3-4-extrait-de-parfum-spr-35212-2.webp"],
+      description: "Club de Nuit Private Key To My Love de Armaf es un extrait de parfum femenino romántico e íntimo, ideal para quien quiere un aroma envolvente y personal. Su corazón es el alma del perfume: rosa y jazmín, un corazón floral cálido, sensual y cremoso. Abre con frutas dulces y cierra con un fondo de vainilla, ámbar y almizcle. Gracias a su concentración de extrait, dura muchas horas y es un regalo muy especial. Se presenta en un frasco de 100 ml (Extrait de Parfum), una excelente forma de llevar este aroma a diario con muy buena relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Extrait de Parfum",
+      tags: []
+    },
+  {
+      id: "m-armaf-cdn-club-de-nuit-intense-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313",
+      slug: "m-armaf-cdn-club-de-nuit-intense-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313",
+      name: "M-ARMAF CDN CLUB DE NUIT INTENSE 8.4 (250 ML) EDP SPR + 5 ML REFILLABLE ATOMISER - 313280",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 2193,
+      price: 3185,
+      images: ["/products/m-armaf-cdn-club-de-nuit-intense-8-4-250-ml-edp-spr-5-ml-refillable-atomiser-313.webp"],
+      description: "Club de Nuit Intense Man de Armaf es una fragancia masculina de gran carácter que se ha ganado una legión de seguidores por su proyección, duración y precio. Cuando la salida se disipa, el corazón de abedul, jazmín y rosa toma el protagonismo, un corazón ahumado y floral de gran personalidad, elegante y varonil. Abre con limón, piña, bergamota, grosella negra y manzana y cierra con un fondo de almizcle, ámbar gris, pachulí y vainilla. Es perfecta para la oficina, citas y noches, y deja una estela inconfundible. Su formato grande de 250 ml (Eau de Parfum) incluye un atomizador recargable de 5 ml para llevarlo contigo a todas partes, y rinde muchísimo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 250,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ls-armaf-lux-delights-yum-yum-3-4-edp-10-ml-travel-spray-3-4-bl-8-4-body-mist-31",
+      slug: "ls-armaf-lux-delights-yum-yum-3-4-edp-10-ml-travel-spray-3-4-bl-8-4-body-mist-31",
+      name: "LS-ARMAF LUX DELIGHTS YUM YUM 3.4 EDP/10 ML TRAVEL SPRAY / 3.4 BL / 8.4 BODY MIST - 313622",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1602,
+      price: 2342,
+      images: ["/products/ls-armaf-lux-delights-yum-yum-3-4-edp-10-ml-travel-spray-3-4-bl-8-4-body-mist-31.webp"],
+      description: "Delights Yum Yum de Armaf, en un completo set de regalo, es una fragancia femenina gourmand, dulce, golosa y divertida. Su corazón es el alma del perfume: crema de vainilla y frutas jugosas, un corazón cremoso y goloso que se siente reconfortante y adictivo. La salida trae frutas dulces, mientras que el fondo se apoya en vainilla, almizcle y caramelo. Perfecta para quien ama los aromas dulces y quiere un perfume alegre para el día a día. Viene como set de regalo que incluye perfume EDP de 100 ml, travel spray de 10 ml, loción corporal de 100 ml y body mist de 250 ml: una forma completa y económica de perfumarte de pies a cabeza o de regalar con éxito.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "m-nautica-classic-3-4-edt-spr-9635",
+      slug: "m-nautica-classic-3-4-edt-spr-9635",
+      name: "M-NAUTICA CLASSIC 3.4 EDT SPR - 9635",
+      brand: "Nautica",
+      type: "designer",
+      gender: "hombre",
+      cost: 521,
+      price: 989,
+      images: ["/products/m-nautica-classic-3-4-edt-spr-9635.webp"],
+      description: "Nautica Classic de Nautica es un clásico fresco y marino de la perfumería masculina. Cuando la salida se disipa, el corazón de notas acuáticas, lavanda y geranio toma el protagonismo, un corazón limpio, aromático y relajado, como una brisa de mar. La salida trae cítricos y menta, mientras que el fondo se apoya en sándalo y almizcle. Perfecto para el uso diario, la oficina y el clima caluroso, con un perfil sencillo y agradable que nunca falla. Su formato de 100 ml (Eau de Toilette) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "m-armaf-cdn-club-de-nuit-iconic-3-6-edp-spr-34768",
+      slug: "m-armaf-cdn-club-de-nuit-iconic-3-6-edp-spr-34768",
+      name: "M-ARMAF CDN CLUB DE NUIT ICONIC 3.6 EDP SPR - 34768",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1208,
+      price: 1881,
+      images: ["/products/m-armaf-cdn-club-de-nuit-iconic-3-6-edp-spr-34768.webp"],
+      description: "Club de Nuit Iconic de Armaf es una fragancia masculina intensa, moderna y llamativa, hecha para convertirse en el aroma insignia de quien la usa. Las notas de corazón —jazmín, cedro y toques especiados— son su sello distintivo, un corazón floral-amaderado de gran elegancia y sensualidad. La salida trae cítricos frescos y un toque afrutado, mientras que el fondo se apoya en ámbar, vainilla, pachulí y almizcle que dan calidez y duración. Es una elección brillante para salidas nocturnas, eventos y ocasiones donde quieres que te recuerden. Su formato de 105 ml (Eau de Parfum) ofrece rendimiento de sobra para disfrutarlo por mucho tiempo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ms-armaf-lux-cdn-club-de-nuit-urban-man-elixir-3-4-edp-10ml-travel-spr-3-4-sg-6-",
+      slug: "ms-armaf-lux-cdn-club-de-nuit-urban-man-elixir-3-4-edp-10ml-travel-spr-3-4-sg-6-",
+      name: "MS-ARMAF LUX CDN CLUB DE NUIT URBAN MAN ELIXIR 3.4 EDP/10ML TRAVEL SPR/3.4 SG/6.8 BODY SPRAY - 313375",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1454,
+      price: 2275,
+      images: ["/products/ms-armaf-lux-cdn-club-de-nuit-urban-man-elixir-3-4-edp-10ml-travel-spr-3-4-sg-6-.webp"],
+      description: "Club de Nuit Urban Man Elixir de Armaf, en un completo set de regalo, es una fragancia masculina urbana, oscura y magnética, de aire sofisticado. En el corazón se revela su verdadero carácter, con lavanda y jazmín, un corazón aromático, floral y ligeramente dulce, muy contemporáneo. Todo reposa sobre una base de pachulí, ámbar y vainilla tras una apertura de cítricos y manzana verde. Va con el hombre seguro de sí mismo y rinde de la oficina a la noche, con una estela que se hace notar. Viene como set de regalo que incluye perfume EDP de 100 ml, travel spray de 10 ml, gel de ducha de 100 ml y body spray de 200 ml: una forma completa y económica de perfumarte de pies a cabeza o de regalar con",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "paco-black-xs-m-edt-sp-3-4oz-li-free",
+      slug: "paco-black-xs-m-edt-sp-3-4oz-li-free",
+      name: "PACO BLACK XS(M)EDT SP 3.4oz(LI FREE)",
+      brand: "Paco Rabanne",
+      type: "designer",
+      gender: "hombre",
+      cost: 1535,
+      price: 2632,
+      images: ["/products/paco-black-xs-m-edt-sp-3-4oz-li-free.webp"],
+      description: "PACO RABANNE BLACK XS | Para él – Rebeldía y energía en un solo aroma. Black XS es un ícono de Paco Rabanne para el hombre joven que busca intensidad y estilo. Notas frescas y especiadas con una base cálida y seductora. Es un aroma con gran personalidad y mucho éxito. Pertenece a la familia olfativa aromática especiada amaderada: abre con limón y cítricos, evoluciona hacia especias y notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para salidas nocturnas, fiestas y uso diario. Presentación: Eau de Toilette 3.4 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejor carta de presentación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "moschino-toy-boy-m-h-b-3pc-set-3-4oz-edp-sp-3-4oz-perfumed-body-gel-10ml-edp-sp",
+      slug: "moschino-toy-boy-m-h-b-3pc-set-3-4oz-edp-sp-3-4oz-perfumed-body-gel-10ml-edp-sp",
+      name: "MOSCHINO TOY BOY(M)(H/B)3PC SET(3.4oz edp sp,3.4oz Perfumed Body Gel,10ML edp sp)",
+      brand: "Moschino",
+      type: "designer",
+      gender: "hombre",
+      cost: 1698,
+      price: 2912,
+      images: ["/products/moschino-toy-boy-m-h-b-3pc-set-3-4oz-edp-sp-3-4oz-perfumed-body-gel-10ml-edp-sp.webp"],
+      description: "MOSCHINO TOY BOY | Para él – Atrevido, divertido y sensual. Toy Boy es una propuesta fresca y audaz de Moschino para quien no teme destacar. Combina pimienta rosa y pera jugosa con un fondo ambarado y almizclado. Este set de 3 piezas es ideal para regalar o consentirte. Pertenece a la familia olfativa amaderada especiada frutal: abre con pimienta rosa y pera, evoluciona hacia rosa y notas florales y se asienta en un fondo de ámbar, almizcle y maderas. Ideal para noches, salidas, regalo y uso diario. Presentación: Set de 3 piezas: Eau de Parfum 3.4 oz (100 ml) + Gel corporal perfumado 3.4 oz + Eau de Parfum 10 ml. Calidad original, aroma inconfundible y duración que se nota. Aprovecha la opor",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "katy-perry-purr-w-edp-sp-3-4oz",
+      slug: "katy-perry-purr-w-edp-sp-3-4oz",
+      name: "KATY PERRY PURR(W)EDP SP 3.4oz",
+      brand: "Katy Perry",
+      type: "designer",
+      gender: "mujer",
+      cost: 546,
+      price: 1037,
+      images: ["/products/katy-perry-purr-w-edp-sp-3-4oz.webp"],
+      description: "KATY PERRY PURR | Para ella – Dulce, juvenil y divertida. Purr de Katy Perry es un perfume lleno de personalidad, con un aroma dulce y coqueto que enamora. Frutas, flores y fondo cremoso en una fragancia perfecta para quienes aman lo femenino y lo alegre, a un precio ideal. Pertenece a la familia olfativa floral frutal gourmand: abre con frutas dulces, evoluciona hacia flores blancas y se asienta en un fondo de vainilla y almizcle. Ideal para uso diario, salidas y regalo. Presentación: Eau de Parfum 3.4 oz (100 ml). Regálate, o regala, un detalle que enamora. Añádelo a tu pedido ahora y empieza a recibir cumplidos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "hugo-green-m-edt-sp-6-7oz-with-cello-li-free",
+      slug: "hugo-green-m-edt-sp-6-7oz-with-cello-li-free",
+      name: "HUGO GREEN(M)EDT SP 6.7oz(With Cello)(LI FREE)",
+      brand: "Hugo Boss",
+      type: "designer",
+      gender: "hombre",
+      cost: 1390,
+      price: 2383,
+      images: ["/products/hugo-green-m-edt-sp-6-7oz-with-cello-li-free.webp"],
+      description: "HUGO BOSS HUGO GREEN | Para él – Frescura verde natural en tamaño grande. Hugo Green evoca el aire libre: manzana verde, notas aromáticas y un fondo limpio de maderas. Un clásico de Hugo Boss en presentación XL de 6.7 oz, perfecto para el uso diario y de excelente duración. Pertenece a la familia olfativa aromática verde fresca: abre con manzana verde y menta, evoluciona hacia lavanda y notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para uso diario, oficina y deporte. Presentación: Eau de Toilette 6.7 oz (200 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "halloween-m-edt-sp-4-2oz-li-free",
+      slug: "halloween-m-edt-sp-4-2oz-li-free",
+      name: "HALLOWEEN(M)EDT SP 4.2oz(LI FREE)",
+      brand: "Halloween",
+      type: "designer",
+      gender: "hombre",
+      cost: 1015,
+      price: 1742,
+      images: ["/products/halloween-m-edt-sp-4-2oz-li-free.webp"],
+      description: "HALLOWEEN (HOMBRE) | Para él – Seducción con personalidad propia. Halloween es un perfume con identidad: sensual, misterioso y diferente. Una combinación fresca y especiada con fondo amaderado que se queda en la memoria. Presentación de 4.2 oz con gran rendimiento. Pertenece a la familia olfativa aromática especiada amaderada: abre con cítricos y notas frescas, evoluciona hacia especias y aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para noches, salidas y uso diario. Presentación: Eau de Toilette 4.2 oz (125 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 59,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "givenchy-gentleman-m-edt-originale-sp-3-3oz-black-box",
+      slug: "givenchy-gentleman-m-edt-originale-sp-3-3oz-black-box",
+      name: "GIVENCHY GENTLEMAN(M)EDT ORIGINALE SP 3.3oz(BLACK BOX)",
+      brand: "Givenchy",
+      type: "designer",
+      gender: "hombre",
+      cost: 1477,
+      price: 2533,
+      images: ["/products/givenchy-gentleman-m-edt-originale-sp-3-3oz-black-box.webp"],
+      description: "GIVENCHY GENTLEMAN ORIGINALE | Para él – Elegancia francesa clásica. Gentleman Originale es la expresión clásica del caballero moderno: refinado, sofisticado y atemporal. Con iris, lavanda y maderas elegantes, es un perfume de perfumería francesa de lujo. Presentación Black Box ideal para regalar. Pertenece a la familia olfativa aromática amaderada: abre con bergamota y notas verdes, evoluciona hacia iris y lavanda y se asienta en un fondo de vetiver, ámbar y maderas. Ideal para eventos formales, oficina y regalo. Presentación: Eau de Toilette 3.3 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejor carta de presentación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 89,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "fila-fresh-blue-m-edt-sp-3-4oz",
+      slug: "fila-fresh-blue-m-edt-sp-3-4oz",
+      name: "FILA FRESH BLUE(M)EDT SP 3.4oz",
+      brand: "Fila",
+      type: "designer",
+      gender: "hombre",
+      cost: 520,
+      price: 987,
+      images: ["/products/fila-fresh-blue-m-edt-sp-3-4oz.webp"],
+      description: "FILA FRESH BLUE | Para él – Frescura azul para todos los días. Un aroma deportivo, limpio y refrescante que se adapta a cualquier momento. Notas acuáticas y cítricas con un fondo suave de almizcle, a un precio muy accesible. Pertenece a la familia olfativa acuática cítrica: abre con cítricos y notas marinas, evoluciona hacia notas aromáticas y se asienta en un fondo de almizcle y maderas. Ideal para deporte, uso diario y estudio. Presentación: Eau de Toilette 3.4 oz (100 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "paco-rabanne-phantom-elixir-m-parfum-intense-sp-3-4oz",
+      slug: "paco-rabanne-phantom-elixir-m-parfum-intense-sp-3-4oz",
+      name: "PACO RABANNE PHANTOM ELIXIR(M.)PARFUM INTENSE SP 3.4oz",
+      brand: "Paco Rabanne",
+      type: "designer",
+      gender: "hombre",
+      cost: 2855,
+      price: 4710,
+      images: ["/products/paco-rabanne-phantom-elixir-m-parfum-intense-sp-3-4oz.webp"],
+      description: "PACO RABANNE PHANTOM ELIXIR | Para él – Intensidad futurista en concentración Parfum. Phantom Elixir es una versión más intensa y poderosa de Phantom. Lavanda, cítricos y vainilla con una base amaderada que dura todo el día y deja una estela inolvidable. Para el hombre moderno que busca un aroma con presencia. Pertenece a la familia olfativa aromática vainillada amaderada: abre con lavanda y limón, evoluciona hacia notas aromáticas y se asienta en un fondo de vainilla y maderas. Ideal para noches, citas y eventos. Presentación: Parfum Intense 3.4 oz (100 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "paris-hilton-heiress-w-h-b-4pc-set-3-4oz-edp-sp-3-0oz-b-l-3-0oz-b-s-gel-10ml-edp",
+      slug: "paris-hilton-heiress-w-h-b-4pc-set-3-4oz-edp-sp-3-0oz-b-l-3-0oz-b-s-gel-10ml-edp",
+      name: "PARIS HILTON HEIRESS(W)(H/B)4PC SET(3.4oz edp sp,3.0oz B/L,3.0oz B/S Gel,10ml edp sp)",
+      brand: "Paris Hilton",
+      type: "designer",
+      gender: "mujer",
+      cost: 1281,
+      price: 2198,
+      images: ["/products/paris-hilton-heiress-w-h-b-4pc-set-3-4oz-edp-sp-3-0oz-b-l-3-0oz-b-s-gel-10ml-edp.webp", "/products/paris-hilton-heiress-w-h-b-4pc-set-3-4oz-edp-sp-3-0oz-b-l-3-0oz-b-s-gel-10ml-edp-2.webp"],
+      description: "PARIS HILTON HEIRESS | Para ella – Glamour completo en un set de 4 piezas. Heiress es una fragancia floral y frutal, dulce y sofisticada, con la esencia glamorosa de Paris Hilton. Este set incluye perfume, loción corporal, gel de baño y miniatura: un regalo completo y atractivo. Pertenece a la familia olfativa floral frutal: abre con frutas y cítricos, evoluciona hacia flores y jazmín y se asienta en un fondo de almizcle, vainilla y maderas suaves. Ideal para regalos, cumpleaños y uso diario. Presentación: Set de 4 piezas: EDP 3.4 oz (100 ml) + Loción corporal 3.0 oz + Gel de baño 3.0 oz + EDP 10 ml. Regálate, o regala, un detalle que enamora. Añádelo a tu pedido ahora y empieza a recibir cu",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 10,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "rasasi-hawas-atlantis-m-edp-sp-3-38oz-new",
+      slug: "rasasi-hawas-atlantis-m-edp-sp-3-38oz-new",
+      name: "RASASI HAWAS ATLANTIS(M)EDP SP 3.38oz(NEW)",
+      brand: "Rasasi",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1112,
+      price: 1724,
+      images: ["/products/rasasi-hawas-atlantis-m-edp-sp-3-38oz-new.webp"],
+      description: "RASASI HAWAS ATLANTIS | Para él – Frescura acuática de alto desempeño. Hawas Atlantis es un perfume árabe fresco, marino y refinado. Notas cítricas y acuáticas con fondo amaderado y ámbar. Su proyección y duración superan a perfumes de mucho mayor precio. Pertenece a la familia olfativa acuática aromática amaderada: abre con cítricos y notas marinas, evoluciona hacia notas aromáticas y se asienta en un fondo de ámbar y maderas. Ideal para uso diario, deporte y clima cálido. Presentación: Eau de Parfum 3.38 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejor carta de presentación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1124,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "versace-crystal-noir-w-parfum-sp-3-0oz-ltd-qty",
+      slug: "versace-crystal-noir-w-parfum-sp-3-0oz-ltd-qty",
+      name: "VERSACE CRYSTAL NOIR(W)PARFUM SP 3.0oz(Ltd Qty)",
+      brand: "Versace",
+      type: "designer",
+      gender: "mujer",
+      cost: 2543,
+      price: 4195,
+      images: ["/products/versace-crystal-noir-w-parfum-sp-3-0oz-ltd-qty.webp"],
+      description: "VERSACE CRYSTAL NOIR | Para ella – Elegancia oriental en concentración Parfum. Crystal Noir en concentración Parfum es una fragancia femenina sofisticada, sensual y misteriosa. Gardenia, coco y ámbar sobre un fondo de maderas cálidas. Edición limitada para mujeres que quieren un aroma de lujo. Pertenece a la familia olfativa oriental floral: abre con pimienta, jengibre y cardamomo, evoluciona hacia gardenia, coco y peonía y se asienta en un fondo de ámbar, almizcle y sándalo. Ideal para noches, eventos y regalo. Presentación: Parfum 3 oz (90 ml). Un perfume que te hace sentir segura, elegante y deseada. Llévatelo hoy y deja una estela que nadie olvida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 0,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "dolce-gabbana-intenso-m-edp-sp-6-7oz-li-free",
+      slug: "dolce-gabbana-intenso-m-edp-sp-6-7oz-li-free",
+      name: "DOLCE&GABBANA INTENSO(M)EDP SP 6.7oz(LI FREE)",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "hombre",
+      cost: 2024,
+      price: 3338,
+      images: ["/products/dolce-gabbana-intenso-m-edp-sp-6-7oz-li-free.webp"],
+      description: "DOLCE & GABBANA D&G POUR HOMME INTENSO | Para él – Intensidad italiana en formato XL. Seductor, cálido y masculino, Intenso es una versión más profunda del clásico D&G. Aromas mediterráneos con carácter amaderado y un toque dulce y especiado. En presentación de 6.7 oz, es una compra de lujo que rinde meses. Pertenece a la familia olfativa amaderada aromática especiada: abre con albahaca y bergamota, evoluciona hacia especias, lavanda y notas aromáticas y se asienta en un fondo de maderas, ámbar y toques dulces. Ideal para noches, eventos y uso diario con elegancia. Presentación: Eau de Parfum 6.7 oz (200 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "diamond-emerald-w-edt-sp-1-7oz-li-free",
+      slug: "diamond-emerald-w-edt-sp-1-7oz-li-free",
+      name: "DIAMOND & EMERALD(W)EDT SP 1.7oz(LI FREE)",
+      brand: "Elizabeth Taylor",
+      type: "designer",
+      gender: "mujer",
+      cost: 347,
+      price: 710,
+      images: ["/products/diamond-emerald-w-edt-sp-1-7oz-li-free.webp"],
+      description: "ELIZABETH TAYLOR DIAMONDS & EMERALDS | Para ella – Un toque de glamour clásico. Una fragancia femenina inspirada en el glamour de las joyas. Delicada y elegante, con un corazón floral y fondo suave. En presentación de 1.7 oz, ideal para llevar en el bolso y tener siempre a la mano. Pertenece a la familia olfativa floral frutal: abre con frutas y notas verdes, evoluciona hacia flores blancas y rosa y se asienta en un fondo de almizcle y maderas suaves. Ideal para uso diario y regalo. Presentación: Eau de Toilette 1.7 oz (50 ml). Regálate, o regala, un detalle que enamora. Añádelo a tu pedido ahora y empieza a recibir cumplidos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "curve-crush-m-edc-sp-2-5oz-li-free",
+      slug: "curve-crush-m-edc-sp-2-5oz-li-free",
+      name: "CURVE CRUSH(M)EDC SP 2.5oz(LI FREE)",
+      brand: "Curve",
+      type: "designer",
+      gender: "hombre",
+      cost: 541,
+      price: 1027,
+      images: ["/products/curve-crush-m-edc-sp-2-5oz-li-free.webp"],
+      description: "CURVE CRUSH (HOMBRE) | Para él – Juvenil, fresco y lleno de energía. Curve Crush para hombre es un aroma moderno y desenfadado, ideal para jóvenes y para quienes quieren sentirse frescos todo el día. Su concentración en Eau de Cologne lo hace ligero, perfecto para el clima cálido. Pertenece a la familia olfativa cítrica aromática: abre con cítricos y menta, evoluciona hacia notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para uso diario, deporte y clima cálido. Presentación: Eau de Cologne 2.5 oz (75 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 148,
+      inStock: true,
+      category: "Eau de Cologne",
+      tags: []
+    },
+  {
+      id: "cuba-authentic-flame-m-edt-sp-3-3oz-li-free",
+      slug: "cuba-authentic-flame-m-edt-sp-3-3oz-li-free",
+      name: "CUBA AUTHENTIC FLAME(M)EDT SP 3.3oz(LI FREE)",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 303,
+      price: 621,
+      images: ["/products/cuba-authentic-flame-m-edt-sp-3-3oz-li-free.webp"],
+      description: "CUBA PARIS CUBA AUTHENTIC FLAME | Para él – Calidez y fuego para destacar. Con un carácter cálido y vibrante, Cuba Authentic Flame enciende cualquier ocasión. Especias, frescura y maderas se combinan en una fragancia con presencia, perfecta para quien quiere un perfume con actitud sin gastar de más. Pertenece a la familia olfativa oriental especiada fresca: abre con cítricos y especias, evoluciona hacia notas aromáticas y se asienta en un fondo de ámbar y maderas. Ideal para salidas, fiestas y uso diario. Presentación: Eau de Toilette 3.3 oz (100 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 89,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-authentic-dark-m-edt-sp-3-3oz-li-free",
+      slug: "cuba-authentic-dark-m-edt-sp-3-3oz-li-free",
+      name: "CUBA AUTHENTIC DARK(M)EDT SP 3.3oz(LI FREE)",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 308,
+      price: 632,
+      images: ["/products/cuba-authentic-dark-m-edt-sp-3-3oz-li-free.webp"],
+      description: "CUBA PARIS CUBA AUTHENTIC DARK | Para él – Misterio y elegancia nocturna. Cuba Authentic Dark es la opción para el hombre que prefiere un aroma más oscuro y seductor. Notas aromáticas y especiadas que se asientan en un fondo amaderado profundo. Gran duración a un precio muy competitivo. Pertenece a la familia olfativa aromática amaderada oscura: abre con notas aromáticas y especias, evoluciona hacia lavanda y especias y se asienta en un fondo de maderas oscuras y ámbar. Ideal para noches, salidas y uso diario con estilo. Presentación: Eau de Toilette 3.3 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejor carta de presentación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 89,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-authentic-citrus-m-edt-sp-3-3oz-li-free",
+      slug: "cuba-authentic-citrus-m-edt-sp-3-3oz-li-free",
+      name: "CUBA AUTHENTIC CITRUS(M)EDT SP 3.3oz(LI FREE)",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 303,
+      price: 621,
+      images: ["/products/cuba-authentic-citrus-m-edt-sp-3-3oz-li-free.webp"],
+      description: "CUBA PARIS CUBA AUTHENTIC CITRUS | Para él – Una explosión cítrica y refrescante. Alegre, luminoso y energético, Cuba Authentic Citrus es puro verano en un frasco. Cítricos chispeantes con un fondo suave y limpio, ideal para los días calurosos. Un aroma fácil de usar y súper accesible. Pertenece a la familia olfativa cítrica fresca: abre con limón, mandarina y bergamota, evoluciona hacia notas verdes y aromáticas y se asienta en un fondo de maderas blancas y almizcle. Ideal para clima cálido, uso diario y deporte. Presentación: Eau de Toilette 3.3 oz (100 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 89,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cristiano-ronaldo-cr7-origins-m-edt-3-4oz-li-free",
+      slug: "cristiano-ronaldo-cr7-origins-m-edt-3-4oz-li-free",
+      name: "CRISTIANO RONALDO CR7 ORIGINS(M)EDT 3.4oz(LI FREE)",
+      brand: "CR7",
+      type: "designer",
+      gender: "hombre",
+      cost: 931,
+      price: 1656,
+      images: ["/products/cristiano-ronaldo-cr7-origins-m-edt-3-4oz-li-free.webp"],
+      description: "CRISTIANO RONALDO CR7 ORIGINS | Para él – Frescura con carácter ganador. CR7 Origins mezcla frescura cítrica con un fondo amaderado limpio y masculino. Un aroma juvenil, versátil y de excelente precio, ideal para quien busca calidad sin gastar de más. Pertenece a la familia olfativa aromática amaderada: abre con cítricos y menta, evoluciona hacia notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para uso diario, universidad, oficina y deporte. Presentación: Eau de Toilette 3.4 oz (100 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cristiano-ronaldo-cr7-fearless-m-edt-sp-3-4oz-li-free",
+      slug: "cristiano-ronaldo-cr7-fearless-m-edt-sp-3-4oz-li-free",
+      name: "CRISTIANO RONALDO CR7 FEARLESS(M)EDT SP 3.4oz(LI FREE)",
+      brand: "CR7",
+      type: "designer",
+      gender: "hombre",
+      cost: 931,
+      price: 1656,
+      images: ["/products/cristiano-ronaldo-cr7-fearless-m-edt-sp-3-4oz-li-free.webp"],
+      description: "CRISTIANO RONALDO CR7 FEARLESS | Para él – Espíritu competitivo hecho aroma. Inspirado en la determinación de un campeón, CR7 Fearless ofrece una fragancia fresca, enérgica y moderna. Perfecto para el hombre activo que quiere oler bien todo el día, con una fijación sorprendente para su precio. Pertenece a la familia olfativa aromática amaderada fresca: abre con cítricos y notas verdes, evoluciona hacia especias suaves y notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para deporte, uso diario y salidas casuales. Presentación: Eau de Toilette 3.4 oz (100 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limit",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "armaf-beau-star-w-edp-sp-3-4oz",
+      slug: "armaf-beau-star-w-edp-sp-3-4oz",
+      name: "ARMAF BEAU STAR(W)EDP SP 3.4oz",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 843,
+      price: 1348,
+      images: ["/products/armaf-beau-star-w-edp-sp-3-4oz.webp"],
+      description: "ARMAF BEAU STAR | Para ella – Dulce, luminosa y llena de encanto. Beau Star es la elección para la mujer que quiere un perfume divertido, coqueto y con presencia. Su mezcla de frutas, flores y un fondo cremoso la hace fácil de amar y súper versátil. Calidad Armaf con una relación precio-valor imbatible. Pertenece a la familia olfativa floral frutal gourmand: abre con frutas dulces y notas frescas, evoluciona hacia flores blancas y se asienta en un fondo de vainilla, almizcle y maderas suaves. Ideal para uso diario, salidas y regalos. Presentación: Eau de Parfum 3.4 oz (100 ml). Regálate, o regala, un detalle que enamora. Añádelo a tu pedido ahora y empieza a recibir cumplidos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "al-haramain-amber-oud-ultra-violet-w-edp-sp-4-0oz-li-free",
+      slug: "al-haramain-amber-oud-ultra-violet-w-edp-sp-4-0oz-li-free",
+      name: "AL HARAMAIN AMBER OUD ULTRA VIOLET(W)EDP SP 4.0oz(LI FREE)",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1160,
+      price: 1798,
+      images: ["/products/al-haramain-amber-oud-ultra-violet-w-edp-sp-4-0oz-li-free.webp"],
+      description: "AL HARAMAIN AMBER OUD ULTRA VIOLET | Para ella – Elegancia floral frutal con alma oriental. Pensada para la mujer moderna que ama el misterio, Ultra Violet mezcla frutas jugosas y flores delicadas con un fondo cálido de ámbar y oud suave. Un perfume sofisticado, de gran duración, que construye una estela femenina y elegante. Presentación de 4.0 oz para disfrutarlo a lo grande. Pertenece a la familia olfativa floral frutal ambarada: abre con frutas moradas y notas frescas, evoluciona hacia flores y notas dulces y se asienta en un fondo de ámbar, almizcle y oud suave. Ideal para citas, eventos, trabajo y salidas especiales. Presentación: Eau de Parfum 4 oz (120 ml). Calidad original, aroma enc",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 0,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "360-very-blue-m-h-b-4-pc-set-3-4oz-edt-sp-6-0oz-body-spray-3-0oz-shower-gel-7-5m",
+      slug: "360-very-blue-m-h-b-4-pc-set-3-4oz-edt-sp-6-0oz-body-spray-3-0oz-shower-gel-7-5m",
+      name: "360 VERY BLUE(M)(H/B)4 PC SET(3.4oz edt sp,6.0oz Body Spray,3.0oz Shower Gel,7.5ml edt sp)",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 981,
+      price: 1745,
+      images: ["/products/360-very-blue-m-h-b-4-pc-set-3-4oz-edt-sp-6-0oz-body-spray-3-0oz-shower-gel-7-5m.webp"],
+      description: "PERRY ELLIS 360 VERY BLUE | Para él – Frescura azul y deportiva en un set de 4 piezas. Inspirado en el mar y el cielo despejado, 360 Very Blue transmite libertad y energía. Un aroma acuático, ligero y refrescante, ideal para el calor. Este set de 4 piezas incluye perfume, body spray, gel de ducha y miniatura: el regalo completo que cualquier hombre agradecerá. Pertenece a la familia olfativa acuática cítrica: abre con cítricos y notas marinas, evoluciona hacia lavanda y notas aromáticas y se asienta en un fondo de almizcle limpio y maderas claras. Ideal para deporte, playa, uso diario y regalos. Presentación: Set de 4 piezas: EDT 3.4 oz (100 ml) + Body spray 6.0 oz + Gel de ducha 3.0 oz + ED",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 5,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "360-red-m-edt-sp-6-8oz-li-free",
+      slug: "360-red-m-edt-sp-6-8oz-li-free",
+      name: "360 RED(M)EDT SP 6.8oz(LI FREE)",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 1257,
+      price: 2155,
+      images: ["/products/360-red-m-edt-sp-6-8oz-li-free.webp"],
+      description: "PERRY ELLIS 360 RED | Para él – Un aroma con fuego que no pasa desapercibido. Atrevido y seductor, 360 Red está hecho para el hombre que quiere destacar. Su combinación de frescura cítrica con un fondo cálido y especiado deja una estela que se recuerda. En presentación de 6.8 oz, es una compra inteligente: más producto, más duración y el mismo estilo que enamora. Pertenece a la familia olfativa oriental especiada fresca: abre con cítricos, mandarina y especias, evoluciona hacia notas aromáticas y madera y se asienta en un fondo de ámbar, almizcle y vainilla. Ideal para fiestas, citas, noches de salida y uso diario con estilo. Presentación: Eau de Toilette 6.8 oz (200 ml). Calidad original, a",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 237,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "360-m-edt-sp-6-7oz-li-free",
+      slug: "360-m-edt-sp-6-7oz-li-free",
+      name: "360 (M) EDT SP 6.7oz(LI FREE)",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 1160,
+      price: 1989,
+      images: ["/products/360-m-edt-sp-6-7oz-li-free.webp"],
+      description: "PERRY ELLIS 360 (HOMBRE) | Para él – Frescura limpia que te acompaña todo el día. Un clásico de Perry Ellis que sigue conquistando por una razón: es fresco, limpio y fácil de usar. 360 es el aroma ideal para el hombre que quiere oler bien sin complicaciones, desde la oficina hasta el fin de semana. Una presentación grande que rinde por meses. Pertenece a la familia olfativa cítrica aromática: abre con cítricos, mandarina y notas verdes, evoluciona hacia lavanda, especias suaves y notas aromáticas y se asienta en un fondo de maderas, almizcle y ámbar suave. Ideal para uso diario, oficina, deporte y clima cálido. Presentación: Eau de Toilette 6.7 oz (200 ml). Regálate, o regala, un perfume que",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "212-vip-black-m-h-b-2pc-set-3-4oz-edp-sp-3-4oz-bath-shower-gel-s-r",
+      slug: "212-vip-black-m-h-b-2pc-set-3-4oz-edp-sp-3-4oz-bath-shower-gel-s-r",
+      name: "212 VIP BLACK(M)(H/B)2PC SET(3.4oz edp sp,3.4oz Bath & Shower Gel)(S/R)",
+      brand: "Carolina Herrera",
+      type: "designer",
+      gender: "hombre",
+      cost: 2576,
+      price: 4250,
+      images: ["/products/212-vip-black-m-h-b-2pc-set-3-4oz-edp-sp-3-4oz-bath-shower-gel-s-r.webp"],
+      description: "CAROLINA HERRERA 212 VIP BLACK | Para él – El poder de la noche en un set irresistible. Si buscas que cada entrada sea inolvidable, 212 VIP Black es tu respuesta. Inspirado en la vida nocturna de Nueva York, combina una apertura fría y electrizante con un fondo oscuro, cremoso y adictivo. Un aroma que seduce desde el primer segundo y se queda en la memoria de todos. Pertenece a la familia olfativa aromática, especiada y vainillada: abre con absenta, anís y jengibre, evoluciona hacia lavanda y notas aromáticas y se asienta en un fondo de vainilla negra, almizcle y maderas oscuras. Ideal para noches de fiesta, citas, eventos especiales y regalos para hombres con estilo. Presentación: Set de 2",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "emporio-armani-stronger-with-you-m-edt-sp-3-4oz-li-free",
+      slug: "emporio-armani-stronger-with-you-m-edt-sp-3-4oz-li-free",
+      name: "EMPORIO ARMANI STRONGER WITH YOU(M)EDT SP 3.4oz(LI FREE)",
+      brand: "Emporio Armani",
+      type: "designer",
+      gender: "hombre",
+      cost: 2398,
+      price: 3955,
+      images: ["/products/emporio-armani-stronger-with-you-m-edt-sp-3-4oz-li-free.webp"],
+      description: "EMPORIO ARMANI STRONGER WITH YOU | Para él – Magnético, cálido y adictivo. Stronger With You es uno de los aromas masculinos más queridos de los últimos años: un abrazo cálido y envolvente con especias, castaña y vainilla. Cautiva a quien lo huele y deja una estela dulce y elegante. Fijación excelente. Pertenece a la familia olfativa oriental especiada vainillada: abre con cardamomo, pimienta rosa y violeta, evoluciona hacia salvia y notas especiadas y se asienta en un fondo de castaña, vainilla y ámbar. Ideal para citas, noches, eventos y regalo. Presentación: Eau de Toilette 3.4 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejo",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "rasasi-hawas-m-edp-sp-3-38oz-ltd-qty",
+      slug: "rasasi-hawas-m-edp-sp-3-38oz-ltd-qty",
+      name: "RASASI HAWAS(M)EDP SP 3.38oz(Ltd Qty)",
+      brand: "Rasasi",
+      type: "arabic",
+      gender: "hombre",
+      cost: 967,
+      price: 1547,
+      images: ["/products/rasasi-hawas-m-edp-sp-3-38oz-ltd-qty.webp"],
+      description: "RASASI HAWAS | Para él – El árabe de moda en formato XL. Hawas es uno de los perfumes árabes más populares del momento: fresco, frutal y acuático con fondo cálido de ámbar. Su proyección es enorme y la duración notable. Cantidad limitada. Pertenece a la familia olfativa acuática frutal ambarada: abre con manzana, cítricos y notas marinas, evoluciona hacia notas aromáticas y se asienta en un fondo de ámbar, vainilla y maderas. Ideal para uso diario, fiestas y salidas. Presentación: Eau de Parfum 3.38 oz (100 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1124,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "versace-eros-m-parfum-sp-3-4oz-new-pack-ltd-qty",
+      slug: "versace-eros-m-parfum-sp-3-4oz-new-pack-ltd-qty",
+      name: "VERSACE EROS(M)PARFUM SP 3.4oz(NEW PACK)(Ltd Qty)",
+      brand: "Versace",
+      type: "designer",
+      gender: "hombre",
+      cost: 2677,
+      price: 4416,
+      images: ["/products/versace-eros-m-parfum-sp-3-4oz-new-pack-ltd-qty.webp"],
+      description: "VERSACE EROS | Para él – Pasión, poder y seducción. Eros Parfum es la versión más intensa y refinada del icono de Versace: menta fresca, especias y fondo de vainilla, tonka y maderas. Seductor, poderoso y de larga duración. Edición limitada: no dejes pasar la oportunidad. Pertenece a la familia olfativa amaderada aromática vainillada: abre con menta, limón y especias, evoluciona hacia notas especiadas y aromáticas y se asienta en un fondo de vainilla, tonka y maderas. Ideal para noches, citas y eventos. Presentación: Parfum 3.4 oz (100 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "rasasi-hawas-fire-m-edp-sp-3-38oz-new",
+      slug: "rasasi-hawas-fire-m-edp-sp-3-38oz-new",
+      name: "RASASI HAWAS FIRE(M)EDP SP 3.38oz(NEW)",
+      brand: "Rasasi",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1281,
+      price: 1986,
+      images: ["/products/rasasi-hawas-fire-m-edp-sp-3-38oz-new.webp"],
+      description: "RASASI HAWAS FIRE | Para él – Fuego, calidez y estilo árabe. Hawas Fire entrega un aroma cálido, picante y envolvente. Especias, frutas y un fondo ambarado con maderas que seducen. Un perfume de gran presencia, ideal para destacar en noches y eventos. Pertenece a la familia olfativa oriental especiada frutal: abre con frutas y especias, evoluciona hacia notas aromáticas y especias y se asienta en un fondo de ámbar, maderas y almizcle. Ideal para noches, eventos y salidas. Presentación: Eau de Parfum 3.38 oz (100 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1124,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "curve-wave-w-edt-sp-3-4oz-li-free",
+      slug: "curve-wave-w-edt-sp-3-4oz-li-free",
+      name: "CURVE WAVE(W)EDT SP 3.4oz(LI FREE)",
+      brand: "Curve",
+      type: "designer",
+      gender: "mujer",
+      cost: 503,
+      price: 955,
+      images: ["/products/curve-wave-w-edt-sp-3-4oz-li-free.webp", "/products/curve-wave-w-edt-sp-3-4oz-li-free-2.webp"],
+      description: "CURVE WAVE | Para ella – Frescura acuática y floral. Curve Wave es una brisa fresca en forma de perfume. Notas acuáticas y frutales con flores suaves y un fondo limpio de almizcle. Ligera, alegre y perfecta para el calor, la playa o cualquier día en que quieras sentirte renovada. Pertenece a la familia olfativa floral acuática frutal: abre con frutas y notas marinas, evoluciona hacia flores blancas y se asienta en un fondo de almizcle y maderas suaves. Ideal para uso diario, playa y clima cálido. Presentación: Eau de Toilette 3.4 oz (100 ml). Calidad original, aroma encantador y duración que se nota. Aprovecha: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "paris-hilton-m-edt-sp-3-4oz-li-free",
+      slug: "paris-hilton-m-edt-sp-3-4oz-li-free",
+      name: "PARIS HILTON(M)EDT SP 3.4oz(LI FREE)",
+      brand: "Paris Hilton",
+      type: "designer",
+      gender: "hombre",
+      cost: 855,
+      price: 1522,
+      images: ["/products/paris-hilton-m-edt-sp-3-4oz-li-free.webp"],
+      description: "PARIS HILTON PARIS HILTON (HOMBRE) | Para él – Fresco, moderno y fácil de usar. Una fragancia masculina limpia, fresca y moderna. Cítricos y notas aromáticas con un fondo suave y amaderado que la hacen perfecta para el uso diario y para quienes buscan oler bien sin complicaciones. Pertenece a la familia olfativa aromática cítrica amaderada: abre con cítricos, evoluciona hacia notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para uso diario, estudio y oficina. Presentación: Eau de Toilette 3.4 oz (100 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "flavia-noir-cuir-m-edp-sp-3-0oz-sterling-parfums",
+      slug: "flavia-noir-cuir-m-edp-sp-3-0oz-sterling-parfums",
+      name: "FLAVIA NOIR CUIR(M)EDP SP 3.0oz(Sterling Parfums)",
+      brand: "Flavia",
+      type: "arabic",
+      gender: "hombre",
+      cost: 676,
+      price: 1284,
+      images: ["/products/flavia-noir-cuir-m-edp-sp-3-0oz-sterling-parfums.webp"],
+      description: "FLAVIA NOIR CUIR | Para él – Cuero, oud y carácter oriental. Un perfume para hombres que buscan diferenciarse. Notas de cuero y maderas profundas con matices orientales, de gran presencia y perfil sofisticado. Una opción exclusiva a precio accesible. Pertenece a la familia olfativa cuero amaderada oriental: abre con especias y notas frescas, evoluciona hacia cuero y notas aromáticas y se asienta en un fondo de oud, maderas y ámbar. Ideal para noches, eventos y uso diario con carácter. Presentación: Eau de Parfum 3 oz (90 ml). Regálate, o regala, un perfume que se recuerda. Añádelo a tu pedido ahora y sé el primero en estrenarlo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 0,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "jean-paul-gaultier-le-beau-m-edt-sp-4-2oz",
+      slug: "jean-paul-gaultier-le-beau-m-edt-sp-4-2oz",
+      name: "JEAN PAUL GAULTIER Le BEAU(M.)EDT SP 4.2oz",
+      brand: "Jean Paul Gaultier",
+      type: "designer",
+      gender: "hombre",
+      cost: 2610,
+      price: 4305,
+      images: ["/products/jean-paul-gaultier-le-beau-m-edt-sp-4-2oz.webp"],
+      description: "JEAN PAUL GAULTIER LE BEAU | Para él – Fresco, goloso y adictivo. Le Beau es la sensación de Jean Paul Gaultier: coco cremoso, bergamota fresca y fondo de tonka y vainilla. Una mezcla tropical, sensual y muy diferente que lo ha hecho viral. Imposible olerlo y no querer tenerlo. Pertenece a la familia olfativa amaderada tropical gourmand: abre con bergamota y menta, evoluciona hacia coco y se asienta en un fondo de tonka, vainilla y maderas. Ideal para verano, citas, salidas y uso diario. Presentación: Eau de Toilette 4.2 oz (125 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejor carta de presentación.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 59,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "dolce-gabbana-the-one-m-edp-sp-5-0oz-li-free",
+      slug: "dolce-gabbana-the-one-m-edp-sp-5-0oz-li-free",
+      name: "DOLCE&GABBANA THE ONE(M)EDP SP 5.0oz(LI FREE)",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "hombre",
+      cost: 2086,
+      price: 3441,
+      images: ["/products/dolce-gabbana-the-one-m-edp-sp-5-0oz-li-free.webp"],
+      description: "DOLCE & GABBANA THE ONE (HOMBRE) | Para él – Elegancia italiana cálida y magnética. The One es sinónimo de sofisticación masculina: un aroma cálido y refinado que combina frescura inicial con un corazón especiado y un fondo ambarado. Seductor sin exagerar, perfecto para una cena, una cita o una reunión importante. Pertenece a la familia olfativa oriental amaderada: abre con bergamota, jengibre y cardamomo, evoluciona hacia tabaco y notas especiadas y se asienta en un fondo de ámbar, vainilla y maderas. Ideal para cenas, citas, eventos y trabajo. Presentación: Eau de Parfum 5 oz (150 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma tu mejor cart",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 0,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "paco-rabanne-fame-w-df-2pc-set-2-7oz-edp-sp-20-ml-travel-sp",
+      slug: "paco-rabanne-fame-w-df-2pc-set-2-7oz-edp-sp-20-ml-travel-sp",
+      name: "PACO RABANNE FAME(W)(DF)2PC SET(2.7oz edp sp,20 ml Travel sp)",
+      brand: "Paco Rabanne",
+      type: "designer",
+      gender: "mujer",
+      cost: 2587,
+      price: 4269,
+      images: ["/products/paco-rabanne-fame-w-df-2pc-set-2-7oz-edp-sp-20-ml-travel-sp.webp"],
+      description: "PACO RABANNE FAME | Para ella – Brillo de estrella y dulzura sofisticada. Fame es una fragancia de lujo con alma de celebridad: mango jugoso, jazmín y un fondo cremoso con vainilla y maderas. Dulce y elegante, perfecta para mujeres que quieren brillar. Este set incluye tamaño de viaje. Pertenece a la familia olfativa floral frutal gourmand: abre con mango y frutas, evoluciona hacia jazmín y flores blancas y se asienta en un fondo de vainilla, sándalo y almizcle. Ideal para eventos, citas y regalos especiales. Presentación: Set de 2 piezas: Eau de Parfum 2.7 oz (80 ml) + Spray de viaje 20 ml. Calidad original, aroma encantador y duración que se nota. Aprovecha: las existencias son limitadas y",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 20,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "dolce-gabbana-light-blue-summer-vibes-w-edt-sp-3-3oz-li-free",
+      slug: "dolce-gabbana-light-blue-summer-vibes-w-edt-sp-3-3oz-li-free",
+      name: "DOLCE&GABBANA LIGHT BLUE SUMMER VIBES(W)EDT SP 3.3oz(LI FREE)",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "mujer",
+      cost: 1512,
+      price: 2592,
+      images: ["/products/dolce-gabbana-light-blue-summer-vibes-w-edt-sp-3-3oz-li-free.webp"],
+      description: "DOLCE & GABBANA LIGHT BLUE SUMMER VIBES | Para ella – Verano italiano en un frasco. Fresca, luminosa y mediterránea, esta edición de Light Blue trae la energía del verano. Cítricos jugosos y flores suaves con un fondo limpio y ligero. Perfecta para el calor, la playa o cuando quieres sentirte renovada. Pertenece a la familia olfativa cítrica floral fresca: abre con limón siciliano y manzana, evoluciona hacia jazmín y flores blancas y se asienta en un fondo de cedro y almizcle. Ideal para verano, playa, uso diario y oficina. Presentación: Eau de Toilette 3.3 oz (100 ml). Calidad original, aroma encantador y duración que se nota. Aprovecha: las existencias son limitadas y los favoritos vuelan.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 89,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "azzaro-chrome-m-edt-sp-3-38oz-new-pack-li-free",
+      slug: "azzaro-chrome-m-edt-sp-3-38oz-new-pack-li-free",
+      name: "AZZARO CHROME(M)EDT SP 3.38oz(NEW PACK)(LI FREE)",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 1221,
+      price: 2093,
+      images: ["/products/azzaro-chrome-m-edt-sp-3-38oz-new-pack-li-free.webp"],
+      description: "AZZARO CHROME | Para él – Un ícono de frescura masculina. Azzaro Chrome es sinónimo de frescura limpia desde hace décadas. Su mezcla de cítricos, notas acuáticas y fondo de musgo de roble lo hace elegante, deportivo y atemporal. Un aroma seguro para cualquier ocasión que nunca falla como regalo. Pertenece a la familia olfativa acuática aromática cítrica: abre con cítricos, limón y bergamota, evoluciona hacia notas acuáticas, cilantro y jazmín y se asienta en un fondo de musgo de roble, almizcle y maderas. Ideal para uso diario, oficina, deporte y regalo. Presentación: Eau de Toilette 3.38 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu aroma",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1124,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-authentic-bold-m-edt-sp-3-3oz-li-free",
+      slug: "cuba-authentic-bold-m-edt-sp-3-3oz-li-free",
+      name: "CUBA AUTHENTIC BOLD(M)EDT SP 3.3oz(LI FREE)",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 303,
+      price: 621,
+      images: ["/products/cuba-authentic-bold-m-edt-sp-3-3oz-li-free.webp"],
+      description: "CUBA PARIS CUBA AUTHENTIC BOLD | Para él – Intensidad masculina al mejor precio. Cuba Authentic Bold es una fragancia audaz y llena de personalidad para el hombre que no teme destacar. Una mezcla fresca y especiada con fondo amaderado, de buena fijación y un precio que lo hace irresistible para uso diario o para regalar. Pertenece a la familia olfativa aromática amaderada especiada: abre con cítricos y notas frescas, evoluciona hacia especias y notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para uso diario, salidas casuales y regalos. Presentación: Eau de Toilette 3.3 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pídelo hoy y haz de tu ar",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 89,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "curve-black-m-edc-sp-4-2oz-li-free",
+      slug: "curve-black-m-edc-sp-4-2oz-li-free",
+      name: "CURVE BLACK(M)EDC SP 4.2oz(LI FREE)",
+      brand: "Curve",
+      type: "designer",
+      gender: "hombre",
+      cost: 740,
+      price: 1406,
+      images: ["/products/curve-black-m-edc-sp-4-2oz-li-free.webp", "/products/curve-black-m-edc-sp-4-2oz-li-free-2.webp"],
+      description: "CURVE BLACK | Para él – Un clásico masculino de siempre. Curve Black es una fragancia que ha acompañado a generaciones de hombres. Fresca, limpia y ligeramente especiada, con una elegancia sencilla que funciona en cualquier momento. En presentación de 4.2 oz: un clásico a precio de oportunidad. Pertenece a la familia olfativa aromática fresca amaderada: abre con cítricos y lavanda, evoluciona hacia especias y notas aromáticas y se asienta en un fondo de maderas y almizcle. Ideal para uso diario, oficina y regalo. Presentación: Eau de Cologne 4.2 oz (125 ml). Calidad original, aroma inconfundible y duración que se nota. Aprovecha la oportunidad: las existencias son limitadas y los favoritos v",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 59,
+      inStock: true,
+      category: "Eau de Cologne",
+      tags: []
+    },
+  {
+      id: "al-haramain-amber-oud-bleu-m-edp-sp-2-0oz-li-free",
+      slug: "al-haramain-amber-oud-bleu-m-edp-sp-2-0oz-li-free",
+      name: "AL HARAMAIN AMBER OUD BLEU(M)EDP SP 2.0oz(LI FREE)",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1281,
+      price: 1986,
+      images: ["/products/al-haramain-amber-oud-bleu-m-edp-sp-2-0oz-li-free.webp"],
+      description: "AL HARAMAIN AMBER OUD BLEU EDITION | Para él – Nicho árabe moderno con frescura y profundidad. Al Haramain, referente de la perfumería árabe, presenta una fragancia que mezcla frescura frutal con el carácter inconfundible del oud y el ámbar. Una estela potente y elegante que dura horas y genera cumplidos. Calidad de nicho a un precio al que no vas a poder decir que no. Pertenece a la familia olfativa ámbar amaderada frutal: abre con frutas frescas y notas cítricas, evoluciona hacia notas aromáticas y florales y se asienta en un fondo de ámbar, oud y maderas. Ideal para uso diario, eventos, oficina y noches especiales. Presentación: Eau de Parfum 2 oz (60 ml). Una fragancia que habla por ti a",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 0,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "azzaro-the-most-wanted-m-parfum-sp-3-38oz-li-free",
+      slug: "azzaro-the-most-wanted-m-parfum-sp-3-38oz-li-free",
+      name: "AZZARO THE MOST WANTED(M)PARFUM SP 3.38oz(LI FREE)",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 2275,
+      price: 3753,
+      images: ["/products/azzaro-the-most-wanted-m-parfum-sp-3-38oz-li-free.webp"],
+      description: "AZZARO THE MOST WANTED | Para él – El perfume más deseado del momento. Cálido, adictivo y seductor, The Most Wanted en concentración Parfum es de esos aromas que hacen voltear a todos. Una explosión de jengibre y especias que se funde con un fondo goloso de toffee y ámbar. Duración excepcional y gran proyección: una apuesta segura que se vende rápido. Pertenece a la familia olfativa oriental especiada gourmand: abre con jengibre y cardamomo, evoluciona hacia especias cálidas y se asienta en un fondo de toffee, ámbar, vainilla y maderas. Ideal para noches, citas, eventos y regalos para él. Presentación: Parfum 3.38 oz (100 ml). Una fragancia que habla por ti antes de que digas una palabra. Pí",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1124,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "carolina-herrera-very-good-girl-w-edp-sp-2-7oz-li-free-limited-qty",
+      slug: "carolina-herrera-very-good-girl-w-edp-sp-2-7oz-li-free-limited-qty",
+      name: "CAROLINA HERRERA VERY GOOD GIRL(W)EDP SP 2.7oz(LI FREE)(Limited qty)",
+      brand: "Carolina Herrera",
+      type: "designer",
+      gender: "mujer",
+      cost: 3408,
+      price: 5179,
+      images: ["/products/carolina-herrera-very-good-girl-w-edp-sp-2-7oz-li-free-limited-qty.webp"],
+      description: "CAROLINA HERRERA VERY GOOD GIRL | Para ella – Atrevida, dulce y sofisticada. Very Good Girl es para la mujer que se atreve a todo: audaz, glamorosa y seductora. Su equilibrio entre frutas, flores y un fondo cremoso la convierte en un perfume que no se olvida. Edición limitada: cuando se acabe, se acabó. Pertenece a la familia olfativa floral frutal gourmand: abre con frutas rojas y cítricos, evoluciona hacia flores blancas y jazmín y se asienta en un fondo de vainilla, tonka y maderas. Ideal para citas, eventos, noches y regalos para ella. Presentación: Eau de Parfum 2.7 oz (80 ml). Un perfume que te hace sentir segura, elegante y deseada. Llévatelo hoy y deja una estela que nadie olvida.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "armaf-odyssey-mandarin-sky-m-edp-sp-2-02oz",
+      slug: "armaf-odyssey-mandarin-sky-m-edp-sp-2-02oz",
+      name: "ARMAF ODYSSEY MANDARIN SKY(M)EDP SP 2.02oz",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 702,
+      price: 1332,
+      images: ["/products/armaf-odyssey-mandarin-sky-m-edp-sp-2-02oz.webp", "/products/armaf-odyssey-mandarin-sky-m-edp-sp-2-02oz-2.webp"],
+      description: "ARMAF ODYSSEY MANDARIN SKY | Para él – El aroma que se vende solo. Mandarina jugosa y vibrante sobre un fondo cálido de ámbar y maderas: Odyssey Mandarin Sky es un éxito rotundo por su aroma cítrico-dulce, fresco y envolvente. Una fragancia moderna que gusta, dura y recibe cumplidos. Disponible en varias presentaciones para que elijas la que mejor se adapte a ti. Pertenece a la familia olfativa cítrica ambarada amaderada: abre con mandarina y cítricos, evoluciona hacia notas aromáticas y especias suaves y se asienta en un fondo de ámbar, maderas y vainilla. Ideal para uso diario, oficina, citas y salidas. Presentación: Eau de Parfum 2.02 oz (60 ml). Una fragancia que habla por ti antes de qu",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 59,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "armaf-odyssey-mandarin-sky-m-edp-sp-6-7oz",
+      slug: "armaf-odyssey-mandarin-sky-m-edp-sp-6-7oz",
+      name: "ARMAF ODYSSEY MANDARIN SKY(M)EDP SP 6.7oz",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1378,
+      price: 2136,
+      images: ["/products/armaf-odyssey-mandarin-sky-m-edp-sp-6-7oz.webp"],
+      description: "ARMAF ODYSSEY MANDARIN SKY | Para él – El aroma que se vende solo. Mandarina jugosa y vibrante sobre un fondo cálido de ámbar y maderas: Odyssey Mandarin Sky es un éxito rotundo por su aroma cítrico-dulce, fresco y envolvente. Una fragancia moderna que gusta, dura y recibe cumplidos. Disponible en varias presentaciones para que elijas la que mejor se adapte a ti. Pertenece a la familia olfativa cítrica ambarada amaderada: abre con mandarina y cítricos, evoluciona hacia notas aromáticas y especias suaves y se asienta en un fondo de ámbar, maderas y vainilla. Ideal para uso diario, oficina, citas y salidas. Presentación: Eau de Parfum 6.7 oz (200 ml). Regálate, o regala, un perfume que se recu",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "azzaro-m-edt-sp-1-7oz-refillable-li",
+      slug: "azzaro-m-edt-sp-1-7oz-refillable-li",
+      name: "AZZARO(M)EDT SP 1.7oz Refillable(LI)",
+      brand: "Azzaro",
+      type: "designer",
+      gender: "hombre",
+      cost: 644,
+      price: 1225,
+      images: ["/products/azzaro-m-edt-sp-1-7oz-refillable-li.webp"],
+      description: "AZZARO POUR HOMME | Para él – Clásico atemporal en formato recargable. Un ícono de la perfumería francesa para hombres que aprecian lo clásico. Aromático, elegante y masculino, con una combinación de lavanda y vetiver que nunca pasa de moda. En formato recargable de 1.7 oz, práctico y accesible para llevar a todos lados. Pertenece a la familia olfativa fougère aromática: abre con anís, lavanda y cítricos, evoluciona hacia especias y notas aromáticas y se asienta en un fondo de vetiver, musgo de roble y ámbar. Ideal para uso diario, oficina y ocasiones formales. Presentación: Eau de Toilette 1.7 oz (50 ml) – formato recargable. Calidad original, aroma inconfundible y duración que se nota. Apr",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "360-red-m-li-free-3pc-set-3-4oz-edt-spray-3-0oz-shower-gel-7-5ml-edt-sp-mini",
+      slug: "360-red-m-li-free-3pc-set-3-4oz-edt-spray-3-0oz-shower-gel-7-5ml-edt-sp-mini",
+      name: "360 RED(M)(LI FREE)3PC SET(3.4oz edt spray, 3.0oz shower gel, 7.5ml edt sp mini)",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 956,
+      price: 1701,
+      images: ["/products/360-red-m-li-free-3pc-set-3-4oz-edt-spray-3-0oz-shower-gel-7-5ml-edt-sp-mini.webp"],
+      description: "PERRY ELLIS 360 RED | Para él – Energía, calidez y carácter en un set completo. 360 Red es la versión más vibrante y seductora de la línea: un aroma atrevido, cálido y con mucha personalidad. Este set de 3 piezas incluye todo lo que necesitas para llevar tu fragancia a cualquier lugar y mantenerte fresco de la cabeza a los pies. ¡Una oferta que vale oro como regalo! Pertenece a la familia olfativa oriental especiada fresca: abre con cítricos y especias, evoluciona hacia notas aromáticas y madera y se asienta en un fondo de ámbar, almizcle y vainilla. Ideal para salidas nocturnas, citas y regalos para hombres. Presentación: Set de 3 piezas: EDT 3.4 oz (100 ml) + Gel de ducha 3.0 oz + EDT mini",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 5,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "perry-ellis-360-purple-fw-edp-100ml",
+      slug: "perry-ellis-360-purple-fw-edp-100ml",
+      name: "PERRY ELLIS 360 PURPLE FW EDP 100ML",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "mujer",
+      cost: 980,
+      price: 1744,
+      images: ["/products/perry-ellis-360-purple-fw-edp-100ml.webp"],
+      description: "Sensual y misterioso, con un encanto que atrapa. Acordes frutales y florales envueltos en un fondo suave de almizcle y maderas crean una estela elegante y femenina. Es una fragancia cómoda de usar, con presencia y a un precio accesible, perfecta para quien busca un aroma distinto que combine con su estilo, ya sea para el día o para una salida especial.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "perry-ellis-360-red-fw-edp-spr-100ml",
+      slug: "perry-ellis-360-red-fw-edp-spr-100ml",
+      name: "PERRY ELLIS 360 RED FW EDP SPR 100ML",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "mujer",
+      cost: 980,
+      price: 1744,
+      images: ["/products/perry-ellis-360-red-fw-edp-spr-100ml.webp"],
+      description: "Pasión en una botella. Notas frutales y florales vibrantes se unen a un fondo cálido y sensual que enciende los sentidos. Femenino, atrevido y lleno de vida, es perfecto para la mujer que vive con intensidad y quiere que su aroma hable por ella. Una fragancia con gran carisma, ideal para salir de noche o para destacar en cualquier ocasión especial.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "paris-hilton-just-me-fw-edp-spr-100ml",
+      slug: "paris-hilton-just-me-fw-edp-spr-100ml",
+      name: "PARIS HILTON JUST ME FW EDP SPR 100ML",
+      brand: "Paris Hilton",
+      type: "designer",
+      gender: "mujer",
+      cost: 905,
+      price: 1611,
+      images: ["/products/paris-hilton-just-me-fw-edp-spr-100ml.webp"],
+      description: "Femenino, juvenil y encantador, como la chica que lo usa. Combina notas frutales brillantes que despiertan los sentidos, un corazón floral delicado y un fondo suave de almizcle que acaricia la piel. Es una fragancia alegre y dulce, perfecta para quien ama destacar con ternura y personalidad. Una gran opción para el uso diario, para salir con amigas o para regalar a alguien especial.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ralph-lauren-polo-sport-fresh-fm-edt-spr-125ml",
+      slug: "ralph-lauren-polo-sport-fresh-fm-edt-spr-125ml",
+      name: "RALPH LAUREN POLO SPORT FRESH FM EDT SPR 125ML",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 1202,
+      price: 2060,
+      images: ["/products/ralph-lauren-polo-sport-fresh-fm-edt-spr-125ml.webp"],
+      description: "Frescura vibrante que se siente como un día de verano frente al mar. Cítricos jugosos y toronja se mezclan con notas acuáticas, sobre un fondo limpio y amaderado que se mantiene suave y agradable. Ligero, juvenil y muy fácil de llevar, es perfecto para el clima cálido y para quien prefiere un aroma fresco sin complicaciones. Una elección segura de Ralph Lauren para todos los días.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "ralph-lauren-polo-sport-fm-edt-spr-125ml",
+      slug: "ralph-lauren-polo-sport-fm-edt-spr-125ml",
+      name: "RALPH LAUREN POLO SPORT FM EDT SPR 125ML",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 1577,
+      price: 2704,
+      images: ["/products/ralph-lauren-polo-sport-fm-edt-spr-125ml.webp"],
+      description: "Un ícono de la frescura deportiva que ha conquistado a millones de hombres. Explota con menta, limón y neroli, mantiene el ritmo con un corazón de jengibre y lavanda, y cierra con un fondo limpio de sándalo y almizcle. Transmite energía, vitalidad y estilo casual de la mano de Ralph Lauren. Ideal para el gimnasio, la oficina o el fin de semana: un aroma que te acompaña a donde vayas y siempre deja buena impresión.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-shadow-fm-edt-spr-100ml",
+      slug: "cuba-shadow-fm-edt-spr-100ml",
+      name: "CUBA SHADOW FM EDT SPR 100ML",
+      brand: "Cuba",
+      type: "designer",
+      gender: "hombre",
+      cost: 223,
+      price: 456,
+      images: ["/products/cuba-shadow-fm-edt-spr-100ml.webp"],
+      description: "Misterioso, masculino y con una relación calidad-precio imposible de ignorar. Se abre con una salida cítrica y fresca, evoluciona hacia un corazón aromático de lavanda y especias, y termina en un fondo amaderado de cedro y almizcle que transmite seguridad. Perfecto para el hombre que quiere oler increíble todos los días sin gastar de más. Un aroma versátil que funciona en la oficina, en una salida casual o en una cita.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "animale-fw-edp-spr-100ml",
+      slug: "animale-fw-edp-spr-100ml",
+      name: "ANIMALE FW EDP SPR 100ML",
+      brand: "Animale",
+      type: "designer",
+      gender: "mujer",
+      cost: 980,
+      price: 1744,
+      images: ["/products/animale-fw-edp-spr-100ml.webp"],
+      description: "Un clásico seductor y femenino que deja huella en cada lugar al que llegas. Abre con la frescura luminosa de la bergamota y el jacinto, florece en un corazón de jazmín, rosa y nardo, y se asienta en un fondo cálido y sensual de ámbar, sándalo, almizcle y vainilla. Es el perfume ideal para la mujer segura de sí misma que quiere sentirse irresistible desde que se lo pone hasta que termina el día. ¡Un aroma que se recuerda!",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "dolce-gabbana-light-blue-fw-edt-refillable-spr-100ml",
+      slug: "dolce-gabbana-light-blue-fw-edt-refillable-spr-100ml",
+      name: "DOLCE & GABBANA LIGHT BLUE FW EDT REFILLABLE SPR 100ML",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "mujer",
+      cost: 1994,
+      price: 3419,
+      images: ["/products/dolce-gabbana-light-blue-fw-edt-refillable-spr-100ml.webp"],
+      description: "Fresco y femenino, ahora en formato recargable. Limón siciliano, manzana y cedro abren con una explosión de frescura, el corazón de bambú, jazmín y rosa blanca aporta delicadeza, y el fondo de ámbar y almizcle lo deja suave y elegante. Es la esencia del verano italiano en un frasco icónico de Dolce & Gabbana. Perfecto para la mujer que ama sentirse radiante, ligera y a la moda.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "lattafa-jasoor-unisex-edp-spr-100ml",
+      slug: "lattafa-jasoor-unisex-edp-spr-100ml",
+      name: "LATTAFA JASOOR UNISEX EDP SPR 100ML",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "unisex",
+      cost: 842,
+      price: 1347,
+      images: ["/products/lattafa-jasoor-unisex-edp-spr-100ml.webp"],
+      description: "Una fragancia unisex con carácter árabe y mucha personalidad. Notas especiadas y amaderadas sobre un fondo cálido de ámbar crean un aroma elegante, intenso y envolvente. Con muy buena duración y una estela que se nota, es ideal para quien busca un perfume distinto sin renunciar a la calidad. Un aroma de Lattafa para usar de día o de noche, hombre o mujer.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "moschino-toy2-bubble-gum-fw-edt-spr-100ml",
+      slug: "moschino-toy2-bubble-gum-fw-edt-spr-100ml",
+      name: "MOSCHINO TOY2 BUBBLE GUM FW EDT SPR 100ML",
+      brand: "Moschino",
+      type: "designer",
+      gender: "mujer",
+      cost: 1507,
+      price: 2585,
+      images: ["/products/moschino-toy2-bubble-gum-fw-edt-spr-100ml.webp"],
+      description: "Divertido, dulce y lleno de personalidad, presentado en su icónico frasco de osito que enamora a primera vista. Notas de mandarina, limón y durazno abren la fragancia, el corazón de chicle y rosa le da ese toque juguetón y el fondo de almizcle y maderas la hace suave y envolvente. Imposible pasar desapercibida: es el perfume para quien se atreve a ser diferente y a disfrutar de la moda con alegría.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "afnan-9am-dive-uni-edp-spr-100ml",
+      slug: "afnan-9am-dive-uni-edp-spr-100ml",
+      name: "AFNAN 9AM DIVE UNI EDP SPR 100ML",
+      brand: "Afnan",
+      type: "arabic",
+      gender: "unisex",
+      cost: 1010,
+      price: 1565,
+      images: ["/products/afnan-9am-dive-uni-edp-spr-100ml.webp"],
+      description: "Para él y para ella: un aroma fresco, acuático y energizante pensado para compartir. Cítricos, menta y notas marinas se mezclan sobre un fondo amaderado limpio que se mantiene agradable por horas. Ofrece excelente rendimiento y versatilidad para cualquier ocasión, del trabajo a la playa. Una fragancia unisex de Afnan que destaca por su frescura, su carácter y su gran relación calidad-precio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "valentino-donna-born-in-roma-fw-edp-spr-100ml",
+      slug: "valentino-donna-born-in-roma-fw-edp-spr-100ml",
+      name: "VALENTINO DONNA BORN IN ROMA FW EDP SPR 100ML",
+      brand: "Valentino",
+      type: "designer",
+      gender: "mujer",
+      cost: 3825,
+      price: 5814,
+      images: ["/products/valentino-donna-born-in-roma-fw-edp-spr-100ml.webp"],
+      description: "Alta costura convertida en fragancia. Pimienta rosa, grosella negra y bergamota abren con elegancia, el corazón de jazmín sambac da un toque floral sofisticado, y el fondo adictivo de vainilla bourbon y maderas deja una estela espectacular. Femenino, moderno y poderoso, es el perfume para la mujer que ama destacar y que quiere que cada entrada suya se recuerde. Un lujo que se nota y se disfruta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "perry-ellis-360-collection-rose-fw-edp-spr-100ml",
+      slug: "perry-ellis-360-collection-rose-fw-edp-spr-100ml",
+      name: "PERRY ELLIS 360 COLLECTION ROSE FW EDP SPR 100ML",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "mujer",
+      cost: 1034,
+      price: 1772,
+      images: ["/products/perry-ellis-360-collection-rose-fw-edp-spr-100ml.webp"],
+      description: "Romántico, delicado y lleno de encanto. La rosa es la protagonista, acompañada de toques frutales y un fondo suave de almizcle que acaricia la piel. Femenino, fresco y fácil de usar, es perfecto para el día a día, para una cita o para regalar a una mujer que ama los aromas florales. Una fragancia de Perry Ellis con elegancia y dulzura en cada rociado.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "dolce-gabbana-pour-homme-fm-edt-spr-125ml",
+      slug: "dolce-gabbana-pour-homme-fm-edt-spr-125ml",
+      name: "DOLCE & GABBANA POUR HOMME FM EDT SPR 125ML",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "hombre",
+      cost: 1785,
+      price: 3062,
+      images: ["/products/dolce-gabbana-pour-homme-fm-edt-spr-125ml.webp"],
+      description: "Un clásico atemporal de elegancia mediterránea que nunca pasa de moda. Lavanda, bergamota, limón y neroli abren con frescura, el corazón de salvia y pimienta le da carácter, y el fondo de tabaco, haba tonka y cedro lo hace cálido y distinguido. Es el perfume del hombre elegante, seguro y sin prisa, ideal para el trabajo, reuniones importantes y cualquier ocasión formal. Un verdadero fondo de armario.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "hugo-boss-bottled-tonic-fm-edt-spr-100ml",
+      slug: "hugo-boss-bottled-tonic-fm-edt-spr-100ml",
+      name: "HUGO BOSS BOTTLED TONIC FM EDT SPR 100ML",
+      brand: "Hugo Boss",
+      type: "designer",
+      gender: "hombre",
+      cost: 1843,
+      price: 3161,
+      images: ["/products/hugo-boss-bottled-tonic-fm-edt-spr-100ml.webp", "/products/hugo-boss-bottled-tonic-fm-edt-spr-100ml-2.webp"],
+      description: "Energía fresca y chispeante que despierta cualquier día. Toronja, limón, naranja y manzana crean una salida jugosa, el jengibre le da un corazón vivo, y el fondo de vetiver y maderas lo mantiene limpio y masculino. Es el acompañante ideal para la oficina, el deporte y el día a día, con la confianza y calidad de Hugo Boss. Fresco, juvenil y muy fácil de amar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "prada-luna-rossa-carbon-fm-edt-spr-100ml",
+      slug: "prada-luna-rossa-carbon-fm-edt-spr-100ml",
+      name: "PRADA LUNA ROSSA CARBON FM EDT SPR 100ML",
+      brand: "Prada",
+      type: "designer",
+      gender: "hombre",
+      cost: 2636,
+      price: 4348,
+      images: ["/products/prada-luna-rossa-carbon-fm-edt-spr-100ml.webp"],
+      description: "Moderno, oscuro y magnético: la elegancia del lujo italiano en un frasco inconfundible. Bergamota y pimienta en la salida, lavanda y toques metálicos en el corazón, y un fondo de ambroxan y pachulí que se siente sofisticado y sensual. Es versátil para cualquier ocasión, desde el trabajo hasta una cena especial. Para el hombre que sabe lo que quiere y no pasa desapercibido en ningún lugar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "valentino-donna-born-in-roma-coral-fantasy-fw-edp-spr-100ml",
+      slug: "valentino-donna-born-in-roma-coral-fantasy-fw-edp-spr-100ml",
+      name: "VALENTINO DONNA BORN IN ROMA CORAL FANTASY FW EDP SPR 100ML",
+      brand: "Valentino",
+      type: "designer",
+      gender: "mujer",
+      cost: 3825,
+      price: 5814,
+      images: ["/products/valentino-donna-born-in-roma-coral-fantasy-fw-edp-spr-100ml.webp"],
+      description: "Una fantasía frutal y floral llena de alegría y glamour. Notas jugosas y brillantes se mezclan con un corazón floral femenino y un fondo cálido de vainilla que se siente acogedor y sofisticado. Es la edición colorida y fresca de Born in Roma, de Valentino, para la mujer que ama la moda, el color y la vida. Un perfume que levanta el ánimo y que seguramente recibirá muchos halagos.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "bharara-don-fm-edp-spr-100ml",
+      slug: "bharara-don-fm-edp-spr-100ml",
+      name: "BHARARA DON FM EDP SPR 100ML",
+      brand: "Bharara",
+      type: "arabic",
+      gender: "hombre",
+      cost: 1762,
+      price: 2731,
+      images: ["/products/bharara-don-fm-edp-spr-100ml.webp"],
+      description: "Lujo árabe con presencia imponente. Sus notas especiadas y amaderadas descansan sobre un fondo ambarado y cálido que deja una estela larga e inolvidable. Un perfume intenso, ideal para la noche, para eventos especiales y para el hombre que quiere que lo recuerden. Una fragancia con carácter, buena proyección y un precio muy competitivo para su nivel de intensidad.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "yves-saint-laurent-y-fm-edp-spr-100ml",
+      slug: "yves-saint-laurent-y-fm-edp-spr-100ml",
+      name: "YVES SAINT LAURENT Y FM EDP SPR 100ML",
+      brand: "Yves Saint Laurent",
+      type: "designer",
+      gender: "hombre",
+      cost: 3353,
+      price: 5096,
+      images: ["/products/yves-saint-laurent-y-fm-edp-spr-100ml.webp"],
+      description: "Fresco, intenso y moderno: uno de los perfumes masculinos más vendidos del mundo, y con razón. Manzana, jengibre y bergamota abren con energía, el corazón de salvia y enebro le da carácter, y el fondo de maderas ambarinas, haba tonka y cedro lo hace elegante y duradero. Un aroma de lujo de Yves Saint Laurent para el hombre ambicioso, seguro y con estilo propio. Ideal para todos los días y para impresionar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "valentino-uomo-born-in-roma-yellow-dream-fm-edt-spr-100ml",
+      slug: "valentino-uomo-born-in-roma-yellow-dream-fm-edt-spr-100ml",
+      name: "VALENTINO UOMO BORN IN ROMA YELLOW DREAM FM EDT SPR 100ML",
+      brand: "Valentino",
+      type: "designer",
+      gender: "hombre",
+      cost: 3095,
+      price: 4704,
+      images: ["/products/valentino-uomo-born-in-roma-yellow-dream-fm-edt-spr-100ml.webp"],
+      description: "Luminoso y vibrante como el sol de Roma. Cítricos radiantes y jengibre dan una salida enérgica, sobre un fondo amaderado moderno que le aporta elegancia y carácter. Es la edición fresca y juvenil de la icónica línea Born in Roma de Valentino, perfecta para el hombre que quiere un aroma con estilo, alegría y personalidad. Ideal para el día, para el verano y para destacar con un diseño de frasco irresistible.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "yves-saint-laurent-mon-paris-fw-edp-90ml",
+      slug: "yves-saint-laurent-mon-paris-fw-edp-90ml",
+      name: "YVES SAINT LAURENT MON PARIS FW EDP 90ML",
+      brand: "Yves Saint Laurent",
+      type: "designer",
+      gender: "mujer",
+      cost: 3224,
+      price: 4900,
+      images: ["/products/yves-saint-laurent-mon-paris-fw-edp-90ml.webp"],
+      description: "Un romance parisino hecho perfume. Fresa, frambuesa y pera se combinan en una salida dulce y brillante, el corazón de datura, peonía y jazmín lo vuelve femenino y delicado, y el fondo de pachulí y almizcle blanco deja una huella sensual e inolvidable. Una fragancia de Yves Saint Laurent para la mujer apasionada que disfruta del lujo, el amor y los detalles que hacen especial cada momento.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "dolce-gabbana-light-blue-fm-edt-refillable-spr-100ml",
+      slug: "dolce-gabbana-light-blue-fm-edt-refillable-spr-100ml",
+      name: "DOLCE & GABBANA LIGHT BLUE FM EDT REFILLABLE SPR 100ML",
+      brand: "Dolce & Gabbana",
+      type: "designer",
+      gender: "hombre",
+      cost: 1716,
+      price: 2942,
+      images: ["/products/dolce-gabbana-light-blue-fm-edt-refillable-spr-100ml.webp"],
+      description: "El aroma del verano mediterráneo, ahora recargable. Mandarina, toronja y enebro abren con frescura, el corazón de romero, pimienta y palo de rosa aporta carácter, y el fondo de almizcle, incienso y musgo lo vuelve masculino y sofisticado. Fresco, limpio e irresistible, es el perfume de Dolce & Gabbana para el hombre que ama el sol, el mar y el estilo italiano. Un clásico moderno para todo el año.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "cuba-chic-fw-edp-spr-100ml",
+      slug: "cuba-chic-fw-edp-spr-100ml",
+      name: "CUBA CHIC FW EDP SPR 100ML",
+      brand: "Cuba",
+      type: "designer",
+      gender: "mujer",
+      cost: 223,
+      price: 456,
+      images: ["/products/cuba-chic-fw-edp-spr-100ml.webp"],
+      description: "Dulce, coqueto y elegante: así es esta fragancia que enamora desde el primer rociado. Sus notas frutales de durazno y mandarina dan una entrada jugosa, el corazón floral de jazmín y rosa aporta feminidad, y el fondo envolvente de vainilla y almizcle deja una estela suave y adictiva. Una opción chic, accesible y muy fácil de usar, ideal para quien busca oler delicioso y recibir cumplidos todo el día.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "perry-ellis-360-very-blue-fm-est-edt-spr-100ml-deo-stick-78g-s-g90ml-mini-7-5ml",
+      slug: "perry-ellis-360-very-blue-fm-est-edt-spr-100ml-deo-stick-78g-s-g90ml-mini-7-5ml",
+      name: "PERRY ELLIS 360 VERY BLUE FM EST (EDT SPR 100ML+DEO STICK 78G+ S/G90ML+MINI 7.5ML)",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 1154,
+      price: 1978,
+      images: ["/products/perry-ellis-360-very-blue-fm-est-edt-spr-100ml-deo-stick-78g-s-g90ml-mini-7-5ml.webp"],
+      description: "El regalo perfecto en un solo empaque: incluye EDT de 100 ml, desodorante en barra, gel de ducha y un mini de 7.5 ml para llevar a todas partes. Su aroma fresco y acuático combina cítricos vibrantes, lavanda aromática y un fondo amaderado de cedro y almizcle. Es la frescura azul de pies a cabeza, pensada para el hombre que disfruta sentirse limpio, relajado y seguro. ¡Un set completo que se ve y huele a regalo premium!",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "lattafa-rave-now-woman-fw-edp-spr-100ml",
+      slug: "lattafa-rave-now-woman-fw-edp-spr-100ml",
+      name: "LATTAFA RAVE NOW WOMAN FW EDP SPR 100ML",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 656,
+      price: 1247,
+      images: ["/products/lattafa-rave-now-woman-fw-edp-spr-100ml.webp"],
+      description: "Dulce, moderno y adictivo, con la calidad y el carácter de la perfumería árabe de Lattafa. Sus notas frutales jugosas despiertan el aroma, el corazón floral lo vuelve elegante y el fondo cremoso de vainilla y almizcle lo hace cálido y envolvente. Ofrece una duración excelente y una estela que se nota, a un precio increíble. Para la mujer que quiere un perfume con presencia, sin pagar de más.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ralph-lauren-polo-deep-blue-fm-parfum-spr-125ml",
+      slug: "ralph-lauren-polo-deep-blue-fm-parfum-spr-125ml",
+      name: "RALPH LAUREN POLO DEEP BLUE FM PARFUM SPR 125ML",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 2368,
+      price: 3906,
+      images: ["/products/ralph-lauren-polo-deep-blue-fm-parfum-spr-125ml.webp"],
+      description: "La versión más intensa, profunda y duradera de la línea Polo. Un acorde marino con mandarina y salvia da paso a un fondo mineral de ambroxan y maderas que se siente moderno, masculino y sofisticado. Su concentración Parfum ofrece mayor proyección y una duración que se nota de la mañana a la noche. Frescura con carácter para el hombre que quiere destacar con elegancia y dejar una estela memorable.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Parfum",
+      tags: []
+    },
+  {
+      id: "perry-ellis-bold-red-fm-est-edt-spr-100ml-d-stick-78g-s-gel-90ml-mini-edt-7-5ml",
+      slug: "perry-ellis-bold-red-fm-est-edt-spr-100ml-d-stick-78g-s-gel-90ml-mini-edt-7-5ml",
+      name: "PERRY ELLIS BOLD RED FM EST (EDT SPR 100ML+D.STICK 78G+S/GEL 90ML+MINI EDT 7.5ML)",
+      brand: "Perry Ellis",
+      type: "designer",
+      gender: "hombre",
+      cost: 1202,
+      price: 2060,
+      images: ["/products/perry-ellis-bold-red-fm-est-edt-spr-100ml-d-stick-78g-s-gel-90ml-mini-edt-7-5ml.webp"],
+      description: "Un set completo y listo para regalar: EDT de 100 ml, desodorante en barra, gel de ducha y mini EDT de 7.5 ml. Su fragancia es audaz y especiada, con toques frutales en la salida y un fondo amaderado y cálido que proyecta confianza y actitud. Es el obsequio ideal para el hombre con carácter, y una excelente oportunidad para tener todo su cuidado personal con un mismo aroma.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 100,
+      inStock: true,
+      category: "Set",
+      tags: []
+    },
+  {
+      id: "jean-paul-gaultier-la-belle-paradise-garden-w-edp-sp-3-4oz-ltd-qty",
+      slug: "jean-paul-gaultier-la-belle-paradise-garden-w-edp-sp-3-4oz-ltd-qty",
+      name: "JEAN PAUL GAULTIER LA BELLE PARADISE GARDEN(W.)EDP SP 3.4oz(Ltd Qty)",
+      brand: "Jean Paul Gaultier",
+      type: "designer",
+      gender: "mujer",
+      cost: 3283,
+      price: 4990,
+      images: ["/products/jean-paul-gaultier-la-belle-paradise-garden-w-edp-sp-3-4oz-ltd-qty.webp"],
+      description: "Jean Paul Gaultier La Belle Paradise Garden es una fragancia para mujer en Eau de Parfum de 100 ml. Un edén tropical y sensual, con la pera y la vainilla como protagonistas. Su salida reúne pera y bergamota; el corazón revela vetiver y flores; y el fondo deja vainilla y sándalo. Elegante y adictiva, una fragancia de lujo con el sello Gaultier. Date el gusto de oler increíble: es la mejor inversión en tu imagen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "carolina-herrera-good-girl-w-edp-sp-2-7oz-ltd-qty",
+      slug: "carolina-herrera-good-girl-w-edp-sp-2-7oz-ltd-qty",
+      name: "CAROLINA HERRERA GOOD GIRL(W)EDP SP 2.7oz(Ltd Qty)",
+      brand: "Carolina Herrera",
+      type: "designer",
+      gender: "mujer",
+      cost: 3075,
+      price: 4674,
+      images: ["/products/carolina-herrera-good-girl-w-edp-sp-2-7oz-ltd-qty.webp"],
+      description: "Una fragancia con dualidad: elegancia y atrevimiento en el icónico frasco de tacón. Carolina Herrera Good Girl, Eau de Parfum de 80 ml para mujer, abre con almendra, café, bergamota y limón; en el corazón se despliegan jazmín sambac, tuberosa, azahar y rosa, y la estela final descansa sobre haba tonka, cacao, vainilla, sándalo y almizcle. Una de las fragancias femeninas más deseadas del mundo; seductora, dulce y dejando huella por donde pasas. Date el gusto de oler increíble: es la mejor inversión en tu imagen.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 207,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "splas-paris-hilton",
+      slug: "splas-paris-hilton",
+      name: "SPLAS PARIS HILTON",
+      brand: "Paris Hilton",
+      type: "designer",
+      gender: "mujer",
+      cost: 288,
+      price: 591,
+      images: ["/products/splas-paris-hilton.webp"],
+      description: "Perfume en spray.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Perfume en spray",
+      tags: []
+    },
+  {
+      id: "l-armaf-le-parfait-panache-3-4s",
+      slug: "l-armaf-le-parfait-panache-3-4s",
+      name: "L-ARMAF LE PARFAIT PANACHE 3.4S",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 638,
+      price: 1213,
+      images: ["/products/l-armaf-le-parfait-panache-3-4s.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-mayar-cherry-inten",
+      slug: "lat-lattafa-mayar-cherry-inten",
+      name: "LAT-LATTAFA MAYAR CHERRY INTEN",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 707,
+      price: 1144,
+      images: ["/products/lat-lattafa-mayar-cherry-inten.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-mayar-cherry-inten-2",
+      slug: "lat-lattafa-mayar-cherry-inten-2",
+      name: "LAT-LATTAFA MAYAR CHERRY INTEN",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 744,
+      price: 1302,
+      images: ["/products/lat-lattafa-mayar-cherry-inten-2.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-yara-tous-edp-sp",
+      slug: "lat-lattafa-yara-tous-edp-sp",
+      name: "LAT-LATTAFA YARA TOUS EDP SP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 658,
+      price: 1065,
+      images: ["/products/lat-lattafa-yara-tous-edp-sp.webp", "/products/lat-lattafa-yara-tous-edp-sp-2.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-yara-tous-edp-sp-2",
+      slug: "lat-lattafa-yara-tous-edp-sp-2",
+      name: "LAT-LATTAFA YARA TOUS EDP SP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 744,
+      price: 1302,
+      images: ["/products/lat-lattafa-yara-tous-edp-sp-2.webp", "/products/lat-lattafa-yara-tous-edp-sp-2-2.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-yara-pink-edp-sp",
+      slug: "lat-lattafa-yara-pink-edp-sp",
+      name: "LAT-LATTAFA YARA PINK EDP SP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 658,
+      price: 1065,
+      images: ["/products/lat-lattafa-yara-pink-edp-sp.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-yara-pink-edp-sp-2",
+      slug: "lat-lattafa-yara-pink-edp-sp-2",
+      name: "LAT-LATTAFA YARA PINK EDP SP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 693,
+      price: 1214,
+      images: ["/products/lat-lattafa-yara-pink-edp-sp-2.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-her-confession-edp",
+      slug: "lat-lattafa-her-confession-edp",
+      name: "LAT-LATTAFA HER CONFESSION EDP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1159,
+      price: 1686,
+      images: ["/products/lat-lattafa-her-confession-edp.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "burberry-her-w-edp-sp-3-4oz-li-free",
+      slug: "burberry-her-w-edp-sp-3-4oz-li-free",
+      name: "BURBERRY HER(W)EDP SP 3.4oz(LI FREE)",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "mujer",
+      cost: 2835,
+      price: 4252,
+      images: ["/products/burberry-her-w-edp-sp-3-4oz-li-free.webp"],
+      description: "Eau de Parfum. 4 oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 118,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-miss-voceviva-3-4-edp-s",
+      slug: "l-armaf-miss-voceviva-3-4-edp-s",
+      name: "L-ARMAF MISS VOCEVIVA 3.4 EDP S",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1003,
+      price: 1555,
+      images: ["/products/l-armaf-miss-voceviva-3-4-edp-s.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-miss-attitude-3-4-edp-s",
+      slug: "l-armaf-miss-attitude-3-4-edp-s",
+      name: "L-ARMAF MISS ATTITUDE 3.4 EDP S",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 948,
+      price: 1517,
+      images: ["/products/l-armaf-miss-attitude-3-4-edp-s.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-miss-attitude-3-4-edp-s-2",
+      slug: "l-armaf-miss-attitude-3-4-edp-s-2",
+      name: "L-ARMAF MISS ATTITUDE 3.4 EDP S",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1003,
+      price: 1555,
+      images: ["/products/l-armaf-miss-attitude-3-4-edp-s-2.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-tres-jour-3-4-edp-spr",
+      slug: "l-armaf-tres-jour-3-4-edp-spr",
+      name: "L-ARMAF TRES JOUR 3.4 EDP SPR",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1482,
+      price: 2298,
+      images: ["/products/l-armaf-tres-jour-3-4-edp-spr.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "opium-black-w-edp-over-red-sp-3-0oz-li-free",
+      slug: "opium-black-w-edp-over-red-sp-3-0oz-li-free",
+      name: "OPIUM BLACK(W.)EDP OVER RED SP 3.0oz(LI FREE)",
+      brand: "Al Haramain",
+      type: "arabic",
+      gender: "mujer",
+      cost: 3027,
+      price: 4237,
+      images: ["/products/opium-black-w-edp-over-red-sp-3-0oz-li-free.webp"],
+      description: "Eau de Parfum. 0 oz.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 0,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "lat-lattafa-teriaq-intense-edp",
+      slug: "lat-lattafa-teriaq-intense-edp",
+      name: "LAT-LATTAFA TERIAQ INTENSE EDP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1265,
+      price: 1554,
+      images: ["/products/lat-lattafa-teriaq-intense-edp.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-cdn-lion-heart-3-4-edp-spr",
+      slug: "l-armaf-cdn-lion-heart-3-4-edp-spr",
+      name: "L-ARMAF CDN LION HEART 3.4 EDP SPR",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 1318,
+      price: 2043,
+      images: ["/products/l-armaf-cdn-lion-heart-3-4-edp-spr.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "l-armaf-excellus-3-4-edp-spr",
+      slug: "l-armaf-excellus-3-4-edp-spr",
+      name: "L-ARMAF EXCELLUS 3.4 EDP SPR",
+      brand: "Armaf",
+      type: "arabic",
+      gender: "mujer",
+      cost: 740,
+      price: 1406,
+      images: ["/products/l-armaf-excellus-3-4-edp-spr.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "coach-new-york-wild-rose-d-edp-90ml-sp",
+      slug: "coach-new-york-wild-rose-d-edp-90ml-sp",
+      name: "COACH NEW YORK WILD ROSE /D EDP 90ML SP.",
+      brand: "Coach",
+      type: "designer",
+      gender: "mujer",
+      cost: 1829,
+      price: 3137,
+      images: ["/products/coach-new-york-wild-rose-d-edp-90ml-sp-foto-2.webp"],
+      description: "Coach New York Wild Rose es una explosión floral fresca, romántica y llena de personalidad. Este EDP de 90 ml combina notas de mandarina con rosa salvaje, flores delicadas y un fondo suave de almizcle, logrando un aroma alegre, femenino y muy fácil de amar. Perfecto para el día a día, paseos y citas, con un estilo juvenil y elegante. Una fragancia de marca reconocida a un precio que enamora. ¡Floréce con cada rociada y siéntete radiante!",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 90,
+      inStock: true,
+      category: "Eau de Parfum",
+      tags: []
+    },
+  {
+      id: "ralph-lauren-polo-blue-sport-fm-edt-spr-125ml",
+      slug: "ralph-lauren-polo-blue-sport-fm-edt-spr-125ml",
+      name: "RALPH LAUREN POLO BLUE SPORT FM EDT SPR 125ML",
+      brand: "Ralph Lauren",
+      type: "designer",
+      gender: "hombre",
+      cost: 1883,
+      price: 3230,
+      images: ["/products/ralph-lauren-polo-blue-sport-fm-edt-spr-125ml.webp"],
+      description: "Eau de Toilette. 125 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 125,
+      inStock: true,
+      category: "Eau de Toilette",
+      tags: []
+    },
+  {
+      id: "lat-rave-now-edp-sp",
+      slug: "lat-rave-now-edp-sp",
+      name: "LAT-RAVE NOW EDP SP",
+      brand: "Lattafa",
+      type: "arabic",
+      gender: "mujer",
+      cost: 781,
+      price: 1250,
+      images: ["/products/lat-rave-now-edp-sp.webp"],
+      description: "Eau de Parfum.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Eau de Parfum",
       tags: []
     },
 ];
@@ -32638,27 +33860,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "reconstructor-capilar-u-keratin-n-2-1000-ml-con-4-de-fibra",
-      slug: "reconstructor-capilar-u-keratin-n-2-1000-ml-con-4-de-fibra",
-      name: "RECONSTRUCTOR CAPILAR U-KERATIN N.° 2 1000 ML (CON 4% DE FIBRA)",
-      brand: "Yogi Care",
-      type: "beauty",
-      gender: "unisex",
-      cost: 530,
-      price: 1166,
-      images: ["/products/reconstructor-capilar-u-keratin-n-2-1000-ml-con-4-de-fibra.webp", "/products/reconstructor-capilar-u-keratin-n-2-1000-ml-con-4-de-fibra-2.webp"],
-      description: "Hidratación capilar de 1000 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 1000,
-      inStock: true,
-      category: "Hidratación capilar",
-      tags: []
-    },
-  {
       id: "keratina",
       slug: "keratina",
       name: "KERATINA",
@@ -32740,27 +33941,6 @@ const careProducts: RawProduct[] = [
       sizeMl: 250,
       inStock: true,
       category: "Shampoo",
-      tags: []
-    },
-  {
-      id: "u-keratin-daily-conditioner-no-4-250ml",
-      slug: "u-keratin-daily-conditioner-no-4-250ml",
-      name: "U-Keratin Daily conditioner NO.4 250ml",
-      brand: "Yogi Care",
-      type: "beauty",
-      gender: "unisex",
-      cost: 102,
-      price: 210,
-      images: ["/products/u-keratin-daily-conditioner-no-4-250ml.webp"],
-      description: "Acondicionador de 250 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 250,
-      inStock: true,
-      category: "Acondicionador",
       tags: []
     },
   {
@@ -33067,27 +34247,6 @@ const careProducts: RawProduct[] = [
       cost: 65,
       price: 124,
       images: ["/products/spray-de-brillo-para-plancha-de-aceite-de-argan-100ml-ygfs100.webp"],
-      description: "El Spray de Brillo para Plancha de Aceite de Argán YOGI CARE de 100 ml está pensado para acompañar el planchado y el peinado con calor. Su fórmula con aceite de argán aporta brillo, suavidad e hidratación, ayuda a controlar el frizz y deja un acabado liso y cuidado. Modo de uso: rocíe sobre el cabello antes o después de peinar, distribuya con el peine. Uso externo; evite el contacto con los ojos y suspenda su uso si presenta irritación.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 100,
-      inStock: true,
-      category: "Tratamiento para cabello",
-      tags: []
-    },
-  {
-      id: "spray-de-brillo-para-plancha-de-aceite-de-argan-100ml-ygfs100-2",
-      slug: "spray-de-brillo-para-plancha-de-aceite-de-argan-100ml-ygfs100-2",
-      name: "SPRAY DE BRILLO PARA PLANCHA DE ACEITE DE ARGÁN 100ML YGFS100",
-      brand: "Yogi Care",
-      type: "beauty",
-      gender: "unisex",
-      cost: 66,
-      price: 137,
-      images: ["/products/spray-de-brillo-para-plancha-de-aceite-de-argan-100ml-ygfs100-2.webp"],
       description: "El Spray de Brillo para Plancha de Aceite de Argán YOGI CARE de 100 ml está pensado para acompañar el planchado y el peinado con calor. Su fórmula con aceite de argán aporta brillo, suavidad e hidratación, ayuda a controlar el frizz y deja un acabado liso y cuidado. Modo de uso: rocíe sobre el cabello antes o después de peinar, distribuya con el peine. Uso externo; evite el contacto con los ojos y suspenda su uso si presenta irritación.",
       notes: {
         top: [],
@@ -33627,27 +34786,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "acondicionador-diario-u-keratin-n-4",
-      slug: "acondicionador-diario-u-keratin-n-4",
-      name: "ACONDICIONADOR DIARIO U-KERATIN N.° 4",
-      brand: "Bio-Reach",
-      type: "beauty",
-      gender: "unisex",
-      cost: 131,
-      price: 287,
-      images: ["/products/acondicionador-diario-u-keratin-n-4.webp"],
-      description: "Acondicionador.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Acondicionador",
-      tags: []
-    },
-  {
       id: "reconstructor-capilar-u-keratin-n-2-con-4-de-fibra-capilar",
       slug: "reconstructor-capilar-u-keratin-n-2-con-4-de-fibra-capilar",
       name: "RECONSTRUCTOR CAPILAR U-KERATIN N.° 2 (CON 4 % DE FIBRA CAPILAR)",
@@ -33706,27 +34844,6 @@ const careProducts: RawProduct[] = [
         base: []
       },
       sizeMl: null,
-      inStock: true,
-      category: "Shampoo",
-      tags: []
-    },
-  {
-      id: "champu-purificante-u-keratin-n-1-1000-ml",
-      slug: "champu-purificante-u-keratin-n-1-1000-ml",
-      name: "CHAMPÚ PURIFICANTE U-KERATIN N.° 1 1000 ML",
-      brand: "Yogi Care",
-      type: "beauty",
-      gender: "unisex",
-      cost: 150,
-      price: 330,
-      images: ["/products/champu-purificante-u-keratin-n-1-1000-ml.webp"],
-      description: "Shampoo de 1000 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 1000,
       inStock: true,
       category: "Shampoo",
       tags: []
@@ -36446,28 +37563,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
-      tags: []
-    },
-  {
-      id: "crema-en-capsulas-vita-acido-kojico-y-curcuma",
-      slug: "crema-en-capsulas-vita-acido-kojico-y-curcuma",
-      name: "CREMA EN CÁPSULAS VITA ÁCIDO KÓJICO Y CÚRCUMA",
-      brand: "Medicube",
-      type: "beauty",
-      gender: "unisex",
-      cost: 553,
-      price: 969,
-      images: ["/products/crema-en-capsulas-vita-acido-kojico-y-curcuma.webp"],
-      description: "Crema en cápsulas medicube Kojic Acid Turmeric Vita Capsule Cream. Activos destacados: ácido kójico y cúrcuma. Ayuda a mejorar la apariencia de manchas y tono desigual y a aportar luminosidad mientras hidrata. Recomendada para piel apagada o con manchas. Edad sugerida: adultos. Presentación: 53 G.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36488,7 +37584,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36572,7 +37668,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Mascarilla facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36656,7 +37752,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36702,27 +37798,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "espuma-limpiadora-profunda-poros-hoja-de-corazon-y-quercetinol",
-      slug: "espuma-limpiadora-profunda-poros-hoja-de-corazon-y-quercetinol",
-      name: "ESPUMA LIMPIADORA PROFUNDA POROS HOJA DE CORAZÓN Y QUERCETINOL",
-      brand: "Anua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 294,
-      price: 515,
-      images: ["/products/espuma-limpiadora-profunda-poros-hoja-de-corazon-y-quercetinol.webp"],
-      description: "Espuma limpiadora profunda Anua Heartleaf Quercetinol Pore Deep Cleansing Foam. Activos destacados: extracto de Heartleaf (hoja de corazón) y quercetinol. Ayuda a eliminar grasa, suciedad y restos de maquillaje, y a calmar la piel sin resecarla. Recomendada para piel grasa, mixta o con tendencia a imperfecciones. Edad sugerida: adolescentes y adultos. Presentación: 150 ML.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
       id: "cer-100-crema-rizadora-muscle-curl-con-colageno-para-cabello-a",
       slug: "cer-100-crema-rizadora-muscle-curl-con-colageno-para-cabello-a",
       name: "CER-100 CREMA RIZADORA MUSCLE CURL CON COLÁGENO PARA CABELLO A+",
@@ -36740,28 +37815,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Tratamiento para cabello",
-      tags: []
-    },
-  {
-      id: "espuma-limpiadora-de-arcilla-y-coco",
-      slug: "espuma-limpiadora-de-arcilla-y-coco",
-      name: "ESPUMA LIMPIADORA DE ARCILLA Y COCO",
-      brand: "Tocobo",
-      type: "beauty",
-      gender: "unisex",
-      cost: 215,
-      price: 377,
-      images: ["/products/espuma-limpiadora-de-arcilla-y-coco.webp"],
-      description: "Espuma limpiadora TOCOBO Coconut Clay Cleansing Foam. Activos destacados: arcilla y extracto de coco. Ayuda a eliminar impurezas y exceso de grasa dejando la piel limpia, suave y sin sensación de tirantez. Recomendada para uso diario, mañana y noche, en piel mixta o grasa. Edad sugerida: adolescentes y adultos. Presentación: 150 ML.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Limpiador facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36782,7 +37836,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Protector solar",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -36844,27 +37898,6 @@ const careProducts: RawProduct[] = [
         base: []
       },
       sizeMl: 195,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
-      id: "azelaic-acid-10-hyaluron-redness-soothing-serum-30ml",
-      slug: "azelaic-acid-10-hyaluron-redness-soothing-serum-30ml",
-      name: "Azelaic Acid 10 Hyaluron Redness Soothing Serum [30ml]",
-      brand: "Anua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 454,
-      price: 795,
-      images: ["/products/azelaic-acid-10-hyaluron-redness-soothing-serum-30ml.webp"],
-      description: "Crema facial de 30 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 30,
       inStock: true,
       category: "Skincare coreano",
       tags: []
@@ -38569,7 +39602,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38590,7 +39623,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38611,7 +39644,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Crema facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38632,7 +39665,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38653,7 +39686,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -38674,7 +39707,7 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       inStock: true,
-      category: "Suero facial",
+      category: "Skincare coreano",
       tags: []
     },
   {
@@ -40170,69 +41203,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "guantes-para-el-cuerpo",
-      slug: "guantes-para-el-cuerpo",
-      name: "GUANTES PARA EL CUERPO",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 25,
-      price: 45,
-      images: ["/products/guantes-para-el-cuerpo.webp"],
-      description: "Accesorio.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorio",
-      tags: []
-    },
-  {
-      id: "set-de-2-ganchos-colores-surt-10cm",
-      slug: "set-de-2-ganchos-colores-surt-10cm",
-      name: "SET DE 2 GANCHOS COLORES SURT 10cm",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 48,
-      price: 84,
-      images: ["/products/set-de-2-ganchos-colores-surt-10cm.webp"],
-      description: "Set de ganchos para el cabello, un complemento práctico y versátil para sujetar mechones y crear peinados con acabado profesional. Un producto de uso constante en cualquier salón de estilismo. Su firmeza asegura que el peinado se mantenga intacto durante todo el día.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorio",
-      tags: []
-    },
-  {
-      id: "cepillo-p-rizos-colores-surtidos-con-peine",
-      slug: "cepillo-p-rizos-colores-surtidos-con-peine",
-      name: "CEPILLO P/ RIZOS COLORES SURTIDOS CON PEINE",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 78,
-      price: 137,
-      images: [],
-      description: "Cepillo para rizos con peine incorporado, la herramienta dos en uno que facilita definir y peinar el cabello rizado con un solo accesorio. Un producto muy buscado por clientas con cabello natural que desean realzar su textura sin dañarlo. Su diseño práctico ahorra tiempo tanto en el salón como en casa.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorio",
-      tags: []
-    },
-  {
       id: "peine-carbon",
       slug: "peine-carbon",
       name: "PEINE CARBON",
@@ -40285,27 +41255,6 @@ const careProducts: RawProduct[] = [
       price: 21,
       images: ["/products/peine-para-ducha.webp", "/products/peine-para-ducha-2.webp"],
       description: "Accesorio.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorio",
-      tags: []
-    },
-  {
-      id: "cepillo-con-peine-p-rizos-colores-surtidos-forma-de-orejitas",
-      slug: "cepillo-con-peine-p-rizos-colores-surtidos-forma-de-orejitas",
-      name: "CEPILLO CON PEINE P/ RIZOS COLORES SURTIDOS FORMA DE OREJITAS",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 83,
-      price: 146,
-      images: ["/products/cepillo-con-peine-p-rizos-colores-surtidos-forma-de-orejitas.webp"],
-      description: "Cepillo con peine para rizos en diseño divertido, que combina funcionalidad profesional con un detalle llamativo que atrae la atención del comprador. Ideal para definir rizos con precisión mientras se ofrece un producto visualmente atractivo en el punto de venta. Su diseño original lo convierte en un producto de venta por impulso.",
       notes: {
         top: [],
         heart: [],
@@ -41989,69 +42938,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "plancha-p-cabello-aguacate-macadamia",
-      slug: "plancha-p-cabello-aguacate-macadamia",
-      name: "PLANCHA P/ CABELLO AGUACATE MACADAMIA",
-      brand: "Varios",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1500,
-      price: 2100,
-      images: ["/products/plancha-p-cabello-aguacate-macadamia.webp"],
-      description: "Transforma tu cabello opaco en una melena radiante y sedosa con esta innovadora plancha cuyas placas de cerámica avanzada están infundidas con microacondicionadores de aguacate y macadamia. Al calentarse, la plancha libera uniformemente esta mezcla nutritiva sobre cada mechón, eliminando el frizz y aportando un brillo espectacular sin dejar residuos grasos, protegiendo la fibra capilar del daño por calor. Es la elección perfecta para quienes buscan un alisado ultra suave, duradero y con un aspecto visiblemente más saludable, hidratado y lleno de vida desde la primera pasada.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Plancha para cabello",
-      tags: []
-    },
-  {
-      id: "plancha-p-cabello-aguacate-macadamia-2",
-      slug: "plancha-p-cabello-aguacate-macadamia-2",
-      name: "PLANCHA P/ CABELLO AGUACATE MACADAMIA",
-      brand: "Varios",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1500,
-      price: 2241,
-      images: ["/products/plancha-p-cabello-aguacate-macadamia-2.webp"],
-      description: "Transforma tu cabello opaco en una melena radiante y sedosa con esta innovadora plancha cuyas placas de cerámica avanzada están infundidas con microacondicionadores de aguacate y macadamia. Al calentarse, la plancha libera uniformemente esta mezcla nutritiva sobre cada mechón, eliminando el frizz y aportando un brillo espectacular sin dejar residuos grasos, protegiendo la fibra capilar del daño por calor. Es la elección perfecta para quienes buscan un alisado ultra suave, duradero y con un aspecto visiblemente más saludable, hidratado y lleno de vida desde la primera pasada.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Plancha para cabello",
-      tags: []
-    },
-  {
-      id: "plancha-p-cabello-aguacate-macadamia-3",
-      slug: "plancha-p-cabello-aguacate-macadamia-3",
-      name: "PLANCHA P/ CABELLO AGUACATE MACADAMIA",
-      brand: "Varios",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1600,
-      price: 2560,
-      images: ["/products/plancha-p-cabello-aguacate-macadamia-3.webp"],
-      description: "Transforma tu cabello opaco en una melena radiante y sedosa con esta innovadora plancha cuyas placas de cerámica avanzada están infundidas con microacondicionadores de aguacate y macadamia. Al calentarse, la plancha libera uniformemente esta mezcla nutritiva sobre cada mechón, eliminando el frizz y aportando un brillo espectacular sin dejar residuos grasos, protegiendo la fibra capilar del daño por calor. Es la elección perfecta para quienes buscan un alisado ultra suave, duradero y con un aspecto visiblemente más saludable, hidratado y lleno de vida desde la primera pasada.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Plancha para cabello",
-      tags: []
-    },
-  {
       id: "secador-cabello-keratina-1900w-remington",
       slug: "secador-cabello-keratina-1900w-remington",
       name: "SECADOR CABELLO KERATINA 1900W REMINGTON",
@@ -42082,27 +42968,6 @@ const careProducts: RawProduct[] = [
       cost: 1730,
       price: 2378,
       images: ["/products/secador-cabello-keratina-1900w-remington-2.webp"],
-      description: "Seca, protege y fortalece tu melena con este potente secador de 1900W que lleva el cuidado térmico al siguiente nivel gracias a su rejilla recubierta con cerámica y queratina. A medida que seca rápidamente tu cabello, emite microacondicionadores que se adhieren a la fibra capilar, minimizando el daño por calor y reduciendo dramáticamente el frizz para un acabado mucho más pulido y manejable. Con múltiples configuraciones de temperatura y velocidad, además de un botón de aire frío para fijar el peinado, es la herramienta perfecta para lograr un secado de salón que deja tu cabello fuerte, elástico y con un brillo saludable.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Secadora de cabello",
-      tags: []
-    },
-  {
-      id: "secador-cabello-keratina-1900w-remington-3",
-      slug: "secador-cabello-keratina-1900w-remington-3",
-      name: "SECADOR CABELLO KERATINA 1900W REMINGTON",
-      brand: "Remington",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1730,
-      price: 2439,
-      images: ["/products/secador-cabello-keratina-1900w-remington-3.webp"],
       description: "Seca, protege y fortalece tu melena con este potente secador de 1900W que lleva el cuidado térmico al siguiente nivel gracias a su rejilla recubierta con cerámica y queratina. A medida que seca rápidamente tu cabello, emite microacondicionadores que se adhieren a la fibra capilar, minimizando el daño por calor y reduciendo dramáticamente el frizz para un acabado mucho más pulido y manejable. Con múltiples configuraciones de temperatura y velocidad, además de un botón de aire frío para fijar el peinado, es la herramienta perfecta para lograr un secado de salón que deja tu cabello fuerte, elástico y con un brillo saludable.",
       notes: {
         top: [],
@@ -42788,27 +43653,6 @@ const careProducts: RawProduct[] = [
       },
       sizeMl: null,
       sizeLabel: "1 kg",
-      inStock: true,
-      category: "Hidratación capilar",
-      tags: []
-    },
-  {
-      id: "spray-capilar-nevada-250ml-sos-crescimiento-leave-in",
-      slug: "spray-capilar-nevada-250ml-sos-crescimiento-leave-in",
-      name: "SPRAY CAPILAR NEVADA 250ML SOS CRESCIMIENTO LEAVE-IN",
-      brand: "Nevada",
-      type: "beauty",
-      gender: "unisex",
-      cost: 118,
-      price: 216,
-      images: ["/products/spray-capilar-nevada-250ml-sos-crescimiento-leave-in.webp", "/products/spray-capilar-nevada-250ml-sos-crescimiento-leave-in-2.webp"],
-      description: "Hidratación capilar de 250 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 250,
       inStock: true,
       category: "Hidratación capilar",
       tags: []
@@ -44067,28 +44911,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "trat-nnp-1kg-15-en-1-keratina",
-      slug: "trat-nnp-1kg-15-en-1-keratina",
-      name: "TRAT-NNP 1KG 15 EN 1 KERATINA",
-      brand: "Nevada",
-      type: "beauty",
-      gender: "unisex",
-      cost: 139,
-      price: 244,
-      images: ["/products/trat-nnp-1kg-15-en-1-keratina.webp"],
-      description: "Tratamiento para cabello de 1 kg.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      sizeLabel: "1 kg",
-      inStock: true,
-      category: "Tratamiento para cabello",
-      tags: []
-    },
-  {
       id: "trat-nnp-1kg-keratina",
       slug: "trat-nnp-1kg-keratina",
       name: "TRAT-NNP 1KG KERATINA",
@@ -45295,27 +46117,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "shampoo-para-ninos",
-      slug: "shampoo-para-ninos",
-      name: "SHAMPOO PARA NIÑOS",
-      brand: "Xtracare",
-      type: "beauty",
-      gender: "unisex",
-      cost: 41,
-      price: 70,
-      images: ["/products/shampoo-para-ninos.webp", "/products/shampoo-para-ninos-2.webp"],
-      description: "Cuidado para niños.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Cuidado para niños",
-      tags: []
-    },
-  {
       id: "spray-p-pies-x-care-85gr",
       slug: "spray-p-pies-x-care-85gr",
       name: "SPRAY P/PIES X.CARE 85GR",
@@ -45486,27 +46287,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "crema-corp-nnp-444ml-vit-c",
-      slug: "crema-corp-nnp-444ml-vit-c",
-      name: "CREMA CORP NNP 444ML VIT C",
-      brand: "NNP",
-      type: "beauty",
-      gender: "unisex",
-      cost: 50,
-      price: 92,
-      images: ["/products/crema-corp-nnp-444ml-vit-c.webp"],
-      description: "Crema corporal de 444 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 444,
-      inStock: true,
-      category: "Crema corporal",
-      tags: []
-    },
-  {
       id: "activ-d-rizos-nevada-300ml-crespos-perfeitos",
       slug: "activ-d-rizos-nevada-300ml-crespos-perfeitos",
       name: "ACTIV D/RIZOS NEVADA 300ML CRESPOS PERFEITOS",
@@ -45630,27 +46410,6 @@ const careProducts: RawProduct[] = [
       sizeMl: 473,
       inStock: true,
       category: "Cuidado para niños",
-      tags: []
-    },
-  {
-      id: "kit-keratina-nevada-1l-brazilian-suprime-3pza",
-      slug: "kit-keratina-nevada-1l-brazilian-suprime-3pza",
-      name: "KIT KERATINA NEVADA 1L BRAZILIAN SUPRIME 3PZA",
-      brand: "Nevada",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1100,
-      price: 1456,
-      images: ["/products/kit-keratina-nevada-1l-brazilian-suprime-3pza.webp", "/products/kit-keratina-nevada-1l-brazilian-suprime-3pza-2.webp"],
-      description: "Keratina.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Keratina",
       tags: []
     },
   {
@@ -46347,27 +47106,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "combo-plancha-rizador-keratina-remington",
-      slug: "combo-plancha-rizador-keratina-remington",
-      name: "COMBO PLANCHA/ RIZADOR KERATINA REMINGTON",
-      brand: "Remington",
-      type: "beauty",
-      gender: "unisex",
-      cost: 2450,
-      price: 3537,
-      images: ["/products/combo-plancha-rizador-keratina-remington.webp", "/products/combo-plancha-rizador-keratina-remington-2.webp"],
-      description: "Plancha para cabello.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Plancha para cabello",
-      tags: []
-    },
-  {
       id: "plancha-cabello-colageno-remington",
       slug: "plancha-cabello-colageno-remington",
       name: "PLANCHA CABELLO COLAGENO REMINGTON",
@@ -46398,27 +47136,6 @@ const careProducts: RawProduct[] = [
       cost: 1287,
       price: 1769,
       images: ["/products/plancha-cabello-wet2dry-remington.webp", "/products/plancha-cabello-wet2dry-remington-2.webp"],
-      description: "Plancha para cabello.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Plancha para cabello",
-      tags: []
-    },
-  {
-      id: "plancha-cabello-almendra-remington",
-      slug: "plancha-cabello-almendra-remington",
-      name: "PLANCHA CABELLO ALMENDRA REMINGTON",
-      brand: "Remington",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1301,
-      price: 1846,
-      images: ["/products/plancha-cabello-almendra-remington.webp", "/products/plancha-cabello-almendra-remington-2.webp"],
       description: "Plancha para cabello.",
       notes: {
         top: [],
@@ -46735,27 +47452,6 @@ const careProducts: RawProduct[] = [
       cost: 241,
       price: 444,
       images: ["/products/gel-para-cabello.webp"],
-      description: "Accesorios de barbería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorios de barbería",
-      tags: []
-    },
-  {
-      id: "barbera-combo-color-code-wahl",
-      slug: "barbera-combo-color-code-wahl",
-      name: "BARBERA COMBO COLOR CODE WAHL",
-      brand: "Wahl",
-      type: "beauty",
-      gender: "hombre",
-      cost: 953,
-      price: 1310,
-      images: ["/products/barbera-combo-color-code-wahl.webp"],
       description: "Accesorios de barbería.",
       notes: {
         top: [],
@@ -47237,7 +47933,7 @@ const careProducts: RawProduct[] = [
       type: "beauty",
       gender: "unisex",
       cost: 240,
-      price: 456,
+      price: 374,
       images: ["/products/mascarilla-karseell.webp"],
       description: "Tratamiento para cabello.",
       notes: {
@@ -47248,27 +47944,6 @@ const careProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Tratamiento para cabello",
-      tags: []
-    },
-  {
-      id: "karseell-argan-oil",
-      slug: "karseell-argan-oil",
-      name: "KARSEELL ARGAN OIL",
-      brand: "Karseell",
-      type: "beauty",
-      gender: "unisex",
-      cost: 245,
-      price: 397,
-      images: ["/products/karseell-argan-oil.webp"],
-      description: "Hidratación capilar.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Hidratación capilar",
       tags: []
     },
   {
@@ -48028,27 +48703,6 @@ const careProducts: RawProduct[] = [
       sizeMl: 270,
       inStock: true,
       category: "Protector solar",
-      tags: []
-    },
-  {
-      id: "crema-corp-wokali-550ml-avena-e",
-      slug: "crema-corp-wokali-550ml-avena-e",
-      name: "CREMA CORP WOKALI 550ML AVENA (E)",
-      brand: "Fruit Of The Wokali",
-      type: "beauty",
-      gender: "unisex",
-      cost: 105,
-      price: 192,
-      images: ["/products/crema-corp-wokali-550ml-avena-e.webp"],
-      description: "Crema corporal de 550 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 550,
-      inStock: true,
-      category: "Crema corporal",
       tags: []
     },
   {
@@ -50321,27 +50975,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "bioaqua-vitamin-c-collagen-brightening-moisturizing-eye-mask-pair",
-      slug: "bioaqua-vitamin-c-collagen-brightening-moisturizing-eye-mask-pair",
-      name: "BIOAQUA Vitamin C Collagen Brightening Moisturizing Eye Mask/pair",
-      brand: "Bioaqua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 3,
-      price: 6,
-      images: ["/products/bioaqua-vitamin-c-collagen-brightening-moisturizing-eye-mask-pair.webp"],
-      description: "Mascarilla facial.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Mascarilla facial",
-      tags: []
-    },
-  {
       id: "bioaqua-nicotinamide-collagen-powder-lip-tendering-mask-piece",
       slug: "bioaqua-nicotinamide-collagen-powder-lip-tendering-mask-piece",
       name: "BIOAQUA Nicotinamide Collagen Powder Lip Tendering Mask/piece",
@@ -51653,28 +52286,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "bioaoua-cherry-blossom-fragrance-hidratante-lapiz-labial-version-extranjera-2-7g",
-      slug: "bioaoua-cherry-blossom-fragrance-hidratante-lapiz-labial-version-extranjera-2-7g",
-      name: "Bioaoua Cherry Blossom Fragrance hidratante lápiz labial (versión extranjera) 2.7g",
-      brand: "Bioaqua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 14,
-      price: 29,
-      images: ["/products/bioaoua-cherry-blossom-fragrance-hidratante-lapiz-labial-version-extranjera-2-7g.webp"],
-      description: "Cuidado bucal de 2.7 g.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      sizeLabel: "2.7 g",
-      inStock: true,
-      category: "Cuidado bucal",
-      tags: []
-    },
-  {
       id: "crema-para-ojos-de-pulpa-de-arroz-bioaoua-version-extranjera-nuevo-20g",
       slug: "crema-para-ojos-de-pulpa-de-arroz-bioaoua-version-extranjera-nuevo-20g",
       name: "Crema para ojos de pulpa de arroz bioaoua (versión extranjera) (nuevo) 20G",
@@ -51891,27 +52502,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "acondicionador-reparador-y-suavizante-de-pure-de-arroz-bioaoua-edicion-extranjera-500-ml-2",
-      slug: "acondicionador-reparador-y-suavizante-de-pure-de-arroz-bioaoua-edicion-extranjera-500-ml-2",
-      name: "Acondicionador reparador y suavizante de puré de arroz BIOAOUA (edición extranjera) 500 ml",
-      brand: "Bioaqua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 55,
-      price: 118,
-      images: ["/products/acondicionador-reparador-y-suavizante-de-pure-de-arroz-bioaoua-edicion-extranjera-500-ml-2.webp"],
-      description: "Tratamiento para cabello de 500 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 500,
-      inStock: true,
-      category: "Tratamiento para cabello",
-      tags: []
-    },
-  {
       id: "poquanya-vitamina-c-liangze-esencia-nueva-100ml",
       slug: "poquanya-vitamina-c-liangze-esencia-nueva-100ml",
       name: "Poquanya vitamina C liangze esencia (nueva) 100ml",
@@ -52102,28 +52692,6 @@ const careProducts: RawProduct[] = [
       sizeLabel: "20 g",
       inStock: true,
       category: "Crema facial",
-      tags: []
-    },
-  {
-      id: "bioaoua-snow-grass-nutrition-and-repair-eye-cream-version-extranjera-nuevo-20g",
-      slug: "bioaoua-snow-grass-nutrition-and-repair-eye-cream-version-extranjera-nuevo-20g",
-      name: "Bioaoua Snow Grass Nutrition and repair Eye Cream (versión extranjera) (nuevo) 20G",
-      brand: "Bioaqua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 16,
-      price: 30,
-      images: ["/products/bioaoua-snow-grass-nutrition-and-repair-eye-cream-version-extranjera-nuevo-20g.webp"],
-      description: "Tónico facial de 20 g.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      sizeLabel: "20 g",
-      inStock: true,
-      category: "Tónico facial",
       tags: []
     },
   {
@@ -52726,27 +53294,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "banco-hidraulico-p-manicurista-leila-xy",
-      slug: "banco-hidraulico-p-manicurista-leila-xy",
-      name: "BANCO HIDRAULICO P/ MANICURISTA LEILA XY",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 984,
-      price: 1504,
-      images: ["/products/banco-hidraulico-p-manicurista-leila-xy.webp"],
-      description: "Mueble de salón.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Mueble de salón",
-      tags: []
-    },
-  {
       id: "calentador-de-parafina",
       slug: "calentador-de-parafina",
       name: "CALENTADOR DE PARAFINA",
@@ -52777,48 +53324,6 @@ const careProducts: RawProduct[] = [
       cost: 85,
       price: 153,
       images: ["/products/foot-soak-set-4-in-1-lemon.webp"],
-      description: "Accesorio.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorio",
-      tags: []
-    },
-  {
-      id: "cobertor-bowl-manicure",
-      slug: "cobertor-bowl-manicure",
-      name: "COBERTOR BOWL MANICURE",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 2,
-      price: 4,
-      images: ["/products/cobertor-bowl-manicure.webp"],
-      description: "Accesorio.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorio",
-      tags: []
-    },
-  {
-      id: "cepillo-plastico-colores-surt-2",
-      slug: "cepillo-plastico-colores-surt-2",
-      name: "CEPILLO PLASTICO COLORES SURT",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 69,
-      price: 125,
-      images: ["/products/cepillo-plastico-colores-surt-2.webp"],
       description: "Accesorio.",
       notes: {
         top: [],
@@ -53505,27 +54010,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "fairest-color-hair-oxidizing-emulsion-cream-6-frdv-6-20vol",
-      slug: "fairest-color-hair-oxidizing-emulsion-cream-6-frdv-6-20vol",
-      name: "Fairest Color Hair Oxidizing Emulsion Cream 6% FRDV-6 20vol",
-      brand: "Yogi Care",
-      type: "beauty",
-      gender: "unisex",
-      cost: 96,
-      price: 198,
-      images: ["/products/fairest-color-hair-oxidizing-emulsion-cream-6-frdv-6-20vol.webp"],
-      description: "Decolorante.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Decolorante",
-      tags: []
-    },
-  {
       id: "fairest-color-hair-oxidizing-emulsion-cream-9-frdv-9-30vol",
       slug: "fairest-color-hair-oxidizing-emulsion-cream-9-frdv-9-30vol",
       name: "Fairest Color Hair Oxidizing Emulsion Cream 9% FRDV-9 30VOL",
@@ -53691,27 +54175,6 @@ const careProducts: RawProduct[] = [
       sizeMl: 280,
       inStock: true,
       category: "Acondicionador",
-      tags: []
-    },
-  {
-      id: "peroxido-volumen-20",
-      slug: "peroxido-volumen-20",
-      name: "PEROXIDO VOLUMEN 20",
-      brand: "Yogi Care",
-      type: "beauty",
-      gender: "unisex",
-      cost: 93,
-      price: 192,
-      images: ["/products/peroxido-volumen-20.webp"],
-      description: "Hidratación capilar.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Hidratación capilar",
       tags: []
     },
   {
@@ -54980,27 +55443,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "almohada-p-bebe",
-      slug: "almohada-p-bebe",
-      name: "ALMOHADA P/ BEBE",
-      brand: "Lotus",
-      type: "beauty",
-      gender: "unisex",
-      cost: 100,
-      price: 174,
-      images: ["/products/almohada-p-bebe.webp"],
-      description: "Cuidado para niños.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Cuidado para niños",
-      tags: []
-    },
-  {
       id: "carrito-auxiliar-de-peluq-jazz-negro-e",
       slug: "carrito-auxiliar-de-peluq-jazz-negro-e",
       name: "CARRITO AUXILIAR DE PELUQ. JAZZ NEGRO (E)",
@@ -55546,28 +55988,6 @@ const careProducts: RawProduct[] = [
         base: []
       },
       sizeMl: null,
-      inStock: true,
-      category: "Protector solar",
-      tags: []
-    },
-  {
-      id: "bloqueador-solar-dr-rashel-80gr-colageno-75spf",
-      slug: "bloqueador-solar-dr-rashel-80gr-colageno-75spf",
-      name: "BLOQUEADOR SOLAR DR.RASHEL 80GR COLAGENO 75SPF",
-      brand: "Dr. Rashel",
-      type: "beauty",
-      gender: "unisex",
-      cost: 76,
-      price: 129,
-      images: ["/products/bloqueador-solar-dr-rashel-80gr-colageno-75spf.webp"],
-      description: "Protector solar de 80 g.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      sizeLabel: "80 g",
       inStock: true,
       category: "Protector solar",
       tags: []
@@ -57030,27 +57450,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "fijador-nevada-600ml-extra-hold-2",
-      slug: "fijador-nevada-600ml-extra-hold-2",
-      name: "FIJADOR NEVADA 600ML EXTRA HOLD",
-      brand: "Nevada",
-      type: "beauty",
-      gender: "unisex",
-      cost: 99,
-      price: 183,
-      images: ["/products/fijador-nevada-600ml-extra-hold-2.webp"],
-      description: "Hidratación capilar de 600 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 600,
-      inStock: true,
-      category: "Hidratación capilar",
-      tags: []
-    },
-  {
       id: "tonico-capilar-sl-s-o-s-bomba-100ml-original-crecimento-noche",
       slug: "tonico-capilar-sl-s-o-s-bomba-100ml-original-crecimento-noche",
       name: "TONICO CAPILAR SL S.O.S BOMBA 100ML ORIGINAL CRECIMENTO NOCHE",
@@ -58220,27 +58619,6 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "escolpidora-cera",
-      slug: "escolpidora-cera",
-      name: "ESCOLPIDORA CERA",
-      brand: "Sinko",
-      type: "beauty",
-      gender: "hombre",
-      cost: 88,
-      price: 220,
-      images: ["/products/escolpidora-cera.webp"],
-      description: "Accesorios de barbería.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Accesorios de barbería",
-      tags: []
-    },
-  {
       id: "crema-mattel-118ml-barbie-surtidos-dl24-2",
       slug: "crema-mattel-118ml-barbie-surtidos-dl24-2",
       name: "CREMA MATTEL 118ML BARBIE SURTIDOS DL24",
@@ -58388,69 +58766,6 @@ const careProducts: RawProduct[] = [
       tags: ["spf 50", "iluminador", "centella"]
     },
   {
-      id: "heartleaf-pore-control-cleansing-oil-200ml",
-      slug: "heartleaf-pore-control-cleansing-oil-200ml",
-      name: "Heartleaf Pore Control Cleansing Oil [200ml]",
-      brand: "Anua",
-      type: "beauty",
-      gender: "unisex",
-      cost: 411,
-      price: 782,
-      images: ["/products/heartleaf-pore-control-cleansing-oil-200ml.webp"],
-      description: "Limpiador facial de 200 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 200,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
-      id: "low-ph-good-morning-gel-cleanser-150ml",
-      slug: "low-ph-good-morning-gel-cleanser-150ml",
-      name: "Low pH Good Morning Gel Cleanser [150ml]",
-      brand: "Cosrx",
-      type: "beauty",
-      gender: "unisex",
-      cost: 252,
-      price: 480,
-      images: ["/products/low-ph-good-morning-gel-cleanser-150ml.webp"],
-      description: "Limpiador facial de 150 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 150,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
-      id: "centella-cleansing-foam-2024-version-150ml",
-      slug: "centella-cleansing-foam-2024-version-150ml",
-      name: "Centella Cleansing Foam [2024 Version - 150ml]",
-      brand: "Mixsoon",
-      type: "beauty",
-      gender: "unisex",
-      cost: 310,
-      price: 589,
-      images: ["/products/centella-cleansing-foam-2024-version-150ml.webp"],
-      description: "Limpiador facial de 150 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 150,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
       id: "madagascar-centella-poremizing-deep-cleansing-foam-125ml",
       slug: "madagascar-centella-poremizing-deep-cleansing-foam-125ml",
       name: "Madagascar Centella Poremizing Deep Cleansing Foam [125ml]",
@@ -58467,48 +58782,6 @@ const careProducts: RawProduct[] = [
         base: []
       },
       sizeMl: 125,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
-      id: "madagascar-centella-tone-brightening-capsule-ampoule-50ml",
-      slug: "madagascar-centella-tone-brightening-capsule-ampoule-50ml",
-      name: "Madagascar Centella Tone Brightening Capsule Ampoule [50ml]",
-      brand: "Skin1004",
-      type: "beauty",
-      gender: "unisex",
-      cost: 364,
-      price: 693,
-      images: ["/products/madagascar-centella-tone-brightening-capsule-ampoule-50ml.webp"],
-      description: "Suero facial de 50 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 50,
-      inStock: true,
-      category: "Skincare coreano",
-      tags: []
-    },
-  {
-      id: "lab-in-nature-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml",
-      slug: "lab-in-nature-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml",
-      name: "Lab in Nature Madagascar Centella Retinol 0.2 Boosting Shot Ampoule [30ml]",
-      brand: "Skin1004",
-      type: "beauty",
-      gender: "unisex",
-      cost: 366,
-      price: 641,
-      images: ["/products/lab-in-nature-madagascar-centella-retinol-0-2-boosting-shot-ampoule-30ml.webp"],
-      description: "Suero facial de 30 ml.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: 30,
       inStock: true,
       category: "Skincare coreano",
       tags: []
@@ -58535,45 +58808,423 @@ const careProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "madagascar-centella-tea-trica-bha-foam-125ml-2",
-      slug: "madagascar-centella-tea-trica-bha-foam-125ml-2",
-      name: "Madagascar Centella Tea-trica BHA Foam [125ml]",
-      brand: "Skin1004",
+      id: "champu-nutritivo-con-aceite-de-argan-lote-1",
+      slug: "champu-nutritivo-con-aceite-de-argan-lote-1",
+      name: "CHAMPÚ NUTRITIVO CON ACEITE DE ARGÁN",
+      brand: "Sinko",
       type: "beauty",
       gender: "unisex",
-      cost: 314,
-      price: 598,
-      images: ["/products/madagascar-centella-tea-trica-bha-foam-125ml-2.webp"],
-      description: "Limpiador facial de 125 ml.",
+      cost: 6,
+      price: 14,
+      images: ["/products/champu-nutritivo-con-aceite-de-argan.webp"],
+      description: "Shampoo.",
       notes: {
         top: [],
         heart: [],
         base: []
       },
-      sizeMl: 125,
+      sizeMl: null,
+      inStock: true,
+      category: "Shampoo",
+      tags: []
+    },
+  {
+      id: "cera-capilar-ossion-lote-1",
+      slug: "cera-capilar-ossion-lote-1",
+      name: "CERA CAPILAR OSSION",
+      brand: "Morfose Ossion",
+      type: "beauty",
+      gender: "hombre",
+      cost: 131,
+      price: 241,
+      images: ["/products/cera-capilar-ossion.webp", "/products/cera-capilar-ossion-2.webp"],
+      description: "Accesorios de barbería.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorios de barbería",
+      tags: []
+    },
+  {
+      id: "hisopos-500pcs-lote-1",
+      slug: "hisopos-500pcs-lote-1",
+      name: "HISOPOS 500PCS",
+      brand: "Lotus",
+      type: "beauty",
+      gender: "unisex",
+      cost: 54,
+      price: 95,
+      images: ["/products/hisopos-500pcs.webp"],
+      description: "Accesorio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: []
+    },
+  {
+      id: "cosmetiquera-transparente",
+      slug: "cosmetiquera-transparente",
+      name: "COSMETIQUERA TRANSPARENTE",
+      brand: "S/M",
+      type: "beauty",
+      gender: "unisex",
+      cost: 65,
+      price: 143,
+      images: [],
+      description: "Cosmetiquera de PVC transparente con estampado floral, cierre seguro y asas cómodas para transportarla con facilidad. Perfecta para organizar maquillaje, artículos de higiene personal o accesorios de viaje, manteniendo todo visible y ordenado en un solo lugar.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: []
+    },
+  {
+      id: "horquillas-plasticas",
+      slug: "horquillas-plasticas",
+      name: "HORQUILLAS PLASTICAS",
+      brand: "Lotus",
+      type: "beauty",
+      gender: "unisex",
+      cost: 34,
+      price: 60,
+      images: ["/products/horquillas-plasticas.webp"],
+      description: "Mantén tu peinado firme y en su lugar todo el día con estas horquillas plásticas. Son ideales para sujetar mechones, recoger el cabello, crear moños, trenzas y peinados elegantes o casuales, tanto para el día a día como para eventos especiales. Su material plástico es ligero, cómodo y no daña el cabello. Fáciles de usar para adultos y niñas, son un básico indispensable en el tocador, la cartera o el bolso de gimnasio. Un accesorio práctico y económico que te ayuda a lucir siempre arreglada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: []
+    },
+  {
+      id: "cotton-soft-sun-stick-19g",
+      slug: "cotton-soft-sun-stick-19g",
+      name: "Cotton Soft Sun Stick [19g]",
+      brand: "Tocobo",
+      type: "beauty",
+      gender: "unisex",
+      cost: 335,
+      price: 587,
+      images: ["/products/cotton-soft-sun-stick-19g.webp"],
+      description: "Skincare coreano. 19 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
       inStock: true,
       category: "Skincare coreano",
       tags: []
     },
   {
-      id: "madagascar-centella-tea-trica-mild-peeling-gel-125ml",
-      slug: "madagascar-centella-tea-trica-mild-peeling-gel-125ml",
-      name: "Madagascar Centella Tea-Trica Mild Peeling Gel [125ml]",
-      brand: "Skin1004",
+      id: "age-r-booster-pro-edicion-rosa",
+      slug: "age-r-booster-pro-edicion-rosa",
+      name: "AGE-R BOOSTER PRO EDICIÓN ROSA",
+      brand: "Medicube",
       type: "beauty",
       gender: "unisex",
-      cost: 401,
-      price: 763,
-      images: ["/products/madagascar-centella-tea-trica-mild-peeling-gel-125ml.webp"],
-      description: "Exfoliante facial de 125 ml.",
+      cost: 4214,
+      price: 6321,
+      images: ["/products/age-r-booster-pro-edicion-rosa.webp"],
+      description: "Dispositivo de cuidado facial medicube AGE-R Booster Pro Edición Rosa. Activos destacados: tecnología de dispositivo para uso en casa. Ayuda a que cremas y sérums se absorban mejor y a mejorar el aspecto de firmeza y luminosidad de la piel. Recomendado para quienes buscan potenciar su rutina. Edad sugerida: adultos. Presentación: 1 dispositivo (versión en inglés).",
       notes: {
         top: [],
         heart: [],
         base: []
       },
-      sizeMl: 125,
+      sizeMl: null,
       inStock: true,
       category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "cica-cooling-sun-stick-18g",
+      slug: "cica-cooling-sun-stick-18g",
+      name: "Cica Cooling Sun Stick [18g]",
+      brand: "Tocobo",
+      type: "beauty",
+      gender: "unisex",
+      cost: 355,
+      price: 622,
+      images: ["/products/cica-cooling-sun-stick-18g.webp"],
+      description: "Skincare coreano. 18 g.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Skincare coreano",
+      tags: []
+    },
+  {
+      id: "shp-nnp-510ml-keratina",
+      slug: "shp-nnp-510ml-keratina",
+      name: "SHP NNP 510ML KERATINA",
+      brand: "Varios",
+      type: "beauty",
+      gender: "unisex",
+      cost: 100,
+      price: 162,
+      images: ["/products/shp-nnp-510ml-keratina.webp"],
+      description: "Shampoo. 510 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 510,
+      inStock: true,
+      category: "Shampoo",
+      tags: []
+    },
+  {
+      id: "crema-corp-nevada-444ml-vit-e",
+      slug: "crema-corp-nevada-444ml-vit-e",
+      name: "CREMA CORP NEVADA 444ML VIT E",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 50,
+      price: 92,
+      images: ["/products/crema-corp-nevada-444ml-vit-e.webp"],
+      description: "Crema corporal Nevada de 444 ml con Vitamina E, formulada para hidratar la piel a diario aportando suavidad y un efecto antioxidante. Su textura se absorbe con facilidad sin dejar sensación grasosa, ideal para el cuidado corporal diario de toda la familia.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 444,
+      inStock: true,
+      category: "Crema corporal",
+      tags: []
+    },
+  {
+      id: "talco-corp-nevada-142gr-c-mota-rosa-perfumado-e",
+      slug: "talco-corp-nevada-142gr-c-mota-rosa-perfumado-e",
+      name: "TALCO CORP NEVADA 142GR C/MOTA ROSA PERFUMADO (E)",
+      brand: "Nevada",
+      type: "beauty",
+      gender: "unisex",
+      cost: 50,
+      price: 92,
+      images: ["/products/talco-corp-nevada-142gr-c-mota-rosa-perfumado-e.webp"],
+      description: "Talco corporal Nevada 142 g Rosa con mota: refresca, absorbe la humedad y perfuma tu piel con un suave aroma a rosas. ¡Frescura y elegancia todo el día!",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Crema corporal",
+      tags: []
+    },
+  {
+      id: "champu-anticaspa-con-moringa",
+      slug: "champu-anticaspa-con-moringa",
+      name: "CHAMPÚ ANTICASPA CON MORINGA",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 6,
+      price: 14,
+      images: ["/products/champu-anticaspa-con-moringa.webp", "/products/champu-anticaspa-con-moringa-2.webp"],
+      description: "Shampoo.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Shampoo",
+      tags: []
+    },
+  {
+      id: "algodon-300pcs",
+      slug: "algodon-300pcs",
+      name: "ALGODON 300PCS",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 38,
+      price: 67,
+      images: ["/products/algodon-300pcs.webp"],
+      description: "Accesorio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: []
+    },
+  {
+      id: "nano-plastic-treatment-1000ml",
+      slug: "nano-plastic-treatment-1000ml",
+      name: "NANO PLASTIC TREATMENT 1000ml",
+      brand: "Yogi Care",
+      type: "beauty",
+      gender: "unisex",
+      cost: 481,
+      price: 987,
+      images: ["/products/nano-plastic-treatment-1000ml.webp"],
+      description: "Keratina. 1000 ml.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: 1000,
+      inStock: true,
+      category: "Keratina",
+      tags: []
+    },
+  {
+      id: "set-de-2-ganchos-colores-surt-10cm",
+      slug: "set-de-2-ganchos-colores-surt-10cm",
+      name: "SET DE 2 GANCHOS COLORES SURT 10cm",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 48,
+      price: 84,
+      images: ["/products/set-de-2-ganchos-colores-surt-10cm-foto-2.webp"],
+      description: "Set de ganchos para el cabello, un complemento práctico y versátil para sujetar mechones y crear peinados con acabado profesional. Un producto de uso constante en cualquier salón de estilismo. Su firmeza asegura que el peinado se mantenga intacto durante todo el día.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: []
+    },
+  {
+      id: "cepillo-con-peine-p-rizos-colores-surtidos-forma-de-orejitas",
+      slug: "cepillo-con-peine-p-rizos-colores-surtidos-forma-de-orejitas",
+      name: "CEPILLO CON PEINE P/ RIZOS COLORES SURTIDOS FORMA DE OREJITAS",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 83,
+      price: 146,
+      images: ["/products/cepillo-con-peine-p-rizos-colores-surtidos-forma-de-orejitas-foto-2.webp"],
+      description: "Cepillo con peine para rizos en diseño divertido, que combina funcionalidad profesional con un detalle llamativo que atrae la atención del comprador. Ideal para definir rizos con precisión mientras se ofrece un producto visualmente atractivo en el punto de venta. Su diseño original lo convierte en un producto de venta por impulso.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
+      tags: []
+    },
+  {
+      id: "plancha-p-cabello-aguacate-macadamia",
+      slug: "plancha-p-cabello-aguacate-macadamia",
+      name: "PLANCHA P/ CABELLO AGUACATE MACADAMIA",
+      brand: "Varios",
+      type: "beauty",
+      gender: "unisex",
+      cost: 1500,
+      price: 2100,
+      images: ["/products/plancha-p-cabello-aguacate-macadamia-foto-2.webp"],
+      description: "Transforma tu cabello opaco en una melena radiante y sedosa con esta innovadora plancha cuyas placas de cerámica avanzada están infundidas con microacondicionadores de aguacate y macadamia. Al calentarse, la plancha libera uniformemente esta mezcla nutritiva sobre cada mechón, eliminando el frizz y aportando un brillo espectacular sin dejar residuos grasos, protegiendo la fibra capilar del daño por calor. Es la elección perfecta para quienes buscan un alisado ultra suave, duradero y con un aspecto visiblemente más saludable, hidratado y lleno de vida desde la primera pasada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha para cabello",
+      tags: []
+    },
+  {
+      id: "plancha-p-cabello-aguacate-macadamia-2",
+      slug: "plancha-p-cabello-aguacate-macadamia-2",
+      name: "PLANCHA P/ CABELLO AGUACATE MACADAMIA",
+      brand: "Varios",
+      type: "beauty",
+      gender: "unisex",
+      cost: 1500,
+      price: 2241,
+      images: ["/products/plancha-p-cabello-aguacate-macadamia-2-foto-2.webp"],
+      description: "Transforma tu cabello opaco en una melena radiante y sedosa con esta innovadora plancha cuyas placas de cerámica avanzada están infundidas con microacondicionadores de aguacate y macadamia. Al calentarse, la plancha libera uniformemente esta mezcla nutritiva sobre cada mechón, eliminando el frizz y aportando un brillo espectacular sin dejar residuos grasos, protegiendo la fibra capilar del daño por calor. Es la elección perfecta para quienes buscan un alisado ultra suave, duradero y con un aspecto visiblemente más saludable, hidratado y lleno de vida desde la primera pasada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha para cabello",
+      tags: []
+    },
+  {
+      id: "plancha-p-cabello-aguacate-macadamia-3",
+      slug: "plancha-p-cabello-aguacate-macadamia-3",
+      name: "PLANCHA P/ CABELLO AGUACATE MACADAMIA",
+      brand: "Varios",
+      type: "beauty",
+      gender: "unisex",
+      cost: 1600,
+      price: 2560,
+      images: ["/products/plancha-p-cabello-aguacate-macadamia-3-foto-2.webp"],
+      description: "Transforma tu cabello opaco en una melena radiante y sedosa con esta innovadora plancha cuyas placas de cerámica avanzada están infundidas con microacondicionadores de aguacate y macadamia. Al calentarse, la plancha libera uniformemente esta mezcla nutritiva sobre cada mechón, eliminando el frizz y aportando un brillo espectacular sin dejar residuos grasos, protegiendo la fibra capilar del daño por calor. Es la elección perfecta para quienes buscan un alisado ultra suave, duradero y con un aspecto visiblemente más saludable, hidratado y lleno de vida desde la primera pasada.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Plancha para cabello",
+      tags: []
+    },
+  {
+      id: "sauna-vaporizador-facial-compacto",
+      slug: "sauna-vaporizador-facial-compacto",
+      name: "SAUNA / VAPORIZADOR FACIAL COMPACTO",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 429,
+      price: 770,
+      images: ["/products/sauna-vaporizador-facial-compacto.webp", "/products/sauna-vaporizador-facial-compacto-2.webp"],
+      description: "Accesorio.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Accesorio",
       tags: []
     },
 ];
@@ -59367,27 +60018,6 @@ const makeupProducts: RawProduct[] = [
       price: 135,
       images: ["/products/esmalte-gel-3.webp"],
       description: "Rubber Base con Color 7006-17",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "rubber",
-      slug: "rubber",
-      name: "RUBBER",
-      brand: "Camis",
-      type: "beauty",
-      gender: "unisex",
-      cost: 71,
-      price: 115,
-      images: ["/products/rubber.webp"],
-      description: "Rubber Base 7000",
       notes: {
         top: [],
         heart: [],
@@ -63284,27 +63914,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "magic-lipstick",
-      slug: "magic-lipstick",
-      name: "MAGIC LIPSTICK",
-      brand: "Prolux",
-      type: "beauty",
-      gender: "unisex",
-      cost: 14,
-      price: 26,
-      images: ["/products/magic-lipstick.webp"],
-      description: "Maquillaje de labios.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
       id: "cherry-kiss-lip-gloss-clear",
       slug: "cherry-kiss-lip-gloss-clear",
       name: "CHERRY KISS LIP GLOSS- CLEAR",
@@ -63650,27 +64259,6 @@ const makeupProducts: RawProduct[] = [
       cost: 35,
       price: 50,
       images: ["/products/brillo-de-labios-velvet-nudes.webp"],
-      description: "Maquillaje de labios.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "matte-liquid-lip-color-color-b",
-      slug: "matte-liquid-lip-color-color-b",
-      name: "MATTE LIQUID LIP COLOR- COLOR B",
-      brand: "Prolux",
-      type: "beauty",
-      gender: "unisex",
-      cost: 35,
-      price: 46,
-      images: ["/products/matte-liquid-lip-color-color-b.webp"],
       description: "Maquillaje de labios.",
       notes: {
         top: [],
@@ -64512,27 +65100,6 @@ const makeupProducts: RawProduct[] = [
       cost: 115,
       price: 219,
       images: ["/products/dear-darling-water-tint-9-colors-tomato-ade.webp"],
-      description: "Maquillaje de rostro.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "dear-darling-water-tint-7-colors-red-grapefruit",
-      slug: "dear-darling-water-tint-7-colors-red-grapefruit",
-      name: "DEAR DARLING WATER TINT - 7 COLORS [RED GRAPEFRUIT]",
-      brand: "Etude",
-      type: "beauty",
-      gender: "unisex",
-      cost: 115,
-      price: 219,
-      images: ["/products/dear-darling-water-tint-7-colors-red-grapefruit.webp"],
       description: "Maquillaje de rostro.",
       notes: {
         top: [],
@@ -65998,48 +66565,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "paleta-de-sombras-27-colores-retro",
-      slug: "paleta-de-sombras-27-colores-retro",
-      name: "PALETA DE SOMBRAS 27 COLORES RETRO",
-      brand: "Febble",
-      type: "beauty",
-      gender: "unisex",
-      cost: 162,
-      price: 333,
-      images: ["/products/paleta-de-sombras-27-colores-retro.webp"],
-      description: "Paleta de maquillaje multiusos de 27 tonos (sombras, rubor e iluminador) de la línea Modern Retro de Febble, con distintas combinaciones para crear looks variados. Modo de uso: aplicar con brocha o aplicador los tonos deseados sobre ojos, mejillas y rostro según el look a lograr.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "paleta-27-colores-retro",
-      slug: "paleta-27-colores-retro",
-      name: "PALETA 27 COLORES RETRO",
-      brand: "Febble",
-      type: "beauty",
-      gender: "unisex",
-      cost: 162,
-      price: 333,
-      images: ["/products/paleta-27-colores-retro.webp"],
-      description: "Paleta de maquillaje multiusos de 27 tonos (sombras, rubor e iluminador) de la línea Modern Retro de Febble, con distintas combinaciones para crear looks variados. Modo de uso: aplicar con brocha o aplicador los tonos deseados sobre ojos, mejillas y rostro según el look a lograr.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
       id: "paleta-de-contorno-duo",
       slug: "paleta-de-contorno-duo",
       name: "PALETA DE CONTORNO DÚO",
@@ -66334,27 +66859,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "pedreria-p-unas-disenos-variados-col-2024",
-      slug: "pedreria-p-unas-disenos-variados-col-2024",
-      name: "PEDRERIA P/ UÑAS DISEÑOS VARIADOS COL 2024",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 14,
-      price: 25,
-      images: ["/products/pedreria-p-unas-disenos-variados-col-2024.webp"],
-      description: "Pedrería para uñas con diseños variados de la colección más reciente, ideal para nail artists que buscan innovar constantemente en sus servicios. Un producto que permite ofrecer siempre algo nuevo a las clientas más fieles. Su variedad asegura opciones para todos los gustos y ocasiones.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "pedreria-para-unas",
       slug: "pedreria-para-unas",
       name: "PEDRERIA PARA UÑAS",
@@ -66407,27 +66911,6 @@ const makeupProducts: RawProduct[] = [
       price: 165,
       images: ["/products/cortacuticulas-mango-de-plastico-7-mm-2.webp"],
       description: "Accesorio para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "pincel-p-acrilico-4-mango-de-pedreria",
-      slug: "pincel-p-acrilico-4-mango-de-pedreria",
-      name: "PINCEL P/ ACRILICO # 4 MANGO DE PEDRERIA",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 75,
-      price: 132,
-      images: ["/products/pincel-p-acrilico-4-mango-de-pedreria.webp"],
-      description: "Pincel para acrílico con mango decorado en pedrería, que combina funcionalidad profesional con un diseño elegante que distingue a la nail artist. Un producto que suma valor estético a la herramienta de trabajo diario. Su acabado llamativo lo convierte en un producto de exhibición atractivo en punto de venta.",
       notes: {
         top: [],
         heart: [],
@@ -66511,27 +66994,6 @@ const makeupProducts: RawProduct[] = [
       cost: 10,
       price: 18,
       images: ["/products/cepillo-para-unas.webp"],
-      description: "Accesorio para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "decor-unas-glitter-colores-surtidos-x-12-und",
-      slug: "decor-unas-glitter-colores-surtidos-x-12-und",
-      name: "DECOR. UÑAS GLITTER COLORES SURTIDOS X 12 UND",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 30,
-      price: 53,
-      images: ["/products/decor-unas-glitter-colores-surtidos-x-12-und.webp"],
       description: "Accesorio para uñas.",
       notes: {
         top: [],
@@ -66975,27 +67437,6 @@ const makeupProducts: RawProduct[] = [
       price: 11,
       images: ["/products/stickers-para-unas-lineas-doradas-col-2024.webp"],
       description: "Stickers para uñas líneas doradas colección 2024. Añade un toque chic y moderno con líneas metálicas. Tendencia y elegancia en cada uña.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "pincel-p-acrilico-8-mango-de-metal",
-      slug: "pincel-p-acrilico-8-mango-de-metal",
-      name: "PINCEL P/ ACRILICO # 8 MANGO DE METAL",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 76,
-      price: 133,
-      images: ["/products/pincel-p-acrilico-8-mango-de-metal.webp"],
-      description: "Pincel para acrílico No. 8 con mango de metal. Aplicación precisa y uniforme del acrílico para uñas perfectas. Calidad profesional y durable.",
       notes: {
         top: [],
         heart: [],
@@ -68520,27 +68961,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "labial-soft-matte-nude-lips",
-      slug: "labial-soft-matte-nude-lips",
-      name: "LABIAL SOFT MATTE NUDE LIPS",
-      brand: "Prolux",
-      type: "beauty",
-      gender: "unisex",
-      cost: 27,
-      price: 53,
-      images: ["/products/labial-soft-matte-nude-lips.webp"],
-      description: "Maquillaje de labios.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
       id: "flawless-staypowder-fondation-fsp-4-0",
       slug: "flawless-staypowder-fondation-fsp-4-0",
       name: "FLAWLESS STAYPOWDER FONDATION FSP 4.0",
@@ -68929,27 +69349,6 @@ const makeupProducts: RawProduct[] = [
       price: 395,
       images: ["/products/base-en-polvo-compacto-para-maquillaje-3.webp"],
       description: "Maquillaje de rostro.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "juego-de-brochas",
-      slug: "juego-de-brochas",
-      name: "JUEGO DE BROCHAS",
-      brand: "Beauty Creations",
-      type: "beauty",
-      gender: "unisex",
-      cost: 666,
-      price: 1316,
-      images: ["/products/juego-de-brochas.webp"],
-      description: "Es un juego de brochas de maquillaje con mangos en tono azul, diseñado para facilitar la aplicación y el difuminado de diferentes productos de maquillaje, como bases, polvos, rubores y sombras. Sus cerdas suaves ayudan a distribuir el producto de manera uniforme sobre la piel, logrando acabados profesionales tanto para maquillaje facial como de ojos. El set incluye brochas de distintos tamaños y formas, permitiendo cubrir las principales necesidades de una rutina de maquillaje completa, desde la aplicación de base hasta el difuminado de sombras y la definición de detalles. Su diseño práctico y colorido lo convierte en una opción atractiva para uso personal o como regalo. Beneficios: facilita",
       notes: {
         top: [],
         heart: [],
@@ -70515,27 +70914,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "lampara-sunbt-12-288w-perilla",
-      slug: "lampara-sunbt-12-288w-perilla",
-      name: "Lámpara SUNBT-12 288W Perilla",
-      brand: "SUN",
-      type: "beauty",
-      gender: "unisex",
-      cost: 397,
-      price: 814,
-      images: [],
-      description: "Brillo y estilo que se notan desde el primer encendido. Lámpara UV/LED de 288W con diseño compacto en acabado brillante tipo glitter, disponible en rosa, lila y durazno. Cuenta con 45 LEDs de doble fuente de luz (365+405nm) que curan gel UV, builder y gel LED de forma uniforme y sin zonas sin secar. Su tecnología \"Sunshine\" brinda una luz cómoda para la vista, no dañina y que no oscurece la piel, además de aliviar la sensación de ardor durante el curado. El control de tiempo es por perilla giratoria (10s/60s/120s) con pantalla digital. Dimensiones: 219x196x124mm. Voltaje universal 100-240V, 50/60Hz. Vida útil de hasta 50,000 horas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "lampara-sun-y-01-pro-288w-10-segundos",
       slug: "lampara-sun-y-01-pro-288w-10-segundos",
       name: "Lámpara SUN Y-01 PRO 288W 10 Segundos",
@@ -71567,27 +71945,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "fresa-de-diamante-para-unas-en-forma-de-cilindro-roja-expert-diametro-de-cabeza-2-5-mm-parte-activa-6-mm",
-      slug: "fresa-de-diamante-para-unas-en-forma-de-cilindro-roja-expert-diametro-de-cabeza-2-5-mm-parte-activa-6-mm",
-      name: "Fresa de diamante para uñas en forma de cilindro roja EXPERT diámetro de cabeza 2.5 mm / parte activa 6 mm",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 68,
-      price: 92,
-      images: ["/products/fresa-de-diamante-para-unas-en-forma-de-cilindro-roja-expert-diametro-de-cabeza-2-5-mm-parte-activa-6-mm.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "brocha-profesional-beauty-style-pro-tools-p-sombras",
       slug: "brocha-profesional-beauty-style-pro-tools-p-sombras",
       name: "BROCHA PROFESIONAL BEAUTY STYLE PRO TOOLS P/ SOMBRAS",
@@ -72135,27 +72492,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "lijas-p-reemplazo-de-punta-de-pulidora-180-240",
-      slug: "lijas-p-reemplazo-de-punta-de-pulidora-180-240",
-      name: "LIJAS P/REEMPLAZO DE PUNTA DE PULIDORA 180/240",
-      brand: "Vive",
-      type: "beauty",
-      gender: "unisex",
-      cost: 154,
-      price: 270,
-      images: ["/products/lijas-p-reemplazo-de-punta-de-pulidora-180-240.webp"],
-      description: "Lijas de reemplazo grano 180/240 para pulidora: dan forma y suavidad a tus uñas con acabado profesional. Doble grano para mayor versatilidad. Repuesto esencial.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "builder-5-in-1-rose-petal-gel-nails",
       slug: "builder-5-in-1-rose-petal-gel-nails",
       name: "BUILDER 5 IN 1 ROSE PETAL (GEL NAILS)",
@@ -72535,48 +72871,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "set-esponja-maq-p-difuminar-x-3-pzas",
-      slug: "set-esponja-maq-p-difuminar-x-3-pzas",
-      name: "SET ESPONJA MAQ. P/ DIFUMINAR X 3 PZAS",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 39,
-      price: 71,
-      images: ["/products/set-esponja-maq-p-difuminar-x-3-pzas.webp", "/products/set-esponja-maq-p-difuminar-x-3-pzas-2.webp"],
-      description: "Accesorio de maquillaje.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "set-esponja-maq-p-difuminar-x-3-pzas-2",
-      slug: "set-esponja-maq-p-difuminar-x-3-pzas-2",
-      name: "SET ESPONJA MAQ. P/ DIFUMINAR X 3 PZAS",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 40,
-      price: 70,
-      images: ["/products/set-esponja-maq-p-difuminar-x-3-pzas-2.webp", "/products/set-esponja-maq-p-difuminar-x-3-pzas-2-2.webp"],
-      description: "Accesorio de maquillaje.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
       id: "esponjas-de-maquillaje-p-difuminar-colores-surt",
       slug: "esponjas-de-maquillaje-p-difuminar-colores-surt",
       name: "ESPONJAS DE MAQUILLAJE P/ DIFUMINAR COLORES SURT",
@@ -72587,27 +72881,6 @@ const makeupProducts: RawProduct[] = [
       price: 119,
       images: ["/products/esponjas-de-maquillaje-p-difuminar-colores-surt.webp", "/products/esponjas-de-maquillaje-p-difuminar-colores-surt-2.webp"],
       description: "Accesorio de maquillaje.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "set-esponja-maq-p-difuminar-x-4-pzas",
-      slug: "set-esponja-maq-p-difuminar-x-4-pzas",
-      name: "SET ESPONJA MAQ. P/ DIFUMINAR X 4 PZAS",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 56,
-      price: 98,
-      images: ["/products/set-esponja-maq-p-difuminar-x-4-pzas.webp"],
-      description: "Set de 4 esponjas de maquillaje para difuminar. Difumina base y corrector como una profesional. Acabado natural y sin marcas en segundos.",
       notes: {
         top: [],
         heart: [],
@@ -73230,27 +73503,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "pinza-rizadora-de-pestana-colores-surt-sfe",
-      slug: "pinza-rizadora-de-pestana-colores-surt-sfe",
-      name: "PINZA RIZADORA DE PESTAÑA COLORES SURT SFE",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 54,
-      price: 96,
-      images: ["/products/pinza-rizadora-de-pestana-colores-surt-sfe.webp"],
-      description: "Accesorio de maquillaje.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
       id: "dispensador-plastico-de-acetona-200-ml",
       slug: "dispensador-plastico-de-acetona-200-ml",
       name: "DISPENSADOR PLASTICO DE ACETONA 200 ml",
@@ -73269,27 +73521,6 @@ const makeupProducts: RawProduct[] = [
       sizeMl: 200,
       inStock: true,
       category: "Uñas",
-      tags: []
-    },
-  {
-      id: "brocha-de-maquillaje-para-polvo-forma-de-rosa-colores-surt",
-      slug: "brocha-de-maquillaje-para-polvo-forma-de-rosa-colores-surt",
-      name: "BROCHA DE MAQUILLAJE PARA POLVO FORMA DE ROSA COLORES SURT",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 74,
-      price: 130,
-      images: ["/products/brocha-de-maquillaje-para-polvo-forma-de-rosa-colores-surt.webp"],
-      description: "Accesorio de maquillaje.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
       tags: []
     },
   {
@@ -73630,27 +73861,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "mesa-de-manicure-anyi-cuadrada-blanca",
-      slug: "mesa-de-manicure-anyi-cuadrada-blanca",
-      name: "MESA DE MANICURE ANYI CUADRADA BLANCA",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 1753,
-      price: 2790,
-      images: ["/products/mesa-de-manicure-anyi-cuadrada-blanca.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "decori-pro-powder-french-white-2-oz-each-144-pc-master-case",
       slug: "decori-pro-powder-french-white-2-oz-each-144-pc-master-case",
       name: "DECORI PRO POWDER FRENCH WHITE - 2 OZ (EACH): 144 PC / MASTER CASE",
@@ -73924,27 +74134,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "pincel-para-gel-expert-ancho-6-mm-largo-11-mm",
-      slug: "pincel-para-gel-expert-ancho-6-mm-largo-11-mm",
-      name: "PINCEL PARA GEL EXPERT ANCHO 6 MM / LARGO 11 MM",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 79,
-      price: 151,
-      images: ["/products/pincel-para-gel-expert-ancho-6-mm-largo-11-mm.webp"],
-      description: "Cobertura uniforme y acabado perfecto: la calidad que tu trabajo merece.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "pincel-de-doble-punta-expert-liner-7-mm-para-degradado-11-mm",
       slug: "pincel-de-doble-punta-expert-liner-7-mm-para-degradado-11-mm",
       name: "PINCEL DE DOBLE PUNTA EXPERT LINER 7 MM / PARA DEGRADADO 11 MM",
@@ -74008,27 +74197,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "alicates-profesionales-para-cuticulas-smart-30-7-mm",
-      slug: "alicates-profesionales-para-cuticulas-smart-30-7-mm",
-      name: "ALICATES PROFESIONALES PARA CUTÍCULAS SMART 30 7 MM",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 303,
-      price: 576,
-      images: ["/products/alicates-profesionales-para-cuticulas-smart-30-7-mm.webp"],
-      description: "El equilibrio perfecto entre alcance y control: manicura impecable garantizada.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "alicates-profesionales-para-cuticulas-smart-100-9-mm",
       slug: "alicates-profesionales-para-cuticulas-smart-100-9-mm",
       name: "ALICATES PROFESIONALES PARA CUTÍCULAS SMART 100 9 MM",
@@ -74039,27 +74207,6 @@ const makeupProducts: RawProduct[] = [
       price: 513,
       images: ["/products/alicates-profesionales-para-cuticulas-smart-100-9-mm.webp"],
       description: "Corta cutículas sin tirones ni dolor: suavidad profesional en cada gesto.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "alicates-profesionales-para-cuticulas-smart-50-5-mm",
-      slug: "alicates-profesionales-para-cuticulas-smart-50-5-mm",
-      name: "ALICATES PROFESIONALES PARA CUTÍCULAS SMART 50 5 MM",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 303,
-      price: 576,
-      images: ["/products/alicates-profesionales-para-cuticulas-smart-50-5-mm.webp"],
-      description: "Resultados de salón en tus manos: cortes limpios que enamoran.",
       notes: {
         top: [],
         heart: [],
@@ -74092,27 +74239,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "alicates-profesionales-para-cuticulas-expert-90-7-mm",
-      slug: "alicates-profesionales-para-cuticulas-expert-90-7-mm",
-      name: "Alicates profesionales para cutículas EXPERT 90 7 mm",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 505,
-      price: 694,
-      images: ["/products/alicates-profesionales-para-cuticulas-expert-90-7-mm.webp", "/products/alicates-profesionales-para-cuticulas-expert-90-7-mm-2.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "alicates-para-cuticulas-classic-10-8-mm",
       slug: "alicates-para-cuticulas-classic-10-8-mm",
       name: "ALICATES PARA CUTÍCULAS CLASSIC 10 8 MM",
@@ -74123,69 +74249,6 @@ const makeupProducts: RawProduct[] = [
       price: 461,
       images: ["/products/alicates-para-cuticulas-classic-10-8-mm.webp"],
       description: "Más alcance, más comodidad: mima tus cutículas con precisión profesional.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "fresa-de-diamante-gota-roja-expert-diametro-del-cabezal-1-6-mm-parte-de-trabajo-4-mm",
-      slug: "fresa-de-diamante-gota-roja-expert-diametro-del-cabezal-1-6-mm-parte-de-trabajo-4-mm",
-      name: "FRESA DE DIAMANTE GOTA ROJA EXPERT DIÁMETRO DEL CABEZAL 1,6 MM / PARTE DE TRABAJO 4 MM",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 62,
-      price: 119,
-      images: ["/products/fresa-de-diamante-gota-roja-expert-diametro-del-cabezal-1-6-mm-parte-de-trabajo-4-mm.webp"],
-      description: "Detalla y perfila con maestría: cada uña, una pequeña obra de arte.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "fresa-de-diamante-pera-puntiaguda-roja-expert-diametro-del-cabezal-4-mm-parte-de-trabajo-12-mm",
-      slug: "fresa-de-diamante-pera-puntiaguda-roja-expert-diametro-del-cabezal-4-mm-parte-de-trabajo-12-mm",
-      name: "FRESA DE DIAMANTE PERA PUNTIAGUDA ROJA EXPERT DIÁMETRO DEL CABEZAL 4 MM / PARTE DE TRABAJO 12 MM",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 108,
-      price: 206,
-      images: ["/products/fresa-de-diamante-pera-puntiaguda-roja-expert-diametro-del-cabezal-4-mm-parte-de-trabajo-12-mm.webp"],
-      description: "Retira la cutícula con rapidez y precisión: el toque pro que marca la diferencia.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "lima-de-unas-mineral-media-luna-expert-40-grano-100-180-25-uds",
-      slug: "lima-de-unas-mineral-media-luna-expert-40-grano-100-180-25-uds",
-      name: "LIMA DE UÑAS MINERAL MEDIA LUNA EXPERT 40 GRANO 100/180 (25 UDS)",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 207,
-      price: 395,
-      images: ["/products/lima-de-unas-mineral-media-luna-expert-40-grano-100-180-25-uds.webp"],
-      description: "Tu aliada de cada día: 25 limas para lucir manos perfectas sin parar.",
       notes: {
         top: [],
         heart: [],
@@ -74218,27 +74281,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "tijeras-profesionales-para-cuticulas-expert-20-type-2",
-      slug: "tijeras-profesionales-para-cuticulas-expert-20-type-2",
-      name: "TIJERAS PROFESIONALES PARA CUTÍCULAS EXPERT 20 TYPE 2",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 232,
-      price: 442,
-      images: ["/products/tijeras-profesionales-para-cuticulas-expert-20-type-2.webp"],
-      description: "Cortes precisos que enamoran: la calidad EXPERT que tus manos sentirán.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "tijeras-profesionales-para-cuticulas-smart-40-type-3",
       slug: "tijeras-profesionales-para-cuticulas-smart-40-type-3",
       name: "TIJERAS PROFESIONALES PARA CUTÍCULAS SMART 40 TYPE 3",
@@ -74249,27 +74291,6 @@ const makeupProducts: RawProduct[] = [
       price: 404,
       images: ["/products/tijeras-profesionales-para-cuticulas-smart-40-type-3.webp"],
       description: "Control total para un acabado impecable: tus clientas notarán la diferencia.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "tijeras-profesionales-para-cuticulas-smart-22-type-1",
-      slug: "tijeras-profesionales-para-cuticulas-smart-22-type-1",
-      name: "TIJERAS PROFESIONALES PARA CUTÍCULAS SMART 22 TYPE 1",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 212,
-      price: 404,
-      images: ["/products/tijeras-profesionales-para-cuticulas-smart-22-type-1.webp"],
-      description: "Precisión que se nota: cada corte te acerca a la manicura perfecta.",
       notes: {
         top: [],
         heart: [],
@@ -74375,27 +74396,6 @@ const makeupProducts: RawProduct[] = [
       price: 415,
       images: ["/products/cinta-abrasiva-blanca-desechable-expert-grano-180-para-estuche-de-plastico.webp"],
       description: "Renueva tus uñas con total higiene: recambios que regalan frescura en cada uso.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "cortaunas-grande-beauty-care-11",
-      slug: "cortaunas-grande-beauty-care-11",
-      name: "CORTAÚÑAS GRANDE BEAUTY & CARE 11",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 98,
-      price: 187,
-      images: ["/products/cortaunas-grande-beauty-care-11.webp"],
-      description: "Corte firme y perfecto en cada uso: la confianza que tus manos merecen.",
       notes: {
         top: [],
         heart: [],
@@ -74522,27 +74522,6 @@ const makeupProducts: RawProduct[] = [
       price: 126,
       images: ["/products/cortaunas-pequeno-beauty-care-10.webp"],
       description: "Lleva la perfección a todas partes: corte preciso siempre contigo.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "cortaunas-con-recipiente-para-unas-beauty-care-20",
-      slug: "cortaunas-con-recipiente-para-unas-beauty-care-20",
-      name: "CORTAÚÑAS CON RECIPIENTE PARA UÑAS BEAUTY & CARE 20",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 146,
-      price: 278,
-      images: ["/products/cortaunas-con-recipiente-para-unas-beauty-care-20.webp"],
-      description: "Cuida tus uñas sin desorden: practicidad e higiene que enamoran.",
       notes: {
         top: [],
         heart: [],
@@ -78313,27 +78292,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "guantes-de-nitrilo-p-tinte-talla-s",
-      slug: "guantes-de-nitrilo-p-tinte-talla-s",
-      name: "GUANTES DE NITRILO P/ TINTE TALLA S",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 184,
-      price: 330,
-      images: ["/products/guantes-de-nitrilo-p-tinte-talla-s.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "alcohol-8-onz-97",
       slug: "alcohol-8-onz-97",
       name: "ALCOHOL 8 ONZ 97%",
@@ -78386,27 +78344,6 @@ const makeupProducts: RawProduct[] = [
       price: 254,
       images: ["/products/alcohol-litro-97.webp"],
       description: "Insumo para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "sanitizante",
-      slug: "sanitizante",
-      name: "SANITIZANTE",
-      brand: "Albet",
-      type: "beauty",
-      gender: "unisex",
-      cost: 207,
-      price: 285,
-      images: ["/products/sanitizante.webp", "/products/sanitizante-2.webp"],
-      description: "Sanitizante 1 litro",
       notes: {
         top: [],
         heart: [],
@@ -79511,27 +79448,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "lip-liner-mocha-madness-32",
-      slug: "lip-liner-mocha-madness-32",
-      name: "LIP LINER-MOCHA MADNESS-#32",
-      brand: "Prolux",
-      type: "beauty",
-      gender: "unisex",
-      cost: 18,
-      price: 30,
-      images: [],
-      description: "Maquillaje de rostro.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Maquillaje",
-      tags: []
-    },
-  {
       id: "tintalabios",
       slug: "tintalabios",
       name: "TINTALABIOS",
@@ -79782,27 +79698,6 @@ const makeupProducts: RawProduct[] = [
       sizeMl: null,
       inStock: true,
       category: "Maquillaje",
-      tags: []
-    },
-  {
-      id: "guantes-de-nitrilo-p-tinte-talla-m",
-      slug: "guantes-de-nitrilo-p-tinte-talla-m",
-      name: "GUANTES DE NITRILO P/ TINTE TALLA M",
-      brand: "Beauty Style",
-      type: "beauty",
-      gender: "unisex",
-      cost: 184,
-      price: 327,
-      images: ["/products/guantes-de-nitrilo-p-tinte-talla-m.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
       tags: []
     },
   {
@@ -82581,48 +82476,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "hand-sanitizante-2-onz",
-      slug: "hand-sanitizante-2-onz",
-      name: "HAND SANITIZANTE 2 ONZ",
-      brand: "Albet",
-      type: "beauty",
-      gender: "unisex",
-      cost: 51,
-      price: 83,
-      images: ["/products/hand-sanitizante-2-onz.webp"],
-      description: "Insumo para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "sales-para-pedicura",
-      slug: "sales-para-pedicura",
-      name: "SALES PARA PEDICURA",
-      brand: "Varios",
-      type: "beauty",
-      gender: "unisex",
-      cost: 186,
-      price: 303,
-      images: ["/products/sales-para-pedicura.webp", "/products/sales-para-pedicura-2.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "alcohol-97-litro",
       slug: "alcohol-97-litro",
       name: "ALCOHOL 97% LITRO",
@@ -82653,27 +82506,6 @@ const makeupProducts: RawProduct[] = [
       cost: 107,
       price: 175,
       images: ["/products/jelly-spa.webp"],
-      description: "Insumo para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "quita-esmalte",
-      slug: "quita-esmalte",
-      name: "QUITA ESMALTE",
-      brand: "Albet",
-      type: "beauty",
-      gender: "unisex",
-      cost: 65,
-      price: 106,
-      images: ["/products/quita-esmalte.webp"],
       description: "Insumo para uñas.",
       notes: {
         top: [],
@@ -82875,27 +82707,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "empujador-de-manicura-expert-90-type-2-biselado-y-redondeado",
-      slug: "empujador-de-manicura-expert-90-type-2-biselado-y-redondeado",
-      name: "Empujador de manicura EXPERT 90 TYPE 2 (biselado y redondeado)",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 149,
-      price: 190,
-      images: ["/products/empujador-de-manicura-expert-90-type-2-biselado-y-redondeado.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "curetaje-de-pedicura-expert-20-type-1-cureta-hemisferica",
       slug: "curetaje-de-pedicura-expert-20-type-1-cureta-hemisferica",
       name: "Curetaje de pedicura EXPERT 20 TYPE 1 (cureta hemisférica)",
@@ -82947,27 +82758,6 @@ const makeupProducts: RawProduct[] = [
       cost: 68,
       price: 92,
       images: ["/products/fresa-de-diamante-para-unas-en-forma-de-llama-puntiaguda-roja-expert-diametro-de-cabeza-1-6-mm-parte-activa-8-mm.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "fresa-de-diamante-para-unas-en-forma-de-llama-azul-expert-diametro-de-cabeza-1-4-mm-parte-activa-8-mm",
-      slug: "fresa-de-diamante-para-unas-en-forma-de-llama-azul-expert-diametro-de-cabeza-1-4-mm-parte-activa-8-mm",
-      name: "Fresa de diamante para uñas en forma de llama azul EXPERT diámetro de cabeza 1.4 mm / parte activa 8 mm",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 68,
-      price: 92,
-      images: ["/products/fresa-de-diamante-para-unas-en-forma-de-llama-azul-expert-diametro-de-cabeza-1-4-mm-parte-activa-8-mm.webp"],
       description: "Herramienta para uñas.",
       notes: {
         top: [],
@@ -83220,27 +83010,6 @@ const makeupProducts: RawProduct[] = [
       cost: 89,
       price: 124,
       images: ["/products/base-metalica-en-media-luna-para-lima-de-unas-expert-40.webp"],
-      description: "Herramienta para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
-      id: "base-metalica-para-lima-de-pies-expert-10",
-      slug: "base-metalica-para-lima-de-pies-expert-10",
-      name: "Base metálica para lima de pies EXPERT 10",
-      brand: "Staleks",
-      type: "beauty",
-      gender: "unisex",
-      cost: 199,
-      price: 274,
-      images: ["/products/base-metalica-para-lima-de-pies-expert-10.webp"],
       description: "Herramienta para uñas.",
       notes: {
         top: [],
@@ -84683,27 +84452,6 @@ const makeupProducts: RawProduct[] = [
       tags: []
     },
   {
-      id: "stickers-de-agua-para-unas",
-      slug: "stickers-de-agua-para-unas",
-      name: "STICKERS DE AGUA PARA UÑAS",
-      brand: "Varios",
-      type: "beauty",
-      gender: "unisex",
-      cost: 10,
-      price: 16,
-      images: ["/products/stickers-de-agua-para-unas.webp"],
-      description: "Accesorio para uñas.",
-      notes: {
-        top: [],
-        heart: [],
-        base: []
-      },
-      sizeMl: null,
-      inStock: true,
-      category: "Uñas",
-      tags: []
-    },
-  {
       id: "matte-top-coat",
       slug: "matte-top-coat",
       name: "MATTE TOP COAT",
@@ -85365,6 +85113,132 @@ const makeupProducts: RawProduct[] = [
       price: 1069,
       images: ["/products/espejo-con-luz-led-2.webp"],
       description: "Accesorio de maquillaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Maquillaje",
+      tags: []
+    },
+  {
+      id: "decor-unas-disenos-y-colores-surtidos-x-12-und-lote-1",
+      slug: "decor-unas-disenos-y-colores-surtidos-x-12-und-lote-1",
+      name: "DECOR. UÑAS DISEÑOS Y COLORES SURTIDOS X 12 UND",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "unisex",
+      cost: 23,
+      price: 41,
+      images: ["/products/decor-unas-disenos-y-colores-surtidos-x-12-und.webp"],
+      description: "Accesorio para uñas.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Uñas",
+      tags: []
+    },
+  {
+      id: "enrisador-de-pestanas",
+      slug: "enrisador-de-pestanas",
+      name: "ENRISADOR DE PESTAÑAS",
+      brand: "Zion",
+      type: "beauty",
+      gender: "unisex",
+      cost: 31,
+      price: 55,
+      images: ["/products/enrisador-de-pestanas.webp"],
+      description: "Consigue una mirada más abierta, expresiva y encantadora con este encrespador de pestañas. Riza tus pestañas de forma rápida y sencilla, dándoles curvatura y haciéndolas lucir más largas y voluminosas, con o sin máscara. Es ideal para el maquillaje diario y para eventos especiales, y su diseño práctico permite un uso cómodo y preciso. Compacto y fácil de llevar en la cosmetiquera, es un accesorio indispensable de belleza y un excelente regalo para quienes aman verse bien en todo momento.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Maquillaje",
+      tags: []
+    },
+  {
+      id: "cepillo-para-unas-mango-peq",
+      slug: "cepillo-para-unas-mango-peq",
+      name: "CEPILLO PARA UÑAS MANGO PEQ.",
+      brand: "Beauty Style",
+      type: "beauty",
+      gender: "hombre",
+      cost: 20,
+      price: 35,
+      images: ["/products/cepillo-para-unas-mango-peq.webp"],
+      description: "Cepillo para uñas con mango pequeño, diseñado para un manejo más preciso en espacios reducidos durante la limpieza previa al esmaltado. Un producto práctico que agiliza el trabajo de manicuristas exigentes con el detalle. Su tamaño compacto facilita su uso constante durante toda la jornada laboral.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Uñas",
+      tags: []
+    },
+  {
+      id: "cosmetiquera-de-doble-vista",
+      slug: "cosmetiquera-de-doble-vista",
+      name: "COSMETIQUERA DE DOBLE VISTA",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 222,
+      price: 440,
+      images: ["/products/cosmetiquera-de-doble-vista.webp"],
+      description: "Es una cosmetiquera de doble vista/lado, diseñada para organizar y transportar maquillaje y artículos de cuidado personal de forma práctica. Su diseño con dos compartimentos independientes facilita separar los productos según su uso, manteniendo todo ordenado y de fácil acceso. Está fabricada con un material resistente y fácil de limpiar, ideal para el uso diario o para llevar de viaje. Beneficios: permite organizar los cosméticos en dos espacios separados, es práctica para el uso diario y facilita mantener los artículos de belleza ordenados dentro del bolso o la maleta.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Maquillaje",
+      tags: []
+    },
+  {
+      id: "cosmetiquera-pequena",
+      slug: "cosmetiquera-pequena",
+      name: "COSMETIQUERA PEQUEÑA",
+      brand: "Beauty Creations",
+      type: "beauty",
+      gender: "unisex",
+      cost: 134,
+      price: 266,
+      images: ["/products/cosmetiquera-pequena.webp"],
+      description: "Es una cosmetiquera pequeña, compacta y práctica diseñada para organizar y transportar maquillaje, productos de cuidado personal o artículos de viaje. Su panel superior transparente permite ver fácilmente el contenido, mientras que su base y tira lateral en tono rosa suave aportan estructura y un toque de color. Está fabricada con un material resistente y fácil de limpiar, ideal para el uso diario, viajes o para mantener organizados los artículos de belleza en el bolso. Beneficios: facilita la organización de cosméticos y artículos personales, permite identificar el contenido rápidamente gracias a su panel transparente y es práctica para llevar en el bolso o en maletas de viaje.",
+      notes: {
+        top: [],
+        heart: [],
+        base: []
+      },
+      sizeMl: null,
+      inStock: true,
+      category: "Maquillaje",
+      tags: []
+    },
+  {
+      id: "paleta-27-colores-retro",
+      slug: "paleta-27-colores-retro",
+      name: "PALETA 27 COLORES RETRO",
+      brand: "Febble",
+      type: "beauty",
+      gender: "unisex",
+      cost: 162,
+      price: 333,
+      images: ["/products/paleta-27-colores-retro-foto-2.webp"],
+      description: "Paleta de maquillaje multiusos de 27 tonos (sombras, rubor e iluminador) de la línea Modern Retro de Febble, con distintas combinaciones para crear looks variados. Modo de uso: aplicar con brocha o aplicador los tonos deseados sobre ojos, mejillas y rostro según el look a lograr.",
       notes: {
         top: [],
         heart: [],
