@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { CartButton } from "@/components/cart/cart-drawer";
 import { Logo } from "@/components/logo";
 import { SearchBox } from "@/components/search-box";
@@ -26,12 +27,39 @@ const menu = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const headerRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false);
+  const [openPath, setOpenPath] = useState(pathname);
+  if (pathname !== openPath) {
+    setOpenPath(pathname);
+    setOpen(false);
+  }
+
+  useEffect(() => {
+    if (!open) return;
+    function onPointerDown(event: PointerEvent) {
+      const target = event.target;
+      if (target instanceof Node && headerRef.current?.contains(target)) return;
+      setOpen(false);
+    }
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
   return (
-    <header className="sticky top-0 z-40 border-b border-line/80 bg-ivory/90 backdrop-blur">
-      <p className="bg-ink px-4 py-2 text-center text-[0.72rem] tracking-wide text-champagne">
-        Envío de {formatPrice(SHIPPING_LPS)} con {store.carrier}. Pedidos listos a las {store.orderFillTime} Entrega en{" "}
-        {store.shippingDays}.
+    <header ref={headerRef} className="sticky top-0 z-40 border-b border-line/80 bg-ivory/90 backdrop-blur">
+      <p className="bg-ink px-4 py-2 text-center text-[0.72rem] leading-5 tracking-wide text-champagne">
+        Envío de {formatPrice(SHIPPING_LPS)} con {store.carrier}.{" "}
+        <span className="whitespace-nowrap">Pedidos listos a las {store.orderFillTime}</span>{" "}
+        <span className="whitespace-nowrap">Entrega en {store.shippingDays}.</span>
       </p>
       <Shell className="flex h-16 items-center gap-3">
         <button
@@ -52,7 +80,7 @@ export function Header() {
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-2">
-          <SearchBox variant="header" />
+          <SearchBox variant="header" onOpen={() => setOpen(false)} />
           <CartButton />
         </div>
       </Shell>

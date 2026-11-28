@@ -159,12 +159,6 @@ button.bg-ink:active {
   }
 }
 
-@media (min-width: 768px) {
-  .filter-panel {
-    display: contents;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

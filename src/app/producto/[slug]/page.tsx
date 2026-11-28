@@ -98,7 +98,7 @@ async function ProductScreen({ params }: ProductParams) {
       <div className="mt-4 grid gap-8 md:grid-cols-2">
         <ProductGallery images={product.images} name={title} />
         <div>
-          <div className="max-md:pr-20">
+          <div>
             <p className="text-[0.7rem] uppercase tracking-[0.18em] text-gold">{TYPE_LABEL[product.type]}</p>
             <h1 className="mt-2 font-serif text-4xl leading-tight md:text-6xl">{title}</h1>
             {fold(title).includes(fold(product.brand)) ? null : (

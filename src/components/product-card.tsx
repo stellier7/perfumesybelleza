@@ -91,7 +91,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
       </div>
       <div className="mt-3 flex flex-1 flex-col">
         {showBrand ? <p className="text-[0.72rem] uppercase tracking-[0.16em] text-muted">{product.brand}</p> : null}
-        <Link href={`/producto/${product.slug}`} className="mt-1 font-serif text-[1.45rem] leading-tight">
+        <Link href={`/producto/${product.slug}`} className="mt-1 text-balance font-serif text-xl leading-tight md:text-[1.45rem]">
           {title}
         </Link>
         {showSize ? <p className="mt-1 text-sm text-muted">{size}</p> : null}
