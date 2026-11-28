@@ -7425,7 +7425,7 @@ const perfumeProducts: RawProduct[] = [
       type: "arabic",
       gender: "unisex",
       cost: 1170,
-      price: 1583,
+      price: 1750,
       images: ["/products/set-asad.webp"],
       description: "Set Asad: perfume en spray de 200 ml, bruma para el cabello y el eau de parfum. El Asad suelto de 100 ml ya está en el catálogo. Inspirado en Dior Sauvage Elixir. Aroma especiado, fresco y ambarado.",
       notes: {
@@ -24755,7 +24755,7 @@ const perfumeProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 1000,
-      price: 1500,
+      price: 1750,
       images: ["/products/lattafa-set-asad-edp-100-ml-air-freshener-300-ml-perfumed-sp-200-ml.webp"],
       description: "Lattafa Set Asad (EDP 100ml + Ambientador 300ml + Perfumed Spray 200ml): estuche del popular Asad, amaderado especiado y dulce. Completo, ideal para regalo.",
       notes: {
@@ -28840,7 +28840,7 @@ const perfumeProducts: RawProduct[] = [
       type: "arabic",
       gender: "hombre",
       cost: 1112,
-      price: 1617,
+      price: 1750,
       images: ["/products/lattafa-set-asad-edp-100ml-hair-mist-perfumed-sp-200-ml.webp"],
       description: "Set.",
       notes: {
