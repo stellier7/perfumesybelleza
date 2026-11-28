@@ -185,7 +185,7 @@ async function Catalog({
                 : "No hay productos con esos filtros."}
             </p>
           ) : (
-            <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3">
+            <div className="grid min-w-0 grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3">
               {result.items.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}

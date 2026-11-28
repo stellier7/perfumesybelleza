@@ -24,7 +24,7 @@ export function RecentRail() {
     <section className="border-t border-line" aria-label="Vistos recientemente">
       <Shell className="py-12">
         <h2 className="font-serif text-3xl">Vistos recientemente</h2>
-        <ul className="mt-6 flex gap-4 overflow-x-auto pb-2">
+        <ul className="mt-6 flex min-w-0 max-w-full gap-4 overflow-x-auto pb-2">
           {items.map((item) => (
             <li key={item.id} className="w-36 shrink-0">
               <Link href={`/producto/${item.slug}`} className="block">

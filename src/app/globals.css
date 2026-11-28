@@ -25,12 +25,23 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background: var(--color-ivory);
   color: var(--color-ink);
   font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+/* Un campo menor de 16px hace que iPhone y varios Android acerquen la página y se pueda mover de lado. */
+@media (max-width: 767px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="range"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
 }
 
 ::selection {
@@ -120,7 +131,7 @@ button.bg-ink:active {
   width: 100%;
   height: auto;
   min-height: 145%;
-  max-width: none;
+  max-width: 100%;
   object-fit: cover;
   object-position: center 42%;
 }
@@ -139,6 +150,9 @@ button.bg-ink:active {
   @media (prefers-reduced-motion: no-preference) {
     .hero-photo {
       position: fixed;
+      right: 0;
+      left: 0;
+      width: 100%;
       height: max(58vw, 100lvh);
       min-height: 0;
     }

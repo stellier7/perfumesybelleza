@@ -57,9 +57,9 @@ export function Header() {
   return (
     <header ref={headerRef} className="sticky top-0 z-40 border-b border-line/80 bg-ivory/90 backdrop-blur">
       <p className="bg-ink px-4 py-2 text-center text-[0.72rem] leading-5 tracking-wide text-champagne">
-        Envío de {formatPrice(SHIPPING_LPS)} con {store.carrier}.{" "}
-        <span className="whitespace-nowrap">Pedidos listos a las {store.orderFillTime}</span>{" "}
-        <span className="whitespace-nowrap">Entrega en {store.shippingDays}.</span>
+        <span className="block sm:inline">Envío de {formatPrice(SHIPPING_LPS)} con {store.carrier}.</span>{" "}
+        <span className="block sm:inline">Pedidos listos a las {store.orderFillTime}</span>{" "}
+        <span className="block sm:inline">Entrega en {store.shippingDays}.</span>
       </p>
       <Shell className="flex h-16 items-center gap-3">
         <button

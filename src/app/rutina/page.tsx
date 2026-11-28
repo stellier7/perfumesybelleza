@@ -92,7 +92,7 @@ async function Routine({
           Ver rutina
         </button>
       </form>
-      <div className="mt-4 flex gap-2 overflow-x-auto pb-1">
+      <div className="mt-4 flex min-w-0 max-w-full gap-2 overflow-x-auto pb-1">
         {ROUTINE_STEPS.map((step) => {
           const next: RoutineQuery = { ...query, step: query.step === step.id ? "" : step.id, page: 1 };
           const current = query.step === step.id;
