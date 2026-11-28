@@ -11,13 +11,17 @@ import {
 } from "react";
 import { CART_STORAGE_KEY } from "@/config";
 import { trackPixel } from "@/lib/pixel";
+import { offerPrice } from "@/lib/sale";
 
 export type CartLine = {
   id: string;
   slug: string;
   name: string;
   brand: string;
+  /** Lo que se cobra ahora. */
   price: number;
+  /** Precio de lista, antes de la oferta. Si falta, `price` es ese precio. */
+  listPrice?: number;
   image: string | null;
   qty: number;
   /** Tamaño para mostrar. El nombre guardado sigue siendo el de la distribuidora. */
@@ -53,13 +57,17 @@ function readCart(): CartLine[] {
       if (!entry || typeof entry !== "object") return [];
       const line = entry as Partial<CartLine>;
       if (!line.id || !line.slug || !line.name || !line.brand || typeof line.price !== "number" || line.price <= 0) return [];
+      const listPrice = typeof line.listPrice === "number" && line.listPrice > 0 ? line.listPrice : line.price;
+      const price = offerPrice(listPrice);
+      if (price <= 0) return [];
       return [
         {
           id: line.id,
           slug: line.slug,
           name: line.name,
           brand: line.brand,
-          price: line.price,
+          price,
+          listPrice,
           image: line.image ?? null,
           qty: Math.min(MAX_QTY, Math.max(1, Number(line.qty) || 1)),
           sizeLabel: typeof line.sizeLabel === "string" && line.sizeLabel.trim() ? line.sizeLabel.trim() : undefined,
@@ -129,22 +137,31 @@ export function CartProvider({ children }: { children: ReactNode }) {
       count,
       subtotal,
       addItem: (item, qty = 1) => {
-        if (item.price <= 0) return;
+        const listPrice = item.listPrice !== undefined && item.listPrice > 0 ? item.listPrice : item.price;
+        const price = offerPrice(listPrice);
+        if (price <= 0) return;
+        const priced = { ...item, listPrice, price };
         updateCart((current) => {
-          const existing = current.find((line) => line.id === item.id);
-          if (!existing) return [...current, { ...item, qty: Math.min(MAX_QTY, qty) }];
+          const existing = current.find((line) => line.id === priced.id);
+          if (!existing) return [...current, { ...priced, qty: Math.min(MAX_QTY, qty) }];
           return current.map((line) =>
-            line.id === item.id
-              ? { ...line, sizeLabel: line.sizeLabel ?? item.sizeLabel, qty: Math.min(MAX_QTY, line.qty + qty) }
+            line.id === priced.id
+              ? {
+                  ...line,
+                  price: priced.price,
+                  listPrice: priced.listPrice,
+                  sizeLabel: line.sizeLabel ?? priced.sizeLabel,
+                  qty: Math.min(MAX_QTY, line.qty + qty),
+                }
               : line,
           );
         });
         setDrawerOpen(true);
         trackPixel("AddToCart", {
-          content_ids: [item.id],
-          content_name: item.name,
+          content_ids: [priced.id],
+          content_name: priced.name,
           content_type: "product",
-          value: item.price,
+          value: priced.price,
           currency: "HNL",
         });
       },

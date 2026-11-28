@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useId, useState } from "react";
 import { AddToCartButton } from "@/components/add-to-cart";
+import { ClientSalePrice } from "@/components/client-sale-price";
 import { SaveButton } from "@/components/save-button";
+import { hasShelfPrice } from "@/lib/pricing";
 import type { CartLine } from "@/components/cart/cart-provider";
 import type { SavedItem } from "@/lib/saved";
 
@@ -12,6 +14,8 @@ export type QuickProduct = {
   title: string;
   href: string;
   priceLabel: string;
+  /** Precio de lista. Si falta, se muestra `priceLabel`. */
+  listPrice?: number;
   availability: string;
   images: string[];
   cart: Omit<CartLine, "qty"> | null;
@@ -71,7 +75,13 @@ export function QuickView({ product }: { product: QuickProduct }) {
                   Cerrar
                 </button>
               </div>
-              <p className="mt-3 text-lg">{product.priceLabel}</p>
+              <p className="mt-3 text-lg">
+                {product.listPrice !== undefined && hasShelfPrice(product.listPrice) ? (
+                  <ClientSalePrice list={product.listPrice} className="text-lg" />
+                ) : (
+                  product.priceLabel
+                )}
+              </p>
               <p className="mt-1 text-sm text-muted">{product.availability}</p>
               <div className="mt-5 flex flex-wrap items-center gap-2">
                 {product.cart ? (

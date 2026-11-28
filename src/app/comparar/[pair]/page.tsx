@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
+import { io } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { FaqList } from "@/components/faq";
 import { JsonLd } from "@/components/json-ld";
 import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
+import { PriceMarkup } from "@/components/price-markup";
 import { Shell } from "@/components/shell";
 import { store } from "@/config";
 import { getComparisonBySlug, getComparisonPairs } from "@/lib/catalog";
 import { displayTitle, formatSize } from "@/lib/catalog-model";
 import { fold } from "@/lib/text";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { hasShelfPrice } from "@/lib/pricing";
+import { isSaleActive, offerPrice, SALE } from "@/lib/sale";
 import { prerenderComparisonParams } from "@/lib/prerender-paths";
 import { faqJsonLd } from "@/lib/seo";
 import type { PublicProduct } from "@/types/catalog";
@@ -45,6 +48,8 @@ export default function ComparisonPage({ params }: PairParams) {
 }
 
 async function Comparison({ params }: PairParams) {
+  await io();
+  const now = new Date();
   const comparison = getComparisonBySlug((await params).pair);
   if (!comparison) notFound();
   const { original, alternative } = comparison;
@@ -72,7 +77,7 @@ async function Comparison({ params }: PairParams) {
   return (
     <Shell className="py-8 md:py-12">
       <JsonLd data={faqJsonLd(faqs)} />
-      {!alternative.isReference ? <JsonLd data={productOffer(alternative)} /> : null}
+      {!alternative.isReference ? <JsonLd data={productOffer(alternative, now)} /> : null}
       <nav className="text-sm text-muted">
         <Link href="/comparaciones">Comparaciones</Link>
         <span> / </span>
@@ -88,8 +93,8 @@ async function Comparison({ params }: PairParams) {
         Aquí ves precio, tamaño y para qué momento rinde mejor cada uno.
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        <Side product={original} role="Referencia" />
-        <Side product={alternative} role="Alternativa" />
+        <Side product={original} role="Referencia" now={now} />
+        <Side product={alternative} role="Alternativa" now={now} />
       </div>
       <section className="mt-10 rounded-3xl bg-paper p-6 shadow-soft">
         <h2 className="font-serif text-3xl">Para quién es cada uno</h2>
@@ -116,14 +121,8 @@ async function Comparison({ params }: PairParams) {
   );
 }
 
-function Side({ product, role }: { product: PublicProduct; role: string }) {
-  const price = product.isReference
-    ? "No está en el catálogo"
-    : !hasShelfPrice(product.price)
-      ? "Precio por confirmar"
-      : product.inStock
-        ? formatPrice(product.price)
-        : `${formatPrice(product.price)} · Agotado`;
+function Side({ product, role, now }: { product: PublicProduct; role: string; now: Date }) {
+  const pay = offerPrice(product.price, now);
   return (
     <article className="rounded-3xl border border-line bg-paper p-5 shadow-soft">
       <p className="text-xs uppercase tracking-[0.16em] text-gold">{role}</p>
@@ -131,7 +130,16 @@ function Side({ product, role }: { product: PublicProduct; role: string }) {
       {fold(displayTitle(product)).includes(fold(product.brand)) ? null : (
         <p className="text-sm text-muted">{product.brand}</p>
       )}
-      <p className="mt-4 text-lg">{price}</p>
+      <p className="mt-4 text-lg">
+        {product.isReference ? (
+          "No está en el catálogo"
+        ) : (
+          <>
+            <PriceMarkup list={product.price} pay={pay} className="text-lg" />
+            {product.inStock || !hasShelfPrice(product.price) ? null : <span className="text-muted"> · Agotado</span>}
+          </>
+        )}
+      </p>
       <p className="text-sm text-muted">{formatSize(product) ?? "Tamaño no indicado"}</p>
       <div className="mt-4 grid grid-cols-2 gap-3">
         <RatingMeter label="Duración" value={product.longevity} />
@@ -167,7 +175,9 @@ function Side({ product, role }: { product: PublicProduct; role: string }) {
   );
 }
 
-function productOffer(product: PublicProduct) {
+function productOffer(product: PublicProduct, now: Date) {
+  const pay = offerPrice(product.price, now);
+  const onSale = isSaleActive(now) && hasShelfPrice(product.price) && pay !== product.price;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -178,7 +188,8 @@ function productOffer(product: PublicProduct) {
     offers: {
       "@type": "Offer",
       priceCurrency: "HNL",
-      price: product.price,
+      price: pay,
+      ...(onSale ? { priceValidUntil: SALE.endsAt } : {}),
       availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       url: `${store.url}/producto/${product.slug}`,
     },

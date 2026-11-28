@@ -1,8 +1,8 @@
 import Link from "next/link";
+import { SalePrice } from "@/components/sale-price";
 import { Shell } from "@/components/shell";
 import { getComparisonPairs } from "@/lib/catalog";
 import { displayTitle } from "@/lib/catalog-model";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -48,16 +48,14 @@ export default function ComparisonsPage() {
                 >
                   <p className="text-xs uppercase tracking-[0.16em] text-gold">Alternativa</p>
                   <p className="mt-2 break-words font-serif text-3xl leading-tight">{displayTitle(pair.alternative)}</p>
-                  <p className="mt-3 text-sm">
-                    {pair.original.isReference || !pair.original.inStock
-                      ? "Referencia no disponible para compra"
-                      : hasShelfPrice(pair.original.price)
-                        ? formatPrice(pair.original.price)
-                        : "Precio por confirmar"}
-                    {" · "}
-                    {hasShelfPrice(pair.alternative.price)
-                      ? formatPrice(pair.alternative.price)
-                      : "Precio por confirmar"}
+                  <p className="mt-3 flex flex-wrap items-baseline gap-x-2 text-sm">
+                    {pair.original.isReference || !pair.original.inStock ? (
+                      <span>Referencia no disponible para compra</span>
+                    ) : (
+                      <SalePrice list={pair.original.price} className="text-sm" />
+                    )}
+                    <span aria-hidden="true">·</span>
+                    <SalePrice list={pair.alternative.price} className="text-sm" />
                   </p>
                 </Link>
               ))}

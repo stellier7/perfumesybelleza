@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { useCart } from "@/components/cart/cart-provider";
+import { PriceMarkup } from "@/components/price-markup";
 import { displayTitle } from "@/lib/catalog-model";
 import { formatPrice } from "@/lib/pricing";
 import { shippingCost } from "@/lib/shipping";
-import { useCart } from "@/components/cart/cart-provider";
 
 export function CartButton() {
   const { count, setDrawerOpen } = useCart();
@@ -73,7 +74,9 @@ export function CartDrawer() {
                       {displayTitle({ name: line.name, brand: line.brand, sizeMl: null, sizeLabel: line.sizeLabel })}
                     </p>
                     <div className="mt-1.5 flex items-center gap-2">
-                      <p className="text-sm">{formatPrice(line.price)}</p>
+                      <p className="text-sm">
+                        <PriceMarkup list={line.listPrice ?? line.price} pay={line.price} className="text-sm" />
+                      </p>
                       <button type="button" className="h-8 w-8 rounded-full border border-line" onClick={() => setQty(line.id, line.qty - 1)} aria-label="Quitar uno">
                         −
                       </button>
