@@ -6,6 +6,7 @@ import { assertNever, fold, slugify } from "@/lib/text";
 import type {
   FragranceNotes,
   FragranceRef,
+  ProductType,
   PublicProduct,
   RawProduct,
   SearchRecord,
@@ -447,6 +448,61 @@ function tidyShoutedName(name: string, brand: string): string {
     .join(" ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/** El mismo título visible es el mismo perfume. El cuidado personal no se junta: el color a veces solo está en la foto. */
+export function listingKey(product: {
+  name: string;
+  brand: string;
+  sizeMl: number | null;
+  sizeLabel?: string;
+  type: ProductType;
+  isReference?: boolean;
+}): string | null {
+  if (product.isReference || product.type === "beauty") return null;
+  const title = fold(displayTitle(product));
+  return title || null;
+}
+
+function offerRank(product: PublicProduct): number {
+  return (
+    product.price * 1000 +
+    Number(product.inStock) * 100 +
+    Number(Boolean(product.featured)) * 10 +
+    Number(!product.id.includes("lote"))
+  );
+}
+
+/** Una ficha por título. Se queda la de mayor precio. */
+export function listedProducts<T extends PublicProduct>(products: T[]): T[] {
+  const winners = new Map<string, T>();
+  for (const product of products) {
+    const key = listingKey(product);
+    if (!key) continue;
+    const current = winners.get(key);
+    if (!current || offerRank(product) > offerRank(current)) winners.set(key, product);
+  }
+  const seen = new Set<string>();
+  const listed: T[] = [];
+  for (const product of products) {
+    const key = listingKey(product);
+    if (!key) {
+      listed.push(product);
+      continue;
+    }
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const winner = winners.get(key);
+    if (winner) listed.push(winner);
+  }
+  return listed;
+}
+
+export function canonicalListingSlug(product: PublicProduct, products: PublicProduct[]): string {
+  const key = listingKey(product);
+  if (!key) return product.slug;
+  const winner = listedProducts(products.filter((item) => listingKey(item) === key))[0];
+  return winner?.slug ?? product.slug;
 }
 
 /**

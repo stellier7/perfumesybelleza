@@ -2,8 +2,10 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   buildCatalog,
+  canonicalListingSlug,
   comparisonPairs,
   displayTitle,
+  listedProducts,
   nameWithBrand,
   parseComparisonSlug,
   productSuggestions,
@@ -270,6 +272,25 @@ test("ordena las inspiraciones de la más cercana a la más libre y deja el set 
     result.groups[0]?.sets.map((item) => item.id),
     ["set-bleu"],
   );
+});
+
+test("un perfume repetido se muestra una vez, al precio más alto", () => {
+  const catalog = buildCatalog([
+    product({ id: "asad-lote-832", name: "Asad", brand: "Lattafa", type: "arabic", price: 1331, sizeMl: 100 }),
+    product({ id: "asad", name: "Asad", brand: "Lattafa", type: "arabic", price: 1442, sizeMl: 100, featured: true }),
+    product({ id: "asad-lote-744", name: "Asad", brand: "Lattafa", type: "arabic", price: 1412, sizeMl: 100 }),
+    product({ id: "zanzibar", name: "Asad Zanzibar", brand: "Lattafa", type: "arabic", price: 1344, sizeMl: 100 }),
+    product({ id: "rojo", name: "Esmalte Rojo", brand: "Camis", type: "beauty", category: "Esmalte", price: 140 }),
+    product({ id: "rojo-lote", name: "Esmalte Rojo", brand: "Camis", type: "beauty", category: "Esmalte", price: 260 }),
+  ]);
+  const listed = listedProducts(catalog);
+  assert.deepEqual(
+    listed.map((item) => item.id),
+    ["asad", "zanzibar", "rojo", "rojo-lote"],
+  );
+  assert.equal(listed[0]?.price, 1440);
+  assert.equal(canonicalListingSlug(catalog[0], catalog), "asad");
+  assert.equal(canonicalListingSlug(catalog[1], catalog), "asad");
 });
 
 test("el clon aparece debajo de cada presentación del diseñador", () => {

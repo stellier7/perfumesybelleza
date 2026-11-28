@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { store } from "@/config";
-import { getCatalog, getComparisonPairs } from "@/lib/catalog";
+import { getBrowsableCatalog, getComparisonPairs } from "@/lib/catalog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: path === "" ? 1 : 0.6,
     })),
-    ...getCatalog().map((product) => ({
+    ...getBrowsableCatalog().map((product) => ({
       url: `${store.url}/producto/${product.slug}`,
       changeFrequency: "weekly" as const,
       priority: product.isReference ? 0.4 : 0.8,
