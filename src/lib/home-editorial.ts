@@ -101,6 +101,15 @@ export function editorialTiles(products: readonly ShelfProduct[]): EditorialTile
       tone: "stone",
       visible: products.some((product) => catalogSection(product.type) === "cuidado"),
     },
+    {
+      id: "todos",
+      title: "Todos",
+      text: "Perfumes y cuidado personal.",
+      href: shopHref({ seccion: "perfumes" }),
+      image: homeImage("perfumes-sets"),
+      tone: "night",
+      visible: products.length > 0,
+    },
   ];
   return tiles.flatMap((tile) => {
     if (!tile.visible) return [];
