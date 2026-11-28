@@ -331,7 +331,7 @@ export function AutoRail({
       </div>
       <div
         ref={scroller}
-        className="no-scrollbar scroll-auto cursor-grab touch-pan-y overflow-x-auto overscroll-x-contain active:cursor-grabbing"
+        className="no-scrollbar max-w-full min-w-0 scroll-auto cursor-grab touch-pan-y overflow-x-auto overscroll-x-contain active:cursor-grabbing"
         role="region"
         aria-label={label}
         tabIndex={0}

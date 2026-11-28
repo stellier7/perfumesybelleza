@@ -48,7 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </a>
         <CartProvider>
           <Header />
-          <main id="contenido" className="flex-1 pb-28 md:pb-0">
+          <main id="contenido" className="min-w-0 flex-1 pb-40 md:pb-0">
             {children}
           </main>
           <Footer />

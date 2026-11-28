@@ -11,7 +11,7 @@ export function Shell({
   id?: string;
 }) {
   return (
-    <div id={id} className={cn("mx-auto w-full max-w-7xl px-4", className)}>
+    <div id={id} className={cn("mx-auto w-full min-w-0 max-w-7xl px-4", className)}>
       {children}
     </div>
   );

@@ -18,7 +18,7 @@ function storedUtm(): Record<string, string> {
 export function WhatsAppButton() {
   const { drawerOpen } = useCart();
   const pathname = usePathname();
-  if (drawerOpen || pathname === "/carrito") return null;
+  if (drawerOpen || pathname === "/carrito" || pathname.startsWith("/producto")) return null;
 
   function openChat(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();

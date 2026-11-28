@@ -36,18 +36,18 @@ export default function ComparisonsPage() {
       <div className="mt-10 space-y-10">
         {[...groups.values()].map((group) => (
           <section key={group[0]?.original.id}>
-            <h2 className="font-serif text-3xl">
+            <h2 className="break-words font-serif text-3xl">
               {group[0] ? displayTitle(group[0].original) : ""}
             </h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <div className="mt-4 grid min-w-0 gap-4 md:grid-cols-2">
               {group.map((pair) => (
                 <Link
                   key={pair.slug}
                   href={`/comparar/${pair.slug}`}
-                  className="rounded-3xl border border-line bg-paper p-5 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift"
+                  className="min-w-0 rounded-3xl border border-line bg-paper p-5 shadow-soft transition duration-300 motion-safe:hover:-translate-y-0.5 hover:shadow-lift"
                 >
                   <p className="text-xs uppercase tracking-[0.16em] text-gold">Alternativa</p>
-                  <p className="mt-2 font-serif text-3xl leading-tight">{displayTitle(pair.alternative)}</p>
+                  <p className="mt-2 break-words font-serif text-3xl leading-tight">{displayTitle(pair.alternative)}</p>
                   <p className="mt-3 text-sm">
                     {pair.original.isReference || !pair.original.inStock
                       ? "Referencia no disponible para compra"

@@ -93,11 +93,14 @@ async function Catalog({
         </Link>
       </div>
       <form className="mt-6 grid items-start gap-6 md:grid-cols-[16rem_1fr]" action="/tienda">
-        <details open className="filter-panel min-w-0">
-          <summary className="flex h-11 cursor-pointer items-center rounded-full border border-line bg-paper px-4 text-sm md:hidden">
-            Filtros y orden
-          </summary>
-        <fieldset className="mt-3 grid min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm md:mt-0">
+        <input id="filtros" type="checkbox" className="peer hidden" />
+        <label
+          htmlFor="filtros"
+          className="flex h-11 cursor-pointer items-center rounded-full border border-line bg-paper px-4 text-sm md:hidden"
+        >
+          Filtros y orden
+        </label>
+        <fieldset className="hidden min-w-0 content-start gap-3 self-start rounded-3xl border border-line bg-paper p-4 text-sm peer-checked:grid md:grid">
           <legend className="px-1 text-xs uppercase tracking-[0.16em] text-gold">Filtros</legend>
           <input type="hidden" name="seccion" value={filters.seccion} />
           {types.length > 1 ? (
@@ -171,7 +174,6 @@ async function Catalog({
             Aplicar
           </button>
         </fieldset>
-        </details>
         <div>
           <p className="mb-4 text-sm text-muted">
             {result.total} {result.total === 1 ? "producto" : "productos"}
@@ -183,7 +185,7 @@ async function Catalog({
                 : "No hay productos con esos filtros."}
             </p>
           ) : (
-            <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3">
+            <div className="grid min-w-0 grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3">
               {result.items.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}

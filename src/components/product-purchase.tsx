@@ -51,13 +51,13 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
   }, [zoom]);
 
   if (!current) {
-    return <div className="aspect-[4/5] rounded-3xl bg-blush/60" />;
+    return <div className="aspect-[6/5] rounded-3xl bg-blush/60 md:aspect-[4/5]" />;
   }
   return (
     <div>
       <button
         type="button"
-        className="relative block aspect-[4/5] w-full overflow-hidden rounded-3xl bg-blush/40 shadow-soft"
+        className="relative block aspect-[6/5] w-full overflow-hidden rounded-3xl bg-blush/40 shadow-soft md:aspect-[4/5]"
         onClick={() => setZoom(true)}
         aria-label={`Ampliar foto de ${name}`}
       >
@@ -215,7 +215,7 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
         </div>
       </div>
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-paper/95 p-3 backdrop-blur md:hidden">
-        <div className="flex items-center gap-2 pr-16">
+        <div className="flex items-center gap-2">
           <p className="min-w-0 flex-1 text-sm font-medium">{priceLabel}</p>
           {canBuy ? (
             <button type="button" onClick={buyNow} className="h-11 rounded-full bg-ink px-4 text-sm text-ivory">
