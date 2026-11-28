@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { rememberProduct, useSaved } from "@/components/saved-store";
+import { ClientSalePrice } from "@/components/client-sale-price";
 import { Shell } from "@/components/shell";
 import { displayTitle } from "@/lib/catalog-model";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import type { SavedItem } from "@/lib/saved";
 
 export function RememberProduct({ item }: { item: SavedItem }) {
@@ -35,7 +35,7 @@ export function RecentRail() {
                   {displayTitle({ name: item.name, brand: item.brand, sizeMl: null, sizeLabel: item.sizeLabel })}
                 </span>
                 <span className="mt-1 block text-sm text-muted">
-                  {hasShelfPrice(item.price) ? formatPrice(item.price) : "Precio por confirmar"}
+                  <ClientSalePrice list={item.price} className="text-sm" compareClassName="text-muted" />
                 </span>
               </Link>
             </li>

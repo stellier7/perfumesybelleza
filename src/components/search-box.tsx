@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState, type FormEvent } from "react";
 import { createPortal } from "react-dom";
+import { ClientSalePrice } from "@/components/client-sale-price";
 import { TYPE_LABEL } from "@/config";
 import { sectionLabel } from "@/lib/catalog-section";
 import { displayTitle } from "@/lib/catalog-model";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
 import { searchPath, suggestionsForQuery } from "@/lib/search";
 import { loadSearchRecords } from "@/lib/search-index";
 import type { SearchRecord } from "@/types/catalog";
@@ -158,11 +158,7 @@ function SearchForm({
                       </span>
                     </span>
                     <span className="shrink-0 text-sm">
-                      {item.isReference
-                        ? "Ver alternativas"
-                        : hasShelfPrice(item.price)
-                          ? formatPrice(item.price)
-                          : "Precio por confirmar"}
+                      {item.isReference ? "Ver alternativas" : <ClientSalePrice list={item.price} className="text-sm" />}
                     </span>
                   </Link>
                 </li>

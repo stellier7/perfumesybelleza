@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { io } from "next/cache";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
@@ -7,6 +8,7 @@ import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
 import { ProductCard } from "@/components/product-card";
 import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from "@/components/product-purchase";
 import { RememberProduct } from "@/components/recent-rail";
+import { PriceMarkup } from "@/components/price-markup";
 import { Shell } from "@/components/shell";
 import { SHIPPING_LPS, TYPE_LABEL, store } from "@/config";
 import { canonicalProductSlug, getBrowsableCatalog, getCatalog, getProductBySlug } from "@/lib/catalog";
@@ -21,6 +23,7 @@ import { catalogSection } from "@/lib/catalog-section";
 import { productFacts } from "@/lib/product-facts";
 import { fold } from "@/lib/text";
 import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { isSaleActive, offerPrice, SALE } from "@/lib/sale";
 import { prerenderProductParams } from "@/lib/prerender-paths";
 import type { PublicProduct } from "@/types/catalog";
 
@@ -62,10 +65,12 @@ export default async function ProductPage({ params }: ProductParams) {
 }
 
 async function ProductScreen({ params }: ProductParams) {
+  await io();
+  const now = new Date();
   const slug = (await params).slug;
   const product = getProductBySlug(slug);
   if (!product) notFound();
-  const purchase = toPurchase(product);
+  const purchase = toPurchase(product, now);
   const suggestions = productSuggestions(product, getBrowsableCatalog());
   const title = displayTitle(product);
   const facts = productFacts(product);
@@ -89,7 +94,7 @@ async function ProductScreen({ params }: ProductParams) {
           }}
         />
       ) : null}
-      {!product.isReference ? <JsonLd data={productJsonLd(product)} /> : null}
+      {!product.isReference ? <JsonLd data={productJsonLd(product, now)} /> : null}
       <nav className="text-sm text-muted">
         <Link href="/tienda">Tienda</Link>
         <span> / </span>
@@ -116,8 +121,11 @@ async function ProductScreen({ params }: ProductParams) {
           ) : (
             <>
               <p className="mt-6 font-serif text-4xl">
-                {hasShelfPrice(product.price) ? formatPrice(product.price) : "Precio por confirmar"}
+                <PriceMarkup list={product.price} pay={offerPrice(product.price, now)} className="font-serif text-4xl" />
               </p>
+              {isSaleActive(now) && hasShelfPrice(product.price) ? (
+                <p className="mt-2 text-sm text-muted">{SALE.note}</p>
+              ) : null}
               <p className="mt-1 text-sm text-muted">
                 {formatSize(product) ?? "Tamaño por confirmar"}
                 {product.inStock ? "" : " · Agotado"}
@@ -217,13 +225,14 @@ function comparisonHref(kind: ProductSuggestionGroup["kind"], currentSlug: strin
   }
 }
 
-function toPurchase(product: PublicProduct): PurchaseTarget {
+function toPurchase(product: PublicProduct, now: Date): PurchaseTarget {
   return {
     id: product.id,
     slug: product.slug,
     name: product.name,
     brand: product.brand,
-    price: product.price,
+    price: offerPrice(product.price, now),
+    listPrice: product.price,
     images: product.images,
     inStock: product.inStock,
     isReference: product.isReference,
@@ -236,7 +245,9 @@ function hasNotes(product: PublicProduct): boolean {
   return product.notes.top.length + product.notes.heart.length + product.notes.base.length > 0;
 }
 
-function productJsonLd(product: PublicProduct) {
+function productJsonLd(product: PublicProduct, now: Date) {
+  const pay = offerPrice(product.price, now);
+  const onSale = isSaleActive(now) && hasShelfPrice(product.price) && pay !== product.price;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -252,7 +263,8 @@ function productJsonLd(product: PublicProduct) {
           offers: {
             "@type": "Offer",
             priceCurrency: "HNL",
-            price: product.price,
+            price: pay,
+            ...(onSale ? { priceValidUntil: SALE.endsAt } : {}),
             availability: product.inStock
               ? "https://schema.org/InStock"
               : "https://schema.org/OutOfStock",

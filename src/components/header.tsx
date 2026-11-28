@@ -2,13 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { CartButton } from "@/components/cart/cart-drawer";
 import { Logo } from "@/components/logo";
 import { SearchBox } from "@/components/search-box";
 import { Shell } from "@/components/shell";
-import { SHIPPING_LPS, store } from "@/config";
-import { formatPrice } from "@/lib/pricing";
 
 const links = [
   { href: "/tienda?seccion=perfumes", label: "Perfumes" },
@@ -26,7 +24,7 @@ const menu = [
   { href: "/comparaciones", label: "Comparaciones" },
 ];
 
-export function Header() {
+export function Header({ banner }: { banner: ReactNode }) {
   const pathname = usePathname();
   const headerRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false);
@@ -56,11 +54,7 @@ export function Header() {
 
   return (
     <header ref={headerRef} className="sticky top-0 z-40 border-b border-line/80 bg-ivory/90 backdrop-blur">
-      <p className="bg-ink px-4 py-2 text-center text-[0.72rem] leading-5 tracking-wide text-champagne">
-        <span className="block sm:inline">Envío de {formatPrice(SHIPPING_LPS)} con {store.carrier}.</span>{" "}
-        <span className="block sm:inline">Pedidos listos a las {store.orderFillTime}</span>{" "}
-        <span className="block sm:inline">Entrega en {store.shippingDays}.</span>
-      </p>
+      {banner}
       <Shell className="flex h-16 items-center gap-3">
         <button
           type="button"

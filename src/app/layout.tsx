@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Outfit } from "next/font/google";
 import { Suspense } from "react";
+import { Announcement, SaleBar } from "@/components/announcement";
 import { CartProvider } from "@/components/cart/cart-provider";
 import { CartDrawer } from "@/components/cart/cart-drawer";
 import { Footer } from "@/components/footer";
@@ -47,7 +48,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Saltar al contenido
         </a>
         <CartProvider>
-          <Header />
+          <Header
+            banner={
+              <Suspense fallback={<SaleBar />}>
+                <Announcement />
+              </Suspense>
+            }
+          />
           <main id="contenido" className="min-w-0 flex-1 pb-40 md:pb-0">
             {children}
           </main>

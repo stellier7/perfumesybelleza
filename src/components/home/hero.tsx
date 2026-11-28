@@ -1,52 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import { SearchBox } from "@/components/search-box";
-import { Shell } from "@/components/shell";
+import { Suspense } from "react";
+import { HeroFrame } from "@/components/home/hero-frame";
+import { HeroLive } from "@/components/home/hero-live";
 
 export function HomeHero() {
   return (
-    <section className="hero-stage relative z-20 overflow-hidden border-b border-line">
-      {/* next/image no admite el desplazamiento de esta foto con el scroll. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/home/hero-fondo.webp" alt="" className="hero-photo pointer-events-none" />
-      <div className="pointer-events-none absolute inset-0 bg-ivory/40" />
-      <Shell className="relative grid items-end gap-10 py-10 md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.9fr)] md:gap-14 md:py-16">
-        <div>
-          <p className="text-[0.7rem] uppercase tracking-[0.24em] text-gold">Honduras</p>
-          <h1 className="mt-4 max-w-xl font-serif text-[3.15rem] leading-[0.92] tracking-[-0.03em] md:text-7xl">
-            Tu mundo de belleza, en un solo lugar.
-          </h1>
-          <p className="mt-5 max-w-md text-base leading-7 text-muted">
-            Descubre fragancias irresistibles, skincare coreano y esenciales de belleza seleccionados para ti.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/tienda" className="inline-flex h-12 items-center rounded-full bg-ink px-5 text-sm text-ivory">
-              Descubrir productos
-            </Link>
-            <Link href="#categorias" className="inline-flex h-12 items-center rounded-full border border-ink bg-paper/70 px-5 text-sm">
-              Explorar categorías
-            </Link>
-          </div>
-          <div className="mt-8 max-w-xl">
-            <SearchBox variant="hero" />
-          </div>
-        </div>
-        <figure>
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone shadow-lift ring-4 ring-paper">
-            <Image
-              src="/home/hero-marco.webp"
-              alt="Estantería de perfumes, velas y flores en una boutique"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 46vw"
-              className="object-cover"
-            />
-          </div>
-          <figcaption className="mt-3 text-[0.7rem] uppercase tracking-[0.18em] text-muted">
-            Perfumería, skincare y belleza
-          </figcaption>
-        </figure>
-      </Shell>
-    </section>
+    <Suspense fallback={<HeroFrame sale />}>
+      <HeroLive />
+    </Suspense>
   );
 }

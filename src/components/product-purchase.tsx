@@ -4,8 +4,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState, type MouseEvent } from "react";
 import { useCart } from "@/components/cart/cart-provider";
+import { PriceMarkup } from "@/components/price-markup";
 import { formatSize } from "@/lib/catalog-model";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { hasShelfPrice } from "@/lib/pricing";
 import { trackPixel } from "@/lib/pixel";
 import { UTM_STORAGE_KEY } from "@/config";
 import { sanitizeUtm } from "@/lib/utm";
@@ -20,7 +21,10 @@ export type PurchaseTarget = {
   slug: string;
   name: string;
   brand: string;
+  /** Lo que se cobra en esta visita. */
   price: number;
+  /** Precio de lista, antes de la oferta. */
+  listPrice: number;
   images: string[];
   inStock: boolean;
   isReference: boolean;
@@ -155,6 +159,7 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
     name: product.name,
     brand: product.brand,
     price: product.price,
+    listPrice: product.listPrice,
     image: product.images[0] ?? null,
     sizeLabel: formatSize(product) ?? undefined,
   };
@@ -188,11 +193,13 @@ export function ProductActions({ product }: { product: PurchaseTarget }) {
     </div>
   ) : null;
 
-  const priceLabel = !product.inStock
-    ? "Agotado"
-    : hasShelfPrice(product.price)
-      ? formatPrice(product.price)
-      : "Precio por confirmar";
+  const priceLabel = !product.inStock ? (
+    "Agotado"
+  ) : hasShelfPrice(product.listPrice) ? (
+    <PriceMarkup list={product.listPrice} pay={product.price} className="text-sm font-medium" />
+  ) : (
+    "Precio por confirmar"
+  );
 
   return (
     <>

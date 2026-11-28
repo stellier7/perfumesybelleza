@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { ClientSalePrice } from "@/components/client-sale-price";
 import { toggleWishlist, useSaved } from "@/components/saved-store";
 import { displayTitle } from "@/lib/catalog-model";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
-import Image from "next/image";
 
 export function FavoritesList() {
   const items = useSaved("wishlist");
@@ -32,7 +32,7 @@ export function FavoritesList() {
             <p className="mt-1 text-sm text-muted">
               {item.inStock ? "Disponible" : "Agotado"}
               {" · "}
-              {hasShelfPrice(item.price) ? formatPrice(item.price) : "Precio por confirmar"}
+              <ClientSalePrice list={item.price} className="text-sm" />
             </p>
           </div>
           <button type="button" className="text-sm text-muted" onClick={() => toggleWishlist(item)}>

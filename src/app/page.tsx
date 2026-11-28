@@ -7,6 +7,7 @@ import { ProductRail, TextLink } from "@/components/home/product-rail";
 import { FaqList } from "@/components/faq";
 import { JsonLd } from "@/components/json-ld";
 import { RecentRail } from "@/components/recent-rail";
+import { SalePrice } from "@/components/sale-price";
 import { Shell } from "@/components/shell";
 import { SHIPPING_LPS, store } from "@/config";
 import { getComparisonPairs, getFeaturedProducts, getSellableProducts } from "@/lib/catalog";
@@ -14,7 +15,7 @@ import { displayTitle } from "@/lib/catalog-model";
 import { editorialTiles, topBrands } from "@/lib/home-editorial";
 import { homeShelf } from "@/lib/home-rail";
 import { isSpotlightFiller, pickFamous } from "@/lib/fame";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { formatPrice } from "@/lib/pricing";
 import { faqJsonLd, pageMetadata } from "@/lib/seo";
 import { storeFaqs } from "@/lib/store-copy";
 import { KOREAN_CATEGORY } from "@/lib/routine-finder";
@@ -206,7 +207,11 @@ export default function HomePage() {
                     <span className="text-champagne"> · alternativa</span>
                   </p>
                   <p className="mt-2 text-sm text-champagne/80">
-                    {hasShelfPrice(pair.alternative.price) ? formatPrice(pair.alternative.price) : "Precio por confirmar"}
+                    <SalePrice
+                      list={pair.alternative.price}
+                      className="text-sm text-champagne"
+                      compareClassName="text-champagne/60"
+                    />
                   </p>
                 </Link>
               ))}

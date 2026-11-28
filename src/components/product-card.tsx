@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { AddToCartButton } from "@/components/add-to-cart";
 import { QuickView } from "@/components/quick-view";
+import { SaleBadge, SalePrice } from "@/components/sale-price";
 import { SaveButton } from "@/components/save-button";
 import { displayTitle, formatSize } from "@/lib/catalog-model";
-import { formatPrice, hasShelfPrice } from "@/lib/pricing";
+import { hasShelfPrice } from "@/lib/pricing";
 import { fold } from "@/lib/text";
 import type { SavedItem } from "@/lib/saved";
 import type { PublicProduct } from "@/types/catalog";
@@ -34,7 +35,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
   const priceLabel = product.isReference
     ? "Referencia de aroma"
     : hasShelfPrice(product.price)
-      ? formatPrice(product.price)
+      ? null
       : "Precio por confirmar";
   const availability = product.isReference ? "Para comparar" : product.inStock ? "Disponible" : "Agotado";
   const saved = savedItem(product);
@@ -45,6 +46,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
         name: product.name,
         brand: product.brand,
         price: product.price,
+        listPrice: product.price,
         image: product.images[0] ?? null,
         sizeLabel: size ?? undefined,
       }
@@ -77,6 +79,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
           ) : null}
         </Link>
         <div className="absolute left-3 top-3 flex flex-col items-start gap-1.5">
+          {!product.isReference ? <SaleBadge list={product.price} /> : null}
           {product.featured && product.inStock ? (
             <span className="rounded-full bg-paper/95 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.16em]">Destacado</span>
           ) : null}
@@ -100,7 +103,9 @@ export function ProductCard({ product }: { product: PublicProduct }) {
             Inspirado en {displayTitle({ name: inspired.name, brand: inspired.brand, sizeMl: null })}
           </p>
         ) : null}
-        <p className="mt-auto pt-3 text-sm">{priceLabel}</p>
+        <p className="mt-auto pt-3 text-sm">
+          {priceLabel === null ? <SalePrice list={product.price} className="text-sm" /> : priceLabel}
+        </p>
         <p className="mt-0.5 text-xs text-muted">{availability}</p>
         <div className="mt-3 flex items-center gap-2">
           {cart ? (
@@ -117,7 +122,8 @@ export function ProductCard({ product }: { product: PublicProduct }) {
             product={{
               title,
               href: `/producto/${product.slug}`,
-              priceLabel,
+              priceLabel: priceLabel ?? "",
+              listPrice: priceLabel === null ? product.price : undefined,
               availability,
               images: product.images,
               cart,
