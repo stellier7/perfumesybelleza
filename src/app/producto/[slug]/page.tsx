@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
 import { JsonLd } from "@/components/json-ld";
 import { NotesPyramid, RatingMeter } from "@/components/notes-pyramid";
@@ -9,7 +9,7 @@ import { ProductActions, ProductGallery, ViewContent, type PurchaseTarget } from
 import { RememberProduct } from "@/components/recent-rail";
 import { Shell } from "@/components/shell";
 import { SHIPPING_LPS, TYPE_LABEL, store } from "@/config";
-import { getCatalog, getProductBySlug } from "@/lib/catalog";
+import { canonicalProductSlug, getBrowsableCatalog, getCatalog, getProductBySlug } from "@/lib/catalog";
 import {
   comparisonSlug,
   displayTitle,
@@ -33,13 +33,15 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProductParams): Promise<Metadata> {
-  const product = getProductBySlug((await params).slug);
+  const slug = (await params).slug;
+  const product = getProductBySlug(slug);
   if (!product) return { title: "Producto" };
+  const canonical = canonicalProductSlug(slug) ?? product.slug;
   const title = product.isReference ? `${displayTitle(product)}: alternativas` : displayTitle(product);
   return {
     title,
     description: product.description,
-    alternates: { canonical: `/producto/${product.slug}` },
+    alternates: { canonical: `/producto/${canonical}` },
     openGraph: {
       title,
       description: product.description,
@@ -48,7 +50,10 @@ export async function generateMetadata({ params }: ProductParams): Promise<Metad
   };
 }
 
-export default function ProductPage({ params }: ProductParams) {
+export default async function ProductPage({ params }: ProductParams) {
+  const slug = (await params).slug;
+  const canonical = canonicalProductSlug(slug);
+  if (canonical && canonical !== slug) permanentRedirect(`/producto/${canonical}`);
   return (
     <Suspense fallback={<Shell className="py-12">Cargando producto…</Shell>}>
       <ProductScreen params={params} />
@@ -57,10 +62,11 @@ export default function ProductPage({ params }: ProductParams) {
 }
 
 async function ProductScreen({ params }: ProductParams) {
-  const product = getProductBySlug((await params).slug);
+  const slug = (await params).slug;
+  const product = getProductBySlug(slug);
   if (!product) notFound();
   const purchase = toPurchase(product);
-  const suggestions = productSuggestions(product, getCatalog());
+  const suggestions = productSuggestions(product, getBrowsableCatalog());
   const title = displayTitle(product);
   const facts = productFacts(product);
   const section = catalogSection(product.type);
